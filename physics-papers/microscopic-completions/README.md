@@ -1,0 +1,77 @@
+# Microscopic Completions — Folder Guide *(the "EDsplain" family)*
+
+**What this folder is.** The working mother folder for a family of papers with one shared move: take a **respected, standing result** that runs on an *assumed microscopic input its own authors flag as needing a deeper theory*, and show that **ED supplies exactly that input** without contradiction. We do not re-derive these results and we do not claim to overturn them. We ground the one thing they leave open.
+
+The founding exemplar already lives one folder over: **[Gravity as an Equation of State](../substrate-evaluation/Paper_GravityAsEquationOfState.md)** grounds Jacobson 1995 by filling the entropy density `η` he explicitly left *"undetermined… given a microscopic theory of spacetime structure one may someday compute η."* ED is that microscopic theory: `η = 1/(4ℓ_P²)`, the severed-channel count per grain area, and the `G = c³ℓ_P²/ħ` match is exact. Future papers in this family land **here**; working notes and probes stay in the `event-density` repo.
+
+---
+
+## The pattern (why these targets, and not others)
+
+Every target has the **Jacobson shape**:
+
+> a respected result → derives a known law → **from an assumed microscopic input the authors themselves flag as owed to a deeper theory** → and that input is almost always *"a count of Planck-scale degrees of freedom on a boundary surface."*
+
+That flagged input is precisely ED's reusable asset: **A1 severance across a causal cut** (controlled channel capacity exactly zero at a region boundary) **on a grain of size `ℓ_P` (P08)**, with the **arrow (P11)** supplying whatever directional/cosmic asymmetry the result treats as brute. One key, many locks. Target #5 below is the deliberate outlier: it exercises a *different* ED asset (B4 topological winding ∈ ℤ), which is why it earns a place in the portfolio.
+
+**Tiering discipline for this whole folder.** These are *completions of someone else's floor*, not ED theorems. State the fit at the tier it earns (usually: "ED supplies input X, which author flags as open"), verify the mapping before banking, and never let "ED can supply their cutoff" inflate into "ED reproduces their whole result." The RT/AdS caution below is the standing example.
+
+---
+
+## The one durable finding so far (gravity's asymmetry)
+
+*This is the honest, adversarially-checked statement of what the Jacobson arc established. It governs how this folder talks about "why gravity."*
+
+**Verified (a real, narrow asymmetry):** gravity is the unique arrow-throwing, non-obviously-thermodynamic theory that is cleanly recoverable as an equation of state. That is why Jacobson's trick works for gravity and there is no famous version for electromagnetism or the Schrödinger equation. It is a real, narrow, defensible finding, **not** a universal recipe.
+
+**Open (why gravity is special):** genuinely unsettled. The best-surviving ED-flavored candidate reason, flagged as **a lead, not a result**: *gravity's discard is geometry itself, so its equation of state closes on the same metric it constrains* — unlike theories whose discard sits on a fixed background geometry.
+
+> **Record-keeping note — one clause corrected.** An earlier chat phrasing gave the reason as *"because gravity is geometry, and geometry is where horizons live."* The adversarial pass **retracted** that clause: analog/acoustic horizons (sonic, BEC) carry Hawking temperature and entropy, so horizons are **not** unique to fundamental gravity, and the "gravity re-deposits its arrow as horizon-entropy" story is coherent but post-hoc. The metric-closure lead above is the surviving replacement. Do not restore the horizons phrasing. Full trace: `event-density/foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` (§3, §5).
+
+---
+
+## Ranked targets (best-fit first)
+
+| # | Target | Flagged input ED supplies | Fit | Note |
+|---|---|---|---|---|
+| **1** | **Padmanabhan — holographic equipartition** (arXiv:0912.3165, 1206.4916; review 0911.5004) | `N_sur = A/L_P²`, one d.o.f. per Planck area | **HIGH** | **DRAFTED → [Paper_GravityAsHorizonEquipartition.md](Paper_GravityAsHorizonEquipartition.md)** (2026-07-25, in referee). Read-first caught that ED **already** had Padmanabhan's construction as **Theorem T19** (`Substrate_Gravity_Foundations` §3) — same count, equipartition, Unruh inversion, same `G`. So the paper is *recognition + attribution*, not new derivation. ED's genuine add: grounds the assumed *count* (A1 severance + measured edge-count area law). **Honest limit:** ED grounds the count, NOT the equipartition rule (½T per channel) — T19 posits it exactly as Padmanabhan does. **Reaches Newton, not Einstein** (same khronometric wall as the Jacobson paper). The *"law of emergence"* `dV/dt ∝ (N_sur − N_bulk)` is **deferred** (untouched in corpus; collides with the a₀/T20/dark-sector line; needs its own read-first). |
+| **2** | **Sakharov induced gravity** (Visser review gr-qc/0204062) | the spectral cutoff in `G⁻¹ ~ ℏE_cutoff²/c⁵`; "metric elasticity from fluctuations" | **HIGH** | Two ED assets land at once: grain *is* the cutoff, elasticity *is* the emergent acoustic metric. |
+| **3** | **'t Hooft / Susskind holographic bound** (gr-qc/9310026, hep-th/9409089) | *why* the max d.o.f. count is the **area**, not the volume | **HIGH** | ED's severance-across-a-cut (A1) derives area-scaling mechanistically; answers their actual "why." |
+| **4** | **Analog gravity — Unruh 1981; Barceló–Liberati–Visser** (gr-qc/0505065) | a **real medium** ("can it be *more than analogy*?") | **HIGH** | Tightest *ontological* fit: ED's emergent bandwidth metric *is* an acoustic metric with a real substrate under it. |
+| **5** | **Entropic Dynamics + Wallstrom objection** (Caticha 1908.04693; Wallstrom PRA 49, 1613) | the ad-hoc integer single-valuedness `∮∇φ·dx = 2πnℏ` | **HIGH (contingent)** | The one **non-gravity** target; a *named standing* open problem, discrete-topology-shaped → ED's B4 winding ∈ ℤ. **Verify the winding→phase-circulation map before banking.** |
+
+**Honorable mention (real but caveated):** Ryu–Takayanagi cutoff (hep-th/0603001) + Van Raamsdonk (1005.3035) — ED can supply the UV cutoff and the entanglement network, but **must not** claim the full AdS/CFT Einstein dictionary; it collides with ED's kinematic/non-Einstein (MOND-branch) metric.
+
+**Treat with caution:**
+- **Verlinde entropic gravity** (1001.0785) — same d.o.f.-count move as Padmanabhan but on a *contested* derivation (Kobakhidze 1108.4161; neutron-interferometry counterexamples). Don't anchor to it.
+- **Causal sets** (Bombelli–Lee–Meyer–Sorkin, PRL 59, 521) — a **rival** discrete program, not a gap. Engage as kinship/differentiation (ED's arrow is what their Poisson sprinkling lacks natively), never as "filling their hole."
+
+**Structural observation:** targets 1–4 all reduce to the *same* ED asset (a Planck-grain d.o.f. count on a severed causal boundary, A1 + P08). That single mechanism is the reusable key; each paper is a different lock. Target 5 is the deliberate diversifier.
+
+## Standing open leads spun off by this family
+
+The Jacobson + Padmanabhan arc left six open leads. Ranked by ROI; the first two are one workstream.
+
+**High-value cluster (A + B — one workstream, same near-horizon Rindler home):**
+- **A. Ground the `½T`-per-channel (the equipartition rule).** Both papers ground the *count* of horizon d.o.f. but *posit* that each carries `½T`. Candidate route: the near-horizon Rindler mode structure that already gives `T = κ/2π` (`foundations/BH_Thermal2Pi_FromNearHorizonRindler`) may also give `½T`-per-mode, since Unruh thermality *is* each Rindler mode being thermally populated. Best case: `½T`-per-channel and `T = κ/2π` are **one near-horizon fact, not two assumptions**. Risk: stays inherited-from-Rindler rather than derived.
+- **B. Arrow-native / continuation-free `2π` (the temperature).** ED currently gets `T = κ/2π` via the Euclidean (reversible-time) route — the one Jacobson/Padmanabhan input ED does **not** yet ground in the arrow (`Paper_GravityAsEquationOfState` §5, §8). Same Rindler home as A: cracking the mode structure arrow-natively plausibly yields **both** `½T` and the `2π`. Single highest-ROI node in the arc.
+
+**The prize (most ambitious, genuinely novel — not ED-splaining):**
+- **C. A fully written-out `δQ = TdS` derivation of the *khronometric* field equations at a local horizon** (`Paper_GravityAsEquationOfState` §8). "Nobody has done this; ED now has the grounded pieces." Attacks the "Newton, not Einstein" gap from the thermodynamic side.
+
+**Deferred / riskier:**
+- **D. Padmanabhan's law of emergence** `dV/dt ∝ (N_sur − N_bulk)` — needs a read-first against T20 / `Paper_KM-II` / the dark-sector folder before ED touches it (collision risk with the a₀ line).
+
+**Narrow / technical:**
+- **E. Closed-form aether-entropy leading power** — would harden the Jacobson §7 scalar-sector co-suppression from *inference* to *computation* (`Paper_GravityAsEquationOfState` §8). Small, self-contained.
+
+**Conceptual (not a calculation):**
+- **F. "Why is gravity special?"** — the metric-closure lead: gravity's discard *is* geometry, so its equation of state closes on the metric. A lead, not a result (`foundations/ThermoPattern_EquationOfState_of_the_DiscardPile`).
+
+---
+
+## Working notes (in the `event-density` repo)
+
+- `foundations/ED_and_Jacobson_GravityFromThermo_2026-07-24.md` — the founding step-1 note (Jacobson read in full; the three grounded inputs; exact `G`).
+- `foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` — the pattern + the honest asymmetry finding (governs the "why gravity" language above).
+- `foundations/Khronon_vs_Lorentz_in_Jacobson_RESULTS_LOG_2026-07-24.md` — the khronometric-vs-Lorentz thread (R1–R6, closed).
