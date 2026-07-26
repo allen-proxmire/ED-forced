@@ -4,6 +4,10 @@
 
 The founding exemplar already lives one folder over: **[Gravity as an Equation of State](../substrate-evaluation/Paper_GravityAsEquationOfState.md)** grounds Jacobson 1995 by filling the entropy density `η` he explicitly left *"undetermined… given a microscopic theory of spacetime structure one may someday compute η."* ED is that microscopic theory: `η = 1/(4ℓ_P²)`, the severed-channel count per grain area, and the `G = c³ℓ_P²/ħ` match is exact. Future papers in this family land **here**; working notes and probes stay in the `event-density` repo.
 
+**Papers in this folder:**
+- **[Gravity as Horizon Equipartition](Paper_GravityAsHorizonEquipartition.md)** — grounds Padmanabhan's equipartition (= ED's Theorem T19); ED grounds the count, not the ½T rule.
+- **[The Khronometric Equation of State](Paper_KhronometricEquationOfState.md)** — the first written-out local-Rindler `δQ=TdS` derivation for a khronometric theory: clean equilibrium → full Einstein on ED's luminal family; shear stays exactly GR; scalar-sector co-suppression (fourth face held as conjecture). Grounds `Paper_GravityAsEquationOfState` §6, discharges its §8 write-out item.
+
 ---
 
 ## The pattern (why these targets, and not others)
@@ -57,7 +61,7 @@ The Jacobson + Padmanabhan arc left six open leads. Ranked by ROI; the first two
 - **B. Arrow-native / continuation-free `2π` (the temperature).** ED currently gets `T = κ/2π` via the Euclidean (reversible-time) route — the one Jacobson/Padmanabhan input ED does **not** yet ground in the arrow (`Paper_GravityAsEquationOfState` §5, §8). Same Rindler home as A: cracking the mode structure arrow-natively plausibly yields **both** `½T` and the `2π`. Single highest-ROI node in the arc.
 
 **The prize (most ambitious, genuinely novel — not ED-splaining):**
-- **C. A fully written-out `δQ = TdS` derivation of the *khronometric* field equations at a local horizon** (`Paper_GravityAsEquationOfState` §8). "Nobody has done this; ED now has the grounded pieces." Attacks the "Newton, not Einstein" gap from the thermodynamic side.
+- **C. A fully written-out `δQ = TdS` derivation of the *khronometric* field equations at a local horizon — DONE (2026-07-25) → [Paper_KhronometricEquationOfState.md](Paper_KhronometricEquationOfState.md)**, referee-passed. Result: on ED's luminal family the Wald entropy is pure area → clean equilibrium → full Einstein (aether among the sources, `G_æ`), shear stays exactly GR (`c₁₃=0`), and the khronon's kinematic (`α₁`) + bulk-dissipative (`d_iS`) footprints are both `O(λ)` — the "fourth face" **kept as conjecture** (needs the closed-form aether-entropy leading power, still open). Attacks the "Newton, not Einstein" gap from the thermodynamic side.
 
 **Deferred / riskier:**
 - **D. Padmanabhan's law of emergence** `dV/dt ∝ (N_sur − N_bulk)` — needs a read-first against T20 / `Paper_KM-II` / the dark-sector folder before ED touches it (collision risk with the a₀ line).

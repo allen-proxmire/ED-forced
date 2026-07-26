@@ -96,7 +96,7 @@ This extends the GR-IV reading ("one structure — sparse becoming — many face
 
 - **Grounded / measured:** ED grounds Jacobson's three inputs (§3); `S ∝ A` from severance (measured, GR-III §7.4); `T = κ/2π` from ED's Rindler geometry; the `G = c³ℓ_P²/ℏ` match (algebraic identity); the local pure-area equilibrium result and its literature backing (§6).
 - **Synthesis:** the two-routes reading; the arrow-paradox resolution; the scalar-sector co-suppression (§7, at the tier stated there).
-- **Open:** a fully written-out `δQ=TdS` derivation of the *khronometric* field equations at a local horizon (nobody has done this; ED now has the grounded pieces to); a commitment-statistics, continuation-free derivation of the horizon `2π`/temperature (the one input still gotten via the reversible-time Euclidean route; `BH_Thermal2Pi` §4); the closed-form aether-entropy leading power that would harden §7 from inference to computation; the value of the grain / `λ_local` (inherited, as is Jacobson's `l_c`).
+- **Open:** a fully written-out `δQ=TdS` derivation of the *khronometric* field equations at a local horizon (**now done — `microscopic-completions/Paper_KhronometricEquationOfState`**, which confirms the §6 clean-equilibrium verdict explicitly; the closed-form aether-entropy leading power below remains the open sub-piece); a commitment-statistics, continuation-free derivation of the horizon `2π`/temperature (the one input still gotten via the reversible-time Euclidean route; `BH_Thermal2Pi` §4); the closed-form aether-entropy leading power that would harden §7 from inference to computation; the value of the grain / `λ_local` (inherited, as is Jacobson's `l_c`).
 
 ## 9. Position statement
 
