@@ -13,8 +13,8 @@ Interpretation and positioning pieces: Event Density's *reading* of a reigning i
 ## Contents
 - **`ED_Reading_ManyWorlds_TheOtherReadingOfSchrodinger.md`** — the standalone positioning argument: ED vs Many-Worlds on the Born rule and the arrow. Spine = the one-bit disagreement (is the floor reversible or irreversible?) and the crux (the fate of `ρ`'s off-diagonal coherences: Many-Worlds preserves them forever into branches; ED's commitment genuinely diagonalizes, one world).
 - **`ED_Reading_Response_Carroll_Greene_WorldScienceFestival.md`** — the same content in its distribution form: a good-faith response to the Carroll–Greene World Science Festival conversation, entering that talk's specifics and audience (the probability seam, the Humean-vs-wavefunction-realist tension, the "courage of your theories" argument).
+- **`ED_Reading_Gravity_RoutesToGR_and_TwoPartDarkSector.md`** — against the "quantize a classical metric" default: ED grows the metric instead. Deflated route count (2 independent routes to weak-field/Newton; 1 genuine route + 1 form-argument to the Einstein-form equation; always khronometric, never pure GR; `G` counted once; Sakharov/analog/holographic named as consiliences not routes). Then the divergence pillar: MOND read at face value (`a₀ = cH₀/2π`, with Khoury's superfluid DM named as the peer making the same move) *and* the separate cluster/CMB relic mechanism, so it does not inherit pure-MOND's holes — the relic flagged honestly as candidate, CMB undelivered. Wedges: `α₂ = 0` kill-switch, breathing-mode GW.
 
 ## Candidate readings to write next (same mode, tiers intact)
-- GR two ways from ED (weak-field metric + khronometric), against the "quantize a classical field" default.
 - Newton's G, and 3+1 dimensions, each derived several ways, against "these are just brute inputs."
 - The QM-kinematics reproduction, against "the Born rule is a bare postulate."
