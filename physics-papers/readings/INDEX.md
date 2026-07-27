@@ -1,6 +1,9 @@
 # ED Readings — Start Here
 
-Five short pieces that do one thing from five angles: take a reigning idea in physics and read its *own* formalism from a different floor.
+A capstone argument plus five short readings. The five each take a reigning idea in physics and read its *own* formalism from a different floor; the capstone says why the whole set, taken together, is evidence rather than bookkeeping.
+
+**If you read one thing first, read the capstone:**
+- **`ED_Reading_ReproducedFromThirteen_TheUntunabilityArgument.md`** — the cross-domain case. Event Density reproduces the *form* of many unrelated domains (gravity, quantum probability, soft-matter circuits, the dark sector, the constants) from thirteen primitives, and the argument is that a structure that small, reproducing that much through one shared route, *could not have been tuned to it* — so the breadth is evidence, not accommodation. Leads with the tier ledger in the open. This is the argument the five readings below each supply one brick for.
 
 The standard theories are built on a reversible, smooth bottom, a unitary wavefunction, a metric to be quantized, constants and dimensions plugged in as brute inputs. Event Density reads the same mathematics from the opposite floor: the primitive is the **arrow**, irreversible commitment, and the smooth reversible description is an emergent shadow of a substrate that commits. Each reading applies that single move to a specific place where the standard reading strains, and asks whether the other floor strains less.
 
