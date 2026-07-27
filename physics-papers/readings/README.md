@@ -1,5 +1,7 @@
 # ED Readings
 
+**New reader: start with [`INDEX.md`](INDEX.md)** — the landing page (shared stance, the two rails, reading order). This README is the folder doc (genre, rules, contents).
+
 Interpretation and positioning pieces: Event Density's *reading* of a reigning idea in physics, set against the standard reading, written to be read by people already in that conversation.
 
 **Genre.** These are not derivations and do not pretend to be. They are "as provable" as the views they engage (Many-Worlds, pilot-wave, a specific dark-matter particle): they earn their place by coherence, parsimony, and explanatory reach, not by theorem. The only thing a reading proves is *comparative* — that the standard view carries specific costs, and that reading the same formalism through ED's primitives does not carry them. This is the Everett move and the Einstein-on-Newton move: not a proof, a better reading.
