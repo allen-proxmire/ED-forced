@@ -54,12 +54,12 @@ Not exhaustive, and deliberately spanning *unrelated* fields, because the breadt
 | Black-hole entropy | Area law S ∝ A (severed-edge count, on an assumed geometry) | **Scaling measured, half-structural** | the 1/4 inherited (thermal) |
 | Three dimensions | 3 selected by 1D-linking and the holographic count | **Structural bridge** | postulated at bottom; exactly-3 open |
 
-Read the tier column, not just the domain column. That column is the anti-crank move: a crank hides it; the honest case leads with it.
+Read the tier column, not just the domain column. Leading with it, rather than burying it, is the whole discipline of the case.
 
 ## What this is NOT
 - It is **not** "ED derives the numbers." Most values are inherited. What is unified is the *form and mechanism*, not the constants. Say that first, always.
 - It is **not** out-predicting GR or QM in the tested regime. There is almost no room there, and that is honest.
-- It is **not** unfalsifiable, which is the other half of not-being-a-crank. There is a companion document, *22 Ways to Kill Event Density (+ Eight More)*, that is nothing but **thirty numbered kill-conditions** — each a specific number, sign, or shape with a stated way to fail it: `α₂ = 0` *exactly*, *zero* intrinsic scatter in the baryonic Tully-Fisher relation, dark energy `w = −1` with no drift, a sharp architecture-independent decoherence wall, the four-run circuit test above, and twenty-five more. Enumerating your own kill-switches, with numbers attached, is the exact opposite of what a crank does.
+- It is **not** unfalsifiable. There is a companion document, *22 Ways to Kill Event Density (+ Eight More)*, that is nothing but **thirty numbered kill-conditions** — each a specific number, sign, or shape with a stated way to fail it: `α₂ = 0` *exactly*, *zero* intrinsic scatter in the baryonic Tully-Fisher relation, dark energy `w = −1` with no drift, a sharp architecture-independent decoherence wall, and twenty-six more. Every one is a number someone can go measure.
 - It is **not** proof. Consilience *persuades*; it does not *compel*. A determined skeptic can still say "you accommodate the known facts, so what," and the only thing that closes that door is a confirmed novel prediction — for which ED has one non-Planck-suppressed candidate that is not a postdiction: the sharp quantum-to-classical boundary (honestly still a shape-claim, not a number). Consilience is the body of the case; that one prediction is the intended knockout. Both, not either.
 
 ## Bottom line
