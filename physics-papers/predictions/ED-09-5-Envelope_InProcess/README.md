@@ -2,7 +2,7 @@
 
 **Status:** InProcess. **Two parallel tracks** — one blocked on external collaboration, one executable within ~1 week at $0.
 
-**Test of:** ED-09.5 sharp quantum-classical transition — the canonical ED PDE's damping-discriminant bifurcation at `D_crit = 0.5` (Canon P6) predicts that systems in the oscillatory regime (`D < 0.1`) carry a **slow envelope modulation** of their dynamics at frequency `ω_v = 2π·N_osc·γ_dec ≈ 8·γ_dec` (for single-mode, `N_osc = 8`). Quantum-side signatures include `Q_v ∈ [4, 9]`, third-harmonic content 3–6%, triad coupling `C ∈ [0.01, 0.05]`. ED-09.5 is **the single most distinctive falsifiable prediction in the ED corpus.**
+**Test of:** ED-09.5 sharp quantum-classical transition — the canonical ED PDE's damping-discriminant bifurcation at `D_crit = 0.5` (Canon P6) predicts that systems in the oscillatory regime (`D < 0.1`) carry a **slow envelope modulation** of their dynamics at frequency `f_v ≈ 1.1·γ_dec` (`= Q/π`; **corrected 2026-07-10** from an earlier erroneous `8·γ_dec` — see [`ED_PDE_Drive_Finding_2026-07-10.md`](ED_PDE_Drive_Finding_2026-07-10.md); corrected band ~11–110 Hz, needs ≥~250 Hz framerate). Quantum-side signatures include `Q_v ∈ [4, 9]`, third-harmonic content 3–6%, triad coupling `C ∈ [0.01, 0.05]`. ED-09.5 is **the single most distinctive falsifiable prediction in the ED corpus.**
 
 **Channel exercised:** participation `v(t)` (Canon principle P5 — Participation Feedback Loop) + damping discriminant (Canon P6).
 
@@ -65,6 +65,6 @@ See `protocol.md` §15 for full list. Essential context:
 - ~~**Days 2–3:** write and validate the pipeline.~~ **DONE 2026-07-10** — see [`scripts/`](scripts/README.md) (built + validated, sensitive + specific).
 - **Day 1 (now the gating step):** obtain a **concentrated, high-framerate (≥1–2 kHz)** FRAP recovery curve with known/estimable `γ_dec` — either a machine-readable literature dataset (protocol §7 candidates) or the in-house UDM-FRAP V2 high-framerate add-on. Most published FRAP is dilute (low `f_v`); matched concentrated data is the search challenge.
 - **Then:** `python scripts/frap_envelope_lombscargle.py curve.csv --gamma-dec <Hz>` → per-dataset F0–F5; write up (result or null memo).
-- **Recommended parallel theory check:** drive the injected signal from the actual canonical ED PDE (Canon P6), not a resonator, to confirm ED *produces* the `f_v≈8γ_dec` envelope (`scripts/README.md` §"stronger theory-side check").
+- **Recommended parallel theory check:** drive the injected signal from the actual canonical ED PDE (Canon P6), not a resonator, to confirm ED *produces* the `f_v≈1.1γ_dec` envelope (`scripts/README.md` §"stronger theory-side check"). *(Already run once, 2026-07-10: this is exactly the drive that corrected `8`→`1.1`.)*
 
 In parallel: finalize the Aspelmeyer email v3 (Track A) and send.

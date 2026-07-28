@@ -1,4 +1,4 @@
-# 22 Ways to Kill Event Density
+# 22 Ways to Kill Event Density (+ Eight More)
 
 **Allen Proxmire**
 
@@ -54,15 +54,15 @@ Try to kill it.
 
 ## Quantum Foundations and Soft Matter
 
-**16. Quantum-to-classical decoherence wall.** A sharp, architecture-independent decoherence boundary in matter-wave interferometry, extrapolated to 140-250 kDa, directly in the territory of groups already pushing large-molecule interferometry to higher masses. *Kill it:* interference succeeding cleanly at 250 kDa or above with no wall, or no sharp wall at any mass.
+**16. Quantum-to-classical decoherence wall.** A sharp, architecture-independent decoherence boundary in matter-wave interferometry. The load-bearing claim is the *shape* — a sharp, architecture-independent wall that no amount of isolation pushes past — not the mass value; the 140-250 kDa figure is a two-point extrapolation, and matter-wave interference has *already* been demonstrated at ≥170 kDa (Nature 2026, sodium nanoparticles), inside that window and still quantum-consistent, so the bare number is under pressure from below. *Kill it:* a *gradual*, isolation- and architecture-dependent fade rather than a sharp architecture-independent wall at any mass.
 
-**17. Second-harmonic decoherence signature.** Alongside #16: 3-6% second-harmonic content in interference fringe residuals near the quantum-classical crossing. *Kill it:* pure first-harmonic decay observed near the crossing, the standard decoherence prediction.
+**17. Second-harmonic decoherence signature.** Alongside #16: an *excess* of second-harmonic content in interference fringe residuals near the quantum-classical crossing. *Honest caveat:* Talbot-Lau / KDTL interferometers (the ones near this mass range) produce higher harmonics from their grating optics anyway, so a bare second harmonic does *not* confirm ED — the real test is excess beyond the full Nimmrichter-Hornberger optics prediction, computed from *raw* fringe data (which the published interferometry papers do not release). *Kill it:* raw-fringe harmonic content matching the standard KDTL optics prediction with no ED excess near the crossing.
 
 **18. FRAP front-radius exponent.** In concentrated protein solutions (BSA), a specific front-radius exponent $\alpha_R = 1/6$ in fluorescence-recovery experiments. *Kill it:* $\alpha_R \geq 0.35$, or a plain Fickian front winning at all tested concentrations.
 
 **19. AFM dewetting invariance.** A specific cross-scale invariant in atomic-force-microscopy dewetting measurements, median value $-1.30$. *Kill it:* a measured median outside $[-1.80, -0.90]$.
 
-**20. Envelope modulation at bifurcation.** A slow envelope modulation at a specific frequency ratio ($\omega_v \approx 8\gamma_{\mathrm{dec}}$), predicted to hold across ten or more orders of magnitude in decoherence rate, from optomechanics to protein-diffusion residuals. *Kill it:* no envelope detected at the predicted frequency band in any of three or more independent datasets.
+**20. Envelope modulation at bifurcation.** A slow envelope modulation at a specific frequency ratio ($f_v \approx 1.1\,\gamma_{\mathrm{dec}}$, the $Q/\pi$ ratio; corrected 2026-07-10 from an earlier erroneous $8\gamma_{\mathrm{dec}}$), predicted to hold across ten or more orders of magnitude in decoherence rate, from optomechanics to protein-diffusion residuals. *Kill it:* no envelope detected at the predicted frequency band in any of three or more independent datasets.
 
 **21. Synchronized cosmic-boundary covariation.** Six independent physical projections (from black-hole horizons to galactic acceleration to lab-scale correlation budgets) trace to one boundary and should co-vary as Hubble-tension-class measurements shift. *Kill it:* any two of the six projections moving out of sync.
 

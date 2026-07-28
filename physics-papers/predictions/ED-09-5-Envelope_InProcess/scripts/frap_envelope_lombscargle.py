@@ -5,12 +5,12 @@ Implements the pre-registered test in ../protocol.md (sections 6-10, F0-F5):
 
     Given a FRAP recovery curve I(t), subtract the best-fit smooth recovery
     model, Lomb-Scargle the residual r(t) = I(t) - I_model(t), and test for a
-    participation-envelope peak at  f_v = N_osc * gamma_dec  (N_osc = 8 default)
+    participation-envelope peak at  f_v = N_osc * gamma_dec  (N_osc = 1.1 default, = Q/pi; corrected 2026-07-10 from 8)
     inside the [80, 800] Hz band, with the pre-registered Q_v, third-harmonic
     and triad-coupling checks.
 
 Pre-registered parameters (protocol Sec.2, locked by Observable-Sharpening Sec.15):
-    f_v (Hz)              = N_osc * gamma_dec,  N_osc = 8   (single-mode)
+    f_v (Hz)              = N_osc * gamma_dec,  N_osc = 1.1  (= Q/pi; corrected 2026-07-10 from 8)
     F0  factor-of-2 band  around f_v
     F2  N_osc in [6, 12]
     F3  Q_v   in [4, 9]
