@@ -1,0 +1,108 @@
+# Substrate-Evaluation Arc — Tiered-Claims Ledger
+
+**What this is.** Every load-bearing claim in the substrate-evaluation folder (25 cold-reader consolidation papers) and its *current* tier. Three things at once: (1) the **tier catalog**, (2) the **staleness detector** (the `Status` column is current state; any doc disagreeing with a row is by definition stale), (3) the **anti-drift authority** `read-first` checks against.
+
+**How it's built.** Read every paper; tier each claim *from the paper's own audit/status/verdict* — never inflated (the README's coarse tiers, and one line of the README theme table, are stale — see Staleness). Seeded from the folder README + `event-density/docs/ED_Research_Targets.md`, corrected against the papers.
+
+**One of a per-folder set.** This is the corpus's **consolidation layer** — it packages individual results for cold readers; it does not supersede the source arcs. Companions: all other `physics-papers/*` ledgers.
+
+**Tier key.** `Derived` (theorem / proof / forced-from-inputs) · `Grounded` (conditional/structural, form-forced given stated inputs) · `Measured` (simulation/build-and-run/probe) · `Selected/Inherited` (a value or a menu-selection) · `Postulated` · `Asserted` (A→position / methodological) · `Wall` (a proven or honest limit — the order ED does NOT reach) · `Synthesis` · `Open`.
+
+*25 papers. Read 2026-07-29 (extraction agent, then spot-checked).*
+*Spot-checked directly against the papers (6, scaled to 25; **no catch** — one initial suspicion cleared as the checker's own truncation error): (1) **A1** "L2 = 0.000000, 5/5 — controlled channel capacity exactly zero everywhere" (Derived locality) — confirmed; (2) **CleanSubstrateVector** theorem "`det H(k)` even in k ⟹ point-gap winding ≡ 0 ∀N ⟹ parity violation necessarily spontaneous" — confirmed verbatim; (3) **V5AttractiveSign** derives the sign via Paper_090's gauge-law route and **explicitly notes the earlier Tsirelson characterization "was retracted"** (line 93) — confirmed clean; (4) **Primes** "template yes, escape no… the only *proven* negative," Sarnak + sieve parity barrier — confirmed; (5) **gauge {1,2,3}** "NOT derived… a wall… tested and *refuted*… SU(N) for any N; continuum survival is the Clay-hard part, not claimed" — confirmed not over-claimed; (6) **CanonicalPDE ON HOLD** banner (2026-06-27, "not to be cited as final") — confirmed.*
+
+---
+
+### Derived (theorem / proof / forced-from-inputs)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| Controlled channel capacity between distinct regions is **exactly zero** (within a stratum and across the boundary); boundary = common-cause, not a channel | A1 (CommonCauseNotChannel) | `L2=0.000000` (5/5, exact byte-identity) ⟹ MI=0 ⟹ capacity=0; ED locality confirmed as exact channel-zero | locality confirmed *empirically*, not derived from primitives; one certified substrate/geometry | **Derived** (capacity=0 is D; the L2=0 headline is an exact *measured* zero) |
+| Winding `w∈ℤ` conserved + irreversibility-protected; orientation-blindness = the single reason the skeleton is realized and the field withheld | B4 (ChargeAsTopology) | slipping requires "uncommitting" a polarity (P11 forbids); `π₁(U(1))=ℤ` | — | **Derived** (quantization *measured* to machine precision); local Coulomb withheld (Grounded/Open) |
+| **The parity-clean substrate is vector for every channel-count** (`det H(k)` even in k ⟹ point-gap winding ≡ 0 ∀N); if parity is violated its direction is **necessarily spontaneous** | CleanSubstrateVector | parity-cleanness forces `B=SAS⁻¹` ⟹ even determinant ⟹ zero winding (numerically N=1..6); clean transport carries no parity-odd invariant | **transport-level only; the relativistic substrate→Dirac descent is OPEN** (§8); *that* parity is violated (the casting) is inherited | **Derived (theorem)** — supersedes The Parity Wall's verdict *tier* (not direction) |
+| Objectivity is unbounded: **committed records cost no V5 budget** (accounting theorem) ⟹ classical objectivity unbounded | QuantumDarwinism | committed record = recorded structure not kernel content; persists channel-free (A1) + no-erasure (P11); the unique corpus-consistent accounting | absolute `W_max` inherited | **Derived-structural** |
+
+### Grounded (conditional / structural — form-forced given stated inputs)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| Integral Gauss law `circulation = 2πw`, loop-independent; the Maxwell action is *latent* in the coherence deficit (`sin²(Δφ/2)≈¼(∇φ)²`) | B4 / Maxwell | discrete holonomy `ΣΔφ=2πw`; standard `∫(∇φ)²` electrostatic action | **local Coulomb field withheld at the discrete layer (OPEN)**; whether DCGT selects it = the honest open edge | **Grounded** (Coulomb open) |
+| **Gauge group form `U(N)=SU(N)×U(1)/ℤ_N`** for N indistinguishable channels; `F²` action; **mass-gap mechanism** `[A,A]` lifts the flat direction iff non-abelian; single hypercharge `U(1)_Y` | GaugeStructure | given ℂ-amplitude (from the keystone) + total bandwidth (P05 isometry); tree-level flat-direction lift verified (0 for U(1), lifted for U(2/3/4)) | indistinguishability *alone* gives only `S_N`; **continuum survival = the Clay core, OPEN, NOT a Clay proof**; `{1,2,3}`/anomalies/charge-normalization NOT derived | **Grounded** (derived-given-inputs; mechanism-tier for the gap) |
+| `γ⁵ = arrow × spontaneous spatial orientation`; the vector clean substrate is automatically anomaly-free | CleanSubstrateVector | standard `γ⁵=iγ⁰γ¹γ²γ³` read in ED terms (both factors native); a vector theory carries no gauge anomaly | chiral cancellation inherited with the content; contingent on the substrate→Dirac descent (open) | **Grounded (structural)** |
+| Channel orthogonality **reduces** to channel-distinctness *given the representation*; einselection **primitive**; Born non-contextuality; ℂ **selected** | Gleason keystone | operational distinguishability (`max⟨K\|E\|K⟩=1−c²`); commits only in the channel basis; P09 rules out ℝ, composites rule out ℍ | **the Solèr lattice technical rigor is the residual (OPEN, #8b Gate 1)** | **Grounded** — status = **"reduced to the Solèr residual"** (NOT "blocking/three-routes-fail"; that framing is retired) |
+| V5's coupling **is** the coherence content of the cross-chain superposition (`√(b_A b_B)cos(Δπ−∫A)`); MOND cross-term constructive because P12-Coh rewards phase alignment | V5AttractiveSign / PhaseCoherence | Paper_090's difference-phase gauge law forces the conjugated-pair moment; `Coh` maximal at alignment | conditional on P-Bipartite-Mapping + like-chain reading; **the earlier Tsirelson characterization was RETRACTED** (line 93), replaced by this gauge-law route; reach ξ inherited | **Grounded** (gauge-law-forced); the sign supplied at Measured tier |
+| A grown decoupling boundary reproduces exact channel-zero | A2 (GrownNotInstalled) | bandwidth-collapse rule + "weakest-link" (minimum) endpoint seals every boundary edge | the bandwidth-collapse rule's admissibility inherited from the gravity arc; one construction, not a sweep | **Grounded / Measured** |
+| `ρ_loc=1`: the monogamy budget = the Class-C plateau budget (one `W_max` spent two ways); per-locus live cap `N_live ≤ W_max/w̄` | V5UnifiedBudget / QuantumDarwinism | same `∫K_V5` at the P08 grain (structural identity); P-V5-Budget + P04 additivity | absolute `W_max` inherited; path-topology not capped per-locus | **Grounded (D-structural identity)** |
+
+### Measured (build-and-run / probe)
+| Claim | Paper | What's measured | Inherited / open | Status |
+|---|---|---|---|---|
+| The coherence-weighted continuum limit around a charge **is** Coulomb; but the *determinate* substrate does NOT cast the smooth field (emergent shadow) | Maxwell | lattice `∫(∇φ)²`: p=1, R²=0.97 (vs 0.77 at p=2); substrate kinetic + phase-sector Σ-blind | **analytic/computed, NOT a substrate measurement** (phase sector Σ-blind) — confirms the identification only | **Measured (analytic)** — "form native, smooth field a coarse-grained shadow" |
+| ED's certified continuum is a **kinetic lattice-gas (ballistic), NOT a diffusion PDE**; both bridge routes fail; and it does NOT generate the UDM mobility law (β≈0 not 2) | KineticLatticeGas / CanonicalPDE | diffusion R²≈0.001; ballistic `\|v\|≈1`; pure ED never mixes (CV≈1.2 vs 0.00); front mobility concentration-independent | certified Σ-substrate only; UDM is a separate posit (refutes UDM-*from-these-dynamics*, not UDM) | **Measured (came-back-no)** |
+| Binding confines massless fronts into a sub-luminal inertial composite (**mass without mass**); mass(binding) ≠ time-dilation(commit-rate); a lone front is massless | MassWithoutMass | coupling-off disperses (28→55), on confines (1.4–2.3); forced-response 0.72 vs unbound 0.97 | **V5-CONDITIONAL** (a structural addition, not primitive-forced); binding mass only, fundamental Higgs INHERITED | **Measured (V5-conditional)** |
+| P12 coherence rewards alignment but stays **finite-reach (no crystal)** under the physical P05 connection (2D+3D); V5's attractive local-lock emerges from P12's positive sign (flip destroys it) | PhaseCoherence / V5AttractiveSign | trivial connection crystallizes (R=1); substrate disorder + irreversibility ⟹ ξ few lattice units; within-cluster spread collapses ~0.27× at finite reach | reach ξ value-inherited; V5 existence stays a P10 posit | **Measured** (supplies the attractive/constructive sign) |
+| Straddling cross-chain (V5) edge count scales as **area** (r²·⁰²), reach-independent — holographic entropy = the edge count (`≈0.88`/Planck cell) | AreaLawIsTheEdgeCount / V5UnifiedBudget | build of 40k loci; short-range→r²·⁰², fully-long-range→r²·⁷ (could-say-no fired) | assumes the emergent geometry (does not derive it); reproduces a known result = **consilience, not a novel prediction** | **Measured** (on a faithful V5 model) |
+| No spontaneous long-range correlation-order in any sector; persistence is rhythmic (V5 binds local proper time, preserving time dilation) | KnotsNotCrystals / RelationalTick | blind→common-cause only; no ordering coupling anywhere (5-arc evidence); within-cluster spread 0.084→0.0005 at reach<D | structural reading confirmed by measurement, **not a theorem**; silent on topological defects (knots); V5+memory are honest structural additions | **Measured (structural)** |
+
+### Selected / inherited
+| Item | Paper | Status |
+|---|---|---|
+| Number field **ℂ** selected from Solèr's `{ℝ,ℂ,ℍ}` | Gleason keystone | **Selected (account)** — P09 rules out ℝ, V5/063 composites rule out ℍ |
+| The **casting** (which force is chiral) — `SU(2)` fundamental pseudoreal vs `SU(N≥3)` complex | CleanSubstrateVector | **Inherited (account, surviving candidate)** — the SM non-monotone pattern matches no transport winding |
+| Matter/antimatter reference (C) natively selected (first-arrival P09-phase) | ParityWall | **Selected (native) + account** — asymmetry magnitude inherited |
+| Couplings `g`, scale `a`, charge values, EWSB; absolute V5 budget scale `W_max` (=`Γ_plateau`,`t_Page`,CKW coeff) | GaugeStructure / V5UnifiedBudget | **Inherited / Higgs-gated** — only the *relations* among budgets are pinned |
+
+### Postulated / Declared
+| Item | Paper | Status |
+|---|---|---|
+| V5 existence as a cross-chain kernel (P10-licensed, not forced; forward derivation open) | V5AttractiveSign / RelationalTick / MassWithoutMass | **Postulated** |
+| P-QD-LiveWeight (uncommitted branch-basis correlation consumes pairwise V5 weight) | QuantumDarwinism | **Postulated (declared)** — argued *consistent with*, not forced by, 058 |
+
+### Asserted (A→position / methodological)
+| Claim | Paper | Status |
+|---|---|---|
+| Commitment (P11) is the **sole process primitive** (ED has a spatial arena but no separate temporal one) | MinimalOntology | **Asserted (structural, pivot-disclosed)** — a P11-pivoted audit, an account not a theorem; 3D selected not derived |
+| Proxy Conversion Doctrine D1–D4 (one rule set replacing five patches) | ProxyConversionDoctrine | **Asserted (methodological, falsifiable structure)** — α-topological encoding-dependence created then **SETTLED same week** (α_topological=0, 058b) |
+| Class-C plateau ⟷ GHZ-width ceiling appear at commensurate live content | QuantumDarwinism | **Asserted (D-conditional weapon)** — conditional on P-QD-LiveWeight; standard physics has neither ceiling |
+
+### Wall (proven / honest limit — the order ED does NOT reach)
+| Claim | Paper | The limit | Status |
+|---|---|---|---|
+| Finite memory saturates the prime template but **provably NOT the escape (parity layer)** | Primes (FiniteMemoryCeiling) | template reproduced exactly; escape blocked 3 ways (irreducible per-position entropy; optimal Möbius correlator→0; twin density needs `2C₂`); √N activation horizon; anchored to **Sarnak Möbius-disjointness + the sieve parity barrier** | **Wall (proven)** — the program's **only theorem-anchored proven negative** |
+| The weak force's chirality (P) is **not derived** — found absent at every level checked | ParityWall | no screw/pseudoscalar at wiring/transport/selection/spontaneous levels | **Wall** (#2b) — "found absent where checked," not proven impossible; **verdict superseded in TIER (not direction) by CleanSubstrateVector** |
+| Multiplicities `{1,2,3}` and anomalies **not selected** | GaugeStructure | ED's stability route to {1,2,3} tested and **refuted** (symmetric multiplet stable ∀N); SU(N) for any N | **Wall** (#2b) — unsolved in standard physics too; **must not be tiered closed** |
+| Solitons: the bare substrate does not build a reversible balance | ArrowSortsTheContinuum | measured negative: the bare rule disperses (defocusing + dissipative) | **Wall (measured edge)** — not "solitons impossible"; needs an added focusing medium (higher layer) |
+
+### Synthesis
+| Claim | Paper | Status |
+|---|---|---|
+| Shortest naming of ED = "commitment and participation" over a spatial stage (floor = 3 substrate + 4 arena + 1 commitment) | MinimalOntology | **Synthesis / Grounded** — a mnemonic + one reduction (amplitude fusion) + one reclassification; NOT a reduction to two primitives; 3D selected-not-derived |
+| The arrow sorts continuum laws into three classes (structure-making native / erasing at layer-2 / preserving = edge) | ArrowSortsTheContinuum | **Synthesis** (per-entry tiers inside; breaker-passed) — layer-1 native + layer-2 one forced operator + soliton edge (measured negative); full EFE not derived |
+| Each best theory = a blur of one bandwidth field (kept→variables, discarded→symmetries); G/GR at the seam; Born un-blurred; thermo the receipt | HowTheoryCoarseGrainReality | **Synthesis** — an organizing lens over standing results, not a theorem; one rung certified (diffusion) |
+| ED grounds Jacobson's 3 assumed inputs (severance/grain/η) and lands `G=c³ℓ_P²/ħ` | GravityAsEquationOfState | **Synthesis** — the G-match is an algebraic identity; full nonlinear EFE not from ED's own rule; the `2π`/temperature still via the Euclidean route (open); §7 co-suppression at inference tier |
+| YM `F²` derived-given-inputs + gap mechanism-tier; NS no-blow-up structural-positive on 2 postulates; the finite-grain singularity triple `P04+V5+P11` | HowPDECoarseGrainReality | **Synthesis** — YM continuum survival OPEN; **the triple-identity is stated at SYNTHESIS tier, NOT a theorem (target #15)**; 4 other singularity PDEs same-shape/unexecuted |
+| ED has **topological (knot/link) order, not crystalline** | KnotsNotCrystals | **Synthesis / Grounded** — the correlation-order invariant is silent on topological defects |
+| Monogamy(065)+Page(050)+Class-C(058) = projections of one bounded envelope `W_max`; R2 ratios `1:1:0.88` | V5UnifiedBudget | **Synthesis (form-forced parent; R1/R2 D-conditional)** — `ρ_loc=1` a structural identity, `0.88` the measured area-law tiling; absolute scale inherited |
+
+### Prediction / falsifiable structure
+| Claim | Paper | Falsifier | Status |
+|---|---|---|---|
+| Parity violation is a **spontaneous, contingent orientation correlated with the matter/antimatter sign** (vs the SM's law-level fixed handedness) | CleanSubstrateVector | a demonstrated law-level (non-spontaneous, non-contingent) origin of the weak handedness | current — a sharpened distinctive prediction |
+| The Class-C plateau ⟷ GHZ-width **commensurate ceiling** (`Γ_plateau`, GHZ-width appear at commensurate live content, ratios `1:1:0.88:r_QD`) | QuantumDarwinism / V5UnifiedBudget | no commensurate ceiling / standard fault-tolerance-to-zero (no plateau); standard physics has neither | current — D-conditional on P-QD-LiveWeight |
+
+### Open (named unclosed residual)
+| Item | Paper | Status |
+|---|---|---|
+| Whether DCGT coarse-graining selects the Maxwell-action configuration | B4 / Maxwell | **Open** — resolved *negatively* for the determinate substrate (kinetic + Σ-blind), so the smooth field is a shadow; the coarse-grained-selection question named |
+| **Solèr lattice technical rigor** (exchange-property geometry, ∞-dim) | Gleason keystone | **Open (residual, #8b Gate 1)** — status "reduced to the Solèr residual" |
+| Relativistic substrate→Dirac descent (behind a fully relativistic chirality statement + the non-inherited anomaly candidate) | CleanSubstrateVector | **Open** (#2b; = the T4 gate) |
+| Forward derivation of V5 from the primitives; the temporal envelope shape `F_V5` | V5AttractiveSign / RelationalTick | **Open** |
+
+### Staleness & README-refinements
+1. **README internal inconsistency on Gleason — FIXED 2026-07-29.** README line 8 said "reduced to the Solèr residual," but the theme-table line 66 still read "the inner-product/orthogonality step is not closed | Partial/Open." **Line 66 updated** to "Reduced to the Solèr residual (#8b; stronger than blocking, short of a closed theorem)," matching line 8 + the paper.
+2. **README broken filename links — FIXED 2026-07-29.** Line 32 `Paper_HowCoarseGrainReality.md` → **`Paper_HowTheoryCoarseGrainReality.md`**; line 34 `Paper_TwoHarderShadows.md` → **`Paper_HowPDECoarseGrainReality.md`**. Both relinked. *(The same stale names still appear in cross-refs INSIDE HowTheory/HowPDE/GravityAsEOS — a wider linkcheck sweep, left for a dedicated pass; the README two are done.)*
+3. **`CanonicalPDEChannels_BottomUp` carries an ON HOLD / UNDER REVISION banner (2026-06-27)** — "not to be cited as final," being reframed under two-layer coarse-graining; superseded-in-part by `Continuum_KineticLatticeGas`. Provisional, not stale-wrong. (Record-only.)
+4. **`GravityAsEquationOfState` §8 cross-ref to a renamed file** — it cites `microscopic-completions/Paper_KhronometricEquationOfState` as "now done," but git shows that file was renamed to `..._Jacobson.md` (old path deleted). Stale cross-ref (outside this folder, load-bearing for a "SETTLED" claim). *(This matches the working-tree rename in git status at session start.)*
+5. **V5AttractiveSign — Tsirelson retraction correctly reflected (CLEAN).** The paper (line 93) explicitly notes the earlier Tsirelson-theorem characterization "was retracted" and derives the sign via Paper_090's gauge-law route instead. No Tsirelson staleness. *(A checker's-own `head`-truncation initially masked this; verified.)*
+6. **No Wolfram/Ruliad citations found** in any of the 25 papers — clean on that front (unlike the Wave-3 U-series).
+
+### Honest arc-state
+The substrate-evaluation folder is a **coherent, honestly-tiered consolidation layer** whose spine is one idea: **ED derives the *form* of physics and inherits the *values*, with the smooth continuum a coarse-grained shadow of a determinate, arrow-first substrate.** The strongest results are genuine derivations/theorems — **A1's exact channel-zero** (locality), **B4's conserved integer winding**, and the **clean-substrate-is-vector theorem** (parity violation necessarily spontaneous) — while the largest body sits at **Grounded** (gauge SU(N)-form, `F²` action, gap-mechanism, the Gleason reconstruction) and **Measured** (kinetic-lattice-gas-not-diffusion, mass-from-binding, phase-coherence attractive sign, area-law-as-edge-count). Two walls are load-bearing and correctly *not* inflated: the parity/chirality wall (#2b, superseded in *tier* by CleanSubstrateVector but P still inherited) and the **primes finite-memory ceiling — the program's *only* theorem-anchored proven negative** (Sarnak + sieve parity barrier). The genuinely open residuals — Solèr rigor (#8b, now correctly "reduced to residual"), gauge `{1,2,3}`/anomalies (#2b), the finite-grain singularity triple (synthesis-tier, #15), and V5's forward derivation — are all named at their honest tier inside the papers, and the folder contains **no over-claims** (gauge {1,2,3} is a Wall, YM mass-gap "not a Clay proof," the triple-identity "not a theorem," Gleason "reduced to residual"). **The chief debt is documentation drift, not content drift:** the README theme table (line 66) still carries the pre-2026-07-10 "Gleason not-closed" framing while its own State section and the paper have moved on, and several cross-references point at filenames later renamed. **Defensible headline:** *a coherent, honestly-tiered consolidation layer — three genuine theorems/derivations (A1 locality, B4 winding, clean-substrate-vector), a large Grounded/Measured body reproducing forms while inheriting values, two correctly-uninflated walls (parity #2b, the proven primes ceiling), and open residuals all named at tier — with the only real debt being README/cross-ref documentation drift.*
