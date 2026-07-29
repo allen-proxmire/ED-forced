@@ -1,0 +1,96 @@
+# Cosmology Arc — Tiered-Claims Ledger
+
+**What this is.** This doc records **every load-bearing claim in the cosmology folder and its *current* tier**. It is three things at once: (1) the **tier catalog**, (2) the **staleness detector** — the `Status` column carries current state, so any paper (or the README) that disagrees with a row is by definition stale, and (3) the **anti-drift authority** `read-first` checks against.
+
+**How it's built.** Read every paper; tier each claim *from the paper's own audit table / "what this does NOT claim" / verdict* — never inflated. Seeded from the folder README + `event-density/docs/ED_Research_Targets.md` (#5, #5b, #5c, #3b, #13, #2b), then corrected against the papers where they disagree (the read decides; the disagreement becomes a staleness note).
+
+**One of a per-folder set.** Companions: `physics-papers/entanglement/…`, `physics-papers/black-hole/…`.
+
+**Tier key.** `Grounded / conditional` (structural, given a stated input) · `Inherited / Consilience` (reproduces a known sequence, substrate-framed; NOT a novel prediction) · `Derived / D-via-I` (form forced, resting on named postulate(s), numbers inherited) · `Postulated` · `Asserted` (A→position/A→assertion: stated, not proven) · `Prediction` · `Identification` (structural mapping to an existing framework) · `Open` · `Superseded/Withdrawn`. The recurring cosmology label is **M3 = "form-IDENTIFIED / value-INHERITED / IC-INHERITED"** per Paper_095 §2.3 — a reproduction framed through the substrate, not a novel prediction.
+
+*10 papers. Nominal dates 2026-05-13/15, but several carry live-patched dated inserts (CCC §3.2 correction 2026-07-06; Cos-03/04 dark-sector notes 2026-07-19) — currency lives in the inserts, not the headers. Read 2026-07-29.*
+*Spot-checked directly against the papers (4/10, proportional; **no catch this folder**): (1) **SCBU** formalizes only **two** projections (a₀, ξ_canonical), names **no Route A4**, does not derive H₀, lists ξ-from-H₀ as its single OPEN — confirmed (preamble #2, §6 A→position, audit rows 6–12); this **overrode the README/seed** "six projections, H₀ via Route A4" (Staleness #2). (2) **Baryogenesis**: "P-BinaryAdmission is withdrawn" — confirmed verbatim (preamble item 2; zero paper-specific postulates; which-chirality = IC-inherited first-arrival). (3) **Cos-05**: w=−1 via Q1A+Q2A+C3, Λ value inherited → Route A open, naïve `ρ_vac~M_P⁴` "structurally absent" (no infinite mode-tower) — confirmed (§3.5, rows). (4) **CCC**: Θ_ED "has no canonical primitive-level grounding… mistaken primitive citation" — confirmed verbatim (§3.2 correction box, 2026-07-06). The extractor correctly corrected the seed against the papers (reliability signal); no fabrications found.*
+
+---
+
+### Grounded / conditional (structural, given a stated input)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| a₀ and ξ_canonical are two projection *mechanisms* (azimuthal-Fourier on SO(2); cross-scale fixed-point) of one boundary `R_H = c/H₀` | SCBU | the two projection mechanisms (D-via-I, rows 7–8); joint `H₀`-scaling (D, rows 9–10) | numerical a₀, ξ_canonical values **I** (row 11); ξ_canonical-from-H₀ **OPEN** (the paper's single open item) | current — **verdict is A→position/M3** under P-Substrate-Cosmology-Unified; **only two projections** (see Staleness #2) |
+| Inflation = post-SCBU substrate **saturation** regime (uniform Ψ, kernels reactivated); `a(t)=a₀e^{Ht}` | Cos-01 | exp. growth via the Q1A+Q2A+C3 chain (row 13, CLOSED) | Friedmann/de Sitter step **I** (row 9); uniform-Ψ IC-INHERITED; Route A open | current — form-IDENTIFIED (M3), value+IC inherited |
+| Dark energy = late-universe **saturation** regime; `w = −1` (leading order) | Cos-05 | `w=−1` via the *same* inherited Q1A+Q2A+C3 chain as Cos-01 | Λ value + Ω_Λ≈0.685 **I**; `H₀` pending Route A | current — form-IDENTIFIED (M3), conditional on Route A |
+| Λ-smallness ("120-OOM problem") reduces to Route A + Friedmann; the naïve QFT `ρ_vac~M_P⁴` is **structurally absent** substrate-side (discrete substrate → no infinite mode-tower) | Cos-05 §3.5 | catastrophe-dissolution D-via-I via Paper_038_5 §3.7; `ρ_Λ=(3/8π)H₀²M_P²` | smallness = quantitative-magnitude conditional on Route A (the single load-bearing OPEN) | current — **matches the corpus position: value inherited via H₀, smallness open; do NOT say "ED inherits the overshoot"** |
+| DF2/DF4 low-acceleration galaxies are **consistent with** (not counterexamples to) the derived a₀, via commitment-density saturation suppression when g_ext dominates | DF2/DF4 | order-of-magnitude hierarchy `g_int<g_ext≪a₀`; EFE-class suppression from finite outer-scale capacity | a₀=cH₀/(2π) **I** (Paper_029); the suppression *function* NOT yet derived from primitives (§5) | current — Grounded (observational, order-of-magnitude); MOND cross-link |
+
+### Inherited / Consilience (reproduces a known sequence, substrate-framed; NOT a novel prediction)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| BBN = freeze-out competition `Γ_nuc` vs substrate-`H(t)`; three-regime sequence, `Y_p≈0.247` | Cos-02 | `H(t)` at RDE via continuum-Friedmann (D-via-I); freeze-out sequence D-via-I | `Y_p, D/H, ³He, ⁷Li`, nuclear physics, η_b **I** from standard BBN codes | current — Consilience (M3) |
+| CMB acoustic peaks = angular projection of the baryon-photon oscillator; `ℓ_n≈nπD_A/r_s` | Cos-03 | `r_s, D_A`, peak positions, baryon-loading, Silk damping D-via-I via continuum-Friedmann | peak positions/heights/TE/EE **I** from CAMB/CLASS; `n_s`, recombination, `Ω_b h²` IC-INHERITED | current — Consilience (M3) |
+| Linear structure = growth of primordial perturbations `P(k,a)=D²T²P_init` (Meszaros, BAO, LDE suppression) | Cos-04 | `D(a), T(k), k_eq`, BAO `r_s` D-via-I | `σ_8, P(k), Ω_m h²` **I**; §3.5 explicit: "ED supplies no late-LDE growth-suppression mechanism *beyond* ΛCDM" | current — Consilience (M3) |
+| Inflationary fluctuation spectrum = sub-leading `O(ε)` perturbations on Cos-01 saturation | Cos-06 | scalar `P_ζ`, tensor `P_T`, `n_s−1=−6ε+2η`, `r=16ε` D-via-I via standard slow-roll | `A_s≈2.1e-9, n_s≈0.965, r<0.06` **I** from Planck+BICEP | current — Consilience (M3); F1 falsifier is Route-A4-specific, not a test of slow-roll |
+
+### Derived / D-via-I (distinctive content, outside the consilience papers)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| Primordial tensor modes = substrate **saddle-Hessian-signature** fluctuations, the *same* mechanism as post-recombination GW propagation (Paper_ED_GW_00) | Cos-06 §3.4 | the cross-arc identification (D-via-I); "cleanest cross-arc unification in the arc" | consistency relation `n_T=−r/8` inherited | current — genuine ED-distinctive content |
+| Matter-antimatter asymmetry = structural consequence of **R4 single-template admissibility** under saturation + first-arrival IC | Baryogenesis | single-template admission (coherence functional + V5 phase-coherence + no-slack, D-via-I); global lock-in | `η_B≈6×10⁻¹⁰` **I** (Planck/BBN); *which* chirality wins = **IC-INHERITED** | current — form-IDENTIFIED (M3); **P-BinaryAdmission WITHDRAWN**; native ℤ₂ *relocated* to IC, not derived (#2b open core persists) |
+
+### Postulated
+| Claim | Paper | Postulate | Status |
+|---|---|---|---|
+| a₀ and ξ_canonical are FORCED to share one substrate-cosmology boundary origin | SCBU | **P-Substrate-Cosmology-Unified** (the single new postulate; audit row 6) | current — the folder's one substantive paper-specific postulate |
+
+*Naming conventions only (definitional per Paper_095 §2.3, NOT substantive postulates): P-Inflation-Identification (Cos-01), P-DarkEnergy-Identification (Cos-05), P-CCC-Identification (CCC). Baryogenesis and Cos-02/03/04/06 declare **zero** paper-specific postulates.*
+
+### Inherited (IC-INHERITED / value-INHERITED, load-bearing)
+| Item | Paper | Status |
+|---|---|---|
+| Uniform-Ψ realizability (the saturation IC) | Cos-01, Cos-05, Cos-06 | **IC-INHERITED**, framework-neutral: cyclic-CCC OR R3 single-aeon (choice "outside scope") |
+| First-arrival chirality χ* (which template = matter) | Baryogenesis | **IC-INHERITED**, framework-neutral; native ℤ₂ *relocated from postulate to IC*, not derived |
+| `Ω_c h²≈0.12` (CMB cold-dark-matter component, ~5× baryons) | Cos-03, Cos-04 | **INHERITED** as a ΛCDM-CDM proxy inside CAMB/CLASS — the standing clusters/CMB debt (see Open + `../dark-sector/`) |
+| `H₀` value | all Cos papers | **INHERITED** (a single substrate parameter; substrate derivation open) |
+
+### Prediction (falsifiable)
+| Claim | Paper | Falsifier | Status |
+|---|---|---|---|
+| Dark energy is strictly `w=−1`, no time-variation (vs quintessence/phantom) | Cos-05 (F1, F4) | clean phantom `w<−1` over wide z, or `ẇ≠0`, or `Λ̇≠0` beyond subleading | current — a real distinctive null; ties to 22-Ways `w=−1` |
+| Matter & antimatter follow identical V1 geodesics; no large antimatter domains | Baryogenesis (F2, F4) | antihydrogen falling at a different rate (ALPHA-g 2023 currently consistent); antimatter annihilation / bullet-cluster antimatter | current |
+| Group-embedded low-accel galaxies show a **knee-like** suppression sharper than MOND-EFE; isolated void UDGs show full enhancement | DF2/DF4 (Preds 1–4) | environmental independence (ΛCDM) or smooth MOND-EFE roll-off; Pred-4 uniquely ED but below current precision | current — a real ED-vs-MOND discriminator; suppression function uncalculated (Open) |
+| Route-A4 normalization: `A_s` and `r` jointly consistent with `H_infl∝Θ^{1/2}` | Cos-06 (F1, F2) | `A_s/r` inconsistent with Route-A4 `H_infl` | current — **channel-specific**, NOT a test of inflation itself |
+
+### Identification (structural mapping to an existing framework)
+| Claim | Paper | Status |
+|---|---|---|
+| CCC's six structural elements ↔ ED substrate content (𝒳↔SCBU; GWE↔V1/V5; twistor mass-integral↔V5 memory; Hawking spots↔localized V5; conformal matching↔SC-4.x scale-collapse; next-aeon ignition↔P12 re-entry) | CCC | **Identification (M3 form-IDENTIFIED + value-INHERITED)**; §6 mixes A→position rows (contrast-zero gluing, §3.6.1) with D-via-I rows; `δT/T, η^G, 4πG` all **I**. "Does not commit ED to cyclic cosmology" |
+| Contrast-zero state is unique ⟹ CCC's crossover *gluing* is an identity, not a postulated match | CCC §3.6.1 | **A→position**, conditional on the contrast ontology (Facts paper) — a grounding of CCC's assumption, not a substrate derivation |
+| Planck-mass remnants dissolve at 𝒳 (Scenario-C cutoff is a two-chain V5 handshake; boundary emptying removes the partner) | CCC §3.8 | **D-via-I**; faithful substrate-graph confirmation "precluded on existing tooling" (in-queue) |
+
+### Open
+| Item | Paper | Status |
+|---|---|---|
+| CMB/clusters decoupled dark component has **no native ED mechanism** | Cos-03/04 §1 (2026-07-19) | **OPEN** → `ED_Research_Targets.md` §5b. Mimetic-DM ruled out 3 ways (FRW→only H² G-renorm; P11+P13+`R∝b` = khronometric not mimetic; conformal mode = slaved); UDM-at-recombination ruled out by crowding (`c/c_max~10⁻¹¹⁴`); horizon-boost active but baryon-coupled (wrong type). Only working option = an added **AeST-class field** (Skordis-Złośnik). "Native and open, not a bolt-on." |
+| Gaussianity / CMB observed-layer debt | README / #5c | **OPEN** — substrate deposit field measured non-Gaussian below ~32 cells; reproducing known CMB objects does not by itself pay it. **Distinct from the #5b dark-matter debt** (see Staleness #4) |
+| ξ_canonical substrate-derivation from `H₀` (analogous to a₀) | SCBU (row 12) | **OPEN** — the paper's single open item; would upgrade M3→M2 |
+| Route A (substrate-derived `ℓ_V5(H₀)` → quantitative Λ, N~60, `H`) | Cos-01, Cos-05 | **OPEN** — the single load-bearing OPEN in each; "highest-leverage open derivation in the program" |
+| Suppression function (ED analogue of MOND's ν) from primitives | DF2/DF4 §5 | **OPEN** — order-of-magnitude only; exact knee shape uncalculated |
+| Twistor-analog substrate integral; Big-Ring/Grand-Arc scale; cyclic vs single-aeon termination | CCC (rows 14,15,17) | **OPEN** (three named) |
+| Non-load-bearing inherited puzzles: ⁷Li (Cos-02), Hubble tension (Cos-03), S₈ (Cos-04), ~60 e-folds / termination (Cos-01→06) | Cos-02/03/04/06 | **OPEN, non-load-bearing** — inherited standard-cosmology puzzles |
+
+### Superseded / Withdrawn / Relocated
+| Item | Note |
+|---|---|
+| **P-BinaryAdmission** (Baryogenesis) | **WITHDRAWN** (2026-05-17) — "binary chirality" declared a projection artifact; replaced by R4 single-template + first-arrival IC. Earlier M2 version archived in `event-density/remove from repo/superseded/`; `Memo_ED_BinaryChirality` (R1/R2/R3 routes) rendered moot |
+| Paper_038_5 (Λ-smallness) | referenced as **M2→M3 retroactive** (upgraded 2026-05-17 via Route A4) by Cos-04/06 |
+| SCBU Route-A construction/audit memos (×5) | relocated to `event-density/foundations/relocated_from_EDG_2026-07-09/` (per README) |
+
+### Staleness & README-refinements
+1. **README line 9 vs the Baryogenesis paper — RESOLVED 2026-07-29.** README said the chirality lock rests on "`P-BinaryAdmission`, which is undischarged" — but the paper (preamble item 2) says P-BinaryAdmission is **withdrawn via R4**. Current honest state: the *structural* asymmetry closes at M3 (D-via-I); *which* chirality wins is now **IC-INHERITED** (first-arrival, framework-neutral) — the native ℤ₂ is relocated from postulate to inherited IC, not derived; the "#2b open core" conclusion still holds. **README line 9 rewritten to this framing.**
+2. **README line 6 / seed vs the SCBU paper — RESOLVED 2026-07-29.** README said "SCBU is M3-closed — the **six-projection** model is form-forced, and `H₀` is form-derived from `Θ_ED` via **Route A4**." The SCBU **paper** formalizes only **two** projections (a₀, ξ_canonical) under P-Substrate-Cosmology-Unified, names **no Route A4**, derives **no H₀**, and lists ξ_canonical-from-H₀ as its single OPEN. "Six projections / H₀ via Route A4" are later **SC-4.x** results (`Update_ED_SC_4x_Arc_M3`) conflated into the README's description of *this* paper. **README line 6 rewritten** to attribute the six-projection / Route-A4 content to the SC-4.x arc, not the SCBU paper (and to note the Θ_ED primitive-grounding caveat).
+3. **CCC §3.2 correction (2026-07-06) not propagated to Cos-02–06.** The CCC paper carries a correction box: **Θ_ED has NO canonical Paper_087 primitive grounding** — its "P12 (ED-threshold)" label is a mistaken citation (canonical P12 = the chain-level stability functional `Σ_C=Coh−Str−Grad`, unrelated to an event-density threshold); Θ_ED "originates in this paper's CCC structural analogy, and was never checked against Paper_087 before propagating downstream." Yet Cos-02 §3.1 and Cos-03/04/06 still cite Θ_ED "at primitive level." The **INHERITED tier is unchanged**; only the "primitive-level" *phrasing* across Cos-02–06 is overstated. Full finding: `event-density/docs/Scoping_ThetaED_FirstPrinciples_2026-07-06.md`. **Actionable phrasing fix (AP's call — like the BH README headline).**
+4. **Target-number drift: #5b vs #5c are two distinct debts — RESOLVED 2026-07-29.** Cos-03/04 point the CMB dark-matter debt to `ED_Research_Targets.md` **§5b**; the README/seed folded it with **#5c** (the *Gaussianity* debt). Keep them separate: **#5b = the CMB/clusters dark-matter component; #5c = Gaussianity.** **README updated** (targets line + the dark-matter bullet now cite #5b explicitly).
+5. **Live-patched dates.** CCC is dated 2026-05-15 but carries a 2026-07-06 correction; Cos-03/04 carry 2026-07-19 dark-sector inserts. Not errors — but the header "Date" understates currency; the honest content lives in the dated inline inserts.
+6. **Wolfram/Ruliad in 8 peer-facing papers** (Cos-01…06, Baryogenesis, CCC), in the Position-Statement lineage line. Violates the standing no-Wolfram-in-public rule. **AP's standing decision: leave it** (no personal stake either way); recorded here for completeness, record-only. (SCBU and DF2/DF4 do not cite it.)
+
+### Honest arc-state
+The cosmology arc is **eight papers at M3, but the M3 is almost entirely "form-IDENTIFIED / value-INHERITED / IC-INHERITED"** — the standard sequence (BBN, CMB peaks, structure, inflationary spectrum) is reproduced as **consilience**, framed through a continuum-Friedmann DCGT bridge, with the numbers coming from standard codes (PArthENoPE, CAMB/CLASS) inherited wholesale; these are explicitly **not** novel predictions. The two genuinely *Grounded* load-bearing results are the **saturation-regime identification** (uniform-Ψ → `w=−1` via the Q1A+Q2A+C3 chain), which cleanly unifies inflation (Cos-01) and dark energy (Cos-05) as one mechanism and dissolves the Λ-catastrophe by removing the QFT mode-tower — but both bottom out in the **single open Route A** for any quantitative `H₀`/Λ, and rest on an **IC-INHERITED, framework-neutral** uniform-Ψ initial condition (cyclic-vs-single-aeon left undecided everywhere). Distinctive, testable content is thin and concentrated *outside* the consilience papers: the **`w=−1`-exact** null (Cos-05), the **saddle-Hessian tensor-mode = GW cross-arc identification** (Cos-06), and the **DF2/DF4 knee** (a real ED-vs-MOND discriminator, its suppression function not yet derived). Two honest debts stand un-paid and are flagged in-paper: the **CMB/clusters dark component** (`Ω_c h²≈0.12`) has, after a thorough 2026-07-19 sweep, **no native ED mechanism** (mimetic / UDM / horizon-boost each ruled out; only an added AeST-class field works — genuinely open, §5b); and the **Gaussianity debt** (#5c). Baryogenesis's 2026 R4 upgrade is real but **relocates** rather than discharges the native-ℤ₂ problem (postulate → inherited first-arrival IC), so the chiral-gauge open core (#2b) persists under a new label. CCC remains an **identification/resonance**, honestly non-committal on cyclicity. **Defensible headline:** *the standard cosmological sequence is reproduced as substrate-framed consilience (value-inherited from standard codes), with two genuinely-grounded saturation-regime results (inflation + dark energy as one mechanism, Λ-catastrophe dissolved) both gated on the single open Route A, and a thin distinctive edge (`w=−1` exact, the tensor-GW identification, the DF2/DF4 knee) — plus two openly-flagged debts (the CMB dark component and Gaussianity) the consilience does not pay.*
