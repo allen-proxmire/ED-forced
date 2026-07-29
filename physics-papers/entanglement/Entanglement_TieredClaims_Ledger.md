@@ -1,0 +1,75 @@
+# Entanglement Arc — Tiered-Claims Ledger
+
+**What this is.** This doc records **every load-bearing claim in the entanglement folder and its *current* tier** — derived, grounded, postulated, asserted, inherited, open, or superseded. It is three things at once:
+
+1. **The tier catalog** — what this arc actually claims, at what strength, and what each claim inherits or leaves open.
+2. **The staleness detector** — the `Status` column carries the current state, so *any paper (or the README) whose text disagrees with a row here is, by definition, stale*. You don't hunt for stale separately; this ledger is the ruler you hold up against each doc.
+3. **The anti-drift authority** — the single source of truth that `read-first` checks against, so a corrected result doesn't have to be re-discovered from the papers each time.
+
+**How it's built.** Read every paper; extract its load-bearing claims; tier each one *using the paper's own audit table / "what this does NOT claim" / verdict* — never inflated. Seeded from the folder README and `event-density/docs/ED_Research_Targets.md`, then corrected against the papers where they disagree (the read decides; the ledger records the winner, and the disagreement becomes a staleness note). A proportion of the tiers is **spot-checked directly against the papers** (not taken on the extractor's word), the sample scaled to the number of claims.
+
+**One of a per-folder set.** Each corpus folder gets its own tiered-claims ledger in this format; this is the entanglement folder's. *(Pilot — this doc validated the format.)*
+
+**Tier key.** `Derived` (forced from primitives) · `Grounded` (conditional/structural, given a stated input) · `Selected/Inherited` (standard math or a measured value, not substrate-derived) · `Postulated` (rests on a named paper-specific postulate) · `Asserted` (an audit A-row: stated, not proven) · `Synthesis` (arc consolidation) · `Open` · `Superseded/Retracted`.
+
+*Papers 063–072, all dated 2026-05-13. Read 2026-07-28. Spot-checked: 063 tiers and the 069↔Gleason-keystone Solèr residual, verified directly against the papers.*
+
+---
+
+### Derived (forced — but each conditional on a postulate in the Postulated table)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| No-signaling `p(a\|x,y)=p(a\|x)`, over-determined by 3 locks | 066 | Lock L1 (marginal independence) = **D-via-I** from tensor-product + POVM completeness | L2 rests on P-Substrate-Causality; L3 = Paper_073; "3-locks ⟹ over-determination" is an A→position | **current** — the cleanest paper in the arc; but Bell-Tsirelson is explicitly *open* here (row 11) |
+| Schmidt rank > 1 ⟹ non-factorizable | 064 §3.3 | **D** (standard SVD applied) | conditional on **P-V5-Schmidt-Generic** | current — strengthens 063's irreducibility *only under* that postulate |
+| Monogamy (CKW-form inequality) | 065 | **form D** (form-forced) from V5 finite budget + P04 additivity | conditional on **P-V5-Budget + P-Measure-Saturation**; coefficient inherited | current |
+| von Neumann entropy form `S = −Tr ρ log ρ` | 068 §3 | **D-via-I** (Shannon-Khinchin + Khinchin uniqueness) | conditional on **P-Continuity + P-Additivity + P-Maximality**; normalization inherited | current — two substrate-derivations open (see Open) |
+
+### Grounded / conditional
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| E-2 bilocal cross-chain term `Δ_KL` exists | 063 | D **conditional on V5** (Paper_090) | — | current |
+
+### Selected / inherited (standard math or measured value)
+| Claim | Paper | | Inherited | Status |
+|---|---|---|---|---|
+| The Schmidt decomposition *form* | 064 | — | **I** — SVD is standard math (round-7 relabel: was "D conditional on SVD", now I) | current |
+| Tsirelson bound `2√2` | 069 | — | **I** — "not derived from first principles… INHERITED" (preamble 1) | current |
+| Bell ⊊ Tsirelson ⊊ NS nesting; PR-box exclusion | 069 | D-via-I (form composition) | *entirely* conditional on **P-V5-Hilbert-Constraint** | current — inherits a Solèr residual (see Staleness) |
+| `k_B` / log-base normalization; concrete entropy values | 068 | — | **I** | current |
+
+### Postulated (rests on a named paper-specific postulate)
+| Claim | Paper | Postulate | Status |
+|---|---|---|---|
+| E-1 factorizable `Ψ^AB = Ψ^A ⊗ Ψ^B` & the tensor-product structure | 063 | **P-Bipartite-Mapping** — "part of this postulate's definitional commitment, not a separate derivation" | current |
+| V5-bilocal has Schmidt rank > 1 generically | 064 | **P-V5-Schmidt-Generic** — derivability from the V5 envelope alone is *open* | current |
+| ED sits at Tsirelson; PR-boxes excluded | 069 | **P-V5-Hilbert-Constraint** | current |
+| Monogamy budget cap; measure saturates the budget | 065 | **P-V5-Budget, P-Measure-Saturation** | current |
+
+### Asserted (audit A-row — stated, not proven)
+| Claim | Paper | Note | Status |
+|---|---|---|---|
+| **E-2 non-factorizability is *irreducible*** | 063 §3.3 | **A→assertion** — "does not supply an explicit irreducibility proof" (round-5: was D, now A) | current — **the arc's load-bearing soft spot** |
+| ER=EPR-class echo | 071 | **A→position** — "does NOT derive ER=EPR constructively"; rests on P-V5-Shared-EntanglementGravity | current |
+| Entanglement = unresolved individuation regime (not action-at-a-distance) | 072 | **A→position** — interpretive framing, does not modify QM predictions | current |
+
+### Synthesis
+| Claim | Paper | Note | Status |
+|---|---|---|---|
+| Bipartite architecture as one phenomenon | 070 | A→position — "does not override or strengthen constituent verdicts" | current (consolidation) |
+
+### Superseded / open
+| Item | Paper | Status |
+|---|---|---|
+| von Neumann E-6 (duplicate) | 067 | **SUPERSEDED by 068** (merged 2026-07-05); kept for provenance ✓ README correct |
+| O-vN-1: derive P-Additivity from P04 (quantitative) | 068 | **OPEN** |
+| O-vN-2: derive P-Maximality from P11 | 068 | **OPEN — "structurally blocked; ED has no substrate-level temperature"** |
+| derivability of P-V5-Schmidt-Generic | 064 §4 | **OPEN** |
+
+### Staleness & README-refinements
+- **The README's per-paper tiers are coarse and hide postulate/assertion reality** (the main finding): 063 "Grounded/Derived" hides P-Bipartite-Mapping (postulate) + irreducibility A→assertion; 064 hides Schmidt-form-inherited + P-V5-Schmidt-Generic; 068 hides three postulates + two OPEN derivations; 069 "Grounded" hides total dependence on P-V5-Hilbert-Constraint + inherited value; 071/072 "Grounded" understate — both are explicitly A→position.
+- **Concrete fixable stale reference:** `065 §2.2` cites *"I-E-6: von Neumann entropy (Paper_067)"* → should be **068** (067 superseded 2026-07-05).
+- **Tsirelson "retracted" (memory) — clarified, not a hit on 069:** the retraction is a *different* artifact (`Paper_V5AttractiveSign`, characterizing V5 via Tsirelson's theorem). Paper_069's polytope reconstruction **stands** — but its load-bearing P-V5-Hilbert-Constraint posits the very Hilbert inner-product the **July Gleason keystone** reconstructs only at account-tier with a **Solèr residual**, so 069 is not fully "closed"; it inherits that residual.
+- **Arc-anchoring soft spot:** 063's irreducibility is an A→assertion; 064 upgrades it to a theorem *only under* P-V5-Schmidt-Generic (a postulate). So "entanglement = irreducible non-factorizability" — the claim the whole arc rests on — is never derived from primitives; it is postulate-to-postulate.
+
+### Honest arc-state (corrects README line 8)
+**"CLOSED, no open frontier" is an overstatement.** The arc is *form-complete and internally coherent* — every standard entanglement structure (tensor product, Schmidt, monogamy, no-signaling, vN entropy, Bell-Tsirelson, ER=EPR echo) has a substrate reading, and no-signaling (066) is genuinely over-determined. But the reproductions are **form-forced conditional on ~6 V5 postulates** (P-Bipartite-Mapping, P-V5-Schmidt-Generic, P-V5-Budget, P-Measure-Saturation, P-V5-Hilbert-Constraint, P-Substrate-Causality), with the **irreducibility that *defines* entanglement left as an A→assertion**, **two vN-entropy substrate-derivations open** (one structurally blocked), and the ER=EPR / individuation papers explicitly A→position interpretation. **Defensible headline:** *the bipartite entanglement formalism is reproduced form-forced / value-inherited, on a stack of V5 postulates and one unproven irreducibility assertion — a coherent structural account, not a primitives-closed derivation.*
