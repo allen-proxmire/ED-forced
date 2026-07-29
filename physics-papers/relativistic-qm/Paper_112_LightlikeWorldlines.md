@@ -1,7 +1,9 @@
 # Paper RQM-T10 — Lightlike Worldlines for $\sigma = 0$ Rule-Types
 
 **Series:** Wave-3 Relativistic-QM Bridge — Theorem T10
-**Status:** Wave-3 generative paper; M3 verdict at write-time. Existence claim CONDITIONAL on GRH D1 unconditional derivation (in queue).
+**Status:** Wave-3 generative paper; M3 verdict at write-time. Existence claim CONDITIONAL on GRH-D1 (see the update note below).
+
+> **Update 2026-07-29 — "GRH-D1 in queue" is superseded.** The GRH unconditional-D1 result this paper conditions `σ=0` existence on has **landed as `Paper_114_GRH_D1_P_Gauge`** — but it is **M2, conditional on the declared P-Gauge postulate** (whose substrate derivation is OPEN), *not* an "unconditional" derivation. So throughout this paper, read "GRH unconditional D1 (in queue)" as **"Paper_114, conditional on the P-Gauge postulate."** The net status is unchanged in spirit — `σ=0` existence remains conditional — but the dependency is now on Paper_114's P-Gauge postulate, not on a derivation still in queue.
 **Companions:** Paper_RQM_T1 (Spin–statistics), Paper_RQM_T5 (KG), Paper_RQM_T7 (Lorentz reps), Paper_017 (Lorentz covariantization), Arc-R Q.7 and Q.8.
 
 ---

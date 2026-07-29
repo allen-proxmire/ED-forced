@@ -147,7 +147,7 @@ Specifically: the V1 kernel acts on each spinor component $\Psi^\alpha(x)$ via t
 | 12 | Specific particle masses (electron, muon, ...) | I | Empirical. |
 | 13 | Dirac equation as Arc-R Stage R.3 canonical result | A→position | Framing-claim verdict row (per Paper_095 §3.3): position-statement classification of the result within the Arc-R program, not derivation. |
 | 14 | Substrate-V1 propagation produces Dirac structure under DCGT | D-via-I | Paper_089 + Paper_073 coarse-graining (asserted via inheritance). |
-| 15 | Substrate-V1 → Dirac equation explicit derivation | OPEN | The §3.7 substrate-V1 connection is asserted via standard substrate-Lorentz-covariantization (Paper_017 inheritance) but the explicit substrate-graph-to-Dirac derivation is not closed in this paper. |
+| 15 | Substrate-V1 → Dirac equation explicit derivation | **form-identified + continuum-limit-computed; residual OPEN** | Per the §3.7 update (2026-07-10): the substrate-V1 → Dirac *continuum limit is computed* (`D(p)=Σγ^μ(e^{ip_μ}−1)≈iγ^μp_μ`; retardation = Wilson term undoubling Nielsen–Ninomiya `16→1`). **Residual genuinely OPEN:** the fully-covariant canonical-V1 proof (worldline light-cone) and the graph-native construction of the spinor itself (canonical P07 supplies no native channel topology). The M2 verdict is unchanged — the closed proof is still open. |
 
 ---
 
