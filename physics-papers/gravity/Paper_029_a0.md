@@ -355,6 +355,10 @@ The cosmic decoupling surface at $R_H = c/H_0$ is the substrate-level effective 
 
 ED produces the transition acceleration scale, not the full MOND interpolation function $\mu(x)$. ED's transition profile (via Paper_030's ECR) is structurally derived; empirical comparison to specific MOND $\mu(x)$ choices is downstream work.
 
+### 8.8 $a_0$ is *not* cosmologically constant — it evolves (the forward prediction, now data-confronted)
+
+Distinct from the $H_0$-value point of §8.5: because $a_0 = cH/(2\pi)$ reads the horizon $R_H = c/H$ *at the epoch in question*, the transition scale is not a constant of nature but tracks the *instantaneous* Hubble rate, $a_0(z) = cH(z)/(2\pi)$ — developed as a forward prediction in **Paper_031 §8.8** and **Paper_038 CO-3**, with ED's mechanism forcing the exponent $\alpha = 1$ in $a_0 \propto H^\alpha$. First data — **MUSE-DARK III (A&A 2026)** — detect this evolution across $0.33 < z < 1.44$ at **~30σ**, excluding a constant $a_0$ (and so burying constant-scale MOND), with a ~8% match to the local value. The measured rate runs mildly *faster* than $H(z)$, so ED's forced $\alpha = 1$ is confirmed in *direction* but in mild tension on the *exact rate* — the decisive open number for Rubin/Euclid. This paper derives only the local normalization $a_0 = cH_0/(2\pi)$; the evolution and its data-confrontation live in the cited companions.
+
 ---
 
 ## 9. Falsification Criteria

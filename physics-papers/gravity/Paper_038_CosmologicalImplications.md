@@ -96,6 +96,8 @@ By Paper_029 + Paper_037, $a_0$ is structurally tied to $H_0$ at the substrate l
 
 This is **D** (composition of I-029 + I-037) and supplies a structural empirical-prediction channel: $a_0$ at high redshift should differ from local $a_0$ by the same factor as $H_0$.
 
+**Data confrontation (added 2026-07-29; canonical treatment in Paper_031 §8.8).** Read as a cosmic-time statement — $a_0(z) = cH(z)/(2\pi)$, ED's mechanism forcing the exponent $\alpha = 1$ in $a_0 \propto H^\alpha$ — CO-3 is now data-confronted. **MUSE-DARK III (A&A 2026)** detects the acceleration scale to *evolve* across $0.33 < z < 1.44$ at **~30σ**, excluding a constant $a_0$ and burying constant-scale MOND, with a ~8% match to the local value: ED's distinctive *direction* is confirmed where MOND predicted none. The **live tension** is on the exact rate — the measured evolution runs mildly *faster* than $H(z)$, so ED's forced $\alpha = 1$ sits in mild tension (order one-to-few σ on one first-generation survey, high-$z$ systematics still to be pinned); the exact exponent is the decisive open number for Rubin/Euclid. **F2 stands** (a₀ shown *not* to redshift-evolve refutes CO-3); the direction is now supported and the sharper live test is whether the rate is compatible with $\alpha = 1$.
+
 ---
 
 ## §4 Open Cosmological Questions

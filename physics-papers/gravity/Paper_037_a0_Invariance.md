@@ -13,6 +13,7 @@
 3. It does **not** claim that all coarse-graining limits preserve $a_0$; only the **substrate-consistent** continuum limit under DCGT preserves it.
 4. It does **not** introduce new substrate primitives.
 5. "Continuum-limit invariance" means: $a_0$ as defined by $c H_0 / (2\pi)$ (Paper_029) is **not** rescaled by substrate→continuum coarse-graining; substrate-level $c$ and cosmological-level $H_0$ are individually preserved, and their product is the same in substrate and coarse-grained descriptions.
+6. **Continuum-limit invariance is *not* cosmological constancy.** This paper's invariance is under the substrate→continuum *coarse-graining* (RG) map at fixed epoch; it does **not** claim $a_0$ is constant over cosmic *time*. On the contrary, because $a_0 = cH/(2\pi)$ reads the horizon at the epoch in question, $a_0$ **evolves** as $a_0(z) = cH(z)/(2\pi)$ (forward prediction: Paper_031 §8.8, Paper_038 CO-3; direction confirmed at ~30σ by MUSE-DARK III, A&A 2026, exact rate in mild tension). The two statements are compatible: $a_0$ does not *RG-run* with energy, but it *does* track the live Hubble rate across redshift.
 
 ---
 
