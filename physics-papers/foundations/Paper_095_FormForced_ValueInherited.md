@@ -59,7 +59,7 @@ This is a methodology paper; primitives are invoked only at the meta-level. The 
 
 ### 3.1 Three verdict tiers
 
-- **(M1) FORCED-unconditional.** Example: Phase-1 QM emergence (four QM postulates forced from primitives + standard math; no additional postulates declared at the QM-postulate level).
+- **(M1) FORCED-unconditional.** Example: the **anyon prohibition in D=3+1** (Paper_104) — `π₁(config space)=Sₙ` in d=3 admits only the 1-dimensional exchange reps `η=±1`, forcing the fermion/boson dichotomy from P06 + standard topology, with **no inherited numerical content and no paper-specific postulate**; likewise Cl(3,1) frame uniqueness (Paper_103). *(Correction 2026-07-29: the earlier M1 example, "Phase-1 QM emergence — four QM postulates forced, no additional postulates," was **reclassified to M2 (Intermediate Path C)** — Paper_098's Round-4 correction — because the four-postulate closure rests on declared paper-specific postulates (P-Motif-Algebra, P-Channel-Orthogonality, P-Gleason-Compatibility, P-Norm-Preservation, P-Commit-Projector-Match, P-QMkin-Composition, P-Bipartite-Mapping). It is NOT an M1 example. See Paper_098 §3.1.)*
 - **(M2) Intermediate Path C.** Example: NS-smoothness (Paper_077), YM Clay-relevance (Paper_023), Arc ED-10 (Paper_033), NS-MHD H1/H2/H3 closure (Paper_081). Substrate mechanisms identified; postulates declared; constructive derivations OPEN.
 - **(M3) form-FORCED + value-INHERITED.** Example: Newton's $G$ (Paper_027; form FORCED, $G$ value INHERITED), BTFR slope-4 (Paper_031), area-law (Paper_043), Krieger–Dougherty rheology (Paper_079).
 

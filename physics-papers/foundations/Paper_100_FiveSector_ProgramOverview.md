@@ -62,12 +62,12 @@ No structural-analogy mislabel.
 **Scope.** Phase-1 QM emergence + bipartite entanglement architecture.
 
 **Closed arcs:**
-- Phase-1 QM-emergence program (16 theorems; 4 QM postulates FORCED-unconditional).
+- Phase-1 QM-emergence program (16 theorems; 4 QM postulates at **M2 — Intermediate Path C**, with declared paper-specific postulates; *not* FORCED-unconditional — Paper_098 Round-4 correction).
 - Arc E (entanglement, 7 memos).
 
 **Key results:** Born-Gleason rule, tensor-product structure, Schmidt decomposition, monogamy, no-signaling, von Neumann entropy.
 
-**Methodology level.** FORCED-unconditional at QM-postulate level; FORM-FORCED / value-INHERITED at the measure level.
+**Methodology level.** **M2 (Intermediate Path C)** at the QM-postulate level (four postulates closed conditional on declared paper-specific postulates — Paper_098 Round-4 correction of the prior "FORCED-unconditional" overclaim); FORM-FORCED / value-INHERITED at the measure level.
 
 ### 3.2 Sector 2: Gauge Structure
 

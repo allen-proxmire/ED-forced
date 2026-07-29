@@ -81,7 +81,7 @@ This paper takes the following ED substrate primitives as **postulated within th
 
 - **Paper_087:** position paper (13-primitive enumeration).
 - **Paper #1 (participation measure):** complex polar carrier $P_K = \sqrt{b_K}\,e^{i\pi_K}$.
-- **Paper #3 (inner product + orthogonal bands):** four-band orthogonality.
+- **Inner product (canonical):** the Gleason reconstruction (`substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction`) + Paper_004 — orthogonality *reduced to operational channel-distinctness*, residual = Solèr rigor. *(Corrected 2026-07-29: the earlier "Paper #3 — four-band orthogonality" citation was the archived M-series; canonical Paper_087 has no four-band, and N1/T18 do not load-bear on it — they rest on P02/P04/P07/P08/P11.)*
 
 **Postulates specific to this paper (added per round-4 QC Rereading Test):**
 
@@ -457,7 +457,7 @@ The empirical case for V1 — and through V1 for the 13-primitive substrate onto
 
 - **Position paper:** Paper_087 — 13-primitive enumeration.
 - **Paper #1 (Participation Measure):** complex polar carrier on which V1 operates.
-- **Paper #3 (Inner Product + Tsirelson Bound):** four-band orthogonality.
+- **Inner product + Tsirelson bound (canonical):** the Gleason reconstruction + Paper_069 (Tsirelson). *(Corrected 2026-07-29: the earlier "Paper #3 — four-band orthogonality" was the archived M-series; not load-bearing for V1/N1/T18.)*
 - **Paper_090 (V5 Cross-Chain Kernel):** inherits V1's structural features.
 - **Paper_093 (Kernel Arrow of Time T18 standalone):** elaborates T18's philosophical and cross-domain content.
 - **Paper_027 (Newton's $G$):** uses V1 via cumulative-strain reading.
