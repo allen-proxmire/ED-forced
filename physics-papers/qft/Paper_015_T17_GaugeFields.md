@@ -258,6 +258,8 @@ This is the substrate-ontological analog of standard gauge-theory fiber bundles,
 
 ## 6. Non-Abelian Generalization via Multi-Rule-Type Composition
 
+> **Forward pointer (2026-07-29): this section's "by analogy" is now superseded by a derivation.** The non-abelian structure below is tiered **A→analogy** (P-NonAbelian-Analogy) in this paper. It has since been **derived**: `Paper_MS-I_GaugeFromChannels` §3 and `Paper_MS-II_MatterSectorFromTheArrow` §2 obtain `SU(N)` as *forced by channel multiplicity* (N indistinguishable channels + bandwidth conservation P04 → `U(N)=SU(N)×U(1)`), replacing the analogy. Read those for the current, derived status; this section is retained for provenance.
+
 ### 6.1 The substrate-level mechanism
 
 Higher-rank gauge groups (non-abelian $SU(N)$, etc.) emerge not from larger-$U(N)$ primitive polarity but from **substrate-level multi-rule-type composition** under P10.

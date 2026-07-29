@@ -170,6 +170,8 @@ This also resolves a puzzle in the substrate→Dirac chain (T4, Paper_106 §3.7)
 
 ## 6. The Arrow is the Origin of Chirality
 
+> **Correction (2026-07-10), retiring the P-imprint half of this section.** The account below that the first commitment imprints *both* a matter/antimatter reference (C) *and* a parity reference (P) — the "screw → a parity reference" of §6.2 — **over-reads its P-half.** ED natively selects the **C** reference but **not** a native P (parity) reference. The successor result: the clean substrate is **provably vector for every channel-count** (a transport-level theorem), so parity violation is **necessarily spontaneous**, and *which* force is chiral is **inherited** (representation-theoretic, the pseudoreality of `SU(2)`), not derived. The `γ⁵` locus is also **global** (`γ⁵ = i γ⁰γ¹γ²γ³` = the arrow times the one spontaneous global spatial orientation), not a per-channel "screw." See `physics-papers/substrate-evaluation/Paper_CleanSubstrateVector_ParitySpontaneous.md` and MS-II §4.2 (which carries this correction inline). The C-imprint half, and "all chirality traces to the arrow," stand; only the native-P claim is retired.
+
 The structural results (§3–§5) place *where* chirality can live (the non-abelian/V5 sector, the channel topology). This section accounts for *where it comes from*. It is an account built on established pieces plus one synthesis, not a closed proof.
 
 ### 6.1 A commitment is a handed event
