@@ -4,7 +4,7 @@
 
 **State of the arc** *(authoritative source: `event-density/docs/ED_Research_Targets.md`, target #8b; PAPERS_INDEX Arc 1)*:
 - **The QM-emergence arc is CLOSED** — the four postulates and the standard phenomena are substrate-derived (a 16-theorem program).
-- **The one open residual is the inner product / Gleason step** (Paper_004, Paper_007): the sesquilinear form is grounded *conditional on* two added postulates (P-Channel-Orthogonality, P-Gleason-Compatibility). Recent work (#8b) partially derived P-Gleason-Compatibility (bookkeeping sense) and confirmed P-Channel-Orthogonality is *not* yet closed. So the inner product is the honest open edge of an otherwise-closed arc.
+- **The one open residual is the inner product / Gleason step** (Paper_004, Paper_007): the sesquilinear form is grounded *conditional on* two added postulates (P-Channel-Orthogonality, P-Gleason-Compatibility). **Current status (updated 2026-07-29):** the Gleason keystone reconstruction (`../substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction.md`) has **reduced** channel-orthogonality to channel-distinctness *given the representation* (operational distinguishability), **selected ℂ** from the Solèr menu, and **discharged** the equal-norm condition (2026-07-10), narrowing the residual to the **Solèr lattice technical rigor alone** — i.e. **"reduced to the Solèr residual,"** stronger than Paper_004's earlier "blocking/three-routes-fail" but still short of a closed uniqueness theorem. *(Papers 004/007 carry the earlier "blocking" wording with dated update pointers to the reconstruction.)* So the inner product is the honest open edge of an otherwise-closed arc — now a technical Solèr residual, not a structural block.
 - **Values inherited:** `ℏ` (form-identified in the operator papers, value inherited — see 012.5 / 012.6).
 
 **Tier key** *(ED's own verdict tiers, from each paper's audit)*:
@@ -32,8 +32,8 @@ The clean path through the postulate emergence:
 | # | Paper | Result | Tier |
 |---|---|---|---|
 | 001 | [Pre-Individuation Amplitudes](Paper_001_PreIndividuation.md) | amplitudes from P01–P04, upstream of the Born rule | Grounded |
-| 002 | [Tensor-Product Composition](Paper_002_TensorProduct.md) | composite systems (P02 + P03) — the composition postulate | Derived |
-| 003 | [The Born Rule](Paper_003_BornRule.md) | probability as the participation-frequency limit | Derived |
+| 002 | [Tensor-Product Composition](Paper_002_TensorProduct.md) | composite systems — the composition postulate | **Postulated** (P-QMkin-Composition; not from P02+P03 alone, per the paper's own audit) |
+| 003 | [The Born Rule](Paper_003_BornRule.md) | probability as the participation-frequency limit | **Grounded** (rests on P-LinRate + a frequentist assumption, per the paper's own audit) |
 | 003.5 | [Participation Measure](Paper_003_5_ParticipationMeasure.md) | `P_K = √b_K · e^{iπ_K}` as the amplitude carrier | Grounded (M3) |
 | 005 | [Projective Measurement](Paper_005_ProjectiveMeasurement.md) | measurement/collapse from P11 commitment | Grounded |
 | 006 | [Unitary Evolution](Paper_006_UnitaryEvolution.md) | unitarity from V1 kernel propagation | Grounded |

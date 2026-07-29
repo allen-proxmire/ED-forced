@@ -1,0 +1,80 @@
+# QM-Kinematics Arc — Tiered-Claims Ledger
+
+**What this is.** Every load-bearing claim in the qm-kinematics folder (the reconstruction of QM from the substrate) and its *current* tier. Three things at once: (1) the **tier catalog**, (2) the **staleness detector** (the `Status` column is current state; any doc disagreeing with a row is by definition stale), (3) the **anti-drift authority** `read-first` checks against.
+
+**How it's built.** Read every paper; tier each claim *from the paper's own audit table / status line / "does NOT claim"* — never inflated (the README is optimistic on 002/003 and **stale on the Gleason step** — that is the point of this ledger). Seeded from the folder README + `event-density/docs/ED_Research_Targets.md` (#8b), corrected against the papers *and the sibling reconstruction paper* where they disagree.
+
+**One of a per-folder set.** Companions: `entanglement/…`, `black-hole/…`, `cosmology/…`, `dark-sector/…`, `gravity/…`, `qft/…`.
+
+**Tier key.** `Derived` (M1, from primitives) · `Grounded` (M2/M3 — structural/conditional; form-forced with an identified/inherited value) · `Selected/Inherited` (a value: ℏ, the Tsirelson bound, ℂ from the Solèr menu) · `Postulated` · `Asserted` (A→position) · `Synthesis` · `Open`. `D-via-I` = form derived by applying standard machinery to an inherited input.
+
+*24 papers + the sibling `substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction.md`. Read 2026-07-29 (extraction agent, then spot-checked).*
+*Spot-checked directly against the papers (5, scaled to 24; **no catch** — reliable, incl. the load-bearing reconciliation): (1) **the Gleason step both sides** — Paper_004's Update 2026-07-02 "P-Channel-Orthogonality remains fully open… three routes fail… the blocking postulate" (STALE) vs the reconstruction paper's axiom table "Channel orthogonality — **reduced (given representation)**," ℂ "**selected**," status "reduced to the Solèr technical residual… a reconstruction, not a closed theorem" — confirmed; (2) **002** tensor-product = Postulated ("derived under P-QMkin-Composition… a paper-specific postulate," preamble #2 — README's "Derived" inflated); (3) **003** Born rule rests on "P-LinRate… a postulational commitment, not a derivation" + frequentist interp (README's "Derived" inflated); (4) **012.6** Heisenberg "four-band" = position/momentum/time/energy sectors (P-FourBand, substrate-derivation OPEN), NOT the archived M-series four-band; the ℏ/2 bound is INHERITED (Robertson 1929 + Cauchy-Schwarz + CCR); (5) **004.5** Tsirelson bound INHERITED (Landau-Cirelson 1980), inner-product form M3 — plus the `b_K` vs `√b_K` convention drift confirmed.*
+
+---
+
+### Derived (M1 — from primitives, or D-via-I within the paper's own audit)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| Complex polar carrier `P_K = √b_K·e^{iπ_K}` | 001 | carrier form from P01–P04 + P09 (audit = D); `\|P_K\|²=b_K` algebraic | √-convention = P(convention); `arg=π_K` = P(definition); inner product = I | **Derived (carrier form)**; convention-tagged |
+| Berry phase `γ_C=∮A·dR` = holonomy of the coarse-grained P05 connection | 009 | D-via-I (holonomy on Paper_016's connection) | numerical γ_C inherited; non-abelian/off-diagonal OPEN; P-Adiabatic-CG, P-Loop-Closure postulated | D-via-I |
+| Aharonov-Bohm phase `∮A·dx` from T17 bundle circulation | 010 | D-via-I (fiber-bundle holonomy) | `e/ℏ` inherited; paper states "ED does **not** newly predict AB" | D-via-I |
+| Bloch form `ψ_k=e^{ikx}u_k(x)` from discrete translation symmetry | 011 | D-via-I (abelian rep theory) | band content inherited; P-Discrete-Translation + P-Symmetric-Hamiltonian postulated | D-via-I |
+| Galilean adjacency/propagation bandwidth-asymmetry | 012.7 | asymmetry FORCED by P03 (adjacency invariant) + P04 (propagation transforms) | **full Galilean/Bargmann cohomology OPEN** (P03 necessary, not sufficient); m inherited | Grounded (M3), restricted scope |
+
+### Grounded (M2/M3 — form-forced/identified with an inherited or identified value)
+| Claim | Paper | What's derived | Inherited / open | Status |
+|---|---|---|---|---|
+| Born rule `f_K=\|c_K\|²` as the participation-frequency limit | 003 | frequency limit `f_K=b_K/Σb` → Born (audit D) | **rests on P-LinRate (P, load-bearing) + frequentist interp (A→assumption)** | **Grounded, NOT pure-M1** (paper softens it; README "Derived" inflated) |
+| `P_K=√b_K·e^{iπ_K}` amplitude carrier, complex-valued forced | 003.5 | form FORCED by P04+P05+P09+interference (3 args) | b_K, π_K values inherited | M3 |
+| Sesquilinear inner-product form `⟨P,Q⟩=ΣP_K*Q_K` (discrete) | 004.5 | form M3-FORCED from P04+P09+composition | **Tsirelson bound `2√2` INHERITED** (Landau-Cirelson 1980); uses `P_K=b_K e^{iπ}` (`\|P\|²=b²`), inconsistent with 001/003.5's corrected √b (Staleness #4) | M3 (form); Tsirelson Inherited |
+| Continuum inner-product `∫Ψ*Φ dμ` on `L²(M,dμ)` | 004.6 | form-consistent under DCGT + P-ScaleSeparation | measure conventions inherited | M3 |
+| Projective measurement (projector `Π_K`, collapse, Born prob) | 005 | post-state/completeness follow; Born prob D-conditional on P-LinRate | **P-Commit-Projector-Match (P) load-bearing**; rests on P-Channel-Orthogonality (from 004) | Grounded/Postulated |
+| Double-slit interference `ρ=\|ΣP_K\|²`, which-path = V5 injection | 005.5 | M3 form-IDENTIFIED (zero pure-D rows) | fringe geom, λ=h/p, visibility inherited; Θ_ED value + V5-injection-rate OPEN; **Θ_ED "P12 ED-threshold" mislabel corrected 2026-07-06** (Staleness #6) | M3 (identification) |
+| Unitary evolution → Schrödinger `iℏ∂_tΨ=HΨ` | 006 | norm-preserving ⇒ unitary; Stone ⇒ Hamiltonian form | **P-Norm-Preservation (P) load-bearing**; Stone + polarization = I; specific H inherited | Grounded (conditional) |
+| Schrödinger equation via Stone's theorem | 006.5 | load-bearing = the substrate identification (P11→norm-preservation, P13→time-translation) | **Schrödinger eqn itself = P (definitional, Paper_095 §2.3)**; Stone = I; ℏ inherited | M2 (Intermediate Path C) |
+| Kinetic operator `T̂=p̂²/2m`, the factor-2 | 006.6 | factor-2 form-FORCED **via the NR limit of Klein-Gordon** | **independent substrate-Galilean-Jacobian derivation of ½ = OPEN**; V(x), m inherited | M3; ½-from-primitives Open |
+| Schrödinger emergence in the thin-participation limit | 006.7 | leading-order unitary form forced in-regime | **V1→unitary coarse-graining OPEN** (asserted via DCGT analogy) | M2, partly Open |
+| Hilbert space = Cauchy completion of the motif algebra | 007 | emergence D-conditional on P-Motif-Algebra (P) + Cauchy (I) | **inner product = I (Paper #3); the I→D relabel needs both Gleason postulates** — see Staleness #1 | Grounded; inner-product edge Open/**superseded** |
+| Phase structure `S¹/U(1)` on rule-types | 008 | form-FORCED by P09+P10 + 3 postulates | 2π normalization inherited; O-Phase-1..4 open | M3 |
+| Phase-independence of bandwidth = U(1) gauge invariance | 008.5 | polar-decomp invariance lemma + **identification** with U(1) gauge | substrate derivation of U(1) gauge invariance from P09 alone OPEN; role of P11 OPEN | M3 (lemma + identification) |
+| Momentum operator `p̂=−iℏ∇` = translation generator | 012.5 | form-identified via Stone on the P03 translation group; CCR `[x,p]=iℏ` follows | **P-MomentumIdentification declared (substrate derivation OPEN)**; `−iℏ∇` named as P; **ℏ INHERITED** | M3; ℏ Inherited |
+| Heisenberg `Δx·Δp ≥ ℏ/2` | 012.6 | composition D-via-I | **bound INHERITED (Robertson 1929 + Cauchy-Schwarz + CCR)**; `ℏ/2` inherited; P-FourBand declared, substrate-derivation OPEN | M3; bound Inherited; four-band Open |
+
+### Selected / inherited (a value from measurement, or a menu-selection)
+| Item | Paper | Status |
+|---|---|---|
+| `ℏ` throughout the operator sub-arc | 012.5, 012.6, 006.5, 006.6 | **value INHERITED** (Paper_RQM_hbar) |
+| Tsirelson bound `2√2` | 004.5 | **INHERITED** from Landau-Cirelson 1980 (a standing construction — NOT the separately-retracted "Tsirelson reduction" V5 characterization) |
+| Complex field ℂ (from the Solèr menu `{ℝ,ℂ,ℍ}`) | Gleason-Recon (sibling) | **SELECTED** (account): P09 scalar phase rules out ℝ; V5/063 composites rule out ℍ |
+
+### Postulated
+| Claim | Paper | Note | Status |
+|---|---|---|---|
+| Tensor-product composition `Ψ^{AB}=Ψ^A⊗Ψ^B` | 002 | **P-QMkin-Composition** — "not from P02+P03 alone… a paper-specific postulate" (preamble #2); companion to Paper_063 | **Postulated** (README "Derived" inflated) |
+| P-RB-1 local rate of becoming; substrate-c constancy | 012 | "a commitment, not a set of derivations"; ℏ (O-RB-1) and c-from-deeper (O-RB-2) OPEN | Postulated (foundational commitment) |
+
+### Synthesis
+| Claim | Paper | Note | Status |
+|---|---|---|---|
+| Four QM postulates unified under the participation measure | 011.5 | four postulates = "four facets of one substrate structure" via distinct primitive routes | **Synthesis (M2)** — explicitly NOT a Hardy/CDP closed-proof; per-theorem substrate closure OPEN |
+
+### Open (the arc's declared edge) — and the reconstruction that moved it
+| Claim | Paper | Status |
+|---|---|---|
+| Substrate Gleason: inner-product uniqueness | 004 | **Open — but this framing is STALE.** Under P-Channel-Orthogonality + P-Gleason-Compatibility the form is determined; Paper_004's Update 2026-07-02 says P-Channel-Orthogonality "remains fully open / three routes fail / blocking." **Superseded by the reconstruction (next row).** |
+| Inner-product row for Hilbert space | 007 | stays **I**; same 2026-07-02 blocking note — **stale/superseded** |
+| **Orthogonality reduced; ℂ selected; residual = Solèr** | **Gleason-Recon** (`substrate-evaluation/`, ~July 2026) | **the current word.** Channel-orthogonality **REDUCED to channel-distinctness *given the representation*** (operational distinguishability, Move 1); ℂ **selected**; covering law candidate-grounded (channel basis); einselection **primitive**; Born non-contextuality resolved; equal-norm/angle condition **discharged 2026-07-10**. Residual = **Solèr lattice technical rigor only**. Honest status: **"reduced to the Solèr residual" — stronger than 004's "blocking," weaker than "closed theorem."** |
+
+### Staleness & README-refinements
+1. **THE Gleason reconciliation (the load-bearing write-back) — FIXED 2026-07-29.** Papers **004 and 007 were STALE**: both carried the 2026-07-02 verdict "P-Channel-Orthogonality fully open / three routes fail / blocking; inner product stays I." The later `substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction.md` **supersedes** this — orthogonality **reduced** to channel-distinctness *given the representation* (operational distinguishability), **ℂ selected**, covering law candidate-grounded, Born non-contextuality resolved, the **equal-norm/angle condition discharged (2026-07-10)**, residual narrowed to **the Solèr lattice technical rigor alone**. Memory (`project_pchannel_orthogonality_target`, `project_gleason_complementarity_reframe`) is current and correct. **Applied:** dated "Update 2026-07-29" pointers added to **Paper_004** (a new update section) and **Paper_007 §preamble-3**, changing "fully open/blocking" → "reduced to the Solèr residual." *(This is the exact drift CLAUDE.md names — #8b read "blocking" while the keystone had been reconstructed.)*
+2. **Both READMEs echoed the stale framing — FIXED 2026-07-29.** `qm-kinematics/README.md` and `substrate-evaluation/README.md` both reproduced the pre-reconstruction "not closed / three routes fail / Partial" language. **Both updated** to "reduced to the Solèr residual (stronger than blocking, short of a closed theorem)."
+3. **README tier inflation on 002 and 003 — FIXED 2026-07-29.** README marked 002 = Derived and 003 = Derived; the papers' own audits make 002 **Postulated** (P-QMkin-Composition) and 003 **Grounded** (P-LinRate + a frequentist A→assumption). **qm-kinematics README table updated** to Postulated / Grounded with the reason inline.
+4. **Convention inconsistency 004.5 vs 001/003.5.** 004.5 (and 004.6, which inherits it) still uses `P_K = b_K·e^{iπ_K}` (`\|P_K\|²=b_K²`) while 001/003.5 corrected this to `√b_K` (`\|P_K\|²=b_K`). 004.5 was not swept when the convention was fixed. Minor but load-bearing for `⟨P,P⟩=Σb_K²` vs `Σb_K`.
+5. **"Four-band partition" (012.6) — checked, CLEAN (not the archived M-series).** 012.6's four bands are position/momentum/time/energy *sectors*, declared as **P-FourBand with substrate-derivation OPEN**, and **not load-bearing** for the ℏ/2 bound (which is entirely inherited Robertson + Cauchy-Schwarz + CCR). Flagging only because the phrase collides with the M-series flag — the sourcing here is clean. *(Reconciles the memory `project_substrate_higgs_emergence` four-band concern: that was the archived dwell-mass, not this.)*
+6. **Θ_ED mislabel — self-corrected but propagates.** 005.5's "P12 (ED-threshold)" is a mislabel (canonical P087 P12 is a stability-landscape functional); flagged in-paper 2026-07-06 (origin = the CCC paper, itself flagged). Verdict unaffected (Θ_ED remains INHERITED), but any doc citing "P12 = ED-threshold" is stale.
+7. **Wolfram/Ruliad in the Wave-3 U-series papers** (003.5, 004.5, 004.6, 006.5, 006.6, 006.7, 008.5, 011.5, 012.5, 012.6, 012.7) — the standard Position-Statement lineage line. Violates the no-Wolfram-in-public rule. **AP's standing call: leave it.** Record-only.
+8. **Cross-reference numbering drift.** The Wave-3 papers cite the Born rule as "Paper_002 (Born-Gleason)" while in this folder 002 is *TensorProduct* and the Born rule is 003; the internal "U-series" numbering (U1=003.5, U2=004.5/6, U3=006.5, U4=006.6, U5=012.5) does not match the filenames. A cold reader will mis-resolve these. *(Candidate cleanup, low priority.)*
+
+### Honest arc-state
+The QM-kinematics arc is **substantially closed as a compositional synthesis (M2), not as a closed-proof reconstruction** — and every paper says so in its own voice. The spine is real: pre-individuation amplitudes (001, D-carrier), the Born rule as the participation-frequency limit (003 — the anchor, but conditional on the **P-LinRate** postulate + a frequentist assumption, not pure-M1), Hilbert space as Cauchy completion (007), projective measurement from P11 (005), unitary evolution / Schrödinger via Stone (006/006.5), and the operator layer (`p̂=−iℏ∇`, `T̂=p̂²/2m`, `Δx·Δp≥ℏ/2`) all form-forced/identified with **ℏ honestly inherited**. The phase phenomena (Berry, AB, Bloch) are D-via-I holonomy/rep-theory audits the papers correctly decline to sell as novel predictions. The genuinely **open edge is the inner product**, and here the folder is the known staleness hotspot: **papers 004/007 and both READMEs still carry the pre-July-2026 "P-Channel-Orthogonality is blocking / three routes fail" verdict, which the later Gleason-keystone reconstruction has superseded** — orthogonality is now *reduced* to channel-distinctness given the representation, ℂ is *selected*, the equal-norm condition was *discharged* (2026-07-10), and the residual is narrowed to **the Solèr lattice technical rigor alone**. That is a reduction, not a closed theorem, so the arc's honest status is **"closed synthesis with one technical residual (Solèr) under the inner-product metric,"** and memory already reflects this while the qm-kinematics papers and READMEs do not — those are the concrete write-back targets. **Defensible headline:** *the four QM postulates and the standard phenomena are reproduced as a compositional synthesis (M2) — form-forced/identified with ℏ and the Tsirelson bound honestly inherited and the Born rule resting on P-LinRate — with the inner-product edge now "reduced to the Solèr residual" (a reconstruction, not a closed theorem); the papers 004/007 + both READMEs are stale on that edge and are the write-back targets.*

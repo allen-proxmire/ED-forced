@@ -30,6 +30,10 @@ A direct rehabilitation attempt (`event-density/foundations/Gleason_Rehabilitati
 
 **Net effect on this paper's verdict:** the conditional I → D relabel offered to Paper_007 §3.3 still requires *both* postulates and therefore still does not go through — P-Channel-Orthogonality remains the blocking postulate. See the updated §2.5 row and §3.4 note below. This narrows the obstruction; it does not remove it.
 
+## Update 2026-07-29 — superseded by the Gleason keystone reconstruction
+
+The "P-Channel-Orthogonality is fully open / blocking" verdict above is **no longer the current status.** The later `substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction.md` maps ED's commitment-lattice onto the Piron–Solèr theorem and reports, honestly tiered: channel orthogonality is **reduced to channel-distinctness *given the representation*** (via operational distinguishability — perfectly distinguishable channels are orthogonal *within* the inner-product representation, so `⟨K|L⟩=0` is not an independent axiom); the number field **ℂ is *selected*** from Solèr's `{ℝ,ℂ,ℍ}`; the covering law is candidate-grounded on the channel basis; Born non-contextuality is resolved; and the equal-norm/angle condition was **discharged (2026-07-10)**. The residual is narrowed to the **Solèr lattice technical rigor alone**. So the honest current status is **"reduced to the Solèr residual"** — a reconstruction with grounded ingredients and account-tier joints, *stronger* than this paper's "blocking" verdict but *weaker* than a closed uniqueness theorem. The three-routes-fail diagnosis above stands as history: those routes sought orthogonality as a *kinematic metric fact*; the reconstruction reframes it as *operational*. Read the reconstruction paper for the current word.
+
 ---
 
 ## Abstract
