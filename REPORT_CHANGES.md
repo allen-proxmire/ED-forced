@@ -15,6 +15,12 @@ A new numbered section **§6 — Cosmology and the Dark Sector** was added to th
 
 ---
 
+## NO REPORT EDIT 2026-07-29 — a₀(z) folder propagation reconciled *to* the Report
+
+The corpus-hygiene sweep this session propagated the a₀(z) evolution + MUSE-DARK III data into the docs that predated it — `gravity/Paper_029` (new §8.8), `gravity/Paper_037` (preamble item 6), `gravity/Paper_038 §3.3 CO-3`, `gravity/Predictions_and_Falsifiers` (new Tier-2 live test), `predictions/22_Ways #1`, and `predictions/Paper_101` (promoted a₀(z) to Tier-1 weapon row 2). **Direction of travel was folder ← Report:** the Report's §15 flagship (~line 779) is the *most* accurate treatment in the corpus (it correctly attributes `α≈1.18` as an ED-side recast, not a MUSE-DARK figure; carries the survey's own "faster than H(z)"; hedges nominal ~4σ → ~1–2σ), so the folder docs were brought *up to* it. **No Report edit is owed for a₀(z)** — verified §15/§5/scorecard/abstract all current and mutually consistent (2026-07-29). Canonical source of truth remains `predictions/ED_Master_Predictions_List` 1.15. *(Also verified in passing: the Report's black-hole `1/4`/`2π` treatment, line 644 "near-horizon smoothness gives the 2π on top of κ," already matches the derived-`1/4` route imported to EDG this session as `black-hole/Paper_BH_Thermal2Pi_EntropyCoefficient` — no edit owed there either.)*
+
+---
+
 ## APPLIED 2026-07-21 — a₀(z) evolution / MUSE-DARK III / the α = 1.18 provenance
 
 **Status: APPLIED 2026-07-21 to the Report (§15 flagship ~line 779: α≈1.18 reattributed as an ED-side re-fit + the survey's real numbers [~30σ, a₀ 1.2→2.38 by z~1, "faster than H(z)"] added; scorecard row softened). PDF rebuilt. Verified against the real A&A source.** Kept below for the audit trail. The report's a₀(z) treatment is **largely accurate and honest** — it already gets the hard part right (α = 1 is *mechanism*-forced, not dimensional, since ED has ℓ_P; forward-dated; honestly hedged as "evolution confirmed, exact rate mildly disfavored, not a refutation"). Only one real issue plus optional strengthening.
