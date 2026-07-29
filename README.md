@@ -54,7 +54,7 @@ ED is **not** a "theory of everything," **not** a derivation from nothing, and *
 ## Navigate the corpus
 
 - **[`PAPERS_INDEX.md`](PAPERS_INDEX.md)** — the canonical paper list with status and verdict tiers.
-- **[`ED_TieredClaims_Master_v2.xlsx`](ED_TieredClaims_Master_v2.xlsx)** — the complete, sortable ledger of every load-bearing claim across the corpus: its paper, its exact tier (derived / grounded / inherited / postulated / open), its falsifier, and its status. Sheets include a tier-rank key, per-tier counts, the discharged/live postulate flags, and the untunability ratio (domains reproduced ÷ free inputs). This is the ground-truth register the folder READMEs summarize. *(v1 kept alongside as `ED_TieredClaims_Master.xlsx`.)*
+- **[`ED_TieredClaims_Master_v2.xlsx`](ED_TieredClaims_Master_v2.xlsx)** — the complete, sortable ledger of every load-bearing claim across the corpus: its paper, its exact tier (derived / grounded / inherited / postulated / open), its falsifier, and its status. Sheets include a tier-rank key, per-tier counts, the discharged/live postulate flags, and the untunability ratio (domains reproduced ÷ free inputs). This is the ground-truth register the folder READMEs summarize.
 - **New to ED, plain English:** the book *[The Universe Becoming](https://www.amazon.com/dp/B0H34MSH87)* (16 chapters, no math).
 - **New to ED, technical:** `position-paper/` (the whitepaper + the two position papers), then `primitives/` (the 13 primitive cards).
 - **Live program map:** `event-density/docs/ED_Research_Targets.md` (open/closed) and `ED_Road_To_Unification.md` (the finish-line overlay).
