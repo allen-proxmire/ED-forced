@@ -20,6 +20,8 @@ The Event Density (ED) substrate is a 13-primitive generative system. This paper
 
 This is **5–10× beyond current experimental reach** and testable in 5–10 years. Standard environmental-decoherence-only models cannot predict a sharp architecture-independent wall; ED's substrate-level prediction is sharp and architecture-independent (the *form* of the wall, not the specific extrapolated mass). The paper makes no claim that exact molecular masses are derived, no claim that 140–250 kDa is exact at the single-kDa level, no claim that decoherence is irrelevant, no claim that all platforms are Class-A, and no claim that quantum computing is impossible.
 
+> **Update 2026-07-29 — the *number* is under pressure; the *shape* is the claim.** Matter-wave interference has since been reported at **≥170 kDa (Nature 2026, `s41586-025-09917-9`)** — *inside* the 140–250 kDa window and still fully QM-consistent, squeezing the extrapolated number from below (it does not touch the load-bearing structural claim: a sharp, architecture-independent wall exists; where it sits re-anchors within the same form). Read the **shape** (sharp + architecture-independent) as the prediction, not the 2-point-extrapolated number. **Also retired:** the once-proposed 3–6% *second-harmonic-fringe* secondary signature is **CONFOUNDED (2026-07-24)** — KDTL grating optics produce higher harmonics regardless, so a bare second harmonic does not confirm ED; a real test needs *excess* over the full Nimmrichter–Hornberger optics prediction from raw fringe data. Fuller status: `predictions/ED_Master_Predictions_List` §4.1–4.2.
+
 ---
 
 ## 1. Introduction

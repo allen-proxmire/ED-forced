@@ -4,6 +4,8 @@
 **Author:** Allen Proxmire
 **Status:** Publication draft
 **Date:** 2026-05-13
+
+> **Domain settled by `Paper_058b` (2026-07-14) — read this paper's surface-code framing through it.** This paper's headline empirical test (§5.1) and near-term signature (§7) predict that **surface/concatenated codes plateau in code distance**. `Paper_058b_PlateauDomain_AlphaTopological` resolves the P-Redundancy-Mapping regime and finds **α_topological = 0**: the §3.3 saturation **never triggers for topological codes** (their live correlation web is local, bounded-degree, d-independent; syndrome records are budget-free). So the plateau binds for **broadcast-type redundancy** (repetition / GHZ / cat encodings), **not** surface-code distance — and clean surface-code suppression (e.g. Willow, Λ≈2) is *consistent with ED by construction*, not a tension. The current near-term test is the **repetition-code-floor + cat-state-width-ceiling pair** (058b §4–5), not surface-code plateau. Where this paper says "surface/concatenated codes plateau," read 058b.
 **Repository target:** `domain-arcs/q-compute/Paper_058_ClassC_Plateau.md` (ED-Generative)
 **Genre:** Conditional structural derivation within the 13-Primitive Generative System.
 
