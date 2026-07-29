@@ -2,7 +2,7 @@
 
 **Series:** Wave-2 Generative Papers (Black-Hole Arc)
 **Status:** Conditional structural derivation given the 13 ED primitives (per Paper_087) + paper-specific postulates declared in §2.
-**Companions:** Paper_025 (holographic participation-count bound), Paper_039 (horizon as decoupling surface), Paper_047 (Hawking spectrum), Paper_067 (von Neumann entropy).
+**Companions:** Paper_025 (holographic participation-count bound), Paper_039 (horizon as decoupling surface), Paper_047 (Hawking spectrum), Paper_068 (von Neumann entropy — supersedes the earlier Paper_067, merged 2026-07-05).
 
 ---
 
@@ -19,7 +19,7 @@
 
 ## Abstract
 
-The black-hole area-law form is FORM-FORCED in ED by: (i) Paper_025 holographic participation-count bound $N = 4\pi R^2/\ell_{\mathrm{ED}}^2$; (ii) Paper_039 horizon as decoupling surface; (iii) Paper_067 von Neumann entropy via Shannon–Khinchin axioms. Composing these: the substrate participation count at the horizon scales as area / $\ell_P^2$; the von Neumann entropy of substrate-horizon participation is $S = (\log g) \cdot A/\ell_P^2$ where $\log g$ is the per-Planck-cell multiplicity. The structural form $S \propto A$ is FORCED. The coefficient $\log g$ is INHERITED — it cannot be derived from first principles in this paper because the multiplicity $g$ depends on substrate combinatorics matched against standard quantum-statistical-mechanics conventions.
+The black-hole area-law form is FORM-FORCED in ED by: (i) Paper_025 holographic participation-count bound $N = 4\pi R^2/\ell_{\mathrm{ED}}^2$; (ii) Paper_039 horizon as decoupling surface; (iii) Paper_068 von Neumann entropy via Shannon–Khinchin axioms. Composing these: the substrate participation count at the horizon scales as area / $\ell_P^2$; the von Neumann entropy of substrate-horizon participation is $S = (\log g) \cdot A/\ell_P^2$ where $\log g$ is the per-Planck-cell multiplicity. The structural form $S \propto A$ is FORCED. The coefficient $\log g$ is INHERITED — it cannot be derived from first principles in this paper because the multiplicity $g$ depends on substrate combinatorics matched against standard quantum-statistical-mechanics conventions.
 
 ---
 
@@ -44,7 +44,7 @@ This paper supplies the substrate audit: the area-law form is FORM-FORCED in ED 
 
 - **I-025:** Holographic participation-count bound $N = 4\pi R^2/\ell_{\mathrm{ED}}^2$ (Paper_025).
 - **I-039:** Horizon as decoupling surface (Paper_039).
-- **I-067:** von Neumann entropy via Shannon–Khinchin (Paper_067).
+- **I-068:** von Neumann entropy via Shannon–Khinchin (Paper_068).
 - **I-Born:** Born rule (Paper_002).
 - **I-SK:** Shannon–Khinchin axiomatization (standard math).
 
@@ -63,7 +63,7 @@ This paper supplies the substrate audit: the area-law form is FORM-FORCED in ED 
 | 2 | Horizon as decoupling surface | I | Paper_039. |
 | 3 | Substrate participation count at horizon = $A/\ell_P^2$ (up to constants) | P-Horizon-Participation | Postulate. |
 | 4 | Per-Planck-cell multiplicity $g$ | P-Multiplicity-$g$ | Postulate. |
-| 5 | von Neumann entropy via Shannon–Khinchin axioms | I | Paper_067. |
+| 5 | von Neumann entropy via Shannon–Khinchin axioms | I | Paper_068. |
 | 6 | Substrate participation-state entropy = $N \cdot \log g$ | D-via-I | Standard entropy on independent cells (I-SK). |
 | 7 | Substitute $N = A/(4\pi \ell_P^2)$ | D | Algebraic substitution. |
 | 8 | Area-law form $S \propto A$ | D | Result of step 7. |
@@ -87,7 +87,7 @@ By P-Multiplicity-$g$, each Planck-cell at the horizon supports $g$ distinguisha
 
 ### 3.3 Entropy computation
 
-By I-067 (von Neumann entropy = Shannon entropy on diagonal probabilities), for $N$ independent cells each with multiplicity $g$:
+By I-068 (von Neumann entropy = Shannon entropy on diagonal probabilities), for $N$ independent cells each with multiplicity $g$:
 $$S = N \cdot \log g .$$
 
 Substituting $N = A/(4\pi \ell_P^2)$:
@@ -122,7 +122,7 @@ The substrate program **does not derive** the Bekenstein–Hawking $1/4$; it der
 
 ## §6 Position Statement
 
-The black-hole area-law form $S \propto A$ is **FORM-FORCED** in ED via Paper_025 + Paper_039 + Paper_067 + paper-specific postulates. The Bekenstein–Hawking coefficient $1/4$ is **INHERITED** via $\log g$ matching, **not derived**. Substrate derivation of $\log g$ from substrate combinatorics is OPEN.
+The black-hole area-law form $S \propto A$ is **FORM-FORCED** in ED via Paper_025 + Paper_039 + Paper_068 + paper-specific postulates. The Bekenstein–Hawking coefficient $1/4$ is **INHERITED** via $\log g$ matching, **not derived**. Substrate derivation of $\log g$ from substrate combinatorics is OPEN.
 
 ---
 

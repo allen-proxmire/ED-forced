@@ -50,7 +50,7 @@ In ED, GR's metric is a coarse-graining artifact (acoustic metric, Paper_017 + E
 
 ### 2.3 Paper-specific postulates
 
-- **P-Bandwidth-Boundedness:** The cumulative substrate commitment $C_{\mathrm{cum}}$ over any spatial region of size $r \geq \ell_P$ is bounded: $C_{\mathrm{cum}}(r) \leq C_{\max}(r)$ where $C_{\max}(r) \sim r^3 / \ell_P^3$ is the substrate-allowed bandwidth-additive total (P04-derived).
+- **P-Bandwidth-Boundedness:** The cumulative substrate commitment $C_{\mathrm{cum}}$ over any spatial region of size $r \geq \ell_P$ is bounded: $C_{\mathrm{cum}}(r) \leq C_{\max}(r)$ where $C_{\max}(r) \sim r^3 / \ell_P^3$ is the substrate-allowed bandwidth-additive total. *(Motivated by P04 bandwidth-additivity, but **posited here**, not derived bottom-up: a derivation of this density cap from the certified P04 rule was attempted and failed — see `FiniteGrain_Singularity_Lemma`, 2026-07-24. The `b→0` horizon is a **nonlocal potential** horizon, not a **local density ceiling**; so the bound is load-bearing as the postulate P-Bandwidth-Boundedness, not as a P04 corollary.)*
 - **P-Substrate-Interior-Cutoff:** Substrate-level structure does not exist below $\ell_P$; the "interior" of a black hole below $r = \ell_P$ is not substrate-resolvable.
 
 ---
