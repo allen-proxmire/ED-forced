@@ -22,12 +22,12 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  'λ': r'\lambda', 'σ': r'\sigma', 'Ω': r'\Omega', 'θ': r'\theta',
  '∇': r'\nabla', '∂': r'\partial', '∼': r'\sim', '≈': r'\approx',
  '→': r'\to', '∝': r'\propto', '·': r'\cdot', '∈': r'\in', '±': r'\pm',
- '∓': r'\mp', '×': r'\times', '↔': r'\leftrightarrow', '∫': r'\int',
+ '∓': r'\mp', '×': r'\times', '↔': r'\leftrightarrow', '∫': r'\int', '∗': r'\ast',
  '∞': r'\infty', '≪': r'\ll', '≫': r'\gg', '≠': r'\neq', '⊥': r'\perp',
  '⇒': r'\Rightarrow', '≲': r'\lesssim', '≳': r'\gtrsim', '≡': r'\equiv',
  '⟺': r'\Longleftrightarrow', '⟹': r'\Longrightarrow', '∏': r'\prod',
- '√': r'\surd', '−': '-', 'ℤ': r'\mathbb{Z}', 'ℝ': r'\mathbb{R}',
- 'ℓ': r'\ell', 'ℏ': r'\hbar', '✓': r'\checkmark', '⅓': r'\tfrac{1}{3}',
+ '√': r'\surd', '−': '-', 'ℤ': r'\mathbb{Z}', 'ℝ': r'\mathbb{R}', 'ℂ': r'\mathbb{C}',
+ 'ℓ': r'\ell', 'ℏ': r'\hbar', 'ħ': r'\hbar', '✓': r'\checkmark', '⅓': r'\tfrac{1}{3}',
  '¼': r'\tfrac{1}{4}', '½': r'\tfrac{1}{2}', '⋉': r'\ltimes',
  '≤': r'\le', '≥': r'\ge', '∘': r'\circ', '⊕': r'\oplus', 'ḃ': r'\dot{b}',
  'Θ': r'\Theta', '𝒲': r'\mathcal{W}', 'Ψ': r'\Psi', 'ω': r'\omega', 'ḧ': r'\ddot{h}',
@@ -39,15 +39,15 @@ CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  'Λ': 'Lambda', 'Φ': 'Phi', 'λ': 'lambda', 'σ': 'sigma', 'Ω': 'Omega',
  'θ': 'theta', '∇': 'grad ', '∂': 'd', '∼': '~', '≈': '~=', '→': '->',
  '∝': '~', '·': '*', '∈': ' in ', '±': '+-', '∓': '-+', '×': 'x',
- '↔': '<->', '∫': 'int ', '∞': 'inf', '≪': '<<', '≫': '>>', '≠': '!=',
+ '↔': '<->', '∫': 'int ', '∞': 'inf', '≪': '<<', '≫': '>>', '≠': '!=', '∗': '*',
  '⊥': 'perp', '⇒': '=>', '≲': '<~', '≳': '>~', '≡': '==', '⟺': '<=>',
- '⟹': '==>', '∏': 'prod ', '√': 'sqrt', '−': '-', 'ℤ': 'Z', 'ℝ': 'R',
- 'ℓ': 'l', 'ℏ': 'hbar', '✓': 'OK', '⅓': '1/3', '¼': '1/4', '½': '1/2',
+ '⟹': '==>', '∏': 'prod ', '√': 'sqrt', '−': '-', 'ℤ': 'Z', 'ℝ': 'R', 'ℂ': 'C',
+ 'ℓ': 'l', 'ℏ': 'hbar', 'ħ': 'hbar', '✓': 'OK', '⅓': '1/3', '¼': '1/4', '½': '1/2',
  '⋉': 'x', '≤': '<=', '≥': '>=', '∘': 'o', '⊕': '(+)',
  '—': '--', '–': '-', '§': 'sec.', '…': '...', 'ḃ': 'b-dot',
  'Θ': 'Theta', '𝒲': 'Wcal', 'Ψ': 'Psi', 'ω': 'omega', 'ḧ': 'h_tt',
 }
-TEXT_OK = set('—–§…öřČéüïàá')  # raw text chars Latin Modern handles
+TEXT_OK = set('—–§…öřČéüïàáè')  # raw text chars Latin Modern handles
 
 MATHCLASS = set(SUP) | set(SUB) | set(CMD)
 
