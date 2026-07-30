@@ -1,9 +1,9 @@
 July 30, 2026
 
-Dr. Christopher Hirata
-Department of Physics / Center for Cosmology and AstroParticle Physics
-The Ohio State University
-[street address]
+| Dr. Christopher Hirata
+| Department of Physics / Center for Cosmology and AstroParticle Physics
+| The Ohio State University
+| [street address]
 
 Dear Dr. Hirata,
 
@@ -31,9 +31,11 @@ A longer **Report** in the repo gives the narrative behind these tables, and it 
 
 If this holds up to your reading and you think it merits another set of eyes, please feel free to pass it to David Weinberg or Annika Peter. The dark-energy and dark-matter predictions bear on their work as much as the cosmology bears on yours.
 
-I'm not asking you to believe any of it. I'm asking you to check it where it says it can be broken. The repository, with timestamped DOIs for every result, is at [URL], and the QR code below goes to the same place.
+I'm not asking you to believe any of it. I'm showing you where it can be broken and asking you to judge it on your own terms. The repository, with timestamped DOIs for every result, is at https://github.com/allen-proxmire/ED-generative.
 
 With respect, and thanks for your time,
 
-Allen Proxmire
-[contact] · [repo URL] · [QR]
+| Allen Proxmire
+|
+| allen.proxmire@proton.me
+| https://github.com/allen-proxmire/ED-generative
