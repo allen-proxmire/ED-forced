@@ -1,10 +1,6 @@
 # The Universe Reproduced From Thirteen Primitives
 #### Why Event Density's Breadth Is Evidence, Not Bookkeeping
 
-Allen Proxmire 
-
-2026-07-27
-
 ## The claim
 Event Density reproduces the *form and mechanism* of physics across twelve separate, currently-unrelated domains, some 159 tiered results, from thirteen substrate primitives, ten constants, and fifteen postulates. Thirty-eight inputs, none of which are dialable.
 

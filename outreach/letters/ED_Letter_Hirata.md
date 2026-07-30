@@ -3,11 +3,10 @@ July 30, 2026
 | Dr. Christopher Hirata
 | Department of Physics / Center for Cosmology and AstroParticle Physics
 | The Ohio State University
-| [street address]
 
 Dear Dr. Hirata,
 
-I'm an independent researcher, and my first job in this letter is to temper the skepticism an outsider's package rightly earns. That skepticism is warranted, and I've faced it from the start. I learned to avoid the crank-trap the direct way, by falling into it early. I call that my post-graduate phase, and I'll confess it freely. What came out of it is a working protocol, and it reduces to three rules.
+I'm an independent researcher, and my first job in this letter is to temper the skepticism an outsider's package rightly earns. That skepticism is warranted. I learned to avoid the crank-trap the direct way, by falling into it early. But what came out of it is a working protocol, and it reduces to three rules.
 
 **Transparency.** From first philosophy to final prediction, all of it is open source. Every commit is tracked, every derivation repeatable, every route tried, every mistake, retraction, and staleness flag recorded alongside the results. The failures sit in the repo next to the wins.
 
@@ -39,3 +38,4 @@ With respect, and thanks for your time,
 |
 | allen.proxmire@proton.me
 | https://github.com/allen-proxmire/ED-generative
+

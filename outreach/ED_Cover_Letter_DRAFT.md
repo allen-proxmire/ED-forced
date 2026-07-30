@@ -1,6 +1,6 @@
 # Event Density — Cover Letter (TEMPLATE)
 
-*Template for per-recipient letters. Copy this file to `letters/ED_Letter_<Name>.md`, fill the bracketed items ([Date], the recipient block, the salutation, the personalized hook paragraph, the optional share-invite, and [street address]), then build. Do not build this template file itself. The closing, contact, and repo URL are fixed across all recipients; leave them as-is.*
+*Template for per-recipient letters. Copy this file to `letters/ED_Letter_<Name>.md`, fill the bracketed items ([Date], the recipient block, the salutation, the personalized hook paragraph, and the optional share-invite), then build. Do not build this template file itself. The closing, contact, and repo URL are fixed across all recipients; leave them as-is.*
 
 ---
 
@@ -9,11 +9,10 @@
 | [Dr. Firstname Lastname]
 | [Department / Center]
 | [Institution]
-| [street address]
 
 Dear [Dr. Lastname],
 
-I'm an independent researcher, and my first job in this letter is to temper the skepticism an outsider's package rightly earns. That skepticism is warranted, and I've faced it from the start. I learned to avoid the crank-trap the direct way, by falling into it early. I call that my post-graduate phase, and I'll confess it freely. What came out of it is a working protocol, and it reduces to three rules.
+I'm an independent researcher, and my first job in this letter is to temper the skepticism an outsider's package rightly earns. That skepticism is warranted. I learned to avoid the crank-trap the direct way, only by falling into it. But what came out of it is a working protocol and it reduces to three rules.
 
 **Transparency.** From first philosophy to final prediction, all of it is open source. Every commit is tracked, every derivation repeatable, every route tried, every mistake, retraction, and staleness flag recorded alongside the results. The failures sit in the repo next to the wins.
 
