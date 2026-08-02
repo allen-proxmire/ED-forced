@@ -27,16 +27,16 @@
 
 **10 constants — inherited** ( ∗ = derived from the others )
 
-c (rate of becoming) 
-ħ (action of one commitment) 
-ℓ_P (the grain) 
-G∗ = c³ℓ_P²/ħ 
-a₀∗ = cH₀/2π 
-Λ∗ 
-H₀ 
-particle masses 
-gauge couplings g 
-α ≈ 1/137 & mass ratios
+- c (rate of becoming) 
+- ħ (action of one commitment) 
+- ℓ_P (the grain) 
+- G∗ = c³ℓ_P²/ħ 
+- a₀∗ = cH₀/2π 
+- Λ∗ 
+- H₀ 
+- particle masses 
+- gauge couplings g 
+- α ≈ 1/137 & mass ratios
 
 **15 postulates — labeled, paper-specific**
 
