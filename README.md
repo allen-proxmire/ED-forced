@@ -105,9 +105,9 @@ ED is **not** a derivation from nothing, that's impossible. And ED is **not yet*
 ## Navigate the corpus
 
 - **[`PAPERS_INDEX.md`](PAPERS_INDEX.md)** — the canonical paper list with status and verdict tiers.
-- **New to ED, plain English:** the book *[The Universe Becoming](https://www.amazon.com/dp/B0H34MSH87)* (16 chapters, no math).
+- **New to ED, plain English:** the book *[The Universe Becoming](https://www.amazon.com/dp/B0H34MSH87)* (19 chapters, no math).
 - **New to ED, technical:** `position-paper/` (whitepaper + two position papers), then `primitives/` (the 13 primitive cards).
-- **Live program map:** `event-density/docs/ED_Research_Targets.md` (open/closed) and `ED_Road_To_Unification.md` (finish-line overlay).
+- **Live program map:** ED_TieredClaims_Master_v4.xlsx
 
 Every `physics-papers/` subfolder has a **README guide** (what-this-is, reading-order spine, per-paper results, an epistemic tier for each):
 
