@@ -1,4 +1,4 @@
-# Event Density — A Generative Substrate Ontology for Physics
+# Event Density — A Unified Framework for Physics
 
 [![DOI](https://zenodo.org/badge/1237222292.svg)](https://doi.org/10.5281/zenodo.20149496)
 
