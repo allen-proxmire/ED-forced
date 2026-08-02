@@ -98,7 +98,7 @@ A unified framework must check a specific list of boxes. ED's status on each —
 
 Every result is a **conditional structural derivation** given the 38 inputs above plus two memory kernels (V1, V5). Where the substrate fixes a law's *form* but the universe supplies its *number*, the split is named: **form-forced, value-inherited.**
 
-ED is **not** a theory of everything, **not** a derivation from nothing, and **not** confirmed. Its case is breadth without contradiction plus a defensible ontology. Named open: the gauge multiplicities, the anomaly constraint, and a confirmed novel prediction — the north star.
+ED is **not** a derivation from nothing, that's impossible. And ED is **not yet** confirmed, though absolutely falsifiable. Its case is breadth without contradiction plus a defensible, logical ontology.
 
 ---
 
