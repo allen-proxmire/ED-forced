@@ -27,11 +27,34 @@
 
 **10 constants — inherited** ( ∗ = derived from the others )
 
-c (rate of becoming) · ħ (action of one commitment) · ℓ_P (the grain) · G∗ = c³ℓ_P²/ħ · a₀∗ = cH₀/2π · Λ∗ · H₀ · particle masses · gauge couplings g · α ≈ 1/137 & mass ratios
+c (rate of becoming) 
+ħ (action of one commitment) 
+ℓ_P (the grain) 
+G∗ = c³ℓ_P²/ħ 
+a₀∗ = cH₀/2π 
+Λ∗ 
+H₀ 
+particle masses 
+gauge couplings g 
+α ≈ 1/137 & mass ratios
 
 **15 postulates — labeled, paper-specific**
 
-tensor-product composition (002) · local rate of becoming, substrate-c (012 / P-RB-1) · factorizable Ψ^AB + tensor structure (063) · V5-bilocal Schmidt rank > 1 (064) · monogamy budget cap (065) · Tsirelson, no PR-boxes (069) · six acoustic-metric guardrails (035) · quadratic-strain Model C (QuadraticStrain) · Yang–Mills action coarse-graining (019) · OS reflection-positivity (020) · YM profile-rescaling (021) · gauge postulate (114) · SCBU shared boundary origin · quantum-Darwinism live-weight · V5 existence as a cross-chain kernel
+tensor-product composition (002) 
+local rate of becoming, substrate-c (012 / P-RB-1) 
+factorizable Ψ^AB + tensor structure (063) 
+V5-bilocal Schmidt rank > 1 (064)  
+monogamy budget cap (065)  
+Tsirelson, no PR-boxes (069) 
+six acoustic-metric guardrails (035) 
+quadratic-strain Model C (QuadraticStrain) 
+Yang–Mills action coarse-graining (019) 
+OS reflection-positivity (020)  
+YM profile-rescaling (021)  
+gauge postulate (114) 
+SCBU shared boundary origin 
+quantum-Darwinism live-weight 
+V5 existence as a cross-chain kernel
 
 > **38 fixed inputs → ~159 tiered results across ~12 domains.** You cannot tune 38 shared, locked inputs to independently hit gravity, the Born rule, and the dark sector by accident. The rivals have adjustable knobs exactly where Event Density has forced structure.
 
