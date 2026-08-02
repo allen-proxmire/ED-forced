@@ -9,7 +9,8 @@
 ## Start here
 
 - **[Event Density: A Unified Framework for Physics](ED_UnifiedFramework_Report.md)** — the whole corpus in one document, box by box at honest tiers. *(Typeset [40-page PDF](ED_UnifiedFramework_Report.pdf).)*
-- **[`ED_TieredClaims_Master_v4.xlsx`](ED_TieredClaims_Master_v4.xlsx)** — every load-bearing claim, its paper, its exact tier (one of 19), its falsifier, and its status. Sortable. The ground-truth register the folder READMEs summarize.
+  
+- **[`ED_TieredClaims_Master_v4.xlsx`](ED_TieredClaims_Master_v4.xlsx)** — every load-bearing claim, its paper, its exact tier (one of 19), its falsifier, and its status. Sortable. The ground-truth register.
 
 ---
 
@@ -19,11 +20,19 @@
 
 **13 primitives — the axioms**
 
-| | | | | | |
-|---|---|---|---|---|---|
-| P01 existence layer | P02 participation | P03 channel+locus / homogeneity | P04 bandwidth (scalar) | P05 polarity-transport | P06 dimension D=3+1 |
-| P07 channel structure | P08 substrate scale ℓ_ED (=ℓ_P) | P09 U(1) polarity | P10 rule-type (licenses V5) | **P11 commitment — irreversible (the arrow)** | P12 stability Σ = Coh−Str−Grad |
-| P13 time homogeneity + event-discreteness | | | | | |
+- P01 existence layer 
+- P02 participation 
+- P03 channel+locus / homogeneity 
+- P04 bandwidth (scalar) 
+- P05 polarity-transport 
+- P06 dimension D=3+1 
+- P07 channel structure 
+- P08 substrate scale ℓ_ED (=ℓ_P) 
+- P09 U(1) polarity 
+- P10 rule-type (licenses V5)  
+- **P11 commitment — irreversible (the arrow)** 
+- P12 stability Σ = Coh−Str−Grad 
+- P13 time homogeneity + event-discreteness 
 
 **10 constants — inherited** ( ∗ = derived from the others )
 
