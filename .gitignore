@@ -7,3 +7,6 @@ internal notes/ED_Zenodo_Uploads.md
 # Python build artifacts
 __pycache__/
 *.pyc
+
+# Per-recipient outreach letters — keep local, never publish
+outreach/letters/
