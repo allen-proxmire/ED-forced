@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/1237222292.svg)](https://doi.org/10.5281/zenodo.20149496)
 
-**A unified framework for physics from a small, fixed set of substrate posits.** Thirteen primitives, ten inherited constants, and fifteen labeled postulates — **38 lines of input** — reproduce the *form and mechanism* of **~159 tiered results across ~12 domains**: quantum mechanics, gravity (dark matter and dark energy in one field), the Standard Model's gauge structure, charge, chirality, and entanglement. Form-complete, value-inherited, honest about what's open. The keystone primitive is the **arrow of time** (P11, irreversible commitment), written into the law rather than the boundary conditions.
+**A unified framework for physics from a small, fixed set of substrate posits.** Thirteen primitives, ten inherited constants, and fifteen labeled postulates — **38 lines of input** — reproduce the *form and mechanism* of **~159 tiered results across ~12 domains of physics**: quantum mechanics, gravity (dark matter and dark energy in one field), the Standard Model's gauge structure, charge, chirality, entanglement, and more. Form-complete, value-inherited, honest about what's postulated and open. The keystone primitive is the **arrow of time** (P11, irreversible commitment), written into the law rather than the boundary conditions. Insisting that the arrow is a fundamental process, rather than bolted on, connects all physics to the underlying substrate. 
 
 ---
 
