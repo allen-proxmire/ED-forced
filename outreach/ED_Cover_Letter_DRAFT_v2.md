@@ -16,6 +16,8 @@ I'm an independent researcher. My first job in this letter is to temper the skep
 
 With that baseline established, and hopefully a little of your serious attention earned, here is the claim and the case for what I call Event Density: a unified framework for physics built from one small set of substrate primitives. 
 
+What sets it apart is where it begins. Event Density makes irreversible commitment (dynamics that are non-invertible and many-to-one) a primitive rather than an emergent limit. Most attempts to unify physics treat the arrow of time as something to be derived, which always comes at a price. Beginning with the arrow instead pays for itself in paradoxes it never inherits, assumptions it never bolts on, and connections it never has to force.
+
 [One sentence personalized to the recipient, e.g. for Khoury: *It carries a parameter-free prediction that bears directly on your work on the MOND acceleration scale.*]
 
 The enclosed pages open with three short reference tables, in a deliberate order.
