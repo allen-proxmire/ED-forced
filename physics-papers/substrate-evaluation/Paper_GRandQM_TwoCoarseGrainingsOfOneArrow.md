@@ -1,4 +1,4 @@
-# Two Coarse-Grainings of One Arrow: General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate
+# General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate
 
 **Series:** Event Density (ED) Generative Papers — synthesis / cold-reader unification note
 
