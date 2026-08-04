@@ -14,7 +14,7 @@ I'm an independent researcher. My first job in this letter is to temper the skep
 
 **Adversarial review.** The physics is mine. AI has been a productive tool, and like any tool it is fallible and prone to its own kind of drift, which is a fair source of skepticism in itself. So I use it deliberately as a breaker as well as a builder: every paper in the repository is handed to a model calibrated to dismantle it, and I work across several models that check one another rather than trusting any single one. The method is written up in the repo as a methodology for anyone who wants it.
 
-With that baseline established, and hopefully a little of your serious attention earned, here is the claim and the case for what I call Event Density: a unified framework for physics built from one small set of substrate primitives. 
+With that baseline established, and hopefully a little of your serious attention earned, here is the claim and the case for what I call Event Density: a unified framework in which spacetime and its fields are not fundamental but emerge from a discrete, relational substrate — a network of events, their participation, and commitment — governed by one small set of primitives. 
 
 What sets it apart is where it begins. Event Density makes irreversible commitment (dynamics that are non-invertible and many-to-one) a primitive rather than an emergent limit. Most attempts to unify physics treat the arrow of time as something to be derived, which always comes at a price. Beginning with the arrow instead pays for itself in paradoxes it never inherits, assumptions it never bolts on, and connections it never has to force.
 
