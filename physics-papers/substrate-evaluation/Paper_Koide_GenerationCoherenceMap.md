@@ -46,11 +46,11 @@ three points **120° apart on a circle** (a Z₃ / democratic arrangement) with 
 
 $$\boxed{\,Q = \tfrac{1}{3} + \tfrac{w^2}{6}\,}.$$
 
-![Figure 1. The three charged leptons as √m on a circle of radius √2 (Brannen form). Each dot's horizontal position is a √m; the radius √2 is exactly the value that makes Q = 2/3, equivalently the √m vector sitting at 45° to the democratic (1,1,1) direction (cos = 1/√2).](koide_fig1_circle.png){width=66%}
+![The three charged leptons as √m on a circle of radius √2 (Brannen form). Each dot's horizontal position is a √m; the radius √2 is exactly the value that makes Q = 2/3, equivalently the √m vector sitting at 45° to the democratic (1,1,1) direction (cos = 1/√2).](koide_fig1_circle.png){width=66%}
 
 So **Q depends only on the wobble depth w**, not on δ or M. The families differ only in w: charged leptons at **w = √2** (⇒ Q = 2/3 exactly — the √m vector at 45° to the (1,1,1) diagonal, cos = 1/√2), down-quarks at w ≈ 1.55, up-quarks at w ≈ 1.76 (Figure 2). The phase δ rotates the triangle and sets the *ratios* among the three masses (leptons: 1 : 207 : 3477, the real values) without touching Q. For the leptons δ ≈ 0.222 ≈ 2/9 rad — a second, separate, unexplained near-coincidence, and **not** the source of the 2/3 (which holds for any δ).
 
-![Figure 2. The single law Q = 1/3 + w²/6. The charged leptons sit at w = √2 (Q = 2/3); the quark families at larger w; the open circle is the neutrino corner extrapolated from the toy maps of §4.](koide_fig2_law.png){width=66%}
+![The single law Q = 1/3 + w²/6. The charged leptons sit at w = √2 (Q = 2/3); the quark families at larger w; the open circle is the neutrino corner extrapolated from the toy maps of §4.](koide_fig2_law.png){width=66%}
 
 ## 3. The Event Density re-description (a shape-match, not a derivation)
 
@@ -62,19 +62,21 @@ Koide's skeleton is (Σ m)/(Σ √m)² = (sum of squared amplitudes)/(coherent s
 
 Mass is not fundamental in the Standard Model; charge and weak isospin/hypercharge are, with mass downstream. So we ask whether the wobble w organizes over the *real* quantum numbers.
 
-**Charge (1-D).** Against electric charge, the three charged families give (−1, 1.414), (−1/3, 1.546), (+2/3, 1.759): per unit charge the successive slopes are +0.20 and +0.21 — nearly equal, so **w is approximately linear in charge, w ≈ 1.61 + 0.20·Q_charge.** Put charge on a vertical axis and the wobble grows linearly with height — a straight-sided cone.
+**Charge (1-D).** Against electric charge, the three charged families give (−1, 1.414), (−1/3, 1.546), (+2/3, 1.759): per unit charge the successive slopes are +0.20 and +0.21 — nearly equal, so **w is approximately linear in charge, w ≈ 1.61 + 0.20·Q_charge.** Put charge on a vertical axis and the wobble grows linearly with height — a straight-sided cone (Figure 3).
 
-**Isospin × hypercharge (2-D).** More honestly, the fermions live on a 2×2 doublet grid: weak isospin T₃ = ±½ across (up-member vs down-member), hypercharge Y up (quark doublet +⅓, lepton doublet −1). Placing a Koide triangle at each site (Figure 3), the wobble is **monotone in both directions** — up-members exceed down-members, quarks exceed leptons — and lies close to a plane over the grid, largest at the up-quark corner, smallest (√2) at the electron.
+![Charge as the up-axis. Because the wobble grows about linearly with electric charge, the four sectors stack into a straight-sided cone: leptons at charge −1 (bottom), up-quarks at +2/3 (top), each solid ring carrying its three generations. The dashed ring is the predicted neutrino corner at charge 0 (w ≈ 1.63, Q ≈ 0.77). This is the 1-D toy map; it fits three charged points and extrapolates the fourth.](koide_fig4_cone.png){width=62%}
 
-![Figure 3. The four fermion types on their own Standard-Model coordinates (weak isospin across, hypercharge up), each a Koide triangle whose size is the wobble w. The wobble grows toward the up-quark corner. The dashed neutrino corner is a prediction, not data.](koide_fig3_grid.png){width=80%}
+**Isospin × hypercharge (2-D).** More honestly, the fermions live on a 2×2 doublet grid: weak isospin T₃ = ±½ across (up-member vs down-member), hypercharge Y up (quark doublet +⅓, lepton doublet −1). Placing a Koide triangle at each site (Figure 4), the wobble is **monotone in both directions** — up-members exceed down-members, quarks exceed leptons — and lies close to a plane over the grid, largest at the up-quark corner, smallest (√2) at the electron.
 
-**The one prediction.** The plane through the three charged corners puts the neutrinos (T₃ = +½, Y = −1) at **w ≈ 1.63, Koide Q ≈ 0.77** — the dashed corner of Figure 3 and the open point of Figure 2. The 1-D charge line gives the same value. Neutrino masses are far too poorly known to test this today, but it is a concrete, falsifiable-in-principle output.
+![The four fermion types on their own Standard-Model coordinates (weak isospin across, hypercharge up), each a Koide triangle whose size is the wobble w. The wobble grows toward the up-quark corner. The dashed neutrino corner is a prediction, not data.](koide_fig3_grid.png){width=80%}
 
-**Tier — read this before believing the maps.** These are TOY MODELS with soft legs. The lepton 2/3 (§1–2) is rigid and complete-data; the cross-family maps are not. The plane has three free parameters and there are exactly three charged data points, so it fits *automatically* and carries no residual to test — its only content is the neutrino corner. Two of the three inputs (the quark w's) are scheme-fuzzy. And the Standard Model's structure is not truly 1-D: up and down quarks are isospin partners, so a single clean axis can only be partial. So Figure 3 is a legitimate, non-arbitrary *map* (it uses the SM's own labels, not invented ones) plus one filed prediction — not evidence of a law.
+**The one prediction.** The plane through the three charged corners puts the neutrinos (T₃ = +½, Y = −1) at **w ≈ 1.63, Koide Q ≈ 0.77** — the dashed ring of Figure 3, the dashed corner of Figure 4, and the open point of Figure 2. The 1-D charge line gives the same value. Neutrino masses are far too poorly known to test this today, but it is a concrete, falsifiable-in-principle output.
+
+**Tier — read this before believing the maps.** These are TOY MODELS with soft legs. The lepton 2/3 (§1–2) is rigid and complete-data; the cross-family maps are not. The plane has three free parameters and there are exactly three charged data points, so it fits *automatically* and carries no residual to test — its only content is the neutrino corner. Two of the three inputs (the quark w's) are scheme-fuzzy. And the Standard Model's structure is not truly 1-D: up and down quarks are isospin partners, so a single clean axis can only be partial. So Figure 4 is a legitimate, non-arbitrary *map* (it uses the SM's own labels, not invented ones) plus one filed prediction — not evidence of a law.
 
 ## 5. What connects to ED, and what does not
 
-- **Compatible, at the level of structure.** ED grounds charge as integer topological winding (`Paper_ChargeAsTopology_B4`) and the SU(2)/doublet gauge structure from channel multiplicity, so the axes of Figure 3 are ED-adjacent, and every slice (a coherent superposition of three √m amplitudes) is ED-native language.
+- **Compatible, at the level of structure.** ED grounds charge as integer topological winding (`Paper_ChargeAsTopology_B4`) and the SU(2)/doublet gauge structure from channel multiplicity, so the axes of Figure 4 are ED-adjacent, and every slice (a coherent superposition of three √m amplitudes) is ED-native language.
 - **Not derived.** ED does not produce the fractional hypercharges, the masses, the generation count, or the values w = √2, δ ≈ 2/9. So the docking port — the map's axes and the reason the wobble takes the values it does — is exactly the part ED has not built.
 - **The honest ED talking point (consilience-tier).** In the Standard Model, masses are arbitrary Yukawa dials, so Koide's 2/3 is a fluke among free parameters. In ED, mass *is* bandwidth content and √m its amplitude, so "the lepton masses fold into a clean amplitude-on-a-circle relation" is the *kind* of thing expected if masses are amplitudes and a surprise if they are dials. That is a modest point of consilience for ED's ontology — not a derivation, and not to be inflated.
 
