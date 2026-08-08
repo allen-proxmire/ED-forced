@@ -13,7 +13,7 @@ os.chdir(EDG)
 
 SUP = {'²': '2', '³': '3', '¹': '1', '⁶': '6', '⁻': '-', '⁰': '0', '⁵': '5',
        '⁴': '4', '⁷': '7', '⁸': '8', '⁹': '9'}
-SUB = {'₀': '0', '₁': '1', '₂': '2', 'ₜ': 't'}
+SUB = {'₀': '0', '₁': '1', '₂': '2', '₃': '3', 'ₜ': 't'}
 CMD = {  # math-class char -> LaTeX (math mode, no $)
  'ρ': r'\rho', 'Σ': r'\Sigma', 'α': r'\alpha', 'μ': r'\mu', 'ν': r'\nu',
  'π': r'\pi', 'β': r'\beta', 'φ': r'\varphi', 'ε': r'\varepsilon',
@@ -22,7 +22,7 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  'λ': r'\lambda', 'σ': r'\sigma', 'Ω': r'\Omega', 'θ': r'\theta',
  '∇': r'\nabla', '∂': r'\partial', '∼': r'\sim', '≈': r'\approx',
  '→': r'\to', '∝': r'\propto', '·': r'\cdot', '∈': r'\in', '±': r'\pm',
- '∓': r'\mp', '×': r'\times', '↔': r'\leftrightarrow', '∫': r'\int', '∗': r'\ast',
+ '∓': r'\mp', '×': r'\times', '↔': r'\leftrightarrow', '∫': r'\int', '∗': r'\ast', '°': r'^\circ',
  '∞': r'\infty', '≪': r'\ll', '≫': r'\gg', '≠': r'\neq', '⊥': r'\perp',
  '⇒': r'\Rightarrow', '≲': r'\lesssim', '≳': r'\gtrsim', '≡': r'\equiv',
  '⟺': r'\Longleftrightarrow', '⟹': r'\Longrightarrow', '∏': r'\prod',
@@ -76,6 +76,9 @@ def prose_repl(s):
     Raw spans (`\\(...\\)`{=latex}) avoid pandoc's $-adjacency rules (e.g. a
     closing $ followed by a digit is not parsed as math, which breaks tables).
     A bare minus becomes a plain hyphen (no math span needed)."""
+    s = re.sub(r'√\s*([0-9]+|[A-Za-z](?:_[A-Za-z0-9])?)',
+               lambda m: '`\\(\\sqrt{' + m.group(1) + '}\\)`{=latex}', s)
+    s = s.replace('√', '`\\(\\sqrt{\\,}\\)`{=latex}')
     out, i = [], 0
     while i < len(s):
         c = s[i]
