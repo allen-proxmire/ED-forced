@@ -135,3 +135,4 @@ And, on this ledger, it dissolves the oldest paradox in the subject. Loschmidt's
 - **Certified coarse-graining:** `Paper_Continuum_KineticLatticeGas` and the two-layer coarse-graining results.
 - **Maxwell as coherent shadow:** the CG-decomposition papers (substrate-evaluation).
 - **The M_crit leak:** `physics-papers/q-compute/Paper_060_Mcrit_Unification.md`; `physics-papers/predictions/QC-Mass-Extrapolation_InProcess/`.
+- **The conservation column (companion):** `Paper_ConservationColumn.md` supplies the orthogonal second discard this table omits — *backdrop-uniformity → the Noether conservation laws.* Local covariant conservation ($\nabla_\mu T^{\mu\nu}=0$) is exact; global energy leaks with the arrow (P11), and returns at the de Sitter end.
