@@ -4,6 +4,8 @@
 
 *Read 2026-07-29. This ledger tiers the folder's own README (which is itself well-tiered) against the papers; the tiering discipline "grounds input X, never inflate to 'reproduces their result'" is the load-bearing rule here.*
 
+*Updated 2026-08-10: the folder now also holds a second genre — **comparison / position papers** that map a neighboring standing program onto ED (convergence, not completion). These do not fit the "grounds input X = consilience" mold; they carry a mix of tiers per claim and their load-bearing rule is **convergence, not endorsement**. Tiered in their own section below.*
+
 ---
 
 ### The completions (each: ED grounds an external result's flagged-open input — tier Synthesis / consilience)
@@ -14,6 +16,18 @@
 | **KhronometricEquationOfState_Jacobson** | the local-Rindler `δQ=TdS` derivation, for a *khronometric* theory | Wald entropy = pure area on ED's luminal family → **clean equilibrium → full Einstein** (aether among the sources); shear stays exactly GR (`c₁₃=0`) | the **"fourth face"** (scalar-sector co-suppression) **kept as CONJECTURE**; the `2π` still via the Euclidean route | current — referee-passed; grounds `GravityAsEquationOfState` §6, discharges its §8 write-out |
 | **MoreThanAnalogy_AnalogGravity** | analog gravity's "is there a *real medium*?" (Unruh; Barceló–Liberati–Visser) | ED's emergent metric **IS** an acoustic metric (GR-I) with a **real medium** (the substrate) + the **dynamical aether** (the khronon) analog models lack; W-W/Marolf obstructions don't bite | kinematic/non-Einstein *like the analog field*, one bounded step further (weak-field Einstein); Hawking **FORCED-CONDITIONAL**; generic horizons cold; CC dissolved (value inherited) | current |
 | **WhyTheCountIsArea_Susskind** | the 't Hooft/Susskind holographic "why **area**, not volume?" | A1 severs participation wires strictly at a surface + the short-range kernel makes the straddling-edge count grow like **area** (measured `r^2.02`, could-say-no fires at long range) — a *direct* mechanism (vs Bekenstein's indirect BH + second law) | measured on an **assumed geometry** (not "why area from nothing"); grounds horizon-entropy=area + a postulate-conditional channel ceiling, **NOT** the holographic bound as a general maximum; the `1/4` is thermal (separate) | current — consilience, not a novel prediction |
+
+### Comparison / position papers (convergence, NOT completions)
+*A different genre from the completions above: map a neighboring standing program onto ED, show where each supplies what the other lacks. Load-bearing rule = **convergence, not endorsement** (independent arrival, never the other author's sanction). Mixed tiers per claim.*
+
+**[EvolvingBlockUniverse_Ellis](Paper_EvolvingBlockUniverse_Ellis.md)** — George Ellis's Evolving/Crystallizing Block Universe (EBU/CBU) ↔ ED. Per-claim tiers:
+| Claim | Tier |
+|---|---|
+| Core convergence: collapse-as-present **≈** commitment (P11); open future / fixed past; real objective collapse; arrow primitive — reached independently (Ellis from GR + measurement problem, ED from a discrete substrate) | **Interpretive / structural convergence** — *not endorsement* (Ellis has no acquaintance with ED) |
+| ED offers Ellis's *posited-not-built* discrete QG layer: a **constructed** committing substrate whose commitment drives the block's growth | **Conditional derivation** from the thirteen primitives (`Paper_087`) — a candidate engine, NOT a completed QG theory |
+| ED offers Ellis's named-missing "when/where does collapse fire" theory: the collapse mass-scale `M_crit` | **Unconfirmed prediction** (`Paper_060`) — *bolder than Ellis* (he declines a universal number); a matter-wave falsifier, not a result |
+| Past-Hypothesis dissolution (arrow primitive ⟹ low initial entropy needs no separate fine-tuned condition) | **Reframe** (`Paper_HowTheoryCoarseGrainReality` §13) |
+| Preferred-frame comparison | **Limited structural convergence + genuine divergence** — both reject Minkowski realism and carry preferred worldlines, but only ED is in the **khronometric** modified-gravity class, and Ellis has argued *in print against* ED's arrow-as-frame direction (matter→frame→collapse, opposite to ED's arrow→frame). §6 |
 
 ### The folder's one durable finding, and a "not bankable"
 | Item | Status |
@@ -27,3 +41,5 @@
 
 ### Honest arc-state
 This folder is the **"EDsplain" / microscopic-completions family — the corpus's most disciplined about tier**, because its whole genre risks the "we can supply their cutoff → we reproduce their result" inflation, and the README polices exactly that. Five completions land honestly: ED grounds Padmanabhan's *count* (not the ½T rule; Newton not Einstein), Sakharov's *arena+cutoff*, the *khronometric* equation-of-state (full Einstein on the luminal family, fourth face conjectural), analog gravity's *real medium + dynamical aether*, and the holographic *area-scaling mechanism* (on an assumed geometry, not the general bound) — each **consilience, not a novel prediction**, and each with its wall named. The folder's one durable *finding* is the narrow asymmetry that makes Jacobson's trick work for gravity and nothing else (with "why gravity is special" left open), and its one disciplined *refusal* is the Wallstrom objection (verified not-bankable — the phase identification is unmade). **Defensible headline:** *a tightly-tier-policed family of completions — ED supplies the Planck-grain boundary count / cutoff / real-medium that five respected emergent-gravity results flag as owed to a deeper theory, all at consilience tier with their walls named — plus one durable asymmetry finding and one honest "not bankable" (Wallstrom); no ED theorem is claimed here, and none should be.*
+
+**Second genre (added 2026-08-10): comparison / position papers.** The folder now also hosts convergence papers against neighboring standing programs. First entry: **EvolvingBlockUniverse_Ellis** — an independent convergence with George Ellis's growing-block/objective-collapse program (collapse-as-present ≈ commitment), where ED offers Ellis's two self-flagged gaps (a *constructed* substrate for the QG layer he posits — conditional derivation; and `M_crit` for the collapse-trigger theory he names as missing — unconfirmed prediction). Held to **convergence, not endorsement**, with the genuine preferred-frame divergence named (Ellis argued *against* ED's arrow-as-frame direction). Same tiering discipline, different mold.
