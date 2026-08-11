@@ -88,7 +88,7 @@ A unified framework must check a specific list of boxes. ED's status on each —
 | **Matter (spinor, mass)** | substrate→Dirac form-complete; native binding-mass ("mass without mass"); mass ≠ time dilation | ✅ |
 | **The constants** | units (c, ħ, ℓ_P) are scaffolding; G and a₀ derived downstream; the dimensionless core inherited, as in the Standard Model | 📏 by design |
 | **Internal consistency (anomalies)** | conservation + clean-vector baseline solid; chiral cancellation inherited; one candidate gated | ✅ / ⚠️ |
-| **Novel falsifiable predictions** | several ranked weapons + one confirmed forward prediction; none argument-ending yet | ⚠️ open |
+| **Novel falsifiable predictions** | several ranked weapons + one strong postdiction (the mobility-law shape; self-published preprint, not peer-reviewed); none argument-ending yet | ⚠️ open |
 
 **The honest shape:** form-complete across every box, value-inherited where the Standard Model's free numbers live, two genuine structural opens, one proven wall, and no argument-ending prediction confirmed yet.
 

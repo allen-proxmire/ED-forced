@@ -1,9 +1,9 @@
 # Event Density: Empirical Predictions from a Substrate-Level Identification of $a_0 = cH_0/(2\pi)$
 
 **Series:** Wave-3 Empirical-Predictions Bundle (cross-arc; primary outreach paper)
-**Status:** Compilation of ten ED empirical predictions across gravity, GW, matter-wave interferometry, soft-matter, and analogue-gravity arcs. Three published Wave-3 prediction papers + seven session-ready experimental protocols + one peer-reviewed passed test + two postdictions + cross-scale falsifiers. Verdict across the bundle: every prediction is form-IDENTIFIED or form-FORCED from the substrate primitives; numerical content where present is INHERITED unless otherwise noted; falsification criteria explicit per prediction.
+**Status:** Compilation of ten ED empirical predictions across gravity, GW, matter-wave interferometry, soft-matter, and analogue-gravity arcs. Three published Wave-3 prediction papers + seven session-ready experimental protocols + one passed test (GW170817) + three postdictions (including the UDM data-match — a self-authored Zenodo preprint, **not** peer-reviewed) + cross-scale falsifiers. Verdict across the bundle: every prediction is form-IDENTIFIED or form-FORCED from the substrate primitives; numerical content where present is INHERITED unless otherwise noted; falsification criteria explicit per prediction.
 **Date:** 2026-05-17
-**Anchors:** Paper_087 (13 primitives); Paper_095 (form-FORCED / value-INHERITED methodology); Paper_027 (Newton's $G$); Paper_029 ($a_0 = cH_0/(2\pi)$); Paper_030 (ED Combination Rule); Paper_031 (BTFR slope-4); Paper_034 (deep-MOND asymptotic); Paper_036 (MOND field equation); Paper_038_5 (Λ-smallness reframing; M3 retroactive); Paper_038_6 (Pred_WeakLensing_Activity); Paper_047 (Hawking spectrum); Paper_052_5 (Pred_MergerLag); Paper_089 (V1 retarded kernel); Paper_090 (V5 cross-chain kernel); Paper_ED_Cos_05 (Dark Energy; M3 unconditional); Paper_ED_GW_00 (GW); Universal Mobility Law evidence paper (peer-reviewed, May 2026); ED-SC 4.x arc; protocols in `predictions/`: QC-Mass-Extrapolation, FRAP-High-BSA, AFM-Dewetting-ED-SC, ED-Acoustic-BEC-Extremal, ED-Acoustic-EIT-Extremal, ED-Acoustic-OpticalPulse, ED-09.5 Participation-Envelope, Triad-Coupling-C7, ED-RLC-Analogue.
+**Anchors:** Paper_087 (13 primitives); Paper_095 (form-FORCED / value-INHERITED methodology); Paper_027 (Newton's $G$); Paper_029 ($a_0 = cH_0/(2\pi)$); Paper_030 (ED Combination Rule); Paper_031 (BTFR slope-4); Paper_034 (deep-MOND asymptotic); Paper_036 (MOND field equation); Paper_038_5 (Λ-smallness reframing; M3 retroactive); Paper_038_6 (Pred_WeakLensing_Activity); Paper_047 (Hawking spectrum); Paper_052_5 (Pred_MergerLag); Paper_089 (V1 retarded kernel); Paper_090 (V5 cross-chain kernel); Paper_ED_Cos_05 (Dark Energy; M3 unconditional); Paper_ED_GW_00 (GW); Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed); ED-SC 4.x arc; protocols in `predictions/`: QC-Mass-Extrapolation, FRAP-High-BSA, AFM-Dewetting-ED-SC, ED-Acoustic-BEC-Extremal, ED-Acoustic-EIT-Extremal, ED-Acoustic-OpticalPulse, ED-09.5 Participation-Envelope, Triad-Coupling-C7, ED-RLC-Analogue.
 
 ---
 
@@ -11,7 +11,7 @@
 
 The Baryonic Tully-Fisher Relation (BTFR) is one of the tightest empirical relations in galactic astrophysics: across roughly four decades of baryonic mass, the asymptotic flat rotation velocity $v_{\mathrm{flat}}$ of a galaxy satisfies $v_{\mathrm{flat}}^n \propto M_b$ with $n = 3.95 \pm 0.08$ — consistent with $n = 4$ exactly, with scatter dominated by observational uncertainty. The Event Density (ED) substrate-ontology research program derives **BTFR slope exactly 4 with zero intrinsic scatter in the deep-MOND asymptote** from substrate primitives, with no halo modeling and no free parameters, via composition of Newton's $G$ from substrate constants (Paper_027), the substrate-level identification of the MOND transition acceleration $a_0 = cH_0/(2\pi)$ (Paper_029), the ED Combination Rule $a = \sqrt{a_N \cdot a_0}$ (Paper_030, conditional on a single declared postulate P14), and the standard circular-orbit condition $v^2/R = a$.
 
-The BTFR result is the wedge for this paper. The same substrate-level identification — that $a_0$ is the azimuthal-Fourier projection of the cosmic decoupling surface $R_H = c/H_0$ onto an accelerating chain's dipole mode, producing the geometric $1/(2\pi)$ structurally — generates a family of related predictions across the corpus's empirical-prediction sector. This paper bundles ten such predictions: three published Wave-3 prediction papers, seven session-ready experimental protocols, plus three postdictions (one peer-reviewed) and one cross-scale-covariation prediction. Each prediction is presented with its substrate-level mechanism, its sharpest falsifier, and (where applicable) the experimental platform and protocol status.
+The BTFR result is the wedge for this paper. The same substrate-level identification — that $a_0$ is the azimuthal-Fourier projection of the cosmic decoupling surface $R_H = c/H_0$ onto an accelerating chain's dipole mode, producing the geometric $1/(2\pi)$ structurally — generates a family of related predictions across the corpus's empirical-prediction sector. This paper bundles ten such predictions: three published Wave-3 prediction papers, seven session-ready experimental protocols, plus three postdictions (including the UDM data-match, self-published on Zenodo — not peer-reviewed) and one cross-scale-covariation prediction. Each prediction is presented with its substrate-level mechanism, its sharpest falsifier, and (where applicable) the experimental platform and protocol status.
 
 ED's methodological discipline (Paper_095) is *form-FORCED / value-INHERITED*: structural forms are derived from substrate primitives; numerical magnitudes are inherited from empirical matching. This paper inherits that discipline throughout. Where a prediction's numerical content is INHERITED rather than substrate-derived, it is named as such — not hidden.
 
@@ -143,7 +143,7 @@ Predicted observable: $R(t) \sim t^{1/6}$ with **sharp** bleach boundary (compac
 
 **Sharpest falsifier (F6).** Observed $\alpha_R \geq 0.35$ or Fickian-front winning at all concentrations refutes the UDM mobility-channel mechanism. PASS criterion: $\alpha_R \in [0.125, 0.170]$ at $\geq 3/4$ concentrations + PME-front beats Fickian via AIC.
 
-**Protocol status.** Protocol submitted to Creative Proteomics CIBR on 2026-04-17; decision window 2026-04-24 to 2026-05-01. **Budget:** $500–$1500 for session; 6–8 weeks calendar time to publishable result. **Independent second confirmation** of the UDM 10-material result ($R^2 > 0.986$) via a different observable (front propagation rather than diffusion-coefficient regression). The peer-reviewed Universal Mobility Law paper (May 2026) provides the prior empirical anchor; see §11 below.
+**Protocol status.** Protocol submitted to Creative Proteomics CIBR on 2026-04-17; decision window 2026-04-24 to 2026-05-01. **Budget:** $500–$1500 for session; 6–8 weeks calendar time to publishable result. This would be a genuine **forward test** via a different observable (front propagation rather than diffusion-coefficient regression), independent of the postdictive UDM data-match. The Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed) provides the prior empirical anchor; see §11 below.
 
 ---
 
@@ -221,13 +221,13 @@ Quantum-side signatures include $Q_v \in [4, 9]$, third-harmonic content 3–6%,
 
 ---
 
-## §11 Passed test — Universal Degenerate-Mobility (UDM) Law (peer-reviewed, May 2026)
+## §11 Postdiction — Universal Degenerate-Mobility (UDM) Law (self-authored Zenodo preprint, May 2026; not peer-reviewed)
 
-**Test passed.** Universal $D(c) = D_0 (1 - c/c_{\max})^\beta$ functional form derived from ED PDE substrate framework. Tested against **10 materials** spanning soft-matter / biological systems. **Result: $R^2 > 0.986$**, peer-reviewed publication ("Universal Degenerate-Mobility Scaling in Crowded Soft Matter"), May 2026.
+**Postdiction.** Universal $D(c) = D_0 (1 - c/c_{\max})^\beta$ functional form derived from the ED PDE substrate framework. Fit against **10 materials** spanning soft-matter / biological systems. **Result: $R^2 = 0.986$–$0.999$.** Documented in a self-authored preprint ("Universal Degenerate-Mobility Scaling in Crowded Soft Matter") self-published on Zenodo, May 2026 — **not peer-reviewed** (Zenodo is a repository, not a journal).
 
-**Significance.** This is ED's only **peer-reviewed external-validation-already-achieved** result. The universal $D(c)$ functional form is derived from the ED mobility-channel (Canon P4) prior to any data fitting. The peer-reviewed match validates the substrate-level identification at observational accuracy.
+**Significance.** This is ED's strongest *data-match* to date: a functional form derived from the ED mobility-channel (Canon P4) **blind to the data** (its strength) that fits 10 chemically distinct materials. But the data all predate the derivation (1994–2016), so it is a **postdiction**, not a forward-confirmed prediction, and it is the author's own analysis — not reviewed or independently reproduced.
 
-**Status.** PASSED. Empirical confirmation supports the ED mobility-channel framework. Follow-on prediction (§7 above): FRAP-BSA front-radius exponent $\alpha_R = 1/6$ provides independent second confirmation via a different observable.
+**Status.** POSTDICTION (derived form, blind to data; not peer-reviewed, not independent validation). The genuine **forward** test is the follow-on FRAP-BSA front-radius exponent $\alpha_R = 1/6$ (§7 above) via a different observable — not yet run.
 
 **Sharpest falsifier (F10, hypothetical).** A material in the UDM-application class with $R^2 < 0.8$ against the universal $D(c) = D_0(1 - c/c_{\max})^\beta$ functional form would refute the substrate-level universality claim. Currently consistent across all 10 examined materials.
 
@@ -296,7 +296,7 @@ Quantum-side signatures include $Q_v \in [4, 9]$, third-harmonic content 3–6%,
 | 7 | $\mathrm{med}(\mathcal{R}_{\mathrm{motif}}) = -1.30$ | AFM protocol | Tapping-mode AFM on PS/Si | **Session-ready**; $15K quoted | Median outside $[-1.80, -0.90]$ |
 | 8 | Extremal-horizon zero pair emission | EIT/BEC/Optical protocols | EIT Rb cell + 1D Rb-87 BEC | **EIT protocol drafted**; collab pending | Pair-emission in extremal configuration |
 | 9 | ED-09.5 envelope $\omega_v \approx 8\gamma_{\mathrm{dec}}$ | ED-09.5 protocol | Optomechanics + FRAP residuals | **Track B: $0, 1-week executable** | No envelope at predicted band |
-| 10 | UDM $D(c) = D_0(1-c/c_{\max})^\beta$ | UDM peer-reviewed paper | 10-material soft-matter dataset | **PASSED** ($R^2 > 0.986$) | (Hypothetical: material in class with $R^2 < 0.8$) |
+| 10 | UDM $D(c) = D_0(1-c/c_{\max})^\beta$ | UDM Zenodo preprint (self-authored, not peer-reviewed) | 10-material soft-matter dataset (1994–2016) | **POSTDICTION** ($R^2 = 0.986$–$0.999$) | (Hypothetical: material in class with $R^2 < 0.8$) |
 | 11 | GW speed $= c$ | Paper_ED_GW_00 | GW170817 multi-messenger | **PASSED** ($|c_{\mathrm{GW}} - c|/c < 10^{-15}$) | Future multi-messenger $|c_{\mathrm{GW}} - c|/c \gtrsim 10^{-15}$ |
 | 12 | Λ smallness $= \Theta_{\mathrm{ED}}^{\mathrm{Planck-units}}$ | Paper_038_5 (M3 retro.) | Planck + SNe Ia + BAO | **CONSISTENT** with $\rho_\Lambda = (3/8\pi) H_0^2 M_P^2$ | $\rho_\Lambda$ inconsistent with Friedmann form |
 | 13 | SCBU synchronized covariation | ED-SC 4.x arc | Multi-axis observational stratification | **Testable as $H_0$ measurements refine** | Asynchrony between any two projections |
@@ -349,7 +349,7 @@ This paper does claim:
 - Paper_ED_Cos_01 — Inflation (M3 unconditional, 2026-05-17)
 - Paper_ED_Cos_05 — Dark Energy (M3 unconditional, 2026-05-17)
 - Paper_ED_GW_00 — Gravitational Waves (M3 + row 12 partial closure)
-- Universal Mobility Law Evidence paper (peer-reviewed, May 2026)
+- Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed)
 
 **Update memos (2026-05-17):**
 

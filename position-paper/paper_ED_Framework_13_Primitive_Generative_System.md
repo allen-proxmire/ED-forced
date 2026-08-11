@@ -358,7 +358,7 @@ The 13-primitive Generative System is offered for academic engagement on these t
 | V1 finite-width kernel | Theorem N1 | Paper #18 |
 | V1 retarded support | Theorem T18 (kernel-level arrow) | Paper #19 |
 | Maxwell viscoelasticity | V5 kernel → Krieger-Dougherty | Arc D + P4-NN paper |
-| Universal mobility | FRAP-validated | Universal Mobility paper |
+| Universal mobility | data-matched (postdiction; FRAP test not yet run) | Universal Mobility paper (Zenodo preprint) |
 | Yang-Mills structural | Mass-gap mechanism | Yang-Mills arc |
 | NS structural | $D = 3+1$ + smoothness Intermediate Path C | NS Synthesis Paper |
 | ED-10 curvature emergence | Scalar-tensor extension | Arc ED-10 |

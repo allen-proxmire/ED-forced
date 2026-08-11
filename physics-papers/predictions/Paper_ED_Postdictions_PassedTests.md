@@ -1,9 +1,9 @@
 # Event Density: Passed Tests and Postdictions from a Substrate Cosmology Framework
 
 **Series:** Wave-3 Empirical-Prediction Sector — Passed Tests + Postdictions (outreach support paper)
-**Status:** Documents what Event Density (ED) has already gotten right. Two peer-reviewed / observationally-confirmed passed tests, plus four postdictions where the substrate-level identification reproduces observed values at parameter-free or substrate-parameter-INHERITED level. Companion to the predictions bundle (Paper_ED_Predictions_Bundle); independent enough to stand alone for readers who want only the validated-by-data slice.
+**Status:** Documents what Event Density (ED) has already gotten right. One observationally-confirmed passed test (GW170817), plus five postdictions where the substrate-level identification reproduces already-observed values or results at parameter-free or substrate-parameter-INHERITED level — including the UDM diffusion-law match to existing published data (documented in a self-authored Zenodo preprint, **not** peer-reviewed). Companion to the predictions bundle (Paper_ED_Predictions_Bundle); independent enough to stand alone for readers who want only the confirmed-against-data slice.
 **Date:** 2026-05-17
-**Anchors:** Paper_087 (13 primitives); Paper_095 (verdict grammar); Paper_027 (Newton's $G$); Paper_028 (cosmic decoupling); Paper_029 ($a_0 = cH_0/(2\pi)$); Paper_030 (ED Combination Rule); Paper_031 (BTFR slope-4); Paper_038_5 (Lambda V1 reframing; M3 retroactive); Paper_ED_Cos_05 (Dark Energy; M3 unconditional); Paper_ED_GW_00 (GW; M3 + row 12 partial closure); Universal Mobility Law Evidence paper (peer-reviewed, May 2026); ED-SC 4.x arc (M3 with substrate-parameter-INHERITED foundation post-Route-A-closure).
+**Anchors:** Paper_087 (13 primitives); Paper_095 (verdict grammar); Paper_027 (Newton's $G$); Paper_028 (cosmic decoupling); Paper_029 ($a_0 = cH_0/(2\pi)$); Paper_030 (ED Combination Rule); Paper_031 (BTFR slope-4); Paper_038_5 (Lambda V1 reframing; M3 retroactive); Paper_ED_Cos_05 (Dark Energy; M3 unconditional); Paper_ED_GW_00 (GW; M3 + row 12 partial closure); Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed); ED-SC 4.x arc (M3 with substrate-parameter-INHERITED foundation post-Route-A-closure).
 
 ---
 
@@ -13,16 +13,16 @@ Most empirical claims for outsider-developed physics research programs come with
 
 Two distinct categories below:
 
-- **Passed tests** (§2–§3): predictions that were made by ED's substrate-level framework and subsequently confirmed by independent empirical work. Two entries: UDM scaling law (peer-reviewed, May 2026) and GW170817 speed-equality with $c$ (observational, 2017).
-- **Postdictions** (§4–§7): existing observed values (a₀ MOND transition acceleration; BTFR slope-4; Λ smallness; SCBU cross-scale exponents) that ED's substrate-level identification reproduces from substrate primitives at parameter-free or substrate-parameter-INHERITED level.
+- **Passed test** (§3): GW170817 speed-equality with $c$ (observational, 2017) — a value structurally required by ED and consistent with an independent observational constraint that killed many rival gravity theories. *(Honest caveat: ED as written postdates 2017, so this is closer to a strong postdiction than a strict before-the-data forward test; it is kept as a "passed test" because the constraint could have refuted ED and did not.)*
+- **Postdictions** (§2, §4–§7): already-existing results that ED reproduces. The UDM diffusion-law form fit to published data across 10 materials (§2 — a *derived* form, blind to the data, but the data predates the derivation), plus observed values (a₀ MOND transition acceleration; BTFR slope-4; Λ smallness; SCBU cross-scale exponents) reproduced from substrate primitives at parameter-free or substrate-parameter-INHERITED level.
 
-The distinction between "passed test" and "postdiction" follows standard scientific usage: passed tests are predictions made *before* the confirming data; postdictions reproduce values that were observed *before* the substrate-level identification was supplied. Both are evidence of structural correctness; passed tests are stronger.
+The distinction between "passed test" and "postdiction" follows standard scientific usage: passed tests are predictions made *before* the confirming data; postdictions reproduce values or results that existed *before* the substrate-level identification was supplied. Both are evidence of structural correctness; passed tests are stronger. **UDM (§2) is a postdiction: all 10 datasets predate the derivation.**
 
 ED's methodological discipline (Paper_095) is form-FORCED / value-INHERITED: structural forms are derived from substrate primitives; numerical magnitudes are inherited from empirical matching. Each entry below names which content is form-FORCED, which is inherited, and at what level.
 
 ---
 
-## §2 Passed test #1 — Universal Degenerate-Mobility (UDM) Law (peer-reviewed, May 2026)
+## §2 Postdiction #1 — Universal Degenerate-Mobility (UDM) Law (self-authored Zenodo preprint, May 2026; not peer-reviewed)
 
 **Test setup.** The ED PDE substrate framework's mobility channel (Canon principle P4 — Mobility Capacity Bound) predicts a **universal functional form** for concentration-dependent diffusion:
 
@@ -34,11 +34,11 @@ with $\beta \approx 2$ canonical. This functional form is **derived from substra
 
 **Empirical test.** 10 materials spanning soft-matter / biological systems were fit to the UDM functional form. **Result: $R^2 > 0.986$ across all 10 materials.**
 
-**Publication status.** Peer-reviewed publication: "Universal Degenerate-Mobility Scaling in Crowded Soft Matter" (May 2026). Zenodo DOI; appears in ED's published-uploads inventory dated 2026-05-05.
+**Publication status.** Self-authored preprint: "Universal Degenerate-Mobility Scaling in Crowded Soft Matter" (Allen Proxmire, May 2026), self-published on **Zenodo** (DOI, timestamped 2026-05-05). Zenodo is a repository, not a journal — this is a preprint, **not peer-reviewed** and **not independent external validation**.
 
-**Significance.** This is the corpus's **only peer-reviewed external-validation-already-achieved** result. The substrate-derived functional form was supplied prior to the 10-material fit; the $R^2 > 0.986$ match across all 10 is not a fit-after-the-fact post hoc validation — it is the prediction confirmed.
+**Significance.** This is the corpus's strongest *data-match* to date. The substrate-derived functional form was derived *blind to the data* (its strength), and it fits existing published measurements across 10 chemically distinct materials at $R^2 = 0.986$–$0.999$. But the data all predate the derivation (sources span 1994–2016), so this is a **postdiction**, not a forward-confirmed prediction — and the analysis is the author's own, not reviewed or reproduced by anyone independent.
 
-**Result classification.** **PASSED.** UDM is the strongest "substrate-derivation confirmed by independent data" anchor in the corpus.
+**Result classification.** **POSTDICTION** (a derived functional form matching pre-existing published data). Strong, but not a passed test and not peer-reviewed.
 
 **Sharpest hypothetical falsifier.** A material in the UDM-application class (soft-matter / biological / crowded-solute systems) with $R^2 < 0.8$ against the universal $D(c) = D_0(1 - c/c_{\max})^\beta$ functional form would refute the substrate-level universality claim. Currently consistent across all 10 examined materials.
 
@@ -122,7 +122,7 @@ The slope is structurally fixed by the squaring of $v^2$ in the centripetal cond
 
 **Status.** **POSTDICTION** (close to passed-test-grade). The BTFR slope-4 + small-scatter empirical result preceded Paper_031's substrate-graph derivation; ED *reproduces* the empirical value from substrate primitives. The match is parameter-free.
 
-**Stronger than a fit, weaker than a passed test.** Distinction from §2 UDM: UDM's $D(c)$ functional form was supplied prior to the 10-material fit (passed test); BTFR slope-4 was known before Paper_031 (postdiction). Distinction from §6 Λ smallness: BTFR slope-4 has *zero free parameters* in the derivation (postdiction-with-no-tuning); Λ smallness retains a substrate-parameter value INHERITED at primitive level (postdiction-with-substrate-parameter-inheritance).
+**Stronger than a fit.** Like §2 UDM, this is a **postdiction** where the derivation was blind to the data: UDM's $D(c)$ functional form was derived before the 10-material fit, and BTFR slope-4's chain was derived independently — but both target data that predates the derivation. Distinction from §6 Λ smallness: BTFR slope-4 has *zero free parameters* in the derivation (postdiction-with-no-tuning); Λ smallness retains a substrate-parameter value INHERITED at primitive level (postdiction-with-substrate-parameter-inheritance).
 
 **Sharpest falsifier.** Deep-MOND-asymptotic BTFR slope significantly different from 4 (beyond observational uncertainty), or detection of intrinsic (non-observational) scatter in the deep-MOND-asymptotic BTFR, refutes the substrate-graph chain. Currently consistent at all SPARC precision.
 
@@ -197,26 +197,26 @@ The projections share a common foundational dependency: the substrate-derived $\
 
 | # | Item | Type | Pre-derivation observed value | ED-derived prediction | Match status | Reference |
 |---|---|---|---|---|---|---|
-| 1 | UDM scaling $D(c) = D_0(1 - c/c_{\max})^\beta$ | **Passed test** | Various per material | Universal functional form across 10 materials | $R^2 > 0.986$ all materials, **peer-reviewed May 2026** | UDM Evidence paper |
+| 1 | UDM scaling $D(c) = D_0(1 - c/c_{\max})^\beta$ | **Postdiction** (derived form, blind to data) | Various per material (data 1994–2016) | Universal functional form across 10 materials | $R^2 = 0.986$–$0.999$ all materials; self-authored Zenodo preprint, **not peer-reviewed** | UDM paper (Zenodo) |
 | 2 | GW speed = $c$ | **Passed test** | Predicted to equal $c$ (multiple gravity theories disagreed) | $c_{\mathrm{GW}} = c$ via V1 retarded kernel at substrate-c | $\|c_{\mathrm{GW}} - c\|/c < 10^{-15}$ from GW170817 | Paper_ED_GW_00 §3.8 |
 | 3 | $a_0 \approx 1.2 \times 10^{-10}$ m/s² | Postdiction (parameter-free) | $a_0^{\mathrm{MOND}}$ from rotation curves | $a_0 = cH_0/(2\pi) \approx 1.08 \times 10^{-10}$ m/s² | ~10% match, zero free parameters | Paper_029 |
 | 4 | BTFR slope-4 + small scatter | Postdiction (parameter-free, near-passed-test) | $n = 3.95 \pm 0.08$ from SPARC | $n = 4$ exactly, zero intrinsic scatter in deep-MOND asymptote | Consistent at all SPARC precision | Paper_031 |
 | 5 | $\rho_\Lambda \sim 10^{-120} \rho_P$ | Postdiction (substrate-parameter-INHERITED + reframing) | Cosmological-constant problem; 120-OOM mismatch with QFT naïve estimate | $\rho_\Lambda = (3/8\pi) H_0^2 M_P^2$ via Friedmann inheritance + Route A4 substrate-parameter $\Theta_{\mathrm{ED}}^{\mathrm{Planck-units}} \approx 10^{-122}$ | Match at substrate-parameter-INHERITED level (Paper_027 analog) | Paper_038_5 (M3 retroactive) |
 | 6 | SCBU six-projection synchronization | Postdiction (structural unification at substrate-parameter-INHERITED level) | Six scales (a_0, R_H, ξ_canonical, M_crit, Q, r_H) historically independent | All six projections of substrate-cosmology boundary at $R_H = c/H_0$; per-projection exponents derivable via Route A inheritance chain | M3-supported structural claim post-Route-A | ED-SC 4.x arc |
 
-**Two passed tests + four postdictions.** The two passed tests (UDM peer-review + GW170817 multi-messenger) provide independent external validation; the four postdictions reproduce previously-observed values at parameter-free (a₀, BTFR) or substrate-parameter-INHERITED (Λ smallness, SCBU) level.
+**One passed test + five postdictions.** GW170817 (multi-messenger) is the one independent observational confirmation; the five postdictions reproduce previously-existing results — the UDM diffusion-law fit to published data (self-authored Zenodo preprint, not peer-reviewed, not independent validation), plus a₀, BTFR (parameter-free) and Λ smallness, SCBU (substrate-parameter-INHERITED).
 
 ---
 
 ## §9 What this paper does and does NOT claim
 
 This paper does **not** claim:
-- That postdictions are equivalent in evidential weight to passed tests. The distinction is explicit throughout; only §2 + §3 are passed tests in the strict sense.
+- That postdictions are equivalent in evidential weight to passed tests. The distinction is explicit throughout; only §3 (GW170817) is a passed test, and even it is caveated (ED postdates 2017). §2 UDM is a postdiction (data predates the derivation).
 - That ED is the *unique* framework consistent with these data. Many predictions listed (BTFR slope-4; $a_0$; $\rho_\Lambda$) are *also* consistent with MOND-as-phenomenology, ΛCDM, or other frameworks at observational level. ED's claim is that it *derives* these from substrate primitives whereas other approaches fit or postulate them.
 - That every postdiction here is sole-validation of ED. ED is one of several substrate-ontology research programs ('t Hooft cellular-automaton; causal-set program); these postdictions don't distinguish ED uniquely from the broader lineage.
 
 This paper does claim:
-- ED's substrate-level framework has produced one peer-reviewed external-validation (UDM) and one observationally-confirmed prediction (GW170817 speed equality).
+- ED's substrate-level framework reproduces the UDM diffusion law across 10 materials of existing published data (a postdiction; self-authored Zenodo preprint, not peer-reviewed, not independent validation) and is consistent with GW170817 speed-equality (independent observational confirmation).
 - ED's substrate-level identifications reproduce four observed values ($a_0$, BTFR slope-4, $\rho_\Lambda$, SCBU cross-scale exponents) at parameter-free or substrate-parameter-INHERITED level.
 - The substrate-research-pattern progression (Load-Bearing Program → Q1Q2 + Chain-Class Identification → Route A audit cascade, 2026-05-17) has delivered the Cosmology Arc M3 Trinity (Cos_01 + Cos_05 + Paper_038_5) + ED-SC 4.x arc-wide M3 upgrade.
 - The track record documented here is **non-empty**, supplied honestly per Paper_095's form-FORCED / value-INHERITED methodology, and provides the empirical grounding for the broader corpus of predictions documented in Paper_ED_Predictions_Bundle.
@@ -240,7 +240,7 @@ This paper does claim:
 - Paper_ED_Cos_05 — Dark Energy (M3 unconditional, 2026-05-17)
 - Paper_SCBU — Substrate-Cosmology Boundary Unification
 - Paper_ED_SC_4_1 through 4_6 — ED-SC 4.x cross-scale extension arc
-- Universal Mobility Law Evidence paper (peer-reviewed, May 2026)
+- Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed)
 - Update_Paper_ED_Cos_05_M3_Unconditional, Update_Paper_038_5_M3, Update_ED_SC_4x_Arc_M3, Update_SCBU_Synthesis_PostRouteA (all 2026-05-17)
 - Paper_ED_Predictions_Bundle (companion paper)
 

@@ -4,7 +4,7 @@
 **Status:** Template paper structured for completion after FRAP-BSA experimental execution (protocol active per `predictions/FRAP-High-BSA_InProcess/`; submitted to Creative Proteomics CIBR 2026-04-17). Data, results, and discussion sections contain placeholders marked `[TO BE FILLED AFTER EXPERIMENT]`. **This is not yet a results paper; it is the structure into which results will be filled when the experimental run completes.**
 **Date:** 2026-05-17 (template draft); experimental data acquisition pending
 **Authors:** Allen Proxmire (corresponding); [TO BE FILLED: experimental collaborator(s) if applicable]
-**Anchors:** Universal Mobility Law Evidence paper (peer-reviewed, May 2026; 10-material UDM fit $R^2 > 0.986$); FRAP-High-BSA_InProcess protocol; Paper_087 (13 primitives — Canon P4 Mobility Capacity Bound); Paper_095 (form-FORCED / value-INHERITED methodology); Paper_ED_Predictions_Bundle (companion bundle paper); Paper_ED_Postdictions_PassedTests (UDM as passed test, §2).
+**Anchors:** Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed; 10-material UDM fit $R^2 = 0.986$–$0.999$); FRAP-High-BSA_InProcess protocol; Paper_087 (13 primitives — Canon P4 Mobility Capacity Bound); Paper_095 (form-FORCED / value-INHERITED methodology); Paper_ED_Predictions_Bundle (companion bundle paper); Paper_ED_Postdictions_PassedTests (UDM as postdiction, §2).
 
 ---
 
@@ -16,7 +16,7 @@ $$
 D(c) = D_0 \left(1 - \frac{c}{c_{\max}}\right)^\beta
 $$
 
-with canonical $\beta \approx 2$. The functional form is **derived from substrate primitives** (ED Canon principle P4 — Mobility Capacity Bound) prior to any data fitting. The Universal Mobility Law Evidence paper (peer-reviewed, May 2026) confirmed this functional form across **10 materials** spanning soft-matter / biological systems with $R^2 > 0.986$ at all materials. This established UDM as the corpus's first peer-reviewed external-validation-achieved result.
+with canonical $\beta \approx 2$. The functional form is **derived from substrate primitives** (ED Canon principle P4 — Mobility Capacity Bound) prior to any data fitting. The Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed) fit this functional form to existing published data across **10 materials** spanning soft-matter / biological systems with $R^2 = 0.986$–$0.999$ at all materials — a strong **postdiction** (the data predate the derivation), not an independently-validated passed test.
 
 This paper reports the FRAP-BSA experimental test of UDM via an independent observable: **front-radius propagation exponent** in fluorescence recovery after photobleaching. The 2D porous-medium equation (PME) with $m = \beta + 1 = 3$ derived from UDM with $\beta = 2$ gives front-radius exponent:
 
@@ -26,7 +26,7 @@ $$
 
 ED predicts $R(t) \sim t^{1/6}$ with a **sharp** bleach boundary (compact support, PME signature). The null prediction (standard Fickian diffusion) is $R(t) \sim t^{1/2}$ with a Gaussian-blurred boundary.
 
-The FRAP-BSA test is an **independent second confirmation** of UDM via a *different observable* (front propagation rather than diffusion-coefficient regression). A PASS here complements the existing peer-reviewed Universal Mobility Law evidence without replacing it; a FAIL would create tension with the published 10-material match and require resolution.
+The FRAP-BSA test is a genuine **forward test** of UDM via a *different observable* (front propagation rather than diffusion-coefficient regression) — and, unlike the postdictive 10-material fit, the data would be collected *after* the prediction. A PASS here complements the existing UDM data-match (self-published Zenodo preprint, not peer-reviewed) without replacing it; a FAIL would create tension with the 10-material match and require resolution.
 
 ---
 
@@ -44,7 +44,7 @@ Canonical $\beta = 2$. This is structural per ED Canon P4; the functional form i
 
 ### §2.2 Connection to concentration-dependent diffusion
 
-The diffusion coefficient $D(c) = M(c) \cdot \chi^{-1}(c)$, where $\chi(c) = dc/d\mu$ is the susceptibility. For concentration-dependent diffusion in the UDM regime, $D(c) = D_0(1 - c/c_{\max})^\beta$ — the form confirmed in the peer-reviewed Universal Mobility Law paper across 10 materials.
+The diffusion coefficient $D(c) = M(c) \cdot \chi^{-1}(c)$, where $\chi(c) = dc/d\mu$ is the susceptibility. For concentration-dependent diffusion in the UDM regime, $D(c) = D_0(1 - c/c_{\max})^\beta$ — the form fit to existing data across 10 materials in the Universal Mobility Law paper (self-authored Zenodo preprint, not peer-reviewed).
 
 ### §2.3 Connection to the 2D porous-medium equation
 
@@ -238,7 +238,7 @@ Five-outcome decision tree (per protocol §10):
 
 [TO BE FILLED: Match or mismatch with predicted $\alpha_R = 1/6$; discussion of any per-concentration anomalies]
 
-### §7.2 Comparison with peer-reviewed Universal Mobility Law evidence
+### §7.2 Comparison with the Universal Mobility Law data-match (Zenodo preprint)
 
 [TO BE FILLED: Consistency or tension with the 10-material UDM fit ($R^2 > 0.986$, May 2026 publication); implications for the universality claim]
 
@@ -288,9 +288,9 @@ Raw data deposition: [TO BE FILLED: Zenodo DOI for TIFF-stack data deposition]
 
 - Paper_087 — 13 primitives (position paper; Canon P4 Mobility Capacity Bound)
 - Paper_095 — Form-FORCED / value-INHERITED methodology
-- Universal Mobility Law Evidence paper (peer-reviewed, May 2026) — 10-material UDM fit
+- Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed) — 10-material UDM fit
 - Paper_ED_Predictions_Bundle (companion paper) — full ED predictions inventory
-- Paper_ED_Postdictions_PassedTests (companion paper) — UDM as passed test (§2)
+- Paper_ED_Postdictions_PassedTests (companion paper) — UDM as postdiction (§2)
 
 **Protocol reference:**
 

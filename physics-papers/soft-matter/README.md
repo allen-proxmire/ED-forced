@@ -1,15 +1,15 @@
 # Soft-Matter — Folder Guide *(fluids, Navier-Stokes, rheology, DCGT)*
 
-**What this folder is.** The soft-matter / continuum-fluids sector, and the home of the **DCGT (Diffusion Coarse-Graining Theorem, Paper_073)** — the substrate→continuum bridge invoked across the whole corpus. It covers the Navier-Stokes program (dimensional forcing to 3+1, the smoothness question, the turbulence cascade, vortex stretching), rheology (Krieger-Dougherty + Maxwell viscoelastic), MHD closure, the empirically-validated universal mobility law, and metamaterials.
+**What this folder is.** The soft-matter / continuum-fluids sector, and the home of the **DCGT (Diffusion Coarse-Graining Theorem, Paper_073)** — the substrate→continuum bridge invoked across the whole corpus. It covers the Navier-Stokes program (dimensional forcing to 3+1, the smoothness question, the turbulence cascade, vortex stretching), rheology (Krieger-Dougherty + Maxwell viscoelastic), MHD closure, the data-matched universal mobility law (a postdiction), and metamaterials.
 
 **State** *(sources: `event-density/docs/ED_Research_Targets.md` — soft-matter is in the CLOSED column; targets #3, #5; PAPERS_INDEX)*:
 - **The arc is CLOSED.** DCGT (073) is the foundational coarse-graining theorem the rest of the corpus builds on.
 - **Navier-Stokes:** dimensional forcing to 3+1 (075), the substrate→continuum bridge (076), a smoothness mechanism (077, Clay-adjacent), and the turbulence cascade (078). Grounded/conditional (declared PDE-uniqueness axioms).
-- **The universal mobility law (085) is data-validated** — the constitutive law `M ∝ (ρ_max − ρ)^β` matched across 11 materials (`R² > 0.986`); the empirical anchor of the sector (and the capacity ingredient of the UDM, target #3).
+- **The universal mobility law (085) is data-matched (a postdiction)** — the constitutive law `M ∝ (ρ_max − ρ)^β` matched across 11 materials (`R² = 0.986`–`0.999`) from existing published data; the empirical anchor of the sector (and the capacity ingredient of the UDM, target #3). *(Self-authored Zenodo preprint, **not** peer-reviewed; the FRAP forward test is not yet run — see `predictions/Paper_ED_FRAP_Template.md`.)*
 - **Honest boundary:** Paper_082 triangulates **advection and kinematic induction as *non-ED-native*** — lossy ≠ wrong; not every continuum effect is a direct substrate shadow.
 - **`Q ≈ 3.5` (080)** is canon-internal (one of SCBU's six projections, #5), not derived from primitives.
 
-**Tier key:** `Grounded` (conditional/structural, M2/M3) · `Measured` (empirically validated, e.g. the mobility law) · `Inherited` (a value from the standard form) · `Synthesis` · `Non-ED` (triangulated as not substrate-native — an honest boundary).
+**Tier key:** `Grounded` (conditional/structural, M2/M3) · `Measured` (matches existing data, e.g. the mobility-law postdiction) · `Inherited` (a value from the standard form) · `Synthesis` · `Non-ED` (triangulated as not substrate-native — an honest boundary).
 
 ---
 
@@ -19,7 +19,7 @@
 2. **[076 NS-2: Substrate→Continuum Bridge](Paper_076_NS2_CoarseGraining.md)** — coarse-graining into the Navier-Stokes form.
 3. **[075 NS-1: Dimensional Forcing to 3+1](Paper_075_NS1_DimensionalForcing.md)** — why the fluid PDE lives in 3+1.
 4. **[077 NS-Smoothness](Paper_077_NS_Smoothness_R1.md)** — the smoothness mechanism (Clay-adjacent).
-5. **[085 Universal Mobility Law](Paper_085_UniversalMobilityLaw.md)** — the data-validated constitutive anchor.
+5. **[085 Universal Mobility Law](Paper_085_UniversalMobilityLaw.md)** — the data-matched constitutive anchor (a postdiction; self-published, not peer-reviewed).
 
 ---
 

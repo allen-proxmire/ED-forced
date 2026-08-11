@@ -3,7 +3,7 @@
 **Series:** Event Density (ED) Generative Papers — soft-matter / transport arc (P04 bounded-participation)
 **Author:** Allen Proxmire
 **Status:** Working scoping draft (conditional structural derivation within the 13-Primitive Generative System). Extends the packing-budget-saturation postulate of `Paper_079` from viscosity to resistivity; identifies the one *distinctive* (non-inherited) prediction — a fixed commensurability between the two transport ceilings — and declares it OPEN, as the next target.
-**Companions:** `Paper_079_P4_NN_Rheology` (Krieger–Dougherty via P04), `Paper_085_UniversalMobilityLaw` (the validated empirical anchor), `Paper_073_DCGT` (substrate→continuum), `Paper_087_13Primitives` (P04, P08), `Paper_V5UnifiedBudget` (the template for a *unified* budget with fixed ratios).
+**Companions:** `Paper_079_P4_NN_Rheology` (Krieger–Dougherty via P04), `Paper_085_UniversalMobilityLaw` (the data-matched empirical anchor; postdiction, not peer-reviewed), `Paper_073_DCGT` (substrate→continuum), `Paper_087_13Primitives` (P04, P08), `Paper_V5UnifiedBudget` (the template for a *unified* budget with fixed ratios).
 
 ---
 
@@ -76,4 +76,4 @@ Resistivity saturation extends `Paper_079`'s bounded-bandwidth postulate from mo
 
 ---
 
-**Series context.** Soft-matter / transport arc. Companion to `Paper_079` (viscosity) and `Paper_085` (mobility, validated). Origin: ED Interpretation Chronicle v3 LEAD #1 (resistivity-saturation ceiling), on the optical-lattice resistivity-saturation quantum simulation (2026). The next target is the unified P04 transport budget (§4), the transport analog of `Paper_V5UnifiedBudget`.
+**Series context.** Soft-matter / transport arc. Companion to `Paper_079` (viscosity) and `Paper_085` (mobility, data-matched postdiction; not peer-reviewed). Origin: ED Interpretation Chronicle v3 LEAD #1 (resistivity-saturation ceiling), on the optical-lattice resistivity-saturation quantum simulation (2026). The next target is the unified P04 transport budget (§4), the transport analog of `Paper_V5UnifiedBudget`.
