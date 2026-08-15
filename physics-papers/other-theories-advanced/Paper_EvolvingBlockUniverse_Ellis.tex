@@ -1,0 +1,541 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setcounter{secnumdepth}{-1}
+\providecommand{\tightlist}{}
+\usepackage{microtype}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Collapse as the Present: George Ellis's Evolving Block Universe and Event Density's Committing Substrate},
+  pdfauthor={Allen Proxmire},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Collapse as the Present: George Ellis's Evolving Block Universe
+and Event Density's Committing Substrate}
+\author{Allen Proxmire}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\subsection{Preamble --- what this article does and does not
+claim}\label{preamble-what-this-article-does-and-does-not-claim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{This is a comparison and position paper, not a new
+  derivation.} It maps an independent, established research program ---
+  George Ellis's Evolving Block Universe (EBU) and its quantum
+  refinement, the Crystallizing Block Universe (CBU) --- onto Event
+  Density, and identifies where each supplies what the other lacks.
+  Ellis's results are \emph{cited, not re-derived}; ED's are its
+  standing conditional derivations, cited inline.
+\item
+  \textbf{Convergence, not endorsement.} Ellis has, to the author's
+  knowledge, no acquaintance with Event Density. Every point of
+  agreement below is \textbf{independent arrival at the same conclusion
+  from a different starting point} (Ellis from general relativity and
+  the measurement problem; ED from a discrete substrate), never Ellis's
+  sanction of ED. The phrase used throughout is \emph{convergence}.
+\item
+  \textbf{ED reproduces the physics both frameworks share.} Nothing here
+  revises quantum mechanics or general relativity. The ED-specific
+  content invoked (the constructed substrate, the collapse scale
+  \(M_{crit}\), the dissolution of the Past Hypothesis) carries its own
+  standing tier, flagged per claim.
+\item
+  \textbf{The two things ED offers Ellis's program are tiered, not
+  asserted as fact.} (a) A \emph{constructed} substrate whose commitment
+  drives the block's growth is a conditional structural derivation from
+  the thirteen ED primitives (\texttt{Paper\_087}), not a completed
+  quantum-gravity theory. (b) A collapse mass-scale \(M_{crit}\) is an
+  \emph{unconfirmed prediction} (\texttt{Paper\_060}), not a result.
+  Neither closes Ellis's open problems; each is a candidate answer to
+  one he names.
+\item
+  \textbf{Tiers marked per claim.} The core convergence
+  (collapse-as-present \(\approx\) commitment) is \emph{interpretive and
+  structural}; the substrate engine is a \emph{conditional derivation};
+  \(M_{crit}\) is a \emph{prediction}; the Past-Hypothesis dissolution
+  is a \emph{reframe} (\texttt{Paper\_HowTheoryCoarseGrainReality} §13);
+  the preferred-frame comparison is a \emph{limited structural
+  convergence} --- both reject Minkowski realism and carry preferred
+  worldlines, but only ED is in the khronometric modified-gravity class,
+  and the two disagree on the source of the frame (§6).
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{1. What Event Density is, and the class this runs
+in}\label{what-event-density-is-and-the-class-this-runs-in}
+
+Event Density is a discrete, relational substrate: a participation graph
+whose channels carry a bandwidth \(b \ge 0\) and a phase, with one
+process primitive --- \textbf{commitment} (P11), the irreversible act by
+which an uncommitted participation becomes a definite, recorded fact,
+writing the arrow of time into the law rather than onto it
+(\texttt{Paper\_087}). Space and geometry are emergent: the metric is
+the reading of the bandwidth field, \(g \sim 1/b\)
+(\texttt{Paper\_MetricFromTheGraph}, \texttt{Paper\_GR-I}). Measurement
+is not a separate postulate --- it \emph{is} commitment: the
+basis-selecting, irreversible actualization of one outcome from a
+superposed participation (Report §4). ED's gravitational class is
+\textbf{khronometric}: two tensor modes plus one propagating scalar, the
+\emph{khronon} \(u_\mu = \partial_\mu T/|\partial T|\), the arrow made
+geometric (\texttt{Paper\_GR-II}), with luminal cones collapsing the
+coupling space to one dimension \(\lambda_{local}\), on which
+\(\alpha_{2} = 0\) exactly and \(\alpha_{1} = -4\lambda_{local}\),
+suppressed \textasciitilde70 orders below current bounds
+(\texttt{Paper\_GR-IV}).
+
+Held in that frame, ED makes four claims that will matter here: (i) the
+present is the live edge where the uncommitted becomes committed; (ii)
+the future is genuinely open (uncommitted) and the past fixed
+(recorded); (iii) the arrow is primitive, and the smooth time-reversible
+laws are its coarse-grained shadow
+(\texttt{Paper\_HowTheoryCoarseGrainReality}); (iv) collapse is real,
+basis-selecting, and irreducible to unitary evolution.
+
+Every one of those four is also a load-bearing claim of Ellis's EBU/CBU
+--- reached from the opposite direction.
+
+\subsection{2. Ellis's Evolving and Crystallizing Block
+Universe}\label{elliss-evolving-and-crystallizing-block-universe}
+
+Ellis (2006--2014; \emph{On the Flow of Time}; \emph{Time and Spacetime:
+The Crystallizing Block Universe}, with Rothman; \emph{The Evolving
+Block Universe and the Meshing Together of Times}) rejects both the
+static block (eternalism, ``time is an illusion'') and presentism. His
+ontology is a \textbf{growing} block: the past and present exist and are
+fixed; the \textbf{future does not exist} --- it is a set of
+possibilities, not a region. Spacetime is the standard four-dimensional
+block \emph{minus the future}, with a moving growth-front. The present
+is the growing edge, and it is ontologically special: it is where the
+indefinite future becomes the definite past.
+
+The mechanism is the paper's title-phrase: \textbf{collapse is the
+present.} In Ellis's own italic hypothesis, the uncertainty of the
+future changes to the certainty of the past when wave-function collapse
+occurs --- ``all the time, everywhere.'' Collapse is not a measurement
+\emph{problem}; it is time happening. This is an
+\textbf{objective-collapse} position: Ellis treats reduction as a real,
+time-irreversible physical process, extra to unitary quantum theory, and
+explicitly rejects the three standard evasions --- the ensemble reading
+(no ensemble without individual events), decoherence-as-sufficient (it
+diagonalizes but does not select one outcome), and many-worlds (no
+block, plus the measure and preferred-basis problems). The future is
+open \textbf{ontologically}, from real quantum indeterminism amplified
+to macro and cosmic scale (inflation, chaos), not merely epistemically.
+
+The CBU is the quantum refinement: because of delayed-choice and
+quantum-eraser evidence, the transition from indefinite to definite does
+not occur on a clean simultaneity surface. The crystallization surface
+is \emph{crinkly and lagging} --- some micro ``past'' events fix only
+later --- so ``the past is fixed'' is strictly the macroscopic,
+coarse-grained statement.
+
+Two further commitments are essential for the comparison, and both are
+exactly where ED has something to add:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The deep substrate is posited, not built.} Ellis holds that
+  classical spacetime and its growth must emerge from an underlying
+  quantum-gravity layer, that the growth is \emph{``presumably''}
+  collapse of a quantum-gravity wave function, and that any correct
+  quantum-gravity theory \emph{must} yield an EBU at the macro level ---
+  a selection rule. He notes discrete programs (causal sets, spin foams)
+  as compatible. He does not construct the layer.
+\item
+  \textbf{A theory of collapse is named as the missing piece.} Ellis
+  states that the outstanding major issue for the program is a viable
+  theory of \emph{when and where} collapse occurs; he does \textbf{not}
+  adopt a Penrose--Diosi mass threshold, and treats the collapse scale
+  as set contextually by the local environment, with no universal
+  number.
+\end{itemize}
+
+\subsection{\texorpdfstring{3. The convergence: collapse-as-present
+\(\approx\)
+commitment}{3. The convergence: collapse-as-present  commitment}}\label{the-convergence-collapse-as-present-commitment}
+
+The central result of this comparison is a near-identity of the two
+frameworks' account of \emph{now}, reached independently.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ellis (EBU/CBU)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Event Density
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+The present & the growing edge; indefinite \(\to\) definite & the live
+edge; uncommitted \(\to\) committed (P11) \\
+``Now'' mechanism & objective wave-function collapse \emph{is} the flow
+of time & commitment \emph{is} the arrow (P11) \\
+Future / past & future does not exist (open); past fixed/recorded &
+future uncommitted (open); past committed/recorded \\
+Arrow & fundamental, already in QM via measurement & primitive (P11);
+reversibility is the coarse-grained shadow \\
+Collapse & real, objective, extra to unitary QM; rejects MWI /
+decoherence-alone / ensemble & commitment is a real primitive, not
+derivable from unitary evolution; same three rejections \\
+Spacetime & emergent from a discrete quantum-gravity layer whose
+collapse drives growth & emergent from the discrete committing
+substrate \\
+\end{longtable}
+}
+
+Ellis's italic hypothesis --- collapse as the transition of an
+indefinite future into a definite past, occurring everywhere continually
+--- is, term for term, the coarse-grained description of P11. What Ellis
+calls the \emph{crystallizing present}, ED calls the \emph{committing
+edge}. The tier of this identification is \textbf{interpretive and
+structural}: it is a mapping between two conditional readings of the
+same quantum and relativistic physics, not a shared theorem. But its
+significance is not diminished by that. Two derivations that begin as
+far apart as general relativity and a discrete participation graph, and
+that arrive at the same non-standard ontology --- real flow, open
+future, fixed past, ontologically special present, objective collapse as
+the mechanism of becoming --- constitute a \textbf{consilience} across
+independent starting assumptions.
+
+\subsection{4. What ED supplies that Ellis posits: the substrate
+engine}\label{what-ed-supplies-that-ellis-posits-the-substrate-engine}
+
+Ellis's EBU requires a Scale-0 layer whose collapse actualizes the
+future at the present-boundary, and asserts that the correct
+quantum-gravity theory must yield exactly that. Ellis describes the
+\emph{shape} of this engine --- a discrete floor that commits, growing
+spacetime at the present --- and states plainly that he does not have
+it.
+
+Event Density is a candidate for that engine, and it is
+\emph{constructed} rather than posited. The committing substrate is the
+Scale-0 layer; the emergent metric \(g \sim 1/b\) and the weak-field
+Einstein equation are derived from it
+(\texttt{Paper\_MetricFromTheGraph}, \texttt{Paper\_GR-I..IV}); the
+growth of the block is the accumulation of commitments (P11); the
+``actualization of the future at the present-boundary'' is
+measurement-as-commitment (Report §4). ED even meets Ellis's stated
+compatibility class --- a discrete, causal, becoming-based substrate in
+the lineage he names (causal sets, spin foams).
+
+The honest tier: ED is a \textbf{conditional structural derivation from
+thirteen posited primitives}, not a completed quantum gravity, and the
+full nonlinear Einstein equation is not derived from the primitives
+(\texttt{Paper\_GR-I} delivers the weak field and the khronometric
+class). \emph{(A separate thermodynamic route,
+\texttt{Paper\_KhronometricEquationOfState\_Jacobson}, recovers the
+Einstein equation in its equation-of-state} form \emph{with the aether
+kept among the sources; that is a literature-grounded result, not a
+from-primitives derivation of the full nonlinear field equations, which
+remains open.)} So ED does not \emph{close} Ellis's Scale-0 problem. It
+offers a specific, constructed candidate for the layer his program
+requires --- which is more than the selection rule (``QG must yield an
+EBU'') currently provides.
+
+\subsection{\texorpdfstring{5. The collapse scale Ellis lacks:
+\(M_{crit}\)}{5. The collapse scale Ellis lacks: M\_\{crit\}}}\label{the-collapse-scale-ellis-lacks-m_crit}
+
+Ellis names a viable theory of \emph{when and where} collapse occurs as
+an outstanding issue --- and, importantly, declines a universal collapse
+scale, treating the trigger as set contextually by the local
+environment. Event Density goes further, and commits to a scale. If
+commitment carries a critical multiplicity, there is a
+quantum-to-classical crossover \(M_{crit}\) (\texttt{Paper\_060}): a
+mass above which multi-channel participation can no longer be maintained
+and the substrate must commit. The associated matter-wave band,
+\textasciitilde140--250 kDa, is \textbf{inherited from empirical
+extrapolation} (\texttt{Paper\_056}), not ED-derived; what ED
+contributes is the \emph{mechanism} --- that a sharp, substrate-forced
+individuation boundary exists in that regime --- and interferometry is
+currently approaching it.
+
+The tier is explicit: \(M_{crit}\) is an \textbf{unconfirmed
+prediction}, not a result. It is a candidate answer to the ``when does
+collapse happen'' question Ellis leaves open --- and a \emph{bolder} one
+than he endorsed: where Ellis treats the trigger as contextual with no
+universal number, ED commits to a universal scale, and is falsifiable
+for exactly that reason. Where Ellis's CBU is \emph{designed to
+accommodate} the existing collapse and delayed-choice experiments
+(Guerlin et al.~2007; the Kim et al.~quantum eraser; Wheeler
+delayed-choice), ED adds a falsifiable number: a boundary that a
+static-block or purely-unitary account says should not exist, and that
+objective collapse says should. This is the one place the two programs,
+taken together, become sharper than either alone --- a shared ontology
+plus a testable edge that goes beyond Ellis's own stance.
+
+A note on the CBU's crinkly present. Ellis's delayed-choice lag ---
+micro ``past'' events crystallizing later --- has a natural ED reading:
+commitment occurs at the actual interaction that fixes a degree of
+freedom, which can be later than the naïve past-surface. ED reproduces
+the delayed-choice results (it reproduces the Born rule and
+no-signaling, A1 capacity-zero), and the interpretive picture --- fixing
+happens at the commit, not before --- is the same structure as Ellis's
+lagging crystallization surface.
+
+\subsection{6. Preferred frames: a narrow convergence and a real
+divergence}\label{preferred-frames-a-narrow-convergence-and-a-real-divergence}
+
+The hardest problem for any \emph{becoming} ontology is relativity's
+lack of a preferred simultaneity. Both frameworks confront it, and both
+end up carrying preferred worldlines while treating Lorentz invariance
+as effective --- but they do so in \emph{different theories}, and, as it
+turns out, they disagree on the direction of the dependence.
+
+Ellis rejects physical realism about Minkowski spacetime (no real vacuum
+exists; the cosmic background radiation permeates everywhere), so the
+\emph{real} universe carries geometrically preferred worldlines
+everywhere: the timelike \textbf{Ricci eigenlines}, the local average
+rest frame of matter. Crucially, these are a foliation \emph{chosen
+within} the standard Einstein field equations --- an ADM gauge / broken
+solution-symmetry (like the CMB rest frame), \textbf{not} a modification
+of gravity. Ellis posits no dynamical aether field and no
+Lorentz-violating couplings. The growth is \emph{pointwise along
+worldlines} by proper time, needing no global simultaneity.
+
+Event Density also carries a preferred structure and also needs no
+global ``now'' (commitment is local and pointwise, exactly Ellis's
+pointwise-along-worldlines growth). But ED locates it in the
+\textbf{commitment order} --- the khronon
+\(u_\mu = \partial_\mu T/|\partial T|\), the arrow made geometric
+(\texttt{Paper\_GR-II}) --- and this is a \emph{genuine} khronometric
+(Einstein-aether-class) \textbf{modification} of gravity, with computed
+preferred-frame parameters (\(\alpha_{2} = 0\) exactly,
+\(\alpha_{1} = -4\lambda_{local}\), \textasciitilde70 orders suppressed;
+\texttt{Paper\_GR-IV}). ED, not Ellis, lives in the khronometric family.
+
+So the comparison must be stated precisely, because it cuts both ways:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The convergence is real but narrow.} Both reject Minkowski
+  realism, both carry geometrically preferred worldlines in the real
+  matter-filled universe, and both keep Lorentz invariance as an
+  \emph{effective} symmetry over a deeper order. That is a genuine
+  structural agreement about what taking becoming seriously requires of
+  the relativistic structure.
+\item
+  \textbf{The theories are not the same.} Ellis stays inside unmodified
+  GR (a preferred foliation); ED is a Lorentz-violating modified gravity
+  (a dynamical khronon). Only ED is in the khronometric /
+  Einstein-aether class
+  (\texttt{Paper\_KhronometricEquationOfState\_Jacobson},
+  \texttt{Paper\_GR-IV}).
+\item
+  \textbf{They disagree on the direction of the frame.} ED derives the
+  preferred frame \emph{from} the commitment order (arrow \(\to\)
+  frame). Ellis explicitly argues the reverse --- that nothing inherent
+  in collapse supplies a frame, and that the local matter context
+  defines the preferred frame, which then sets the context for collapse
+  (matter \(\to\) frame \(\to\) collapse; \emph{Meshing} §3.2). This is
+  a \textbf{substantive disagreement}, not a shared mechanism.
+\end{itemize}
+
+The honest reading, then: a shared \emph{instinct} --- that becoming
+forces preferred worldlines and an effective, emergent Lorentz symmetry
+--- not a shared class and not a shared mechanism. ED goes further than
+Ellis, into a testable modified-gravity khronon, and in a direction
+Ellis argued against.
+
+\subsection{7. Where ED and Ellis diverge ---
+honestly}\label{where-ed-and-ellis-diverge-honestly}
+
+The convergence is not total, and the differences are real:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The Past Hypothesis.} To align the \emph{thermodynamic} arrow
+  with the fundamental direction of time, Ellis retains a fine-tuned
+  low-entropy initial condition (a ``past condition''). ED does
+  \textbf{not} require it: with irreversibility primitive, the
+  reversible laws are the lossy average and the second law is
+  bookkeeping, so no special initial condition is imported to explain
+  the arrow (\texttt{Paper\_HowTheoryCoarseGrainReality} §13). Tier:
+  this ED move is a \textbf{reframe} --- it identifies low initial
+  entropy with the fewest early commitments (itself a substantive
+  assumption), not a computed derivation of the initial-entropy value
+  --- but it is a genuine economy relative to Ellis's account.
+\item
+  \textbf{The preferred-frame locus} (§6): matter (Ellis) versus the
+  commitment order (ED). Empirically both live in the khronometric
+  class; the difference is which physical structure supplies the
+  foliation.
+\item
+  \textbf{The integrability of the meshing.} Ellis asserts, on
+  observational rather than derivational grounds, that the local proper
+  times mesh into a single growing block (and flags the
+  timelike-crystallization-surface case as unfinished). ED grounds the
+  corresponding fact differently --- the emergent metric and its
+  locality come from the graph --- but neither framework has a closed
+  proof that the meshing is forced; it is a shared open seam.
+\end{itemize}
+
+\subsection{8. Honest tiers}\label{honest-tiers}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Collapse-as-present \(\approx\) commitment} (§3):
+  \emph{interpretive / structural} --- a convergence of two independent
+  readings, not a shared theorem. Load-bearing as consilience, not as
+  proof.
+\item
+  \textbf{ED as the substrate engine} (§4): \emph{conditional structural
+  derivation} from the thirteen primitives; the weak-field metric and
+  khronometric class are delivered, the full nonlinear Einstein equation
+  is not. A constructed candidate for Ellis's posited Scale-0, not a
+  completed quantum gravity.
+\item
+  \textbf{\(M_{crit}\)} (§5): \emph{unconfirmed prediction}; the ED
+  answer to the ``when does collapse happen'' question Ellis names as
+  open.
+\item
+  \textbf{Past-Hypothesis dissolution} (§7): \emph{reframe}; an honest
+  economy, not a computed initial-entropy value.
+\item
+  \textbf{Preferred-frame comparison} (§6): \emph{limited structural
+  convergence} --- both reject Minkowski realism and carry preferred
+  worldlines, and both treat Lorentz invariance as effective. But only
+  ED is a khronometric modified-gravity theory, and Ellis explicitly
+  locates the frame in matter and argues \emph{against} ED's
+  arrow-as-frame direction. A shared instinct, not a shared class or a
+  shared mechanism.
+\item
+  \textbf{Convergence, not endorsement}: throughout. Ellis has no
+  knowledge of ED; the agreement is independent arrival.
+\end{itemize}
+
+\subsection{9. Position statement}\label{position-statement}
+
+Event Density is not a rival to the Evolving Block Universe; it is a
+candidate \textbf{engine} for it. Ellis, from general relativity and the
+measurement problem, arrives at a growing block whose present is
+objective wave-function collapse, whose future does not exist, and whose
+deep basis must be a discrete becoming-substrate he describes but does
+not build. Among the open problems he names, two are ones Event Density
+speaks to directly: that substrate, and a theory of \emph{when} collapse
+occurs. (Others he lists --- the timelike-surface initial-value problem,
+and the meshing of local proper times into one block --- ED does not
+resolve; see §7.) Event Density, from a discrete committing substrate,
+arrives at the same ontology --- present as the committing edge, open
+future, fixed past, objective collapse as the arrow --- and offers, at
+their stated tiers, a \emph{constructed} substrate and a
+\emph{predicted} collapse scale.
+
+The honest claim is therefore narrow and, precisely because it is
+narrow, strong: two frameworks built from opposite ends of physics
+converge on a non-standard account of time that most of the field
+rejects, and the discrete framework supplies two of the pieces the
+relativistic one names as missing. That is convergence plus candidate
+completion, not proof --- and it is the appropriate relationship between
+an outsider's substrate program and one of the field's most serious
+defenses of the reality of time.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Cross-references}\label{cross-references}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Ellis's program:} \emph{On the Flow of Time} (Ellis, FQXi
+  2008); \emph{Time and Spacetime: The Crystallizing Block Universe}
+  (Ellis \& Rothman, arXiv:0912.0808); \emph{The Evolving Block Universe
+  and the Meshing Together of Times} (Ellis).
+\item
+  \textbf{Substrate \& commitment:}
+  \texttt{physics-papers/foundations/Paper\_087\_13Primitives.md} (P11);
+  Report §4 (measurement as commitment).
+\item
+  \textbf{Emergent metric \& gravitational class:}
+  \texttt{Paper\_MetricFromTheGraph\_ForcedTo3D.md};
+  \texttt{Paper\_GR-I..IV}; the khronon \texttt{Paper\_GR-II}; the
+  khronometric couplings \texttt{Paper\_GR-IV}; the companion
+  \texttt{Paper\_KhronometricEquationOfState\_Jacobson.md}.
+\item
+  \textbf{The arrow as coarse-graining, and the Past-Hypothesis
+  dissolution:}
+  \texttt{physics-papers/substrate-evaluation/Paper\_HowTheoryCoarseGrainReality.md}
+  (§13); companion \texttt{Paper\_ConservationColumn.md}.
+\item
+  \textbf{The collapse scale:}
+  \texttt{physics-papers/q-compute/Paper\_060\_Mcrit\_Unification.md};
+  the matter-wave prediction, \texttt{physics-papers/predictions/}.
+\item
+  \textbf{No-signalling / commitment-locality:} the A1 capacity-zero
+  result.
+\end{itemize}
+
+\end{document}
