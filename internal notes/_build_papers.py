@@ -31,6 +31,7 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  '¼': r'\tfrac{1}{4}', '½': r'\tfrac{1}{2}', '⋉': r'\ltimes',
  '≤': r'\le', '≥': r'\ge', '∘': r'\circ', '⊕': r'\oplus', 'ḃ': r'\dot{b}',
  'Θ': r'\Theta', '𝒲': r'\mathcal{W}', 'Ψ': r'\Psi', 'ω': r'\omega', 'ḧ': r'\ddot{h}',
+ 'ψ': r'\psi', '𝒜': r'\mathcal{A}', '⟨': r'\langle', '⟩': r'\rangle', '□': r'\Box', '′': r"'",
 }
 CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  'ρ': 'rho', 'Σ': 'Sigma', 'α': 'alpha', 'μ': 'mu', 'ν': 'nu', 'π': 'pi',
