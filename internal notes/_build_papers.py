@@ -99,6 +99,11 @@ def prose_repl(s):
 def math_repl(s):
     """Inside $...$ / $$...$$: replace maximal math-char runs with commands,
     merging sup/sub runs (so 'b⁻¹' -> b^{-1}, never b^{-}^{1}); letter-guard spacing."""
+    # √ -> proper \sqrt{...} (the CMD map's \surd sits low and leaves its operand uncovered):
+    #   √(...) -> \sqrt{...}; √token (with an optional _sub) -> \sqrt{token}; bare √ -> \sqrt{\,}
+    s = re.sub(r'√\s*\(([^()]*)\)', r'\\sqrt{\1}', s)
+    s = re.sub(r'√\s*([A-Za-z0-9]+(?:_(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]))?)', r'\\sqrt{\1}', s)
+    s = s.replace('√', r'\sqrt{\,}')
     out, i = [], 0
     while i < len(s):
         c = s[i]
@@ -198,9 +203,15 @@ def build(md):
     base = name[:-3]
     lines = open(md, encoding='utf-8').read().splitlines()
     title = next(l[2:].strip() for l in lines if l.startswith('# '))
+    # subtitle = the first '## ' heading before '## Abstract' (the paper's part-line)
+    subtitle = next((l[3:].strip() for l in lines
+                     if l.startswith('## ') and l.strip() != '## Abstract'), '')
     ai = body_start(lines)
     body = latexify('\n'.join(lines[ai:]))
-    front = (f'---\ntitle: "{yesc(title)}"\nauthor: "Allen Proxmire"\n'
+    front = ('---\n'
+             f'title: "{yesc(title)}"\n'
+             + (f'subtitle: "{yesc(subtitle)}"\n' if subtitle else '')
+             + 'author: "Allen Proxmire"\n'
              f'date: "June 2026"\ngeometry: margin=1.1in\nfontsize: 11pt\n---\n\n')
     header(workdir)
     open(os.path.join(workdir, '_tmp.md'), 'w', encoding='utf-8').write(front + body)
