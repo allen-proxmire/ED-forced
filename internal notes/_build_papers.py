@@ -32,6 +32,7 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  '≤': r'\le', '≥': r'\ge', '∘': r'\circ', '⊕': r'\oplus', 'ḃ': r'\dot{b}',
  'Θ': r'\Theta', '𝒲': r'\mathcal{W}', 'Ψ': r'\Psi', 'ω': r'\omega', 'ḧ': r'\ddot{h}',
  'ψ': r'\psi', '𝒜': r'\mathcal{A}', '⟨': r'\langle', '⟩': r'\rangle', '□': r'\Box', '′': r"'",
+ '⋆': r'\star',
 }
 CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  'ρ': 'rho', 'Σ': 'Sigma', 'α': 'alpha', 'μ': 'mu', 'ν': 'nu', 'π': 'pi',
@@ -44,7 +45,7 @@ CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  '⊥': 'perp', '⇒': '=>', '≲': '<~', '≳': '>~', '≡': '==', '⟺': '<=>',
  '⟹': '==>', '∏': 'prod ', '√': 'sqrt', '−': '-', 'ℤ': 'Z', 'ℝ': 'R', 'ℂ': 'C',
  'ℓ': 'l', 'ℏ': 'hbar', 'ħ': 'hbar', '✓': 'OK', '⅓': '1/3', '¼': '1/4', '½': '1/2',
- '⋉': 'x', '≤': '<=', '≥': '>=', '∘': 'o', '⊕': '(+)',
+ '⋉': 'x', '≤': '<=', '≥': '>=', '∘': 'o', '⊕': '(+)', '⋆': '*',
  '—': '--', '–': '-', '§': 'sec.', '…': '...', 'ḃ': 'b-dot',
  'Θ': 'Theta', '𝒲': 'Wcal', 'Ψ': 'Psi', 'ω': 'omega', 'ḧ': 'h_tt',
 }
