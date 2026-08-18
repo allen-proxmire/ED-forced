@@ -32,7 +32,7 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  '≤': r'\le', '≥': r'\ge', '∘': r'\circ', '⊕': r'\oplus', 'ḃ': r'\dot{b}',
  'Θ': r'\Theta', '𝒲': r'\mathcal{W}', 'Ψ': r'\Psi', 'ω': r'\omega', 'ḧ': r'\ddot{h}',
  'ψ': r'\psi', '𝒜': r'\mathcal{A}', '⟨': r'\langle', '⟩': r'\rangle', '□': r'\Box', '′': r"'",
- '⋆': r'\star',
+ '⋆': r'\star', 'Π': r'\Pi', '⊊': r'\subsetneq', '⊗': r'\otimes',
 }
 CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  'ρ': 'rho', 'Σ': 'Sigma', 'α': 'alpha', 'μ': 'mu', 'ν': 'nu', 'π': 'pi',
@@ -49,7 +49,7 @@ CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  '—': '--', '–': '-', '§': 'sec.', '…': '...', 'ḃ': 'b-dot',
  'Θ': 'Theta', '𝒲': 'Wcal', 'Ψ': 'Psi', 'ω': 'omega', 'ḧ': 'h_tt',
 }
-TEXT_OK = set('—–§…öřČéüïàáè')  # raw text chars Latin Modern handles
+TEXT_OK = set('—–§…öřČéüïàáèó')  # raw text chars Latin Modern handles
 
 MATHCLASS = set(SUP) | set(SUB) | set(CMD)
 
