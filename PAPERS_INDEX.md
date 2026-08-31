@@ -3,7 +3,7 @@
 **Last updated:** 2026-08-30
 **Purpose:** Single source of truth for every paper in the ED corpus. Tracks paper number (locked-in numbering), title, domain/arc assignment, status, and file location. Reflects the corpus state after Round 1 (per-paper QC), Round 2 (cross-paper audit + theorem gap-fill), Round 3 (cross-arc harmonization + SCBU + ED-SC 4.x arc), and the **2026-07-02 rebuild** (a full repo scan found the index had gone stale since 2026-05-14 — three entire arcs, a decimal-numbered sub-layer, and several standalone sections had never been added; see the maintenance note at the bottom), and the **2026-08-30 rebuild** (a second full repo scan, run for the same reason: the index had gone stale again, this time missing the fifteen tiered-claims ledgers, the flagship report, the Selected Formalisms series, the essays, the readings, the microscopic-completions family, the primitives cards, T1-T18, and fourteen substrate-evaluation papers, plus four filename renames that had left dead paths behind).
 
-**Source corpus:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\` (legacy/working-repo location; the EDG copies referenced by file paths below live under `physics-papers/<sub-domain>/`, `position-papers/`, `layers/`, etc. in this repo).
+**Source corpus:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\` (legacy/working-repo location; the EDG copies referenced by file paths below live under `physics-papers/<sub-domain>/`, `position-paper/`, `layers/`, etc. in this repo).
 
 **Status enum:**
 - **WRITTEN** — paper complete in corpus.
@@ -442,20 +442,20 @@ Ten standalone papers from the substrate-evaluation program (build-and-run / the
 | Bullet-TopologicalDefect | The Bullet Cluster as a Substrate Topological Defect: An ED Synthesis (Bullet_Arc phase-2; integrates the vacuum-manifold / winding-number / relaxation-time sub-results) | gravity / dark-matter phenomenology | WRITTEN | `physics-papers/gravity/Paper_117_Bullet_TopologicalDefect.md` (renamed; path corrected 2026-08-30) (+ `.pdf`; further sources in `event-density/theory/Bullet_Cluster/`) |
 | Offset-Velocity-Test | The Knee in the Data: An Experiment-Ready Test of the Offset-Velocity Law in Merging Clusters (Bullet_Arc phase-3; the mass-gas offset vs merger-velocity shape test, sharp knee vs LCDM scatter vs MOND ramp; real dataset + statistic named; velocity-selection feasibility finding) | gravity / dark-matter phenomenology (observational) | WRITTEN | `physics-papers/gravity/Paper_OffsetVelocityLaw_MergingClusterTest.md` (+ `.pdf`) |
 
-Notes: GR-I/GR-II are the post-pivot curvature-emergence results, sharpening (not superseding) the Arc-3 scalar-tensor/MOND papers — see GR-I §7 / GR-II §9 for the explicit reconciliation. Form-and-Flesh is the program reach-statement (the empirical successor to the Contrast-First ontology paper) and lives in `position-papers/` alongside it. Underlying simulation artifacts live in the working repo (`event-density/evaluation/` and `event-density/foundations/`). **The Hawking-2π addendum lives with Arc 4 (Black Holes) above, not here, since its file path is `physics-papers/black-hole/`.**
+Notes: GR-I/GR-II are the post-pivot curvature-emergence results, sharpening (not superseding) the Arc-3 scalar-tensor/MOND papers — see GR-I §7 / GR-II §9 for the explicit reconciliation. Form-and-Flesh is the program reach-statement (the empirical successor to the Contrast-First ontology paper) and lives in `position-paper/` alongside it. Underlying simulation artifacts live in the working repo (`event-density/evaluation/` and `event-density/foundations/`). **The Hawking-2π addendum lives with Arc 4 (Black Holes) above, not here, since its file path is `physics-papers/black-hole/`.**
 
 ---
 
 ## Position Papers — ADDED 2026-07-02
 
-Foundational/ontological framing documents distinct from the per-domain derivation arcs. Live in `position-papers/`.
+Foundational/ontological framing documents distinct from the per-domain derivation arcs. Live in `position-paper/`.
 
 | Title | Status | File |
 |---|---|---|
-| Event Density: A Program Review (14-section map of the ~125-paper corpus, tiered; own Zenodo DOI) | WRITTEN | `position-papers/ED_Program_Review.md` (+ `.pdf`) |
-| Event Density (front-door whitepaper) | WRITTEN | `position-papers/ED_WHITEPAPER.md` |
-| When Contrast Becomes Fact — the Contrast-First Ontology ("the Facts paper") | WRITTEN | `position-papers/paper_ED_Contrast_First_Ontology.md` (**hygiene flag**: this file has no H1 heading, opens directly at `## Abstract` — a real source-file gap, not fixed as part of this index-only pass) |
-| The Event Density Framework: A 13-Primitive Generative System and Its Cross-Domain Reach | WRITTEN | `position-papers/paper_ED_Framework_13_Primitive_Generative_System.md` |
+| Event Density: A Program Review (14-section map of the ~125-paper corpus, tiered; own Zenodo DOI) | WRITTEN | `position-paper/ED_Program_Review.md` (+ `.pdf`) |
+| Event Density (front-door whitepaper) | WRITTEN | `position-paper/ED_WHITEPAPER.md` |
+| When Contrast Becomes Fact — the Contrast-First Ontology ("the Facts paper") | WRITTEN | `position-paper/paper_ED_Contrast_First_Ontology.md` (**hygiene flag**: this file has no H1 heading, opens directly at `## Abstract` — a real source-file gap, not fixed as part of this index-only pass) |
+| The Event Density Framework: A 13-Primitive Generative System and Its Cross-Domain Reach | WRITTEN | `position-paper/paper_ED_Framework_13_Primitive_Generative_System.md` |
 
 Note: this third entry is a distinct document from `Paper_087_13Primitives.md` (Arc 8) — same underlying content genre, different framing/date, not a duplicate.
 
@@ -720,13 +720,13 @@ A folder reorganization was committed alongside this index pass and is **not yet
 
 | Change | Status |
 |---|---|
-| `position-paper/` → `position-papers/` | folder moved; this index and `internal notes/ED_ORIENTATION.md` repointed |
+| `position-paper/` → `position-paper/` | folder moved; this index and `internal notes/ED_ORIENTATION.md` repointed |
 | `Paper_FormAndFlesh_TwoWalls.md` → `essays/ED_Essay_FormAndFlesh_TwoWalls.md` | moved out of the position-paper set into the essays set |
 | `primitives/Primitives_Ledger.md` → `primitives/P1-13_Primitives_Ledger.md` | renamed |
 | `ED_TheoryList_TieredClaims.xlsx` → `ED_ItemizedTheory_TieredClaims.xlsx` | renamed, matching the earlier PDF rename |
 | `scale correspondence/scale invariance/Paper_037_a0_Invariance_CHECK.md` | new check file alongside the retired original |
 
-**Outstanding reference debt (flagged, NOT swept in this pass).** The folder moved but its inbound references did not. Files still pointing at the old `position-paper/` path include the thirteen primitive cards (`primitives/P01…P13`), `primitives/Contrast_Minimality.md`, `internal notes/ED_MEMORY.md`, `essays/ED_Essay_FormAndFlesh_TwoWalls.md`, and `position-papers/ED_WHITEPAPER.md` itself. These were left alone deliberately: a repo-wide path sweep is a separate, mechanical change that should be reviewed as one, not folded into an index rebuild. Re-run the two-direction audit in the maintenance note after that sweep.
+**Outstanding reference debt (flagged, NOT swept in this pass).** The folder moved but its inbound references did not. Files still pointing at the old `position-paper/` path include the thirteen primitive cards (`primitives/P01…P13`), `primitives/Contrast_Minimality.md`, `internal notes/ED_MEMORY.md`, `essays/ED_Essay_FormAndFlesh_TwoWalls.md`, and `position-paper/ED_WHITEPAPER.md` itself. These were left alone deliberately: a repo-wide path sweep is a separate, mechanical change that should be reviewed as one, not folded into an index rebuild. Re-run the two-direction audit in the maintenance note after that sweep.
 
 ---
 
@@ -752,4 +752,4 @@ The reverse audit found index rows whose files are not present in this repo. **A
 
 `internal notes/` (15 files: `ED_ORIENTATION.md`, `ED_MEMORY.md`, `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `ED_Outreach_Drafts.md`, `PAPER_WRITING_CHECKLIST.md`, `CrankSafetyProtocol.md`, four `Memo_ED_*` audit memos, two `Update_Paper_*` notes, `Gravity_Quartet_TalkingPoints.md`, `ED_Public_Cosmology_Closure_Announcement.md`) is **working state, not corpus**, and is deliberately outside this index's scope.
 
-**Orientation staleness — FIXED 2026-08-31.** `internal notes/ED_ORIENTATION.md` (dated 2026-05-17) pointed a cold reader at `ED_WHITEPAPER.md`, `falsifiers/`, and `PAPERS_INDEX_redo.md` as repo-root items. All three were correct when written and all three had moved: the whitepaper to `position-papers/ED_WHITEPAPER.md` (a clean rename), the falsification register to `physics-papers/predictions/Paper_101_FalsificationRegister.md` (folder reorg), and `PAPERS_INDEX_redo.md` retired in favour of this file. **The paths have been corrected in place and a currency banner added**, scoped precisely: the layout content is verified as of 2026-08-31, while the document's *claims* (Zenodo counts, Route-A status language, the current-status section) still date from 2026-05-17 and were **not** re-verified in that pass. Since orientation is the first document a new reader or agent opens, correcting the paths was the higher-traffic half; auditing its claims remains open.
+**Orientation staleness — FIXED 2026-08-31.** `internal notes/ED_ORIENTATION.md` (dated 2026-05-17) pointed a cold reader at `ED_WHITEPAPER.md`, `falsifiers/`, and `PAPERS_INDEX_redo.md` as repo-root items. All three were correct when written and all three had moved: the whitepaper to `position-paper/ED_WHITEPAPER.md` (a clean rename), the falsification register to `physics-papers/predictions/Paper_101_FalsificationRegister.md` (folder reorg), and `PAPERS_INDEX_redo.md` retired in favour of this file. **The paths have been corrected in place and a currency banner added**, scoped precisely: the layout content is verified as of 2026-08-31, while the document's *claims* (Zenodo counts, Route-A status language, the current-status section) still date from 2026-05-17 and were **not** re-verified in that pass. Since orientation is the first document a new reader or agent opens, correcting the paths was the higher-traffic half; auditing its claims remains open.

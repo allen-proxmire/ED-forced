@@ -20,7 +20,7 @@ All of 2 and 3 hang off Paper_096's S1-invariance principle and the canonical op
 
 | File | What it is | Verdict |
 |---|---|---|
-| `Paper_037_a0_Invariance.md` | `a₀ = cH₀/(2π)` is continuum-limit invariant (substrate-c constant + H₀ a global boundary condition). The cleanest concrete result. *(Also filed in `physics-papers/gravity/` — deliberate cross-file; keep the two in sync.)* | strong / structural |
+| `Paper_037_a0_Invariance_CHECK.md` | `a₀ = cH₀/(2π)` is continuum-limit invariant (substrate-c constant + H₀ a global boundary condition). The cleanest concrete result. *(Also filed in `physics-papers/gravity/` — deliberate cross-file; keep the two in sync.)* | strong / structural |
 | `Universal_Invariants.md` | Canonical-PDE invariant block: `D_crit(ζ=¼) ≈ 0.896`, `E_ground = αγρ₀`, `t_rel ≈ ρ₀/αγ`, and `D·T₀/L₀² = 0.3` across 5 regimes / 61 orders of magnitude. | PDE theorems (sim-confirmed) |
 | `invariant_map.md` | ED-SIM v1 reference: 16 measured invariant families + 3 meta-analyses, graded by coefficient of variation (INVARIANT < 5%, WEAKLY < 15%). | measured |
 | `Paper_EDSC_MotifConditioned_Invariant.md` | `p(X|M)` invariant under DCGT in the hydrodynamic window — the S1 statistical content. | M3, conditional on GRF |

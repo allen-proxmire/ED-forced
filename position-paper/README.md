@@ -17,7 +17,7 @@
 1. **[ED_WHITEPAPER.md](ED_WHITEPAPER.md)** — what ED is, the 4-layer architecture (13 primitives → 2 kernels → 8 arcs → cross-scale), what it claims and doesn't, and how to navigate. **Start here.**
 2. **[paper_ED_Framework_13_Primitive_Generative_System.md](paper_ED_Framework_13_Primitive_Generative_System.md)** — the actual axioms the whitepaper keeps referencing (the canonical P01–P13; = Paper_087).
 3. **[paper_ED_Contrast_First_Ontology.md](paper_ED_Contrast_First_Ontology.md)** — *why* the primitives are shaped as they are: contrast-first ontology, with commitment (P11) as the determinateness mechanism the relational tradition (Whitehead, Rovelli, Ladyman–French) lacks.
-4. **[Paper_FormAndFlesh_TwoWalls.md](Paper_FormAndFlesh_TwoWalls.md)** — where ED stops and *why the limits differ*: ED generates a domain's **form** and withholds the determined **flesh**, and its "no's" are heterogeneous (see the two-walls note below).
+4. **[ED_Essay_FormAndFlesh_TwoWalls.md](../essays/ED_Essay_FormAndFlesh_TwoWalls.md)** *(moved to `essays/`)* — where ED stops and *why the limits differ*: ED generates a domain's **form** and withholds the determined **flesh**, and its "no's" are heterogeneous (see the two-walls note below).
 5. **[ED_Program_Review.md](ED_Program_Review.md)** — the deep, tiered tour of every arc; best read last, as the reference atlas once the vocabulary is in hand.
 
 ---
@@ -29,7 +29,7 @@
 | [ED_WHITEPAPER.md](ED_WHITEPAPER.md) | The front door: program overview, architecture, claims/non-claims, falsification path, corpus map | Public-facing (dense by §7–8) · Whitepaper | ✓ |
 | [paper_ED_Framework_13_Primitive_Generative_System.md](paper_ED_Framework_13_Primitive_Generative_System.md) | The canonical 13-primitive position paper (= Paper_087); states P01–P13 as postulated axioms + their cross-domain reach | Technical · Position (axiomatic) | **—** |
 | [paper_ED_Contrast_First_Ontology.md](paper_ED_Contrast_First_Ontology.md) | ED as a contrast-first ontology; commitment as determinateness | Philosophy-of-physics · Position (philosophical) | ✓ |
-| [Paper_FormAndFlesh_TwoWalls.md](Paper_FormAndFlesh_TwoWalls.md) | Form-generated / flesh-withheld; the heterogeneous "no's" of the substrate-evaluation results | Technical, concept-driven · Synthesis | ✓ |
+| [ED_Essay_FormAndFlesh_TwoWalls.md](../essays/ED_Essay_FormAndFlesh_TwoWalls.md) *(now in `essays/`)* | Form-generated / flesh-withheld; the heterogeneous "no's" of the substrate-evaluation results | Technical, concept-driven · Synthesis | ✓ |
 | [ED_Program_Review.md](ED_Program_Review.md) | Section-by-section tiered map of the whole ~125-paper corpus ("a map, not the territory") | Technical · Program Review | ✓ |
 
 ---

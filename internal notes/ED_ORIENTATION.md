@@ -60,10 +60,10 @@ ED uses a **form-FORCED / value-INHERITED methodology** with a three-tier verdic
 
 | Directory / file | Role |
 |---|---|
-| `position-papers/ED_WHITEPAPER.md` | Public-facing front door. Non-technical orientation for new readers. Read first if external. |
+| `position-paper/ED_WHITEPAPER.md` | Public-facing front door. Non-technical orientation for new readers. Read first if external. |
 | `ED_Public_Onboarding_LessTechnical.md` + `ED_Public_Onboarding_MoreTechnical.md` | Public-facing onboarding docs at two technical levels. |
 | `internal notes/` | **Working-state files (2026-05-17 relocation):** `ED_MEMORY.md`, `ED_ORIENTATION.md` (this file), `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `PAPER_WRITING_CHECKLIST.md`. Not for external readers. |
-| `position-papers/` | Canonical foundational statement of the 13-Primitive Generative System. |
+| `position-paper/` | Canonical foundational statement of the 13-Primitive Generative System. |
 | `physics-papers/` | All Wave-2 papers organized by arc (qm-kinematics, qft, gravity, black-hole, q-compute, entanglement, soft-matter, wedges). **Includes new `physics-papers/predictions/` subdirectory** (Wave-3 prediction papers: Bundle + Postdictions + FRAP Template). |
 | `primitives/` | Two-tier structure: canonical P01–P13 reference cards at top level + `concepts/` subdirectory with pre-consolidation ontological-concept treatments. See `primitives/README.md`. |
 | `theorems/` | T-numbered theorem stubs (T19, T20, T21 currently). T17, T18, T21, GR1, N1, UR-1 also exist as full papers elsewhere. |
@@ -76,7 +76,7 @@ ED uses a **form-FORCED / value-INHERITED methodology** with a three-tier verdic
 
 ## Entry points (in reading order for a cold reader)
 
-1. **`position-papers/ED_WHITEPAPER.md`** — front door, non-technical, ~50 pages. Names the program, methodology, intellectual neighborhood, falsification program, 100+ paper navigation.
+1. **`position-paper/ED_WHITEPAPER.md`** — front door, non-technical, ~50 pages. Names the program, methodology, intellectual neighborhood, falsification program, 100+ paper navigation.
 
 2. **`physics-papers/foundations/Paper_087_13Primitives.md`** — the 13 primitives stated as axioms with operational content per primitive. The methodological discipline at its sharpest.
 
@@ -157,10 +157,10 @@ The corpus is **structurally complete with declared open derivations** — not a
 - **Empirical Predictions outreach trio (2026-05-17 Zenodo batch B):** `physics-papers/predictions/Paper_ED_Predictions_Bundle.md` (BTFR-led, 13 predictions) + `Paper_ED_Postdictions_PassedTests.md` (UDM data-match credibility anchor — self-published Zenodo preprint, not peer-reviewed) + `Paper_ED_FRAP_Template.md` (pre-registered protocol). Primary outreach material. **Note:** the UDM result is a postdiction (self-authored Zenodo preprint), NOT a peer-reviewed publication — never describe it as peer-reviewed.
 - **Load-Bearing Program memo cascade:** `event-density/papers/Load_Bearing_Program_2026_05/` — Wave-3 substrate-research memos for the five load-bearing OPEN derivations (3 closed + 1 negative + 1 reframed to Route A).
 - **Q1Q2 + Chain-Class + Route A memo cascade:** `event-density/papers/Q1Q2_ChainClass_RouteA_2026_05/` — substrate-graph construction-uniqueness closures + chain-class identification + Route A audit cascade (Phases 2 + 3 of the three-phase substrate-research progression). **Single largest cross-arc closure cascade in the corpus to date** delivering Cosmology Arc M3 trinity + ED-SC 4.x arc-wide M3 upgrade simultaneously.
-- **Reading list:** `position-papers/ED_WHITEPAPER.md` §10 has the canonical core-reading sequence.
+- **Reading list:** `position-paper/ED_WHITEPAPER.md` §10 has the canonical core-reading sequence.
 - **Falsification register:** `physics-papers/predictions/Paper_101_FalsificationRegister.md`.
 - **PAPERS_INDEX:** `PAPERS_INDEX.md` for the canonical paper inventory with status flags. *(`PAPERS_INDEX_redo.md` was retired.)*
 
 ---
 
-*If you are arriving at this repository for the first time, read `position-papers/ED_WHITEPAPER.md` next. If you are returning after a gap, read `ED_MEMORY.md` for the durable state + Round 4 cleanup queue. If you are auditing, read `physics-papers/foundations/Paper_095_FormForced_ValueInherited.md` for the methodology discipline and then sample any paper's §2.5 Load-Bearing Step Audit Table to see the discipline in practice.*
+*If you are arriving at this repository for the first time, read `position-paper/ED_WHITEPAPER.md` next. If you are returning after a gap, read `ED_MEMORY.md` for the durable state + Round 4 cleanup queue. If you are auditing, read `physics-papers/foundations/Paper_095_FormForced_ValueInherited.md` for the methodology discipline and then sample any paper's §2.5 Load-Bearing Step Audit Table to see the discipline in practice.*

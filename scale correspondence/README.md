@@ -48,7 +48,7 @@
 ## The `scale invariance/` subfolder
 
 A **publication snapshot** (its working source of truth is the `event-density` repo) that supplies the S1 cross-scale-invariance *foundation* the 4.x arc consumes, plus the program's self-policing honesty record. Key contents:
-- **[Paper_037_a0_Invariance.md](scale%20invariance/Paper_037_a0_Invariance.md)** — the cleanest concrete result: `a₀ = cH₀/(2π)` is continuum-limit invariant (substrate-`c` is CG-constant, `H₀` is a global boundary condition). The strong anchor under SC 4.3.
+- **[Paper_037_a0_Invariance_CHECK.md](scale%20invariance/Paper_037_a0_Invariance_CHECK.md)** — the cleanest concrete result: `a₀ = cH₀/(2π)` is continuum-limit invariant (substrate-`c` is CG-constant, `H₀` is a global boundary condition). The strong anchor under SC 4.3.
 - **`Universal_Invariants.md`** — the canonical ED *PDE/simulator* invariants (`D_crit ≈ 0.896`, `D·T₀/L₀² = 0.3` across 61 orders). **Model invariants in ED units — not measured invariants of nature.**
 - **`invariant_map.md`** — the ED-SIM reference table (16 measured invariant families, graded by coefficient of variation).
 - **The S1/motif trio** (`Paper_EDSC_MotifConditioned_Invariant`, `_rstar_FilteredGRF`, `_SaddleClassification`) — near-identical copies of 4.7 / 4.8 / 4.9.
