@@ -1,9 +1,9 @@
 # Papers Index — Canonical Source of Truth
 
-**Last updated:** 2026-07-02
-**Purpose:** Single source of truth for every paper in the ED corpus. Tracks paper number (locked-in numbering), title, domain/arc assignment, status, and file location. Reflects the corpus state after Round 1 (per-paper QC), Round 2 (cross-paper audit + theorem gap-fill), Round 3 (cross-arc harmonization + SCBU + ED-SC 4.x arc), and the **2026-07-02 rebuild** (a full repo scan found the index had gone stale since 2026-05-14 — three entire arcs, a decimal-numbered sub-layer, and several standalone sections had never been added; see the maintenance note at the bottom).
+**Last updated:** 2026-08-30
+**Purpose:** Single source of truth for every paper in the ED corpus. Tracks paper number (locked-in numbering), title, domain/arc assignment, status, and file location. Reflects the corpus state after Round 1 (per-paper QC), Round 2 (cross-paper audit + theorem gap-fill), Round 3 (cross-arc harmonization + SCBU + ED-SC 4.x arc), and the **2026-07-02 rebuild** (a full repo scan found the index had gone stale since 2026-05-14 — three entire arcs, a decimal-numbered sub-layer, and several standalone sections had never been added; see the maintenance note at the bottom), and the **2026-08-30 rebuild** (a second full repo scan, run for the same reason: the index had gone stale again, this time missing the fifteen tiered-claims ledgers, the flagship report, the Selected Formalisms series, the essays, the readings, the microscopic-completions family, the primitives cards, T1-T18, and fourteen substrate-evaluation papers, plus four filename renames that had left dead paths behind).
 
-**Source corpus:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\` (legacy/working-repo location; the EDG copies referenced by file paths below live under `physics-papers/<sub-domain>/`, `position-paper/`, `layers/`, etc. in this repo).
+**Source corpus:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\` (legacy/working-repo location; the EDG copies referenced by file paths below live under `physics-papers/<sub-domain>/`, `position-papers/`, `layers/`, etc. in this repo).
 
 **Status enum:**
 - **WRITTEN** — paper complete in corpus.
@@ -22,8 +22,11 @@ ED's dark-matter position spans the gravity, cosmology, QFT, and substrate-evalu
 | Doc | Purpose | Status |
 |---|---|---|
 | `dark-sector/README.md` | folder overview + source-paper map | Synthesis |
-| `dark-sector/Paper_ED_DarkSector_Position.md` | the canonical position (galaxy/cluster/CMB split; "MOND ≠ no particle"; the relic candidate; the open crux + falsifiers) | Synthesis |
-| `dark-sector/DarkSector_DebtMap.md` | what clusters/CMB require, where MOND-class dies, ED's routes, proven vs open (public port of `event-density` Round-5) | Map |
+| `dark-sector/Paper_ED_DarkSector.md` | the canonical position, *"Two Culprits, One Mechanism"* (galaxy/cluster/CMB split; "MOND ≠ no particle"; the relic candidate; the open crux + falsifiers) | Synthesis |
+| `dark-sector/Paper_ED_RelicLagrangian_v1.md` | first construction of the committed neutral relic as an ED matter field | Derivation |
+| `dark-sector/DarkSector_TieredClaims_Ledger.md` | the arc's tier catalog / staleness detector (see the Ledgers section below) | Ledger |
+
+*Path correction 2026-08-30: `Paper_ED_DarkSector_Position.md` is now `Paper_ED_DarkSector.md` (renamed, content is the same position paper). `DarkSector_DebtMap.md` is **not in this repo**: it was deliberately moved to the working repo under "keep only standalone papers in EDG; move working docs to the ED repo," and now lives at `event-density/theory/Dark_Sector/DarkSector_DebtMap.md` (traced 2026-08-31).*
 
 ---
 
@@ -60,7 +63,7 @@ The Phase-1 QM-emergence program. Sixteen theorems closing the four standard qua
 | 006.7 | Schrödinger Emergence in the Thin-Participation Limit | dynamics | WRITTEN | `physics-papers/qm-kinematics/Paper_006_7_ThinParticipationLimit.md` |
 | 007 | Hilbert-Space Emergence | foundations | WRITTEN | `Paper_007_HilbertSpace.md` |
 | 008 | Phase Structure / U(1) Cyclic Substructure | foundations | WRITTEN | `Paper_008_PhaseStructure.md` |
-| 008 (legacy) | Kernel Arrow (early draft; content moved to Paper_093) | — | ARCHIVED | `Paper_008_KernelArrow.md` |
+| 008 (legacy) | Kernel Arrow — **renamed into Paper_093**, not archived separately (git: rename+edit, 96 ins / 22 del). No standalone file exists or should. | — | SUPERSEDED | → `physics-papers/foundations/Paper_093_KernelArrow_of_Time.md` *(status corrected from ARCHIVED 2026-08-31)* |
 | 008.5 | Phase-Independence of Bandwidth Values | foundations | WRITTEN | `physics-papers/qm-kinematics/Paper_008_5_PhaseIndependence.md` |
 | 009 | Berry Phase via Adiabatic Coarse-Graining | observables | WRITTEN | `Paper_009_BerryPhase.md` |
 | 010 | Aharonov-Bohm Phase | observables | WRITTEN | `Paper_010_AharonovBohm.md` |
@@ -146,7 +149,7 @@ Arc BH + Arc Hawking. Horizon as decoupling surface, Hawking spectrum, trans-Pla
 | 052 | BH Information-Paradox Synthesis | information | WRITTEN | `Paper_052_BH_ParadoxSynthesis.md` |
 | 052.5 | Merger-Lag Existence Prediction | black-hole | WRITTEN (provisional prediction) | `physics-papers/black-hole/Paper_052_5_Pred_MergerLag.md` |
 
-**Addendum (2026-07-02, not decimal-numbered but same arc):** `The Hawking 2π From ED's Own Geometry` — derives Hawking's $2\pi$ from ED's own near-horizon Rindler geometry, completing $S=A/4$ as fully structural rather than half-inherited. `physics-papers/black-hole/BH_Thermal2Pi_FromNearHorizonRindler.md`.
+**Addendum (2026-07-02, not decimal-numbered but same arc):** `The Hawking 2π From ED's Own Geometry` — derives Hawking's $2\pi$ from ED's own near-horizon Rindler geometry, completing $S=A/4$ as fully structural rather than half-inherited. `physics-papers/black-hole/Paper_BH_Thermal2Pi_EntropyCoefficient.md` (renamed since; path corrected 2026-08-30).
 
 ---
 
@@ -225,7 +228,7 @@ Foundational substrate-level theorems and methodology. 13-primitive position pap
 | 090 | V5 Cross-Chain Correlation Kernel (Canonical) | kernels | WRITTEN | `Paper_090_V5Kernel.md` |
 | 091 | Memory-Kernel Cascade Across Scales | kernels | WRITTEN | `Paper_091_KernelCascade.md` |
 | 092 | Kernel Hierarchy Unification (Three-Index Classification) | kernels | WRITTEN | `Paper_092_KernelHierarchy.md` |
-| 093 | T18 — Kernel-Level Arrow of Time | arrow | WRITTEN | `Paper_093_T18_ArrowOfTime.md` |
+| 093 | T18 — Kernel-Level Arrow of Time | arrow | WRITTEN | `physics-papers/foundations/Paper_093_KernelArrow_of_Time.md` (renamed; path corrected 2026-08-30) |
 | 094 | Forward-Causal Substrate Primitive Structure | arrow | WRITTEN | `Paper_094_ForwardCausality.md` |
 | 095 | Form-FORCED / Value-INHERITED Methodology | methodology | WRITTEN | `Paper_095_FormForced_ValueInherited.md` |
 | 096 | Cross-Scale Invariance (ED-SC 3.x Canonical) | sc-arc | WRITTEN | `Paper_096_CrossScaleInvariance.md` |
@@ -363,7 +366,7 @@ Inflation, BBN, CMB acoustic structure, linear structure formation, dark energy,
 | — | Group-Embedded Low-Acceleration Galaxies: DF2/DF4 | WRITTEN | `physics-papers/cosmology/Paper_ED_DF2_DF4_GroupSuppression.md` |
 | — | ED Identification of Conformal Cyclic Cosmology | WRITTEN (M3) | `physics-papers/cosmology/Paper_ED_CCC_ConformalCyclicCosmology.md` |
 
-**Excluded from this section (confirmed, not new papers):** `Paper_ED_Baryogenesis_Open.md` (superseded 2026-05-16 M2 draft; the current file above is the 2026-05-17 M3 version); five `Memo_ED_RouteA_*.md` internal audit memos.
+**Excluded from this section (confirmed, not new papers):** `Paper_ED_Baryogenesis_Open.md` (superseded 2026-05-16 M2 draft; the current file above is the 2026-05-17 M3 version — **the superseded draft is not in this repo; it was deliberately archived to `event-density/remove from repo/superseded/`**, path added 2026-08-31); five `Memo_ED_RouteA_*.md` internal audit memos.
 
 ---
 
@@ -428,7 +431,7 @@ Ten standalone papers from the substrate-evaluation program (build-and-run / the
 | SE-V5Budget | The V5 Correlation Budget is One Envelope (monogamy + Page curve + Class-C plateau = one bounded W_max; R1 complexity-universal onset; R2 ratios 1:1:0.88 with ρ_loc=1 identity) | substrate-evaluation | WRITTEN | `physics-papers/substrate-evaluation/Paper_V5UnifiedBudget.md` |
 | SE-QDBandwidth | Quantum Darwinism in ED: Committed Records Are Free, Live Redundancy Is Budgeted (fourth face of the V5 budget; accounting theorem; unbounded objectivity derived; conditional GHZ-width ceiling commensurate with the Class-C plateau) | substrate-evaluation | WRITTEN (Claude-B reviewed) | `physics-papers/substrate-evaluation/Paper_QuantumDarwinism_RecordBandwidth.md` |
 | SE-ProxyDoctrine | The Proxy Conversion Doctrine (D1–D4: sharp-in-content/banded-in-proxy; per-architecture conversions; per-locus live content; pre-registered content rules — replaces five local patches; opens 058's α encoding-dependence) | substrate-evaluation | WRITTEN (Claude-B reviewed) | `physics-papers/substrate-evaluation/Paper_ProxyConversionDoctrine.md` |
-| Form-and-Flesh | Form and Flesh: The Two Walls of the Event-Density Substrate (synthesis capstone) | position / synthesis | WRITTEN | `position-paper/Paper_FormAndFlesh_TwoWalls.md` |
+| Form-and-Flesh | Form and Flesh: The Two Walls of the Event-Density Substrate (synthesis capstone) | position / synthesis | WRITTEN | `essays/ED_Essay_FormAndFlesh_TwoWalls.md` |
 | KM-I | The Arrow's Deep Field: Dark-Matter Phenomenology from the Khronon, and the Unification of ED Gravity | gravity / curvature-emergence | WRITTEN | `physics-papers/gravity/Paper_KM-I_KhrononMOND.md` |
 | KM-II | The Arrow's Horizon: The Khronon's Cosmological Face — the Dark Fluid, the Clustering Dial, and One Λ | gravity / curvature-emergence | WRITTEN | `physics-papers/gravity/Paper_KM-II_KhrononCosmology.md` |
 | GR-III | The Arrow's Engine: The Dynamical Rule of ED Gravity, and the Closing of Its Weak-Field Assumptions | gravity / curvature-emergence | WRITTEN | `physics-papers/gravity/Paper_GR-III_DynamicalRule.md` |
@@ -436,93 +439,317 @@ Ten standalone papers from the substrate-evaluation program (build-and-run / the
 | ED-Gravity (PhilPapers) | The Arrow in the Law: Emergent Gravity from a Discrete, Irreversible Substrate (program synthesis, public-facing) | gravity / synthesis-paper | WRITTEN | `physics-papers/gravity/Paper_ED_Gravity_Program_PhilPapers.md` |
 | One-Field | One Field: Gravity, Dark Matter, Dark Energy, and the Arrow of Time in ED (capstone letter) | gravity / synthesis-letter | WRITTEN | `physics-papers/gravity/Paper_OneField_Letter.md` |
 | Metric-From-Graph | The Metric Comes Out of the Graph: Curvature, g ~ 1/b, and Why Only Three Dimensions (curvature-emergence foothold; reach law forced by the holographic count, GR-I metric unique to 3D, no new scale, isotropy emergent under CG) | gravity / curvature-emergence | WRITTEN | `physics-papers/gravity/Paper_MetricFromTheGraph_ForcedTo3D.md` |
-| Bullet-TopologicalDefect | The Bullet Cluster as a Substrate Topological Defect: An ED Synthesis (Bullet_Arc phase-2; integrates the vacuum-manifold / winding-number / relaxation-time sub-results) | gravity / dark-matter phenomenology | WRITTEN | `physics-papers/gravity/Bullet_TopologicalDefect.md` (+ `.pdf`; further sources in `event-density/theory/Bullet_Cluster/`) |
+| Bullet-TopologicalDefect | The Bullet Cluster as a Substrate Topological Defect: An ED Synthesis (Bullet_Arc phase-2; integrates the vacuum-manifold / winding-number / relaxation-time sub-results) | gravity / dark-matter phenomenology | WRITTEN | `physics-papers/gravity/Paper_117_Bullet_TopologicalDefect.md` (renamed; path corrected 2026-08-30) (+ `.pdf`; further sources in `event-density/theory/Bullet_Cluster/`) |
 | Offset-Velocity-Test | The Knee in the Data: An Experiment-Ready Test of the Offset-Velocity Law in Merging Clusters (Bullet_Arc phase-3; the mass-gas offset vs merger-velocity shape test, sharp knee vs LCDM scatter vs MOND ramp; real dataset + statistic named; velocity-selection feasibility finding) | gravity / dark-matter phenomenology (observational) | WRITTEN | `physics-papers/gravity/Paper_OffsetVelocityLaw_MergingClusterTest.md` (+ `.pdf`) |
 
-Notes: GR-I/GR-II are the post-pivot curvature-emergence results, sharpening (not superseding) the Arc-3 scalar-tensor/MOND papers — see GR-I §7 / GR-II §9 for the explicit reconciliation. Form-and-Flesh is the program reach-statement (the empirical successor to the Contrast-First ontology paper) and lives in `position-paper/` alongside it. Underlying simulation artifacts live in the working repo (`event-density/evaluation/` and `event-density/foundations/`). **The Hawking-2π addendum lives with Arc 4 (Black Holes) above, not here, since its file path is `physics-papers/black-hole/`.**
+Notes: GR-I/GR-II are the post-pivot curvature-emergence results, sharpening (not superseding) the Arc-3 scalar-tensor/MOND papers — see GR-I §7 / GR-II §9 for the explicit reconciliation. Form-and-Flesh is the program reach-statement (the empirical successor to the Contrast-First ontology paper) and lives in `position-papers/` alongside it. Underlying simulation artifacts live in the working repo (`event-density/evaluation/` and `event-density/foundations/`). **The Hawking-2π addendum lives with Arc 4 (Black Holes) above, not here, since its file path is `physics-papers/black-hole/`.**
 
 ---
 
 ## Position Papers — ADDED 2026-07-02
 
-Foundational/ontological framing documents distinct from the per-domain derivation arcs. Live in `position-paper/`.
+Foundational/ontological framing documents distinct from the per-domain derivation arcs. Live in `position-papers/`.
 
 | Title | Status | File |
 |---|---|---|
-| Event Density: A Program Review (14-section map of the ~125-paper corpus, tiered; own Zenodo DOI) | WRITTEN | `position-paper/ED_Program_Review.md` (+ `.pdf`) |
-| Event Density (front-door whitepaper) | WRITTEN | `position-paper/ED_WHITEPAPER.md` |
-| When Contrast Becomes Fact — the Contrast-First Ontology ("the Facts paper") | WRITTEN | `position-paper/paper_ED_Contrast_First_Ontology.md` (**hygiene flag**: this file has no H1 heading, opens directly at `## Abstract` — a real source-file gap, not fixed as part of this index-only pass) |
-| The Event Density Framework: A 13-Primitive Generative System and Its Cross-Domain Reach | WRITTEN | `position-paper/paper_ED_Framework_13_Primitive_Generative_System.md` |
+| Event Density: A Program Review (14-section map of the ~125-paper corpus, tiered; own Zenodo DOI) | WRITTEN | `position-papers/ED_Program_Review.md` (+ `.pdf`) |
+| Event Density (front-door whitepaper) | WRITTEN | `position-papers/ED_WHITEPAPER.md` |
+| When Contrast Becomes Fact — the Contrast-First Ontology ("the Facts paper") | WRITTEN | `position-papers/paper_ED_Contrast_First_Ontology.md` (**hygiene flag**: this file has no H1 heading, opens directly at `## Abstract` — a real source-file gap, not fixed as part of this index-only pass) |
+| The Event Density Framework: A 13-Primitive Generative System and Its Cross-Domain Reach | WRITTEN | `position-papers/paper_ED_Framework_13_Primitive_Generative_System.md` |
 
 Note: this third entry is a distinct document from `Paper_087_13Primitives.md` (Arc 8) — same underlying content genre, different framing/date, not a duplicate.
 
 ---
 
-## Total counts (2026-07-02 rebuild)
+## Tiered-Claims Ledgers — ADDED 2026-08-30
 
-- **Numbered Papers (001–101), including 21 decimal-slot extensions:** 122 WRITTEN + 1 ARCHIVED (008 legacy)
-- **Arc 9 Relativistic QM (102–116):** 14 WRITTEN + 1 MISSING (105 gap) — 15 filename slots, 15 files (one slot, 112, doubly occupied)
-- **Matter-Sector Arc (MS-I, MS-II):** 1 WRITTEN + 1 ARCHIVED
-- **Theorem stubs (T19, T20, T21):** 3 WRITTEN
-- **Cross-arc synthesis (SCBU):** 1 WRITTEN
-- **ED-SC 4.x arc extensions (4.1–4.11):** 11 WRITTEN
-- **Dynamics / GW arc:** 8 WRITTEN
-- **Cosmology arc:** 9 WRITTEN
-- **Layers program:** 12 WRITTEN
-- **Predictions / Falsification:** 5 WRITTEN
-- **Substrate-evaluation wave + post-pivot gravity:** 17 WRITTEN
-- **Position papers:** 3 WRITTEN
+**The anti-drift authority.** Fifteen per-folder ledgers, one per domain, each recording *every load-bearing claim in that folder and its current tier*. Each is three things at once: the tier catalog, the staleness detector (the `Status` column is current state, so any doc disagreeing with a row is by definition stale), and the authority the read-first rule checks against. These are the first stop for any tier question — ahead of the papers for *what the tier is*, behind them for *why*. Not previously indexed.
 
-**Grand total: 209 distinct corpus entities** (203 WRITTEN + 1 MISSING slot + 2 ARCHIVED + 1 doubly-occupied slot counted once above, net of the 105/112 irregularity). This is a large jump from the 2026-05-14 count of 124 — three entire arcs (Relativistic QM, Dynamics, Cosmology) plus the decimal-slot layer, the Layers program, five more scale-correspondence papers, three position papers, and a handful of loose files had simply never been added to this index, not newly written in the interim (most of these files carry May 2026 dates).
+**Tier vocabulary** (the ledgers' own, distinct from Paper_095's M1/M2/M3 verdict grammar, which remains canonical for verdicts): `Standing` · `Derived` · `D-via-I / Form-forced` · `Grounded` · `Reference` · `Measured` · `Inherited / Consilience` · `Native / V5-conditional` · `Selected/Inherited` · `Constant` · `Primitive` · `Postulated` · `Asserted` · `Prediction` · `Identification` · `Wall` · `Synthesis` · `Superseded` · `Open`.
 
-**Registry state (per Round-3 final rebuild, 2026-05-14 — NOT re-audited in the 2026-07-02 pass, flagged stale rather than guessed):**
-- Paper-specific postulates: 125 (zero WARN-dup name collisions) — *as of 2026-05-14; almost certainly higher now given ~85 additional papers found since.*
-- Foundational theorems: 8 (T17, T18, T19, T20, T21, GR1, N1, UR-1)
-- Top-3 most-cited upstream papers: Paper_087 (96), Paper_090 (51), Paper_089 (49) — *as of 2026-05-14.*
-- Orphan papers: 10 (as of 2026-05-14) — *not recomputed.*
+| Domain | File |
+|---|---|
+| Black hole | `physics-papers/black-hole/BlackHole_TieredClaims_Ledger.md` |
+| Constants-inherited | `physics-papers/constants-inherited/ConstantsInherited_TieredClaims_Ledger.md` |
+| Cosmology | `physics-papers/cosmology/Cosmology_TieredClaims_Ledger.md` |
+| Dark sector | `physics-papers/dark-sector/DarkSector_TieredClaims_Ledger.md` |
+| Dynamics | `physics-papers/dynamics/Dynamics_TieredClaims_Ledger.md` |
+| Entanglement | `physics-papers/entanglement/Entanglement_TieredClaims_Ledger.md` (format pilot) |
+| Foundations | `physics-papers/foundations/Foundations_TieredClaims_Ledger.md` |
+| Gravity | `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` (the flagship folder) |
+| Other-theories-advanced | `physics-papers/other-theories-advanced/OtherTheories_TieredClaims_Ledger.md` |
+| Q-compute | `physics-papers/q-compute/QCompute_TieredClaims_Ledger.md` |
+| QFT | `physics-papers/qft/QFT_TieredClaims_Ledger.md` |
+| QM-kinematics | `physics-papers/qm-kinematics/QMKinematics_TieredClaims_Ledger.md` |
+| Relativistic QM | `physics-papers/relativistic-qm/RelativisticQM_TieredClaims_Ledger.md` |
+| State reduction | `physics-papers/state-reduction/StateReduction_TieredClaims_Ledger.md` |
+| Substrate evaluation | `physics-papers/substrate-evaluation/SubstrateEvaluation_TieredClaims_Ledger.md` |
+
+**Corpus-level companion:** `ED_ItemizedTheory_TieredClaims.xlsx` (repo root; renamed from `ED_ItemizedTheory_TieredClaims.xlsx`, matching the earlier PDF rename) — the master spreadsheet. Sheets: *Core Theory* (the 38 lines: 13 primitives + 10 constants + the postulate rows), *Core Predictions* (the falsifiable bets with kill-conditions), *Ledger w Claims* (404-row master), *Core Claims*, *Tier Key*, *Tier Counts*, *Postulate Flags*, *Ratio*. PDF export: `ED_ItemizedTheory_TieredClaims.pdf`.
 
 ---
 
-## Domain ↔ Arc cross-reference
+## Flagship Report and Root Documents — ADDED 2026-08-30
 
-For migration purposes, the canonical arc structure maps to the domain partition as follows:
+| Title | Purpose | File |
+|---|---|---|
+| Event Density: A Unified Framework for Physics | The flagship report. Sixteen sections plus two appendices, organized around the thirteen boxes a unified framework must check, with an explicit tier on every row of its §2 scorecard. States plainly that no distinctive, argument-ending prediction is confirmed. | `ED_UnifiedFramework_Report.md` (+ `.pdf`) |
+| Report change log | Revision history for the flagship report. | `REPORT_CHANGES.md` |
+| Repo README | Front matter for the repository. | `README.md` |
+| Working-on-the-corpus instructions | Read-first / close-the-loop discipline for contributors and agents. | `CLAUDE.md` |
 
-| Arc | Paper range | Domain | Sub-domains |
+---
+
+## Selected Formalisms Series (I–V) — ADDED 2026-08-30
+
+Five with-math demonstrations, one sector each, written to be read end to end by a technical outsider. Each transcribes its tier labels from the relevant tiered-claims ledger rather than inflating them, and each closes on an explicit "what this sector does not claim" section plus a tier table. Lives in `essays/`; `.pdf` builds accompany the `.md` sources.
+
+| Part | Sector | Anchor result / honest ceiling | File |
 |---|---|---|---|
-| 1 QM Kinematics | 001–012 (+ 10 decimal) | qm-kinematics | foundations, dynamics, observables, measurement |
-| 2 Form-Level QFT | 013–024 (+ 1 decimal) | qft | kernels, gauge, yang-mills, measurement |
-| 3 Gravity | 025–038 (+ 4 decimal) | gravity | foundations, mond, cosmology, strong-field, weak-field, galactic |
-| 4 Black Holes / Hawking | 039–052 (+ 3 decimal, + 1 addendum) | black-hole | foundations, hawking, remnants, interior, thermodynamics, scattering, information |
-| 5 Q-Compute | 053–062 | q-compute | foundations, classification, predictions, architectures, unification, cross-arc |
-| 6 Entanglement | 063–072 | entanglement | foundations, capstone, cross-arc, interpretation |
-| 7 Soft Matter / NS | 073–086 (+ 1 decimal) | soft-matter | foundations, viscoelasticity, regularity, turbulence, rheology, mhd, mobility |
-| 8 Wedges / Foundations | 087–097 | cross-domain | foundations, kernels, arrow, methodology, sc-arc |
-| Synthesis (program-level) | 098–101 | cross-domain | synthesis, capstone |
-| 9 Relativistic QM | 102–116 (1 gap, 1 collision) | relativistic-qm | spin-statistics, dirac, klein-gordon, gauge, kinematics, quantization |
-| Matter-Sector | MS-I, MS-II | qft | gauge, chirality, spin, dimensionality |
-| T-stubs | T19/T20/T21 | gravity / cross-domain | theorem-stubs |
-| Cross-arc synthesis | SCBU | cross-domain | substrate-cosmology |
-| ED-SC 4.x extensions | 4.1–4.11 | cross-domain | sc-arc |
-| Dynamics / GW | Dyn-01–05, GW-00–02 | dynamics | saddle-dynamics, radiation, collapse, inspiral, ringdown |
-| Cosmology | Cos-01–06 + 3 named | cosmology | inflation, BBN, CMB, structure formation, dark energy, baryogenesis, CCC |
-| Layers program | (working-notes arc) | substrate-evaluation | coarse-graining, layer-1, layer-2 |
-| Predictions / Falsification | (cross-corpus) | cross-domain | predictions, falsifiers |
-| Substrate-eval + post-pivot gravity | GR-I–IV, KM-I/II, SE-x, Form-and-Flesh, One-Field | gravity / substrate-evaluation / position | curvature-emergence, substrate-evaluation, synthesis |
-| Position papers | (foundational framing) | cross-domain | ontology, primitives |
+| I | Gravity and the Cosmic Acceleration Scale | holographic edge-count, then Newton, the weak-field Einstein metric, deep-MOND, and `a₀ = cH(z)/2π`; ends on the one confirmed-in-direction forward prediction | `essays/Paper_SelectedFormalisms_I_Gravity.md` |
+| II | Gauge Structure from Channel Multiplicity | `U(N) = SU(N) × U(1)` forced by channel multiplicity (the sector's one firm derivation); mass gap in *form* only, explicitly **not** a Clay result | `essays/Paper_SelectedFormalisms_II_QFT.md` |
+| III | Locality, Charge, and Parity: Structural Theorems | exact channel-zero (A1), topological charge (B4), the clean-substrate-is-vector theorem, unbounded objectivity, and the one *proven* wall (the finite-memory / primality ceiling). No confirmed prediction, derivation purity in its place | `essays/Paper_SelectedFormalisms_III_SubstrateTheorems.md` |
+| IV | Horizons, Temperature, and the Information Ledger | the `b→0` decoupling surface; `S = A/4` derived from ED's own near-horizon Rindler geometry (on par with GR, not beyond); heaviest postulate stack in the corpus; the paradox is *not generated*, not solved | `essays/Paper_SelectedFormalisms_IV_BlackHoles.md` |
+| V | Entanglement, Measurement, and the Commitment Ceiling | commitment individuates; bipartite formalism *reproduced* not re-derived; Tsirelson inherited and **ED adds no new bound**; the collapse variable is time, not energy (unconfirmed synthesis) | `essays/Paper_SelectedFormalisms_V_Entanglement.md` |
 
 ---
 
-## Maintenance discipline
+## Essays — ADDED 2026-08-30
 
-- **Each new paper:** add an entry here when promoted from CANDIDATE → PLANNED → DRAFTING → WRITTEN.
-- **Round-numbered audit suffix `_FIXED`:** several files in the corpus carry a `_FIXED` suffix from Round 1 QC. The file paths in this index use the base name (no `_FIXED` suffix) for stability; treat `Paper_NNN_*.md` and `Paper_NNN_*_FIXED.md` as the same entity when both exist.
-- **Cross-references in paper §3 sections:** reference papers by paper number (Paper_NNN) for in-corpus citations; by file path for repository-migration purposes.
-- **Locked-in numbering:** the 001–101 numbering is stable as of 2026-05-14; **102–116 (Arc 9) added 2026-07-02**, with one known gap (105) and one known collision (112) not yet resolved (see Arc 9 section). T-stubs, SCBU, ED-SC 4.x, MS-I/II, Dynamics, Cosmology, and the Substrate-Evaluation Wave all use distinct naming conventions and do not consume numbered slots.
-- **Decimal-slot convention (new, 2026-07-02):** supplementary papers inserted between integer slots (e.g. `012.6`) are genuine, complete papers, not drafts — file them under their parent arc's table at the position implied by the decimal, and do not renumber the surrounding integers to accommodate them.
-- **Path-prefix inconsistency (flagged, not fixed):** the original 001–101 rows list bare filenames with no directory prefix, while every section added or touched since 2026-06 (Substrate-Evaluation Wave onward) uses full relative paths. The bare filenames are known to actually live under `physics-papers/<sub-domain>/` like everything else; retrofitting all ~101 legacy rows with full paths is a real but separate cleanup task, out of scope for this rebuild.
-- **Registry source of truth:** for the live citation graph, postulate inventory, and numerical-value registry, see `event-density/papers/Forcing Papers/_RegistryRound2/` — **stale since 2026-05-14, not recomputed in this rebuild** (see Total counts section above).
-- **2026-07-02 rebuild provenance:** this pass was a full repo scan (three parallel research agents, cross-verified against direct file reads) triggered by discovering the index was nearly two months stale. It is believed complete for the directories scanned (`physics-papers/*`, `position-paper/`, `layers/`, `scale correspondence/`, `predictions/`, root-level `.md` files) but was not cross-checked against `event-density/` (the working repo) beyond the specific loose files named above — the working repo has its own much larger body of in-progress notes that this index does not and should not attempt to track.
+Public-facing explainer essays in `essays/`: plain-language companions to the papers, held to a seven-point standard (anchored, honestly tiered, no overclaim, killable, grounded in the substrate, in-voice, standalone) recorded in `essays/README.md`. They are **not derivations** and never claim more than their source papers. `EVALUATION.md` carries each essay's status against that standard (**keep** / **amend** / **flag**).
+
+| # | Title | File |
+|---|---|---|
+| — | Start With Time — *Why the thing you were surest of is the floor of reality* (the single-voice flagship essay) | `essays/StartWithTime_Essay.md` (+ `.pdf`) |
+| 1 | The Arrow First | `essays/ED_Essay_1_Introduction_Essay.md` |
+| 2 | Why Those Rules? (quantum mechanics) | `essays/ED_Essay_2_QuantumMechanics.md` |
+| 3 | Turn It Twice (spin, antimatter, Dirac) | `essays/ED_Essay_3_SpinAntimatterDirac.md` |
+| 4 | The One in a Billion (matter from the arrow) | `essays/ED_Essay_4_MatterFromTheArrow.md` |
+| 5 | One Number and One Knot (three forces, three dimensions) | `essays/ED_Essay_5_ThreeForcesThreeDimensions.md` |
+| 6 | The Force That Talks to Itself (Yang–Mills mass gap) | `essays/ED_Essay_6_YangMillsMassGap.md` |
+| 7 | The Ninety-Five Percent (gravity, dark matter, dark energy) | `essays/ED_Essay_7_GravityDarkMatterDarkEnergy.md` |
+| 8 | What the Black Hole Remembers | `essays/ED_Essay_8_BlackHolesInformation.md` |
+| 9 | The Edge at the Beginning (the early universe) | `essays/ED_Essay_9_TheEarlyUniverse.md` |
+| 10 | Remember, or Forget (the arrow sorts the continuum) | `essays/ED_Essay_10_TheArrowSortsTheContinuum.md` |
+| 11 | Here Is the Knife | `essays/ED_Essay_11_HereIsTheKnife.md` |
+| 12 | Cost and Benefit | `essays/ED_Essay_12_Cost_Benefit.md` |
+| 13 | The First Shadow | `essays/ED_Essay_13_TheFirstShadow.md` |
+| 14 | The Constants Are Inherited | `essays/ED_Essay_14_TheConstantsAreInherited.md` |
+| — | The Universe Doesn't Happen All at Once | `essays/ED_Essay_TheUniverseDoesntHappenAllAtOnce.md` |
+| — | Dark Matter Is One Word for Two Problems | `essays/ED_DarkMatter_OneWordTwoProblems.md` |
+| — | Essays — Evaluation Against the Standard (status register) | `essays/EVALUATION.md` |
+| — | Folder standard + index | `essays/README.md` |
 
 ---
 
-**End of Papers Index.**
+## Readings — ADDED 2026-08-30
+
+`physics-papers/readings/` — a capstone argument plus short readings, each taking a reigning idea in physics and reading its *own* formalism from ED's floor. Explicitly **interpretation and positioning, not derivations**: they earn their place by coherence and reach, not by theorem, and each carries a "what ED does not claim" section. `INDEX.md` is the folder's start-here.
+
+| Title | File |
+|---|---|
+| ED Readings — Start Here (folder index) | `physics-papers/readings/INDEX.md` |
+| Not a Bare Postulate: ED's Reconstruction of Quantum Logic | `physics-papers/readings/ED_Reading_QuantumLogic_NotABarePostulate.md` |
+| The Other Reading of the Schrödinger Equation: ED vs Many-Worlds | `physics-papers/readings/ED_Reading_ManyWorlds_TheOtherReadingOfSchrodinger.md` |
+| Gravity the Other Way: ED's Routes to GR, MOND at Face Value, and the Particle the Clusters Still Need | `physics-papers/readings/ED_Reading_Gravity_RoutesToGR_and_TwoPartDarkSector.md` |
+| Not Brute After All, But Not Derived Either: Newton's G and 3+1 Dimensions | `physics-papers/readings/ED_Reading_G_and_Dimensions_NotBruteNotDerived.md` |
+
+**Dangling pointers — RESOLVED 2026-08-31.** `readings/INDEX.md` previously opened by telling the reader to start with a capstone, and listed *five* readings. Three of the files it named are not in this repo, and git shows all three were removed **deliberately**:
+
+| File | What happened |
+|---|---|
+| `ED_Reading_ReproducedFromThirteen_TheUntunabilityArgument.md` | renamed to `outreach/ED_Essay_TheUntunabilityArgument.md`, then moved off GitHub with the whole `outreach/` folder (cover-letter templates, mailing tables, Crank-Safety-Protocol note). **Outreach-only by standing decision** — not to be restored here. |
+| `ED_VideoScript_Untunability.md` | deleted (spoken/video script) |
+| `ED_Response_Carroll_Greene_WorldScienceFestival.md` | deleted in the same commit as the video script above |
+
+`INDEX.md` has been corrected: four readings, no instruction to read material held outside the repo, and a dated folder-currency note recording the three removals. Nothing was lost; the capstone argument simply lives in the outreach set.
+
+---
+
+## Microscopic Completions — the "EDsplain" family — ADDED 2026-08-30
+
+`physics-papers/other-theories-advanced/` — one shared move: take a **respected, standing result** that runs on an assumed microscopic input *its own authors flag as needing a deeper theory*, and show ED supplies exactly that input without contradiction. These do not re-derive the standing results and do not claim to overturn them; they ground the one thing each leaves open. Folder guide in `README.md`; tiers in the folder ledger. The founding exemplar (`Paper_GravityAsEquationOfState.md`, grounding Jacobson's entropy density) lives in `substrate-evaluation/`.
+
+| Title | Grounds | File |
+|---|---|---|
+| Gravity as Horizon Equipartition | Padmanabhan's equipartition (= ED's T19); grounds the count, not the half-kT rule | `Paper_GravityAsHorizonEquipartition.md` |
+| The Khronometric Equation of State | Jacobson; first written-out local-Rindler heat-entropy derivation for a khronometric theory | `Paper_KhronometricEquationOfState_Jacobson.md` |
+| The Arena Sakharov Presupposed | Sakharov's induced gravity (ED supplies manifold + cutoff); curvature emergence still open | `Paper_InducedGravityArena_Sakharov.md` |
+| More Than an Analogy | analogue gravity's "is there a real medium?"; ED adds the dynamical aether (the khronon) | `Paper_MoreThanAnalogy_AnalogGravity.md` |
+| Why the Count Is the Area | holography's "why area, not volume?"; measured on an *assumed* geometry, so consilience, not a novel prediction | `Paper_WhyTheCountIsArea_Susskind.md` |
+| Collapse as the Present | Ellis's Evolving Block Universe alongside ED's committing substrate | `Paper_EvolvingBlockUniverse_Ellis.md` |
+
+---
+
+## Substrate-Evaluation — Additional Papers — ADDED 2026-08-30
+
+Papers in `physics-papers/substrate-evaluation/` that the 2026-07-02 pass did not capture. Same conventions as the Substrate-Evaluation Wave section above (does-NOT-claim preamble, P/D/I load-bearing audit, falsifier sentences).
+
+| Title | File |
+|---|---|
+| Commitment and Participation: The Minimal Ontology of Event Density (the reduction audit the flagship report's §3 rests on) | `Paper_CommitmentAndParticipation_MinimalOntology.md` |
+| The Quantum-Logic Keystone: Reconstructing the Inner Product, the Complex Field, and Born Non-Contextuality from Commitment | `Paper_QuantumLogicKeystone_GleasonReconstruction.md` |
+| The Gauge Structure of Event Density: SU(N) Form, Non-Abelian Gauging, the F² Action, and the Mass-Gap Mechanism | `Paper_GaugeStructure_FromChannelTransport.md` |
+| Gravity as an Equation of State: How ED Grounds Jacobson's Derivation of Einstein (founding EDsplain exemplar) | `Paper_GravityAsEquationOfState.md` |
+| The Area Law Is the Edge Count: Holographic Entropy as Straddling Cross-Chain Edges | `Paper_AreaLawIsTheEdgeCount.md` |
+| General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate | `Paper_GR_QM_Projections.md` |
+| The Conservation Column: Where Noether's Symmetries Come From, and Where They Leak | `Paper_ConservationColumn.md` |
+| How Our Best Theories Coarse-Grain Reality: One Field, Its Shadows, and What Each Blur Throws Away | `Paper_HowTheoryCoarseGrainReality.md` |
+| How Our Hardest PDEs Coarse-Grain Reality: Yang–Mills, Navier–Stokes, and the Singularities a Finite Grain Forbids | `Paper_HowPDECoarseGrainReality.md` |
+| The Relational Tick: How ED Builds Local Clocks Without a Universal One | `Paper_RelationalTick_v1.md` |
+| Phase Coherence in ED: Attractive Sign, Finite Reach, and Substrate Disorder | `Paper_PhaseCoherence_P12Coh.md` |
+| The Sign of the Binder: V5's Attraction from Substrate Coherence | `Paper_V5AttractiveSign_P12Coh.md` |
+| Photonic Statistical-Band Routing is a Fifth Face of the V5 Budget — Gated on Live-vs-Committed | `Paper_V5PhotonicRouting_FifthFace.md` |
+| The Parity Wall: Why ED Gives a Matter/Antimatter Reference Natively but Not the Weak Force's Chirality | `Paper_ParityWall_ChiralityVerdict.md` — **SUPERSEDED** in *tier* (not direction) by `Paper_CleanSubstrateVector_ParitySpontaneous.md`; kept for provenance |
+
+---
+
+## Per-Folder Additions — ADDED 2026-08-30
+
+Papers found in already-indexed folders that the 2026-07-02 pass missed.
+
+| Folder | Title | File |
+|---|---|---|
+| black-hole | The Hawking 2π From ED's Own Geometry: the Entropy 1/4 Is Structurally Derived | `physics-papers/black-hole/Paper_BH_Thermal2Pi_EntropyCoefficient.md` |
+| black-hole | One Bit Per Planck Cell: Three Independent Counts of the Horizon Tiling, and the Place of the 1/4 (consilience, **not** a novel prediction) | `physics-papers/black-hole/Paper_HorizonTilingThreeCounts.md` |
+| constants-inherited | The constants ledger, why G is weird, and where the dimension actually lives in G | `physics-papers/constants-inherited/Constants_Ledger_and_G_Dimension.md` |
+| gravity | Interference Gravity: How ED's Amplitude Structure Unifies Newton and MOND (the QuadraticStrain paper — discharges P14 and Paper_030's regime assumption) | `physics-papers/gravity/Paper_QuadraticStrain_v1.md` |
+| gravity | F3 Anchor Table: Compiled Mass–Gas Offsets and Merger Velocities for the Offset–Velocity Test | `physics-papers/gravity/OffsetVelocity_F3_DataTable.md` |
+| soft-matter | The Unified P04 Transport Budget: Viscosity and Resistivity Saturation Are One Adjacency-Band Wall | `physics-papers/soft-matter/Paper_UnifiedP04TransportBudget.md` |
+| soft-matter | Resistivity Saturation as a Grain-Floored Mott–Ioffe–Regel Limit — and the Unified P04 Transport Budget (Open) | `physics-papers/soft-matter/Paper_P04TransportBudget_ResistivitySaturation.md` |
+| state-reduction | Is ED's channel/pointer basis coarser than atomic wavepackets? — resolving the load-bearing residual | `physics-papers/state-reduction/StateReduction_ChannelGranularity.md` |
+| state-reduction | Open piece (i): ED's collapse energy functional — a MOND correction to E_G, gated on the External Field Effect | `physics-papers/state-reduction/StateReduction_OpenPiece_i_EnergyFunctional.md` |
+| state-reduction | State Reduction in ED — a plain-language summary | `physics-papers/state-reduction/Plain_Language_Summary.md` |
+| dark-sector | The Relic Lagrangian, First Construction: the Committed Neutral Relic as an ED Matter Field | `physics-papers/dark-sector/Paper_ED_RelicLagrangian_v1.md` |
+
+---
+
+## Primitives Folder — ADDED 2026-08-30
+
+`primitives/` — the two-tier reference layer for P01–P13. Top level holds one card per primitive plus the ledger and the load-bearing audit; `concepts/` holds the pre-consolidation ontological treatments. **`Paper_087` remains canonical** for the primitives' definitions; these cards are the per-primitive reference expansion of it, not a competing source.
+
+| Item | File |
+|---|---|
+| Primitives — Ledger (the 13 canonical axioms) | `primitives/Primitives_Ledger.md` |
+| Primitive Load-Bearing Audit (per-primitive dependency map + falsifiers; Paper_088's companion) | `primitives/PRIMITIVE_LOAD_BEARING_AUDIT.md` |
+| P01 Event-density layer existence | `primitives/P01_event_density_layer.md` |
+| P02 Participation as primitive relation | `primitives/P02_participation.md` |
+| P03 Channel + locus indexing; spatial homogeneity | `primitives/P03_channel_locus_indexing.md` |
+| P04 Bandwidth (non-negative additive scalar) | `primitives/P04_bandwidth.md` |
+| P05 Polarity-transport between adjacent loci | `primitives/P05_polarity_transport.md` |
+| P06 Spatial dimension D = 3+1 | `primitives/P06_spatial_dimension.md` |
+| P07 Channel structure as ontological primitive | `primitives/P07_channel_structure.md` |
+| P08 Substrate scale ℓ_ED | `primitives/P08_substrate_scale.md` |
+| P09 U(1)-valued polarity | `primitives/P09_u1_polarity.md` |
+| P10 Rule-type primitive | `primitives/P10_rule_type.md` |
+| P11 Commitment, irreversible, with environmental phase-randomization (**the arrow primitive**) | `primitives/P11_commitment.md` |
+| P12 Stability landscape Σ = Coh − Str − Grad | `primitives/P12_stability_landscape.md` |
+| P13 Time homogeneity; primitive event-discreteness (**not** "the tick") | `primitives/P13_time_homogeneity.md` |
+| Contrast — Minimality Analysis (Open Question 4 resolution note) | `primitives/Contrast_Minimality.md` |
+| Emergent Decoupling Surfaces — foundations note | `primitives/Emergent_Decoupling_Surfaces.md` |
+| Concept treatments (13 files: chain, channel, commitment, ed_gradient, event_density, individuation, micro_event, multiplicity, participation, participation_bandwidth, relational_timing, tension_polarity, thickening) | `primitives/concepts/` |
+
+---
+
+## Theorems Folder — EXPANDED 2026-08-30
+
+The 2026-07-02 index listed only T19/T20/T21 and stated the folder held "T19, T20, T21 currently." **The folder actually holds T1–T21, twenty-one theorem files.** T1–T18 had never been indexed.
+
+| Theorem | Title | File |
+|---|---|---|
+| T1 | Spin-Statistics Theorem (ED form) | `theorems/T1.md` |
+| T2 | Cl(3,1) Frame Uniqueness | `theorems/T2.md` |
+| T3 | Anyon Prohibition in 3+1 Dimensions (**the canonical M1 exemplar** per Paper_095 §3.1) | `theorems/T3.md` |
+| T4 | Dirac-Equation Emergence (the substrate-to-Dirac descent that gates opens #1 and #2) | `theorems/T4.md` |
+| T5 | Gauge-Field-as-Rule-Type (GRH) | `theorems/T5.md` |
+| T6 | Canonical (Anti-)Commutation | `theorems/T6.md` |
+| T7 | Primitive-Level UV Finiteness (UV-FIN) | `theorems/T7.md` |
+| T8 | Flat-Space Vacuum-Response Kernel (Theorem N1) | `theorems/T8.md` |
+| T9 | Curved-Spacetime Vacuum-Response Kernel (Theorem GR1) | `theorems/T9.md` |
+| T10 | Born Rule (Gleason–Busch Reconstruction) | `theorems/T10.md` |
+| T11 | U2-Discrete (Inner-Product / Bell–Tsirelson) | `theorems/T11.md` |
+| T12 | U2-Continuum (Inner-Product Extension to Continuous Configurations) | `theorems/T12.md` |
+| T13 | U5 Translation / Momentum Operator | `theorems/T13.md` |
+| T14 | U1 Participation-Measure Foundation | `theorems/T14.md` |
+| T15 | U4 Hamiltonian Form (Kinetic Operator + Factor of 2) | `theorems/T15.md` |
+| T16 | U3 Time-Translation Generator + Schrödinger Evolution | `theorems/T16.md` |
+| T17 | Gauge-Field-as-Rule-Type (Arc Q Synthesis) | `theorems/T17.md` |
+| T18 | V1 Kernel Retardation (**the kernel-level arrow of time**) | `theorems/T18.md` |
+| T19 | Newton's G Structural Role | `theorems/T19.md` |
+| T20 | a₀ Structural Role | `theorems/T20.md` |
+| T21 | BTFR Slope-4 Structural Form | `theorems/T21.md` |
+
+---
+
+## Scale-Invariance Subfolder — ADDED 2026-08-30
+
+`scale correspondence/scale invariance/`. The 2026-07-02 pass flagged this subfolder as carrying near-duplicate drafts and did not index it. That flag is **confirmed** for three of its five files; the remaining two are distinct documents that were being missed along with them.
+
+| Item | Status |
+|---|---|
+| `Paper_EDSC_MotifConditioned_Invariant.md` | near-duplicate of `Paper_ED_SC_4_7_…` — cleanup candidate, cite 4.7 |
+| `Paper_EDSC_rstar_FilteredGRF.md` | near-duplicate of `Paper_ED_SC_4_8_…` — cleanup candidate, cite 4.8 |
+| `Paper_EDSC_SaddleClassification.md` | near-duplicate of `Paper_ED_SC_4_9_…` — cleanup candidate, cite 4.9 |
+| `Universal_Invariants.md` | **distinct** — Universal Invariants of the Canonical ED PDE |
+| `invariant_map.md` | **distinct** — ED-SIM v1 Invariant Map |
+
+---
+
+## Predictions — In-Process Experimental Packets — ADDED 2026-08-30
+
+`physics-papers/predictions/*_InProcess/` — live experimental packets (protocols, memos, execution plans), distinct from the completed prediction papers indexed above. These are **protocols and working artifacts, not papers**, and are listed here so the folder's contents are accounted for rather than appearing untracked.
+
+| Packet | Contents |
+|---|---|
+| `ED-09-5-Envelope_InProcess/` | `protocol.md` + `ED_PDE_Drive_Finding_2026-07-10.md` (the f_v envelope-ratio bet) |
+| `FRAP-High-BSA_InProcess/` | `protocol.md` (the soft-matter forward leg) |
+| `QC-Mass-Extrapolation_InProcess/` | `proposal.md` (Class-A wall) |
+| `ClassC-BroadcastPair-Watch_InProcess/` | `protocol.md` (repetition-code floor + cat-width ceiling pair) |
+| `AFM-Dewetting-ED-SC_InProcess/` | `protocol.md` |
+| `ED-Acoustic-BEC-Extremal_InProcess/` | `protocol.md` |
+| `ED-Acoustic-EIT-Extremal_InProcess/` | `protocol.md` |
+| `ED-Acoustic-OpticalPulse_InProcess/` | `protocol.md` |
+| `ED-RLC-Analogue_InProcess/` | `memo.md`, `measurement_reference.md` |
+| `Triad-Coupling-C7_InProcess/` | `protocol.md`, `RLC_ExecutionPlan_v1.0.md` |
+
+---
+
+## Layout Change In Flight — recorded 2026-08-31
+
+A folder reorganization was committed alongside this index pass and is **not yet fully propagated**:
+
+| Change | Status |
+|---|---|
+| `position-paper/` → `position-papers/` | folder moved; this index and `internal notes/ED_ORIENTATION.md` repointed |
+| `Paper_FormAndFlesh_TwoWalls.md` → `essays/ED_Essay_FormAndFlesh_TwoWalls.md` | moved out of the position-paper set into the essays set |
+| `primitives/Primitives_Ledger.md` → `primitives/P1-13_Primitives_Ledger.md` | renamed |
+| `ED_TheoryList_TieredClaims.xlsx` → `ED_ItemizedTheory_TieredClaims.xlsx` | renamed, matching the earlier PDF rename |
+| `scale correspondence/scale invariance/Paper_037_a0_Invariance_CHECK.md` | new check file alongside the retired original |
+
+**Outstanding reference debt (flagged, NOT swept in this pass).** The folder moved but its inbound references did not. Files still pointing at the old `position-paper/` path include the thirteen primitive cards (`primitives/P01…P13`), `primitives/Contrast_Minimality.md`, `internal notes/ED_MEMORY.md`, `essays/ED_Essay_FormAndFlesh_TwoWalls.md`, and `position-papers/ED_WHITEPAPER.md` itself. These were left alone deliberately: a repo-wide path sweep is a separate, mechanical change that should be reviewed as one, not folded into an index rebuild. Re-run the two-direction audit in the maintenance note after that sweep.
+
+---
+
+## Cited-But-Absent Files — RESOLVED 2026-08-31
+
+The reverse audit found index rows whose files are not present in this repo. **All were traced through git history, and none represents lost content** — every one was a deliberate move or rename. The pattern is uniform: the file was relocated on purpose and the pointer was never updated.
+
+| Cited as | What actually happened | Where it is now |
+|---|---|---|
+| `Paper_008_KernelArrow.md` | **Renamed, not archived.** Git shows a single-file rename-plus-edit (96 insertions, 22 deletions) into its successor. There is no separate archived artifact and there should not be one — the content *became* Paper_093. Row status corrected ARCHIVED → SUPERSEDED. | `physics-papers/foundations/Paper_093_KernelArrow_of_Time.md` |
+| `Paper_ED_Baryogenesis_Open.md` | Superseded M2 draft, deliberately archived out of this repo ("keep the M3 version"). **Provenance is preserved**, just in the working repo. | `event-density/remove from repo/superseded/Paper_ED_Baryogenesis_Open.md` |
+| `DarkSector_DebtMap.md` | Moved under "keep only standalone papers in EDG; move working docs to the ED repo." | `event-density/theory/Dark_Sector/DarkSector_DebtMap.md` |
+| `ED_Reading_ReproducedFromThirteen_TheUntunabilityArgument.md` | Renamed into `outreach/`, then the whole outreach folder was moved off GitHub. **Outreach-only by standing decision.** | held locally, outside version control |
+| `ED_VideoScript_Untunability.md`, `ED_Response_Carroll_Greene_WorldScienceFestival.md` | Both spoken/video scripts, deleted together in one commit. | not retained |
+
+`physics-papers/qft/Paper_MS-I_GaugeFromChannels.md` remains the model of a correct ARCHIVED row: superseded, but genuinely still present for provenance.
+
+**Method note.** Every line above came from `git log --diff-filter=ADR --name-status` plus `--find-renames` on the specific filename. Rename detection matters: `Paper_008_KernelArrow.md` looks like a deletion under a plain filter and is only revealed as a rename with `-M`. A future audit that skips rename detection will mis-report content as lost.
+
+---
+
+## Not Indexed, By Design
+
+`internal notes/` (15 files: `ED_ORIENTATION.md`, `ED_MEMORY.md`, `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `ED_Outreach_Drafts.md`, `PAPER_WRITING_CHECKLIST.md`, `CrankSafetyProtocol.md`, four `Memo_ED_*` audit memos, two `Update_Paper_*` notes, `Gravity_Quartet_TalkingPoints.md`, `ED_Public_Cosmology_Closure_Announcement.md`) is **working state, not corpus**, and is deliberately outside this index's scope.
+
+**Orientation staleness — FIXED 2026-08-31.** `internal notes/ED_ORIENTATION.md` (dated 2026-05-17) pointed a cold reader at `ED_WHITEPAPER.md`, `falsifiers/`, and `PAPERS_INDEX_redo.md` as repo-root items. All three were correct when written and all three had moved: the whitepaper to `position-papers/ED_WHITEPAPER.md` (a clean rename), the falsification register to `physics-papers/predictions/Paper_101_FalsificationRegister.md` (folder reorg), and `PAPERS_INDEX_redo.md` retired in favour of this file. **The paths have been corrected in place and a currency banner added**, scoped precisely: the layout content is verified as of 2026-08-31, while the document's *claims* (Zenodo counts, Route-A status language, the current-status section) still date from 2026-05-17 and were **not** re-verified in that pass. Since orientation is the first document a new reader or agent opens, correcting the paths was the higher-traffic half; auditing its claims remains open.
