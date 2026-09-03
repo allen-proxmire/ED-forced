@@ -1,5 +1,7 @@
 # Paper EDSC-Motif — Motif-Conditioned Distribution as Compositional Invariant
 
+*Sync note (2026-09-03): this file and `../Paper_ED_SC_4_7_MotifConditioned_Invariant.md` are two copies of one paper, held deliberately (spine copy + scale-invariance working set). **The numbered `Paper_ED_SC_4_x` copy is canonical**; keep the two in sync, the way `Paper_037_a0_Invariance_CHECK.md` is kept in sync with its gravity twin. They had diverged: see the correction item in the preamble.*
+
 **Series:** Wave-3 ED-SC 3.x Extension — Motif-Statistics Arc
 **Status:** Wave-3 generative paper; M3 verdict at write-time (FORM-FORCED + VALUE-INHERITED at the operating-point level)
 **Companions:** Paper_096 (cross-scale invariance, $\xi_{\mathrm{canonical}}$), Paper_EDSC_rstar (next), Paper_EDSC_SaddleClassification (after), Paper_087.

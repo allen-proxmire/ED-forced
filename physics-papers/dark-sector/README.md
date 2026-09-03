@@ -21,14 +21,22 @@ ED explains **galactic** dynamics — rotation curves, the baryonic Tully–Fish
 
 ## Source papers (this folder synthesizes, it does not supersede)
 
-- **Galactic MOND / no particle needed:** `gravity/Paper_KM-I_KhrononMOND.md`, `gravity/Paper_029_a0.md`, `gravity/Paper_030_CombinationRule.md`, `gravity/Paper_031_BTFR.md`, `gravity/Paper_QuadraticStrain_v1.md`.
-- **"Does not refute DM as particle content":** `gravity/Paper_029_a0.md`, `gravity/Paper_031_BTFR.md` (falsifier sections).
-- **Cluster/CMB debt + cosmological sector:** `gravity/Paper_KM-II_KhrononCosmology.md`, `cosmology/Paper_ED_Cos_03_CMBAcoustic.md`, `cosmology/Paper_ED_Cos_04_StructureFormation.md`.
-- **The Bullet (relic-primary):** `gravity/Paper_117_Bullet_TopologicalDefect.md` (repositioned — the relic gives the offset; the topological-defect offset-velocity law is a speculative bonus).
-- **Not the DM candidate (ruled out in-corpus):** `black-hole/Paper_041_RemnantMass.md` (Planck-mass remnants are explicitly *not* the DM candidate).
-- **The neutral-relic candidate machinery:** `cosmology/Paper_ED_Baryogenesis.md` (saturation-exit admission), `qft/Paper_MS-II_MatterSectorFromTheArrow.md` (neutral singlet in the channel structure), `substrate-evaluation/Paper_MassWithoutMass_BindingInertia.md` (binding mass; magnitude inherited).
-- **Conserved-current dust structure:** `gravity/Paper_GR-II_KhronometricClass.md` §3.
+- **Galactic MOND / no particle needed:** `../gravity/Paper_KM-I_KhrononMOND.md`, `../gravity/Paper_029_a0.md`, `../gravity/Paper_030_CombinationRule.md`, `../gravity/Paper_031_BTFR.md`, `../gravity/Paper_QuadraticStrain_v1.md`.
+- **"Does not refute DM as particle content":** `../gravity/Paper_029_a0.md`, `../gravity/Paper_031_BTFR.md` (falsifier sections).
+- **Cluster/CMB debt + cosmological sector:** `../gravity/Paper_KM-II_KhrononCosmology.md`, `../cosmology/Paper_ED_Cos_03_CMBAcoustic.md`, `../cosmology/Paper_ED_Cos_04_StructureFormation.md`.
+- **The Bullet (relic-primary):** `../gravity/Paper_117_Bullet_TopologicalDefect.md` (repositioned — the relic gives the offset; the topological-defect offset-velocity law is a speculative bonus).
+- **Not the DM candidate (ruled out in-corpus):** `../black-hole/Paper_041_RemnantMass.md` (Planck-mass remnants are explicitly *not* the DM candidate).
+- **The neutral-relic candidate machinery:** `../cosmology/Paper_ED_Baryogenesis.md` (saturation-exit admission), `../qft/Paper_MS-II_MatterSectorFromTheArrow.md` (neutral singlet in the channel structure), `../substrate-evaluation/Paper_MassWithoutMass_BindingInertia.md` (binding mass; magnitude inherited).
+- **Conserved-current dust structure:** `../gravity/Paper_GR-II_KhronometricClass.md` §3.
 
 ## Honest status (read before citing)
 
 Form-complete, value-inherited, with a named risk. Nothing here is a closed derivation; the galactic account (MOND) is the strongest piece and is a separate, standing result. The cluster/CMB account is a *candidate direction*, not a computed fit — no CMB spectrum is computed from ED, the relic mass is not derived (only consistency-bounded to warm ~keV), and the natural-scale expectation leans cold. Treat the papers here as the peer-facing statement of an open frontier; the working record in `event-density/theory/Dark_Sector/` carries the audit trail.
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`DarkSector_TieredClaims_Ledger.md`](DarkSector_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

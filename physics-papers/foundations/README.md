@@ -56,3 +56,11 @@
 | 100 | [One Substrate, Five Sectors (Program Overview)](Paper_100_FiveSector_ProgramOverview.md) | the whole program map — one substrate, five sectors (capstone; companion to 098) | Synthesis |
 
 *(No non-paper docs in this folder. The primitives here are the axioms; everything "Derived/Grounded" elsewhere is conditional on Paper_087.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`Foundations_TieredClaims_Ledger.md`](Foundations_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

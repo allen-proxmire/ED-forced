@@ -89,3 +89,12 @@ The modern (post-pivot) core of the line, cleanest path in:
 - **[Predictions_and_Falsifiers.md](Predictions_and_Falsifiers.md)** — the gravity line's predictions and falsification criteria (reader-facing; kept here).
 
 *(Two internal/meta docs that used to live here — the reader's map and the keystone-status note — were moved to `event-density/foundations/relocated_from_EDG_2026-07-09/` as working notes; this README now serves the navigation role.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`Gravity_TieredClaims_Ledger.md`](Gravity_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.
+- **[F3 Anchor Table](OffsetVelocity_F3_DataTable.md)**

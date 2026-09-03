@@ -55,7 +55,7 @@ $$ G = \frac{1}{4ℏη} = \frac{ℓ_P^2}{ℏ} \;\xrightarrow{\text{restore }c}\;
 
 ## 4. The arrow paradox, resolved — and it is Jacobson's own resolution
 
-There is a puzzle worth confronting. In ED's coarse-graining ledger (`Paper_HowCoarseGrainReality`), thermodynamics is the *one* continuum theory that **keeps** the arrow; general relativity is a theory that **threw the arrow away** (a reversible block spacetime). How, then, does Jacobson derive arrow-less GR *from* thermodynamics?
+There is a puzzle worth confronting. In ED's coarse-graining ledger (`Paper_HowTheoryCoarseGrainReality`), thermodynamics is the *one* continuum theory that **keeps** the arrow; general relativity is a theory that **threw the arrow away** (a reversible block spacetime). How, then, does Jacobson derive arrow-less GR *from* thermodynamics?
 
 The ideal gas answers it — and the ideal gas is *Jacobson's own analogy*. The law `PV = nRT` shows no arrow, yet it is the equilibrium equation of state of a gas whose approach to equilibrium was irreversible. **The arrow lives in the second law (the approach), not in the equation of state (the destination).** Jacobson says as much: the Einstein equation is *"born in the thermodynamic limit… its validity depends on local equilibrium,"* and push the field hard enough and it fails — *"non-equilibrium spacetime."*
 
@@ -110,5 +110,5 @@ Jacobson showed that general relativity is an equation of state — an equilibri
 - **ED gravity line:** `physics-papers/gravity/Paper_GR-I` (`g~1/b`, weak-field metric), `Paper_GR-II` (khronometric class), `Paper_GR-III_DynamicalRule.md` (the bandwidth rule; §7.4 area law from severance; the `b→0` = A1 cut), `Paper_GR-IV_ArrowsAlibi.md` (`α₁=−4λ_local`, `α₂=0`, sparse-becoming suppression).
 - **Horizon thermodynamics:** `foundations/BH_Thermal2Pi_FromNearHorizonRindler.md` (`T=κ/2π` from ED's Rindler geometry); `foundations/BH_EntropyCoefficient_FromEventCounting.md` (the `1/4`).
 - **Constants:** `Paper_027_Newtons_G.md` + Essays 13/14 (`G = c³ℓ_P²/ℏ`, the constants ledger).
-- **The ledger:** `physics-papers/substrate-evaluation/Paper_HowCoarseGrainReality.md` (GR as the law of the seam; thermodynamics as the receipt).
+- **The ledger:** `physics-papers/substrate-evaluation/Paper_HowTheoryCoarseGrainReality.md` (GR as the law of the seam; thermodynamics as the receipt).
 - **External (khronometric/thermodynamic gravity):** Eling–Guedens–Jacobson, gr-qc/0602001 (nonequilibrium spacetime); Chirco–Liberati, PRD 81, 024016 (horizon shear viscosity); Blas–Lim arXiv:1412.4828, Ramos–Barausse arXiv:1811.07786, Foster–Jacobson gr-qc/0509083 (khronometric PPN); Berglund–Bhattacharyya–Mattingly arXiv:1210.4940 (universal-horizon thermodynamics); arXiv:2603.28851 (covariant phase space; reabsorbability of the aether flux term).

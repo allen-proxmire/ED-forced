@@ -12,7 +12,7 @@
 **Status key** *(the theorem's own epistemic standing)*:
 `FORCED` = ratified structural result, conditional on the 13 primitives · `FORCED (form) · M3` = the form is forced/identified but the value is inherited and it rests on a named postulate · `Downgraded` = the "unconditional" claim did not survive audit; see the file's correction banner · `Subsumed` = folded into another theorem · `Stub` = structural-role statement, conditional on upstream content, not a full derivation.
 
-> **Provenance note.** These files are the *theory-side index entries*, not the proofs. Several point to the primitives repo (`arcs/…`, `ED-primitives/…`) for the constitutional registration. Where a physics-papers exposition exists, it is linked below and is the better read.
+> **Provenance note.** These files are the *theory-side index entries*, not the proofs. Several point to the primitives repo (`../event-density/arcs/…` for the derivations, `../ED Primitives/…` for the registration — both sibling repos, neither inside this one) for the constitutional registration. Where a physics-papers exposition exists, it is linked below and is the better read.
 
 ---
 

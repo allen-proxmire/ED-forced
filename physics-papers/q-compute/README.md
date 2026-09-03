@@ -46,3 +46,11 @@
 | 062 | [Cross-Domain Echo](Paper_062_CrossDomainEcho.md) | the cross-domain echo with the black-hole `Γ_cross` collapse | Grounded (cross-arc) |
 
 *(No non-paper docs. The Class-A wall (056) is a headline falsifiable prediction — see the prediction-inventory target in `event-density/docs/ED_Research_Targets.md`.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`QCompute_TieredClaims_Ledger.md`](QCompute_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

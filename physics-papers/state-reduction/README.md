@@ -34,3 +34,11 @@ Refereed twice against the corpus and the external sources; first verdict **majo
 ## The neighbors (external)
 
 Diósi 1987 (Phys. Lett. A 120, 377); Penrose 1996 (GRG 28, 581); the 2020 spontaneous-radiation exclusion (Donadi et al., *Nat. Phys.* 17, 74 (2021); arXiv 2111.13490) and the follow-up effectiveness-of-collapse literature.
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`StateReduction_TieredClaims_Ledger.md`](StateReduction_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

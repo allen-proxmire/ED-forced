@@ -82,3 +82,13 @@ For the audit of which primitives are load-bearing across the corpus (per-primit
 ---
 
 **End of README.**
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[Contrast](Contrast_Minimality.md)**
+- **[Emergent Decoupling Surfaces](Emergent_Decoupling_Surfaces.md)**
+- **[Primitives](P1-13_Primitives_Ledger.md)**

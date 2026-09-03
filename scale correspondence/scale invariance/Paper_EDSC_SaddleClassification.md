@@ -1,5 +1,7 @@
 # Paper EDSC-Saddle — Saddle-Geometry Classification (S1 / S2 / S3)
 
+*Sync note (2026-09-03): this file and `../Paper_ED_SC_4_9_SaddleClassification.md` are two copies of one paper, held deliberately (spine copy + scale-invariance working set). **The numbered `Paper_ED_SC_4_x` copy is canonical**; keep the two in sync, the way `Paper_037_a0_Invariance_CHECK.md` is kept in sync with its gravity twin. They had diverged: see the correction item in the preamble.*
+
 **Series:** Wave-3 ED-SC 3.x Extension — Saddle-Geometry Sector
 **Status:** Wave-3 generative paper; M3 verdict at write-time (form-IDENTIFIED Hessian-signature classification + INHERITED specific saddle parameters)
 **Companions:** Paper_EDSC_Motif, Paper_EDSC_rstar, Paper_096, Paper_087.
@@ -14,7 +16,7 @@
 4. It does **not** claim substrate-FORCED exhaustiveness of S1/S2/S3 — the trichotomy is partition-by-construction on the axes {invariant, ensemble-conditioned, motif-conditioned}, not a substrate-derived theorem. Substrate-level proof that no fourth class is structurally relevant is **OPEN**.
 5. **INHERITED vs FORCED breakdown:** The classification form is D-via-I composition (Hessian/Morse machinery + P-S1-Invariant + motif-conditioning); exhaustiveness in the substrate sense is OPEN.
 6. **Route A OPEN status:** This paper consumes $\xi_{canonical} = 1.7575$ lu (Paper_092). Substrate derivation of $\ell_{V5}(H_0)$ — and hence of $\xi_{canonical}$ from substrate parameters — is OPEN. All quantitative claims downstream inherit this OPEN status.
-7. **(Correction, 2026-06-23.)** Where §6 / the companion references list $r^*$ (Paper_EDSC_rstar) as an **S1 (cross-scale invariant)** example, that is **superseded**: the 2026-04-23 falsifier audit (ED-SC 2.0 r\* Final Verdict) retired $r^*$ from invariant status and reclassified it as a *filter-conditioned* GRF statistic. Being filter/motif-dependent, $r^*$ is therefore **not S1**; its correct landing class (S2 ensemble-only vs S3 motif-specific) is **unsettled** by the source language, which calls $r^*$ both *motif-conditioned* and *filter-conditioned*. The S1/S2/S3 *classification scheme* — this paper's actual result — is **unaffected**; only the mislabeled example is corrected.
+7. **(Correction, 2026-06-26.)** Where the companion references (§ Rewrite Note) list $r^*$ (Paper_EDSC_rstar) as an **S1 (cross-scale invariant)** example, that is **superseded**: the 2026-04-23 falsifier audit (ED-SC 2.0 r\* Final Verdict) retired $r^*$ from invariant status and reclassified it as a *filter-conditioned* GRF statistic (pooled $R^2 \approx -1.88$, filter-dependent). Being filter/motif-dependent, $r^*$ is therefore **not S1**; its correct landing class (S2 ensemble-only vs S3 motif-specific) is **unsettled** by the source language, which calls $r^*$ both *motif-conditioned* and *filter-conditioned*. The S1/S2/S3 *classification scheme* — this paper's actual result — is **unaffected**; only the mislabeled example is corrected. (Synced 2026-09-03 from the canonical `../Paper_ED_SC_4_9_SaddleClassification.md`, which carried the fuller 2026-06-26 wording.)
 
 ---
 

@@ -61,3 +61,12 @@
 | 052.5 | [Merger-Lag Prediction](Paper_052_5_Pred_MergerLag.md) | a merger-lag existence prediction (provisional; the substrate `τ_V5` floor is Open) | Prediction; **Open** floor |
 
 *(No non-paper docs here — the `BH_Thermal2Pi` memo was relocated to `event-density/foundations/relocated_from_EDG_2026-07-09/`. `S=A/4` is fully structural per target #4.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`BlackHole_TieredClaims_Ledger.md`](BlackHole_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.
+- **[The Hawking 2π From ED's Own Geometry](Paper_BH_Thermal2Pi_EntropyCoefficient.md)**

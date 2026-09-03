@@ -107,7 +107,7 @@ ED is **not** a derivation from nothing, that's impossible. And ED is **not yet*
 - **[`PAPERS_INDEX.md`](PAPERS_INDEX.md)** — the canonical paper list with status and verdict tiers.
 - **New to ED, plain English:** the book *[The Universe Becoming](https://www.amazon.com/dp/B0H34MSH87)* (19 chapters, no math).
 - **New to ED, technical:** `position-paper/` (whitepaper + two position papers), then `primitives/` (the 13 primitive cards).
-- **Live program map:** ED_ItemizedTheory_TieredClaims.xlsx
+- **Live program map:** [`ED_ItemizedTheory_TieredClaims.xlsx`](ED_ItemizedTheory_TieredClaims.xlsx)
 
 Every `physics-papers/` subfolder has a **README guide** (what-this-is, reading-order spine, per-paper results, an epistemic tier for each):
 
@@ -121,4 +121,4 @@ Every `physics-papers/` subfolder has a **README guide** (what-this-is, reading-
 | **substrate-evaluation** · **predictions** | cold-reader consolidation papers; falsification register + prediction inventory (Paper_101) |
 | **dark-sector** · **state-reduction** · **constants-inherited** | two-culprit dark sector (MOND + warm relic); ED vs Diósi/Penrose collapse; the constants ledger |
 
-Companion top-level folders: `position-paper/`, `primitives/`, `theorems/` (the T-registry papers cite by number), `scale correspondence/`, `layers/`. Each has its own README guide.
+Companion top-level folders, each with its own README guide: `position-paper/` (whitepaper + position papers), `primitives/` (the 13 primitive cards + the P1–13 ledger), `theorems/` (the T1–T21 registry papers cite by number), `scale correspondence/`, `layers/`, and **`essays/`** — the plain-language companion set, plus **Selected Formalisms I–V**, the five papers that carry the corpus's mathematics in one place. `internal notes/` is working state, not corpus: build scripts, the writing checklist, audit memos.

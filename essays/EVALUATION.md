@@ -22,6 +22,24 @@ Headline: first pass (2026-07-04) **8 KEEP, 3 AMEND, 0 FLAG**; the 3 AMENDs were
 | Dark Matter — The Case Without a Particle | **KEEP** | Paper_029_a0, Paper_ED_DF2_DF4_GroupSuppression, Bullet_TopologicalDefect |
 | The Universe Doesn't Happen All At Once | **KEEP** *(amended)* | Paper_GR-IV_ArrowsAlibi |
 
+## Currency — not yet evaluated (recorded 2026-09-03)
+
+The status table above ends at the second pass. **Five files in this folder have never been run against the seven-point standard**, and a reader should not read their absence as a pass:
+
+| File | Why it is not in the table |
+|---|---|
+| `ED_Essay_12_Cost_Benefit.md` | written after the second pass |
+| `ED_Essay_13_TheFirstShadow.md` | written after the second pass |
+| `ED_Essay_14_TheConstantsAreInherited.md` | written after the second pass |
+| `ED_Essay_FormAndFlesh_TwoWalls.md` | arrived by reclassification from `position-paper/`, so it was held to the position-paper standard, not this one |
+| `StartWithTime_Essay.md` | written as a standalone piece, never folded into the series evaluation |
+
+`Paper_SelectedFormalisms_I…V` are also in this folder and are deliberately **out of scope** here: they are formalism papers, not essays, and the seven-point standard does not apply to them.
+
+*Found by a pointer-layer coverage sweep, not by a re-read. Running the standard over the five is real work and is not claimed done.*
+
+---
+
 ## The Three AMENDs — all resolved 2026-07-04
 
 Each fix below was applied; the essays now meet the standard. Recorded for provenance.

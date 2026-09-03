@@ -43,3 +43,11 @@
 | 072 | [Individuation Regime](Paper_072_IndividuationRegime.md) | entanglement as the unresolved regime of participation-rule individuation | Grounded (interpretation) |
 
 *(No non-paper docs, no build artifacts in this folder. `Paper_067` is the one superseded duplicate.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`Entanglement_TieredClaims_Ledger.md`](Entanglement_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

@@ -62,3 +62,11 @@
 | MS-II | [The Matter Sector from the Arrow](Paper_MS-II_MatterSectorFromTheArrow.md) | the SM-facing assembly: gauge groups, spin, chirality, three dimensions | Grounded (chirality / {1,2,3} / anomalies Open, #2b) |
 
 *(No non-paper docs in this folder. The matter-sector completion — #2b, reducing to the T4 spinor gate — is the program's highest-leverage open research target; see `event-density/docs/ED_Research_Targets.md`.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`QFT_TieredClaims_Ledger.md`](QFT_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

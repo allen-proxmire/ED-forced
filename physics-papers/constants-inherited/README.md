@@ -26,3 +26,11 @@ A single event — one commitment of the arrow — already carries three scales:
 ## Working record
 
 Raw derivation / riff history: `event-density` was the drafting ground; the canonical copy now lives here. Related: the `M_crit` / decoherence and dimension-selection threads (see the "why 3D" roster — holographic reach-law, linking, and this note's `ℓ_P^{d−1}` all point at the same area-law).
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`ConstantsInherited_TieredClaims_Ledger.md`](ConstantsInherited_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

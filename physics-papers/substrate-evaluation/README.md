@@ -82,3 +82,14 @@
 | [The Proxy Conversion Doctrine](Paper_ProxyConversionDoctrine.md) | one rule set (D1–D4) replacing five local proxy-to-content patches; pre-registered live-width content rule; resolves the certified-floor arithmetic; opens 058's α encoding-dependence | Methodological (falsifiable structure claims) |
 
 *(One plain-language companion `thearrowsortsthecontinuum_plain_language.txt` accompanies the layers capstone. The two honest edges — the Gleason inner-product (#8b) and the parity/chirality wall (#2b) — are tiered against the research map, not the papers' own framing.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[The Conservation Column](Paper_ConservationColumn.md)**
+- **[General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate](Paper_GR_QM_Projections.md)**
+- **[Photonic Statistical-Band Routing is a Fifth Face of the V5 Budget](Paper_V5PhotonicRouting_FifthFace.md)**
+- **[`SubstrateEvaluation_TieredClaims_Ledger.md`](SubstrateEvaluation_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

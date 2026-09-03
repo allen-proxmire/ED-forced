@@ -19,3 +19,12 @@ What is **absent** at layer 1 is exactly what the second coarse-graining manufac
 ## Sims
 
 `event-density/evaluation/CoarseGrain_Arc/`: `diffusion_coherent_decomp.py`, `maxwell_coherent_decomp.py`, `fourier_phase_test.py`, `coarsegrain_test.py`.
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[Soliton Test](Soliton_Test_NegativeResult.md)**
+- **[Transport / Eikonal](Transport_LayerOne.md)**

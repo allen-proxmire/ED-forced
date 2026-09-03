@@ -21,3 +21,36 @@ Every essay in this folder is held to the same discipline the papers are, transl
 ## Index
 
 See `EVALUATION.md` for the current list, companion papers, and status.
+
+---
+
+## Files in this folder
+
+*Added 2026-09-03. `EVALUATION.md` indexes the essays by number and title, which means the folder had no index a reader could search by **filename** — and five of the files below are not in `EVALUATION.md` at all (see its currency note).*
+
+- **[Dark Matter Is One Word for Two Problems](ED_DarkMatter_OneWordTwoProblems.md)**
+- **[Remember, or Forget](ED_Essay_10_TheArrowSortsTheContinuum.md)**
+- **[Here Is the Knife](ED_Essay_11_HereIsTheKnife.md)**
+- **[Cost and Benefit](ED_Essay_12_Cost_Benefit.md)**
+- **[The First Shadow](ED_Essay_13_TheFirstShadow.md)**
+- **[The Constants Are Inherited](ED_Essay_14_TheConstantsAreInherited.md)**
+- **[The Arrow First](ED_Essay_1_Introduction_Essay.md)**
+- **[Why Those Rules?](ED_Essay_2_QuantumMechanics.md)**
+- **[Turn It Twice](ED_Essay_3_SpinAntimatterDirac.md)**
+- **[The One in a Billion](ED_Essay_4_MatterFromTheArrow.md)**
+- **[One Number and One Knot](ED_Essay_5_ThreeForcesThreeDimensions.md)**
+- **[The Force That Talks to Itself](ED_Essay_6_YangMillsMassGap.md)**
+- **[The Ninety-Five Percent](ED_Essay_7_GravityDarkMatterDarkEnergy.md)**
+- **[What the Black Hole Remembers](ED_Essay_8_BlackHolesInformation.md)**
+- **[The Edge at the Beginning](ED_Essay_9_TheEarlyUniverse.md)**
+- **[Form and Flesh](ED_Essay_FormAndFlesh_TwoWalls.md)**
+- **[The Universe Doesn't Happen All at Once](ED_Essay_TheUniverseDoesntHappenAllAtOnce.md)**
+- **[Selected Formalisms III — Substrate Theorems](Paper_SelectedFormalisms_III_SubstrateTheorems.md)**
+- **[Selected Formalisms II — QFT](Paper_SelectedFormalisms_II_QFT.md)**
+- **[Selected Formalisms IV — Black Holes](Paper_SelectedFormalisms_IV_BlackHoles.md)**
+
+The **Selected Formalisms** set is not essay-tier: it is the corpus's mathematics collected in one place, filed here because it travels with the public-facing set.
+
+- **[Selected Formalisms I — Gravity](Paper_SelectedFormalisms_I_Gravity.md)**
+- **[Selected Formalisms V — Entanglement](Paper_SelectedFormalisms_V_Entanglement.md)**
+- **[Start With Time](StartWithTime_Essay.md)**

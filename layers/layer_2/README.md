@@ -23,3 +23,13 @@ Layer 2 is where the world goes **smooth, reversible, and Gaussian** — because
 ## Sims
 
 `event-density/evaluation/CoarseGrain_Arc/diffusion_layer2_test.py` (and the pending correlation-length / Gaussianity test).
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[Gaussianity](Gaussianity_TwoLayers.md)**
+- **[Navier–Stokes](NavierStokes_LayerTwo.md)**
+- **[Layer-2's Decorrelation Is One Operator](OneOperator_TheLaplacian.md)**

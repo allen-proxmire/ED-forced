@@ -1,5 +1,7 @@
 # Paper EDSC-rstar — $r^*$ as FORCED Filtered-GRF Statistic (S1 Projection at Canonical Point)
 
+*Sync note (2026-09-03): this file and `../Paper_ED_SC_4_8_rstar_FilteredGRF.md` are two copies of one paper, held deliberately (spine copy + scale-invariance working set). **The numbered `Paper_ED_SC_4_x` copy is canonical**; keep the two in sync, the way `Paper_037_a0_Invariance_CHECK.md` is kept in sync with its gravity twin. They had diverged: see the correction item in the preamble.*
+
 **Series:** Wave-3 ED-SC 3.x Extension
 **Status:** Wave-3 generative paper; M3 verdict at write-time (FORM-FORCED + VALUE-INHERITED; specific numerical $r^*$ pooled-$R^2$ values canon-internal)
 **Companions:** Paper_096 ($\xi_{\mathrm{canonical}}$), Paper_EDSC_Motif (motif-conditioned distribution), Paper_EDSC_SaddleClassification (next), Paper_ED_SC_4.1.

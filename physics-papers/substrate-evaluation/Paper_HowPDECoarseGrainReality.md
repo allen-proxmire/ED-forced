@@ -99,7 +99,7 @@ What the lens *adds*, beyond the mechanism, is that it tells you **where the pro
 
 ## Cross-references
 
-- **Substrate & primitives:** `physics-papers/foundations/Paper_087_13Primitives.md`; the companion article `Paper_HowCoarseGrainReality.md`; the Report (repo root).
+- **Substrate & primitives:** `physics-papers/foundations/Paper_087_13Primitives.md`; the companion article `Paper_HowTheoryCoarseGrainReality.md`; the Report (repo root).
 - **Yang–Mills — structure & action:** `physics-papers/substrate-evaluation/Paper_GaugeStructure_FromChannelTransport.md` (SU(N), non-abelian, `F²`, hypercharge; `{1,2,3}` wall); `physics-papers/qft/Paper_018_YangMills1.md` (the gauge field from multi-rule-type transport); working repo `foundations/Gauge_06_YangMillsAction_FromCoherenceDeficit.md`.
 - **Yang–Mills — the gap:** `physics-papers/qft/Paper_021_YM4_MassGap.md` (the correlation-length floor); working repo `foundations/Gauge_07_YangMillsGap_FromCoherenceDeficit.md` (`gap ⟺ non-commuting channels`); `physics-papers/qft/Paper_023_YM6_ClaySynthesis.md` (Clay-relevance tiering); plain-language `essays/ED_Essay_6_YangMillsMassGap.md`.
 - **Navier–Stokes — coarse-graining & viscosity:** `physics-papers/soft-matter/Paper_076_NS2_CoarseGraining.md`; `layers/layer_2/NavierStokes_LayerTwo.md` (incompressibility as the edge); `physics-papers/substrate-evaluation/Paper_Continuum_KineticLatticeGas.md` (the certified substrate does not relax to a fluid).

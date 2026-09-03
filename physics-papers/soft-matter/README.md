@@ -57,3 +57,12 @@
 | 086 | [Soft-Matter Synthesis](Paper_086_SoftMatter_Synthesis.md) | the soft-matter arc consolidated | Synthesis |
 
 *(No non-paper docs. DCGT (073) is the continuum bridge the whole corpus depends on; the mobility law (085) is the sector's empirical anchor; 082 marks an honest non-ED boundary.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[Resistivity Saturation as a Grain-Floored Mott–Ioffe–Regel Limit](Paper_P04TransportBudget_ResistivitySaturation.md)**
+- **[The Unified P04 Transport Budget](Paper_UnifiedP04TransportBudget.md)**

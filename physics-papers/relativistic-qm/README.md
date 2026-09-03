@@ -57,3 +57,11 @@
 | 116 | [Conditional Massless Slot (MR-R + MR-P)](Paper_116_MRR_MRP_MasslessSlot.md) | a conditional massless slot via MR-R chiral + MR-P gauge | Grounded (M3) |
 
 *(No non-paper docs. The T4 Dirac/spinor gate (106) is the corpus's central open matter-sector item — see `event-density/docs/ED_Research_Targets.md` #2b.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`RelativisticQM_TieredClaims_Ledger.md`](RelativisticQM_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.

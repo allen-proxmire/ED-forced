@@ -1,6 +1,6 @@
 # Papers Index — Canonical Source of Truth
 
-**Last updated:** 2026-08-30
+**Last updated:** 2026-09-03
 **Purpose:** Single source of truth for every paper in the ED corpus. Tracks paper number (locked-in numbering), title, domain/arc assignment, status, and file location. Reflects the corpus state after Round 1 (per-paper QC), Round 2 (cross-paper audit + theorem gap-fill), Round 3 (cross-arc harmonization + SCBU + ED-SC 4.x arc), and the **2026-07-02 rebuild** (a full repo scan found the index had gone stale since 2026-05-14 — three entire arcs, a decimal-numbered sub-layer, and several standalone sections had never been added; see the maintenance note at the bottom), and the **2026-08-30 rebuild** (a second full repo scan, run for the same reason: the index had gone stale again, this time missing the fifteen tiered-claims ledgers, the flagship report, the Selected Formalisms series, the essays, the readings, the microscopic-completions family, the primitives cards, T1-T18, and fourteen substrate-evaluation papers, plus four filename renames that had left dead paths behind).
 
 **Source corpus:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\` (legacy/working-repo location; the EDG copies referenced by file paths below live under `physics-papers/<sub-domain>/`, `position-paper/`, `layers/`, etc. in this repo).
@@ -21,10 +21,10 @@ ED's dark-matter position spans the gravity, cosmology, QFT, and substrate-evalu
 
 | Doc | Purpose | Status |
 |---|---|---|
-| `dark-sector/README.md` | folder overview + source-paper map | Synthesis |
-| `dark-sector/Paper_ED_DarkSector.md` | the canonical position, *"Two Culprits, One Mechanism"* (galaxy/cluster/CMB split; "MOND ≠ no particle"; the relic candidate; the open crux + falsifiers) | Synthesis |
-| `dark-sector/Paper_ED_RelicLagrangian_v1.md` | first construction of the committed neutral relic as an ED matter field | Derivation |
-| `dark-sector/DarkSector_TieredClaims_Ledger.md` | the arc's tier catalog / staleness detector (see the Ledgers section below) | Ledger |
+| `physics-papers/dark-sector/README.md` | folder overview + source-paper map | Synthesis |
+| `physics-papers/dark-sector/Paper_ED_DarkSector.md` | the canonical position, *"Two Culprits, One Mechanism"* (galaxy/cluster/CMB split; "MOND ≠ no particle"; the relic candidate; the open crux + falsifiers) | Synthesis |
+| `physics-papers/dark-sector/Paper_ED_RelicLagrangian_v1.md` | first construction of the committed neutral relic as an ED matter field | Derivation |
+| `physics-papers/dark-sector/DarkSector_TieredClaims_Ledger.md` | the arc's tier catalog / staleness detector (see the Ledgers section below) | Ledger |
 
 *Path correction 2026-08-30: `Paper_ED_DarkSector_Position.md` is now `Paper_ED_DarkSector.md` (renamed, content is the same position paper). `DarkSector_DebtMap.md` is **not in this repo**: it was deliberately moved to the working repo under "keep only standalone papers in EDG; move working docs to the ED repo," and now lives at `event-density/theory/Dark_Sector/DarkSector_DebtMap.md` (traced 2026-08-31).*
 
@@ -37,8 +37,8 @@ The *measurement-side* companion to the dark sector: ED's position on gravitatio
 | Doc | Purpose | Status |
 |---|---|---|
 | `state-reduction/README.md` | folder overview + source-paper map + open pieces | Synthesis |
-| `state-reduction/Paper_ED_StateReduction_vs_CollapseModels.md` | the peer-facing positioning note (shared conviction; ED's account; the three neighbors; time-not-energy; gap, falsifiers, tiers) | Synthesis |
-| `state-reduction/StateReduction_CollapseRate_ED_Derivation.md` | companion derivation: the `τ ∝ ℏ/E_G` scaling argument + the emission-signature analysis (why the 2020 bound does not exclude ED, honestly scoped) | Derivation |
+| `physics-papers/state-reduction/Paper_ED_StateReduction_vs_CollapseModels.md` | the peer-facing positioning note (shared conviction; ED's account; the three neighbors; time-not-energy; gap, falsifiers, tiers) | Synthesis |
+| `physics-papers/state-reduction/StateReduction_CollapseRate_ED_Derivation.md` | companion derivation: the `τ ∝ ℏ/E_G` scaling argument + the emission-signature analysis (why the 2020 bound does not exclude ED, honestly scoped) | Derivation |
 
 ---
 
@@ -485,7 +485,7 @@ Note: this third entry is a distinct document from `Paper_087_13Primitives.md` (
 | State reduction | `physics-papers/state-reduction/StateReduction_TieredClaims_Ledger.md` |
 | Substrate evaluation | `physics-papers/substrate-evaluation/SubstrateEvaluation_TieredClaims_Ledger.md` |
 
-**Corpus-level companion:** `ED_ItemizedTheory_TieredClaims.xlsx` (repo root; renamed from `ED_ItemizedTheory_TieredClaims.xlsx`, matching the earlier PDF rename) — the master spreadsheet. Sheets: *Core Theory* (the 38 lines: 13 primitives + 10 constants + the postulate rows), *Core Predictions* (the falsifiable bets with kill-conditions), *Ledger w Claims* (404-row master), *Core Claims*, *Tier Key*, *Tier Counts*, *Postulate Flags*, *Ratio*. PDF export: `ED_ItemizedTheory_TieredClaims.pdf`.
+**Corpus-level companion:** `ED_ItemizedTheory_TieredClaims.xlsx` (repo root; renamed 2026-08-31 from `ED_TheoryList_TieredClaims.xlsx`, matching the earlier PDF rename) — the master spreadsheet. Sheets: *Core Theory* (the 38 lines: 13 primitives + 10 constants + the postulate rows), *Core Predictions* (the falsifiable bets with kill-conditions), *Ledger w Claims* (404-row master), *Core Claims*, *Tier Key*, *Tier Counts*, *Postulate Flags*, *Ratio*. PDF export: `ED_ItemizedTheory_TieredClaims.pdf`.
 
 ---
 
@@ -630,7 +630,7 @@ Papers found in already-indexed folders that the 2026-07-02 pass missed.
 
 | Item | File |
 |---|---|
-| Primitives — Ledger (the 13 canonical axioms) | `primitives/Primitives_Ledger.md` |
+| Primitives — Ledger (the 13 canonical axioms) | `primitives/P1-13_Primitives_Ledger.md` |
 | Primitive Load-Bearing Audit (per-primitive dependency map + falsifiers; Paper_088's companion) | `primitives/PRIMITIVE_LOAD_BEARING_AUDIT.md` |
 | P01 Event-density layer existence | `primitives/P01_event_density_layer.md` |
 | P02 Participation as primitive relation | `primitives/P02_participation.md` |
@@ -714,19 +714,19 @@ The 2026-07-02 index listed only T19/T20/T21 and stated the folder held "T19, T2
 
 ---
 
-## Layout Change In Flight — recorded 2026-08-31
+## Layout Changes — recorded 2026-08-31, reconciled 2026-09-03
 
-A folder reorganization was committed alongside this index pass and is **not yet fully propagated**:
+A folder reorganization was committed alongside this index pass. **It is now fully propagated**; the reconciliation is recorded per row.
 
 | Change | Status |
 |---|---|
-| `position-paper/` → `position-paper/` | folder moved; this index and `internal notes/ED_ORIENTATION.md` repointed |
-| `Paper_FormAndFlesh_TwoWalls.md` → `essays/ED_Essay_FormAndFlesh_TwoWalls.md` | moved out of the position-paper set into the essays set |
-| `primitives/Primitives_Ledger.md` → `primitives/P1-13_Primitives_Ledger.md` | renamed |
-| `ED_TheoryList_TieredClaims.xlsx` → `ED_ItemizedTheory_TieredClaims.xlsx` | renamed, matching the earlier PDF rename |
+| `position-paper/` → `position-papers/` → `position-paper/` | **reverted.** The pluralization was undone in commit `f48d2fe`, so the folder name is unchanged from where it started. A full-repo grep on 2026-09-03 finds **zero** references to the plural form: nothing to sweep. |
+| `Paper_FormAndFlesh_TwoWalls.md` → `essays/ED_Essay_FormAndFlesh_TwoWalls.md` | moved out of the position-paper set into the essays set. **Indexed** at the Essays row above; the bare old name no longer appears as a live pointer. |
+| `primitives/Primitives_Ledger.md` → `primitives/P1-13_Primitives_Ledger.md` | renamed. **Live pointer in this index repointed 2026-09-03** — it had kept the old name in the Primitives section while this table documented the rename. |
+| `ED_TheoryList_TieredClaims.xlsx` → `ED_ItemizedTheory_TieredClaims.xlsx` | renamed, matching the earlier PDF rename. **Citation repointed 2026-09-03** (§Ledgers had a self-referential "renamed from" reading `ED_ItemizedTheory → ED_ItemizedTheory`, an artifact of a global replace). |
 | `scale correspondence/scale invariance/Paper_037_a0_Invariance_CHECK.md` | new check file alongside the retired original |
 
-**Outstanding reference debt (flagged, NOT swept in this pass).** The folder moved but its inbound references did not. Files still pointing at the old `position-paper/` path include the thirteen primitive cards (`primitives/P01…P13`), `primitives/Contrast_Minimality.md`, `internal notes/ED_MEMORY.md`, `essays/ED_Essay_FormAndFlesh_TwoWalls.md`, and `position-paper/ED_WHITEPAPER.md` itself. These were left alone deliberately: a repo-wide path sweep is a separate, mechanical change that should be reviewed as one, not folded into an index rebuild. Re-run the two-direction audit in the maintenance note after that sweep.
+**Reference debt — VOID, resolved 2026-09-03.** The debt flagged here was created by the `position-paper/` → `position-papers/` pluralization and would have required repointing the thirteen primitive cards, `primitives/Contrast_Minimality.md`, `internal notes/ED_MEMORY.md`, `essays/ED_Essay_FormAndFlesh_TwoWalls.md`, and `position-paper/ED_WHITEPAPER.md`. **The rename was reverted instead** (`f48d2fe`), which dissolved the debt rather than paying it: every one of those files was already pointing at `position-paper/`, which is again the correct path. Verified by full-repo grep — zero references to the plural form. *Lesson worth keeping: reverting a rename is cheaper than sweeping its references, when the rename bought nothing.*
 
 ---
 

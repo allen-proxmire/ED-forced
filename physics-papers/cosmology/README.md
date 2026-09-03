@@ -52,3 +52,11 @@
 | [DF2 / DF4 Group Suppression](Paper_ED_DF2_DF4_GroupSuppression.md) | NGC 1052-DF2/DF4 low-acceleration galaxies read via the derived MOND scale `a₀` | Grounded (observational; MOND cross-link) |
 
 *(No non-paper docs — the 5 Route-A construction/audit memos were relocated to `event-density/foundations/relocated_from_EDG_2026-07-09/`. The standard-cosmology papers are consilience; the CMB/Gaussianity debt (#5c) is honestly owed.)*
+
+---
+
+## Also in this folder
+
+*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
+
+- **[`Cosmology_TieredClaims_Ledger.md`](Cosmology_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.
