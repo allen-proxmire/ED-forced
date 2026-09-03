@@ -1,4 +1,6 @@
-# Microscopic Completions — Folder Guide *(the "EDsplain" family)*
+# The EDsplain Family — Guide *(microscopic completions + neighbour-program comparisons)*
+
+*Relocated 2026-09-03. This was `physics-papers/other-theories-advanced/README.md`; that folder was merged into `physics-papers/readings/`, which now holds two genres (see this folder's `README.md`). The guide is carried over intact because it holds the ranked target list, the treat-with-caution list, and the six spun-off open leads, none of which is recorded anywhere else.*
 
 **What this folder is.** The working mother folder for a family of papers with one shared move: take a **respected, standing result** that runs on an *assumed microscopic input its own authors flag as needing a deeper theory*, and show that **ED supplies exactly that input** without contradiction. We do not re-derive these results and we do not claim to overturn them. We ground the one thing they leave open.
 
@@ -36,7 +38,7 @@ That flagged input is precisely ED's reusable asset: **A1 severance across a cau
 
 **Open (why gravity is special):** genuinely unsettled. The best-surviving ED-flavored candidate reason, flagged as **a lead, not a result**: *gravity's discard is geometry itself, so its equation of state closes on the same metric it constrains* — unlike theories whose discard sits on a fixed background geometry.
 
-> **Record-keeping note — one clause corrected.** An earlier chat phrasing gave the reason as *"because gravity is geometry, and geometry is where horizons live."* The adversarial pass **retracted** that clause: analog/acoustic horizons (sonic, BEC) carry Hawking temperature and entropy, so horizons are **not** unique to fundamental gravity, and the "gravity re-deposits its arrow as horizon-entropy" story is coherent but post-hoc. The metric-closure lead above is the surviving replacement. Do not restore the horizons phrasing. Full trace: `event-density/foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` (§3, §5).
+> **Record-keeping note — one clause corrected.** An earlier chat phrasing gave the reason as *"because gravity is geometry, and geometry is where horizons live."* The adversarial pass **retracted** that clause: analog/acoustic horizons (sonic, BEC) carry Hawking temperature and entropy, so horizons are **not** unique to fundamental gravity, and the "gravity re-deposits its arrow as horizon-entropy" story is coherent but post-hoc. The metric-closure lead above is the surviving replacement. Do not restore the horizons phrasing. Full trace: `../../../event-density/foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` (§3, §5).
 
 ---
 
@@ -63,7 +65,7 @@ That flagged input is precisely ED's reusable asset: **A1 severance across a cau
 The Jacobson + Padmanabhan arc left six open leads. Ranked by ROI; the first two are one workstream.
 
 **High-value cluster (A + B — one workstream, same near-horizon Rindler home):**
-- **A. Ground the `½T`-per-channel (the equipartition rule).** Both papers ground the *count* of horizon d.o.f. but *posit* that each carries `½T`. **Attacked 2026-07-25 (`event-density/foundations/Equipartition_And_Temperature_One_KMS_Fact_2026-07-25.md`), refereed. Result = unification, not grounding.** (1) The equipartition *relation* `E=½nT` (≡ `S=E/2T`, `n=4S`) **already holds** in ED at the same tier as `S=A/4` (from derived `κ=1/2r_s` + thermal `T=κ/2π` + first law) — ED isn't missing it. (2) What's open is the *microscopic* reading (`n` actual d.o.f. each carrying `½T`), and it is the **energy-side twin of the open 1/4-coefficient question** (`BH_EntropyCoefficient` §4: which surface / what state-count-per-area does ED freeze?). The referee's "edge = `bandwidth+phase` = 2 d.o.f. = `kT`, not `½T`" factor is the *symptom* of that unmeasured d.o.f. content. **A and the 1/4 are one question, decided by one sim — now RUN (2026-07-25).** Counting independent frozen b→0 states per horizon area (`evaluation/DynamicalBandwidth/horizon_entropy_coefficient.py`) gave **coefficient 0.780 ± 0.011 ≈ π/4, area law confirmed** — i.e. the substrate tiles the **full horizon** (~1 state/Planck area, the 0.78 a lattice factor), **not** the cross-section (0.25). So: (i) the **count side is settled** (`n ≈ A/ℓ_P²`, Padmanabhan's `c₁≈1` vindicated); (ii) the **1/4 is thermal** (Route A: derived `κ=1/2r_s` × inherited `2π`), *not* AP's geometric r_s/2 route (which stays an exact identity but isn't the tiling mechanism); (iii) both the `1/4` and equipartition's `½T` now collapse to **one lever — the arrow-native 2π** (`BH_Thermal2Pi` §4b, possible category error). The earlier "one near-horizon fact" reduction is **withdrawn**. See `event-density/foundations/{Equipartition_And_Temperature_One_KMS_Fact,BH_EntropyCoefficient_FromEventCounting}`.
+- **A. Ground the `½T`-per-channel (the equipartition rule).** Both papers ground the *count* of horizon d.o.f. but *posit* that each carries `½T`. **Attacked 2026-07-25 (`../../../event-density/foundations/Equipartition_And_Temperature_One_KMS_Fact_2026-07-25.md`), refereed. Result = unification, not grounding.** (1) The equipartition *relation* `E=½nT` (≡ `S=E/2T`, `n=4S`) **already holds** in ED at the same tier as `S=A/4` (from derived `κ=1/2r_s` + thermal `T=κ/2π` + first law) — ED isn't missing it. (2) What's open is the *microscopic* reading (`n` actual d.o.f. each carrying `½T`), and it is the **energy-side twin of the open 1/4-coefficient question** (`BH_EntropyCoefficient` §4: which surface / what state-count-per-area does ED freeze?). The referee's "edge = `bandwidth+phase` = 2 d.o.f. = `kT`, not `½T`" factor is the *symptom* of that unmeasured d.o.f. content. **A and the 1/4 are one question, decided by one sim — now RUN (2026-07-25).** Counting independent frozen b→0 states per horizon area (`evaluation/DynamicalBandwidth/horizon_entropy_coefficient.py`) gave **coefficient 0.780 ± 0.011 ≈ π/4, area law confirmed** — i.e. the substrate tiles the **full horizon** (~1 state/Planck area, the 0.78 a lattice factor), **not** the cross-section (0.25). So: (i) the **count side is settled** (`n ≈ A/ℓ_P²`, Padmanabhan's `c₁≈1` vindicated); (ii) the **1/4 is thermal** (Route A: derived `κ=1/2r_s` × inherited `2π`), *not* AP's geometric r_s/2 route (which stays an exact identity but isn't the tiling mechanism); (iii) both the `1/4` and equipartition's `½T` now collapse to **one lever — the arrow-native 2π** (`BH_Thermal2Pi` §4b, possible category error). The earlier "one near-horizon fact" reduction is **withdrawn**. See `../../../event-density/foundations/{Equipartition_And_Temperature_One_KMS_Fact,BH_EntropyCoefficient_FromEventCounting}`.
 - **B. Arrow-native / continuation-free `2π` (the temperature).** ED currently gets `T = κ/2π` via the Euclidean (reversible-time) route — the one Jacobson/Padmanabhan input ED does **not** yet ground in the arrow (`Paper_GravityAsEquationOfState` §5, §8). Same Rindler home as A: cracking the mode structure arrow-natively plausibly yields **both** `½T` and the `2π`. Single highest-ROI node in the arc.
 
 **The prize (most ambitious, genuinely novel — not ED-splaining):**
@@ -76,20 +78,12 @@ The Jacobson + Padmanabhan arc left six open leads. Ranked by ROI; the first two
 - **E. Closed-form aether-entropy leading power** — would harden the Jacobson §7 scalar-sector co-suppression from *inference* to *computation* (`Paper_GravityAsEquationOfState` §8). Small, self-contained.
 
 **Conceptual (not a calculation):**
-- **F. "Why is gravity special?"** — the metric-closure lead: gravity's discard *is* geometry, so its equation of state closes on the metric. A lead, not a result (`foundations/ThermoPattern_EquationOfState_of_the_DiscardPile`).
+- **F. "Why is gravity special?"** — the metric-closure lead: gravity's discard *is* geometry, so its equation of state closes on the metric. A lead, not a result (`../../../event-density/foundations/ThermoPattern_EquationOfState_of_the_DiscardPile`).
 
 ---
 
 ## Working notes (in the `event-density` repo)
 
-- `foundations/ED_and_Jacobson_GravityFromThermo_2026-07-24.md` — the founding step-1 note (Jacobson read in full; the three grounded inputs; exact `G`).
-- `foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` — the pattern + the honest asymmetry finding (governs the "why gravity" language above).
-- `foundations/Khronon_vs_Lorentz_in_Jacobson_RESULTS_LOG_2026-07-24.md` — the khronometric-vs-Lorentz thread (R1–R6, closed).
-
----
-
-## Also in this folder
-
-*Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*
-
-- **[`OtherTheories_TieredClaims_Ledger.md`](OtherTheories_TieredClaims_Ledger.md)** — the arc's **tiered-claims ledger**: every load-bearing claim in this folder with its current tier. It doubles as the arc's staleness detector — where a paper and the ledger disagree, the ledger's `Status` column is the current state. Read it before citing anything here.
+- `../../../event-density/foundations/ED_and_Jacobson_GravityFromThermo_2026-07-24.md` — the founding step-1 note (Jacobson read in full; the three grounded inputs; exact `G`).
+- `../../../event-density/foundations/ThermoPattern_EquationOfState_of_the_DiscardPile_2026-07-24.md` — the pattern + the honest asymmetry finding (governs the "why gravity" language above).
+- `../../../event-density/foundations/Khronon_vs_Lorentz_in_Jacobson_RESULTS_LOG_2026-07-24.md` — the khronometric-vs-Lorentz thread (R1–R6, closed).

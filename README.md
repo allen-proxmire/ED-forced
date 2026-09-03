@@ -119,6 +119,7 @@ Every `physics-papers/` subfolder has a **README guide** (what-this-is, reading-
 | **gravity** · **dynamics** · **black-hole** · **cosmology** | Newton→GR-I..IV, MOND/dark matter (KM-I/II), dark energy; GWs; horizons/Hawking/Page; SCBU |
 | **soft-matter** · **q-compute** | DCGT continuum bridge, the universal mobility law; decoherence limits, the Class-A wall |
 | **substrate-evaluation** · **predictions** | cold-reader consolidation papers; falsification register + prediction inventory (Paper_101) |
+| **readings** | two genres: ED's *reading* of a reigning idea (Many-Worlds, quantize-the-metric, brute constants, the Born rule as postulate), and the **EDsplain family** — microscopic completions of Padmanabhan / Sakharov / analogue gravity / the holographic bound |
 | **dark-sector** · **state-reduction** · **constants-inherited** | two-culprit dark sector (MOND + warm relic); ED vs Diósi/Penrose collapse; the constants ledger |
 
 Companion top-level folders, each with its own README guide: `position-paper/` (whitepaper + position papers), `primitives/` (the 13 primitive cards + the P1–13 ledger), `theorems/` (the T1–T21 registry papers cite by number), `scale correspondence/`, `layers/`, and **`essays/`** — the plain-language companion set, plus **Selected Formalisms I–V**, the five papers that carry the corpus's mathematics in one place. `internal notes/` is working state, not corpus: build scripts, the writing checklist, audit memos.

@@ -6,7 +6,7 @@ Paths below beginning `../event-density/` and `../ED Primitives/` are **sibling 
 
 ## The premise (do not lose sight of this)
 
-**ED is a research program building toward a unified theory of physics, spanning ~150 papers. The papers ARE the theory.** Your job is to **read, digest, and build on that corpus** — not to re-derive it from scratch, and not to reconstruct it from memory summaries. Until proven otherwise, ED is unifying physics; treat the corpus as a serious, coherent body of work you are extending, not a sketch you are second-guessing.
+**ED is a research program building toward a unified theory of physics, spanning ~280 papers (234 of them named `Paper_*`; ~415 markdown files in all, once the essays, primitive cards, theorem entries and the fifteen arc ledgers are counted). *Recount 2026-09-03 — the old "~150" figure was roughly half the real size*. The papers ARE the theory.** Your job is to **read, digest, and build on that corpus** — not to re-derive it from scratch, and not to reconstruct it from memory summaries. Until proven otherwise, ED is unifying physics; treat the corpus as a serious, coherent body of work you are extending, not a sketch you are second-guessing.
 
 ## HARD RULE — read the corpus before you build (non-negotiable)
 

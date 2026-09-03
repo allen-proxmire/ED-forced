@@ -477,7 +477,7 @@ Note: this third entry is a distinct document from `Paper_087_13Primitives.md` (
 | Entanglement | `physics-papers/entanglement/Entanglement_TieredClaims_Ledger.md` (format pilot) |
 | Foundations | `physics-papers/foundations/Foundations_TieredClaims_Ledger.md` |
 | Gravity | `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` (the flagship folder) |
-| Other-theories-advanced | `physics-papers/other-theories-advanced/OtherTheories_TieredClaims_Ledger.md` |
+| Other-theories-advanced | `physics-papers/readings/OtherTheories_TieredClaims_Ledger.md` |
 | Q-compute | `physics-papers/q-compute/QCompute_TieredClaims_Ledger.md` |
 | QFT | `physics-papers/qft/QFT_TieredClaims_Ledger.md` |
 | QM-kinematics | `physics-papers/qm-kinematics/QMKinematics_TieredClaims_Ledger.md` |
@@ -568,7 +568,7 @@ Public-facing explainer essays in `essays/`: plain-language companions to the pa
 
 ## Microscopic Completions — the "EDsplain" family — ADDED 2026-08-30
 
-`physics-papers/other-theories-advanced/` — one shared move: take a **respected, standing result** that runs on an assumed microscopic input *its own authors flag as needing a deeper theory*, and show ED supplies exactly that input without contradiction. These do not re-derive the standing results and do not claim to overturn them; they ground the one thing each leaves open. Folder guide in `README.md`; tiers in the folder ledger. The founding exemplar (`Paper_GravityAsEquationOfState.md`, grounding Jacobson's entropy density) lives in `substrate-evaluation/`.
+`physics-papers/readings/` — one shared move: take a **respected, standing result** that runs on an assumed microscopic input *its own authors flag as needing a deeper theory*, and show ED supplies exactly that input without contradiction. These do not re-derive the standing results and do not claim to overturn them; they ground the one thing each leaves open. Folder guide in `README.md`; tiers in the folder ledger. The founding exemplar (`Paper_GravityAsEquationOfState.md`, grounding Jacobson's entropy density) lives in `substrate-evaluation/`.
 
 | Title | Grounds | File |
 |---|---|---|
