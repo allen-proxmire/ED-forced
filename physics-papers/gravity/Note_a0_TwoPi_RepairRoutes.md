@@ -197,6 +197,50 @@ So the tally across every route the corpus now has:
 
 ---
 
+## 4e. The content-depth framing, and one candidate eliminated
+
+*Added 2026-09-04, after `Paper_030` §3.2 was rewritten (Staleness #37). Modest: it eliminates one candidate and relocates the question. It does not derive the `2π`.*
+
+### What the rewrite changed
+
+Until 2026-09-04, `Σ₀ = -a₀R` was treated as a potential whose gradient was a force, and `a₀R_H` had no distinguished status. `Σ₀` is now a **content normalization**, so `a₀R_H` is a displayed physical quantity — **the cosmic horizon's content depth** — and the current claim reads
+
+$$a_0 R_H = \frac{c^2}{2\pi}.$$
+
+That makes the `2π` a statement about a specific number the corpus can approach independently: **is a horizon's content depth `c²`, `c²/2`, or `c²/(2π)`?** Writing the depth as `c²/k` gives `a₀ = cH₀/k` directly.
+
+### The three structural candidates, and what each predicts
+
+| `k` | Reading | `a₀` at `H₀ = 70` | vs measured `1.2×10⁻¹⁰` |
+|---|---|---|---|
+| **1** | depth `= c²` — bare escape scale | `6.80×10⁻¹⁰` | **5.7× too large** |
+| **2** | depth `= c²/2` — **geometric**, by analogy with the corpus's own black-hole horizon depth `Σ_N(R_s) = -GM/R_s = -c²/2` | `3.40×10⁻¹⁰` | **2.8× too large** |
+| **2π** | depth `= c²/(2π)` — **thermal**, the current claim | `1.08×10⁻¹⁰` | 9.8% too small |
+
+### The result: the geometric candidate is eliminated, and it was the only natural non-thermal one
+
+**`k = 2` is new here** — it is not among the readings this note or `Paper_029` had enumerated, and it is the obvious competitor, since it is what the corpus's *own* machinery gives for a horizon: at a Schwarzschild radius `Σ_N(R_s) = -c²/2` exactly, and de Sitter's `1 - H²r²` gives the same depth at `R_H`. **It fails by a factor of 2.8**, far outside any error budget on `a₀` or `H₀`. So the cosmic horizon's content depth is **not** the geometric depth of a horizon of that radius.
+
+That is a genuine elimination and it cuts in a useful direction: **among the natural structural candidates, only the thermal reading survives**, which is the reading Route 2 (§3) needs. *(Caveat, stated because it matters: the `k = 2` analogy is not forced. `Σ_N` is content sourced by mass **inside** a radius and `Σ₀` is content presented by a boundary **outside** the chain; requiring equal depths is natural, not derived. What is eliminated is the natural reading, not a theorem.)*
+
+### And the framing converges on the same locus as Route 2
+
+Asking whether the depth is geometric or thermal **is** asking whether the horizon presents itself as a `κ` or as a `T` — which is exactly the asymmetry §4 says `κ_a = T_H` needs and §4b tried to ground in the layer seam. Reached from an unrelated direction (a content normalization in `Paper_030` §3.2), it lands on the same question.
+
+**Three framings, one locus.** §4d already recorded that every route reduces to comparing a chain's acceleration scale against `cH₀`; this adds that the *coefficient* question is likewise single-valued. That is consistency, **not** independent support — the same fact seen a third time is still one fact.
+
+### What is NOT new here, recorded so it is not double-counted
+
+The `2π`-required range for `a₀` is **already in the corpus**. `Paper_029` §5.4 states it: `H₀ ∈ [67,74]` gives a substrate range `≈[1.03, 1.14]×10⁻¹⁰` against an empirical `1.2×10⁻¹⁰`, with the *"~10% gap … consistent with the joint `H₀` + MOND-`a₀` uncertainty."* An independent recomputation here reproduces it (`[1.042, 1.144]×10⁻¹⁰` over the same range). **This was checked before writing and is not claimed as a new prediction.**
+
+**One wording observation on §5.4, recorded not fixed.** *"Consistent with the joint uncertainty"* is defensible but soft: the offset is **one-sided** — the `2π` prediction sits below the canonical `a₀` at every `H₀` in the range, and closing it exactly needs either `a₀ ≈ 1.08×10⁻¹⁰` or `H₀ ≈ 77.6`, the latter above even the local-ladder value. A one-sided systematic offset is a weaker form of agreement than "consistent" suggests. **Whether it is a real tension depends on the current best `a₀` determination and its systematic error budget, which is not asserted here from memory** — that lookup is the concrete next check.
+
+### Status
+
+**No change to the `2π`'s tier.** It remains Postulated/disputed (Staleness #10). One competitor removed, the question relocated to a displayed quantity, and one currency check named.
+
+---
+
 ## 5. Status and what to do next
 
 | Item | State |
@@ -204,6 +248,7 @@ So the tally across every route the corpus now has:
 | Mode-amplitude route (Staleness #10's named candidate) | **CLOSED — negative.** P04 additivity is across channels; the sum is not a density (§1) |
 | Rindler / de Sitter smoothness route | **OPEN — better.** Reproduces the number with a non-cancelling `2π` already derived in the corpus (§3) |
 | The `κ_a = T_H` matching condition | **Advanced 2026-09-04, still the debt.** The horizon half is grounded (`Paper_028` §3.4: statistical, not geometric ⟹ no `b`-gradient ⟹ no `κ` available, only a state). The chain half is now a **layer argument** — the `2π` is the layer-1/layer-2 seam crossed exactly once — rather than a bare assertion. Not derived. See §4b |
+| Content-depth framing; geometric candidate `k = 2` | **NEW 2026-09-04 (§4e). ELIMINATED.** After the `Σ₀` rewrite (#37) `a₀R_H = c²/(2π)` is the horizon's content depth, so the `2π` is a claim about a computable number. The natural geometric candidate — depth `= c²/2`, the corpus's own BH horizon depth — predicts `a₀ = 3.4×10⁻¹⁰`, **2.8× too large**, and is excluded. Only the thermal reading survives among natural candidates, and the framing lands on §4's `κ`-vs-`T` question from an unrelated direction |
 | The layer-crossing pattern (§4b prediction) | **CHECKED 2026-09-04 (§4c).** Census of 322 π-carrying lines across 91 papers: **no counterexamples**, and the corpus's π separates cleanly into geometric (`4π`, `8π`) and thermal (`2π`). But only two crossing instances and one like-layer instance, mutually entangled — a consistency finding, **not** independent support |
 | `a₀ = cH₀/(2π)` "parameter-free" | **Still suspended** (Staleness #10) |
 | `a₀ ~ cH₀`, `a₀(z) = cH(z)/(2π)`, exponent 1 | **Unaffected throughout** |

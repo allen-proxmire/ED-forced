@@ -323,6 +323,8 @@ Hubble-tension range $H_0 \in [67, 74]\,\mathrm{km/s/Mpc}$:
 
 Empirical MOND $a_0 \approx 1.2 \times 10^{-10}\,\mathrm{m/s^2}$. Substrate range $\approx [1.03, 1.14] \times 10^{-10}$. The ~10% gap is consistent with the joint $H_0$ + MOND-$a_0$ uncertainty. **This is the empirical wedge motivating the substrate-gravity arc.**
 
+> **Precision note (2026-09-04).** *“Consistent with the joint uncertainty”* is defensible but soft, and the shape of the gap is worth stating: the offset is **one-sided**. The $2\pi$ prediction sits **below** the canonical $a_0$ at **every** $H_0$ in the range, and closing it exactly requires either $a_0 \approx 1.08\times10^{-10}$ (at $H_0 = 70$) or $H_0 \approx 77.6$ — the latter above even the local distance-ladder value. A one-sided systematic offset is a weaker form of agreement than two-sided overlap. **This is not a claim that the gap is a real tension:** that depends on the current best $a_0$ determination and its *systematic* error budget, which is not asserted here. **Naming the check:** look up the current SPARC-class $a_0$ with separated random and systematic errors and state whether $1.08\times10^{-10}$ sits inside it. Until that is done, this row should read as *not excluded* rather than as *consistent*. See `Note_a0_TwoPi_RepairRoutes.md` §4e and `Gravity_TieredClaims_Ledger.md` Staleness #38.
+
 ---
 
 ## 6. Identification of $a_0$
