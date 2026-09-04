@@ -100,6 +100,9 @@ DCGT (Paper_073) coarse-grains substrate algebra to continuum local algebras. Th
 
 ### 3.4 Over-determination
 
+> **FLAGGED 2026-09-04 — the locks are not independent.** L1 is microcausality in the *emergent* algebra; L2 is causality in the *substrate*. Those are one commitment at two description levels. L3 is not a third support but the **bridge** asserting the levels correspond — and audit row 9 tiers it **I**, inherited from `Paper_073`. Refute the bridge and L1 and L2 are statements about disconnected things, so the claim below that refuting any single lock leaves the others intact **fails for L3**. The argument below also concedes the L2 case in its own hedge: marginal independence *“at the formal level”* alongside superluminal substrate signalling means the formalism has stopped being faithful, not that no-signaling holds. **No-signaling itself is not in question** — L1 is the standard argument correctly applied and honestly tiered D-via-I, and audit row 10 already tiers this composite verdict as A→position. What fails is the over-determination framing. *The robustness claim worth keeping: the commitment is checkable at two levels, so a failure at either would be visible.* See `Entanglement_TieredClaims_Ledger.md`, addendum 2026-09-04.
+
+
 Refutation of L1 alone (e.g., bipartite Hilbert structure fails) would leave L2 (V5 causality) intact: V5 still prevents space-like signal transmission. Refutation of L2 alone (V5 violates substrate-causality) would leave L1 (tensor-product marginal independence) intact: marginal would still be independent at the formal level. Refutation of L3 alone (DCGT scrambles locality) would leave L1 + L2 intact at substrate level.
 
 Each lock independently forces $p(a|x,y) = p(a|x)$. The "FORCED over-determined" verdict reflects this redundancy.
