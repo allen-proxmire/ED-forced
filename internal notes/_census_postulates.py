@@ -18,6 +18,7 @@ once per distinct name regardless of how many papers use it.
 Usage:
     python "internal notes/_census_postulates.py"              # summary + drift check
     python "internal notes/_census_postulates.py" --list       # + every name, with sources
+    python "internal notes/_census_postulates.py" --triage     # the breadth ladder (research target #20)
     python "internal notes/_census_postulates.py" --all        # widen scope past physics-papers/
     python "internal notes/_census_postulates.py" --update     # re-baseline after a real change
 
@@ -137,6 +138,47 @@ def find_variants(found):
     return variants
 
 
+def is_paper(rel):
+    """A paper USES a postulate. A ledger, note or README only CATALOGUES it."""
+    b = os.path.basename(rel)
+    return not (b.endswith("Ledger.md") or b.startswith("Note_") or b.startswith("README"))
+
+
+def triage(found, variants):
+    """The breadth ladder answering research target #20.
+
+    'How much does ED assume?' has no single answer, because the honest number
+    depends on what you count. Breadth of use is the one basis that is mechanical
+    and arguable: a postulate invoked in ONE paper is a modelling choice local to
+    that derivation (the way a gauge choice is); one invoked across many papers is
+    a standing commitment of the framework.
+    """
+    names = sorted(n for n in found if n not in variants)
+    breadth = {n: len({f for f in found[n] if is_paper(f)}) for n in names}
+    orphans = [n for n in names if breadth[n] == 0]
+
+    print(f"\n{'-' * 78}\nBREADTH LADDER — research target #20\n")
+    print("  Basis: number of distinct PAPERS naming the postulate.")
+    print("  Ledgers, research notes and READMEs excluded — they catalogue, they do not use.\n")
+    for thr, label in ((1, "declared anywhere"),
+                       (2, "outlives its own derivation"),
+                       (3, "used in three or more"),
+                       (4, "cross-cutting")):
+        n = sum(1 for v in breadth.values() if v >= thr)
+        print(f"   used in >= {thr} paper(s): {n:>3}   + 13 primitives = {n + 13:>3}   ({label})")
+    single = sum(1 for v in breadth.values() if v == 1)
+    print(f"\n   exactly 1 paper : {single:>3}  ({100*single/len(names):.0f}% — local modelling choices)")
+    if orphans:
+        print(f"   0 papers        : {len(orphans):>3}  (named only in a ledger/note — abbreviations, not postulates)")
+        for o in orphans:
+            print(f"                      {o}")
+    print("\n  The cross-cutting set (>= 4 papers) — the framework's standing commitments:\n")
+    for n in sorted((n for n in names if breadth[n] >= 4), key=lambda n: (-breadth[n], n)):
+        print(f"   {breadth[n]:>2} papers  {n}")
+    print("\n  No single row here is 'the' number. Quote a row WITH its basis, never a bare count.")
+    print("  See internal notes/POSTULATE_BASIS.md and research target #20.")
+
+
 def update_baseline(new_count, scope):
     """Rewrite the BASELINE constants in this file."""
     import datetime
@@ -178,6 +220,9 @@ def main():
     print(f"  Paper_087 §4.15 (round-5)       : 13 + ~22 = ~35")
     print(f"  Paper_100 (program overview)    : 60+")
     print(f"  This census                     : 13 + {total} = {13 + total}")
+
+    if "--triage" in args:
+        triage(found, variants)
 
     if "--list" in args:
         print(f"\n{'-' * 78}\nThe names, with occurrence count and where they appear:\n")
