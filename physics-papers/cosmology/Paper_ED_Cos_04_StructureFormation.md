@@ -9,6 +9,8 @@
 
 ---
 
+> ⚠ **Correction (2026-07-06, propagated 2026-09-04).** Where this paper cites $\Theta_{\mathrm{ED}}$ as primitive-level or P12-grounded content, that attribution is **incorrect**. Canonical `Paper_087` **P12** is the chain-level stability functional $\Sigma_C = \mathrm{Coh}-\mathrm{Str}-\mathrm{Grad}$, **unrelated to an event-density threshold**. $\Theta_{\mathrm{ED}}$ originates in `Paper_ED_CCC_ConformalCyclicCosmology` §§3.2/3.7 as a structural analogy and **was never checked against `Paper_087` before propagating downstream**. **The tier is unchanged** — $\Theta_{\mathrm{ED}}$ remains **substrate-parameter INHERITED** throughout, and no result here moves — what is corrected is the *primitive citation*. Full finding: `../../../event-density/docs/Scoping_ThetaED_FirstPrinciples_2026-07-06.md`; flagged in `Cosmology_TieredClaims_Ledger.md` staleness #3, recorded 2026-07-29 and unpropagated until now.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim closed-proof derivation of standard cosmological-perturbation-theory machinery (Newtonian/relativistic perturbation theory; CAMB / CLASS Boltzmann codes for transfer functions; halofit / EFTofLSS for nonlinear extensions) from substrate primitives. These continuum-side machineries are **INHERITED** via DCGT continuum bridge; ED supplies the substrate-graph reading of $H(t)$ + primordial-spectrum inheritance underlying them.

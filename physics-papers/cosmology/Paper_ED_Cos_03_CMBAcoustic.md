@@ -9,6 +9,8 @@
 
 ---
 
+> ⚠ **Correction (2026-07-06, propagated 2026-09-04).** Where this paper cites $\Theta_{\mathrm{ED}}$ as primitive-level or P12-grounded content, that attribution is **incorrect**. Canonical `Paper_087` **P12** is the chain-level stability functional $\Sigma_C = \mathrm{Coh}-\mathrm{Str}-\mathrm{Grad}$, **unrelated to an event-density threshold**. $\Theta_{\mathrm{ED}}$ originates in `Paper_ED_CCC_ConformalCyclicCosmology` §§3.2/3.7 as a structural analogy and **was never checked against `Paper_087` before propagating downstream**. **The tier is unchanged** — $\Theta_{\mathrm{ED}}$ remains **substrate-parameter INHERITED** throughout, and no result here moves — what is corrected is the *primitive citation*. Full finding: `../../../event-density/docs/Scoping_ThetaED_FirstPrinciples_2026-07-06.md`; flagged in `Cosmology_TieredClaims_Ledger.md` staleness #3, recorded 2026-07-29 and unpropagated until now.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim closed-proof derivation of standard recombination physics (Saha equation; Peebles three-level model; Hyrec / Recfast code outputs) or standard CMB power-spectrum machinery (CAMB / CLASS Boltzmann codes) from substrate primitives. These continuum-side machineries are **INHERITED**; ED supplies the substrate-graph reading of $H(t)$ + cosmological-history-integration framework underlying them.
@@ -156,7 +158,7 @@ Substrate-parameter $\Theta_{\mathrm{ED}}$ enters CMB acoustic observables throu
 
 **Hubble tension framing (honest scope):** CMB-derived $H_0 \approx 67.4$ km/s/Mpc (Planck 2018) vs SH0ES local $H_0 \approx 73$ km/s/Mpc (~5σ discrepancy as of 2024). Standard ΛCDM also predicts a single $H_0$ at the present epoch under a given parameter set — the tension is between two measurement channels of the same parameter, not between two parameter values, and ED's Route A4 channel does not naturally resolve it. **Route A4 supplies ED's structural link to the Hubble-tension observational target via the substrate-parameter scaling channel** (the same $\Theta_{\mathrm{ED}}$ enters $r_s$, $D_A$, and $H_0$); whether the tension resolves via substrate-parameter tightening (RA-OPEN-4a closure direction) or standard intermediate-redshift physics modification (early dark energy, new recombination physics — standard-cosmology territory, not substrate-graph-specific) is OPEN and **not load-bearing for Cos_03's M3 verdict**. If the tension is genuine and persists, either pathway requires substrate-research-frontier or standard-cosmology-level work; neither aggravates the Cos_03 chain.
 
-Substrate-parameter values $\Theta_{\mathrm{ED}}^{\mathrm{Planck-units}} \approx 10^{-122}$ at primitive level; tightening via RA-OPEN-4a/4b/4c-explicit substrate-research-frontier, not blocking for Cos_03's M3 verdict.
+Substrate-parameter values $\Theta_{\mathrm{ED}}^{\mathrm{Planck-units}} \approx 10^{-122}$, **substrate-parameter INHERITED** *(corrected 2026-09-04; this read “at primitive level”, which $\Theta_{\mathrm{ED}}$ has never had — see the correction box at the head of this paper)*; tightening via RA-OPEN-4a/4b/4c-explicit substrate-research-frontier, not blocking for Cos_03's M3 verdict.
 
 ### §3.7 Comparison to ΛCDM CMB acoustic physics
 
