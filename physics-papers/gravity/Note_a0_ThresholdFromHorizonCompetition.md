@@ -116,6 +116,71 @@ The factor 5.67 is a **genuine open residual** — not a units artifact, not abs
 
 ---
 
+## 5b. Attempt to derive μ from the substrate — blocked, and the block is the result
+
+Attempted 2026-09-04, immediately after §5, since deriving `μ` was named there as what would convert the weak form into a sharp test.
+
+### ED already has a candidate, and it is written down
+
+`Paper_030` §6.3, titled *"The 'no interpolation function' claim"*, gives the transition profile explicitly:
+
+$$a(R) = a_N + a_0 + \frac{\sqrt{GMa_0}}{R} \;=\; a_N + a_0 + \sqrt{a_N a_0}.$$
+
+Writing `s = √(a_N/a₀)` this is a closed-form interpolation law:
+
+$$\frac{a}{a_0} = s^2 + s + 1, \qquad \mu \equiv \frac{a_N}{a} = \frac{s^2}{s^2+s+1}.$$
+
+So ED does have a derived `μ`. Its saturation exponent is the problem.
+
+### It saturates as `x^{-1/2}`, and that is fatal at high acceleration
+
+`1 - μ ≈ 1/s = √(a₀/a_N)` for `s ≫ 1`. Against the standard families:
+
+| interpolation | approach to Newtonian |
+|---|---|
+| **ED §6.3 profile** | **`1-μ ~ x^{-1/2}`** |
+| simple, `x/(1+x)` | `1-μ ~ x^{-1}` |
+| standard, `x/√(1+x²)` | `1-μ ~ x^{-2}/2` |
+
+The `√(a_N a₀)` cross-term is a `1/R` force of magnitude `√(GMa₀)`, which is **not** degenerate with a rescaling of `GM_☉` (that would be `1/R²`). Computed against solar-system accelerations:
+
+| body | `a_N` (m/s²) | fractional deviation | anomalous `a` (m/s²) |
+|---|---|---|---|
+| Earth | 5.93×10⁻³ | 1.42×10⁻⁴ | 8.4×10⁻⁷ |
+| Jupiter | 2.19×10⁻⁴ | 7.40×10⁻⁴ | 1.6×10⁻⁷ |
+| **Saturn** | 6.52×10⁻⁵ | **1.36×10⁻³** | **8.9×10⁻⁸** |
+| Uranus | 1.61×10⁻⁵ | 2.74×10⁻³ | 4.4×10⁻⁸ |
+
+Cassini-class ranging bounds anomalous accelerations at Saturn near `10⁻¹⁴ m/s²`. **The profile exceeds that by roughly seven orders of magnitude.** `Paper_KM-I`'s own preamble item 5 already states the criterion — the interpolation is *"a Cassini-constrained family (**slow-saturating members excluded by ephemerides**)"* — and `x^{-1/2}` is the definition of slow-saturating. **KM-I's stated constraint excludes `Paper_030` §6.3's profile, and neither paper notices.**
+
+### But ED does not actually run that profile — and that is where the real finding is
+
+`Paper_030` §7.1 switches the mechanism off:
+
+> **Newtonian regime (`a_N ≫ a₀`):** `a ≈ a_N`. **P14 inactive (joint weak-gradient regime does not apply).**
+
+So the cross-term does not exist in the regime where Cassini applies, and ED is not refuted. But the escape has a price, and it contradicts the claim two subsections later:
+
+- **§7.2 says the crossover is "smooth and parameter-free."** It is not smooth. It is three branches with **P14 toggled on and off at the boundaries**, and the toggle is the regime assumption — the same one restored under Staleness #13.
+- **§6.3's "no interpolation function" claim does not hold.** What ED has is a piecewise profile with an assumed switch. That is what an interpolation function is, minus the smoothness and minus the fit.
+
+**The two are exclusive.** Make the profile genuinely smooth (P14 active everywhere) and Cassini kills it by seven orders. Keep the switch and the transition is assumed rather than derived. **μ cannot be derived from the substrate as things stand, and the obstruction is a live observational constraint, not a bookkeeping gap.**
+
+### What this does to §3's mechanism — the convergence
+
+The horizon-competition mechanism of §3 **is a switch**. And it switches in exactly the direction §7.1 assumes:
+
+- **`a > cH₀`** — the chain's own Rindler horizon lies inside the cosmic one, so cosmic content is cut off before it arrives. The local–horizon bilocal coupling has nothing to couple to. **P14 inactive.**
+- **`a < cH₀`** — the cosmic horizon binds, cosmic content reaches the chain. **P14 active.**
+
+That is `Paper_030` §7.1's regime structure, **derived rather than postulated**. The mechanism supplies precisely the missing piece: a physical reason for the bilocal term to be absent at high acceleration, which is what Cassini demands and what §7.1 currently asserts.
+
+**Two problems remain, and they are the same two as before.** The switch sits at `cH₀`, not at the fitted `a₀` — the factor 5.67 of §5. And a switch is sharp, while rotation curves show a gradual transition; the smooth rounding still has to come from somewhere, and §5's check shows it cannot come from a `μ` that leaves the cross-term active into the solar system.
+
+**Net.** The attempt to derive `μ` fails, and fails informatively. It converts "ED has no derived interpolation function" from an accounting remark into a physical statement: **ED's transition is a switch, not a smooth function, and the switch is the thing to derive.** §3 derives it, modulo the location.
+
+---
+
 ## 6. What this owes
 
 **The switch is asserted, not derived.** "Only the nearer boundary binds" is physically natural and matches `Paper_028`'s own crossover logic, but it is stated here rather than shown from the V5 kernel. What would show it: `Γ_cross` collapsing at the nearer boundary in a construction carrying both, so the switch is exhibited rather than assumed.
@@ -132,6 +197,7 @@ The factor 5.67 is a **genuine open residual** — not a units artifact, not abs
 
 - **F1:** If a construction carrying both boundaries shows `Γ_cross` collapsing at the *farther* boundary, or at neither distinctly, the switch is not a switch and the mechanism fails.
 - **F2 — partially fired 2026-09-04.** The check confirms the fitted `a₀` *is* the asymptote-crossing for every `μ`, so 5.67 cannot be absorbed by interpolation and is a genuine residual. Not yet a refutation: the mechanism's switch may mark the onset rather than the crossing (§5, weak form), but that escape is untestable while `μ` is fitted rather than derived. **Deriving `μ` from the substrate would convert this into a sharp test.**
+- **F4 — new, and sharp.** If the bilocal cross-term is shown to be **active** at solar-system accelerations, the `√(a_N a₀)` term predicts `≈8.9×10⁻⁸ m/s²` of anomalous acceleration at Saturn against a `≈10⁻¹⁴` bound, and `Paper_030`'s account is **refuted outright** (§5b). Everything therefore rests on the switch of §3 being real.
 - **F3:** If `Paper_047_5`'s identification of Rindler and cosmological horizons as one substrate object fails (its own F2: substrate evidence that V5 saturation does not occur at one of the four types), this mechanism has no ingredient and collapses.
 
 ---
