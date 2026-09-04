@@ -125,6 +125,41 @@ The horizon half is grounded in a prior, independent scoping statement. The chai
 
 ---
 
+## 4c. The corpus-wide check, run
+
+§4b predicted a testable pattern: if the `2π` is a coarse-graining seam crossed once, then every ED result comparing a bare rate to a horizon thermal state should carry exactly one `2π`, like-layer comparisons should carry none, and geometric `π` should be separable by origin. Census run 2026-09-04 over all of `physics-papers/`: **322 π-carrying result lines across 91 papers**, sorted by π-signature and classified.
+
+### The result
+
+**No counterexamples. Too few independent instances to call it confirmed.**
+
+| Class | Instances | Predicted | Found |
+|---|---|---|---|
+| Rate ↔ thermal state (layer crossing) | `T = κ/(2π)` (`Paper_BH_Thermal2Pi`) · `a₀ = cH₀/(2π)` (the case under test) | one `2π` | one `2π` ✓ |
+| State ↔ state (like layer) | `𝒲₀` against the raw background scale `(cH₀)²` | none | **none** ✓ |
+| Geometric (solid angle, sphere area) | `N(R) = 4πR²/ℓ_ED²`; Einstein's `8πG`; `ρ_crit = 3H₀²/(8πG)` | separable, different origin | `4π`/`8π`, never `2π` ✓ |
+| Inherited textbook | inflationary `P_T = (2/π²)(H²/M_P²)` | excluded, not ED-derived | excluded |
+
+### The one informative case
+
+`Paper_KM-II` §7.1 gives `𝒲₀ = −24π²Ω_Λ ≈ −1.6×10²`, the only `π²` in the corpus. It is not a second, independent layer crossing. The paper says so itself, and said so before this question was asked:
+
+> equivalently **`6Ω_Λ ≈ 4.1` against the raw background scale `(cH₀)²`, genuinely order-unity** (the apparent largeness is the `(2π)²` of `a₀`'s definition, not a hierarchy)
+
+`𝒲₀` is quadratic in `a₀`, so it carries `a₀`'s single `2π` squared. Expressed against `(cH₀)²` instead — a like-layer comparison — **the π vanishes entirely and the coefficient is order unity.** That is precisely the behaviour §4b predicts: the π tracks `a₀`, appears once per factor of `a₀`, and disappears when the comparison is made at a common layer.
+
+### Why this is not confirmation
+
+The census has **two** crossing instances and **one** like-layer instance, and they are not independent of each other. `a₀`'s `2π` is the case under investigation. `𝒲₀`'s `π²` is `a₀`'s `2π` transported, not a fresh measurement. That leaves `T = κ/(2π)` as the single genuinely independent instance — and it is the one the route *borrows* the `2π` from in the first place.
+
+So the honest statement is: **the corpus's π-factors separate cleanly into geometric and thermal, with no case where a thermal comparison is missing its `2π` or a geometric one has acquired a spurious one.** That is a consistency finding. It is not a rule with independent support, because ED does not currently contain enough distinct rate-versus-state comparisons to constitute a test.
+
+### What would make it a test
+
+A third, independent layer crossing — an ED result comparing a bare commitment rate to a coarse-grained thermal state, derived without reference to `a₀` or to `T = κ/(2π)`. Candidates worth examining, none checked here: the Unruh-like content in `Paper_040_TransPlanckian` and `Paper_047_5_HorizonUniversalization`, and the V5 saturation treatment in `Paper_039_HorizonDecoupling`. If any of those produces a `2π` on a crossing and none appears on a like-layer comparison in the same paper, the pattern acquires real support. Until then it remains a suggestive regularity over two entangled cases.
+
+---
+
 ## 5. Status and what to do next
 
 | Item | State |
@@ -132,6 +167,7 @@ The horizon half is grounded in a prior, independent scoping statement. The chai
 | Mode-amplitude route (Staleness #10's named candidate) | **CLOSED — negative.** P04 additivity is across channels; the sum is not a density (§1) |
 | Rindler / de Sitter smoothness route | **OPEN — better.** Reproduces the number with a non-cancelling `2π` already derived in the corpus (§3) |
 | The `κ_a = T_H` matching condition | **Advanced 2026-09-04, still the debt.** The horizon half is grounded (`Paper_028` §3.4: statistical, not geometric ⟹ no `b`-gradient ⟹ no `κ` available, only a state). The chain half is now a **layer argument** — the `2π` is the layer-1/layer-2 seam crossed exactly once — rather than a bare assertion. Not derived. See §4b |
+| The layer-crossing pattern (§4b prediction) | **CHECKED 2026-09-04 (§4c).** Census of 322 π-carrying lines across 91 papers: **no counterexamples**, and the corpus's π separates cleanly into geometric (`4π`, `8π`) and thermal (`2π`). But only two crossing instances and one like-layer instance, mutually entangled — a consistency finding, **not** independent support |
 | `a₀ = cH₀/(2π)` "parameter-free" | **Still suspended** (Staleness #10) |
 | `a₀ ~ cH₀`, `a₀(z) = cH(z)/(2π)`, exponent 1 | **Unaffected throughout** |
 
