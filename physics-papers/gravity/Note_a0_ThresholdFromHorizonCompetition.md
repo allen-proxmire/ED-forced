@@ -61,7 +61,9 @@ $$\frac{c^2}{a} = \frac{c}{H_0} \quad\Longrightarrow\quad \boxed{a = cH_0}$$
 - **`a > cH₀`** — the chain's own acceleration horizon is *inside* the cosmic one. The chain's dynamics are bounded by its own saturation boundary; cosmic content is already cut off before it matters. **Newtonian regime.**
 - **`a < cH₀`** — the cosmic horizon is the binding one. Horizon content reaches the chain and dominates. **Deep-MOND regime.**
 
-**This is a threshold of the right structural kind.** Nothing is nonlinear in `|a|`; the linear response of `Paper_029` is untouched and describes behaviour *within* a regime. What changes at the threshold is *which boundary is saturating*, and that changes discontinuously. **A linear response plus a switch in which horizon binds gives a threshold.** That is the answer Target #19 was asking for, and it required no new postulate.
+**This is a threshold of the right structural kind.** Nothing is nonlinear in `|a|`; the linear response of `Paper_029` is untouched and describes behaviour *within* a regime. What changes at the threshold is *which* boundary is saturating. **A linear response plus a handover in which horizon binds gives a threshold.** That is the answer Target #19 was asking for, and it required no new postulate.
+
+> ⚠ **Corrected 2026-09-04 (same day), by `Note_TheSwitchIsDerived_TheShapeIsInherited.md`.** This paragraph and the sentence above it previously read *“that changes **discontinuously**”* and *“That is a **discrete switch**, not a smooth response”*. **The discreteness is withdrawn.** The follow-up note derives the handover from the corpus's own `Γ_cross` construction (`Paper_039` §3.1) and finds it **shape-independent as to *where* it sits and shape-*dependent* as to how sharp it is** — the sharpness is the profile of the V5 envelope near its cutoff, which `Paper_090` §7.2 lists as **value-layer inherited**. So a discrete switch and a gradual crossover are both admissible and the corpus does not choose. **What survives is the crossover scale `cH₀`, which is what the mechanism was for.**
 
 ---
 
@@ -183,7 +185,7 @@ That is `Paper_030` §7.1's regime structure, **derived rather than postulated**
 
 ## 6. What this owes
 
-**The switch is asserted, not derived.** "Only the nearer boundary binds" is physically natural and matches `Paper_028`'s own crossover logic, but it is stated here rather than shown from the V5 kernel. What would show it: `Γ_cross` collapsing at the nearer boundary in a construction carrying both, so the switch is exhibited rather than assumed.
+**The switch is asserted, not derived. — DISCHARGED 2026-09-04 (same day), see `Note_TheSwitchIsDerived_TheShapeIsInherited.md`.** "Only the nearer boundary binds" was stated here rather than shown from the V5 kernel. It has since been shown, and the construction was already in the corpus: `Paper_039` §3.1 defines `Γ_cross` as a **single integral over one kernel** `K_V5`, and `Paper_090` §4.4 makes that kernel a function of a **single argument**, Lorentz-invariant separation. The two horizons are therefore not two attenuations that must be argued to compose — by `Paper_047_5` they are one object on two axes, and so they are two ways for **one** argument to run away. A bounded decaying function of one variable is driven to zero by whichever runs away first. **Cutoff at `min(R_a, R_H)`, no new postulate, and shape-independent.** F1 answered in the affirmative. *What the follow-up note takes back in exchange is the discreteness — see the correction in §3.*
 
 **The regimes are asserted to map onto Newtonian and deep-MOND.** That the binding-boundary switch coincides with the dynamical regime change is the natural reading, and it is not demonstrated.
 
@@ -195,7 +197,7 @@ That is `Paper_030` §7.1's regime structure, **derived rather than postulated**
 
 ## 7. Falsification criteria
 
-- **F1:** If a construction carrying both boundaries shows `Γ_cross` collapsing at the *farther* boundary, or at neither distinctly, the switch is not a switch and the mechanism fails.
+- **F1 — FIRED AND PASSED 2026-09-04**, in `Note_TheSwitchIsDerived_TheShapeIsInherited.md` §3. The construction (`Paper_039` §3.1 + `Paper_090` §4.4) collapses `Γ_cross` at the **nearer** boundary, shape-independently. *Partial concession:* the second disjunct ("or at neither distinctly") is not fully cleared — a sufficiently broad V5 envelope gives a gradual crossover rather than a distinct switch, and the envelope shape is inherited (`Paper_090` §7.2). The **scale** survives either way; the **discreteness** does not, and §3 now records that withdrawal.
 - **F2 — partially fired 2026-09-04.** The check confirms the fitted `a₀` *is* the asymptote-crossing for every `μ`, so 5.67 cannot be absorbed by interpolation and is a genuine residual. Not yet a refutation: the mechanism's switch may mark the onset rather than the crossing (§5, weak form), but that escape is untestable while `μ` is fitted rather than derived. **Deriving `μ` from the substrate would convert this into a sharp test.**
 - **F4 — new, and sharp.** If the bilocal cross-term is shown to be **active** at solar-system accelerations, the `√(a_N a₀)` term predicts `≈8.9×10⁻⁸ m/s²` of anomalous acceleration at Saturn against a `≈10⁻¹⁴` bound, and `Paper_030`'s account is **refuted outright** (§5b). Everything therefore rests on the switch of §3 being real.
 - **F3:** If `Paper_047_5`'s identification of Rindler and cosmological horizons as one substrate object fails (its own F2: substrate evidence that V5 saturation does not occur at one of the four types), this mechanism has no ingredient and collapses.

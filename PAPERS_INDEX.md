@@ -123,6 +123,14 @@ Substrate-level derivations of Newton's law, a₀, ECR, BTFR slope-4, plus weak-
 | 038.5 | Cosmological Constant $\Lambda$ as V1 Cosmological-Scale Integral | cosmology | WRITTEN | `physics-papers/gravity/Paper_038_5_Lambda_V1_Cosmological.md` |
 | 038.6 | Weak-Lensing Activity Dependence | cosmology | WRITTEN (provisional prediction) | `physics-papers/gravity/Paper_038_6_Pred_WeakLensing_Activity.md` |
 
+**Research notes in `gravity/` (added to this index 2026-09-04 — none of the three was indexed before).** These are working notes, not papers: they carry open items, negatives and dated findings, and the arc ledger is authoritative over them.
+
+| Note | What it holds | File |
+|---|---|---|
+| `a₀` — the `2π` repair routes | §1 closes the mode-amplitude route as a **negative**; the Rindler route; the corpus-wide π census; the convergence table. Target #18 | `physics-papers/gravity/Note_a0_TwoPi_RepairRoutes.md` |
+| `a₀` — threshold from horizon competition | The two-boundary mechanism giving `a_switch = cH₀`; the μ-interpolation check that closes the "5.67 is absorbable" reading; the blocked μ derivation. Target #19 | `physics-papers/gravity/Note_a0_ThresholdFromHorizonCompetition.md` |
+| The switch is derived, its sharpness is not | Discharges the above note's asserted switch from `Paper_039` §3.1 + `Paper_090` §4.4 with **no new postulate**; re-files **μ as the inherited V5 envelope**; derives the **Cassini bound `n > 1.40`** on that envelope. Targets #19, #21 | `physics-papers/gravity/Note_TheSwitchIsDerived_TheShapeIsInherited.md` |
+
 ---
 
 ## Arc 4 — Black Holes / Hawking (Papers 039–052 + decimal extensions)
