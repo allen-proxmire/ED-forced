@@ -106,3 +106,15 @@
 
 ### Honest arc-state (corrects README line 6 / "delivered")
 **The BH / information-paradox arc is form-complete but not "closed" in the strong sense the README headline implies.** Every standard horizon result — decoupling surface, trans-Planckian cutoff, no-singularity, Planck remnant, area-law *form*, `T_H = κ/2π`, greybody, Page curve — has a substrate reading, but each is **form-forced conditional on ~20 paper-specific postulates** (heavily P-V5-* and cutoff/endpoint), with **κ, the geometry, greybody factors, c⋆, and t_Page INHERITED** (the **1/4 coefficient is now geometrically DERIVED** in-folder via `Paper_BH_Thermal2Pi`, modulo an arrow-native-2π residual), and the two capstones (051 "paradox not generated," 052 synthesis) resting on an **A→position ledger + a *postulated* substrate unitarity**, not a constructive proof. The genuine ED contributions are narrower than the folder's breadth suggests: the `b→0` decoupling mechanism, the V5-KMS route to the temperature *form*, the V5-saturation common-horizon identification, and the *measured* area-law tiling. **Real open frontier:** full (constructive) unitarity (target #4), the substrate BH interior (r < ℓ_P), a derived τ_V5 floor (merger-lag), the arrow-native 2π, and — underneath all the geometric counts — curvature emergence. **Defensible headline:** *the black-hole thermodynamics formalism is reproduced form-forced / value-inherited on a large postulate stack, with the information-paradox "resolution" a structural audit conditional on postulated substrate unitarity — coherent, but neither a closed derivation nor a delivered unitarity proof.*
+
+---
+
+## Addendum 2026-09-04 — `Paper_039` §4.1 predates its own derivation
+
+Found while checking the black-hole arc for an independent instance of the Hawking `2π` (gravity ledger Staleness #10, `gravity/Note_a0_TwoPi_RepairRoutes.md` §4c).
+
+**`Paper_039_HorizonDecoupling` §4.1 (2026-05-13) assumes `β_H = 2π/κ`** — it states that V5 acquires imaginary-time periodicity with that period, then reads `T_H = κ/(2π)` off it. That was the correct posture when written: the `2π` was inherited corpus-wide at the time.
+
+**`Paper_BH_Thermal2Pi_EntropyCoefficient` (2026-07-29) now derives it**, from ED's own near-horizon Rindler `b`-profile plus the no-conical-defect smoothness condition. Paper_039 carries no forward pointer, so a reader arriving at §4.1 meets an assumption where the corpus has a result. **Chronology, not error** — same class as gravity Staleness #4 and #6. *Fix: one forward-pointer sentence in §4.1. No tier changes; the identification of the V5 kernel as the object that acquires the periodicity is Paper_039's own contribution and is unaffected.*
+
+**Recorded negative from the same check.** `Paper_047_5` rules itself out explicitly (preamble item 4: the Hawking-Unruh formula is INHERITED, not derived). `Paper_040`'s `T_H/ω_c` comparison is an order-of-magnitude suppression with O(1) factors dropped, so it cannot bear on a question about a factor of `2π`. **The black-hole arc contains no independent derivation of the thermal `2π` other than `Paper_BH_Thermal2Pi`'s.**

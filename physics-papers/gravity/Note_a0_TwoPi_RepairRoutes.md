@@ -154,6 +154,22 @@ The census has **two** crossing instances and **one** like-layer instance, and t
 
 So the honest statement is: **the corpus's π-factors separate cleanly into geometric and thermal, with no case where a thermal comparison is missing its `2π` or a geometric one has acquired a spurious one.** That is a consistency finding. It is not a rule with independent support, because ED does not currently contain enough distinct rate-versus-state comparisons to constitute a test.
 
+### The three candidates, checked
+
+Checked 2026-09-04. **No third independent crossing exists. The pattern cannot currently be tested.**
+
+- **`Paper_047_5_HorizonUniversalization`** — rules itself out in its own preamble, item 4: *"It does **not** claim derivation of the Hawking-Unruh temperature formula `T = κ/(2π)` — that result is INHERITED from standard semi-classical GR."* It uses the relation across four horizon classes; it does not produce it. Not an instance.
+- **`Paper_039_HorizonDecoupling` §4.1** — the closest thing, and still not independent. It states that near the decoupling surface V5 acquires imaginary-time periodicity with `β_H = 2π/κ`, then reads `T_H = 1/β_H = κ/(2π)` off it. **The `2π` is asserted as the periodicity, not derived**; the paper's contribution is identifying that the *V5 kernel* is what acquires the periodicity, which is a substrate-side identification of the carrier, not a derivation of the factor. It is the same Euclidean-periodicity fact `Paper_BH_Thermal2Pi` later derives from no-conical-defect smoothness — one fact, two papers, one derivation.
+- **`Paper_040_TransPlanckian`** — contains a genuine crossing, `T_H/ω_c`, comparing a thermal temperature to the bare V5 cutoff rate `ω_c = c/ℓ_P`. But it appears only as an order-of-magnitude suppression, `O(T_H/ω_c)² ~ (ℓ_P/M)²`, with all O(1) factors dropped. **Untestable either way**, and not a counterexample.
+
+**That last case is the real limit on this method.** Most ratio statements in the corpus are order-of-magnitude, and a hypothesis about a factor of `2π` cannot be tested against expressions written to within factors of `2π`. The census's 322 lines shrink, once order-of-magnitude statements and inherited textbook results are removed, to a handful of coefficient-tracked results — and those are the two entangled cases already counted.
+
+**Verdict: the check is closed, negative on availability rather than on substance.** The corpus contains no rate-versus-state comparison, derived independently of `a₀` and of the Hawking relation, with its coefficient tracked. The layer-crossing reading of the `2π` therefore remains a suggestive regularity with no independent support, and §4b's route stands exactly where §4b left it.
+
+### A small currency item found in passing
+
+`Paper_039` §4.1 (2026-05-13) **assumes** `β_H = 2π/κ`. `Paper_BH_Thermal2Pi_EntropyCoefficient` later **derives** it from ED's own near-horizon geometry. Paper_039 does not point at that derivation, so a reader arriving at §4.1 sees an assumption where the corpus now has a result. One forward-pointer sentence. *(Recorded here rather than fixed, since it belongs to the black-hole arc's ledger, not this note's scope.)*
+
 ### What would make it a test
 
 A third, independent layer crossing — an ED result comparing a bare commitment rate to a coarse-grained thermal state, derived without reference to `a₀` or to `T = κ/(2π)`. Candidates worth examining, none checked here: the Unruh-like content in `Paper_040_TransPlanckian` and `Paper_047_5_HorizonUniversalization`, and the V5 saturation treatment in `Paper_039_HorizonDecoupling`. If any of those produces a `2π` on a crossing and none appears on a like-layer comparison in the same paper, the pattern acquires real support. Until then it remains a suggestive regularity over two entangled cases.
