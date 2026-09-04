@@ -340,6 +340,8 @@ so it saturates as $1-\mu \approx s^{-1} = \sqrt{a_0/a_N}$, i.e. **$x^{-1/2}$** 
 
 **It cannot be run outside the joint weak-gradient regime.** The $\sqrt{a_N a_0}$ term is a $1/R$ force of magnitude $\sqrt{GMa_0}$, which is *not* degenerate with a rescaling of $GM_\odot$. Left active at solar-system accelerations it predicts $\approx 8.9\times10^{-8}\,\mathrm{m/s^2}$ of anomalous acceleration at Saturn against a Cassini-class bound near $10^{-14}$ — excluded by roughly seven orders. `Paper_KM-I` preamble item 5 states the criterion independently: the interpolation is a Cassini-constrained family, with **slow-saturating members excluded by ephemerides**. The profile above is such a member.
 
+> **Added 2026-09-04 (second pass): this profile is excluded outside the deep field.** Its $x^{-1/2}$ saturation makes it a *slow-saturating* member, and `Paper_KM-I` preamble item 5 excludes that class by ephemerides. The profile is sound as the deep-field law KM-I embeds; it is **not** a crossover model and must not be run into the Newtonian regime. §7.2 carries the numbers.
+
 **So the honest claim is narrower than "no interpolation function."** ED supplies a *derived deep-MOND asymptote* plus an *assumed regime switch*; a piecewise profile with an assumed switch is an interpolation function, minus the smoothness and minus the fit. The fit parameter is genuinely gone — $a_0$ is form-derived upstream, subject to `Gravity_TieredClaims_Ledger.md` Staleness #10 on its coefficient — and that is a real economy. The *transition* is not derived here. Deriving the switch is open research (target #19); the horizon-competition mechanism in `Note_a0_ThresholdFromHorizonCompetition.md` §3 is the current candidate, and would supply exactly the P14 on/off that §7.1 assumes. Galaxy-by-galaxy comparison remains empirical-test program.
 
 ---
@@ -348,21 +350,23 @@ so it saturates as $1-\mu \approx s^{-1} = \sqrt{a_0/a_N}$, i.e. **$x^{-1/2}$** 
 
 ### 7.1 Three regimes
 
-**Newtonian regime ($a_N \gg a_0$, $R \ll R_{\mathrm{transition}}$):** $a \approx a_N = GM/R^2$. Standard Newtonian dynamics; cosmic-anisotropy and bilocal contributions subdominant. P14 inactive (joint weak-gradient regime does not apply).
+**Newtonian regime ($a_N \gg a_0$, $R \ll R_{\mathrm{transition}}$):** $a \approx a_N = GM/R^2$. Standard Newtonian dynamics; cosmic-anisotropy and bilocal contributions subdominant. **This construction has no content here** — the joint weak-gradient regime does not apply, so P14 is out of scope rather than switched off. *(Reworded 2026-09-04; this previously read "P14 inactive", which states a physical switch. See the scope box under §7.2.)*
 
 **Transition regime ($a_N \sim a_0$, $R \sim R_{\mathrm{transition}}$):** $a \approx a_N + a_0 + \sqrt{a_N a_0}$. Joint weak-gradient regime; all three contributions comparable; P14 active.
 
 **Deep-MOND regime ($a_N \ll a_0$, $R \gg R_{\mathrm{transition}}$):** $a \approx \sqrt{a_N \cdot a_0}$. Joint weak-gradient still applies; bilocal cross-term dominates over both pure-source terms. P14 active; ECR is the dominant approximation.
 
-### 7.2 Parameter-free, but switched rather than smooth
+### 7.2 Parameter-free, and scoped rather than switched
 
-*Reworded 2026-09-04; this subsection previously read "Smooth, parameter-free crossover" and called the transition **smooth**. It is not.*
+*Reworded twice on 2026-09-04, and the second rewording corrects the first. The subsection originally read "Smooth, parameter-free crossover" and called the transition **smooth**. It was then changed to "switched rather than smooth" on the reading that §7.1 toggles P14 off — a reading drawn from this paper alone. An audit of `Paper_KM-I` the same day showed that reading is not the corpus's: **KM-I is the standing MOND account and its crossover is smooth**, with ephemeris bounds handled by constraining the interpolation family rather than by removing the mechanism. This subsection now says what is actually true of* this *paper.*
 
 The transition is **parameter-free** given P14 + upstream results ($G$, $a_0$ from Papers_027, 029): no interpolation parameter is fitted, and that economy is real.
 
-It is **not smooth**. §7.1 above has three regimes with **P14 toggled on and off at the boundaries** — "P14 inactive" in the Newtonian regime, active in the other two — and that toggle is the §5.3 regime assumption, not a derived condition. Within each regime the profile is smooth; across the boundaries the mechanism switches.
+**This paper does not model the crossover; it decomposes into regimes and derives one of them.** §7.1's three regimes are a **scope decomposition**, not a physical switch. The deep-MOND branch is where the construction has content; the Newtonian branch is where it declares itself out of scope; and the transition branch is where both contributions are written down without the crossover shape being resolved. Nothing in the substrate turns off at $a_0$.
 
-The switch is load-bearing and cannot be removed. If P14 were active in the Newtonian regime the crossover *would* be smooth, and the $\sqrt{a_N a_0}$ term would then be present at solar-system accelerations, where it is excluded by ephemerides by roughly seven orders (§6.3). **Smooth and viable are exclusive here.** Supplying a derived reason for the switch is open research (target #19); see `Gravity_TieredClaims_Ledger.md` Staleness #15.
+> **Why the distinction is load-bearing.** §6.3's profile saturates as $1-\mu \sim x^{-1/2}$. Run at solar accelerations it predicts $\approx 8.9\times10^{-8}\,\mathrm{m/s^2}$ of anomalous acceleration at Saturn against a Cassini-class bound near $10^{-14}$. **A physical switch would be the only thing saving it, and there is no such switch** — `Paper_KM-I`'s falsifier sentence states plainly that *"there is no mechanism here to evade the static bounds."* The resolution is not that the mechanism switches off; it is that **this paper's profile is the wrong member of the family.** `Paper_KM-I` preamble item 5 constrains the interpolation to a Cassini-compatible family and excludes *"slow-saturating members"* by name — which is exactly what $x^{-1/2}$ is. **§6.3's profile is excluded by the corpus's own standing criterion and should not be used outside the deep field.**
+
+**The standing treatment of the crossover is `Paper_KM-I` §6.3**, where the khronon's kinetic function $W'$ is smooth and the family is constrained by ephemerides. This paper supplies the deep-field law that KM-I embeds; it does not supply the transition. See `Gravity_TieredClaims_Ledger.md` Staleness #15 (scoped) and #19.
 
 ### 7.3 Comparison to MOND interpolation functions
 
