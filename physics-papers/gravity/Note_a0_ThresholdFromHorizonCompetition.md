@@ -128,6 +128,8 @@ Attempted 2026-09-04, immediately after §5, since deriving `μ` was named there
 
 $$a(R) = a_N + a_0 + \frac{\sqrt{GMa_0}}{R} \;=\; a_N + a_0 + \sqrt{a_N a_0}.$$
 
+> **Superseded 2026-09-04 — the standalone `a₀` above is gone.** `Paper_030` §3.2 was rewritten the same day: `Σ₀` is now a **content normalization** feeding §4.2 and no gradient of it is taken, so the profile is **`a = a_N + √(a_N a₀)`**. Both limits follow as limits, no regime switch is assumed, and §7.1's deep-MOND branch is correct. *The `x^{-1/2}` saturation and therefore the Cassini exclusion outside the deep field are unchanged — the removed term was not what caused them.* See `Note_TheSwitchIsDerived_TheShapeIsInherited.md` §11 and `Gravity_TieredClaims_Ledger.md` Staleness #37.
+
 Writing `s = √(a_N/a₀)` this is a closed-form interpolation law:
 
 $$\frac{a}{a_0} = s^2 + s + 1, \qquad \mu \equiv \frac{a_N}{a} = \frac{s^2}{s^2+s+1}.$$

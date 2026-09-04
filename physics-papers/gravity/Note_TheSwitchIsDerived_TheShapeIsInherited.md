@@ -150,7 +150,7 @@ leaving `a → a_N`. **Newtonian dynamics are recovered from the screening, not 
 
 Below `cH₀` the cosmic boundary binds and its content is unscreened. To complete the map one must show that this yields `a ≈ √(a_N a₀)`. **It does not, on `Paper_030`'s own profile.** §6.3 gives
 
-$$a(R) = a_N + a_0 + \sqrt{a_N a_0}$$
+$$a(R) = a_N + a_0 + \sqrt{a_N a_0} \qquad \text{(as it stood; corrected later the same day — see §11)}$$
 
 and §7.1 asserts that in the deep-MOND regime (`a_N ≪ a₀`) the *"bilocal cross-term dominates over both pure-source terms."* **That is arithmetically false.** Writing `a_N = ε a₀` with `ε ≪ 1`, the three terms are `εa₀`, `a₀` and `√ε a₀`, and since `ε < √ε < 1` for all `ε < 1`, the ordering is **always**
 
@@ -232,7 +232,7 @@ whose limits are both correct with **no regime switch needed**: `a → a_N` for 
 
 **M2 — an internal-consistency resolution by re-reading, not a new derivation.** It removes a term that `Paper_029` never licensed, on the strength of `Paper_029` §4.4's own characterization of `a₀` as a threshold. No new postulate; census confirms the count did not move.
 
-**Owed:** `Paper_030` §3.2 needs rewriting rather than flagging — `Σ₀` should be presented as a **content normalization** feeding §4.2, with no gradient taken and no standalone term. That is an edit to a load-bearing derivation and is **not performed here**; it is recorded as the remaining work on Target #22. Until it is done the paper still displays a profile (§6.3) whose deep limit is wrong.
+**Owed — DISCHARGED 2026-09-04, the rewrite was applied on instruction (Staleness #37).** `Paper_030` §§3.2, 3.4, 5.3, 6.3, 7.1 and the abstract are corrected: `Σ₀` is a content normalization, no gradient is taken, the profile is `a = a_N + √(a_N a₀)`, and §5.3's explicit regime assumption is **removed** because the deep-MOND branch now follows as a limit. *Original wording:* `Paper_030` §3.2 needs rewriting rather than flagging — `Σ₀` should be presented as a **content normalization** feeding §4.2, with no gradient taken and no standalone term. That is an edit to a load-bearing derivation and is **not performed here**; it is recorded as the remaining work on Target #22. Until it is done the paper still displays a profile (§6.3) whose deep limit is wrong.
 
 ---
 

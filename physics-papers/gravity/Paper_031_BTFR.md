@@ -226,7 +226,7 @@ The slope-4 emerges from the joint action of centripetal kinematics + ECR square
 
 Alternative combination rules give different slopes:
 
-- **Additive** ($a = a_N + a_0$): in deep-MOND, $v^2 = a_0 R$; no $M_b$ dependence; slope undefined.
+- **Additive** ($a = a_N + a_0$): in deep-MOND, $v^2 = a_0 R$; no $M_b$ dependence; slope undefined. *(Noted 2026-09-04: this line is the independent corroboration that resolved `Paper_030`'s `Σ₀` problem. `Paper_030` §6.3 had carried a profile with exactly this standalone $a_0$, which dominates the deep field — contradicting both this row and `Paper_030` §3.4's own refutation. `Paper_030` §3.2 was rewritten the same day and the two papers now agree. See `Gravity_TieredClaims_Ledger.md` Staleness #35–#37.)*
 - **Maximum** ($a = \max$): same.
 - **Quadratic** ($a^2 = a_N^2 + a_0^2$): in deep-MOND, $a \approx a_0$; same.
 - **Cube-root** ($a^3 = a_N a_0^2$): slope-6.
