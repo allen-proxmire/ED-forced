@@ -112,7 +112,11 @@ It does not, and P11 is why. The reserve and $b_{int}$ are **different state var
 
 > **The P04 band law forces $α = 1$ and positively excludes Nordström.** The Einstein branch at the lapse is selected by the arrow (P11): the reserve cannot replenish to track the metric band, so it does not co-scale, so $α = 1$. *(Modulo one band-accounting premise: that the metric band and the rate-numerator band are the same $b_{int}$; named, not proven.)* Had P04 defined the reserve as a fixed fraction of the total or supplied a replenishment band, ED would have been Nordström — experimentally excluded. It does neither. **This is the arrow's first hat.**
 
-GR-I's labeled postulate P-Commitment-Linear is thereby a derived result.
+**The argument's strength is not uniform across $eta$, and it is worth saying so.** The replenishment argument is decisive at the Nordström endpoint: $eta = 1$ requires the reserve to be *raised* where $b_{int}$ is high, which P11 forbids outright. Einstein, however, requires $eta = 0$ **exactly** — any intermediate $0 < eta < 1$, a reserve merely correlated with ambient capacity without tracking it, gives $g_{00}g_{rr} \sim -b^{2(lpha-1)} 
+eq -1$ and no Schwarzschild relation. What rules out the interior of that interval is not the replenishment argument but a **genericity claim on the P04 band structure**: the reserve is a carried, history-set budget and $b_{int}$ is an ambient field, so absent a mechanism coupling them there is no reason for a fractional power to appear. That is a claim about the band structure, stated here rather than proven, and it is why the falsifier below is scoped to $eta 
+eq 0$ rather than to $eta = 1$. *(Added 2026-09-04 after an audit trace; no tier change — the ledger already carries this row as D-cond on a named band-accounting premise.)*
+
+GR-I's labeled postulate P-Commitment-Linear is thereby a derived result. *Conditional on that genericity claim and on the band-accounting premise named above.*
 
 ---
 

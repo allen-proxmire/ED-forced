@@ -6,6 +6,16 @@
 
 ---
 
+> **OPEN ITEM — added 2026-09-04. Read before §6.** **`b^(H)` is used with two incompatible meanings, and the R-linear form is load-bearing for both.** §2 inherits the per-channel convention `b^(H) ∝ a₀R` (Paper_030 §4.2) as a non-negative bandwidth — it must be, since P04 requires `b_K ≥ 0` and §5.1 takes its square root. That R-linear form is exactly what makes the geometric mean work: `√(GM/R · a₀R) = √(GMa₀)`, R-independent, which is the whole point. **The same object, on the diagonal, is `Σ₀ = a₀R`** — the term §6.2 removes as "inconsistent with Paper_029's dipole." Under P-Quadratic-Strain, `|P^L + P^H|² = b^L + b^H + 2√(b^L b^H)cosΘ` is a single algebraic identity: the second and third terms both follow from `P^H ≠ 0` on the channel. Keeping the cross-term while deleting the self-term is not a physical claim about dipoles; it is dropping one term of an expansion the paper's own postulate generates.
+>
+> **Both repairs cost something, which is why this needs a decision rather than a patch.** *(i) If `b^(H)` is isotropic* — which is what §2 and §5.1 actually use — the geometric mean, the P14 discharge and BTFR all stand, but §6.2's removal of `Σ₀` loses its justification, the diagonal contributes a constant `a₀` (gradient of `a₀R`), and Paper_030's regime assumption returns. The **second** discharge fails. *(ii) If `b^(H)` carries the genuine dipole structure* `∝ |a|cosθ` that §6.1–6.2 rely on, it is sign-indefinite, so it is not a bandwidth under P04 and `√(b^L b^H)` is imaginary over half the sphere. Then the **first** discharge fails too. As written the paper is on branch (i) and §6 is the part that does not fit.
+>
+> **Candidate repair, not attempted here.** The horizon's directional, acceleration-induced character could be carried by the relative phase `Θ_LH` rather than by `b^(H)` — a `cosθ` structure sits naturally in an angle. That keeps `b^(H)` non-negative and isotropic, preserving §5 intact. It does **not** by itself remove the diagonal, so §6.3's ratio effect would still need an independent argument for why the horizon self-term does not contribute a gradient.
+>
+> **Scope.** The first discharge (P14 → the geometric mean forced as the off-diagonal of `|P^L + P^H|²`) is a good argument and survives on branch (i); it is the stronger half of the paper. The MOND phenomenology, BTFR slope-4 and Newtonian recovery are unaffected on that branch. What is at risk is specifically §8's claim of **two** discharges and the "no regime assumption is needed" line in §6.3. Note also that this compounds with Staleness #10: §6.1 rests on Paper_029's `1/(2π)` dipole derivation, itself now disputed.
+>
+> Recorded as Staleness #13 in `Gravity_TieredClaims_Ledger.md`. §6.3's "no regime assumption is needed" and §8's "two postulates to one" should be read under this banner until it is resolved.
+
 ## Preamble: what this paper does NOT claim
 
 Written first, per house discipline; the abstract is reconciled against it.
@@ -92,13 +102,13 @@ This paper *sharpens* Paper_030; it does not contradict it, in the same way GR-I
 | 4 | Two sources on one channel superpose (one $b_K$, one $\pi_K$) | D | P04 + P07 + P09 single-carrier structure |
 | 5 | Diagonal term $=\sum_a b_K^{(a)}$; local self-term $=-GM/R$ | D | §4, = Paper_026 verbatim |
 | 6 | Off-diagonal modulus $=\sqrt{b^{(L)}b^{(H)}}$ (geometric mean forced) | **D given P-Quadratic-Strain** | §5, interference cross-term of step 4 |
-| 7 | $a_0$ is a dipole, not a monopole; $\Sigma_0=-a_0R$ removed | D | §6, from Paper_029 §5.1 |
-| 8 | Transition by ratio: $a=a_N+\sqrt{a_N a_0}$ | D | §6.3 |
+| 7 | $a_0$ is a dipole, not a monopole; $\Sigma_0=-a_0R$ removed | **DISPUTED 2026-09-04** (was D) | §6. Conflicts with the `b^{(H)}\propto a_0R` convention row 6 relies on — see the open-item banner above and Staleness #13 |
+| 8 | Transition by ratio: $a=a_N+\sqrt{a_N a_0}$ | **DISPUTED 2026-09-04** (was D) | §6.3, inherits row 7 |
 | 9 | BTFR $v^4=GMa_0$, slope 4, zero scatter | D | §7, = Paper_031 |
 | 10 | $a_0=cH_0/(2\pi)$ numerical value | I | Paper_029 (value-inherited via $H_0$) |
 | 11 | Definite, constructive relative phase $\Theta_{LH}$ (coherence inherited from Paper_029; sign not derived) | **A / OPEN** | §9 residual; ties to V5 / RelationalTick attractive-coherence |
 
-All rows are P, D, I, or the one flagged A/OPEN row (11). No hidden assertions.
+All rows are P, D, I, or the one flagged A/OPEN row (11). No hidden assertions. *Amended 2026-09-04: rows 7 and 8 re-tiered to DISPUTED. The defect was not visible per-row — it lives between rows 6 and 7, where one quantity is used with two incompatible meanings. A per-row audit cannot catch that class; see the banner.*
 
 ---
 
