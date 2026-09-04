@@ -103,17 +103,23 @@ At Saturn (`R = 1.4335 × 10¹² m`):
 | Cassini-class ephemeris bound | `~10⁻¹⁴ m/s²` |
 | **suppression required** | **`8.80 × 10⁶`** |
 
-The cosmic boundary sits at `u ≈ 9.5 × 10⁴` in units of the chain's own. Requiring `F_V5(u) < 1.14 × 10⁻⁷` there gives, for a power-law envelope `F_V5(u) ~ u^{-n}`:
+The cosmic boundary sits at `u ≈ 9.5 × 10⁴` in units of the chain's own.
 
-$$\boxed{n > 1.40}$$
+**The cross-term is screened by `√F`, not by `F`, and this note first got that wrong.** `Paper_030` §5.2 builds the bilocal channel strain as `σ_bilocal ∝ √(GM a₀)` — a **geometric mean** of the local and horizon sides — and `Paper_030` §3.2 makes `a₀` **linear** in horizon content (the `Paper_029` dipole amplitude). So screening the horizon content by `F` sends `a₀ → a₀F` and therefore the cross-term to `√(a_N a₀ F) = √(a_N a₀)·√F`. Requiring `√F < 1.14 × 10⁻⁷`, i.e. **`F_V5(u) < 1.29 × 10⁻¹⁴`**, gives for a power-law envelope `F_V5(u) ~ u^{-n}`:
+
+$$\boxed{n > 2.79}$$
+
+> ⚠ **Corrected 2026-09-04 (same day). This section first read `n > 1.40`**, from treating the cross-term as linearly screened. It is a geometric mean, so it takes the square root of the suppression and the required exponent **doubles**. Found while working §10 below. The constant `a₀` term *is* linearly screened and needs only `n > 0.82`, so **the cross-term is the binding constraint**. Conclusions unchanged for exponential envelopes; changed for power laws, where `n = 2` now **fails**.
 
 | Envelope | `F_V5` at `u = 9.5×10⁴` | Verdict |
 |---|---|---|
 | exponential `e^{-u}` | `e^{-95000}` | passes by ~10⁴ orders |
 | stretched exponential `e^{-√u}` | `e^{-308}` | passes by ~130 orders |
 | power law `n = 1` | `1.05 × 10⁻⁵` | **FAILS** |
-| power law `n = 1.4` | `1.08 × 10⁻⁷` | marginal |
-| power law `n = 2` | `1.11 × 10⁻¹⁰` | passes |
+| power law `n = 1.4` | `1.08 × 10⁻⁷` | **FAILS** *(passed under the erroneous linear-screening reading)* |
+| power law `n = 2` | `1.11 × 10⁻¹⁰` | **FAILS** *(same)* |
+| power law `n = 2.79` | `1.30 × 10⁻¹⁴` | marginal — the boundary |
+| power law `n = 3` | `1.17 × 10⁻¹⁵` | passes |
 
 **This is a bound on a value-layer quantity, obtained from observation in a regime the quantity was never fitted in.** That is ED's stated methodology (`Paper_095`: form-derived, value-inherited) operating as designed — the form fixes the admissible class, and measurement narrows it.
 
@@ -124,6 +130,52 @@ $$\boxed{n > 1.40}$$
 `Paper_090` §5.1 identifies V5 with **Maxwell stress relaxation** in polymer melts, whose envelope is **exponential**, and calls the exponential structural form a substrate-level consequence carried into the soft-matter regime.
 
 An exponential envelope clears the §6 bound by roughly four orders of magnitude in the exponent. So the envelope class the corpus picked in soft matter, on entirely unrelated grounds, satisfies a constraint imposed by planetary ephemerides. **Two arcs, no shared machinery, consistent.** Recorded as a consistency check, not as evidence: the exponential in soft matter is itself identified rather than derived, so this is two inherited choices agreeing, not a prediction confirmed.
+
+---
+
+## 10. The regime map — half derived, half blocked by a contradiction in `Paper_030`
+
+*Added 2026-09-04, attacking the second debt of `Note_a0_ThresholdFromHorizonCompetition.md` §6: that the switch in **which boundary binds** is assumed to coincide with the switch between **Newtonian and deep-MOND dynamics**.*
+
+### 10a. The Newtonian half is derivable, and it is the half Cassini cares about
+
+Above `cH₀` the chain's own boundary is nearer, so cosmic content is screened by `F_V5(u)` with `u = R_H/R_a > 1`. Both horizon-dependent terms in `Paper_030` §6.3's profile then die:
+
+- the pure-source cosmic term `a₀ → a₀ F` — linearly,
+- the bilocal cross-term `√(a_N a₀) → √(a_N a₀)·√F` — as the square root,
+
+leaving `a → a_N`. **Newtonian dynamics are recovered from the screening, not assumed.** This discharges what `Paper_030` §7.1 previously had to declare by scoping ("this construction has no content here"), and it is exactly what §6's Cassini bound quantifies.
+
+### 10b. The deep-MOND half cannot be mapped, because the target regime is inconsistently specified
+
+Below `cH₀` the cosmic boundary binds and its content is unscreened. To complete the map one must show that this yields `a ≈ √(a_N a₀)`. **It does not, on `Paper_030`'s own profile.** §6.3 gives
+
+$$a(R) = a_N + a_0 + \sqrt{a_N a_0}$$
+
+and §7.1 asserts that in the deep-MOND regime (`a_N ≪ a₀`) the *"bilocal cross-term dominates over both pure-source terms."* **That is arithmetically false.** Writing `a_N = ε a₀` with `ε ≪ 1`, the three terms are `εa₀`, `a₀` and `√ε a₀`, and since `ε < √ε < 1` for all `ε < 1`, the ordering is **always**
+
+$$a_N \;<\; \sqrt{a_N a_0} \;<\; a_0 .$$
+
+| `a_N/a₀` | `a_N` | cross `√(a_N a₀)` | pure cosmic `a₀` | dominant |
+|---|---|---|---|---|
+| `1` | `1.20×10⁻¹⁰` | `1.20×10⁻¹⁰` | `1.20×10⁻¹⁰` | all equal |
+| `10⁻¹` | `1.20×10⁻¹¹` | `3.79×10⁻¹¹` | `1.20×10⁻¹⁰` | **`a₀`** |
+| `10⁻²` | `1.20×10⁻¹²` | `1.20×10⁻¹¹` | `1.20×10⁻¹⁰` | **`a₀`** |
+| `10⁻⁴` | `1.20×10⁻¹⁴` | `1.20×10⁻¹²` | `1.20×10⁻¹⁰` | **`a₀`** |
+
+The constant cosmic term dominates everywhere in the regime `§7.1` describes, and it dominates by a factor `1/√ε` that **grows** as one goes deeper. A constant acceleration floor `a → a₀` gives `v² = a₀R`, i.e. **rising** rotation curves, not flat ones. So §6.3's profile and §7.1's regime description cannot both be right.
+
+### 10c. The resolution is already flagged in the paper, and this makes it load-bearing
+
+`Paper_030` §3.2 carries a flag dated the same day:
+
+> the step above converts a **response** into a **source** … `Paper_029` §§3.3/5.1 make the horizon content first order in the chain's own acceleration … and identically zero for a non-accelerating chain … **This is the origin of the `Σ₀` problem.**
+
+**That flag is the resolution.** Drop the spurious standalone `a₀` — which `Σ₀ = -a₀R` produced by integrating a response as if it were a constant background — and the profile becomes `a = a_N + √(a_N a₀)`, whose deep limit **is** `√(a_N a₀)`. §7.1's description is then correct and the regime map closes.
+
+**So the second debt is not blocked by anything new. It is blocked by `Σ₀`, and the finding here is that `Σ₀` is not a bookkeeping nicety.** The flag was recorded as an attribution problem; it is in fact **load-bearing for whether ED reproduces MOND at all**. Until it is resolved, "the cosmic boundary binds" cannot be shown to mean "deep-MOND dynamics," because on the paper's own profile the deep limit is a constant, not a geometric mean.
+
+**Caution, and it is a real one.** The obvious repair — restore the acceleration-dependence `a₀ → k|a|` that `Paper_029` actually derives — is the move Target #19 has **already banked as a negative**: it yields `a ∝ GM H₀/R²`, Newtonian-like, and breaks MOND. So dropping the term and restoring its `|a|`-dependence are different repairs with different fates, and only the first is on the table here. **Neither is performed in this note.**
 
 ---
 
