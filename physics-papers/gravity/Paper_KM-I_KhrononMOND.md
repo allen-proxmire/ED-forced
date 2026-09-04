@@ -190,6 +190,10 @@ Two pieces with two statuses. The non-analytic linear piece is the MOND carrier 
 
 With the requirement in place, the Combination Rule and BTFR slope-4 ($v⁴ = GMa₀$) are **embedded relativistically** — the khronon carries Paper_030's law; it does not re-derive it.
 
+> **What "forced-given-030" inherits, named 2026-09-04.** The hinge is only as conditional as its source, and `Paper_030`'s deep-field law carries three declared conditions: **P-Quadratic-Strain** (the strain reading, `Paper_QuadraticStrain_v1`), the **§5.3 regime assumption** that the cross-term dominates in deep-MOND (restored 2026-09-04 after `Paper_QuadraticStrain_v1` §6's removal of it was found inconsistent — `Gravity_TieredClaims_Ledger.md` Staleness #13), and **P-Bilocal-Count** (`N_bilocal = N_horizon = N(R)`, named 2026-09-04 — Staleness #16). This paper's *D conditional on I-030* is accurate and unchanged; the point of naming them is that *"forced-given-030"* otherwise reads as though 030 were settled.
+>
+> **On the high-acceleration limit, this paper and `Paper_030` use different mechanisms.** §6.3 and preamble item 5 here constrain a **smooth interpolation family** by ephemerides, and §7 is explicit that at solar accelerations the correction is the saturation tail — present and small. `Paper_030` §7.1 instead switches **P14 inactive** above `a₀`, so the term is absent rather than small. Both are defensible; they are not the same physics, and neither paper cites the other's treatment. **This paper's is the standing account.** See Staleness #19.
+
 ---
 
 ## 5. The Lensing Verdict
