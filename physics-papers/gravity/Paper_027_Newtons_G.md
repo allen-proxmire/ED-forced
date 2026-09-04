@@ -45,6 +45,12 @@ The identification $G = c^3\ell_P^2/\hbar$ is a dimensional rearrangement of the
 This matters for three reasons:
 
 - **Parsimony.** ED reduces the number of independent fundamental constants by one — Newton's $G$ is now downstream content rather than an independent input.
+
+  > **Why this is a reduction and not a renaming** *(added 2026-09-04; the objection is obvious once stated and the paper did not answer it).* The claim above is only worth making if $\ell_{\mathrm{ED}}$ is fixed **independently of $G$**. It is not fixed independently *by this paper*: §5.3 sets $\ell_{\mathrm{ED}} = \ell_P$ by matching observed gravitational strength, and a scale fixed by matching $G$ cannot then be said to explain $G$. Taken alone, §§5.2–5.3 trade one constant for another.
+  >
+  > **The reduction is real, and it is a multi-use argument rather than a single-derivation one.** $\ell_{\mathrm{ED}}$ is one postulated scale (P08) that is then *spent in several independent places*: the horizon channel count $N(R) = 4\pi R^2/\ell_{\mathrm{ED}}^2$ (`Paper_025`), the black-hole area law and entropy coefficient (`Paper_043`, `Paper_BH_Thermal2Pi`), and the ultraviolet cutoff that regulates the substrate without Lifshitz scaling (`Paper_111`). A framework carrying $G$ as an independent input must *separately* supply a horizon-count grain and a UV cutoff. ED supplies one number and uses it three times. **That is the parsimony, and it is a claim about the count of independent inputs across the corpus, not about this derivation in isolation.**
+  >
+  > **The honest form of the claim:** given `P-G-Closure` (§2) and the empirical fixing of $\ell_{\mathrm{ED}}$ (§5.3), $G$ ceases to be an *independent* input, because the same scale is doing load-bearing work elsewhere. **Falsifier F-P:** if $\ell_{\mathrm{ED}}$ required a different value in any of those other roles than the one that reproduces $G$, the reduction would be spurious and the corpus would be carrying several scales under one name.
 - **Cross-domain coherence.** $G$, $a_0$, and the slope-4 BTFR are all derived from the same substrate primitives in the gravity arc (Papers 027, 029, 030, 031). They form a coherent structural cluster, not three independently-tuned phenomenological inputs.
 - **Falsifiability.** If $G$ has structural content rather than being a free parameter, then the substrate-mechanism interpretation makes predictions about how $G$ would change if the substrate scale $\ell_{\mathrm{ED}}$ were to vary, or about the deep-MOND regime where $G$ and $a_0$ both enter (Papers 029, 030, 031).
 
@@ -82,6 +88,12 @@ This paper takes the following Event Density (ED) substrate primitives as **post
 
 - **Paper #1 (participation measure):** the complex polar carrier $P_K = \sqrt{b_K}\,e^{i\pi_K}$ on which the cumulative-strain integration operates.
 - **Paper #3 (inner product + orthogonal bands):** four-band orthogonality (P04 §1.5) supplies the strain-band content within the participation-measure decomposition.
+
+**Paper-specific postulate (labelled per QC discipline; named 2026-09-04 after an external audit):**
+
+> **P-G-Closure (coefficient closure on the $G$ assembly).** *The dimensionless coefficient in the substrate assembly of $G$ from $c$, $\hbar$ and $\ell_{\mathrm{ED}}$ is unity:*
+> $$G \equiv \frac{c^3\,\ell_{\mathrm{ED}}^2}{\hbar}, \qquad\text{not merely}\qquad G \sim \frac{c^3\,\ell_{\mathrm{ED}}^2}{\hbar}.$$
+> *Dimensional analysis fixes the combination only up to an arbitrary dimensionless $C$; §5.2's "unique combination" is unique in its* powers*, not in its coefficient. Setting $C = 1$ is a substantive commitment and is labelled here rather than absorbed. It is not independent of the $\ell_{\mathrm{ED}} = \ell_P$ identification of §5.3: together they say that the substrate scale* is *the Planck length with no residual factor, which is what makes the relation a rearrangement of $\ell_P = \sqrt{\hbar G/c^3}$ rather than a competitor to it.*
 
 **No primitive forcing is invoked.** The full 13-primitive enumeration lives in the ED Foundations position paper (`paper_ED_Framework_13_Primitive_Generative_System.md`).
 
@@ -248,7 +260,7 @@ The substrate-level constants available for assembling $G$ from the cumulative-s
 - $\hbar$ ($[\text{mass}] \cdot [\text{length}]^2/[\text{time}]$),
 - $\ell_{\mathrm{ED}}$ ($[\text{length}]$).
 
-The unique combination with the correct dimensions for $G$:
+The combination with the correct dimensions for $G$, **unique in its powers but not in its coefficient** (see P-G-Closure, §2; any dimensionless $C$ is dimensionally admissible):
 
 $$
 G = \frac{c^3\,\ell_{\mathrm{ED}}^2}{\hbar}.
@@ -259,6 +271,8 @@ Verification:
 $$
 \left[\frac{c^3\,\ell_{\mathrm{ED}}^2}{\hbar}\right] = \frac{[\text{length}/\text{time}]^3 \cdot [\text{length}]^2}{[\text{mass}] \cdot [\text{length}]^2/[\text{time}]} = \frac{[\text{length}]^3}{[\text{mass}] \cdot [\text{time}]^2}. \;\checkmark
 $$
+
+> **Scope note added 2026-09-04.** The sentence below says the coefficient is closed by $\kappa_{V1}\,\sigma(M) = GM$. That identification *defines the product* $\kappa_{V1}\sigma(M)$ in terms of $G$; it therefore closes the assembly's internal bookkeeping but cannot independently fix the dimensionless coefficient of $G$ itself, since $G$ appears on both sides. The coefficient is set by **P-G-Closure** (§2), which is a labelled postulate. Recorded after an external audit observed that dimensional compatibility yields $\sim$ and not $=$.
 
 The numerical coefficient (factors of $4\pi$, V1 kernel normalization, etc.) is fixed by the §4 cumulative-strain reading; the substrate-source identification $\kappa_{V1}\,\sigma(M) = GM$ closes the coefficient assembly:
 
