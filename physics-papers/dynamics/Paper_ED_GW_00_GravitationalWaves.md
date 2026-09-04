@@ -92,7 +92,7 @@ A saddle in $D = 3+1$ (Paper_098_5 / T1) has, at each locus, a Hessian with eige
 | Element | GR reading | ED substrate reading | Status |
 |---|---|---|---|
 | What propagates | Metric perturbation $h_{\mu\nu}$ on background $g_{\mu\nu}$ | Saddle-Hessian-signature reconfiguration carried by V1 retarded kernel | **Replaced** (§3.2, §3.3) |
-| Propagation speed | $c$ (Einstein field equations) | Substrate-c (Paper_012 + Paper_089) | **Inherited** (GW170817 confirms) |
+| Propagation speed | $c$ (Einstein field equations) | Substrate-c (Paper_012 + Paper_089) | **Value inherited** (GW170817 confirms); **identity structural** — that tensor waves and light share *one* cone follows from one substrate + one transport (`gravity/Paper_GR-II` §§6–7, D-structural). *Split clarified 2026-09-04; this row previously read "Inherited" alone, which is right for the value and disclaims the identity.* |
 | Polarization count | 2 (TT modes $h_+$, $h_\times$) | 2 (two transverse Hessian-flip directions, §3.7) | **Inherited** |
 | Amplitude falloff | $h \sim 1/r$ from linearized GR | $h \sim 1/r$ from Paper_032 + V1 spherical dilution | **Inherited** |
 | Energy content | Pseudotensor (gauge-dependent) | Local ED-gradient load | **Replaced** (§3.5) |
