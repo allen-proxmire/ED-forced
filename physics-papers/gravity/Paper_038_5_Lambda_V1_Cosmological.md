@@ -195,7 +195,7 @@ $$
 
 - **F1 (reframed 2026-05-16):** Route A closure (substrate-derived $\ell_{V_5}(H_0)$ per Paper_ED_SC_4.2) gives substrate-side $H_0$. Combined with Paper_027 substrate-side $M_P$ + Friedmann inheritance $\rho_\Lambda = (3/8\pi) H_0^2 M_P^2$, this closes the OPEN status and upgrades verdict M2 → M3 retroactively (parallel to Paper_ED_Cos_01 M3-upgrade pattern). Direct V1-parameter derivation per §3.4 is structurally on the wrong track (§3.7 reframing).
 - **F2:** Substrate evidence that V1 vacuum backreaction does NOT couple to curvature — refutes step 6.
-- **F3:** Detection of $\Lambda$ evolution inconsistent with V1 cosmological-scale integral — would require revising step 9.
+- **F3 — sharpened 2026-09-04.** *Any* detected evolution of $\Lambda$, at any precision. Writing $\rho_\Lambda \propto H^{2n}$ (so $w = -1 + n$ in matter domination, §3.5), **ED is committed to $n = 0$ exactly** — the frozen saturation floor admits no interval. So this is not a threshold to clear but a **running test**: every improvement in the measured $w$ tightens it, and a confirmed $n \neq 0$ at any level refutes the frozen-floor reading and requires revising step 9. *Note the honest asymmetry: the commitment is exact, while the current* argument *for it eliminates only the $n = 1$ endpoint (§3.5) and rests for $n = 0$ on the saturation regime flagged as the residual OPEN there. A measured small $n$ would therefore refute the claim without having been excluded by the argument — which is the sharpest way to state ED's exposure here.*
 - **F4:** Resolution of the residual hierarchy from a non-substrate source — would shift the dominant mechanism away from V1 cosmological-scale integration.
 
 ---
