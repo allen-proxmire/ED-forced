@@ -1,147 +1,188 @@
-# What Two Independent Models Add When Given ED's Bottom and Nothing Else
+# What Independent Models Add When Given ED's Primitives and Nothing Else
 
 **Allen Proxmire**
 
 **September 2026**
 
 **Series:** Event Density (ED) Generative Papers — substrate-evaluation arc (probes of the primitive set itself)
-**Status:** Probe note. A measured result about **where an unguided reconstruction places its load-bearing assumptions**, run against two independent frontier model families. Not a physics result. Companion to `Paper_087_13Primitives` (the primitive set under test) and `Paper_MetricFromTheGraph_ForcedTo3D` (whose P4 isotropy measurement answers one of the two probes' central demands).
+**Status:** Probe note. Five runs across two independent frontier model families, in three conditions: **blind** (ontology sketch only), **seeded-with-a-swap** (thirteen primitives, P08 replaced by a coarse-graining primitive), and **seeded-full** (thirteen primitives plus V1/V5 inheritance). Measures where an outside reconstruction places its load-bearing assumptions, what it postulates that ED derives, and where it stops. Not a physics result.
+**Anchors:** `Paper_087_13Primitives` (the set under test) · `Paper_MetricFromTheGraph_ForcedTo3D` (P4 isotropy) · `Paper_026`/`Paper_027` (the channel-count route to `1/R`) · `Paper_GR-I` (`N² ~ b`) · `Paper_GR-III` (the dynamical rule)
 **Repository target:** `physics-papers/substrate-evaluation/` (ED-Generative)
 
 ---
 
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline)*
 
-1. **The 13 substrate primitives are not derived** (`Paper_087`). This note tests their *minimality and completeness as a declared set*, not their truth.
-2. **This is not evidence about physics.** Nothing here confirms or refutes any ED result. It measures how a competent reader with no access to the corpus partitions the problem when handed ED's bottom layer in plain English. Agreement between models is evidence about the problem's structure, not about nature.
-3. **The probe was not blind to ED's framing.** The prompt states P11 in ordinary language ("irreversible commitments of a relation to one state"). It can therefore only measure the gap between that sketch and the thirteen. It cannot test whether the sketch itself is right, and no run here is independent confirmation of ED's starting point.
-4. **No claim that either model's output is correct.** Both produced scaffolds, not derivations. Where a model asserts something cannot be done, that is its judgment, recorded as such.
-5. **No claim that the primitive set should change on this evidence alone.** Two runs on one prompt is a pointer, not a finding about the corpus. §6 states what would be needed to act.
-6. **The prompt used is defective in three named ways** (§5). The findings are reported with that defect disclosed, not corrected after the fact.
+1. **The 13 substrate primitives are not derived** (`Paper_087`). This note tests their *minimality, economy and completeness as a declared set*, not their truth.
+2. **This is not evidence about physics.** Nothing here confirms or refutes any ED result. Agreement between models is evidence about the structure of the problem and about what is obvious to a capable reader; it is not evidence about nature.
+3. **No run was blind to ED's framing.** The blind prompt states P11 in ordinary language; the seeded prompts hand over the primitive list. The exercise measures the gap between what ED declares and what a reader must add. It cannot test whether ED's starting point is right.
+4. **No claim that any model's output is correct.** These are scaffolds, not derivations. Two runs contain outright errors (§5), reported as such.
+5. **No claim that the primitive set should change on this evidence.** §7 states what would be needed to act, and why the one swap actually tested does not work.
+6. **The prompts are defective in named ways** (§6), disclosed rather than quietly corrected. The prompt was revised once between conditions; the revision is stated.
 
 ---
 
-## 1. What was done
+## 1. Conditions and runs
 
-Two frontier models from independent families — one OpenAI, one Google — were each given the same prompt in a fresh context with no repository access, no primitive list, no ED results, and no indication that a target framework existed:
+| Run | Family | Condition | Given |
+|---|---|---|---|
+| **A** | OpenAI | blind | ontology sketch in prose; no primitive list, no results, no repo access |
+| **B** | Google | blind | same sketch |
+| **C** | OpenAI | seeded, **P08 swapped** | thirteen primitives with `ℓ_ED` replaced by "a coarse-graining regime exists"; no kernels |
+| **D** | OpenAI | seeded, full | thirteen primitives with operational content, plus V1 (`1/R` envelope, retarded) and V5 as inherited kernels; asked to aim at an inverse-square law and a bandwidth-clock relation, and to name the postulate needed at each stopping point |
+| **E** | Google | seeded, full | same as D |
 
-> Take this as the bottom layer of physics: a discrete relational graph, no coordinates, no edge lengths, no background scale, where the only events are irreversible commitments of a relation to one state. Build upward toward known physics. Every time you must add an assumption I did not give you, stop and log it explicitly as a numbered addition. At the end, give me the list of additions and say which ones are load-bearing. Do not try to guess what framework I have in mind.
+**Contamination.** No run showed recognition: no ED vocabulary beyond what the prompt supplied, no ED results, no naming of the framework. Exposure would bias toward false convergence, so its absence strengthens what follows. The corpus is public, so this remains a live confound for any future run (F2).
 
-The output of interest is **not** whether either reconstructed ED. Neither did, and neither should have. The output of interest is the **list of additions**: what a capable reader finds it must assume, and where those assumptions land relative to ED's declared thirteen.
-
-**Contamination.** The corpus is public on GitHub, so training exposure is possible. Neither run showed any: no ED vocabulary (bandwidth, khronon, commitment-locality, participation), no ED results, no recognition. One mentioned spectral dimension in passing as an alternative to hop-distance, which is standard quantum-gravity vocabulary, not a tell. Exposure would bias toward false convergence, so its absence strengthens rather than weakens what follows.
-
-**Asymmetry of depth.** The two runs were not of equal quality. Run A logged 21 additions and identified the absence of a dynamical rule as its single largest gap. Run B logged 6 and never noticed that gap at all. Where they differ, that is usually a difference in thoroughness. Where they **agree**, having been run independently, is where the signal is.
+**Depth is not uniform.** Run A logged 21 additions; Run B logged 6 and missed the largest gap A found. Run D was scrupulous about labels; Run E mislabelled its central postulate as derived. Where runs of unequal quality **agree**, that is where the signal is.
 
 ---
 
-## 2. The convergent additions
+## 2. Blind condition — what a reader must add
 
 | Requirement | Run A | Run B | ED's declared answer |
 |---|---|---|---|
 | Partial causal order over commitments | Addition 1, load-bearing | Assumption 1, Critical | P11 + P13 + V1 retardation (T18) |
-| **A stable coarse-graining regime that fixes a dimension** | Addition 5, load-bearing | Assumption 2, Critical | **not in the thirteen** — see §3 |
+| **A coarse-graining regime that fixes a dimension** | Addition 5, load-bearing | Assumption 2, Critical | **not in the thirteen** — §3 |
 | Hop count becomes distance | Addition 4 | Assumption 3, Moderate | `MetricFromTheGraph`, unweighted hop count |
 | Particles as stable graph patterns | Addition 11 | Assumption 5, Moderate | chains; matter sector |
-| Phase / complex amplitudes for QM | Additions 8–10, "must be postulated" | Assumption 6, Critical, "you must inject complex numbers" | P09 (`U(1)` polarity) — **omitted from the prompt**, see §5 |
-| **Isotropy of the microstructure** | absent | Assumption 4, Critical | **measured, not assumed** — see §4 |
-| A rule constraining which commitments occur | Addition 7, "absolutely load-bearing," its #1 gap | absent | V1 / V5 kernels, P12 |
-| Finite causal propagation speed | Addition 16, load-bearing | *derived*, one hop per event | P05 polarity-transport |
-| Conservation laws, energy | Additions 12–13 | absent | P04 bandwidth budget |
-| Gauge structure, Standard Model | Additions 18–19 | absent | P09; MS-I / MS-II |
+| Phase / complex amplitudes for QM | Additions 8–10 | Assumption 6, Critical | P09 — omitted from the blind prompt (§6) |
+| **Isotropy of the microstructure** | absent | Assumption 4, Critical | measured, not assumed — §4 |
+| A rule constraining which commitments occur | Addition 7, **its #1 gap** | absent | V1 / V5 kernels, P12 |
+| Finite causal propagation speed | Addition 16 | *derived*, one hop per event | P05 |
+| Conservation, energy | Additions 12–13 | absent | P04 bandwidth budget |
+| Gauge, Standard Model | Additions 18–19 | absent | P09; MS-I / MS-II |
 | Entropy, thermodynamic arrow | Additions 20–21 | absent | the arrow-sorts-the-continuum line |
 
-Two agreements are worth isolating.
-
-**Run A distinguished the primitive arrow from the thermodynamic one unprompted**, and stated that they "should not be automatically identified." That is ED's central inversion, reached independently from the same starting sentence. It is not confirmation of ED — the starting sentence already contains the inversion — but it does show the distinction is legible to a reader who was not told to look for it.
-
-**Run A named ED's declared soft spot without seeing the corpus.** Its single most load-bearing missing ingredient is a rule constraining which commitments occur. ED's answer is V1 and V5, and `Paper_090` records V5's existence as a P10-licensed posit whose forward derivation is **open**. An unguided reader landed on the gap ED already admits. This does not validate ED; it does indicate ED's self-assessment points at a real hole rather than a decoy.
+Run A distinguished the primitive arrow from the thermodynamic one unprompted and warned they "should not be automatically identified" — ED's central inversion, legible to a reader not told to look for it. And its single most load-bearing missing ingredient was a rule constraining which commitments occur: ED's answer is V1/V5, and `Paper_090` records V5's existence as a P10-licensed posit whose forward derivation is **open**.
 
 ---
 
-## 3. Finding 1 — every candidate addition lands in the coarse-graining layer
+## 3. Finding 1 — the additions land in the coarse-graining layer
 
-Both runs put load-bearing assumptions in the same place, and it is not among the thirteen:
+Both blind runs put load-bearing assumptions in the same place, and it is not among the thirteen: that a stable coarse-graining regime exists, that it converges to a definite effective dimension, and that it washes out directional structure.
 
-- that a stable coarse-graining regime exists at all;
-- that it converges to a definite effective dimension rather than staying graph-like at every scale;
-- that it washes out directional structure.
+ED assumes all three and discloses them, but as per-paper regime-of-validity language. `Paper_MetricFromTheGraph_ForcedTo3D` is explicit — "a lattice/label background is assumed… the metric *on* the background is emergent; **the background topology is input**" — and carries the matching falsifier as **F5**. So this is disclosed work recorded in the wrong place: two independent readers concluded it is load-bearing at the level the primitives operate on.
 
-ED assumes all three. They are carried inside papers as regime-of-validity statements rather than in the primitive set. `Paper_MetricFromTheGraph_ForcedTo3D` is explicit — "Constructed substrates (a lattice/label background is assumed), static bandwidth fields… The metric *on* the background is emergent; **the background topology is input**" — and it carries the matching falsifier as **F5**: if a background-free construction produced no metric, the emergence would stand exposed as an artifact of the assumed background.
-
-So this is disclosed work, not hidden work. What the probe shows is that it is disclosed *in the wrong place*: two independent readers, given the thirteen's content in prose, both concluded that a coarse-graining assumption is load-bearing at the level the primitives operate on. **Tier: Open.** Whether it should be promoted to a declared primitive, a standing postulate alongside V1/V5, or left as per-paper regime language is a judgment this note does not make.
+**Tier: Open.** Whether it belongs as a declared primitive, as a standing postulate alongside V1/V5, or as per-paper regime language is a judgment this note does not make. §7 states the constraint that makes the choice non-trivial.
 
 ---
 
-## 4. Finding 2 — on isotropy, ED's actual position is stronger than the probe demanded
+## 4. Finding 2 — on isotropy, ED's position is stronger than the runs demanded
 
-Run B rated isotropy **Critical**, arguing the microstructure must be randomized rather than crystalline, since a regular lattice would give the emergent space preferred directions and break Lorentz invariance — "light and matter would travel faster diagonally than horizontally."
+Run B rated isotropy **Critical**, arguing the microstructure must be randomized rather than crystalline or the emergent space keeps preferred directions. Run D independently refused to write `g ∝ −∇B` because "neither linearity nor isotropy was separately supplied." Three appearances across two families and two conditions.
 
-ED does not assume this, and does not need to. `Paper_MetricFromTheGraph_ForcedTo3D` §6 (P4) runs the measurement on **a genuine 3D cubic lattice** — precisely the crystalline case Run B says must be excluded — with a spherical bandwidth dip, and reports:
+ED does not assume it. `Paper_MetricFromTheGraph_ForcedTo3D` §6 (P4) runs the measurement on **a genuine 3D cubic lattice** — the crystalline case Run B says must be excluded — with a spherical bandwidth dip, and reports the raw ballistic metric **is** faceted at layer 1, exactly as predicted, while the anisotropy **washes out monotonically under coarse-graining**: axis versus body-diagonal, 0.345 → 0.000, with per-shell coefficient of variation 0.06 shrinking with radius.
 
-- the raw ballistic shortest-path metric **is** faceted at layer 1, exactly as Run B predicts;
-- the anisotropy **washes out monotonically under coarse-graining**, axis versus body-diagonal, 0.345 → 0.000;
-- binning by true radius, the per-shell coefficient of variation of hop-distance is 0.06 and shrinks with radius.
+Even a crystal works, and the curve is on record. That is strictly stronger than an axiom. **Tier: Measured**, one constructed arena, background topology as input (§3).
 
-ED's answer is therefore a measured layer-1 → layer-2 transition rather than an axiom: even a crystal works, and here is the washout curve. That is strictly stronger than the assumption Run B says is required. **Tier: Measured**, on one constructed arena, with the background topology as input (§3).
+**Three unrelated senses of "crystal" in this corpus, kept apart:**
 
-**Three senses of "crystal" in this corpus, kept apart.** They are unrelated and conflating them would produce a false result:
-
-1. **Lattice anisotropy** — is the substrate graph a regular lattice with preferred directions? This section. Answered by measurement; anisotropy is a layer-1 artifact that coarse-grains away.
-2. **Long-range correlation order** — can a substrate field develop crystalline order in the condensed-matter sense? `Paper_BlindnessInvariant_KnotsNotCrystals`: blindness → common-cause only, and sparse becoming erases almost all of it. Explicitly scoped to correlation order and **not** to topological defects.
-3. **The Crystallizing Block Universe** — Ellis & Rothman's name for the indefinite-to-definite transition surface. `Paper_EvolvingBlockUniverse_Ellis` covers it. Nothing to do with lattices.
+1. **Lattice anisotropy** — this section. Measured; a layer-1 artifact that coarse-grains away.
+2. **Long-range correlation order** — `Paper_BlindnessInvariant_KnotsNotCrystals`: blindness → common-cause only. Explicitly scoped away from topological defects.
+3. **Ellis & Rothman's Crystallizing Block Universe** — the indefinite-to-definite transition surface. `Paper_EvolvingBlockUniverse_Ellis`. Nothing to do with lattices.
 
 ---
 
-## 5. Finding 3 — the prompt is defective, in ED's favor and against it
+## 5. Seeded condition — what the primitives actually buy
 
-Three faults, all in the prompt rather than the runs:
+### 5.1 Removing P08 costs Newton and `G` (Run C)
 
-1. **It forbids a substrate scale** ("no background scale") while ED postulates `ℓ_ED` as **P08**, on which `G = c³ℓ_P²/ħ` entirely rests. The prompt asked for something ED does not claim.
-2. **It omits polarity.** Both runs concluded that phase and complex amplitudes must be injected by hand, Run B flatly: irreversible commitment to one definite state cannot produce interference or Bell violations. ED does not claim otherwise from bare irreversibility either — its phase enters through **P09**, a declared primitive. The prompt omitted P09 and then recorded the models noticing its absence.
-3. **It gives no cue that a dynamical rule is expected**, which is likely why Run B never asked for one while Run A called it the largest gap.
+Run C was given the thirteen with `ℓ_ED` replaced by a coarse-graining primitive. Its own "what I did not derive" list includes **the inverse-square law** and **a numerical gravitational constant**.
 
-Fault 2 leaves a fair question standing, independent of the prompt: if P09 already carries a `U(1)`, how much work is the Solèr selection argument doing when it "selects" ℂ from `{ℝ, ℂ, ℍ}`? Two independent models converging on "phase must be put in" is not an answer, but it is a reason to look. **Tier: Open question, not a finding.**
+Those are exactly what P08 pays for. `G = c³ℓ_P²/ħ` has no content without a length scale, and the holographic count is `4πR²/ℓ_ED²`, needing P06's area *and* P08's grain. The swap was run and the cost is measured, not argued. **The coarse-graining item of §3 cannot be paid for by deleting P08.**
+
+Run C's closing judgment: "the crucial source-response map from bandwidth/channel structure to effective geometry is still an A-level position, not a D-level derivation. That map is the main remaining load-bearing gap." The gravity ledger's **first row under Open (declared)** is *"Bandwidth ↔ strain/flow substrate-route identification — OPEN."* Same item, found without the corpus.
+
+### 5.2 Both full runs postulate what ED derives, in the same place
+
+Runs D and E both reach Newtonian scalar gravity plus a weak-field clock relation, and both get the `1/R` bandwidth profile by **assuming** the source inherits V1's envelope (D's P14; E's asserted Poisson equation).
+
+ED does not assume it. `Paper_026`/`Paper_027` distribute the source's content across `N(R) = 4πR²/ℓ_ED²` channels rather than duplicating into each, and the per-channel V1 sum returns `Φ = −GM/R` **with the `N(R)` factors cancelling exactly**. ED's own papers flag the seductive wrong version: an `R²` surface "competing" with a `1/R` kernel gives `Φ ∝ R`.
+
+Both runs had P06 and P08 and neither found the counting argument. That is evidence the argument is non-obvious, not that the primitives are idle. The same holds for `G`: Run E quoted `ℓ_ED ≈ 1.616 × 10⁻³⁵ m`, used it only for the continuum limit, and produced `G_eff = ακg₀/4π` — a product of three undetermined constants, no content. ED's dimensional closure to one postulated scale was not reached from having the scale available.
+
+### 5.3 The fork: both runs take the branch ED rejects
+
+**Run D:** `ν_clock = κB`, labelled **P**. **Run E:** `ν(r) = κ·B(r)`, labelled **D**. Two families, linear in bandwidth, no hesitation.
+
+**ED has `ν ∝ √b`.** `Paper_GR-I` puts the commitment front on the null cone of `ds² = −N²dt² + b⁻¹dx²`, forcing `N² ~ b` given P-Commitment-Linear, so `dτ/dt = N = √b` and `g₀₀ ~ −b`. That is what yields `g₀₀ g_rr ~ −1` — the Schwarzschild relation, the Einstein branch rather than the conformal one, and hence the factor-of-two light bending.
+
+Run D noticed the shortfall and parked it, proposing `g₀₀ = −(B/B₀)²` (its P21) which returns the linear law, and stating it could not reach `√(1 − 2GM/c²R)`. Run E did not notice.
+
+**This is the most useful single output of the exercise.** The square root is ED's most non-obvious step in the gravity arc, and the linear map is what capable readers reach for by default. Two consequences follow, and they point in opposite directions: the step deserves defensive rigor proportional to its load, and P-Commitment-Linear's forcing argument in `Paper_GR-III` §4 is worth re-reading with fresh eyes precisely because the natural guess goes the other way.
+
+### 5.4 Postulate economy
+
+To reach Newton plus a weak-field clock relation, Run D needed six named postulates (P14 kernel-to-bandwidth coupling, P15 gradient response, P16 inertial participation, P17 universal source identification, P18 bandwidth-commitment capacity, P19 relativistic normalization `αB₀ = c²`), and named three more (P20–P22) as required to continue.
+
+ED's corresponding named postulates are roughly four — P-Codim-1, P-Sat, P-Potential-Reading, P-Commitment-Linear — and ED derives the `1/R` that D postulates. The economy comes from a route divergence: **D and E went Newtonian** (bandwidth → force via a postulated gradient-response law plus a separate inertial postulate), while **ED goes geometric** (bandwidth → metric → geodesics), which needs no force law at all.
+
+**Tier: Measured** (a count, on one prompt, against one route). It is not a claim that ED's route is correct, only that it is more economical in declared postulates and that the economy has an identifiable source.
+
+### 5.5 Errors in Run E, and why one matters
+
+- **It labelled its central postulate D.** Step 5 writes `∇²B = g₀ρ_M` and calls it derived. Nothing given yields a Poisson equation. ED has this equation as `GR-III`'s `ḃ = D∇²b − κρ`, steady state `∇²b ~ ρ` at correlation 0.999 — **built and run**, tiered *measured*. Run E asserted in one line what ED needed a simulation to earn. This is the exact failure the P/A/I/D discipline exists to catch, and the same class as the missing audit table behind the `1/(2π)` finding in `Gravity_TieredClaims_Ledger.md` Staleness #10.
+- **It double-counts the `1/R`**, deriving the profile from the Poisson Green's function and then describing that step as convolving with V1's `1/R` envelope. Either source suffices; using both counts one factor twice.
+- **It mis-tiers P06** as "Measured / Empirical input" when the prompt supplied it as a postulate. Run D got this right explicitly.
+- **Its falsifier is generic.** A deviation from `1/R²` falsifies every gravity theory, not this one. Run D's `δν/ν = δB/B` targets its own mechanism. The corpus's paper-writing checklist §1 already requires theory-specific falsifiers; this is an independent illustration of why.
+
+### 5.6 Where all runs stop, identically
+
+Run D: a bandwidth-to-interval map, a metric equivalence map, a nonlinear source equation. Run E: a tensor coupling or action principle for GR, light bending, gravitational waves, horizons.
+
+Same wall under different names, and it is exactly where `Paper_GR-I` and `Paper_GR-III` begin. Across five runs the boundary is stable: unaided reconstruction reaches Newtonian scalar gravity with a linear clock relation and stops.
 
 ---
 
-## 6. On removing and adding a primitive
+## 6. Prompt defects, disclosed
 
-Neither run reached for a fundamental dimension. Both treated dimension as emergent from how relational volume grows with graph radius, `N(r) ~ r^D`. ED postulates **P06** (`D = 3+1`).
+**Blind prompt (Runs A, B):** forbids a substrate scale while ED postulates `ℓ_ED` as P08; omits P09's polarity and then records both models noticing phase was missing; gives no cue that a dynamical rule is expected, which is likely why Run B never asked for one.
 
-That preference is not novel and ED has already recorded it. `Paper_087` §P06 carries a Round-4 QC acknowledgment stating that P06 "is doing extraordinary load-bearing work across the corpus," and noting that the operational reconstruction programs — Hardy 2001, CDP 2011, Masanes–Müller, Coecke–Kissinger — treat spatial dimension as a **derived** structural fact. Two independent models, given no such context, took the same side. ED is the outlier here and knows it.
+**Seeded prompt, revised before Runs D/E:** primitives given with operational content, V1/V5 added as inherited kernels, two quantitative targets named, and each stopping point required to name the postulate that would let it continue. That last clause produced §5.6 and is the most productive instruction in the set.
 
-**But P06 is not padding, and removing it is not a subtraction.** Paper_087's own list of its dependencies:
+**Still absent, and deliberately so.** The prompt does not signal the `√b` branch. Signalling it would destroy the §5.3 measurement and would collapse the replication condition into the audit condition. The correct fix, for a future revision, is to require branch enumeration — *"where two or more inequivalent continuations are available, list them, say which you take and why, and state what would decide between them"* — which surfaces the fork without supplying the answer.
 
-- `Paper_025`'s holographic bound: the `4πR²` area scaling comes from P06.
-- `Paper_027`'s Newton inverse-square: the `R²` surface comes from P06.
-- `Paper_025`'s codimension-1 channel-footprint argument is dimension-dependent and operates within P06.
-- The whole gravity arc's spatial-geometric content (027/028/029/030/031/039) depends on it implicitly.
-- The NS arc's `D = 3+1` PDE forcing.
-
-And there is a circularity hazard. `Paper_MetricFromTheGraph_ForcedTo3D` P2 does select exactly-3 — the reach law `p = 1/(d−1)` gives `g ~ 1/b` in 3D and not in 2D, with ball-cut exponents measured at 0.984 and 2.008 — but that selection is **conditional on the holographic surface count**, and the holographic count is one of the things P06 supplies. Removing P06 and citing the exactly-3 result as its replacement would be circular unless the count is first re-derived without it.
-
-**The honest statement of the swap, then:** the *candidate* removal is P06 and the *candidate* addition is the coarse-graining/background item of §3. Both are supported by two independent runs and, in P06's case, by ED's own QC note and by the reconstruction literature. Neither is actionable yet. Removing P06 is a substantial derivation project — derive the dimension, then re-derive `4πR²`, the inverse-square law, and the codimension-1 footprint from the derived dimension rather than the postulate — not a line-item deletion. Adding the coarse-graining primitive is cheaper but changes the count and requires a pass over every paper that currently carries it as regime language.
+**A standing question left by the phase defect:** if P09 already carries a `U(1)`, how much work is the Solèr selection argument doing when it "selects" ℂ from `{ℝ, ℂ, ℍ}`? Two independent models converging on "phase must be injected" is not an answer, but it is a reason to look. **Open question, not a finding.**
 
 ---
 
-## 7. Falsification criteria
+## 7. On removing and adding a primitive
 
-- **F1:** If a third and fourth independent model family, run on the corrected prompt of §5, do *not* place load-bearing additions in the coarse-graining layer, Finding 1 is an artifact of two samples and should be withdrawn.
-- **F2:** If a run on the corrected prompt (scale and polarity restored, dynamical rule cued) reproduces ED's thirteen closely, the correct conclusion is **training exposure**, not convergence, and the recognition question of §1 must be run before anything is banked.
-- **F3:** If the background-free construction called for by `MetricFromTheGraph` F5 produces a metric with no assumed lattice, Finding 1's force is much reduced: the coarse-graining assumption would then be doing far less work than both runs supposed.
-- **F4:** If P06 is shown to be derivable without the holographic count, the §6 circularity hazard clears and the removal becomes a real option rather than a project.
+Neither blind run reached for a fundamental spatial dimension; both treated it as emergent from `N(r) ~ r^D`. ED postulates **P06**.
+
+That preference is not novel and ED has recorded it: `Paper_087` §P06 carries a Round-4 QC acknowledgment that P06 "is doing extraordinary load-bearing work across the corpus," and notes that Hardy 2001, CDP 2011, Masanes–Müller and Coecke–Kissinger all treat spatial dimension as **derived**. Two models given no such context took the same side. ED is the outlier and knows it.
+
+**But P06 is not padding, and neither candidate move is a line-item edit.**
+
+- P06 supplies the `4πR²` area to `Paper_025`, the `R²` surface to `Paper_027`, the dimension-dependence of the codimension-1 footprint, and the `D = 3+1` PDE forcing in the NS arc.
+- `MetricFromTheGraph` P2 *does* select exactly-3 (`p = 1/(d−1)` gives `g ~ 1/b` in 3D and not 2D, ball-cut exponents 0.984 and 2.008) — but **conditional on the holographic surface count, which P06 supplies**. Citing it as P06's replacement is circular unless the count is re-derived first.
+- Run C measured the cost of the other direction: **removing P08 loses the inverse-square law and `G`.**
+
+**Net:** the candidate addition is the coarse-graining item of §3; the candidate removal is P06. They cannot be traded against each other, and the swap actually tested (P08 out, coarse-graining in) is refuted by Run C. Adding without removing takes the count to fourteen. Removing P06 is a derivation project — derive the dimension, then re-derive `4πR²`, the inverse-square law and the codimension-1 footprint from the derived dimension — not a deletion.
 
 ---
 
-## 8. Position statement
+## 8. Falsification criteria
 
-ED sits in the substrate-ontology lineage ('t Hooft's cellular-automaton interpretation, the causal-set program), not the operational-reconstruction tradition, and this note does not move it. What it does is put a number on one thing that lineage rarely checks: **where a competent outside reader, handed the program's bottom layer and nothing else, finds it necessary to add something.** The answer, twice and independently, was the coarse-graining layer — the seam between the discrete substrate and the continuum, which is exactly where ED's own open frontier already sits (the nonlinear metric, the background-free construction, F5).
+- **F1:** If further independent families, run on the revised prompt, do *not* place load-bearing additions in the coarse-graining layer, Finding 1 is a small-sample artifact and should be withdrawn.
+- **F2:** If a run reproduces ED's thirteen or the `√b` branch closely, the first hypothesis is **training exposure**, not convergence. The recognition question must be run, in a separate turn after the run completes, before anything is banked.
+- **F3:** If the background-free construction called for by `MetricFromTheGraph` F5 produces a metric with no assumed lattice, Finding 1 weakens sharply: the coarse-graining assumption would be doing far less than the runs supposed.
+- **F4:** If P06 proves derivable without the holographic count, the §7 circularity clears and the removal becomes an option rather than a project.
+- **F5:** If a run given the branch-enumeration clause lists `√B` alongside `B` and picks it on stated grounds, §5.3's "non-obvious" reading weakens: the step would then be reachable and merely unprompted.
 
-That is a modest result and it should be read modestly. The runs did not test ED. They tested a paragraph of English that ED wrote, and they agreed with each other about where the hard part is. The corpus already says the hard part is there. What is new is that nobody had to be told.
+---
+
+## 9. Position statement
+
+ED sits in the substrate-ontology lineage ('t Hooft's cellular-automaton interpretation, the causal-set program), not the operational-reconstruction tradition, and nothing here moves it. What the exercise adds is a measurement that lineage rarely takes: **where competent outside readers, given the program's own declared inputs, find they must add something — and what they postulate that the program derives.**
+
+Three answers, in order of usefulness. They postulate the `1/R` profile that ED's channel count produces. They take the linear clock branch where ED takes the square root, which is the step that puts ED on the Einstein branch. And their unforced additions land in the coarse-graining layer, which is where ED's own open frontier already sits.
+
+Read modestly. No run tested ED. They tested what ED declares, and agreed with each other about where the hard part is. The corpus already says the hard part is there. What is new is that nobody had to be told, and that two of ED's least-advertised steps turn out to be the ones an outsider does not find.
 
 ---
 
 ## Provenance
 
-Run A: OpenAI model, 21 numbered additions with a load-bearing ledger. Run B: Google model, 6 numbered assumptions with a criticality column. Both run 2026-09-04 in fresh contexts without repository access. Prompt as quoted in §1. Full transcripts held with the session record; the additions tables in §2 are complete for both runs, not excerpts.
+Five runs, 2026-09-04, fresh contexts, no repository access. **A:** OpenAI, blind, 21 numbered additions with a load-bearing ledger. **B:** Google, blind, 6 numbered assumptions with a criticality column. **C:** OpenAI, seeded with P08 replaced. **D:** OpenAI, seeded full, postulates P14–P19 plus proposed P20–P22, with a derivation ledger. **E:** Google, seeded full, six-step construction with a number inventory. Prompts and full transcripts held with the session record; the tables here are complete for the runs cited, not excerpts.

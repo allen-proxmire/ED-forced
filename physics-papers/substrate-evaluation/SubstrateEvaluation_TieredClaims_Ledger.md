@@ -111,16 +111,21 @@ The substrate-evaluation folder is a **coherent, honestly-tiered consolidation l
 
 ## Addendum 2026-09-04 — independent-reconstruction probe of the primitive set
 
-`Paper_PrimitiveMinimality_IndependentReconstructionProbe.md` is filed in this folder. Its tiers, kept separate because they differ:
+`Paper_PrimitiveMinimality_IndependentReconstructionProbe.md` is filed in this folder. Five runs, two model families, three conditions. Tiers kept separate because they differ sharply:
 
 | Claim | Tier |
 |---|---|
-| Two independent model families, given ED's bottom layer in prose with no corpus access, both placed load-bearing additions in the coarse-graining layer | **Measured** (n = 2, one prompt; F1 in the paper states what would withdraw it) |
-| That layer's assumptions are disclosed in ED as per-paper regime language (`MetricFromTheGraph` regime-of-validity + F5), not carried in the thirteen | **Structural** (a fact about where the corpus records it) |
-| Whether the item should be promoted to a declared primitive | **Open** — the paper declines to judge |
-| Neither run reached for a fundamental spatial dimension; ED's P06 is the outlier, as `Paper_087`'s own Round-4 QC note already records | **Measured** + **Account** |
-| P06 is removable | **NOT claimed.** P06 supplies `4πR²` to `Paper_025`, the `R²` surface to `Paper_027`, and the codimension-1 footprint; and `MetricFromTheGraph`'s exactly-3 selection is conditional on the holographic count, which P06 supplies, so citing it as P06's replacement would be circular |
-| Isotropy: ED measures the layer-1 anisotropy washout on a genuine cubic lattice (0.345 → 0.000, per-shell CV 0.06) rather than assuming randomized microstructure | **Measured**, one constructed arena, background topology as input |
-| Both runs said phase / ℂ must be injected; ED's phase enters via P09, which the probe's prompt omitted | **Prompt defect, disclosed.** Leaves a fair open question about how much the Solèr ℂ-selection argument does given P09 already carries a `U(1)` |
+| Blind runs from two independent families both placed load-bearing additions in the coarse-graining layer | **Measured** (n = 2, one prompt; F1 states what withdraws it) |
+| That layer is disclosed in ED as per-paper regime language (`MetricFromTheGraph` regime-of-validity + F5), not carried in the thirteen | **Structural** (a fact about where the corpus records it) |
+| Whether it should be promoted to a declared primitive | **Open** — the note declines to judge |
+| **Removing P08 costs the inverse-square law and `G`** — tested directly, not argued | **Measured** (Run C's own not-derived list) |
+| Neither blind run reached for a fundamental spatial dimension; P06 is the outlier, as `Paper_087`'s Round-4 QC note already records | **Measured** + **Account** |
+| P06 is removable | **NOT claimed.** P06 supplies `4πR²` to `Paper_025`, the `R²` surface to `Paper_027`, and the codimension-1 footprint; `MetricFromTheGraph`'s exactly-3 selection is conditional on the holographic count that P06 supplies, so citing it as the replacement is circular |
+| **Both full seeded runs postulate the `1/R` source profile that `Paper_026`/`Paper_027` derive from the `N(R)` channel count** | **Measured** (n = 2). Evidence the counting argument is non-obvious, not idle |
+| **Both full seeded runs take `ν ∝ B`; ED has `ν ∝ √b`** (`GR-I`: front on the null cone ⟹ `N² ~ b` given P-Commitment-Linear ⟹ `g₀₀g_rr ~ −1`, the Einstein branch and the factor of two) | **Measured** (n = 2). The most useful output of the exercise. Cuts both ways: the step is ED-distinctive *and* deserves rigor proportional to its load — `GR-III` §4's forcing of P-Commitment-Linear is worth re-reading precisely because the natural guess goes the other way |
+| ED reaches Newton + weak-field clocks on ~4 named postulates against Run D's 6, the economy traced to ED's geometric route (metric ⟹ geodesics) versus the runs' Newtonian route (postulated gradient-response + inertial law) | **Measured** (a count, one prompt, one route). Not a claim that ED's route is correct |
+| Isotropy: ED measures the layer-1 washout on a genuine cubic lattice (0.345 → 0.000, per-shell CV 0.06) rather than assuming randomized microstructure | **Measured**, one constructed arena, background topology as input |
+| Both blind runs said phase / ℂ must be injected; ED's phase enters via P09, which the blind prompt omitted | **Prompt defect, disclosed.** Leaves a fair open question about how much the Solèr ℂ-selection does given P09 already carries a `U(1)` |
+| Run E labelled an asserted Poisson equation **D**; ED has the same equation as `GR-III`'s `ḃ = D∇²b − κρ`, built and run at corr 0.999 and tiered *measured* | **Account.** An independent illustration of the failure the P/A/I/D discipline catches — same class as the missing audit table behind gravity Staleness #10 |
 
-*Not evidence about physics. The prompt states P11 in ordinary English, so the exercise can only measure the gap between that sketch and the thirteen, never whether the sketch is right.*
+*Not evidence about physics. The prompts hand over ED's own declared inputs, so the exercise measures the gap between what ED declares and what a reader must add — never whether ED's starting point is right.*
