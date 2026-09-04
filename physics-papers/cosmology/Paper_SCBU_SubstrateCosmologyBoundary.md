@@ -128,7 +128,7 @@ By Paper_029, an accelerating chain breaks the full SO(3) rotational symmetry of
 
 $$a_0 = \frac{cH_0}{2\pi} .$$
 
-The factor $1/(2\pi)$ is FORM-FORCED by the azimuthal-Fourier normalization on the circle of period $2\pi$. The numerical $a_0 \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$ at $H_0 \approx 70$ km/s/Mpc inherits Hubble-rate observational content.
+The factor $1/(2\pi)$ is FORM-FORCED by the azimuthal-Fourier normalization on the circle of period $2\pi$. The numerical $a_0 \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$ at $H_0 \approx 70$ km/s/Mpc inherits Hubble-rate observational content. **[DISPUTED 2026-09-04 — the `1/(2π)` is not established as forced.** The azimuthal-Fourier normalization does **not** survive: `Paper_028` §6.3 and `Paper_029` §5.1 both evaluate the azimuthal integral to **1**, so the factor cancels in their own displayed algebra and is reinstated at an assembly step by a normalization fixed nowhere. Re-tiered **Postulated / disputed**; see `Gravity_TieredClaims_Ledger.md` Staleness #10. **Unaffected:** `a₀ ~ cH₀`, reached three independent ways, and `a₀(z) = cH(z)/(2π)` with its forced exponent of 1.]**
 
 ### 3.3 The ED-SC projection (Paper_096 mechanism)
 

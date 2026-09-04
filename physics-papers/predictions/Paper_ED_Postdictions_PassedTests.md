@@ -83,7 +83,7 @@ $$
 a_0 = \frac{cH_0}{2\pi}
 $$
 
-via dipole-mode projection of the cosmic decoupling surface $R_H = c/H_0$ (Paper_028) onto an accelerating chain's anisotropic adjacency, with the geometric $1/(2\pi)$ factor forced by azimuthal-Fourier-mode normalization on the residual $SO(2)$ symmetry (Paper_029 §5.1 dipole-projection integral).
+via dipole-mode projection of the cosmic decoupling surface $R_H = c/H_0$ (Paper_028) onto an accelerating chain's anisotropic adjacency, with the geometric $1/(2\pi)$ factor forced by azimuthal-Fourier-mode normalization on the residual $SO(2)$ symmetry (Paper_029 §5.1 dipole-projection integral). **[DISPUTED 2026-09-04 — the `1/(2π)` is not established as forced.** The azimuthal-Fourier normalization does **not** survive: `Paper_028` §6.3 and `Paper_029` §5.1 both evaluate the azimuthal integral to **1**, so the factor cancels in their own displayed algebra and is reinstated at an assembly step by a normalization fixed nowhere. Re-tiered **Postulated / disputed**; see `Gravity_TieredClaims_Ledger.md` Staleness #10. **Unaffected:** `a₀ ~ cH₀`, reached three independent ways, and `a₀(z) = cH(z)/(2π)` with its forced exponent of 1.]**
 
 **Numerical check.** With $H_0 \approx 70$ km/s/Mpc:
 

@@ -323,7 +323,7 @@ $$
 a_0 = \frac{cH_0}{2\pi}.
 $$
 
-The factor of $2\pi$ is geometric — the azimuthal-Fourier normalization of the dipole mode on the residual SO(2) of an accelerating chain (Paper_029 §5.1, dipole-projection integral).
+The factor of $2\pi$ is geometric — the azimuthal-Fourier normalization of the dipole mode on the residual SO(2) of an accelerating chain (Paper_029 §5.1, dipole-projection integral). **[DISPUTED 2026-09-04 — the `1/(2π)` is not established as forced.** The azimuthal-Fourier normalization does **not** survive: `Paper_028` §6.3 and `Paper_029` §5.1 both evaluate the azimuthal integral to **1**, so the factor cancels in their own displayed algebra and is reinstated at an assembly step by a normalization fixed nowhere. Re-tiered **Postulated / disputed**; see `Gravity_TieredClaims_Ledger.md` Staleness #10. **Unaffected:** `a₀ ~ cH₀`, reached three independent ways, and `a₀(z) = cH(z)/(2π)` with its forced exponent of 1.]**
 
 ### 6.2 ED Combination Rule (Paper_030)
 
