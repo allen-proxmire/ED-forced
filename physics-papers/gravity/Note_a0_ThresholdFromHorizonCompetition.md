@@ -80,16 +80,39 @@ The honest reading is that **`a₀ ~ cH₀` is form-derived and the coefficient 
 
 ---
 
-## 5. The numerical gap, unresolved
+## 5. The numerical gap — check run 2026-09-04
 
-`cH₀ ≈ 6.8 × 10⁻¹⁰ m/s²`. The fitted MOND `a₀ ≈ 1.2 × 10⁻¹⁰ m/s²`. The mechanism's crossover sits a factor of **~5.7** above the fitted value — which is `2π` to within 10%, the same gap Staleness #10 concerns.
+`cH₀ = 6.80 × 10⁻¹⁰ m/s²` (at `H₀ = 70`). Fitted MOND `a₀ ≈ 1.2 × 10⁻¹⁰`. Ratio **5.67**, against `2π = 6.283`. Across the Hubble-tension range `H₀ ∈ [67, 74]` the ratio runs **5.42–5.99**, so it is `2π` to within 5–14%.
 
-Two readings, and this note does not choose between them:
+§5 previously offered two readings and declined to choose. **Reading 2 has now been checked, and its strong form is refuted.**
 
-1. **The factor is real and unexplained.** The threshold is genuinely at `cH₀` and something suppresses the effective onset by `2π`. This is Target #18's problem restated.
-2. **The comparison is category-mismatched.** A fitted `a₀` in a standard interpolation function `μ(x)` is not the same object as the crossover point of an underlying mechanism. `μ` spreads the transition over roughly a decade, and where the fitted parameter lands relative to the mechanism's switch depends on the interpolation family — which the corpus takes as empirically constrained (Cassini), not derived. **This has not been worked out and should be before the factor of 5.7 is treated as a discrepancy.**
+### Strong form: refuted, by construction
 
-Reading 2 is the cheaper check and nobody has run it. It is a calculation, not a derivation.
+The claim was that a fitted `a₀` inside an interpolation function `μ(x)` might not be the same object as a mechanism's crossover, so `μ` could absorb the factor.
+
+It cannot. In any MOND-class law `μ(a/a₀)·a = a_N`, the asymptotes are `a = √(a_N a₀)` (deep) and `a = a_N` (Newtonian). They are equal when `a_N = a₀`, and then `a = a₀`. **The asymptotes cross at `a₀` for every `μ` family**, because `a₀` is *defined* as the deep-MOND normalization. The shape of `μ` controls how the curve rounds the corner, not where the corner is. Confirmed numerically across three families (`x/(1+x)`, `x/√(1+x²)`, `x/(1+x⁵)^{1/5}`): the solution at `a_N = a₀` lands at `1.10–1.62 a₀` in all of them.
+
+**No choice of `μ` puts the transition at `cH₀` while the fitted `a₀` is `cH₀/(2π)`.**
+
+### Weak form: survives, and is untestable as things stand
+
+A residual version remains. The mechanism's crossover need not correspond to the asymptote-crossing; it could mark the **onset** of horizon influence — where departures from Newtonian first appear. That is a different feature of the curve, and it is `μ`-dependent:
+
+| `μ(x)` | `a_N` where `a` departs 10% from Newtonian |
+|---|---|
+| simple, `x/(1+x)` | **9.0 `a₀`** |
+| standard, `x/√(1+x²)` | 2.0 `a₀` |
+| sharp, `x/(1+x⁵)^{1/5}` | 1.0 `a₀` |
+
+`cH₀ = 5.67 a₀` sits inside that range, so the numbers are **not inconsistent**: a horizon-competition switch marking the onset, with a simple-μ-like interpolation, is compatible with the observed `a₀`.
+
+**But this cannot be used as support.** The range spans an order of magnitude and would accommodate almost any mechanism; the `μ` family is empirically fitted (Cassini-constrained), not derived; and identifying the switch with “10% departure” rather than with the asymptote-crossing is a choice made after seeing the number. **Recorded as not-refuted, not as evidence.**
+
+### What the check settles
+
+The factor 5.67 is a **genuine open residual** — not a units artifact, not absorbable by interpolation. And it is the *same* residual as Target #18's: every route in the corpus reduces to comparing the chain's acceleration scale against `cH₀`, and the measured scale is `cH₀/(2π)`.
+
+**One unexplained factor sits at the horizon-to-chain join, and it is identical in every derivation.** That is a cleaner statement of the problem than the corpus had, and it is the honest headline: **ED derives the *scale* of MOND's threshold three independent ways, and the *coefficient* none.**
 
 ---
 
@@ -108,7 +131,7 @@ Reading 2 is the cheaper check and nobody has run it. It is a calculation, not a
 ## 7. Falsification criteria
 
 - **F1:** If a construction carrying both boundaries shows `Γ_cross` collapsing at the *farther* boundary, or at neither distinctly, the switch is not a switch and the mechanism fails.
-- **F2:** If the interpolation-function check of §5 reading 2 shows the fitted `a₀` should coincide with the mechanism's crossover, then the factor of 5.7 is a genuine refutation of this mechanism, not a coefficient problem.
+- **F2 — partially fired 2026-09-04.** The check confirms the fitted `a₀` *is* the asymptote-crossing for every `μ`, so 5.67 cannot be absorbed by interpolation and is a genuine residual. Not yet a refutation: the mechanism's switch may mark the onset rather than the crossing (§5, weak form), but that escape is untestable while `μ` is fitted rather than derived. **Deriving `μ` from the substrate would convert this into a sharp test.**
 - **F3:** If `Paper_047_5`'s identification of Rindler and cosmological horizons as one substrate object fails (its own F2: substrate evidence that V5 saturation does not occur at one of the four types), this mechanism has no ingredient and collapses.
 
 ---
