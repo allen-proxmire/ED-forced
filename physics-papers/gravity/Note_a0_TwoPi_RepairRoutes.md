@@ -176,6 +176,27 @@ A third, independent layer crossing — an ED result comparing a bare commitment
 
 ---
 
+## 4d. Convergence from target #19 — the `2π` is now isolated
+
+Added 2026-09-04. Target #19's threshold work (`Note_a0_ThresholdFromHorizonCompetition.md`) reaches `a₀` from machinery this note shares nothing with: a chain has two V5-saturation boundaries, its own at `R_a = c²/a` and the cosmic one at `R_H = c/H₀`, they are the same substrate object by `Paper_047_5` (M3), only the nearer binds, and the switch sits at `c²/a = c/H₀`.
+
+**It gives `a₀ = cH₀`. Bare, no `2π`.**
+
+So the tally across every route the corpus now has:
+
+| Route | Gives the scale | Gives the `2π` |
+|---|---|---|
+| Azimuthal-Fourier normalization (`Paper_028` §6, `Paper_029` §5.1) | — | **no** — it provably cancels (Staleness #10) |
+| Thermal matching, symmetric `T_a = T_H` (§3–4 above) | `cH₀` ✓ | no |
+| Thermal matching, asymmetric `κ_a = T_H` (§3–4b above) | `cH₀/(2π)` ✓ | only via an ungrounded condition |
+| Horizon competition (target #19) | `cH₀` ✓ | no |
+
+**Three routes to the scale; none to the coefficient.** That is the honest state, and it points both ways. The substantive claim — `a₀` is set by the cosmic horizon — is now *better* supported than when this note opened, with two independent derivations instead of one. The coefficient is *worse* supported: it is not produced by any mechanism that stands on its own, and the only route that yields it is the one carrying an unproven claim about which layer the comparison runs at.
+
+**The honest landing, absent a resolution of §4b:** `a₀ ~ cH₀` is form-derived, and the `2π` is **inherited**.
+
+---
+
 ## 5. Status and what to do next
 
 | Item | State |
