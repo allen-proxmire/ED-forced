@@ -72,8 +72,8 @@ This paper supplies a substrate-level form-derivation via V5's finite bandwidth.
 | 5 | Entanglement measure saturates V5 budget for max-entangled | P-Measure-Saturation | Postulate, declared. |
 | 6 | Cross-chain correlation budget partitions across partners | D | Derived from steps 1–2: additivity of V5 contributions (P04 bandwidth-additivity). |
 | 7 | Sum of pair-entanglements $\leq W_{\max}$ (chain-local **constant**) | D (form) | Derived from steps 5–6. *Corrected 2026-09-04: previously read "≤ chain-total entanglement", which is the state-dependent CKW bound and does not follow.* |
-| 8 | CKW-form inequality $\sum_i \tau_{A i} \leq \tau_{A(\mathrm{rest})}$ | D (form) / I (measure-specific coefficient) | Form FORCED; coefficient inherited from measure choice. |
-| 9 | Maximally entangled $A$-$B$ implies $A$-$C$ unentangled | D | Derived from step 8 saturation. |
+| 8 | CKW-form inequality $\sum_i \tau_{A i} \leq \tau_{A(\mathrm{rest})}$ | **A -> consistency** *(re-tiered 2026-09-04, was D (form))* | **Not forced by section 3.** The budget gives a constant bound; CKW bounds by a state-dependent quantity, and general measure-saturation -- which would close the gap -- yields equality, not the strict inequality. CKW is *consistent with* the derived cap; deriving it needs measure sub-additivity against the V5 budget (section 6.x, open). |
+| 9 | Maximally entangled $A$-$B$ implies $A$-$C$ unentangled | D | Derived from the **boxed constant bound** of section 3.3 plus saturation at the maximum -- which is where P-Measure-Saturation is stated, so this step is **unaffected** by the 3.3 correction. |
 | 10 | Numerical value of CKW gap | I — empirical | Inherited from measure literature. |
 
 No structural-analogy mislabel.
@@ -142,6 +142,18 @@ This paper is the E-4 step.
 - **O-Mono-3:** Multipartite monogamy for $n \geq 4$.
 - **O-Mono-4:** Continuous-variable monogamy (Gaussian states).
 - **O-Mono-Revision:** If P-V5-Budget is derived from V5 kernel data, §3.1 strengthens to D-only.
+
+---
+
+### 6.x Open: sub-additivity of the measure against the V5 budget
+
+*Added 2026-09-04.*
+
+> **O-SubAdd.** *Show that the entanglement measure is **sub-additive** against the V5 correlation budget -- the summed pairwise measures falling strictly short of the chain budget in general, with equality only in the bipartite-saturated case -- or show that it is not.*
+
+Section 3.3 derives a cap by a constant and stops there. The step from that cap to the CKW form needs the measure to fall *short* of the budget when the budget is shared, and the size of the shortfall is exactly the residual three-tangle: the genuinely tripartite entanglement that pairwise measures miss.
+
+**Why this is the interesting open item in the arc, not a repair.** If ED can produce sub-additivity from V5 structure -- plausibly from the finite reach making three-way correlation cost more budget than the sum of its pairwise projections -- then the corpus obtains the **residual tangle as an output** rather than inheriting CKW as a target. That would be a genuine result, and the first place in this arc where ED says something the standard machinery does not already say. **Not attempted.**
 
 ---
 

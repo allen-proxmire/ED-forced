@@ -21,7 +21,8 @@
 |---|---|---|---|---|
 | No-signaling `p(a\|x,y)=p(a\|x)`, over-determined by 3 locks | 066 | Lock L1 (marginal independence) = **D-via-I** from tensor-product + POVM completeness | L2 rests on P-Substrate-Causality; L3 = Paper_073; "3-locks ⟹ over-determination" is an A→position | **current** — the cleanest paper in the arc; but Bell-Tsirelson is explicitly *open* here (row 11) |
 | Schmidt rank > 1 ⟹ non-factorizable | 064 §3.3 | **D** (standard SVD applied) | conditional on **P-V5-Schmidt-Generic** | current — strengthens 063's irreducibility *only under* that postulate |
-| Monogamy (CKW-form inequality) | 065 | **form D** (form-forced) from V5 finite budget + P04 additivity | conditional on **P-V5-Budget + P-Measure-Saturation**; coefficient inherited | current |
+| Monogamy: **total pairwise entanglement capped by the chain's V5 budget** | 065 §3.3 | **form D** (form-forced) from V5 finite budget + P04 additivity | conditional on **P-V5-Budget + P-Measure-Saturation**; `W_max` inherited |
+| Monogamy in **CKW form** | 065 §3.3 | **Grounded — consistent with, not forced by** *(re-tiered 2026-09-04, was form D)* | the budget gives a *constant* bound, CKW's is *state-dependent*; general measure-saturation would close the gap but yields **equality**, losing the strict inequality and the residual three-tangle. Open item **O-SubAdd** (065 §6.x) | current |
 | von Neumann entropy form `S = −Tr ρ log ρ` | 068 §3 | **D-via-I** (Shannon-Khinchin + Khinchin uniqueness) | conditional on **P-Continuity + P-Additivity + P-Maximality**; normalization inherited | current — two substrate-derivations open (see Open) |
 
 ### Grounded / conditional
@@ -88,4 +89,4 @@
 
 **Recommended, not applied.** §3.3 should state `Σᵢ ℰᵢ ≤ W_max` as the derived result and present CKW as *consistent with* it rather than forced by it; the ledger row should re-tier from **form D** to **Grounded** with CKW marked as the inherited target; and if the CKW form is wanted as a result, the open item is a **sub-additivity argument for `ℰ` against the V5 budget** — which is where the three-tangle would have to come from, and is a real piece of physics rather than an editorial fix. *No tier changed pending the author's call, since this narrows a published claim in a nominally closed arc.*
 
-*Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #22, which carries the day's audit trail.*
+**ALL THREE FIXES APPLIED 2026-09-04.** §3.3 rewritten with the constant bound boxed as the derived result and CKW presented as *consistent with, not forced by* it, carrying both the counterexample and the equality-collapse argument. Audit row 7 corrected (it read “≤ chain-total entanglement”, the state-dependent bound), row 8 re-tiered **D (form) → A→consistency**, row 9 noted **unaffected** since it uses saturation exactly where the postulate states it. Ledger row split above. New open item **O-SubAdd** at `Paper_065` §6.x. *Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #22.*
