@@ -80,13 +80,58 @@ The shape such an argument would need: a reason why an accelerating chain respon
 
 ---
 
+## 4b. The V5-state / P11-rate argument, attempted
+
+Attempted 2026-09-04, immediately after §4. **It does not close, and it gets further than expected.** Recorded in full because the shape of the remaining gap is the useful part.
+
+### The horizon side is solid, and it was already on the books
+
+`Paper_028` §3.4 is titled *"Statistical, not geometric, substrate-level boundary"*, and §7 restates it: the cosmic decoupling surface is **"substrate-graph statistical, not geometric"** — a property of adjacency-and-bandwidth *structure*, coinciding numerically with the Hubble radius only under coarse-graining. It is where the V5 cross-chain correlation budget saturates, not a locus where the `b`-field does something.
+
+That has a consequence nobody drew before: **there is no `b`-gradient to read off the cosmic surface.** A `κ` is a gradient of `b` at a horizon — that is exactly how `Paper_BH_Thermal2Pi` and GR-III obtain `κ = ½b′(r_s) = 1/(2r_s)`. A statistical boundary has no such gradient. So the cosmic surface **cannot** contribute a `κ`; the only characterisation available to it is a state, and its state carries the smoothness `2π` as `T_H = κ_H/(2π) = H₀/(2π)`.
+
+This half is not chosen to fit. It follows from a scoping statement `Paper_028` made in 2026-05 for unrelated reasons.
+
+### The chain side is a layer argument, and it is the interesting part
+
+A chain's acceleration is, in ED, a **P11 commitment-rate asymmetry**: the commitment front advances differently forward and backward along the acceleration axis. That is a bare count-rate at the level of commitments — sub-continuum, layer 1 in the two-layer picture (`Paper_Continuum_KineticLatticeGas`; `MetricFromTheGraph` P4).
+
+`T_H`, by contrast, is a **layer-2 object**. `Paper_BH_Thermal2Pi` §4b establishes exactly this and treats it as the paper's deepest finding: the `2π` is a continuum, smooth-horizon quantity, reachable through the horizon's analytic/periodic structure and *not* from raw commitment counting. Asking for it below the continuum may be a category error.
+
+So the two quantities being compared sit on opposite sides of the coarse-graining seam, and **the `2π` is precisely the layer-crossing factor** — what appears when a bare periodic structure is read as a thermal state. Working in natural units (`ħ = c = k_B = 1`), where acceleration and temperature are both inverse times:
+
+| Comparison | Layers | Result |
+|---|---|---|
+| `T_a = T_H` | 2 ↔ 2 | `a/2π = H₀/2π` ⟹ `a = cH₀`. **The `2π` cancels because the same conversion is applied twice.** Wrong by 5.7× |
+| `a = T_H` | 1 ↔ 2 | `a = H₀/2π` ⟹ **`a₀ = cH₀/(2π)`**. The seam is crossed exactly once, so one factor survives |
+
+The criterion is then not an arbitrary pairing of a surface gravity with a temperature. It is: **the chain's own commitment-rate asymmetry, measured in the chain's own units, against the thermal rate of the state it sits in.** Below that threshold the horizon's fluctuation rate exceeds the chain's own asymmetry and the chain's dynamics are horizon-dominated — the deep-MOND regime. Above it the chain's own rate dominates — Newtonian. That is a physically meaningful transition, and it is where MOND's transition actually is.
+
+### What it still owes, and it is one specific thing
+
+**Why is the comparison made at the chain's layer rather than at a common layer?** If both quantities are brought to layer 2, the chain's rate becomes `T_a = a/2π`, the `2π` cancels, and the prediction is `cH₀` — refuted. So the argument requires the comparison to happen at layer 1, and the justification offered here is that *the chain is what responds, so the response is executed in the chain's own machinery, at the chain's own layer*, while the horizon can only present itself coarse-grained because it is statistical by construction.
+
+That is a reasonable sentence. **It is not yet a derivation, and it is carrying the entire `2π`.** Anyone who prefers the symmetric comparison gets `cH₀` and this route dies.
+
+### Honest status
+
+The horizon half is grounded in a prior, independent scoping statement. The chain half is an argument sketch with a named ED-native structure — the layer-1/layer-2 seam — rather than the bare assertion §4 started with. That is real movement: the `2π` has gone from *a measure convention that provably cancels*, to *the coarse-graining seam crossed exactly once*. It has not become derived.
+
+**Two things that would settle it.** A construction showing that a chain's response to coarse-grained content is executed at layer 1 in general — which would be a result well beyond `a₀` and worth having on its own. Or a demonstration that the response must be evaluated at a common layer, which kills the route outright and lands `a₀`'s coefficient at **inherited**, permanently.
+
+**One check worth running.** If the `2π` is genuinely a layer-crossing factor, then every ED quantity comparing a bare chain rate to a horizon thermal state should carry exactly one, and quantities comparing like layers should carry none. That is a testable pattern across the corpus, and it has not been checked.
+
+**Do not bank this.** One criterion, one number, and a sentence doing the load-bearing work.
+
+---
+
 ## 5. Status and what to do next
 
 | Item | State |
 |---|---|
 | Mode-amplitude route (Staleness #10's named candidate) | **CLOSED — negative.** P04 additivity is across channels; the sum is not a density (§1) |
 | Rindler / de Sitter smoothness route | **OPEN — better.** Reproduces the number with a non-cancelling `2π` already derived in the corpus (§3) |
-| The `κ_a = T_H` matching condition | **The whole debt.** Unmotivated; the symmetric condition gives the wrong answer by `2π` (§4) |
+| The `κ_a = T_H` matching condition | **Advanced 2026-09-04, still the debt.** The horizon half is grounded (`Paper_028` §3.4: statistical, not geometric ⟹ no `b`-gradient ⟹ no `κ` available, only a state). The chain half is now a **layer argument** — the `2π` is the layer-1/layer-2 seam crossed exactly once — rather than a bare assertion. Not derived. See §4b |
 | `a₀ = cH₀/(2π)` "parameter-free" | **Still suspended** (Staleness #10) |
 | `a₀ ~ cH₀`, `a₀(z) = cH(z)/(2π)`, exponent 1 | **Unaffected throughout** |
 
