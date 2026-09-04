@@ -71,7 +71,7 @@ This paper supplies a substrate-level form-derivation via V5's finite bandwidth.
 | 4 | Schmidt decomposition form | I | Paper_064 (E-3). |
 | 5 | Entanglement measure saturates V5 budget for max-entangled | P-Measure-Saturation | Postulate, declared. |
 | 6 | Cross-chain correlation budget partitions across partners | D | Derived from steps 1–2: additivity of V5 contributions (P04 bandwidth-additivity). |
-| 7 | Sum of pair-entanglements ≤ chain-total entanglement | D (form) | Derived from steps 5–6. |
+| 7 | Sum of pair-entanglements $\leq W_{\max}$ (chain-local **constant**) | D (form) | Derived from steps 5–6. *Corrected 2026-09-04: previously read "≤ chain-total entanglement", which is the state-dependent CKW bound and does not follow.* |
 | 8 | CKW-form inequality $\sum_i \tau_{A i} \leq \tau_{A(\mathrm{rest})}$ | D (form) / I (measure-specific coefficient) | Form FORCED; coefficient inherited from measure choice. |
 | 9 | Maximally entangled $A$-$B$ implies $A$-$C$ unentangled | D | Derived from step 8 saturation. |
 | 10 | Numerical value of CKW gap | I — empirical | Inherited from measure literature. |
