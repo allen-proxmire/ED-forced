@@ -179,6 +179,63 @@ The constant cosmic term dominates everywhere in the regime `§7.1` describes, a
 
 ---
 
+## 11. Resolving `Σ₀` — `a₀` is a normalization, and it was used as a force
+
+*Added 2026-09-04, attacking Target #22. The resolution is a re-reading of `Paper_029`, not new physics.*
+
+### 11a. `Paper_029` derives two different objects, and `Paper_030` merged them
+
+§5.1 of `Paper_029` states the cosmic anisotropic content seen by an accelerating chain:
+
+$$\rho_{\mathrm{cosmic}}(\theta,\phi) = \rho_0\,\frac{|\vec a|}{c}\,\cos\theta + \mathcal{O}\!\left(\frac{|\vec a|}{c}\right)^{2}, \qquad \rho_0 = cH_0 .$$
+
+Two distinct things sit in that one line:
+
+| Object | What it is | Depends on `|a|`? |
+|---|---|---|
+| `ρ₀ = cH₀` | the **normalization** of the horizon content — the characteristic horizon-scale acceleration | **no** |
+| `(|a|/c)·cosθ` | the **response amplitude** — how much anisotropy this particular chain actually sees | **yes**, first order, zero at `a = 0` |
+
+`a₀ = cH₀/(2π)` is the *projected normalization*. It is **not** the response. And `Paper_029` says so in its own words in §4.4: `a₀` is *"the **transition acceleration** — the **threshold** between Newtonian and deep-MOND dynamics"*, whose role is set by *"the **ratio** of local-source-induced `a_N` to cosmic-anisotropy `a₀`"*. **A ratio is a comparison. A threshold is a scale. Neither is a force.**
+
+### 11b. The error, stated precisely
+
+`Paper_030` §3.2 writes `Σ₀(R) = -a₀R` and takes its gradient, `-dΣ₀/dR = a₀`, obtaining a **uniform background acceleration of magnitude `a₀` acting on every chain**. That is the normalization promoted to a field. `Paper_029` licenses no such thing: strip the response amplitude `(|a|/c)cosθ` and what remains is a *scale*, not a source.
+
+**This sharpens §3.2's existing flag rather than replacing it.** The flag says the step *"converts a response into a source"*, and that is right. §11a says which part got converted: not the response, but the response's **normalization**.
+
+### 11c. Why the banked negative failed, and why it is the same mistake
+
+Target #19 records a failed repair: restore `a₀ → k|a|`, and deep-MOND self-consistency gives `a² ∝ GMH₀|a|/R²`, hence `a ∝ GMH₀/R²` — Newtonian-like. **That is the same conflation from the other side.** It takes `a₀`, which is the *normalization*, and gives it the `|a|`-dependence that belongs to the *amplitude*. One error promotes a scale to a field; the other demotes it to an amplitude. Neither respects the split in §11a, and both break MOND.
+
+**So the banked negative is now explained rather than merely recorded**, which is the useful part: it was not a near-miss to be retried with better algebra.
+
+### 11d. The repair, and the cross-term survives — because `a₀R` is legitimate as *content* and illegitimate as *potential*
+
+Drop the standalone term. The profile becomes
+
+$$a(R) = a_N + \sqrt{a_N a_0},$$
+
+whose limits are both correct with **no regime switch needed**: `a → a_N` for `a_N ≫ a₀` (the cross-term falls off as `√(a₀/a_N)`), and `a → √(a_N a₀)` for `a_N ≪ a₀`. `Paper_030` §7.1's deep-MOND branch becomes correct and §10b's contradiction is gone.
+
+**The cross-term is not lost with the term it was built from, and the reason is precise.** §4.2 needs the per-channel horizon *content* `b_K^horizon = a₀R/N_horizon`. The expression `a₀R` is a content measure: at the horizon it evaluates to `a₀R_H = c²/(2π)`, a potential depth of order `c²`, which is what a horizon should have. **What is illegitimate is not the expression but one use of it** — taking `-d/dR` of it and calling the result a force on the chain. `Paper_030` used `a₀R` both ways; §4.2's use is licensed and §3.2's is not.
+
+### 11e. What this does and does not fix
+
+**Fixes:** the §10b contradiction; `Paper_030` §7.1's deep-MOND branch; the need for a physical switch to make the deep limit come out; and it explains the banked negative.
+
+**Does not fix — and this matters:** the resulting profile still saturates as `1 - μ ~ x^{-1/2}`, so at Saturn it still predicts `≈ 8.8×10⁻⁸ m/s²` against a `~10⁻¹⁴` bound. **Cassini still requires the screening of §10a and the envelope bound `n > 2.79` of §6.** Removing `Σ₀` fixes the deep end, not the near end. The two results are independent and both are needed.
+
+**Does not fix:** the `2π`. `a₀` is now correctly a normalization, and the factor is a coefficient *on* that normalization — exactly where Staleness #10 left it.
+
+### 11f. Tier, and what is owed
+
+**M2 — an internal-consistency resolution by re-reading, not a new derivation.** It removes a term that `Paper_029` never licensed, on the strength of `Paper_029` §4.4's own characterization of `a₀` as a threshold. No new postulate; census confirms the count did not move.
+
+**Owed:** `Paper_030` §3.2 needs rewriting rather than flagging — `Σ₀` should be presented as a **content normalization** feeding §4.2, with no gradient taken and no standalone term. That is an edit to a load-bearing derivation and is **not performed here**; it is recorded as the remaining work on Target #22. Until it is done the paper still displays a profile (§6.3) whose deep limit is wrong.
+
+---
+
 ## 8. What this owes
 
 - **The regime map is still asserted.** That the binding-boundary handover *coincides* with the Newtonian/deep-MOND dynamical change remains the natural reading and is still not shown. This note discharges the first debt of the threshold note's §6, not the second.
