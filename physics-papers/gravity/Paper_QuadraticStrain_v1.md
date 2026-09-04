@@ -178,7 +178,31 @@ a **dipole** ($l=1$, $\cos\theta$), proportional to the chain's own acceleration
 
 ### 6.2 Why Paper_030's $\Sigma_0=-a_0 R$ is inconsistent
 
+> ⚠ **REWRITTEN 2026-09-04 — the removal stands, but the *reason* below does not carry it, and the replacement reason is better.** See §6.2a. The dipole argument as originally stated was audited (`Gravity_TieredClaims_Ledger.md` Staleness #13) and found to force a dilemma: under P-Quadratic-Strain, $|P^L+P^H|^2 = b^L + b^H + 2\sqrt{b^Lb^H}\cos\Theta_{LH}$ is **one algebraic identity**, and the diagonal $b^H$ and the cross-term both follow from $P^H \neq 0$. Keeping one and deleting the other needs a principled asymmetry, and *“the horizon is a dipole”* does not supply one — worse, if $b^{(H)}$ literally carried $\propto|\vec a|\cos\theta$ it would be **sign-indefinite**, hence not a bandwidth under P04, and $\sqrt{b^Lb^H}$ would be imaginary over half the sphere, taking the *first* discharge down with it. The asymmetry the argument needs is supplied in §6.2a and is not about dipoles.
+
+*(Original argument, retained for the record:)*
+
 Paper_030 §3.2 forms a diagonal horizon potential by "integrating the constant cosmic-anisotropy acceleration $a_0$ along the radial direction," giving $\Sigma_0=-a_0 R$, an isotropic linear potential whose gradient is a constant radial $a_0$ everywhere. But Paper_029 derives $a_0$ as the magnitude of an anisotropic, acceleration-induced *dipole* ($\propto |\vec a|\cos\theta$), not as a constant isotropic acceleration. It exists only for an accelerating chain and only along its acceleration axis; there is no static, source-independent, isotropic field of strength $a_0$ from which a radial integration could build a potential $-a_0 R$. The horizon's effect is directional and acceleration-induced, which is precisely the off-diagonal (interference) structure, not a diagonal potential. Paper_030's $\Sigma_0$ is therefore inconsistent with Paper_029's own derivation of $a_0$, and it is precisely the term that then had to be suppressed by the regime assumption in Paper_030 §5.3.
+
+### 6.2a The asymmetry that actually licenses the removal: $L$ is a source, $H$ is a response
+
+*Added 2026-09-04, resolving Staleness #13. This is the argument `Paper_030` §3.2 was rewritten around the same day (Staleness #36/#37), imported here because it is what §6.2 needed.*
+
+`Paper_029` §5.1 gives the cosmic content as
+$$\rho_{\mathrm{cosmic}}(\theta,\phi)=\rho_0\,\frac{|\vec a|}{c}\,\cos\theta+\mathcal{O}\!\left(\frac{|\vec a|}{c}\right)^{2},\qquad \rho_0=cH_0,$$
+and the two factors are **separable**: $\rho_0=cH_0$ is the **normalization**, carrying no $|\vec a|$-dependence; $(|\vec a|/c)\cos\theta$ is the **response amplitude**, first order in the chain's own acceleration and vanishing for a non-accelerating chain. $a_0=cH_0/(2\pi)$ is the *projected normalization*, and `Paper_029` §4.4 calls it in its own words *“the **transition acceleration** — the **threshold**”*, whose role is set by *“the **ratio** of $a_N$ to $a_0$”*.
+
+**So the diagonal terms are not two of a kind.** $b^{(L)}$ sums to $-GM/R$, the potential of a **source**: mass is there whether or not the chain accelerates, and its gradient is a force. $b^{(H)}$ carries $a_0R$, the normalization of a **response** that exists *only because the chain accelerates*. Integrating a response's normalization along $R$ and calling the gradient a uniform background acceleration is a category error — it promotes a threshold scale to a field. **That is the asymmetry**, and it is physical rather than a dropped term: both terms exist in the identity; only one of them has a gradient that means anything.
+
+**What this buys over the dipole argument.**
+
+- **$b^{(H)}$ stays isotropic and non-negative**, so it is a legitimate P04 bandwidth and $\sqrt{b^{(L)}b^{(H)}}$ is real everywhere. The **first discharge is untouched** — branch (ii) of Staleness #13 is avoided entirely.
+- **$\cos\Theta_{LH}$ stays channel-independent**, so §5.1's factorization $\Phi_{\mathrm{cross}}=2\cos\Theta_{LH}\sum_K\sqrt{b^{(L)}_Kb^{(H)}_K}$ holds as written. *This is why the repair Staleness #13 floated — carrying the directionality in $\Theta_{LH}$ instead of $b^{(H)}$ — is **not** the route: a channel-dependent $\Theta_{LH}$ cannot be pulled out of the channel sum, and a $\cos\theta$ structure inside it would partially cancel against the isotropic $\sqrt{b^Lb^H}$. The dipole does not need to be carried downstream at all.*
+- **The angular structure is not lost; it is upstream.** The $\cos\theta$ dipole is how `Paper_029` *derives the scale*. What propagates into this paper is the projected normalization $a_0$, which is isotropic by construction. §6.1 remains correct about what `Paper_029` derives; what it does not license is reading that derivation as making $b^{(H)}$ itself anisotropic.
+
+**Net: the removal of $\Sigma_0$ stands, on a stronger footing, and both discharges survive.** Staleness #13's dilemma is dissolved rather than chosen between: the paper sits on branch (i) — isotropic $b^{(H)}$ — and branch (i)'s stated cost (that §6.2 loses its justification and a constant $a_0$ returns) is exactly what this subsection removes.
+
+---
 
 ### 6.3 Removing it: the transition becomes a ratio effect
 
@@ -190,6 +214,8 @@ The crossover is now automatic, by ratio:
 - **Transition at $a_N\sim a_0$.**
 
 No regime assumption is needed. Paper_030 §5.3's postulate that the cross-term dominates is now a derived consequence of the ratio structure, once the inconsistent diagonal $\Sigma_0$ is removed. This is the second discharge.
+
+> **Convergence note, 2026-09-04.** `Paper_030` §§3.2/5.3/6.3 were independently rewritten to this same two-term form on 2026-09-04 (Staleness #36/#37), reaching $a=a_N+\sqrt{a_Na_0}$ and dropping §5.3's regime assumption by the §6.2a route rather than the dipole route. **This paper had the result first** (2026-07-07/08); what the later work added is the justification in §6.2a and the removal of the inconsistency *between* the two papers, which had displayed different profiles for two months. Recorded so the later item is not read as having discovered the two-term law.
 
 ---
 
