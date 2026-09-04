@@ -176,6 +176,8 @@ $$
 
 The per-channel local-source content from Paper_027's holographic substrate-source resolution (rewritten for Paper_027 §4.3) is $b_K^{\mathrm{loc}}(R) \propto GM/(R \cdot N(R))$, which after coefficient assembly gives the Newtonian potential $\Sigma_N = -GM/R$ per-channel-resolved as $-GM/(R \cdot N(R))$. The per-channel horizon content is $b_K^{\mathrm{horizon}}(R) \propto a_0 R / N_{\mathrm{horizon}}$.
 
+> **FLAGGED 2026-09-04 (external audit) — the channel-count factors defined just above are absent below.** This subsection defines $b_K^{\mathrm{loc}} \propto GM/(R\,N(R))$ and $b_K^{\mathrm{horizon}} \propto a_0R/N_{\mathrm{horizon}}$, whose geometric mean is $\sqrt{GMa_0/(N(R)N_{\mathrm{horizon}})}$ — not the $\sqrt{GMa_0}$ displayed next. At 10 kpc, $N(R) = 4\pi R^2/\ell_P^2 \approx 4.6\times10^{111}$, so the dropped $1/\sqrt{N(R)}$ alone is $\sim10^{-56}$. The clause "conventions chosen consistent with" is carrying the whole cancellation. *A legitimate cancellation may exist — `Paper_026`/`027` show one working correctly, where $N(R)$ divides out because source content is distributed across channels — but it is not shown here, and until it is, $\sqrt{GMa_0}$ is conditional on an unshown normalization.* Recorded as `Gravity_TieredClaims_Ledger.md` Staleness #16; same defect class as #10.
+
 For substrate-level bandwidth conventions chosen consistent with Papers_027 and 029, the bilocal-channel strain content evaluates (per the cumulative-strain conventions) to:
 
 $$
