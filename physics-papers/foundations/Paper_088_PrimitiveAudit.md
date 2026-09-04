@@ -296,7 +296,9 @@ Total Wave-2 paper-specific postulates introduced beyond canonical 13: **~18** (
 
 **Postulate-count summary statement:**
 
-> **The framework operates with 13 universal primitives + ~18 paper-specific postulates = 31 total substrate-level commitments. The 13 are universal across the corpus; the ~18 are domain-specific commitments documented at point of introduction.**
+> **As of Wave-2, the framework operates with 13 universal primitives + ~18 Wave-2 paper-specific postulates = 31 substrate-level commitments *in that scope*. The 13 are universal across the corpus; the ~18 are domain-specific commitments documented at point of introduction.**
+
+> ⚠ **Scope correction (2026-09-04).** This box previously read *“The framework operates with … = **31 total** substrate-level commitments”*, dropping the **Wave-2** scope stated four lines above and restating a wave-scoped count as a framework-wide one. **It is not the corpus-wide figure.** A mechanical census of distinctly-named `P-*` postulates across `physics-papers/` on 2026-09-04 returns **51**, and that is a **floor** (it matches only bolded/backticked names and misses e.g. `P-Canonical-Operating-Point-ED-SC` in `Paper_096`), giving **13 + 51 = 64+**. `Paper_100` § already carries the accurate order of magnitude — *“22+ FORCED theorems and **60+** paper-specific postulates declared transparently”*. **The count is not in dispute and no tier moves; what was wrong was the scope word.** A single reconciled figure is still owed and is deliberately not invented here: the corpus's four stated numbers (this one, `Paper_087` §4.15's ~22/~35, `Paper_093`, `Paper_100`'s 60+) use different accounting bases, so the reconciled count needs a **stated basis** first. See `Foundations_TieredClaims_Ledger.md` staleness #3 and `gravity/Gravity_TieredClaims_Ledger.md` Staleness #33.**
 
 **Cross-reference recommendation:** Paper_087 §5.15 (added in round-5 QC) acknowledges the paper-specific postulate count with a cross-reference to this paper for the full inventory. Future paper-form versions of Paper_087's §5.15 should be maintained in sync with this paper's §4 inventory as the corpus grows.
 

@@ -330,7 +330,9 @@ The Wave-2 corpus introduces **paper-specific postulates** beyond the canonical 
 
 **The inventory is updated as new Wave-2 papers introduce new postulates.** Future paper-form versions of this section should be maintained as the corpus grows.
 
-**Open structural question (round-5 acknowledgment):** the canonical 13 + ~22 paper-specific postulates is a **postulate set of ~35 commitments**. Whether the substrate-level program can reduce postulate count (via derivability analyses) is the structural-refinement frontier. Currently the count grows as papers are written; whether it can decrease is the durability test of the framework.
+> ⚠ **Census note (2026-09-04).** The **~22 / ~35** figures below are a round-5 count and are now substantially **understated**. A mechanical census of distinctly-named `P-*` postulates across `physics-papers/` returns **51**, itself a floor (bolded/backticked names only; it misses e.g. `P-Canonical-Operating-Point-ED-SC` in `Paper_096`), so the set is **13 + 51 = 64+**, and `Paper_100` § already says **“60+ paper-specific postulates”**. **The open structural question stated here is unchanged and if anything sharper** — a larger declared postulate set is the honest position, not a weaker one, since every member is labelled at point of introduction. Two of them (`P-G-Closure`, `P-Bilocal-Count`) were named on 2026-09-04 itself. A reconciled figure is owed but needs a **stated accounting basis** — the corpus's four counts use different ones. See `Foundations_TieredClaims_Ledger.md` staleness #3.
+
+**Open structural question (round-5 acknowledgment):** the canonical 13 + ~22 paper-specific postulates is a **postulate set of ~35 commitments *(round-5 figure; **understated — see the 2026-09-04 census note below**)***. Whether the substrate-level program can reduce postulate count (via derivability analyses) is the structural-refinement frontier. Currently the count grows as papers are written; whether it can decrease is the durability test of the framework.
 
 ---
 
