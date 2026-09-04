@@ -323,7 +323,40 @@ Hubble-tension range $H_0 \in [67, 74]\,\mathrm{km/s/Mpc}$:
 
 Empirical MOND $a_0 \approx 1.2 \times 10^{-10}\,\mathrm{m/s^2}$. Substrate range $\approx [1.03, 1.14] \times 10^{-10}$. The ~10% gap is consistent with the joint $H_0$ + MOND-$a_0$ uncertainty. **This is the empirical wedge motivating the substrate-gravity arc.**
 
-> **Precision note (2026-09-04).** *“Consistent with the joint uncertainty”* is defensible but soft, and the shape of the gap is worth stating: the offset is **one-sided**. The $2\pi$ prediction sits **below** the canonical $a_0$ at **every** $H_0$ in the range, and closing it exactly requires either $a_0 \approx 1.08\times10^{-10}$ (at $H_0 = 70$) or $H_0 \approx 77.6$ — the latter above even the local distance-ladder value. A one-sided systematic offset is a weaker form of agreement than two-sided overlap. **This is not a claim that the gap is a real tension:** that depends on the current best $a_0$ determination and its *systematic* error budget, which is not asserted here. **Naming the check:** look up the current SPARC-class $a_0$ with separated random and systematic errors and state whether $1.08\times10^{-10}$ sits inside it. Until that is done, this row should read as *not excluded* rather than as *consistent*. See `Note_a0_TwoPi_RepairRoutes.md` §4e and `Gravity_TieredClaims_Ledger.md` Staleness #38.
+> **Precision note (2026-09-04).** *“Consistent with the joint uncertainty”* is defensible but soft, and the shape of the gap is worth stating: the offset is **one-sided**. The $2\pi$ prediction sits **below** the canonical $a_0$ at **every** $H_0$ in the range, and closing it exactly requires either $a_0 \approx 1.08\times10^{-10}$ (at $H_0 = 70$) or $H_0 \approx 77.6$ — the latter above even the local distance-ladder value. A one-sided systematic offset is a weaker form of agreement than two-sided overlap. **This is not a claim that the gap is a real tension:** that depends on the current best $a_0$ determination and its *systematic* error budget, which is not asserted here. **CHECK RUN 2026-09-04 — see §5.5 below.** The systematic has tightened by a factor of 2.7 since the figure this section was written against, and the `2\pi`'s standing has moved with it. See `Note_a0_TwoPi_RepairRoutes.md` §4e and `Gravity_TieredClaims_Ledger.md` Staleness #38–#39.
+
+---
+
+
+### 5.5 The check, run 2026-09-04: two determinations, and the $2\pi$ now prefers a high $H_0$
+
+§5.4 was written against the 2016 SPARC figure. A current lookup finds two determinations:
+
+| Source | $a_0$ ($10^{-10}\,\mathrm{m/s^2}$) | stat | sys | combined |
+|---|---|---|---|---|
+| McGaugh, Lelli & Schombert 2016 (SPARC RAR) | 1.20 | ±0.02 | ±0.24 | ±0.241 |
+| **Desmond 2023** (MNRAS 526, 3342; HMC joint inference on SPARC) | **1.19** | **±0.04** | **±0.09** | **±0.098** |
+
+**The systematic has tightened by 2.7×.** The 2016 ±0.24 was a 20% normalisation uncertainty from holding disk and bulge mass-to-light ratios fixed across the sample; Desmond's joint inference fits galaxy parameters simultaneously and reduces it to ±0.09.
+
+ED's $a_0 = cH_0/(2\pi)$ requires:
+
+| $H_0$ | required $a_0$ | vs 2016 ($\pm0.241$) | vs **Desmond 2023** ($\pm0.098$) |
+|---|---|---|---|
+| 67.4 (Planck) | 1.042 | 0.66$\sigma$ | **1.50$\sigma$** |
+| 70 | 1.082 | 0.49$\sigma$ | **1.09$\sigma$** |
+| 73 (SH0ES) | 1.129 | 0.30$\sigma$ | **0.62$\sigma$** |
+| 74 | 1.144 | 0.23$\sigma$ | **0.46$\sigma$** |
+
+**Two things follow, and the second is the substantive one.**
+
+**(1) §5.4's wording is now stale.** *“Consistent with the joint uncertainty”* was fair against ±0.24, where the offset was half a sigma. Against ±0.09 the honest reading is **not excluded, at roughly 1.1$\sigma$** — and the offset is one-sided, sitting below the measured $a_0$ at every $H_0$ in the range.
+
+**(2) $a_0 = cH_0/(2\pi)$ takes a side in the Hubble tension.** The relation is more comfortable with the **local distance-ladder** $H_0$ than with the **CMB** value: 0.62$\sigma$ at SH0ES against 1.50$\sigma$ at Planck. **This is not a prediction of $H_0$** — ED inherits $H_0$ and derives neither value (§8.1) — it is a **consistency constraint between two independently measured quantities**, and it is the sharpest empirical handle the $2\pi$ has.
+
+**Why the $a_0$ side of this is robust.** A fitted $a_0$ might be suspected of depending on the assumed interpolation family, which would blunt the test. It does not: $a_0$ is *defined* by the deep-MOND normalization and the asymptotes cross at $a_0$ for every $\mu$ family (`Note_a0_ThresholdFromHorizonCompetition.md` §5, checked numerically across three families). Desmond's inference marginalises over functional forms and returns a value consistent with the 2016 fixed-form fit, which is what that argument predicts.
+
+**Falsifier F-2π (new, and it sharpens on its own).** If $a_0$ tightens further while the CMB $H_0$ holds, the $2\pi$ is squeezed without anyone deriving or refuting it structurally: at $H_0 = 67.4$, a combined uncertainty of $\pm0.05$ would put the offset at $3\sigma$. Conversely a local-ladder $H_0$ with $a_0$ settling near 1.13 would confirm it below $1\sigma$. **The coefficient question may be settled by measurement before it is settled by derivation** — which, given that four structural routes have reached $cH_0$ and none has reached the coefficient, is worth stating as the live possibility it is.
 
 ---
 
