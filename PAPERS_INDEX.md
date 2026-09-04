@@ -121,6 +121,8 @@ Substrate-level derivations of Newton's law, a₀, ECR, BTFR slope-4, plus weak-
 | 037 | $a_0$ Cosmological-Rate Invariance | mond | WRITTEN | `Paper_037_a0_Invariance.md` |
 | 038 | Cosmological Implications (Substrate-Cosmology Decoupling) | cosmology | WRITTEN | `Paper_038_CosmologicalImplications.md` |
 | 038.5 | Cosmological Constant $\Lambda$ as V1 Cosmological-Scale Integral | cosmology | WRITTEN | `physics-papers/gravity/Paper_038_5_Lambda_V1_Cosmological.md` |
+**Prediction 1.16 (added 2026-09-04)** — : the Hubble constant measured from galaxy rotation curves, $H_0 = 2\pi a_0/c$. The inversion of $a_0 = cH_0/(2\pi)$; **no MOND analogue**. Conditional on the disputed $2\pi$, so a test of it and never support for it. Currently $77.0 \pm 6.3$ km/s/Mpc.
+
 | 038.6 | Weak-Lensing Activity Dependence | cosmology | WRITTEN (provisional prediction) | `physics-papers/gravity/Paper_038_6_Pred_WeakLensing_Activity.md` |
 
 **Research notes in `gravity/` (added to this index 2026-09-04 — none of the three was indexed before).** These are working notes, not papers: they carry open items, negatives and dated findings, and the arc ledger is authoritative over them.
