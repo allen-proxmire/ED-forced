@@ -92,13 +92,23 @@ $$W_A = \sum_i \int K_{V5}^{(A,B_i)}(r,r')\, dr' \leq W_{\max} \quad (\text{P-V5
 $$W_A = \sum_i W_{A, B_i} ,$$
 with each pairwise $W_{A,B_i}$ capping $\mathcal{E}_{A,B_i}$ via P-Measure-Saturation.
 
-### 3.3 The CKW-form inequality
+### 3.3 What the budget forces, and what it does not
 
-$$\sum_i \mathcal{E}_{A, B_i} \leq \mathcal{E}_{A, (B_1 \cup \cdots \cup B_n)} .$$
+*Rewritten 2026-09-04 after an audit. This subsection previously displayed the CKW inequality and labelled it “Form FORCED”. It does not follow from §§3.1–3.2; see the box below. §4's own FORM-FORCED line — “existence of finite budget partitioning” — was always the defensible version, and this subsection now matches it.*
 
-> **FLAGGED 2026-09-04 — this does not follow from §§3.1–3.2.** Those give `\sum_i \mathcal{E}_{A,B_i} \leq W_{\max}`, a bound by a **chain-local constant**; the line above bounds by the **state-dependent** $\mathcal{E}_{A,(B_1\cup\cdots\cup B_n)}$, which is strictly stronger whenever that quantity is below $W_{\max}$. The step needs $\mathcal{E}_{A,\mathrm{union}} = W_A$ generally, but **P-Measure-Saturation is stated only for the maximally-entangled limit**. Strengthening it recovers the step and yields an **equality**, leaving CKW's characteristic strict inequality — and with it the residual three-tangle — unaccounted for. §4's own FORM-FORCED line (*“existence of finite budget partitioning”*) is the defensible version and disagrees with the “Form FORCED” below. See `Entanglement_TieredClaims_Ledger.md`, addendum 2026-09-04.
+**The derived result** is a bound by a chain-local constant:
 
-Form FORCED. Functional choice of $\mathcal{E}$ determines tightness; numerical constant INHERITED.
+$$\boxed{\ \sum_i \mathcal{E}_{A, B_i} \;\leq\; W_{\max}\ }$$
+
+Total pairwise entanglement of one chain across all partners is capped by that chain's finite V5 correlation budget. **Form FORCED** by P-V5-Budget + I-V5 + P04 additivity; $W_{\max}$ **inherited**.
+
+> **Why this is not yet CKW.** The standard Coffman–Kundu–Wootters form is
+> $$\sum_i \mathcal{E}_{A, B_i} \;\leq\; \mathcal{E}_{A, (B_1 \cup \cdots \cup B_n)},$$
+> which bounds by a **state-dependent** quantity, not a constant, and is strictly stronger whenever $\mathcal{E}_{A,\mathrm{union}} < W_{\max}$. The two coincide only if the measure saturates the budget **generally** — for every pair *and* for the union — whereas **P-Measure-Saturation is stated only for the maximally-entangled limit** (§2). Under the postulate as written, a configuration with $\mathcal{E}_{A,B_1} = \mathcal{E}_{A,B_2} = 0.3\,W_{\max}$ and $\mathcal{E}_{A,\mathrm{union}} = 0.1\,W_{\max}$ satisfies the boxed result and violates CKW; nothing in §§3.1–3.2 excludes it.
+>
+> **And strengthening the postulate does not rescue the inequality — it collapses it.** With general saturation, $\sum_i \mathcal{E}_i = \mathcal{E}_{A,\mathrm{union}}$: an **equality**. CKW's physical content is the *strict* inequality, whose deficit is the residual three-tangle — the genuinely tripartite entanglement. A pure budget-additivity account gives equality and leaves the three-tangle nowhere to live.
+
+**Status of CKW here: consistent with the boxed result, not forced by it.** ED's budget cap is a *necessary* condition that CKW satisfies; obtaining CKW itself requires the measure to be **sub-additive** against the V5 budget, which no result in this arc supplies. That is recorded as an open item in §6.
 
 ### 3.4 Maximal exclusivity
 
