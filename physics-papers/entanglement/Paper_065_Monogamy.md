@@ -95,6 +95,9 @@ with each pairwise $W_{A,B_i}$ capping $\mathcal{E}_{A,B_i}$ via P-Measure-Satur
 ### 3.3 The CKW-form inequality
 
 $$\sum_i \mathcal{E}_{A, B_i} \leq \mathcal{E}_{A, (B_1 \cup \cdots \cup B_n)} .$$
+
+> **FLAGGED 2026-09-04 — this does not follow from §§3.1–3.2.** Those give `\sum_i \mathcal{E}_{A,B_i} \leq W_{\max}`, a bound by a **chain-local constant**; the line above bounds by the **state-dependent** $\mathcal{E}_{A,(B_1\cup\cdots\cup B_n)}$, which is strictly stronger whenever that quantity is below $W_{\max}$. The step needs $\mathcal{E}_{A,\mathrm{union}} = W_A$ generally, but **P-Measure-Saturation is stated only for the maximally-entangled limit**. Strengthening it recovers the step and yields an **equality**, leaving CKW's characteristic strict inequality — and with it the residual three-tangle — unaccounted for. §4's own FORM-FORCED line (*“existence of finite budget partitioning”*) is the defensible version and disagrees with the “Form FORCED” below. See `Entanglement_TieredClaims_Ledger.md`, addendum 2026-09-04.
+
 Form FORCED. Functional choice of $\mathcal{E}$ determines tightness; numerical constant INHERITED.
 
 ### 3.4 Maximal exclusivity
