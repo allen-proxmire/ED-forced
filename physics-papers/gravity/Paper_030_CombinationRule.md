@@ -120,7 +120,10 @@ $$
 
 This is the **coarse-grained potential associated with the dipole projection from Paper_029**, obtained by integrating the constant cosmic-anisotropy acceleration $a_0$ along the radial direction. The linear-in-$R$ form reflects that the cosmic-anisotropy contribution to the stability landscape grows linearly with the chain's radial position — the substrate-level integral of a constant acceleration over a radial path.
 
-> **FLAGGED 2026-09-04 — the step above converts a response into a source.** §3.2 obtains $\Sigma_0$ by integrating *"the **constant** cosmic-anisotropy acceleration $a_0$"* along the radial direction. But `Paper_029` §§3.3/5.1 make the horizon content **first order in the chain's own acceleration**, $ho_{m cosmic}(	heta) \propto ho_0(|ec a|/c)\cos	heta$, and identically **zero for a non-accelerating chain**. A quantity that exists only because the chain accelerates, and in proportion to how hard, is a **response**; integrating it as though it were a constant background field makes it a **source**. This is the origin of the $\Sigma_0$ problem that `Paper_QuadraticStrain_v1` §6 later tries to fix from the wrong end, and of the regime assumption in §5.3 that had to suppress it. *Recorded, not repaired: restoring the $|a|$ dependence naively breaks the deep-MOND scaling (`Gravity_TieredClaims_Ledger.md` Staleness #13). No tier change here; §5.3's regime assumption remains load-bearing and is now understood as the price of this step.*
+> **FLAGGED 2026-09-04 — the step above converts a response into a source.** §3.2 obtains $\Sigma_0$ by integrating *"the **constant** cosmic-anisotropy acceleration $a_0$"* along the radial direction. But `Paper_029` §§3.3/5.1 make the horizon content **first order in the chain's own acceleration**, $
+ho_{
+m cosmic}(	heta) \propto 
+ho_0(|ec a|/c)\cos	heta$, and identically **zero for a non-accelerating chain**. A quantity that exists only because the chain accelerates, and in proportion to how hard, is a **response**; integrating it as though it were a constant background field makes it a **source**. This is the origin of the $\Sigma_0$ problem that `Paper_QuadraticStrain_v1` §6 later tries to fix from the wrong end, and of the regime assumption in §5.3 that had to suppress it. *Recorded, not repaired: restoring the $|a|$ dependence naively breaks the deep-MOND scaling (`Gravity_TieredClaims_Ledger.md` Staleness #13). No tier change here; §5.3's regime assumption remains load-bearing and is now understood as the price of this step.*
 
 **Status of $\Sigma_0(R)$:** $\Sigma_0(R) = -a_0 R$ is *not* a separately-postulated stability-landscape function; it is the coarse-grained potential derived from Paper_029's dipole-projection mechanism via radial integration. The negative gradient $-d\Sigma_0/dR = a_0$ reproduces the cosmic-anisotropy acceleration scale of Paper_029. This is the standard substrate-to-coarse-grained correspondence: substrate-level dipole-projection content + radial coarse-graining = effective linear-in-$R$ potential along the chain's axis.
 
@@ -291,17 +294,27 @@ The prior round's draft included a "uniqueness" argument claiming that arithmeti
 
 This is the honest accounting of the structural status of the ECR within the ED Generative Primitives System.
 
-### 6.3 The "no interpolation function" claim
+### 6.3 What replaces the interpolation function, and what it does not
 
-Standard MOND uses a phenomenological interpolation function $\mu(x)$. ED derives the transition profile *structurally* via P14 + the substrate-level cumulative-strain reading. The transition profile is determined by:
+*Reworded 2026-09-04. This subsection previously ran under the heading "The 'no interpolation function' claim" and asserted that ED derives the transition profile structurally. That overstated what is here; see the note at the end of this subsection and `Gravity_TieredClaims_Ledger.md` Staleness #15.*
+
+Standard MOND uses a phenomenological interpolation function $\mu(x)$ with a fitted $a_0$. ED replaces the *fit* but not the *function*: what the substrate supplies is a derived deep-MOND asymptote together with a **regime switch that this paper assumes rather than derives** (§7.1: P14 inactive in the Newtonian regime). Within the joint weak-gradient regime the profile is:
 
 $$
 a(R) = a_N + a_0 + \frac{\sqrt{GMa_0}}{R}.
 $$
 
-In Newtonian regime ($a_N \gg a_0$): $a \approx a_N$. In deep-MOND regime ($a_N \ll a_0$, joint weak-gradient applies): $a \approx \sqrt{a_N a_0}$.
+In Newtonian regime ($a_N \gg a_0$): $a \approx a_N$ — **but only because P14 is switched off there** (§7.1), not because the expression above tends to $a_N$. In deep-MOND regime ($a_N \ll a_0$, joint weak-gradient applies): $a \approx \sqrt{a_N a_0}$.
 
-The transition profile is structurally fixed (no fit parameter) but may differ from specific MOND interpolation functions $\mu(x)$. Galaxy-by-galaxy comparison is empirical-test program.
+**What this profile is, stated precisely** *(added 2026-09-04)*. Written as an interpolation function it is closed-form. With $s \equiv \sqrt{a_N/a_0}$,
+
+$$\frac{a}{a_0} = s^2 + s + 1, \qquad \mu \equiv \frac{a_N}{a} = \frac{s^2}{s^2+s+1},$$
+
+so it saturates as $1-\mu \approx s^{-1} = \sqrt{a_0/a_N}$, i.e. **$x^{-1/2}$** — far slower than the simple ($x^{-1}$) or standard ($x^{-2}$) families.
+
+**It cannot be run outside the joint weak-gradient regime.** The $\sqrt{a_N a_0}$ term is a $1/R$ force of magnitude $\sqrt{GMa_0}$, which is *not* degenerate with a rescaling of $GM_\odot$. Left active at solar-system accelerations it predicts $\approx 8.9\times10^{-8}\,\mathrm{m/s^2}$ of anomalous acceleration at Saturn against a Cassini-class bound near $10^{-14}$ — excluded by roughly seven orders. `Paper_KM-I` preamble item 5 states the criterion independently: the interpolation is a Cassini-constrained family, with **slow-saturating members excluded by ephemerides**. The profile above is such a member.
+
+**So the honest claim is narrower than "no interpolation function."** ED supplies a *derived deep-MOND asymptote* plus an *assumed regime switch*; a piecewise profile with an assumed switch is an interpolation function, minus the smoothness and minus the fit. The fit parameter is genuinely gone — $a_0$ is form-derived upstream, subject to `Gravity_TieredClaims_Ledger.md` Staleness #10 on its coefficient — and that is a real economy. The *transition* is not derived here. Deriving the switch is open research (target #19); the horizon-competition mechanism in `Note_a0_ThresholdFromHorizonCompetition.md` §3 is the current candidate, and would supply exactly the P14 on/off that §7.1 assumes. Galaxy-by-galaxy comparison remains empirical-test program.
 
 ---
 
@@ -315,9 +328,15 @@ The transition profile is structurally fixed (no fit parameter) but may differ f
 
 **Deep-MOND regime ($a_N \ll a_0$, $R \gg R_{\mathrm{transition}}$):** $a \approx \sqrt{a_N \cdot a_0}$. Joint weak-gradient still applies; bilocal cross-term dominates over both pure-source terms. P14 active; ECR is the dominant approximation.
 
-### 7.2 Smooth, parameter-free crossover
+### 7.2 Parameter-free, but switched rather than smooth
 
-The transition is **smooth** and **parameter-free** given P14 + upstream results ($G$, $a_0$ from Papers_027, 029).
+*Reworded 2026-09-04; this subsection previously read "Smooth, parameter-free crossover" and called the transition **smooth**. It is not.*
+
+The transition is **parameter-free** given P14 + upstream results ($G$, $a_0$ from Papers_027, 029): no interpolation parameter is fitted, and that economy is real.
+
+It is **not smooth**. §7.1 above has three regimes with **P14 toggled on and off at the boundaries** — "P14 inactive" in the Newtonian regime, active in the other two — and that toggle is the §5.3 regime assumption, not a derived condition. Within each regime the profile is smooth; across the boundaries the mechanism switches.
+
+The switch is load-bearing and cannot be removed. If P14 were active in the Newtonian regime the crossover *would* be smooth, and the $\sqrt{a_N a_0}$ term would then be present at solar-system accelerations, where it is excluded by ephemerides by roughly seven orders (§6.3). **Smooth and viable are exclusive here.** Supplying a derived reason for the switch is open research (target #19); see `Gravity_TieredClaims_Ledger.md` Staleness #15.
 
 ### 7.3 Comparison to MOND interpolation functions
 

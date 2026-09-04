@@ -105,6 +105,34 @@ This matters for:
 
 ---
 
+## 2.5 Load-Bearing Step Audit
+
+*Added 2026-09-04. This paper was drafted without an audit table, which the paper-writing checklist §1 requires; its absence is why the §5.1 normalization went unlabelled for four months. Labels per `Paper_095` §2.3: **P** postulate / definition / normalization choice · **A** analogy, regime or position · **I** inherited or standard textbook · **D** derived · **D-via-I** derived by composing inherited results.*
+
+| # | Step | Tier | Basis |
+|---|---|---|---|
+| 1 | 13 primitives postulated | **P** | `Paper_087` |
+| 2 | Cosmic decoupling surface at $R_H = c/H_0$ | **D-via-I** | `Paper_028` §3.2: kernel propagation at $c$ against Hubble recession $H_0R$; equality fixes $R_H$. $H_0$ inherited |
+| 3 | That surface is **statistical, not geometric** | **P** | `Paper_028` §3.4/§7 — an ontological commitment. Load-bearing beyond this paper: a statistical boundary has no $b$-gradient, hence no $\kappa$, hence its only characterisation is a state (`Note_a0_TwoPi_RepairRoutes.md` §4b) |
+| 4 | An accelerating chain's adjacency is uniaxial; residual $SO(2)$ about $\hat z$ plus $\mathbb{Z}_2$ asymmetry | **D** | §§3.3/4.1 from P02/P03/P05 plus the acceleration axis |
+| 5 | Cosmic content is seen as anisotropic at first order, $\rho_{\mathrm{cosmic}} = \rho_0(\lvert\vec a\rvert/c)\cos\theta$ | **A** | §5.1's own framing: *"the substrate analog of the kinematic dipole / Unruh-like asymmetry."* An analogy to the relativistic kinematic dipole, not derived from the primitives. **Flagged: the checklist forbids A rows outside verdict framing.** Also the origin of research target #19 — a response first-order in $\lvert a\rvert$ cannot by itself produce a threshold |
+| 6 | $\rho_0 = cH_0$ in substrate units | **P** | §5.1, *"after dimensional bookkeeping"* — a normalization choice |
+| 7 | The dipole ($l=1$) is the leading anisotropic mode | **D** | §4.2: $\mathbb{Z}_2$ removes even $l$; higher odd $l$ are higher order in $\lvert a\rvert/c$ in the non-relativistic regime |
+| 8 | The azimuthal-Fourier normalization contributes a surviving $1/(2\pi)$ | **DISPUTED** *(was D)* | §5.1 and `Paper_028` §6.3–6.4 both evaluate $\int_0^{2\pi}\!d\phi/(2\pi) = 1$; the factor **cancels** in the papers' own displayed algebra and is reinstated in prose. `Gravity_TieredClaims_Ledger.md` **Staleness #10** |
+| 9 | Polar integral $\int_0^\pi \sin\theta\cos^2\theta\,d\theta = 2/3$ | **I** | Standard calculus |
+| 10 | $\mathcal{N}_{\mathrm{substrate}}\,\mathcal{G}_\phi^{-1} = (2/3)(\lvert\vec a\rvert/c)^{-1}$ | **P** | §5.1's own words: *"a substrate-level normalization choice."* Set to the value that returns the result, absorbing the $2/3$ and $\mathcal{G}_\phi$. **Nothing upstream fixes it** — `Paper_027` and `Paper_028` both defer forward to this section (traced 2026-09-04) |
+| 11 | $a_0 = cH_0/(2\pi)$ | **Postulated / disputed** *(was D form-forced)* | Conditional on rows 8 and 10, both of which fail to carry it. See Staleness #10 |
+| 12 | $a_0 \sim cH_0$ — the **scale**, without the coefficient | **D** | Reached independently two further ways: horizon-competition (`Note_a0_ThresholdFromHorizonCompetition.md` §3) and symmetric thermal matching (`Note_a0_TwoPi_RepairRoutes.md` §3). **Three routes to the scale; none to the coefficient** |
+| 13 | Numerical $a_0 \approx 1.08\times10^{-10}\,\mathrm{m/s^2}$ | **I** | $H_0$ and $c$ measured; value-layer |
+| 14 | $a_0(z) = cH(z)/(2\pi)$, exponent forced to exactly 1 | **D** | Follows from $a_0$ riding the live horizon, **independent of the coefficient dispute**. The arc's sharpest live prediction; unaffected by rows 8–11 |
+| 15 | Verdict | **A→position** | **M3**, form-derived / value-inherited — with the *form* now split: the scale $\sim cH_0$ is derived (row 12), the coefficient $1/(2\pi)$ is not (row 11) |
+
+**No unlabelled steps.** Two rows require comment rather than silence. **Row 5 is an A** where the checklist permits none outside verdict framing; it is the kinematic-dipole analogy, and it is load-bearing. **Row 10 is a P** that was previously unlabelled and read as part of a derivation; labelling it is what the checklist exists to force, and doing so four months earlier would have surfaced Staleness #10 at drafting time.
+
+**Reading the table.** Rows 1–7, 9, 12, 13 and 14 stand. The paper's headline — that the MOND acceleration scale is set by the cosmic horizon — rests on rows 2, 4, 7 and 12 and is **unaffected**. What is suspended is the coefficient, rows 8/10/11, and with it the "no free parameter" claim of §5.3.
+
+---
+
 ## 3. The Cosmic Decoupling Surface as Substrate Boundary
 
 ### 3.1 Definition
@@ -265,6 +293,8 @@ Any other geometric factor would correspond to either:
 Therefore $1/(2\pi)$ is structurally forced. Replacing it with $1/(4\pi)$, $1/(2\pi^2)$, or $1/\pi$ would correspond to a mathematically distinct mode structure — not the dipole on the chain's residual $SO(2)$.
 
 ### 5.3 What this means for falsifiability
+
+*Read §2.5 rows 8, 10 and 11 before this subsection: as of 2026-09-04 the $2\pi$ is **disputed**, and the "no free parameter" claim below does not currently hold. The scale $a_0 \sim cH_0$ (row 12) and the evolution $a_0(z)$ (row 14) are unaffected.*
 
 If the $2\pi$ factor were phenomenological, the substrate prediction would be a fit. It is not. The substrate prediction is $a_0 = cH_0/(2\pi)$ with:
 
