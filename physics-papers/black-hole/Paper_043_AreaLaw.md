@@ -6,6 +6,14 @@
 
 ---
 
+> **SUPERSEDED ON THE COEFFICIENT — banner added 2026-09-04.** This paper places the Bekenstein–Hawking coefficient in a **per-cell multiplicity**, `S = N·log g`, and tiers it INHERITED. **That reading is superseded**, and `Paper_HorizonTilingThreeCounts` §4 says so directly: *"the earlier 'coefficient inherited' reading (Paper_043) is superseded — the coefficient is derived, and it lives in the thermal route, not the tiling."*
+>
+> The standing account splits the two cleanly. The **tiling** — `A/ℓ_P²`, near **one** bit per Planck cell — is confirmed by three independent counts (holographic, dynamical frozen-state, straddling-edge). The **`1/4`** is the *thermal factor*, derived in `Paper_BH_Thermal2Pi_EntropyCoefficient` from `κ = 1/(2r_s)` plus the near-horizon Rindler `2π`, integrated through the first law. Neither double-counts the other.
+>
+> **Why the banner matters rather than being bookkeeping.** Read as current, this paper's framing is not merely dated, it is *inconsistent*: `S = N·log g` with `N = A/ℓ_P²` requires `log g = 1/4`, i.e. `g ≈ 1.28`, which violates this paper's own **P-Multiplicity-g** floor of `g ≥ 2` — and at that floor the horizon entropy comes out `2.77×` Bekenstein. That contradiction is an artifact of the superseded placement, and it dissolves once the `1/4` is moved to the thermal route: the three counts land near **1**, not near `1/4`, which is precisely the argument that the coefficient was never in the count. *Found 2026-09-04 while auditing the count; recorded as `BlackHole_TieredClaims_Ledger.md` addendum and `gravity/Gravity_TieredClaims_Ledger.md` Staleness #18.*
+>
+> **What still stands here:** the area-law *form* — `S ∝ A/ℓ_P²`, FORM-FORCED from the holographic count plus the horizon-as-decoupling-surface plus von Neumann entropy — which is this paper's actual result and is untouched.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim a derivation of the Bekenstein–Hawking coefficient $1/4$ (in Planck units) from first principles; the area-coefficient $\log g$ is INHERITED via the multiplicity-count $g$ inheriting from standard quantum-statistical-mechanics matching.
