@@ -51,6 +51,7 @@ This paper supplies the substrate audit: the area-law form is FORM-FORCED in ED 
 ### 2.3 Paper-specific postulates
 
 - **P-Horizon-Participation:** The substrate-level participation count at a black-hole horizon equals the holographic bound $N = A/(4\pi \ell_P^2)$ to leading order, where $A$ is the horizon area.
+  > **FLAGGED 2026-09-04 — this paper states the count two ways.** §1 cites `Paper_025`'s $N = 4\pi R^2/\ell_{\mathrm{ED}}^2 = A/\ell_{\mathrm{ED}}^2$, audit row 3 records $A/\ell_P^2$ "up to constants", and the line above gives $A/(4\pi\ell_P^2)$ — a factor of $4\pi$ apart. **It decides whether the arc is consistent with Bekenstein–Hawking.** With $S = N\log g$ (row 6): under $A/\ell^2$ the match needs $\log g = 1/4$, i.e. $g \approx 1.28$, which **violates P-Multiplicity-$g$'s own $g \geq 2$** and at the minimum $g=2$ over-produces entropy by $2.77\times$; under $A/(4\pi\ell^2)$ it needs $\log g = \pi$, $g \approx 23.1$, which is admissible. See `BlackHole_TieredClaims_Ledger.md`, addendum 2026-09-04, and `gravity/Gravity_TieredClaims_Ledger.md` Staleness #18. *This paper's area-law* form *and its honest "coefficient INHERITED" framing are unaffected; what is affected is whether the inheritance is available at all given the $g \geq 2$ floor.*
 - **P-Multiplicity-$g$:** Each substrate Planck-cell at the horizon supports $g \geq 2$ distinguishable rule-type configurations, contributing $\log g$ to the per-cell entropy.
 
 ---
