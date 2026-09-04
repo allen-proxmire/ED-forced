@@ -96,3 +96,20 @@ The question is where *"ED's phase is a scalar"* comes from. The section cites `
 **The repair is available and would strengthen the claim rather than weaken it.** Argue from the primitives why the phase must act as a **scalar** — uniformly on all amplitudes at a locus — rather than as an operator that could act channel-dependently. P03 (spatial homogeneity / no preferred channel) and P07 (channel distinguishability) are the natural candidates: if the phase were an operator it could mix channels, which P07's intrinsic-identity commitment arguably forbids. **Not attempted here.** If it works, the ℝ-exclusion becomes grounded in primitives and the selection is genuinely a selection. **Recommended minimum, pending that:** §5's ℝ-bullet should name its premise the way its ℍ-bullet does — one clause, and it removes the asymmetry.
 
 *No tier changed; both papers sit at account tier. Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #21.*
+
+### Repair attempted, same day
+
+**P03/P07 do not deliver it, and the reason is worth recording so nobody retries.** The scalar-versus-operator distinction is *not* about channel mixing. Real-Hilbert QM's complex structure `J` acts **within** each channel's two-real-dimensional amplitude space; it never mixes distinct channels. So P07's intrinsic-identity commitment is simply not engaged — it forbids something the operator route does not do. And P03's translation-invariance requires only that `J` be the same at every locus, which is trivially satisfiable. **Neither primitive touches the question.**
+
+**A different argument does work, and it is grounded rather than notational.** The discriminator is not *where the phase lives* but **whether relative phase is continuously observable**, and ED's own results settle that:
+
+1. **P09** gives each channel a *continuous* `U(1)` phase `π_K`.
+2. **The corpus makes relative phase observable, continuously.** `Paper_QuadraticStrain_v1` §3.2 carries `2√(b^{(a)}b^{(b)})·cosΘ_{ab}`, and `Paper_005.5` §3.3 the double-slit `ρ = b_A + b_B + 2√(b_A b_B)·cosΔπ`. The cross-term's dependence on `Θ` is **continuous**, not two-valued.
+3. **A real amplitude space cannot do that.** Superposing real amplitudes gives `(x_A + x_B)² = x_A² + x_B² + 2x_Ax_B`: there *is* a cross term, but its sign is all the freedom there is. Continuous `cosΘ` dependence requires each channel's amplitude space to be **at least two real dimensions carrying a rotation action** — that is a complex structure `J`.
+4. **And a `J` commuting with all observables is ℂ** (Stueckelberg). So the effective field is complex.
+
+**Therefore `K ≠ ℝ`, on ED's declared structure rather than on how `Paper_001` writes its carrier.**
+
+**Status, stated at the tier it earns.** This remains **account-tier**: it is conditional on the interference results of step 2, which rest on P-Quadratic-Strain and the Born-rule reading, not on the canonical thirteen alone. What it *does* fix is the circularity: the ℝ-exclusion no longer rests on `Paper_001` having written `e^{iπ}` — it rests on ED's phase being **continuously observable through interference**, which is a corpus result with its own tier and its own falsifier. **It is also now empirically anchored:** were ED's interference sign-only rather than continuous in `Θ`, ℝ would be admissible. That is a statement about the world, which the notational version was not.
+
+*Recommended and not applied: fold the four steps into §5's ℝ-bullet, replacing the appeal to `Paper_001`'s carrier form. It rewrites a headline argument.*
