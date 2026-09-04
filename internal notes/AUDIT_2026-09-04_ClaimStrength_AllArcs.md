@@ -24,7 +24,7 @@
 | relativistic-qm | #31 | **Clean. No finding.** |
 | state-reduction | #32 | One stale self-flag — fixed |
 | readings / OtherTheories | 2026-09-03 pointer sweep | Stale staleness note found and fixed; no F2 claim-strength pass |
-| foundations | #33 | Stated postulate count roughly half the measured one |
+| foundations | #33 | Stated postulate count a fifth of the measured one (31 stated, 186 measured) |
 
 ---
 
@@ -74,9 +74,11 @@ The only one of the day. `c_T = c` was **D-structural** in the gravity ledger an
 
 ### The constitutional finding
 
-`Paper_088` states, in a box: *"The framework operates with 13 universal primitives + ~18 paper-specific postulates = **31 total** substrate-level commitments."* The line four above it correctly scopes that count to **Wave-2**; the box drops the scope. A mechanical census returns **51** distinctly-named `P-*` postulates, itself a floor — so **13 + 51 = 64+**. `Paper_100`, the program overview, already says **"60+"** and is the accurate one.
+`Paper_088` states, in a box: *"The framework operates with 13 universal primitives + ~18 paper-specific postulates = **31 total** substrate-level commitments."* The line four above it correctly scopes that count to **Wave-2**; the box drops the scope. A mechanical census (`internal notes/_census_postulates.py`) returns **173** distinctly-named `P-*` postulates, so the set is **13 + 173 = 186**. **No figure stated in the corpus is close.** `Paper_100`'s **"60+"** is the least wrong and is still about a third of the measured load.
 
-**The overview is honest and the constitution is stale, which is backwards**, because a reader auditing ED for parsimony goes to 087/088. And this programme made it worse: it named **two** new postulates (`P-G-Closure`, `P-Bilocal-Count`) with no path back to the arc that counts them (#33).
+> ⚠ **This paragraph first said 51.** That number came from a hand-typed grep matching only bolded or backticked names, and it missed every postulate cited in plain prose — an understatement of 3.4×, committed *in the note documenting an understated count*. It was caught within the hour by the first run of the script written to prevent exactly this. **The strongest argument for the script is that its first act was to correct its author.**
+
+**The overview is the least wrong and the constitutional papers are furthest off, which is backwards**, because a reader auditing ED for parsimony goes to 087/088. And this programme made it worse: it named **two** new postulates (`P-G-Closure`, `P-Bilocal-Count`) with no path back to the arc that counts them (#33).
 
 ---
 
@@ -131,8 +133,20 @@ The **horizon-competition threshold for `a₀`** (#14, research target #19). `Pa
 | The factor of 4 — multiplicity bound vs Bekenstein | #18 |
 | `Paper_066` — the third lock | #23 |
 | `Paper_038.5` — the elimination leaves an interval | #24 |
-| A reconciled postulate count **with a stated accounting basis** | #33; `Foundations` staleness #3 |
+| A reconciled postulate count — **the mechanism is done** (`internal notes/_census_postulates.py`); what is open is the judgment: are all 173 load-bearing, or is some subset local modelling choices? | #33; `Foundations` staleness #3; targets #20 |
 | ξ = 1.7575 and the `0.6` exponent re-anchored to a paper, not a memory file | `Foundations` staleness #4 |
+
+---
+
+## The one standing check this produced
+
+`internal notes/_census_postulates.py` counts ED's declared postulate load across `physics-papers/`, declares its basis, lists every name with its sources, merges obvious spelling variants, and **exits nonzero when the count moves from its recorded baseline**. Run it after any session that names a postulate:
+
+```bash
+python "internal notes/_census_postulates.py" --list
+```
+
+Everything else this session produced is a checklist item, which only fires if someone reads the checklist. This one fires on its own. It was written because the audit's central finding was a number going stale, and it earned its place on the first run by catching a number that had gone stale within the hour.
 
 ---
 
