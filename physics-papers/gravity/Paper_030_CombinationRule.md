@@ -176,15 +176,39 @@ $$
 
 The per-channel local-source content from Paper_027's holographic substrate-source resolution (rewritten for Paper_027 §4.3) is $b_K^{\mathrm{loc}}(R) \propto GM/(R \cdot N(R))$, which after coefficient assembly gives the Newtonian potential $\Sigma_N = -GM/R$ per-channel-resolved as $-GM/(R \cdot N(R))$. The per-channel horizon content is $b_K^{\mathrm{horizon}}(R) \propto a_0 R / N_{\mathrm{horizon}}$.
 
-> **FLAGGED 2026-09-04 (external audit) — the channel-count factors defined just above are absent below.** This subsection defines $b_K^{\mathrm{loc}} \propto GM/(R\,N(R))$ and $b_K^{\mathrm{horizon}} \propto a_0R/N_{\mathrm{horizon}}$, whose geometric mean is $\sqrt{GMa_0/(N(R)N_{\mathrm{horizon}})}$ — not the $\sqrt{GMa_0}$ displayed next. At 10 kpc, $N(R) = 4\pi R^2/\ell_P^2 \approx 4.6\times10^{111}$, so the dropped $1/\sqrt{N(R)}$ alone is $\sim10^{-56}$. The clause "conventions chosen consistent with" is carrying the whole cancellation. **SETTLED 2026-09-04:** the cancellation is real and is `Paper_027` §4.4's. Summing the cross-term over bilocal channels gives $N_{\mathrm{bilocal}}\sqrt{(b_L/N)(b_H/N_h)} = \sqrt{b_Lb_H}\cdot N_{\mathrm{bilocal}}/\sqrt{N N_h}$, so $\sqrt{GMa_0}$ is exact **iff** $N_{\mathrm{bilocal}} = \sqrt{N\,N_{\mathrm{horizon}}}$, which holds when each of the $N(R)$ channels through $\Sigma_R$ carries both local and horizon content. **The assumption the clause conceals is therefore $N_{\mathrm{horizon}} = N(R)$** — and $N_{\mathrm{horizon}}$ is introduced in §4.1 without ever being assigned a value. Were it $N(R_H)$ instead, the residual $\sqrt{N(R)/N(R_H)} = R/R_H \approx 2.3\times10^{-6}$ at 10 kpc would destroy the deep-MOND result. The identification is defensible — horizon content reaching the chain crosses the same enclosing 2-surface — but it is an assumption. **This subsection should carry the explicit cancellation the way `Paper_027` §4.4 does, and should label $N_{\mathrm{horizon}} = N(R)$ as a condition.** No tier change to $\sqrt{a_Na_0}$; it gains one named conditioning. `Gravity_TieredClaims_Ledger.md` Staleness #16.
+*(A flag recorded here on 2026-09-04 has been discharged by the rewrite below.)*
 
-For substrate-level bandwidth conventions chosen consistent with Papers_027 and 029, the bilocal-channel strain content evaluates (per the cumulative-strain conventions) to:
+**The channel-count factors cancel, and the condition under which they do.** *(Rewritten 2026-09-04. This step previously read “for substrate-level bandwidth conventions chosen consistent with Papers_027 and 029” and passed directly to the result, dropping both count factors without display. An external audit flagged it; the cancellation is real, and it is `Paper_027` §4.4's, but it requires an identification that was never stated. Both are now shown. See `Gravity_TieredClaims_Ledger.md` Staleness #16.)*
+
+Summing the bilocal cross-term over the $N_{\mathrm{bilocal}}$ channels that carry it:
+
+$$
+\Sigma^{\mathrm{bilocal}} = N_{\mathrm{bilocal}}\,\sqrt{b_K^{\mathrm{loc}}\,b_K^{\mathrm{horizon}}}
+= N_{\mathrm{bilocal}}\,\sqrt{\frac{GM}{R\,N(R)}\cdot\frac{a_0R}{N_{\mathrm{horizon}}}}
+= \sqrt{GMa_0}\;\cdot\;\frac{N_{\mathrm{bilocal}}}{\sqrt{N(R)\,N_{\mathrm{horizon}}}} .
+$$
+
+This is the same accounting as `Paper_027` §4.4 — content distributed across channels, then summed over them — with one difference: the cross-term is **quadratic in amplitude**, so each factor contributes a $1/\sqrt{N}$ rather than a $1/N$, and the cancellation needs the counts to compose accordingly.
+
+> **P-Bilocal-Count (labelled condition, named here for the first time).** *The bilocal channels are the same channels through $\Sigma_R$, each carrying both local-source and horizon content:*
+> $$N_{\mathrm{bilocal}} = N_{\mathrm{horizon}} = N(R) = \frac{4\pi R^2}{\ell_{\mathrm{ED}}^2}.$$
+> *Justification: horizon content reaching the chain must cross the same enclosing 2-surface that local-source content crosses (P-Codim-1), and P03 translation-invariance gives no channel through $\Sigma_R$ a preferred role in carrying one source rather than the other. This is a* **P** *— defensible, not derived.*
+
+Under P-Bilocal-Count the ratio is unity, $N_{\mathrm{bilocal}}/\sqrt{N(R)N_{\mathrm{horizon}}} = N(R)/N(R) = 1$, and
 
 $$
 \sigma_{\mathrm{ch}}^{\mathrm{bilocal}}(R) \propto \sqrt{\frac{GM}{R} \cdot a_0 R} = \sqrt{GMa_0}.
 $$
 
 The bilocal strain per channel is **independent of $R$** — it depends only on the two source scales.
+
+**Why the condition is load-bearing, and what breaks without it.** $N_{\mathrm{horizon}}$ is introduced in §4.1 as “channels connecting chain to dipole-projected cosmic horizon” and is assigned no value there or anywhere else in the arc. If it were instead the channel count on the cosmic surface, $N(R_H) = 4\pi R_H^2/\ell_{\mathrm{ED}}^2$, the surviving factor would be
+
+$$
+\frac{N(R)}{\sqrt{N(R)\,N(R_H)}} = \sqrt{\frac{N(R)}{N(R_H)}} = \frac{R}{R_H} \approx 2.3\times10^{-6}\ \text{at } R = 10\ \mathrm{kpc},
+$$
+
+which would suppress the cross-term far below the Newtonian term everywhere in a galaxy and destroy the deep-MOND result. **The choice between the two readings decides the arc**, so it is stated as a condition rather than absorbed into a convention. Falsifier **F-BC:** a substrate-level demonstration that horizon content is resolved across $\Sigma_{R_H}$ rather than $\Sigma_R$ refutes the ECR.
 
 ### 4.3 Number of bilocal channels
 
