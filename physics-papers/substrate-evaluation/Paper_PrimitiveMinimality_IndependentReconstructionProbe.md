@@ -102,15 +102,20 @@ ED does not assume it. `Paper_026`/`Paper_027` distribute the source's content a
 
 Both runs had P06 and P08 and neither found the counting argument. That is evidence the argument is non-obvious, not that the primitives are idle. The same holds for `G`: Run E quoted `ℓ_ED ≈ 1.616 × 10⁻³⁵ m`, used it only for the continuum limit, and produced `G_eff = ακg₀/4π` — a product of three undetermined constants, no content. ED's dimensional closure to one postulated scale was not reached from having the scale available.
 
-### 5.3 The fork: both runs take the branch ED rejects
+### 5.3 The fork: both runs skip the null-cone step (corrected 2026-09-04)
 
 **Run D:** `ν_clock = κB`, labelled **P**. **Run E:** `ν(r) = κ·B(r)`, labelled **D**. Two families, linear in bandwidth, no hesitation.
 
-**ED has `ν ∝ √b`.** `Paper_GR-I` puts the commitment front on the null cone of `ds² = −N²dt² + b⁻¹dx²`, forcing `N² ~ b` given P-Commitment-Linear, so `dτ/dt = N = √b` and `g₀₀ ~ −b`. That is what yields `g₀₀ g_rr ~ −1` — the Schwarzschild relation, the Einstein branch rather than the conformal one, and hence the factor-of-two light bending.
+**An earlier draft of this section read the divergence wrongly, and the correction matters.** ED's own P-Commitment-Linear says the *commitment rate* is linear in bandwidth: `Γ_commit ∝ b`. That is the same linearity both runs chose. **ED agrees with them on the postulate.**
 
-Run D noticed the shortfall and parked it, proposing `g₀₀ = −(B/B₀)²` (its P21) which returns the linear law, and stating it could not reach `√(1 − 2GM/c²R)`. Run E did not notice.
+The divergence is one step later. Both runs identified commitment rate *with* clock rate. ED does not. `Paper_GR-I` §4.2 puts the advancing front on the null cone of `ds² = −N²dt² + b⁻¹dx²` with `dx/dt = Γ ∝ b`, giving `0 = −N² + b⁻¹·b²`, hence **`N² ~ b`** — the clock rate is `N = √b` while the commitment rate stays linear. That is what yields `g₀₀ g_rr ~ −1`: the Schwarzschild relation, the Einstein branch rather than the conformal one, and the factor-of-two light bending. In general `Γ ∝ b^α` gives `N² ~ b^{2α−1}`, so the entire Einstein/Nordström fork sits in that one exponent.
 
-**This is the most useful single output of the exercise.** The square root is ED's most non-obvious step in the gravity arc, and the linear map is what capable readers reach for by default. Two consequences follow, and they point in opposite directions: the step deserves defensive rigor proportional to its load, and P-Commitment-Linear's forcing argument in `Paper_GR-III` §4 is worth re-reading with fresh eyes precisely because the natural guess goes the other way.
+The exercise therefore produces **two** results here, pointing in opposite directions:
+
+- **Convergent support for the postulate.** Two independent families, unprompted, took the commitment rate linear in bandwidth. P-Commitment-Linear is what a capable reader assumes anyway, which is mild evidence it is the natural reading rather than a fitted one.
+- **The null-cone conversion is the non-obvious step.** Neither run separated the rate at which a front advances from the rate at which a clock ticks. Run D noticed a shortfall, proposed `g₀₀ = −(B/B₀)²` (its P21) to recover its own linear law, and stated it could not reach `√(1 − 2GM/c²R)`. Run E did not notice.
+
+That relocates where rigor is owed: not to P-Commitment-Linear, which is independently natural and separately argued in `Paper_GR-III` §4, but to GR-I §4.2's front-null identification — the move that converts a rate into a lapse, and the one step no outside run made or mentioned.
 
 ### 5.4 Postulate economy
 
