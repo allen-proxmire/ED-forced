@@ -50,8 +50,14 @@ This paper supplies the substrate audit: the area-law form is FORM-FORCED in ED 
 
 ### 2.3 Paper-specific postulates
 
-- **P-Horizon-Participation:** The substrate-level participation count at a black-hole horizon equals the holographic bound $N = A/(4\pi \ell_P^2)$ to leading order, where $A$ is the horizon area.
-  > **FLAGGED 2026-09-04 — this paper states the count two ways.** §1 cites `Paper_025`'s $N = 4\pi R^2/\ell_{\mathrm{ED}}^2 = A/\ell_{\mathrm{ED}}^2$, audit row 3 records $A/\ell_P^2$ "up to constants", and the line above gives $A/(4\pi\ell_P^2)$ — a factor of $4\pi$ apart. **It decides whether the arc is consistent with Bekenstein–Hawking.** With $S = N\log g$ (row 6): under $A/\ell^2$ the match needs $\log g = 1/4$, i.e. $g \approx 1.28$, which **violates P-Multiplicity-$g$'s own $g \geq 2$** and at the minimum $g=2$ over-produces entropy by $2.77\times$; under $A/(4\pi\ell^2)$ it needs $\log g = \pi$, $g \approx 23.1$, which is admissible. See `BlackHole_TieredClaims_Ledger.md`, addendum 2026-09-04, and `gravity/Gravity_TieredClaims_Ledger.md` Staleness #18. *This paper's area-law* form *and its honest "coefficient INHERITED" framing are unaffected; what is affected is whether the inheritance is available at all given the $g \geq 2$ floor.*
+- **P-Horizon-Participation:** The substrate-level participation count at a black-hole horizon equals the holographic bound $N = A/\ell_P^2$ to leading order, where $A$ is the horizon area.
+  > **CORRECTED 2026-09-04. This postulate previously read $N = A/(4\pi\ell_P^2)$.** That was inconsistent with the rest of this paper and with its source. `Paper_025` derives the bound as area-divided-by-footprint-area: the per-channel footprint on a 2-surface is $\ell_{\mathrm{ED}}^2$ (its audit row 111, from P-Codim-1 + P08), so $N \leq 4\pi R^2/\ell_{\mathrm{ED}}^2$, and $4\pi R^2$ **is** $A$. This paper's §1 cites that form and its audit row 3 records $A/\ell_P^2$; only this line carried the extra $4\pi$, which is what a conversion from $4\pi R^2$ to $A$ looks like when the substitution is made twice. Two of three statements and the upstream derivation agree, so the $4\pi$ is removed.
+  >
+  > **The correction sharpens the open problem rather than resolving it, and that is the honest reading.** With $S = N\log g$ (audit row 6) and $N = A/\ell_P^2$, matching Bekenstein $S = A/(4\ell_P^2)$ requires $\log g = 1/4$, i.e. $g \approx 1.28$ — which **violates P-Multiplicity-$g$'s own floor $g \geq 2$**. At that floor the horizon entropy comes out $2.77\times$ Bekenstein. The $4\pi$ reading would have been admissible ($\log g = \pi$, $g \approx 23.1$); removing it closes that escape. **The arc now has a live coefficient problem where it previously had an ambiguity**, which is the more useful state to be in.
+  >
+  > Two routes remain, neither taken here: the $g \geq 2$ floor may be tidiness rather than commitment, or — more promising — audit row 6 assumes *independent* cells, and correlated horizon cells give $S < N\log g$, which is the kind of structure V5 cross-chain content could supply and which is claimed nowhere. See `BlackHole_TieredClaims_Ledger.md` addendum 2026-09-04 and `gravity/Gravity_TieredClaims_Ledger.md` Staleness #18.
+  >
+  > *Unaffected: the area-law* form*, which is this paper's actual claim, and the honest "coefficient INHERITED" framing of the title and item 1.*
 - **P-Multiplicity-$g$:** Each substrate Planck-cell at the horizon supports $g \geq 2$ distinguishable rule-type configurations, contributing $\log g$ to the per-cell entropy.
 
 ---
@@ -62,7 +68,7 @@ This paper supplies the substrate audit: the area-law form is FORM-FORCED in ED 
 |---|---|---|---|
 | 1 | Holographic participation-count bound | I | Paper_025. |
 | 2 | Horizon as decoupling surface | I | Paper_039. |
-| 3 | Substrate participation count at horizon = $A/\ell_P^2$ (up to constants) | P-Horizon-Participation | Postulate. |
+| 3 | Substrate participation count at horizon = $A/\ell_P^2$ | P-Horizon-Participation | Postulate. *Hedge "(up to constants)" removed 2026-09-04: the constant is now fixed, the postulate above is corrected to match, and the resulting coefficient problem is recorded rather than absorbed into the hedge.* |
 | 4 | Per-Planck-cell multiplicity $g$ | P-Multiplicity-$g$ | Postulate. |
 | 5 | von Neumann entropy via Shannon–Khinchin axioms | I | Paper_068. |
 | 6 | Substrate participation-state entropy = $N \cdot \log g$ | D-via-I | Standard entropy on independent cells (I-SK). |
