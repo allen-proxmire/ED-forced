@@ -4,6 +4,8 @@
 
 **The paper's own honest tiers** (its §6): the constants ledger is *grounded*; `G=c³ℓ_P²/ħ` + `[G_d]=m^d` is *solid*; `G_d=c³ℓ_P^{d−1}/ħ` (c-power dimension-blind) is *derived*; the dimension-signature-is-holographic reading is *grounded synthesis*; the becoming/memory/extent + G-as-first-shadow framings are *interpretive* (not theorems). This folder is **mainly assertion/synthesis** — and that is stated as such.
 
+*Currency: re-read 2026-09-04 (external audit). This was the only arc ledger of fifteen carrying **no stated read date**, and it had missed the same-day `Paper_027` work — **P-G-Closure**, the multi-use parsimony defence, and the **F-P** result — all of which is now folded into the `G` row below. The `G_d = c³ℓ_P^{d−1}/ħ` generalisation was checked dimensionally and is sound. See `gravity/Gravity_TieredClaims_Ledger.md` Staleness #26.*
+
 ---
 
 ### The constants (each listed; tier = `Constant`)
@@ -17,7 +19,7 @@
 **Derived combination (no new input):**
 | Constant | Source | What it is | Status |
 |---|---|---|---|
-| **G = c³ℓ_P²/ħ** | Paper_027 | a *combination*, not an independent input (adds no information); **absent from the entire Standard Model**; the "first shadow" at the mass↔geometry seam — least-fundamental yet first-emergent | **Constant (derived-combination)** — `G_d=c³ℓ_P^{d−1}/ħ`; c-power dimension-BLIND; the dimension lives in `ℓ_P^{d−1}` = the holographic area-element |
+| **G = c³ℓ_P²/ħ** | Paper_027 | a *combination*, not a **second** independent input — **but not therefore explained.** *(Corrected 2026-09-04; previously read “adds no information”.)* `ℓ_ED` is itself fixed by matching `G` (§5.3, row above), so the two carry **one** piece of information and which is called the input is a labelling choice. The equality — coefficient exactly 1 rather than `G ∼ c³ℓ²/ħ` — requires the labelled postulate **P-G-Closure** (`Paper_027` §2, named 2026-09-04). **The real parsimony is multi-use:** `ℓ_ED` is one postulated scale spent in the holographic count (025), the BH area law and entropy coefficient (043, BH_Thermal2Pi) and the UV cutoff (111), so a rival needs `G` *and* a grain *and* a cutoff. **F-P run 2026-09-04:** all three companion roles **inherit** `ℓ_ED` from §5.3 — one determination, three uses, no independent confirmation; **absent from the entire Standard Model**; the "first shadow" at the mass↔geometry seam — least-fundamental yet first-emergent | **Constant (derived-combination)** — `G_d=c³ℓ_P^{d−1}/ħ`; c-power dimension-BLIND; the dimension lives in `ℓ_P^{d−1}` = the holographic area-element |
 
 **Inherited / late (need the cosmos or matter to have accumulated — the universe's "personality"):**
 | Constant | Source | Status |
