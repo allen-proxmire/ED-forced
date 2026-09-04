@@ -140,6 +140,20 @@ Same wall under different names, and it is exactly where `Paper_GR-I` and `Paper
 
 ---
 
+## 5c. Calibration run — the audit prompt, scored
+
+The `a₀` chain (`Gravity_TieredClaims_Ledger.md` Staleness #10) was put to both families as a **blind calibration test**: a known defect, the answer withheld, the instruction *"find the step that does not follow; if it is sound say so plainly; do not manufacture a finding."*
+
+**Both passed, independently, and named the same step.** Both identified that `∫₀^{2π} dφ/(2π) = 1`, so the `1/(2π)` cannot be pulled out afterwards without restoring the `2π` that cancelled it. Neither invented a different objection, and neither passed the chain as sound.
+
+**One found something this corpus had missed.** After the cancellation, the surviving geometric factor is `2/3`, so the displayed integral yields `(2/3)·cH₀`. Reaching `cH₀/(2π)` therefore requires the §5.1 normalization to do **two** things — erase the `2/3` *and* supply a `1/(2π)` — which is more than the ledger's original statement of the defect had recognised, and which `Paper_029` §5.1 indeed does in a single line. Recorded as audit row 8b on that paper.
+
+**One corroborated the repair route without sight of it.** Asked what would let the step survive, it answered: *"a second, independent source of a `1/(2π)` factor — not the same azimuthal normalization already used."* That is exactly `Note_a0_TwoPi_RepairRoutes.md` §3's Route 2, the horizon-smoothness `2π`, reached independently.
+
+**What this establishes, and what it does not.** It establishes that both families are competent to run the live audit (Prompt 4) — the screen worked as designed. It does **not** establish that they would find a defect nobody had found: the target was known-flawed, and the flaw is visible in two lines of arithmetic. A model that failed this would have been disqualified; passing it is a floor, not a result.
+
+---
+
 ## 6. Prompt defects, disclosed
 
 **Blind prompt (Runs A, B):** forbids a substrate scale while ED postulates `ℓ_ED` as P08; omits P09's polarity and then records both models noticing phase was missing; gives no cue that a dynamical rule is expected, which is likely why Run B never asked for one.
