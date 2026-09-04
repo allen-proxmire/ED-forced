@@ -85,6 +85,12 @@
 
 ---
 
+### Probes of the primitive set itself
+
+- **[What Two Independent Models Add When Given ED's Bottom and Nothing Else](Paper_PrimitiveMinimality_IndependentReconstructionProbe.md)** — two frontier models from independent families, given ED's bottom layer in plain English with no primitive list, no results and no repository access, asked to build toward known physics and log every assumption they had to add. Not a physics result: a measurement of **where an unguided reader places load-bearing assumptions**. Both landed in the same place, the coarse-graining layer, which is not among the thirteen. Also: neither reached for a fundamental dimension, which puts two more votes behind `Paper_087`'s own Round-4 note that P06 is anomalous and extraordinarily load-bearing; and ED's isotropy position turns out to be *stronger* than one run demanded, since `MetricFromTheGraph` P4 measures the anisotropy washout on a genuine cubic lattice rather than assuming randomness. Carries its own prompt's three defects on the record.
+
+---
+
 ## Also in this folder
 
 *Files present here that this guide had not listed. Added 2026-09-03 by a pointer-layer coverage sweep.*

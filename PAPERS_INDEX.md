@@ -593,6 +593,7 @@ Papers in `physics-papers/substrate-evaluation/` that the 2026-07-02 pass did no
 | Gravity as an Equation of State: How ED Grounds Jacobson's Derivation of Einstein (founding EDsplain exemplar) | `Paper_GravityAsEquationOfState.md` |
 | The Area Law Is the Edge Count: Holographic Entropy as Straddling Cross-Chain Edges | `Paper_AreaLawIsTheEdgeCount.md` |
 | General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate | `Paper_GR_QM_Projections.md` |
+| What Two Independent Models Add When Given ED's Bottom and Nothing Else: a probe of the primitive set's minimality (Measured / Open) | `Paper_PrimitiveMinimality_IndependentReconstructionProbe.md` |
 | The Conservation Column: Where Noether's Symmetries Come From, and Where They Leak | `Paper_ConservationColumn.md` |
 | How Our Best Theories Coarse-Grain Reality: One Field, Its Shadows, and What Each Blur Throws Away | `Paper_HowTheoryCoarseGrainReality.md` |
 | How Our Hardest PDEs Coarse-Grain Reality: Yang–Mills, Navier–Stokes, and the Singularities a Finite Grain Forbids | `Paper_HowPDECoarseGrainReality.md` |

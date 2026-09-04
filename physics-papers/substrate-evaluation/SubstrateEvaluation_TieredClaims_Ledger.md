@@ -106,3 +106,21 @@
 
 ### Honest arc-state
 The substrate-evaluation folder is a **coherent, honestly-tiered consolidation layer** whose spine is one idea: **ED derives the *form* of physics and inherits the *values*, with the smooth continuum a coarse-grained shadow of a determinate, arrow-first substrate.** The strongest results are genuine derivations/theorems — **A1's exact channel-zero** (locality), **B4's conserved integer winding**, and the **clean-substrate-is-vector theorem** (parity violation necessarily spontaneous) — while the largest body sits at **Grounded** (gauge SU(N)-form, `F²` action, gap-mechanism, the Gleason reconstruction) and **Measured** (kinetic-lattice-gas-not-diffusion, mass-from-binding, phase-coherence attractive sign, area-law-as-edge-count). Two walls are load-bearing and correctly *not* inflated: the parity/chirality wall (#2b, superseded in *tier* by CleanSubstrateVector but P still inherited) and the **primes finite-memory ceiling — the program's *only* theorem-anchored proven negative** (Sarnak + sieve parity barrier). The genuinely open residuals — Solèr rigor (#8b, now correctly "reduced to residual"), gauge `{1,2,3}`/anomalies (#2b), the finite-grain singularity triple (synthesis-tier, #15), and V5's forward derivation — are all named at their honest tier inside the papers, and the folder contains **no over-claims** (gauge {1,2,3} is a Wall, YM mass-gap "not a Clay proof," the triple-identity "not a theorem," Gleason "reduced to residual"). **The chief debt is documentation drift, not content drift:** the README theme table (line 66) still carries the pre-2026-07-10 "Gleason not-closed" framing while its own State section and the paper have moved on, and several cross-references point at filenames later renamed. **Defensible headline:** *a coherent, honestly-tiered consolidation layer — three genuine theorems/derivations (A1 locality, B4 winding, clean-substrate-vector), a large Grounded/Measured body reproducing forms while inheriting values, two correctly-uninflated walls (parity #2b, the proven primes ceiling), and open residuals all named at tier — with the only real debt being README/cross-ref documentation drift.*
+
+---
+
+## Addendum 2026-09-04 — independent-reconstruction probe of the primitive set
+
+`Paper_PrimitiveMinimality_IndependentReconstructionProbe.md` is filed in this folder. Its tiers, kept separate because they differ:
+
+| Claim | Tier |
+|---|---|
+| Two independent model families, given ED's bottom layer in prose with no corpus access, both placed load-bearing additions in the coarse-graining layer | **Measured** (n = 2, one prompt; F1 in the paper states what would withdraw it) |
+| That layer's assumptions are disclosed in ED as per-paper regime language (`MetricFromTheGraph` regime-of-validity + F5), not carried in the thirteen | **Structural** (a fact about where the corpus records it) |
+| Whether the item should be promoted to a declared primitive | **Open** — the paper declines to judge |
+| Neither run reached for a fundamental spatial dimension; ED's P06 is the outlier, as `Paper_087`'s own Round-4 QC note already records | **Measured** + **Account** |
+| P06 is removable | **NOT claimed.** P06 supplies `4πR²` to `Paper_025`, the `R²` surface to `Paper_027`, and the codimension-1 footprint; and `MetricFromTheGraph`'s exactly-3 selection is conditional on the holographic count, which P06 supplies, so citing it as P06's replacement would be circular |
+| Isotropy: ED measures the layer-1 anisotropy washout on a genuine cubic lattice (0.345 → 0.000, per-shell CV 0.06) rather than assuming randomized microstructure | **Measured**, one constructed arena, background topology as input |
+| Both runs said phase / ℂ must be injected; ED's phase enters via P09, which the probe's prompt omitted | **Prompt defect, disclosed.** Leaves a fair open question about how much the Solèr ℂ-selection argument does given P09 already carries a `U(1)` |
+
+*Not evidence about physics. The prompt states P11 in ordinary English, so the exercise can only measure the gap between that sketch and the thirteen, never whether the sketch is right.*
