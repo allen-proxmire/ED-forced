@@ -85,3 +85,13 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 **Recommended, small.** One clause in `Paper_056`'s update note: that the shape, like the number, is conditional on the power-law `Γ_commit` form (`Paper_054` §3.2, A→regime; arc ledger, open row). And the README's falsifier row should attach the same condition to its *sharpness* clause while leaving *architecture-independence* unconditioned. **No tier changed** — every tier involved is already correct; this is about what the retreat discloses.
 
 *Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #25, which carries the day's audit trail.*
+
+---
+
+## Addendum 2026-09-04 (second entry) — the arc has no near-term test, and a target doc said otherwise
+
+**A target doc pointed at a dead test for six weeks, and it was caught only by acting on it.** Target #16 (*“ED's single most load-bearing current gap”*) closes by naming a **map-independent near-term alternative**: the second-harmonic fingerprint, *“plausibly checkable in existing Fein-2019 / Jan-2026-nanoparticle data”*. **`ED_Master_Predictions_List` 4.2 marks that signature CONFOUNDED, dated 2026-07-24 — the same day target #16 was written.** KDTL grating optics produce higher harmonics anyway, so a bare second harmonic confirms nothing; a real test needs *excess* over the full Nimmrichter–Hornberger optics prediction from **raw** fringe data, which is not published.
+
+**Withdrawn, and the honest near-term status stated in its place.** The matter-wave weapon currently has **no near-term test**: the *number* is pressured (140–250 kDa vs the ≥170 kDa Nature-2026 report, a 2-point extrapolation flagged *do not bank as firm*); the *second harmonic* is confounded; and *architecture-independence* — which ≦25 called the cleaner discriminator — needs two platforms at comparable mass that **do not exist**. The map (#16 proper) remains the gate. Leaving a hopeful clause in place made the arc look more testable than it is.
+
+*Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #41, which carries the day's trail. ML 4.2's CONFOUNDED verdict stands unchanged and was correct; what was wrong was `event-density/docs/ED_Research_Targets.md` #16, now corrected.*
