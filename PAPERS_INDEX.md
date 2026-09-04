@@ -593,6 +593,7 @@ Papers in `physics-papers/substrate-evaluation/` that the 2026-07-02 pass did no
 | Gravity as an Equation of State: How ED Grounds Jacobson's Derivation of Einstein (founding EDsplain exemplar) | `Paper_GravityAsEquationOfState.md` |
 | The Area Law Is the Edge Count: Holographic Entropy as Straddling Cross-Chain Edges | `Paper_AreaLawIsTheEdgeCount.md` |
 | General Relativity and Quantum Mechanics as Projections of a Discrete Relational Substrate | `Paper_GR_QM_Projections.md` |
+| Cold Models Cannot Build ED. They Can Audit It. The Asymmetry Is Structural — methods verdict from eleven runs (Measured / Account / Synthesis) | `Paper_...` see `Note_ColdModelsCannotBuildED_ButTheyCanAuditIt.md` |
 | What Independent Models Add When Given ED's Primitives and Nothing Else: five-run probe of the primitive set's minimality and economy (Measured / Open) | `Paper_PrimitiveMinimality_IndependentReconstructionProbe.md` |
 | The Conservation Column: Where Noether's Symmetries Come From, and Where They Leak | `Paper_ConservationColumn.md` |
 | How Our Best Theories Coarse-Grain Reality: One Field, Its Shadows, and What Each Blur Throws Away | `Paper_HowTheoryCoarseGrainReality.md` |

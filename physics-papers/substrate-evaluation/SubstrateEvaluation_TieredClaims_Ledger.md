@@ -129,3 +129,22 @@ The substrate-evaluation folder is a **coherent, honestly-tiered consolidation l
 | Run E labelled an asserted Poisson equation **D**; ED has the same equation as `GR-III`'s `ḃ = D∇²b − κρ`, built and run at corr 0.999 and tiered *measured* | **Account.** An independent illustration of the failure the P/A/I/D discipline catches — same class as the missing audit table behind gravity Staleness #10 |
 
 *Not evidence about physics. The prompts hand over ED's own declared inputs, so the exercise measures the gap between what ED declares and what a reader must add — never whether ED's starting point is right.*
+
+---
+
+## Addendum 2026-09-04 — verdict on cold-model reconstruction
+
+`Note_ColdModelsCannotBuildED_ButTheyCanAuditIt.md` is filed in this folder. Tiers:
+
+| Claim | Tier |
+|---|---|
+| Blind runs produce a generic emergent-spacetime scaffold and nothing ED-specific | **Measured** (n = 2) |
+| Seeded runs, given the thirteen plus V1/V5 plus named targets, all reach Newtonian scalar gravity and stop where `Paper_GR-I` begins | **Measured** (n = 3) |
+| Three specific steps go unfound: the `N(R)` counting cancellation, the front-null identification, the dimensional closure to `G` | **Measured** (n = 3) |
+| Postulate economy: best seeded run needs 6 named postulates against ED's ~4, and derives less | **Measured** (one prompt, one route) |
+| The same families audit competently — real findings on four chains, two false positives, both resisted on reading | **Measured** (n = 6) |
+| The asymmetry is structural: auditing has a local oracle (the algebra goes through or does not), construction does not | **Account** — an explanation, not a measurement. It predicts the gap will not yield to prompting, which is F1 |
+| Therefore: use as auditors and as a minimality probe, not as discoverers | **Synthesis** |
+| The one genuinely new result of 2026-09-04 came from reading the corpus, not from a model | **Structural** (a fact about provenance: `Paper_047_5`'s M3 ingredient, sitting since July) |
+
+*Not evidence about physics. Eleven runs, two families, one day. The corpus is public, so training exposure is a standing confound; no run showed recognition, and F1 requires the recognition question be asked before any close match is banked.*
