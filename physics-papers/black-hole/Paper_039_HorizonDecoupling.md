@@ -152,6 +152,8 @@ $$
 
 with $\kappa$ the substrate-derived surface gravity (gradient of P12 stability landscape at the decoupling surface).
 
+> **Forward pointer, added 2026-09-04.** The period $eta_H = 2\pi/\kappa$ is *assumed* here, which was the correct posture when this paper was written (2026-05-13): the thermal $2\pi$ was inherited corpus-wide at the time. It is no longer. `Paper_BH_Thermal2Pi_EntropyCoefficient` (2026-07-29) **derives** it from ED's own near-horizon geometry — the near-horizon $b$-profile is Rindler, Euclidean continuation makes $\kappa	au$ an angle, and smoothness at the horizon point (no conical defect) requires that angle to run a full $2\pi$. A reader arriving here should take the period as derived there, not assumed here. *Chronology, not error; no tier changes. This paper's own contribution is the identification of the **V5 kernel** as the object that acquires the periodicity, which is unaffected.* That paper also records, in its §4b, that the $2\pi$ is a **continuum / smooth-horizon** quantity and not reachable from raw commitment counting — a scope limit this section inherits.
+
 ### 4.2 KMS condition → Hawking temperature
 
 $$
