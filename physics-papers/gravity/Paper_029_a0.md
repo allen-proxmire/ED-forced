@@ -8,6 +8,18 @@
 **Working save location:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\Paper_029_a0_FIXED.md`
 **Genre:** Conditional structural derivation within the 13-Primitive Generative System. Standalone. Cold-reader accessible.
 
+> **OPEN ITEM, added 2026-09-04. Read before §5.** The factor 1/(2π) in `a₀ = cH₀/(2π)` is **not established as structurally forced** by the papers as written. `Paper_028` §6.3 computes the azimuthal integral and states its value: `∫₀^{2π} dφ/(2π) = 1`. §6.4 then "pulls out" a 1/(2π) that the algebra has already cancelled, and concedes in its own words that the factor's *location* (a separate `dφ/(2π)` measure versus absorption into `Y10`'s `√(3/4π)`) is **conventional**. `Paper_029` §5.1 shows the same cancellation explicitly: its displayed equation carries `(1/2π) · ... · 2π`, leaving no `2π` on the right-hand side, and the sentence immediately after it nonetheless reports the factor as surviving. The 1/(2π) then re-enters at the assembly step, where `N_substrate` is *chosen* (§5.1 calls it "a substrate-level normalization choice") at exactly the value that produces the answer, absorbing the `2/3` polar factor and `G_φ` along the way.
+>
+> **`N_substrate` is fixed nowhere.** `Paper_026`/`Paper_027` fix `κ_V1`, the per-channel V1 envelope coupling, a different normalization doing a different job; neither mentions `N_substrate`. `Paper_027` defers the `2π` forward to `Paper_029` §5.1. `Paper_028` defers both the substrate-source normalization and the order-unity coefficient forward to `Paper_029` §5. `Paper_029` §5.1 calls it a convention. The references form a loop and nothing computes it.
+>
+> **Why this is not bookkeeping.** A measure-normalization convention cannot carry a physical prediction: adopt the unnormalized measure `∫dφ` and the same algebra returns `2π` rather than `1`, moving the "parameter-free" number by `4π²`. A quantity that changes when the bookkeeping is renamed is not predicting anything.
+>
+> **What is unaffected.** `a₀ ~ cH₀`, the horizon-tying, which is the physically substantive claim, stands untouched, as does the `R_H = c/H₀` decoupling surface itself. So does `a₀(z) = cH(z)/(2π)` **as a form**, including the forced exponent of exactly 1, because the evolution follows from `a₀` riding the live horizon and not from the `2π`. The flagship falsifiable prediction is intact. What is suspended is narrower: the "parameter-free, 1/(2π) structurally forced" claim, which is precisely the part this arc identifies as ED-distinctive, since BTFR slope-4 and its tightness are MOND-shared.
+>
+> **The repair that would work, not attempted in either paper.** If the chain physically couples to the dipole *mode amplitude* rather than to the integrated mode, responding per unit azimuthal angle rather than to the total over the circle, then a 1/(2π) is physical rather than conventional. That is arguable from the substrate and it would repair the claim properly. Neither paper argues it. Until it is argued, the honest label on `N_substrate` is **P**.
+>
+> Recorded as Staleness #10 in `Gravity_TieredClaims_Ledger.md`, where the claim is re-tiered from *D (form-forced)* to *Postulated / disputed*. §5.3's "no free parameter" and §6's "structural" language for the `1/(2π)` should be read under this banner until it is resolved.
+
 ---
 
 ## Abstract
@@ -339,7 +351,11 @@ ED does not derive Big Bang, structure formation, CMB, or large-scale-structure 
 
 The derivation is conditional on the postulated primitives + V1 inheritance + accelerating-chain structure + empirical $H_0$.
 
-### 8.4 No claim about MOND correctness or dark matter
+### 8.4 No claim that the `1/(2π)` is currently established *(added 2026-09-04)*
+
+As of 2026-09-04 the `1/(2π)` factor is **disputed within the corpus** and this paper should not be cited for it. See the open-item banner at the head of this paper and Staleness #10 in `Gravity_TieredClaims_Ledger.md`. The horizon-tied scale `a₀ ~ cH₀`, and the evolution `a₀(z) = cH(z)/(2π)` with its forced exponent of 1, are unaffected.
+
+### 8.5 No claim about MOND correctness or dark matter
 
 ED supplies a mechanism for the empirically observed transition acceleration. It does not claim MOND-as-complete-theory is correct or that dark matter is excluded. Coexistence with dark-matter particle content is an open question.
 
