@@ -64,6 +64,7 @@ Standard physics has two competing accounts of galactic-scale gravitational phen
 
 - **Dark-matter cosmology:** galaxies contain unseen mass. $a_0$ has no fundamental status; it is a coincidental scale.
 - **MOND (Milgrom 1983):** dynamics are modified at low acceleration. $a_0$ is a phenomenological parameter; its value is fit.
+  > **⚠ PRIOR-ART OMISSION, flagged 2026-09-05.** This paper nowhere acknowledges that **`a_0 \approx cH_0/(2\pi)` is a long-noted numerical coincidence in the MOND literature itself.** It was raised unprompted by an uncontaminated external model during F1 arm B, which described it as *“a well-known empirical near-coincidence in the MOND literature”* and **declined to use it** because the seed forbade assuming relations among constants. **ED's claim is a *derivation* of the relation from the substrate — a different and legitimate claim — but presenting the relation without noting the coincidence is prior art reads as claiming the observation.** That is a presentation defect rather than a physics defect, and it is the kind that makes a reader put the paper down. **Fix before any public version:** state the coincidence as known, and locate ED's contribution precisely in the derivation. See `substrate-evaluation/Result_F1_ArmB_2026-09-05.md`; gravity ledger Staleness #59.
 
 Neither framework derives $a_0$. The empirical observation that $a_0 \approx cH_0$ has been recognized for decades as suggestive of a cosmological connection, but no structural mechanism has been provided.
 

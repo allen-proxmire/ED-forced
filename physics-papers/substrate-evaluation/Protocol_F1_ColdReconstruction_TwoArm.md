@@ -126,6 +126,25 @@ Seed: **all 38** — the 13 primitives, the 10 constants (`c`, `G`, `a₀`, `Λ`
 
 > *"From the assumptions above and standard mathematics, derive as much of gravitation as follows. State every additional assumption you must introduce, name it, and list them at the end. Where you cannot derive something and must postulate it, say so explicitly rather than asserting it. If a step does not follow, say plainly that it does not — do not manufacture a derivation."*
 
+### Both arms — COMPLETE 2026-09-05. Outcome: **both fail.** F1 does not fire, and the pre-registered “both fail” row is the one that applies.
+
+| | Arm A (13 primitives) | Arm B (38 lines) |
+|---|---|---|
+| **T1 — front-null** | FAIL ×3 | **FAIL ×3** |
+| **T2 — `N(R)` cancellation** | FAIL ×3 | **FAIL ×3** |
+| Assumptions (GPT / Gemini / Claude) | 14 / 3 / 8 | **11 / 3 / 9** |
+| Secondary: `G = c³ℓ_P²/ħ` recovered? | no (declined) | **no — noticed and declined as** *“a consistency check on inputs”* |
+
+**The verdict the table pre-committed to:** *“the wall is deeper than the assumption list … not even ED's own stated spine reaches these steps without the papers.”* **That is now the recorded result.** Adding the constants and the fifteen domain-specific postulates moved neither target on any family. **“The 38 lines build ED” is not supported for T1 and T2.**
+
+**The economy row also fails to fire, and for an instructive reason.** Gemini's 3 is below ED's 4 in both arms — but it reached Newtonian gravity by *postulating* the `1/r` asymptotics, which is the thing T2 asks to be derived. **Counting postulates without weighting what each one buys rewards assuming the hard part.** The economy row should be read as unreached rather than met.
+
+**What the protocol produced instead of a pass, which is the part worth keeping:** four ED-facing findings, all from models with no access to the corpus — P12's missing other-chain dependence and V5's presupposed Lorentz invariance (**now Foundations #5, #6**), the `cos Θ` sign residual that is `Paper_QuadraticStrain_v1` §9's own declared open item, and the `G = c³ℓ_P²/ħ` circularity that reproduces gravity Staleness #26. **Every one landed on something the corpus already knows about itself.** The protocol was built to test generation and it measured self-assessment accuracy instead. See §6.
+
+**Known limit on the negative, stated before anyone leans on it:** three of the fifteen postulates (`D06`, `D08`–`D10`) were seeded at label-plus-role only, and `D06` is load-bearing for the metric route. **A rerun with the six acoustic-metric guardrails stated in full is the one revision that could change arm B's result.**
+
+Full scoring: `Result_F1_ArmA_2026-09-05.md`, `Result_F1_ArmB_2026-09-05.md`. Gravity ledger Staleness #58, #59.
+
 ## 4. Pass conditions — fixed in advance
 
 | Outcome | Meaning |

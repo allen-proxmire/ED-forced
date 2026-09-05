@@ -307,3 +307,13 @@ What it does not claim: a new empirical prediction, a derivation of $a_0$, a new
 **End of draft (Quadratic Strain).**
 
 *Gravity arc, post-pivot. One strain-reading choice (quadratic in amplitude) splits gravitational strain into Newton (diagonal) and MOND (off-diagonal, the forced interference modulus), discharging two MOND-line postulates and fixing one inconsistency. Reproduces Newton, $\sqrt{a_N a_0}$, and BTFR slope-4. Tier STRUCTURAL, conditional on P-Quadratic-Strain; the one residual is the constructive interference sign.*
+
+---
+
+## Addendum 2026-09-05 — the `cos Θ` residual was located from outside, from the postulate alone
+
+§9's declared residual (`cos Θ_LH ≈ 1`, the constructive-interference assumption) was **independently identified as this construction's weakest point by a model that had never seen this paper**, during F1 arm B. Given only `P-Quadratic-Strain`'s algebraic form, it reported:
+
+> *“The cross term's sign is set by `cos(Θ_ab)`, which can be positive or negative depending on relative phase, itself transported by the P05 connection. Nothing forces `Θ_ab ≈ 0` … Without a reason for phases to lock in-phase for what should be a universally attractive force, D07 alone gives you something that could as easily look repulsive or oscillatory as attractive.”*
+
+**This is not a new finding — the paper already carries it — and that is the point.** An uncontaminated reader, working from the postulate without the paper, converged on the same soft spot the paper declares. **It raises the priority of the residual:** the sign is not a technical loose end, it is the first thing an external reader reaches for. It also names two further gaps the paper does not state — that the chain-level `Str(C)` is never derived from the channel-level `Str_K`, and that **nothing in the postulate gives the cross-term any spatial dependence at all** (*“nothing for `grad_adj` to act on across space”*). Both are checkable. `substrate-evaluation/Result_F1_ArmB_2026-09-05.md`; gravity ledger Staleness #59.

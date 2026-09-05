@@ -148,3 +148,19 @@ The substrate-evaluation folder is a **coherent, honestly-tiered consolidation l
 | The one genuinely new result of 2026-09-04 came from reading the corpus, not from a model | **Structural** (a fact about provenance: `Paper_047_5`'s M3 ingredient, sitting since July) |
 
 *Not evidence about physics. Eleven runs, two families, one day. The corpus is public, so training exposure is a standing confound; no run showed recognition, and F1 requires the recognition question be asked before any close match is banked.*
+
+---
+
+## Addendum 2026-09-05 — F1 ran, both arms, and the result is the pre-registered “both fail” row
+
+`Protocol_F1_ColdReconstruction_TwoArm.md` executed on three Stage-0-clean model families. **T1 (front-null) fails 6/6. T2 (`N(R)` cancellation) fails 6/6.** Arm B — all 38 lines, constants as values, the fifteen domain-specific postulates, `P-Quadratic-Strain` with its algebraic form — **moved neither target on any family.** The 2026-09-04 verdict above therefore stands in the strengthened form the protocol pre-committed to: **not even ED's own stated spine reaches these steps without the papers.**
+
+**Three things worth carrying forward from the run, none of which the protocol was designed to measure.**
+
+1. **The assumption count is a bad metric and F1 demonstrated why.** One family used **3** assumptions in both arms, below ED's 4, by **postulating the `1/r` asymptotics** — the very thing T2 asks to be derived. Its arm-A and arm-B answers were byte-identical, so it did not engage the added material at all. **Any future economy comparison must weight what each postulate buys, or it rewards assuming the hard part.**
+
+2. **The audit half of the verdict fired inside a construction task, unprompted, four times.** P12's missing other-chain dependence and V5's presupposed Lorentz invariance (verified, Foundations #5/#6); `Paper_QuadraticStrain_v1` §9's own `cos Θ` residual, **found from the postulate by a model that had never seen the paper**; and the `G = c³ℓ_P²/ħ` circularity, reproducing gravity Staleness #26. **Every finding landed on something the corpus already carries.** That is a measurement of ED's self-assessment accuracy rather than of model capability, and it is the most useful thing F1 produced.
+
+3. **The negative carries a stated limit.** `D06`, `D08`–`D10` were seeded at label-plus-role only, and **`D06` (the acoustic-metric guardrails) is load-bearing for the metric-emergence route all three arm-A runs named as the missing bridge.** A rerun with the six conditions in full is the honest retest, and is the **only** revision identified that could plausibly move arm B.
+
+`Result_F1_ArmA_2026-09-05.md`, `Result_F1_ArmB_2026-09-05.md`; gravity ledger Staleness #58–#59.
