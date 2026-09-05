@@ -157,6 +157,8 @@ Full scoring: `Result_F1_ArmA_2026-09-05.md`, `Result_F1_ArmB_2026-09-05.md`. Gr
 
 Seed and full scoring: `Seed_F1_ArmC_GapReport.md`.
 
+**RAN 2026-09-05, same day. Y4 calibration passes; all three families ranked the same item first.** Yield **15 / 4 / 11** specific gaps. **Unanimous #1: the matter-sources-geometry step**, reached by three different routes — and one of them, a Jacobson thermodynamic closure, **is the route the corpus already took** (`Paper_GravityAsEquationOfState`). **Heaviest finding: `Σ_C` has no operational definition** — `Coh` and `Grad` are defined nowhere, and the corpus's one operational `Str` (`= ρ_v`) contradicts `P-Quadratic-Strain`'s (`= |ΣP|²`). **Arms A and B asked the wrong question; arm C is the one to reuse.** Full scoring: `Result_F1_ArmC_2026-09-05.md`; gravity ledger Staleness #69.
+
 ## 4. Pass conditions — fixed in advance
 
 | Outcome | Meaning |
