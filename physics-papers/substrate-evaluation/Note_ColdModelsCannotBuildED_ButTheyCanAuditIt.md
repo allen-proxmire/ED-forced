@@ -81,6 +81,8 @@ They also produced two false positives, both correctly resisted on reading: a co
 
 > **Use them as auditors, and as a probe of the primitive set's minimality. Do not use them as discoverers, and do not expect a prompt that changes this.**
 
+> **F1 is now a pre-registered protocol, 2026-09-05: `Protocol_F1_ColdReconstruction_TwoArm.md`.** It adds a second arm the prior runs lacked. Every seeded run to date was given **the 13 primitives** — but the 13 do not build ED: the corpus ladder puts the declared load at **171** postulates, **26** cross-cutting, with the “38 lines” as the structural spine. **So the prior runs asked whether 13 assumptions generate ED, and that answer was never in doubt.** Arm B seeds all 38 and asks the question actually worth asking. Pass conditions are fixed in advance; the most informative outcome is arm A failing while arm B clears, which would make “the 38 lines build ED” a demonstrated claim rather than a framing.
+
 **What would overturn it (F1):** a cold run, on a model family with a training cutoff predating the public repo, that reaches the front-null identification or the `N(R)` cancellation unprompted. That would show the wall is prompting rather than structure. **Ask the recognition question first, in a separate turn** — a run that lands close is more likely to have read the corpus than to have rebuilt it.
 
 **What would sharpen it (F2):** more audit runs on un-audited load-bearing chains. The hit rate to date is roughly two real findings and one false positive per chain, on chains chosen for being load-bearing and unexamined. Whether that holds across the corpus is unknown and is the cheapest thing left to measure.
