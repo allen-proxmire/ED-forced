@@ -145,6 +145,18 @@ Seed: **all 38** — the 13 primitives, the 10 constants (`c`, `G`, `a₀`, `Λ`
 
 Full scoring: `Result_F1_ArmA_2026-09-05.md`, `Result_F1_ArmB_2026-09-05.md`. Gravity ledger Staleness #58, #59.
 
+### Stage 3 — Arm C (the gap report), added 2026-09-05
+
+**The protocol was built to answer** *“can a model generate ED?”* **and that question was never open** — the answer was no before either arm ran, and no is what both returned. **What the arms produced that was worth having came out sideways:** every run named soft spots that ED's own ledgers list, and **three of the four items now in research target #24 came from models with no access to the corpus.**
+
+**Arm C asks for that output directly.** Same three Stage-0-clean families, **axiom block copied programmatically from arm B and verified byte-identical** (7,670 characters). Only the task changes: from *derive gravitation* to *derive what you can, then say precisely what you would need to get further, classify it, and rank it.*
+
+**The classification is the arm's point.** Each gap must be labelled **missing definition / missing structure / genuine postulate / hard derivation**. **The (iii)-versus-(iv) call is the judgement the corpus cannot make for itself**, because from the inside every gap looks like work not yet done.
+
+**Not pass/fail — arm C measures yield**, on four pre-registered measures (Y1 specific gaps, Y2 the postulate/derivation split, **Y3 convergence across families, which is the primary signal**, Y4 calibration against target #24's four known-real weak points). **A run that names only novel gaps and none of the known four has its other findings discounted.** And a family reporting a *structural problem* rather than a gap is the arm's highest-value single output, to be recorded verbatim and held to the same bar as a positive.
+
+Seed and full scoring: `Seed_F1_ArmC_GapReport.md`.
+
 ## 4. Pass conditions — fixed in advance
 
 | Outcome | Meaning |
