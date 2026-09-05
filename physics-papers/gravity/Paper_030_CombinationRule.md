@@ -222,10 +222,14 @@ which would suppress the cross-term far below the Newtonian term everywhere in a
 
 ### 4.3 Number of bilocal channels
 
+> **What kind of aggregation is this? Settled 2026-09-05 (late).** Two external readers independently objected that the per-channel cross-term is **exactly R-independent**, so a *pointwise* application of P12 gives it zero gradient, and asked what licenses the radial integral — one classifying it **(ii) missing structure**, *“an entire mathematical object (a path-aggregation rule with a specific measure) that P12 as stated doesn't contain.”* **They were reading it as a path/history integral. It is not one.** `ρ_bilocal(R')` is a **channel density**, so `∫ρ dR'` is a **sum over the chain's channels, which happen to be distributed radially** — and P12 already requires exactly such a sum, since it defines chain-level `Str(C)` while `P-Quadratic-Strain` defines per-channel `Str_K`. **So the aggregation is not a missing structure; it is the known chain-level bridge** (arm B's `D07a`, and gap 1 of the blind Σ_C run). **What remains genuinely open is narrower and worth stating: the integral runs from `R_0` to `R`, so it sums channels anchored at *other* loci** — whether those are the chain's own channels or ambient structure is not said here, and that is the same locality question the layer seam raises (`layers/Note_TheSeam_And_SigmaC_2026-09-05.md`). `substrate-evaluation/Result_F1_ArmC_SigmaC_2026-09-05.md` §4; gravity ledger Staleness #79.
+
 The bilocal-channel density along the radial direction scales as $1/R$ (substrate-graph radial-projection geometry, anchored by P03 spatial-homogeneity). The total bilocal contribution to the chain's stability landscape is the radial integral of the bilocal-channel strain content:
 
+> **⚠ SIGN ERROR, found and corrected 2026-09-05 (late). The cross-term's leading minus makes MOND REPULSIVE.** With `Σ_cross = −√(GMa₀)\log(R/R_0)`, the radial acceleration is `a_r = −dΣ_cross/dR = +√(GMa₀)/R` — **outward.** Verified numerically at `R = 5×10¹⁹ m`: `a_r = +2.53×10⁻¹⁵` against a target of `−2.53×10⁻¹⁵`. **`Paper_QuadraticStrain_v1` §5.1 has the same quantity with a PLUS** — `Φ_cross = +\cosΘ·√(GMa₀)\log(R/R_0)` — **and that is the correct one**, independently confirmed by the three-way sign check (`foundations/Note_SigmaC_SignCheck_2026-09-05.md`), which places the cross term in `+Coh`. **So two gravity papers disagreed on this sign and this one had it wrong.** **How it stayed hidden: §5.3 quotes the Newtonian term as a magnitude (`+GM/R²`) and the cross term at face value (`+√(GMa₀)/R`), then adds them as though both pointed inward.** The stated *result* of §5.3 is correct; the Σ it is derived from is not. **The corrected form is `Σ_cross(R) = +√(GMa₀)\log(R/R_0)`**, which is what the boxed equations below now carry. **No downstream result changes** — §5.3's `a = a_N + √(a_N a_0)` was always right. `internal notes/_check_030_cross_sign.py`; gravity ledger Staleness #79.
+
 $$
-\Sigma_{\mathrm{cross}}(R) = -\int_{R_0}^{R}\frac{\sqrt{GMa_0}}{R'}\,dR' = -\sqrt{GMa_0}\cdot\log(R/R_0).
+\Sigma_{\mathrm{cross}}(R) = +\int_{R_0}^{R}\frac{\sqrt{GMa_0}}{R'}\,dR' = +\sqrt{GMa_0}\cdot\log(R/R_0).
 $$
 
 The logarithmic form emerges from integrating $\sigma_{\mathrm{ch}}^{\mathrm{bilocal}} \cdot (1/R)$ along the radial direction. The reference scale $R_0$ is a substrate-level integration constant; it drops out when computing accelerations as gradients.
@@ -257,14 +261,16 @@ Given P14, the substrate-level bilocal-channel strain is $\sigma_{\mathrm{ch}}^{
 The total bilocal contribution to the stability landscape is the radial integral of the bilocal-channel strain density:
 
 $$
-\Sigma_{\mathrm{cross}}(R) = -\int_{R_0}^{R}\rho_{\mathrm{bilocal}}(R')\,dR'
+\Sigma_{\mathrm{cross}}(R) = +\int_{R_0}^{R}\rho_{\mathrm{bilocal}}(R')\,dR'
 $$
 
 where $\rho_{\mathrm{bilocal}}(R')$ is the bilocal-channel strain density along the radial direction. From §4.3, $\rho_{\mathrm{bilocal}}(R') = \sqrt{GMa_0}/R'$, giving:
 
 $$
-\boxed{\Sigma_{\mathrm{cross}}(R) = -\sqrt{GMa_0}\cdot\log(R/R_0).}
+\boxed{\Sigma_{\mathrm{cross}}(R) = +\sqrt{GMa_0}\cdot\log(R/R_0).}
 $$
+
+*(Sign corrected 2026-09-05; see the banner at §4.3. The minus published here made the MOND term repulsive.)*
 
 This is the **logarithmic cross-term** in the joint regime, derived from P14 + substrate-level radial integration.
 
