@@ -68,6 +68,32 @@ say so plainly rather than inferring what it might mean.
 
 **Even a clean screen is run in a throwaway session.** The word *“Event Density”* has still appeared in that context, and the arms must not inherit it.
 
+### Stage 0 — RUN 2026-09-05. One family clean, one discarded, and a contamination vector the protocol had not anticipated.
+
+| | GPT | Gemini |
+|---|---|---|
+| 1. Causal Set Theory *(real control)* | correct | correct |
+| **2. Event Density** | **RECOGNISES** | **not familiar** |
+| 3. Relational Bandwidth Cosmology *(invented)* | disclaimed | disclaimed |
+| 4. Shape Dynamics *(real control)* | correct | correct |
+| 5. Participation Kinematics *(invented)* | disclaimed | disclaimed |
+| **Verdict** | **DISCARD** | **CLEAN — proceed to arm A** |
+
+**Gemini is live.** It described both real controls in genuine detail, disclaimed both invented ones — so its recognition claims carry information — and does not know Event Density. **The distractors are the reason this negative can be trusted rather than merely hoped for**, and this is their first live use.
+
+**GPT is discarded, and the reason changes the protocol.** Its answer: *“I am familiar with this as the name of **your framework**, but not as a generally established physics framework with a standard meaning independent of your work … as I have encountered them from **your material**.”*
+
+**That is not training-data contamination. It is account-level memory** — the model recalling the operator's own prior conversations.
+
+> **⚠ New contamination vector, recorded 2026-09-05: “training cutoff predating the public repo” is NOT sufficient.** F1 as originally worded screens only for training-data exposure. A model with persistent per-account memory can hold ED from the operator's *own past sessions*, in which case **no training cutoff helps and the contamination does not age out.** It is also invisible from outside — nothing about the model or its release date reveals it.
+>
+> **Consequences for the protocol:**
+> - The screen must run **on the exact account, product surface and memory state** the arms will run on. A clean screen on one surface licenses nothing on another.
+> - A family discarded this way is **not permanently disqualified** — only disqualified *on that account*. A temporary/incognito chat, a logged-out session, or an API call with memory disabled is a different surface and must be **re-screened from scratch**, not assumed clean.
+> - **Any operator who has discussed ED with an assistant has contaminated that assistant for themselves.** The cleanest arm-runner is a surface the operator has never used for ED, or a second person.
+
+**Status: one clean family. The protocol asks for three.** Arm A may proceed on Gemini; the two-arm comparison is only as strong as the number of clean families, and a single-family result is suggestive rather than decisive. **Next: screen a third and fourth surface** — candidates include GPT via a memory-disabled API call, Claude on an account never used for ED, and any open-weights family with a documented cutoff.
+
 ### Stage 1 — Arm A (13 primitives) — the control
 
 Seed: the thirteen primitives with operational content, V1 and V5 as inherited kernels. No constants, no paper-specific postulates. **This replicates the known condition** and exists to confirm the wall is where prior runs put it, on an uncontaminated family.
