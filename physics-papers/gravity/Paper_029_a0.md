@@ -16,6 +16,8 @@
 >
 > **What is unaffected.** `a₀ ~ cH₀`, the horizon-tying, which is the physically substantive claim, stands untouched, as does the `R_H = c/H₀` decoupling surface itself. So does `a₀(z) = cH(z)/(2π)` **as a form**, including the forced exponent of exactly 1, because the evolution follows from `a₀` riding the live horizon and not from the `2π`. The flagship falsifiable prediction is intact. What is suspended is narrower: the "parameter-free, 1/(2π) structurally forced" claim, which is precisely the part this arc identifies as ED-distinctive, since BTFR slope-4 and its tightness are MOND-shared.
 >
+> **PRIOR ART, added 2026-09-05, and it sharpens the paragraph above.** *“What is unaffected”* reads as though `a₀ ∼ cH₀` surviving leaves most of the result standing. **It does not, because `a₀ ∼ cH₀` is not ED's.** It is Milgrom's, from 1983, and **Milgrom (2020) is a review devoted to the coincidence** (arXiv:2001.09729). **The `2π`-normalized form is prior art too** (Famaey & McGaugh 2012). So the honest reading of this banner is stronger than it currently sounds: **what is suspended is not one factor inside an otherwise ED-distinctive result — it is the entire ED-distinctive content of the paper.** Strip the derivation of the coefficient and what remains is a known coincidence, restated. §1.2.1 states the prior art in full; gravity ledger Staleness #60.
+>
 > **The repair that would work, not attempted in either paper.** If the chain physically couples to the dipole *mode amplitude* rather than to the integrated mode, responding per unit azimuthal angle rather than to the total over the circle, then a 1/(2π) is physical rather than conventional. That is arguable from the substrate and it would repair the claim properly. Neither paper argues it. Until it is argued, the honest label on `N_substrate` is **P**.
 >
 > Recorded as Staleness #10 in `Gravity_TieredClaims_Ledger.md`, where the claim is re-tiered from *D (form-forced)* to *Postulated / disputed*. §5.3's "no free parameter" and §6's "structural" language for the `1/(2π)` should be read under this banner until it is resolved.
@@ -29,6 +31,8 @@ The Event Density (ED) substrate is a 13-primitive generative system. This paper
 $$
 a_0 = \frac{c H_0}{2\pi}.
 $$
+
+**The numerical coincidence itself is not ED's observation.** That $a_0$ is of order $cH_0$ has been known since Milgrom's original papers, and the $2\pi$-normalized form $a_0 \approx cH_0/(2\pi)$ is standard in the MOND review literature. **ED's claim is narrower and sharper: a substrate mechanism that produces the relation, and a specific coefficient in place of the literature's order-of-magnitude $\sim$.** §1.2.1 states the prior art and locates ED's contribution against it.
 
 The Hubble parameter $H_0$ is **empirical cosmological content**; it is not derived from substrate primitives. The factor of $2\pi$ is **geometric** — it arises from the azimuthal-Fourier normalization on the residual $SO(2)$ symmetry of a uniformly-accelerating chain, made explicit in §5.1 via the dipole-projection integral. With $H_0 \approx 70\,\mathrm{km/s/Mpc}$, the substrate prediction $a_0 \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$ matches the empirically measured MOND-class transition acceleration to within ~10% with **zero free parameters**. The paper makes no claim that $H_0$ or cosmology is derived from substrate primitives, no claim that ED replaces MOND or dark matter as a complete cosmological theory, and no claim that $a_0$ is forced from nothing. Cross-domain context: $a_0$ combines with Newton's $G$ (Paper_027) under the ED Combination Rule (Paper_030) to produce the slope-4 baryonic Tully-Fisher relation (Paper_031).
 
@@ -64,11 +68,29 @@ Standard physics has two competing accounts of galactic-scale gravitational phen
 
 - **Dark-matter cosmology:** galaxies contain unseen mass. $a_0$ has no fundamental status; it is a coincidental scale.
 - **MOND (Milgrom 1983):** dynamics are modified at low acceleration. $a_0$ is a phenomenological parameter; its value is fit.
-  > **⚠ PRIOR-ART OMISSION, flagged 2026-09-05.** This paper nowhere acknowledges that **`a_0 \approx cH_0/(2\pi)` is a long-noted numerical coincidence in the MOND literature itself.** It was raised unprompted by an uncontaminated external model during F1 arm B, which described it as *“a well-known empirical near-coincidence in the MOND literature”* and **declined to use it** because the seed forbade assuming relations among constants. **ED's claim is a *derivation* of the relation from the substrate — a different and legitimate claim — but presenting the relation without noting the coincidence is prior art reads as claiming the observation.** That is a presentation defect rather than a physics defect, and it is the kind that makes a reader put the paper down. **Fix before any public version:** state the coincidence as known, and locate ED's contribution precisely in the derivation. See `substrate-evaluation/Result_F1_ArmB_2026-09-05.md`; gravity ledger Staleness #59.
 
-Neither framework derives $a_0$. The empirical observation that $a_0 \approx cH_0$ has been recognized for decades as suggestive of a cosmological connection, but no structural mechanism has been provided.
+Neither framework derives $a_0$.
 
-ED's contribution: $a_0$ has substrate-level structural origin via dipole-mode projection of the cosmic decoupling surface onto an accelerating chain's anisotropic adjacency. The factor of $2\pi$ is **geometrically forced** by azimuthal-Fourier-mode normalization, *not* phenomenologically fit. The §5.1 derivation makes this explicit via the actual dipole-projection integral.
+### 1.2.1 Prior art: the coincidence is not ED's observation *(added 2026-09-05)*
+
+**The numerical relation this paper derives has been in the MOND literature for four decades, and the reader must be told so before the derivation is presented.** Stating it otherwise reads as claiming the observation, which ED does not claim.
+
+What is already established:
+
+1. **The order-of-magnitude coincidence.** $a_0 \sim cH_0$ was noted in Milgrom's founding papers (Milgrom 1983) and has been discussed continuously since.
+2. **The extension to $\Lambda$.** The same scale coincides with the cosmological constant. Milgrom (2020) reviews the connection and states it as $a_0 \sim c H_0 \sim c^2\Lambda^{1/2} \sim c^2/\ell_U$, describing it as *“a potentially crucial aspect of MOND”* and a possible pointer to the deeper theory underlying MOND phenomenology.
+3. **The $2\pi$-normalized form specifically.** $a_0 \approx cH_0/(2\pi)$, the exact expression this paper derives, is the form quoted in the standard review literature (Famaey & McGaugh 2012). **The $2\pi$ is not ED's discovery either.** It is the factor that makes the coincidence numerically close rather than merely order-of-magnitude, and the literature adopted it on that basis.
+
+**So what does ED add?** Two things, and the paper should be read as claiming only these.
+
+- **A mechanism.** The MOND literature treats the relation as a coincidence of unknown status; Milgrom (2020) is explicit that whether it is physically meaningful is open. **ED supplies a substrate-level route by which the relation arises**: dipole-mode projection of the cosmic decoupling surface at $R_H = c/H_0$ onto an accelerating chain's anisotropic adjacency (§§3–5). Whether that route is correct is the paper's actual content.
+- **A coefficient in place of a $\sim$.** The literature's relation is an approximate equality with no derived normalization. **ED's $1/(2\pi)$ is claimed to be geometrically fixed** by azimuthal-Fourier normalization on the residual $SO(2)$, converting an $\approx$ into an $=$ and making the relation falsifiable at the level of the coefficient rather than the order of magnitude. **That is what §5.5's $H_0$-preference argument and the $H_0 = 2\pi a_0/c$ prediction rest on**, and it is why the coefficient's corpus-internal dispute (§8.4) matters as much as it does: **the coefficient is the entire novel claim.** Remove it and ED is restating a known coincidence.
+
+**Consequence for how this paper is read.** A referee who knows the MOND literature will recognize the relation on sight. The paper is not competing on the observation, and any framing that treats $cH_0$ as “the known part” and $2\pi$ as “ED's contribution” is wrong on both halves: **the $2\pi$ is in the literature too. What is not in the literature is a derivation of it.**
+
+### 1.2.2 What ED claims, stated against that prior art
+
+$a_0$ has substrate-level structural origin via dipole-mode projection of the cosmic decoupling surface onto an accelerating chain's anisotropic adjacency. **The factor of $2\pi$ is claimed to be fixed geometrically** by azimuthal-Fourier-mode normalization rather than fitted phenomenologically, and §5.1 makes that explicit via the dipole-projection integral. **That claim is conditional on the postulates of §2 and is currently disputed within the corpus (§8.4); it should not be read as established.**
 
 This matters for:
 
@@ -379,12 +401,13 @@ The result is parameter-free given $H_0$.
 
 ### 6.2 What is structural vs. what is inherited
 
-- **Structural:** existence of cosmic decoupling surface at $R_H = c/H_0$; dipole as leading anisotropic mode; $1/(2\pi)$ Fourier-normalization factor; result $a_0 = cH_0/(2\pi)$.
+- **Structural:** existence of cosmic decoupling surface at $R_H = c/H_0$; dipole as leading anisotropic mode; $1/(2\pi)$ Fourier-normalization factor. **The *derivation* of $a_0 = cH_0/(2\pi)$ is what is structural here; the *relation* is not.** The relation is prior art (§1.2.1), and listing the result itself as an ED structural output was an overstatement, corrected 2026-09-05.
+- **Prior art, neither inherited nor derived:** the numerical coincidence $a_0 \approx cH_0/(2\pi)$, known in the MOND literature since Milgrom 1983 in its order-of-magnitude form.
 - **Inherited:** numerical $H_0$ (cosmological measurement); numerical $c$; substrate-graph normalization conventions (anchored at substrate-graph scale).
 
 ### 6.3 The empirical wedge
 
-Parameter-free prediction: $a_0^{\mathrm{ED}} \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$ (at $H_0 = 70$); empirical MOND $a_0 \approx 1.2 \times 10^{-10}\,\mathrm{m/s^2}$. Match ~10%. Neither MOND-as-phenomenology nor dark-matter-as-particle account derives this match.
+Parameter-free prediction: $a_0^{\mathrm{ED}} \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$ (at $H_0 = 70$); empirical MOND $a_0 \approx 1.2 \times 10^{-10}\,\mathrm{m/s^2}$. Match ~10%. Neither MOND-as-phenomenology nor dark-matter-as-particle account **derives** this match, though **both are aware of it**: MOND's literature has treated it as an open pointer since 1983 (§1.2.1). **The wedge is the absence of a mechanism, not the absence of the observation.**
 
 ---
 
@@ -441,6 +464,12 @@ ED produces the transition acceleration scale, not the full MOND interpolation f
 ### 8.8 $a_0$ is *not* cosmologically constant — it evolves (the forward prediction, now data-confronted)
 
 Distinct from the $H_0$-value point of §8.5: because $a_0 = cH/(2\pi)$ reads the horizon $R_H = c/H$ *at the epoch in question*, the transition scale is not a constant of nature but tracks the *instantaneous* Hubble rate, $a_0(z) = cH(z)/(2\pi)$ — developed as a forward prediction in **Paper_031 §8.8** and **Paper_038 CO-3**, with ED's mechanism forcing the exponent $\alpha = 1$ in $a_0 \propto H^\alpha$. First data — **MUSE-DARK III (A&A 2026)** — detect this evolution across $0.33 < z < 1.44$ at **~30σ**, excluding a constant $a_0$ (and so burying constant-scale MOND), with a ~8% match to the local value. The measured rate runs mildly *faster* than $H(z)$, so ED's forced $\alpha = 1$ is confirmed in *direction* but in mild tension on the *exact rate* — the decisive open number for Rubin/Euclid. This paper derives only the local normalization $a_0 = cH_0/(2\pi)$; the evolution and its data-confrontation live in the cited companions.
+
+---
+
+### 8.9 No claim to have discovered the $a_0$–cosmology coincidence *(added 2026-09-05)*
+
+$a_0 \sim cH_0$ is Milgrom's observation (1983), reviewed at length in Milgrom (2020); the $2\pi$-normalized form is standard in the review literature (Famaey & McGaugh 2012). **This paper claims a mechanism and a derived coefficient, not the observation.** See §1.2.1.
 
 ---
 
@@ -520,9 +549,16 @@ What this paper does *not* claim:
 - **Paper #20 / Paper_090 (V5):** brief mention §7.3.
 - **Paper_030, 031:** gravity-arc continuation.
 
+### References
+
+- **Milgrom, M. (1983).** *A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis.* ApJ **270**, 365. The founding MOND paper; source of $a_0$ and of the $a_0 \sim cH_0$ observation.
+- **Milgrom, M. (2020).** *The $a_0$ – cosmology connection in MOND.* arXiv:2001.09729. A review devoted to this coincidence, stating it as $a_0 \sim c H_0 \sim c^2\Lambda^{1/2} \sim c^2/\ell_U$ and treating its physical status as open. **The most direct prior-art reference for this paper.**
+- **Famaey, B. & McGaugh, S. (2012).** *Modified Newtonian Dynamics (MOND): Observational Phenomenology and Relativistic Extensions.* Living Reviews in Relativity **15**, 10. Standard review; the source through which the $2\pi$-normalized form $a_0 \approx cH_0/(2\pi)$ is in general circulation. *(Verified to the paper; the section number for the $2\pi$ statement is not yet pinned, the published text being paywalled. Pin it before submission.)*
+- **Desmond, H. (2023).** Current $a_0$ determination with a systematic budget; used in §5.5.
+
 ### Glossary
 
-- **Transition acceleration $a_0$.** $a_0 = cH_0/(2\pi) \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$.
+- **Transition acceleration $a_0$.** $a_0 = cH_0/(2\pi) \approx 1.08 \times 10^{-10}\,\mathrm{m/s^2}$. The relation is prior art (§1.2.1); ED's claim is the mechanism and the derived coefficient.
 - **Cosmic decoupling surface.** Substrate-level effective horizon at $R_H = c/H_0$.
 - **Hubble parameter $H_0$.** Empirical; current range $H_0 \in [67, 74]\,\mathrm{km/s/Mpc}$.
 - **Dipole-mode projection.** The $l=1$, $m=0$ projection of the cosmic decoupling surface onto an accelerating chain's adjacency, supplemented by the $|n|=1$ azimuthal-Fourier projection on the chain's residual $SO(2)$ symmetry.

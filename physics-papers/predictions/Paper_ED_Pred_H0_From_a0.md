@@ -13,6 +13,8 @@
 
 ## Preamble: what this does NOT claim
 
+0. **It does not claim the `a₀`–cosmology link as ED's observation.** `a₀ ∼ cH₀` is Milgrom's (1983), and the `2π`-normalized form is standard in the MOND review literature. **ED claims a derived coefficient, not the connection.** §1 carries a correction on this point, and `Paper_029` §1.2.1 states the prior art in full.
+
 1. **It does not derive the `2π`.** That factor is **Postulated / disputed** in this corpus (Staleness #10). This prediction is *conditional* on it, and says so at every step.
 2. **It does not derive `H₀`.** ED inherits `H₀` (`Paper_029` §8.1). This is a *measurement* of it, not a prediction of its value.
 3. **It is not offered as evidence for the `2π`.** Using the relation to measure `H₀` and then citing the result as support for the relation would be circular. §4 states the non-circular reading.
@@ -30,7 +32,9 @@ Read the other way, this is a **measurement of the Hubble constant from galaxy r
 
 $$\boxed{H_0 = \frac{2\pi a_0}{c}}$$
 
-**This probe does not exist in MOND.** There `a₀` is a constant of nature with no connection to cosmology; there is nothing to invert. It exists only if the acceleration scale is set by the horizon, which is ED's central claim in this arc. It is therefore the sharpest ED-distinctive empirical statement available — the framework's one genuinely novel *measurement*, as opposed to a novel explanation of a known number.
+> **CORRECTED 2026-09-05.** This section previously read: *“This probe does not exist in MOND. There `a₀` is a constant of nature with no connection to cosmology; there is nothing to invert.”* **That was wrong, and wrong in a way a MOND referee would catch immediately.** The `a₀`-cosmology connection is discussed at length in the MOND literature; Milgrom (2020), *The `a₀` – cosmology connection in MOND* (arXiv:2001.09729), is a review devoted to exactly it, stating `a₀ ~ cH₀ ~ c²Λ^{1/2}` and calling it *“a potentially crucial aspect of MOND.”* The corrected claim is below. See `Paper_029` §1.2.1.
+
+**What is ED-distinctive is the coefficient, not the connection.** MOND has the coincidence and treats its physical status as open, which means it has `a₀ ∼ cH₀` with **no derived normalization**. An order-of-magnitude relation inverts only to an order-of-magnitude `H₀`, which measures nothing. **ED's claim to fix `k = 2π` geometrically is what converts the inversion into a number with an error bar** — and that claim is the disputed one (§Preamble item 1). So the probe's entire distinctiveness rests on the corpus's weakest link in this arc, which is the honest statement of its status and is sharper than the overclaim it replaces: **this is a measurement only if the coefficient holds, and the measurement is the coefficient's test.**
 
 ## 2. Where it stands now
 
@@ -64,7 +68,7 @@ Desmond 2023 is at ≈ **8%** combined. **Reaching arbitration-grade needs a fac
 
 ## 4. The non-circular reading
 
-The relation contains two quantities the corpus does not derive: the coefficient `k` in `a₀ = cH₀/k`, and `H₀` itself. One equation, two unknowns. So it must be read as a **joint constraint**, and it can be used in exactly two directions, never both at once:
+**The prior art sharpens this section rather than weakening it.** MOND supplies the relation but no `k`; ED supplies a candidate `k` and no `H₀`. The relation contains two quantities the corpus does not derive: the coefficient `k` in `a₀ = cH₀/k`, and `H₀` itself. One equation, two unknowns. So it must be read as a **joint constraint**, and it can be used in exactly two directions, never both at once:
 
 - **Assume the coefficient** (`k = 2π`) → the relation measures `H₀`. This is §1, and its result is a *test*: if it converges on the CMB value, the coefficient is refuted; if on the ladder value, the coefficient survives something it could have failed.
 - **Assume `H₀`** from an external probe → the relation measures the coefficient. This is Staleness #39's reading, and it currently returns `k = 5.67 ± 0.47` at `H₀ = 70` against `2π = 6.283`.
@@ -95,7 +99,7 @@ A redshift survey of the radial acceleration relation therefore delivers ED's fl
 |---|---|---|---|
 | 1 | `a₀ = cH₀/(2π)` | **P / disputed** | `Paper_029`; the coefficient is Staleness #10 |
 | 2 | `H₀ = 2πa₀/c` is an inversion of 1 | **D** | algebra |
-| 3 | The probe has no MOND analogue | **D-via-I** | in MOND `a₀` is a constant of nature; nothing to invert |
+| 3 | ~~The probe has no MOND analogue~~ **→ The probe has no *quantitative* MOND analogue** *(corrected 2026-09-05)* | **I** | the connection **is** MOND material (Milgrom 2020); what MOND lacks is a derived normalization, so its inversion returns only an order of magnitude. Downgraded from **D-via-I**: the original row rested on a false premise about the MOND literature. |
 | 4 | `H₀ = 77.0 ± 6.3` from Desmond 2023 | **D-via-I** | 2 + an inherited measurement |
 | 5 | `+0.62σ` vs SH0ES, `+1.50σ` vs Planck | **D-via-I** | arithmetic on published values |
 | 6 | ≈4% `a₀` precision needed for `±3 km/s/Mpc` | **D** | error propagation |
