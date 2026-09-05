@@ -1,6 +1,6 @@
 # F1 Arm C (Σ_C) — Result: the collision was findable blind, the resolution was not, and one run found a hole in my sign check
 
-*Run 2026-09-05, two families (GPT's paste was the prompt echoed rather than a reply; recorded as no-return, not as a failure). Scored against the measures pre-registered in `Seed_F1_ArmC_SigmaC.md` before any output was seen.*
+*Run 2026-09-05, **three families**. Scored against the measures pre-registered in `Seed_F1_ArmC_SigmaC.md` before any output was seen. **The third family's reply arrived after the first scoring pass and materially changed three of the four measures; the revision is §7 and the tables below are the revised ones.***
 
 **Conflict of interest, and it bites harder here than in any previous arm:** one family is Claude, the scorer is Claude, and **the thing being scored is a chain the scorer wrote this morning.** That family produced the finding that damages the chain most. **Recorded because the alternative reading — that the scorer softened the other family and amplified its own — is exactly what a reader should suspect, and §5 is the check on it.**
 
@@ -8,16 +8,19 @@
 
 ## Verdict
 
-| Measure | Gemini | Claude |
-|---|---|---|
-| **S1 — find the `Coh`/`Str` collision** | **YES** | **YES** |
-| **S2 — reach the settled split** | no — different resolution | **no — declined to resolve** |
-| **S3 — the P04 non-negativity route** | unscoreable (seed error, §4) | used without flagging |
-| **S4 — `Grad`** | **independently proposed the Dirichlet form** | undefined; speculated it carries MOND |
+| Measure | GPT | Gemini | Claude |
+|---|---|---|---|
+| **S1 — find the `Coh`/`Str` collision** | **YES** | **YES** | **YES** |
+| **S2 — reach the settled split** | no — posed it as a choice | no — different resolution | no — declined |
+| **S3 — the P04 non-negativity route** | **YES, independently (gap 7)** | not raised | used, not flagged |
+| **S4 — `Grad`** | undefined, `(i)` | **proposed the Dirichlet form** | undefined; may carry MOND |
+| *The aggregation gap* (unregistered) | **YES** | no | **YES** |
 
-**S1 passes 2/2. The collision was findable blind, by both families, in one pass.** It took me a full session and an external prompt.
+**S1 passes 3/3. The collision was findable blind, by every family, in one pass.** It took me a full session and an external prompt.
 
-**S2 fails 0/2, and that is the result that matters.**
+**S2 fails 0/3 — nobody reached the settled split.** But the closest attempt failed in a way that is itself evidence for the check (§7).
+
+**S3 hits 1/3, and the hit was independent** — without the equation the measure was written against.
 
 ---
 
@@ -39,7 +42,7 @@
 
 **That resolution does not reproduce Part 3, and Gemini's own check contradicts it.** Its Newtonian verification used *"if strain enters with a negative sign (`−Str`)"* — **the term its resolution deletes.** Without the diagonal there is no `−GM/R`, and Newton is lost. **So the pre-registered negative check does not fire: no family produced a different resolution that reproduces the established results.**
 
-**But S2 failing 0/2 is not nothing.** The settlement was reached by pushing three candidate assignments through to `a(R)` and keeping the survivor. **Neither family did that, and one had the target in front of it and still did not.** So the settlement is not the *obvious* reading of the material — **it is the reading you get only if you run the check.** That is a real limit on how much independent support today's four supports represent.
+**But S2 failing 0/3 is not nothing.** The settlement was reached by pushing three candidate assignments through to `a(R)` and keeping the survivor. **No family did that** — one declined, one proposed a rival that loses Newton, and one reverse-engineered the target `Σ(R)` analytically and got the sign wrong (§7). So the settlement is not the *obvious* reading of the material — **it is the reading you get only if you run the check.** That is a real limit on how much independent support today's four supports represent.
 
 ## 3. Gemini independently proposed the Dirichlet `Grad`
 
@@ -69,9 +72,9 @@
 
 ## 5. What this run says about the day's chain
 
-**Confirms:** the collision is real and findable by any careful reader — 2/2 blind, first pass. **The `Grad` proposal is not idiosyncratic** — an independent reader produced the same object and the same tier.
+**Confirms:** the collision is real and findable by any careful reader — 3/3 blind, first pass. **The `Grad` proposal is not idiosyncratic** — an independent reader produced the same object and the same tier.
 
-**Does not confirm:** the settled split. **Neither family reached it, and neither ran the check that produces it.** Four supports were assembled today on the premise that only one assignment works; **this run does not test that premise, because nobody tested it.**
+**Does not confirm:** the settled split. **No family reached it, and none ran the check that produces it.** Four supports were assembled today on the premise that only one assignment works; **this run does not test that premise, because nobody tested it.**
 
 **Damages:** the sign check's scope. **It answers "which assignment, given the log" and not "is the log licensed."** Corrected in that note.
 
@@ -86,3 +89,41 @@
 ---
 
 *Gravity ledger Staleness #77. Seed: `Seed_F1_ArmC_SigmaC.md`.*
+
+---
+
+## 7. Revision after the third family's reply
+
+**Three of the four measures move, and one new finding is the most useful thing in the run.**
+
+### S1 → 3/3
+
+GPT found the collision and worked both branches explicitly: *“Those are not the same quantity … there are consequently two possible readings”* — literal, giving `Coh − Str = −Σ_a b_a`; or `Coh = |ΣP|²`, giving `Coh − Str = 0`. *“Those are materially different stability landscapes. The framework has to choose.”* **All three families found it independently. The collision is not subtle; it was simply never looked for.**
+
+### S3 → hit, and it is the P04 route reached without the equation it was written against
+
+GPT's gap 7: *“Bandwidth is explicitly non-negative: `b_K ≥ 0`. **Yet the required gravitational stability contribution is `Σ_N = −GM/R`.** A positive quantity proportional to `GM/R` therefore cannot simply be identified with this contribution without specifying which term enters `Σ` and with what sign.”* **Its proposed fix — `Σ_grav = −λ B_grav`, `λ > 0` — is exactly `Σ_C ⊃ −Str` with positive bandwidth.**
+
+**That is the second of the two independent routes to the settlement**, reached without `Paper_QuadraticStrain_v1` §4's equation, which §6 recorded as making the measure unscoreable. **The measure was scoreable after all; my seed error was less damaging than recorded.**
+
+### The aggregation gap → 2/3, which changes its weight
+
+GPT reached it independently: *“a radial integration of a constant gives `∝ R`, whereas the required contribution is `∝ \ln R`. To obtain the stated logarithm, the quantity being integrated must instead have an effective `1/R` dependence at the appropriate stage.”* **Two of three families, from the same material, with no contact. That is no longer one model's quibble — it is the run's most-converged finding**, and §4's scope correction to the sign check stands on firmer ground than when it rested on one report.
+
+### The new finding: GPT reverse-engineered the required `Σ(R)` and got the sign wrong
+
+**This is the most useful thing in the run, and it is evidence *for* the three-way check.**
+
+GPT did what no other family did — it worked backwards from Part 3 to the `Σ(R)` P12 would need:
+
+> *“`−dΣ_H/dR = −√(GMa₀)/R`, which integrates to `Σ_H = −√(GMa₀)\ln R + const`”*
+
+and concluded `Σ(R) = −GM/R − √(GMa₀)\ln R`, *“so the target is mathematically consistent with P12.”*
+
+**The integration flipped a sign.** From `−dΣ/dR = −k/R` it follows that `dΣ/dR = +k/R`, hence **`Σ_H = +k\ln R`, not `−k\ln R`.** Checked numerically: **GPT's stated `Σ` gives `a_r = +1.265473×10⁻¹⁴` — Newton attractive, MOND *repulsive* — contradicting the final line of its own derivation.** The correct landscape is `Σ = −GM/R + √(GMa₀)\ln R`, which is what `Note_SigmaC_SignCheck_2026-09-05.md` option 2 produces, and it matches the target to twelve digits.
+
+**Why this matters more than a caught slip.** The three-way check was built because the `Coh`/`Str` assignment looked like a matter of taste. **An independent reader, attempting the same reconstruction analytically, got the sign backwards on the very term the check exists to settle** — and did not notice, because its final line quoted the right answer while its stated `Σ` gives the wrong one. **That is direct evidence that this sign is easy to get wrong by inspection and worth settling numerically.** It does not validate the *assignment* — nobody reached that — but it validates the *method*.
+
+### Net, revised
+
+**Confirmed:** the collision (3/3); the aggregation gap (2/3); the P04 route (1/3, independent); `Grad`'s Dirichlet form (1/3, independent, same tier). **Unreached:** the settled split (0/3). **Damaged:** the sign check's scope, unchanged from §4. **New:** the method behind the sign check is validated even though its conclusion is not — which is an odd result to have, and worth stating exactly that way.
