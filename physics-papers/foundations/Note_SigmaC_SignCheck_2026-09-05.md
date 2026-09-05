@@ -6,6 +6,8 @@
 
 ## Verdict
 
+> **✅ INDEPENDENTLY CONFIRMED 2026-09-05.** Handed the three candidate assignments and the target and asked which reproduces it, **two of three external families reached option 2**, with correct working (`substrate-evaluation/Seed_F1_S2_ThreeAssignments.md`). **The third got it wrong**, dropping a sign on the logarithmic term — for the second time that day, on the same term. **So this check no longer rests on one scorer, and the sign question is demonstrably not trivial: one of three careful readers missed it with every input handed over.** *(What is confirmed is the arithmetic. The candidate list, the target and the framing are this note's; a family agreeing is agreeing inside that setup, and the blind run's S2 was 0/3.)*
+
 **Option 2 is the unique winner.** Of the three candidate assignments, exactly one reproduces `Paper_030`'s established `a = a_N + √(a_N a_0)`, and it matches to floating-point precision at every radius tested.
 
 $$\boxed{\;\mathrm{Str}_K=\sum_a b_K^{(a)}\;,\qquad \mathrm{Coh}_K=2\!\!\sum_{a<b}\!\sqrt{b_K^{(a)}b_K^{(b)}}\cos\Theta_{ab}\;}$$

@@ -62,3 +62,39 @@ does, say so.
 **Record per family:** the answer; whether the working is shown; and **whether the sign of `d(ln R)/dR` versus `d(1/R)/dR` is handled correctly**, since that opposition is the whole content of the question and is where the analytic attempt failed.
 
 *Gravity ledger Staleness #78.*
+
+---
+
+## RESULT, run 2026-09-05 — 2/3 reach C. S2 closes, with one instructive failure.
+
+| Family | Answer | Working | `d(ln R)/dR` vs `d(1/R)/dR` |
+|---|---|---|---|
+| Gemini | **C** | shown, correct | correct |
+| Claude | **C only** | shown, correct | correct |
+| GPT | **“B and C both work”** | shown, **one sign dropped** | **wrong** |
+
+**Two of three reach C when handed the candidates — up from 0/3 blind.** The settlement is reproducible arithmetic, and `Note_SigmaC_SignCheck_2026-09-05.md` no longer rests on one scorer.
+
+### The failure is the same failure as last time, in the same family, on the same term
+
+GPT stated `X'(R) = +√(GMa₀)/R` correctly, then two lines later wrote
+
+> `dΣ_B/dR = −dD/dR − dX/dR = GM/R² + √(GMa₀)/R`
+
+**which requires `−dX/dR = +√(GMa₀)/R`, contradicting the derivative it had just written.** Verified numerically: **B gives `a_r = +1.265473×10⁻¹⁴` — MOND repulsive** — against the target's `−1.265740×10⁻¹⁴`. Only C matches.
+
+**And it half-noticed.** Its *“Wait — that sign comparison is important”* paragraph opens the right question and then closes it wrongly, concluding *“both produce the same acceleration despite different `Σ` signs relative to `X`.”* **They do not.**
+
+**This is the second time the same family has dropped a sign on the logarithmic term and not caught it** (`Result_F1_ArmC_SigmaC_2026-09-05.md` §7, where it reverse-engineered `Σ_H = −k\ln R` from an equation giving `+k\ln R`). **Twice, same term, same direction of carelessness, both times with a confident boxed answer.** The seed pre-registered `d(ln R)/dR` versus `d(1/R)/dR` as *“the whole content of the question”*; **it is also, empirically, the whole content of the failure.**
+
+### A finding beyond the score
+
+Claude noted, unprompted, that the exercise **adjudicates the `Coh` contradiction**: `Coh = X` is the interference-only reading (that paper's §2), while the summary's *“`Coh` read as `|ΣP|²`”* would fold `D` in and produce a wrong result. **So the arithmetic independently confirms the correction applied to `Paper_PhaseCoherence_P12Coh` §5 this morning, reached from the other direction.** That correction had been an internal judgement; it now has outside backing.
+
+### What this does and does not establish
+
+**Does:** the settlement is reproducible by independent readers given the candidates; the §5 correction is independently confirmed; and **the sign question is demonstrably not trivial — one of three careful readers got it wrong with everything handed over.**
+
+**Does not:** validate the *candidate list*, the *target*, or the *framing*, all of which are mine. **A family agreeing here is agreeing inside my setup.** The blind run remains the harder test, and its S2 was 0/3.
+
+*Gravity ledger Staleness #78.*
