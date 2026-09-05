@@ -61,6 +61,8 @@ The `(iii) genuine postulate` versus `(iv) hard derivation` call was the arm's d
 
 > *"P12 names `Coh`, `Str`, and `Grad`, but only D07 gives a computational definition for `Str`. No corresponding functional definition is supplied for `Coh` or `Grad`. Therefore we can expand the strain term, but we cannot actually evaluate `Σ_C`, and hence cannot calculate `a_C`, for a specified substrate configuration."*
 
+> **⚠ CORRECTED 2026-09-05, same day. My check was incomplete and this section overstated the finding.** **`Coh` IS defined**, in `substrate-evaluation/Paper_PhaseCoherence_P12Coh` §2, with four build steps behind it. **I checked the primitives and gravity papers and not `substrate-evaluation`.** The external finding was right about `Paper_087` and the gravity arc's citations, wrong that the corpus lacks the definition. **`Grad` remains genuinely undefined.** And the real problem is neither: **`|ΣP|²` is assigned to `Coh` and to `Str`, with opposite signs in `Σ_C`, so the arc's cross term cancels.** See `foundations/Note_SigmaC_Defined_2026-09-05.md`; Foundations #10; gravity ledger #70.
+
 **Checked. At the paper level this is correct:** `Paper_087` §P12, `Paper_088`, `Paper_026`, `Paper_027` and `Paper_054` all restate `Σ_C = Coh − Str − Grad` and none defines `Coh` or `Grad`.
 
 **One place in the corpus does define them, and that is where it gets serious.** `Paper_BlindnessInvariant_KnotsNotCrystals` §2 gives the *certified* functional operationally:

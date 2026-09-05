@@ -52,6 +52,8 @@ The two sides combine into one exact statement about the certified substrate: **
 
 ## 2. Why the sign structure is forced
 
+> **Naming note, added 2026-09-05.** **The certified rule's `Coh`, `Str` and `Grad` are density-level stand-ins and are *not* the substrate functionals of the same name.** The corpus already half-records this — `../event-density/theory/P12_Coherence_PhaseAlignment_Scoping.md` Step 1 calls the certified `Coh = -(ρ-ρ_*)²` *“a density-target, not a coherence measure; **arguably mislabeled**”* — but nowhere a reader would meet it. The substrate `Coh` is the phase-interference content (`Paper_PhaseCoherence_P12Coh` §2); the substrate `Str` is per-channel `P-Quadratic-Strain`. **The shared names are a tractability artifact of a single-rule-type simulator with no explicit polarity, not a claim that these are the same functionals.** `foundations/Note_SigmaC_Defined_2026-09-05.md` §3.
+
 The certified Σ functional is $\Sigma = k_c\,\mathrm{Coh} - k_s\,\mathrm{Str} - k_g\,\mathrm{Grad}$, with $\mathrm{Coh} = -(\rho_v - \rho_\star)^2$ (a local density target), $\mathrm{Str} = \rho_v$ (a local density penalty), and $\mathrm{Grad} = |\rho_v - \rho_u|$ (a nearest-neighbor gradient penalty). Every term is local, and every term reads the commitment density $\rho$ and graph-local structure only. Two facts follow directly:
 
 - **Orientation and flow direction are never read** — the rule is blind to them. A blind quantity has no interaction term at all, so nothing couples distant values; the only way two distant directions can correlate is that a shared front imprinted both. That is common cause, and it is all there is.

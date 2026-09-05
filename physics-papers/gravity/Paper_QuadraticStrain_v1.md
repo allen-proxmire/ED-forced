@@ -94,6 +94,8 @@ This paper *sharpens* Paper_030; it does not contradict it, in the same way GR-I
 > $$\mathrm{Str}_K=\Big|\sum_a P_K^{(a)}\Big|^2,\qquad P_K^{(a)}=\sqrt{b_K^{(a)}}\,e^{i\pi_K^{(a)}},$$
 > *where $a$ indexes the source regions contributing to channel $K$. This is a substrate-level reading of the P12 strain content, in the same genre as Paper_026's P-Potential-Reading: Model A reads strain as linear in source content; Model C reads it as quadratic in participation amplitude.*
 
+> **⚠ `Coh`/`Str` DOUBLE ASSIGNMENT, flagged 2026-09-05. Load-bearing; read before using this term.** The algebraic object `|Σ_a P^{(a)}|²` is assigned to **`Str`** here and to **`Coh`** in `substrate-evaluation/Paper_PhaseCoherence_P12Coh` §5. **They enter `Σ_C = Coh − Str − Grad` with opposite signs, so as written they cancel** — and with them the cross term `2√(b^{(L)}b^{(H)})·cos Θ_LH` that is this arc's entire MOND mechanism. **Neither paper states the index set its sum runs over, which is why the collision is invisible.** The most likely repair is that they run over **disjoint** sets — `Coh` over a chain's own participations, `Str_K` over external sources contributing to channel `K` — in which case nothing cancels and one sentence in each paper settles it. **Not adopted here: the choice changes the arc's sign structure and is the author's.** Full statement and three candidate resolutions: `foundations/Note_SigmaC_Defined_2026-09-05.md` §4.
+
 **What is postulated versus what is forced.** P-Quadratic-Strain is the postulate. *Given* it, the geometric-mean form of the cross-term is **forced**, not separately assumed: a channel carries one bandwidth $b_K$ (P04) and one polarity $\pi_K$ (P09), so two source contributions to the same channel have nowhere to reside but the single amplitude $P_K$, and superpose. This is the content of §3 and §5, and it is why P14 is not an independent postulate under Model C.
 
 ---
@@ -112,7 +114,7 @@ This paper *sharpens* Paper_030; it does not contradict it, in the same way GR-I
 | 8 | Transition by ratio: $a=a_N+\sqrt{a_N a_0}$ | **P (regime assumption restored) 2026-09-04** (was D) | §6.3's ratio argument required row 7; with the diagonal retained, `Paper_030` §5.3's regime assumption is back |
 | 9 | BTFR $v^4=GMa_0$, slope 4, zero scatter | D | §7, = Paper_031 |
 | 10 | $a_0=cH_0/(2\pi)$ numerical value | I | Paper_029 (value-inherited via $H_0$) |
-| 11 | Definite, constructive relative phase $\Theta_{LH}$ (coherence inherited from Paper_029; sign not derived) | **A / OPEN** | §9 residual; ties to V5 / RelationalTick attractive-coherence |
+| 11 | Definite, constructive relative phase $\Theta_{LH}$ | **~~A / OPEN~~ → SUPPLIED 2026-07-08, table corrected 2026-09-05** — this row contradicted the paper's own §9 *“Update 2026-07-08 (constructive sign supplied)”* for two months. The sign is discharged by `substrate-evaluation/Paper_PhaseCoherence_P12Coh` (build-verified 2D + 3D, finite-reach). **Tier: MEASURED for finite-reach; the `Coh` operationalization is form-forced-conditional, not a theorem.** | §9 residual; ties to V5 / RelationalTick attractive-coherence |
 
 All rows are P, D, I, or the one flagged A/OPEN row (11). No hidden assertions. *Amended 2026-09-04: rows 7 and 8 re-tiered to DISPUTED. The defect was not visible per-row — it lives between rows 6 and 7, where one quantity is used with two incompatible meanings. A per-row audit cannot catch that class; see the banner.*
 
