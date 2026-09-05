@@ -112,6 +112,12 @@ Seed: the thirteen primitives with operational content, V1 and V5 as inherited k
 
 ### Stage 2 — Arm B (the 38 lines) — the new arm
 
+**Seed written 2026-09-05: `Seed_F1_ArmB_38Lines.md`.** Primitives and kernel blocks are **byte-identical to arm A** (verified by diff), so the A/B comparison is valid.
+
+**The decision that determines whether this arm tests anything:** the 38 lines list `G = c³ℓ_P²/ħ` (row 15) and `a₀ = cH₀/(2π)` (row 16), and **neither is seeded as a relation — both are seeded as values.** `G = c³ℓ_P²/ħ` **is the dimensional closure every prior seeded run missed**; seeding it would hand over a result and then credit the model for holding it. **This is faithful rather than weakening:** the workbook's Tier Key classes all ten as **Constant / Input**, and the constants-inherited ledger reads the `G` row as *“a combination, not a **second** independent input — but not therefore explained.”* The input is `ℓ_ED`; the relation is ED's account of it.
+
+**New secondary measure:** if arm B recovers `G = c³ℓ_P²/ħ` from the seeded `c`, `ħ`, `ℓ_P`, record it as a distinct observation. **All three arm-A runs held those constants and none connected them** — GPT explicitly declined, calling it *“not a substrate derivation.”*
+
 Seed: **all 38** — the 13 primitives, the 10 constants (`c`, `G`, `a₀`, `Λ`, `ħ`, `ℓ_P`, `H₀`, masses, couplings, `α`), and the 15 postulates carried in `Core Theory` rows 24–38 (`P-RB-1`, `P-Quadratic-Strain`, `P-Gauge`, `P-QD-LiveWeight`, `P-YM-Action-Coarse-Graining`, `P-OS-Reflection-Positivity`, `P-Profile-Rescaling`, the six acoustic-metric guardrails, V5 existence, the tensor-product composition, the monogamy budget cap, Tsirelson placement, E-1 factorisability, the `a₀`/`ξ_canonical` shared-origin postulate).
 
 **Withhold in both arms:** `Paper_026`/`027`'s channel-count derivation, anything naming the front-null step, and every `GR-` paper's content.
