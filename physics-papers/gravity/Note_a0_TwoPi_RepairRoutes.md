@@ -241,6 +241,44 @@ The `2π`-required range for `a₀` is **already in the corpus**. `Paper_029` §
 
 ---
 
+---
+
+## 4f. The owed sentence, grounded in P12 — 2026-09-05
+
+§4b isolated the whole remaining debt to one sentence: **why is the comparison made at the chain's layer rather than at a common layer?** The justification offered there was *"the chain is what responds, so the response is executed in the chain's own machinery, at the chain's own layer."* That is a plausibility argument. **It can be replaced with a citation to a primitive, and that is what this section does.**
+
+### The hook: ED has no layer-2 definition of acceleration
+
+`Paper_087` §P12's operational content is:
+
+$$\vec{a}_C \;=\; -\,\vec{\nabla}_{\mathrm{adj}}\,\Sigma_C$$
+
+with the surrounding text reading *"the negative gradient of `Σ_C` **along its adjacency direction**."* **`∇_adj` is a difference over substrate-graph adjacency, not a continuum gradient.** So in ED an acceleration is *definitionally* a layer-1 object: it is a rate of change of stability content across graph edges. **There is no second, independent ED definition of acceleration at layer 2** — a continuum `a` is what you get by coarse-graining this one, not an alternative to it.
+
+**That is the missing warrant, and it is not chosen to fit.** P12 was written as a primitive, and `Paper_087` lists it as load-bearing in **Paper_029 itself** — so the route is appealing to a commitment `a₀`'s own paper already declares it uses.
+
+### Restating the criterion so the asymmetry is a consequence rather than a choice
+
+The transition is where the horizon's contribution to a chain's stability landscape begins to dominate the local contribution — i.e. where the two terms in `∇_adj Σ_C` cross. **The gradient is evaluated at layer 1 because P12 says accelerations are adjacency gradients.** The horizon's contribution enters that gradient as a **coarse-grained state**, because `Paper_028` §3.4 makes the cosmic decoupling surface *statistical* rather than geometric. **Neither side's layer is selected; each is fixed by a prior commitment.**
+
+The symmetric alternative — convert the chain's `a` to `T_a = a/2πc` and compare temperatures — requires coarse-graining `a` out of P12's adjacency gradient and then applying a detector-response relation to it. **That is two operations performed on the one quantity ED defines primitively, in order to compare it with a quantity ED can only obtain coarse-grained.** It is available, but it is no longer the *natural* reading, which is what §4b's version could not claim.
+
+### One correction to §4b's horizon half, which was called the solid one
+
+§4b states that the cosmic surface *"**cannot** contribute a `κ`"*, and then two clauses later writes `T_H = κ_H/(2π) = H₀/(2π)` — **which requires a `κ_H`.** Taken literally the half contradicts itself, and the standard de Sitter result it imports (`T = H/2π`) is derived from exactly the near-horizon geometric structure the sentence denies.
+
+**The repair is one qualifier and it strengthens the route rather than weakening it:** the surface has **no layer-1 `κ`** — no `b`-gradient at substrate level, which is what `Paper_028` §3.4 actually establishes — while at layer 2 it coarse-grains to a de Sitter-like horizon with `κ_H = H₀`. **That is precisely §4b's own claim** that the horizon *"can only present itself coarse-grained because it is statistical by construction."* Unqualified, the sentence was too strong and cost the route its horizon side; qualified, the layer asymmetry is explicit on **both** sides instead of asserted on one.
+
+### Honest status, and what is still owed
+
+**This is movement, not closure.** What has changed: the load-bearing sentence is no longer a plausibility argument about what responds to what. It is a consequence of P12's `∇_adj` plus `Paper_028` §3.4, both prior and both independently motivated.
+
+**What is still owed, stated exactly.** That the horizon's coarse-grained state contributes `T_H` — and not `2π T_H`, or some other multiple — **to a layer-1 adjacency gradient.** The layer argument establishes that *one* conversion factor sits between the two sides. **It does not yet establish that the factor enters in the direction that divides rather than multiplies.** Dimensional analysis does not fix this; both readings are dimensionally legal and they differ by `(2π)²`, a factor of 39.
+
+**So the debt has moved down one level rather than being paid.** §4b owed *"why compare at layer 1?"*. §4f owes *"given that we compare at layer 1, why does the seam contribute `1/2π` rather than `2π`?"* **The second question is narrower, it is about a single sign in an exponent, and it is the kind of thing a careful construction settles.** The first was a question about the philosophy of the framework.
+
+**Do not bank this either.** The tier is unchanged: the `1/(2π)` remains **Postulated / disputed**, `Paper_029`'s banner stands, and nothing in this section licenses removing it. What is claimed here is that the route now rests on two primitives and one unresolved direction, rather than on two primitives and one sentence of judgement.
+
 ## 5. Status and what to do next
 
 | Item | State |
