@@ -146,3 +146,15 @@ with **`n`, `a_eff`, `b_adj^max` and the coupling all cancelling.** Equivalent f
 3. **§9's `Π_p`/`Π_q` are derived from Drude and kinetic theory evaluated *at* the wall, where both fail.** Not a coefficient problem — a domain problem, and it undercuts `Λ`'s parameter-independence claim rather than its value. **Banner added at the head of §9. Cheapest repair: restrict `Λ` to the regime approaching the wall, turning it into a limiting statement.**
 
 **Withdrawn:** the same-day claim that F-CONVERGE was *“the cheapest test in the arc.”* **ML 4.11 re-marked scoped, not live.** **The arc's load-bearing open item is no longer `Π_p`/`Π_q` — it is why the Adjacency-band wall should be the MIR wall at all.** Gravity ledger Staleness #65.
+
+---
+
+## Staleness 2026-09-05 (third entry) — `a_eff` settled; the arc no longer explains MIR
+
+**`Note_WhatIsAEff_2026-09-05.md` (new).** `a_eff` is **three physically distinct lengths under one symbol**, and the symbol appears **only** in the two transport papers — **not once in `Paper_073_DCGT`, which they cite as its source.** P08's `ℓ_ED` (`1.6×10⁻³⁵ m`), the DCGT cell `R_cg`, and the interatomic spacing (`3×10⁻¹⁰ m`, what every number uses). **Twenty-five orders between the first and the third.**
+
+**Neither derivation route survives.** DCGT §3.1 makes `R_cg` a **chosen** scale with results *“insensitive to the specific choice”*, so a floor there would make a measurable quantity depend on a bookkeeping decision. And **coarse-graining a floor at `ℓ_ED` does not install a floor at `R_cg`.** The load is carried by one asserted sentence.
+
+**`F-EXIST` has fired.** Its condition — *“charge transport that continues rising without any saturation”* — is the documented behaviour of bad metals. **It had been marked a** *“consilience pass”* **on the confirming half of the literature only.** Forks: either the postulate is falsified in cuprates and fullerides, or the mechanism has no purchase in that regime and **F-COONSET has no venue**.
+
+**Settled: `a_eff` is the material's emergent transport cell, inherited.** P08 and DCGT leave the chain; `ρ_max` re-tiered *identification/consilience* → **I**. **ED does not explain MIR; it inherits it.** The *sharing* claim survives and was always the distinctive part; **`Λ` survives untouched**, cancelling `a_eff` whatever it is. Gravity ledger Staleness #66.
