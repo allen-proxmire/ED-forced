@@ -79,7 +79,25 @@ BASELINE_SCOPE = "physics-papers"
 # list row, which is a one-line edit per falsifier and makes the list navigable
 # from the papers for the first time.
 MASTER_LIST = "physics-papers/predictions/ED_Master_Predictions_List.md"
-PRED_BASELINE = ('F-BC', 'F-CROSSTALK', 'F-D2', 'F-D3', 'F-Gauge', 'F-LIVE', 'F-P', 'F-QD-1', 'F-QD-2', 'F-QD-3', 'F-QD-4', 'F-R1', 'F-SAT')
+
+# Named falsifiers that are NOT predictions and must not be pushed into the
+# predictions list. Clearing the 2026-09-05 backlog showed the `F-` convention
+# covers two different objects: empirical bets, and theory-internal conditions
+# that a derivation rather than an experiment would settle. Forcing the second
+# kind into a predictions list would misrepresent it, so they are exempted here
+# WITH the reason attached -- an unexplained exemption is how a check quietly
+# stops meaning anything.
+NOT_A_PREDICTION = {
+    "F-Gauge": "verdict-UPGRADE condition, not a falsifier: deriving P-Gauge moves "
+               "Paper_114 M2 -> M1. Nothing about the world decides it.",
+    "F-BC":    "fires on a substrate-level demonstration that horizon content resolves "
+               "across Sigma_{R_H} rather than Sigma_R. A derivation refutes it, not an "
+               "experiment. (Paper_030)",
+    "F-P":     "reformulated 2026-09-04 because it could not fire: needs two independent "
+               "determinations of l_ED and the corpus has one. Conditional on a "
+               "determination that does not exist today. (Paper_027)",
+}
+PRED_BASELINE = ()
 PRED_BASELINE_DATE = "2026-09-05"
 
 # --- scope --------------------------------------------------------------------
@@ -269,6 +287,8 @@ def predictions_crosscheck(roots):
             continue
         body = strip_fences(text)
         for name in sorted(set(FALSIFIER.findall(body))):
+            if name in NOT_A_PREDICTION:
+                continue          # exempt by declared reason, not by string match
             if name not in ml:
                 orphans[name].append(rel)
         stem = os.path.basename(rel)[:-3]
@@ -302,6 +322,7 @@ def report_predictions(orphans, dangling, distinctive_uncited, verbose):
     print(f"  Named falsifiers orphaned : {len(now):>3}  (baseline {len(PRED_BASELINE)}, {PRED_BASELINE_DATE})")
     print(f"  Dangling citations        : {len(dangling):>3}  (master list \u2192 no such file)")
     print(f"  Distinctive but uncited   : {len(distinctive_uncited):>3}  (paper claims a distinctive bet; list has no row)")
+    print(f"  Exempt \u2014 not predictions  : {len(NOT_A_PREDICTION):>3}  (theory-internal conditions; --predictions for why)")
 
     if verbose:
         if orphans:
@@ -317,6 +338,9 @@ def report_predictions(orphans, dangling, distinctive_uncited, verbose):
             print("\n  P3 \u2014 papers claiming distinctive falsifier content, absent from the list:\n")
             for p in distinctive_uncited:
                 print(f"       {p}")
+        print("\n  Exempt \u2014 named falsifiers that are NOT predictions:\n")
+        for name in sorted(NOT_A_PREDICTION):
+            print(f"       {name:<14} {NOT_A_PREDICTION[name]}")
         print("\n  A P1 hit is cleared by adding the label to the relevant master-list row,")
         print("  not by deleting it from the paper. The label is the join key: without it")
         print("  the list cannot be navigated from the papers, which is how the transport")
