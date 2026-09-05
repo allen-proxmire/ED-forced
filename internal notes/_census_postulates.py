@@ -13,7 +13,8 @@ BASIS (declared, per target #20 — a count without a stated basis is what cause
 the problem): distinctly-named postulates of the form `P-Name` appearing anywhere
 in the scanned corpus. Excluded: the 13 canonical primitives and P14 (written
 P01..P14, which this pattern does not match), and the denylist below. Counted
-once per distinct name regardless of how many papers use it.
+once per distinct name regardless of how many papers use it. A name occurring
+ONLY in a ledger/note/README is excluded: it has been written about, not declared.
 
 Usage:
     python "internal notes/_census_postulates.py"              # summary + drift check
@@ -40,7 +41,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Update ONLY via --update, and only when the change is real (a postulate was
 # genuinely added or removed). A moved count with no corresponding paper change
 # means the pattern or the scope changed, which is a bug in this script.
-BASELINE = 173
+BASELINE = 171
 BASELINE_DATE = "2026-09-04"
 BASELINE_SCOPE = "physics-papers"
 
@@ -203,7 +204,13 @@ def main():
 
     found = census(roots)
     variants = find_variants(found)
-    names = sorted(n for n in found if n not in variants)
+    # A postulate must appear in at least one PAPER. A name that occurs only in a
+    # ledger, note or README has been *written about*, not declared -- and writing
+    # about one in a ledger used to inflate this count (2026-09-04: reporting the
+    # SC-4.x census in a ledger entry added two names to the corpus's own total).
+    ledger_only = [n for n in found
+                   if n not in variants and not any(is_paper(f) for f in found[n])]
+    names = sorted(n for n in found if n not in variants and n not in ledger_only)
     total = len(names)
     raw = len(found)
 
@@ -211,6 +218,7 @@ def main():
     print(f"Basis: distinctly-named `P-Name` postulates; the 13 primitives and P14 excluded.\n")
     print(f"  Distinctly-named postulates : {total}")
     print(f"  Probable spelling variants  : {len(variants)}  (merged out; --list shows them)")
+    print(f"  Ledger/note-only names      : {len(ledger_only)}  (excluded \u2014 written about, not declared)")
     print(f"  Raw pattern matches         : {raw}")
     print(f"  Total occurrences           : {sum(sum(f.values()) for f in found.values())}")
     print(f"  With the 13 primitives      : {13 + total}")

@@ -16,7 +16,7 @@
 | **Used in ≥ 4 papers** | **26** | **39** | **Cross-cutting: the framework's standing commitments** |
 | Carries a Postulated-tier claim row | 14 | **27** | The tiered-claims workbook's basis (its "15 live") |
 
-Plus 2 names that appear only in a ledger — `P-Adiabatic-CG` and `P-MOND-Interp-Covariantization` — which are abbreviations, not postulates. The raw census of 173 minus those is 171.
+**Ledger-only names are excluded**, and there are now **4**: `P-Adiabatic-CG` and `P-MOND-Interp-Covariantization` (abbreviations), plus `P-BTFR-Slope-4` and `P-Deep-MOND-Limit`, which entered the corpus's text on 2026-09-04 **only because a ledger entry reported them** while summarising the un-migrated `ED-SC 4.x` papers. **They are real postulates — in papers that have not been migrated yet — and will count once those papers arrive.** *(Until 2026-09-04 the headline census used a looser rule than this document's ladder and reported **173**; writing about a postulate in a ledger inflated it. The script now applies the ladder's own rule, so both figures are **171** and they agree. Gravity ledger Staleness #53.)*
 
 ## The rule, stated so it can be argued with
 
