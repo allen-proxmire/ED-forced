@@ -39,6 +39,16 @@ The Wilsonian-RG flow of substrate-level effective kernels exhibits a three-regi
 ### 2.3 Paper-specific postulates
 
 - **P-Three-Regime-RG:** The Wilsonian-RG flow of substrate effective kernels exhibits three distinct regimes (UV, transition, IR) separated by the V1 and V5 scales.
+> **SETTLED 2026-09-04 — `0.6` is REDUCED, not derived; this paper's tier is correct and unchanged.** `event-density/theory/The_0_6_Problem_Resolution.md` was read. Its result:
+>
+> $$T_0 = \frac{L_0^2 D_{\mathrm{nd}}}{D_{\mathrm{phys}}} \;\Longrightarrow\; 0.6 = 2\,D_{\mathrm{nd}}(\mathrm{quantum}), \qquad \frac{c_0}{c} = \frac{1}{2 D_{\mathrm{nd}}}$$
+>
+> **Three levels, and only the third is open** (the paper's own table): `T_0 = 2D_ndħ/(mc²)` is **structurally forced** by the dictionary construction, *no freedom*; `c_0/c = 1/(2D_nd)` is **structurally forced** as a corollary, *no freedom*; **`D_nd(quantum) = 0.3` is a convention, not a derivation.** The paper's verdict is *“partial derivation + structural reduction”*, and it says plainly: ***“The ‘0.6 problem’ does not have its own standalone resolution. It collapses cleanly into the already-named `D_nd` anchoring problem”*** — the subject of `ED-Dimensional-01-Ext.md`'s rate-balance-template program. §8: *“The 0.6 is reduced but not eliminated.”*
+>
+> **So the answer to ‘is 0.6 derived?’ is no, and the inheritance MOVES rather than dissolving:** what ED inherits is no longer the number `0.6` but the convention `D_nd(quantum) = 0.3`, joined to it by an exact algebraic bridge. **That is a real gain** — one unexplained number becomes one unexplained number *that is already a named, actively worked problem*, and asking “why 0.6?” is now literally asking “why `D_nd = 0.3`?” **Item 1 of this paper's preamble stands verbatim and `P-0p6-Canonical` remains a postulate.**
+>
+> **What the reduction buys, and none of it was in this paper (§6 of the resolution):** (a) the superluminal `c_0 ≈ 1.667c` is an **atlas-nondimensionalisation artifact**, not an ED prediction — it arises purely from picking `D_nd = 0.3`; (b) **`c_0 = c` exactly at `D_nd = 1/2`**, the rate-balance point where `γ_dec = ω_sys`, which is a clean selection rule with no fitted parameter; (c) a **cross-regime consistency relation** for analogue platforms, `c_s/c = 1/(2 D_nd(regime))`. **(c) is not registered in any ED prediction list** — flagged as a candidate, and deliberately not registered here, because the resolution paper itself cautions that the relation is *“algebraic, not predictive”*: it is a test only where `D_nd` is anchored independently per regime, which is exactly what the rate-balance template supplies for optomechanics / cavity-QED / condensed-matter / galactic / cosmological. See gravity ledger Staleness #48.
+
 - **P-0p6-Canonical:** At the canonical operating point (Paper_096), the transition regime exhibits a characteristic exponent $\approx 0.6$; the value is canon-internal.
 
 ---
