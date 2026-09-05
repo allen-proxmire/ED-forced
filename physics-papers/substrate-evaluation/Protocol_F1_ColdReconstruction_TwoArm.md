@@ -68,16 +68,22 @@ say so plainly rather than inferring what it might mean.
 
 **Even a clean screen is run in a throwaway session.** The word *“Event Density”* has still appeared in that context, and the arms must not inherit it.
 
-### Stage 0 — RUN 2026-09-05. One family clean, one discarded, and a contamination vector the protocol had not anticipated.
+### Stage 0 — COMPLETE 2026-09-05. Three clean families, one discarded, and a contamination vector the protocol had not anticipated.
 
-| | GPT *(operator account)* | Gemini | GPT *(clean surface)* |
-|---|---|---|---|
-| 1. Causal Set Theory *(real control)* | correct | correct | correct |
-| **2. Event Density** | **RECOGNISES** | **not familiar** | **not familiar** |
-| 3. Relational Bandwidth Cosmology *(invented)* | disclaimed | disclaimed | disclaimed |
-| 4. Shape Dynamics *(real control)* | correct | correct | correct |
-| 5. Participation Kinematics *(invented)* | disclaimed | disclaimed | disclaimed |
-| **Verdict** | **DISCARD** | **CLEAN** | **CLEAN** |
+| | GPT *(operator acct)* | Gemini | GPT *(clean)* | Claude *(clean)* |
+|---|---|---|---|---|
+| 1. Causal Set Theory *(real control)* | correct | correct | correct | correct |
+| **2. Event Density** | **RECOGNISES** | **not familiar** | **not familiar** | **not familiar** |
+| 3. Relational Bandwidth Cosmology *(invented)* | disclaimed | disclaimed | disclaimed | disclaimed |
+| 4. Shape Dynamics *(real control)* | correct | correct | correct | correct |
+| 5. Participation Kinematics *(invented)* | disclaimed | disclaimed | disclaimed | disclaimed |
+| **Verdict** | **DISCARD** | **CLEAN** | **CLEAN** | **CLEAN** |
+
+**Three clean families — the protocol's minimum is met and Stage 0 is closed.**
+
+**Claude's negative is the most informative of the three**, and for a reason the distractors could not have caught. It separates *“I know ‘event’ and ‘density’ as generic terms”* from *“I don't recognise ‘Event Density’ as a named framework”*. **That rules out word-level pattern-matching** — the failure mode where a model assembles a plausible-sounding description from the constituent words and reports it as recall. No distractor tests for that, because the invented names were chosen to be unfamiliar rather than compositional.
+
+**Capability parity across all three clean families.** Every one described both real controls correctly, and Claude's Shape Dynamics answer is the most detailed of the four responses collected — naming Barbour, the trade of relativity of simultaneity for relativity of scale, and the global Hamiltonian constraint against four-dimensional diffeomorphism invariance. **No clean family is a weak model**, which is the objection any negative arm result will attract.
 
 **Two clean families: Gemini, and GPT on a surface without the operator's memory.**
 
@@ -96,7 +102,7 @@ say so plainly rather than inferring what it might mean.
 > - A family discarded this way is **not permanently disqualified** — only disqualified *on that account*. A temporary/incognito chat, a logged-out session, or an API call with memory disabled is a different surface and must be **re-screened from scratch**, not assumed clean.
 > - **Any operator who has discussed ED with an assistant has contaminated that assistant for themselves.** The cleanest arm-runner is a surface the operator has never used for ED, or a second person.
 
-**Status: two clean families. The protocol asks for three.** Arm A may proceed on either. **One more clean family reaches the protocol's minimum.** Remaining candidates: Claude on an account never used for ED, or an open-weights family with a documented cutoff. **Note the operator cannot screen Claude on the ED-Generative project surface** — that project carries persistent memory files about ED, so it is contaminated by construction; a different account or project is required.
+**Status: STAGE 0 CLOSED. Three clean families — Gemini, GPT (clean surface), Claude (clean surface).** **F1 is live and arm A may run.** *(Recorded for anyone repeating this: the operator cannot screen Claude on the `ED-Generative` project surface — that project carries persistent ED memory files and is contaminated by construction. The clean Claude result above came from a separate surface.)* **An incidental finding worth keeping: the only recognition observed came from the operator's own account, not from training data.** As of 2026-09-05, ED is not in the field — which is the condition F1 requires, and which will not survive publication of the corpus. **If F1 is to be run at all, it is to be run now.**
 
 ### Stage 1 — Arm A (13 primitives) — the control
 
