@@ -69,13 +69,13 @@
 
 ---
 
-## ⚠ This arc has no tiered-claims ledger — flagged 2026-09-04
+## ⚠ This arc had no tiered-claims ledger until 2026-09-04 — and that is why it went unaudited
 
 Every other content arc in `physics-papers/` carries a `*_TieredClaims_Ledger.md`: the arc's claim inventory, tier assignments, open items and staleness log. **`soft-matter/` does not.** It has 18 papers and no ledger.
 
 **This is why the arc was invisible to the 2026-09-04 claim-strength audit.** That pass swept the fifteen arc ledgers and reported covering “all fifteen arcs”; the count was of *ledgers*, and an arc with no ledger was never in the set. **So soft-matter is a sixteenth content arc that has not been audited, and was not recorded as unaudited either.** See `internal notes/AUDIT_2026-09-04_ClaimStrength_AllArcs.md` and gravity ledger Staleness #54.
 
-The arc carries load-bearing content: `Paper_077_NS_Smoothness_R1` and `Paper_084_VortexStretching` are one of the two executed results behind research target #15's singularity family, and `Paper_086_SoftMatter_Synthesis` was flagged 2026-09-04 for quoting `ξ_canonical` to unsupported precision. **Creating the ledger is the natural next task for this arc.**
+The arc carries load-bearing content: `Paper_077_NS_Smoothness_R1` and `Paper_084_VortexStretching` are one of the two executed results behind research target #15's singularity family, and `Paper_086_SoftMatter_Synthesis` was flagged 2026-09-04 for quoting `ξ_canonical` to unsupported precision. **The ledger now exists** — `SoftMatter_TieredClaims_Ledger.md`, built 2026-09-04 from each paper's own audit table. **The arc is now visible; it is not yet checked**: no external claim-strength pass (checklist §9 items 19–21) has been run on it, and that is the next task.
 
 ## An SCBU projection into this arc
 
