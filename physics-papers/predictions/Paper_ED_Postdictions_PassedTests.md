@@ -1,7 +1,7 @@
 # Event Density: Passed Tests and Postdictions from a Substrate Cosmology Framework
 
 **Series:** Wave-3 Empirical-Prediction Sector — Passed Tests + Postdictions (outreach support paper)
-**Status:** Documents what Event Density (ED) has already gotten right. One observationally-confirmed passed test (GW170817), plus five postdictions where the substrate-level identification reproduces already-observed values or results at parameter-free or substrate-parameter-INHERITED level — including the UDM diffusion-law match to existing published data (documented in a self-authored Zenodo preprint, **not** peer-reviewed). Companion to the predictions bundle (Paper_ED_Predictions_Bundle); independent enough to stand alone for readers who want only the confirmed-against-data slice.
+**Status:** Documents what Event Density (ED) has already gotten right. **one survival result** (GW170817 — *re-labelled 2026-09-05: by §1's own definition this is a postdiction, not a passed test; the substantive and defensible claim is that GW170817 eliminated a class of modified-gravity programs and ED is not in that class*), plus five postdictions where the substrate-level identification reproduces already-observed values or results at parameter-free or substrate-parameter-INHERITED level — including the UDM diffusion-law match to existing published data (documented in a self-authored Zenodo preprint, **not** peer-reviewed). Companion to the predictions bundle (Paper_ED_Predictions_Bundle); independent enough to stand alone for readers who want only the confirmed-against-data slice.
 **Date:** 2026-05-17
 **Anchors:** Paper_087 (13 primitives); Paper_095 (verdict grammar); Paper_027 (Newton's $G$); Paper_028 (cosmic decoupling); Paper_029 ($a_0 = cH_0/(2\pi)$); Paper_030 (ED Combination Rule); Paper_031 (BTFR slope-4); Paper_038_5 (Lambda V1 reframing; M3 retroactive); Paper_ED_Cos_05 (Dark Energy; M3 unconditional); Paper_ED_GW_00 (GW; M3 + row 12 partial closure); Universal Mobility Law paper (self-authored Zenodo preprint, May 2026; not peer-reviewed); ED-SC 4.x arc (M3 with substrate-parameter-INHERITED foundation post-Route-A-closure).
 
@@ -58,7 +58,7 @@ $$
 \frac{|c_{\mathrm{GW}} - c|}{c} < 10^{-15}.
 $$
 
-**Result classification.** **PASSED.** ED's prediction of GW speed = $c$ holds at the strongest current observational precision.
+**Result classification.** **PASSED** — *with a correction to the label, 2026-09-05.* **By this paper's own definition** (§1: *“passed tests are predictions made **before** the confirming data”*) **GW170817 is a postdiction, not a passed test:** the observation is from August 2017 and `Paper_ED_GW_00` was written years later. **What is true, and is the substantive claim, is a survival claim:** GW170817 eliminated a large class of modified-gravity programs that predict $c_{\rm GW} \neq c$, and ED's one-cone structure is not of that class — so it clears a bar many competitors failed. **That is worth stating and is stated below. It is not a passed test**, and this is an outreach-facing paper where the distinction is exactly the one a hostile reader checks first. **The corpus therefore has *zero* passed tests in the strict sense and should say so**; every ED-distinctive bet is still ahead of its data. Gravity ledger Staleness #67.
 
 **Significance for alternative-gravity programs.** GW170817 ruled out a large class of modified-gravity theories that predict $c_{\mathrm{GW}} \neq c$:
 
