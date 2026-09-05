@@ -70,14 +70,18 @@ say so plainly rather than inferring what it might mean.
 
 ### Stage 0 — RUN 2026-09-05. One family clean, one discarded, and a contamination vector the protocol had not anticipated.
 
-| | GPT | Gemini |
-|---|---|---|
-| 1. Causal Set Theory *(real control)* | correct | correct |
-| **2. Event Density** | **RECOGNISES** | **not familiar** |
-| 3. Relational Bandwidth Cosmology *(invented)* | disclaimed | disclaimed |
-| 4. Shape Dynamics *(real control)* | correct | correct |
-| 5. Participation Kinematics *(invented)* | disclaimed | disclaimed |
-| **Verdict** | **DISCARD** | **CLEAN — proceed to arm A** |
+| | GPT *(operator account)* | Gemini | GPT *(clean surface)* |
+|---|---|---|---|
+| 1. Causal Set Theory *(real control)* | correct | correct | correct |
+| **2. Event Density** | **RECOGNISES** | **not familiar** | **not familiar** |
+| 3. Relational Bandwidth Cosmology *(invented)* | disclaimed | disclaimed | disclaimed |
+| 4. Shape Dynamics *(real control)* | correct | correct | correct |
+| 5. Participation Kinematics *(invented)* | disclaimed | disclaimed | disclaimed |
+| **Verdict** | **DISCARD** | **CLEAN** | **CLEAN** |
+
+**Two clean families: Gemini, and GPT on a surface without the operator's memory.**
+
+**A capability control, unplanned and useful.** The clean GPT surface's answer on Shape Dynamics is *sharper* than the contaminated one's — it names the trade of **refoliation invariance** for conformal invariance, where the memory-carrying surface said only “local scale”. **So the clean surface is at least as capable on the controls.** That pre-empts the obvious objection to any clean-surface negative — that the model simply knows less — and it is worth having on record before the arms run, not after.
 
 **Gemini is live.** It described both real controls in genuine detail, disclaimed both invented ones — so its recognition claims carry information — and does not know Event Density. **The distractors are the reason this negative can be trusted rather than merely hoped for**, and this is their first live use.
 
@@ -92,7 +96,7 @@ say so plainly rather than inferring what it might mean.
 > - A family discarded this way is **not permanently disqualified** — only disqualified *on that account*. A temporary/incognito chat, a logged-out session, or an API call with memory disabled is a different surface and must be **re-screened from scratch**, not assumed clean.
 > - **Any operator who has discussed ED with an assistant has contaminated that assistant for themselves.** The cleanest arm-runner is a surface the operator has never used for ED, or a second person.
 
-**Status: one clean family. The protocol asks for three.** Arm A may proceed on Gemini; the two-arm comparison is only as strong as the number of clean families, and a single-family result is suggestive rather than decisive. **Next: screen a third and fourth surface** — candidates include GPT via a memory-disabled API call, Claude on an account never used for ED, and any open-weights family with a documented cutoff.
+**Status: two clean families. The protocol asks for three.** Arm A may proceed on either. **One more clean family reaches the protocol's minimum.** Remaining candidates: Claude on an account never used for ED, or an open-weights family with a documented cutoff. **Note the operator cannot screen Claude on the ED-Generative project surface** — that project carries persistent memory files about ED, so it is contaminated by construction; a different account or project is required.
 
 ### Stage 1 — Arm A (13 primitives) — the control
 
