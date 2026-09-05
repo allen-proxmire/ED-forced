@@ -9,7 +9,7 @@
 1. It does **not** show the Atlas convention is wrong. It shows what the convention *requires*, and leaves the choice open.
 2. It does **not** derive `0.6`. It derives **`2/3`**, conditional on one named identification.
 3. The identification of `ω_sys` is **interpretive** — the template's own §2.3 says steps 1–4 are interpretive and only step 5 is forced. This note does not pretend otherwise.
-4. It raises, and does not settle, whether `Paper_097`'s `0.6` and the dictionary's `0.6` are even the same object (§5).
+4. It raised the question of whether `Paper_097`'s `0.6` and the dictionary's `0.6` are the same object; that was **settled the same day (§5): they are not.** This note therefore bears on the **dictionary** `0.6` only.
 
 ---
 
@@ -66,7 +66,7 @@ The two differ by exactly **9/10**.
 
 `Paper_097` describes its `0.6` as *"the transition regime exhibits a characteristic **exponent** ≈ 0.6"* (`P-0p6-Canonical`). The dimensional dictionary's `0.6` is a dimensionless **coefficient** in `T_0 = 0.6\,\hbar/(mc^2)`. **An exponent and a coefficient are different kinds of object**, and the identification of the two is assumed rather than argued anywhere I have found.
 
-This matters because on 2026-09-04 `Paper_097`'s citation was repointed from a memory file to `The_0_6_Problem_Resolution.md` **on the assumption that they are the same `0.6`** (gravity Staleness #47). If they are not, that repoint is wrong and `Paper_097`'s number has no resolution paper at all. **Flagged, not settled** — checking it means reading the three-regime RG derivation, which this note has not done.
+This matters because on 2026-09-04 `Paper_097`'s citation was repointed from a memory file to `The_0_6_Problem_Resolution.md` **on the assumption that they are the same `0.6`** (gravity Staleness #47). If they are not, that repoint is wrong and `Paper_097`'s number has no resolution paper at all. **SETTLED 2026-09-04, same day (Staleness #50): they are not the same object.** *“Characteristic exponent ≈ 0.6”* appears **only in `Paper_097`**; its cited memory source contains one exponent (`z = 2`) and never links `0.6` to the transition regime, and the four RG memos contain no `0.6` at all. **Consequences for this note: none adverse.** §§2–4 concern the *dictionary* `0.6`, which is real, well-sourced and exactly what `The_0_6_Problem_Resolution` addresses — so the `D_nd = 1/3` result stands unchanged. What changes is its **scope**: it bears on the dimensional dictionary and **not** on `Paper_097`'s claimed RG exponent, which currently has no located source at all.
 
 ## 6. Tier and what is owed
 
@@ -78,14 +78,14 @@ This matters because on 2026-09-04 `Paper_097`'s citation was repointed from a m
 | 4 | `D_nd(quantum) = 1/3`; `2D_nd = 2/3`; `c_0 = 1.5c` | **D-via-I** — conditional on 3 |
 | 5 | The convention `D_nd = 0.3` requires `ω_sys = 7/6·ω_C` | **D** — algebra |
 | 6 | `7/6·ω_C` has no evident interpretation | — observation, not a proof of absence |
-| 7 | `Paper_097`'s exponent and the dictionary's coefficient may be different objects | **OPEN** — §5 |
+| 7 | `Paper_097`'s exponent and the dictionary's coefficient are different objects; the exponent has no located source | **SETTLED** — §5, Staleness #50 |
 
 **Verdict: M2.** The template closes in the quantum regime on one named interpretive identification, and lands 10% from the Atlas convention. **`0.6` is not derived by this note; `2/3` is.**
 
-**Owed.** (a) Justify or replace `ω_sys = ω_C` from the substrate rather than from the dictionary's own length scale — that is the one remaining screw. (b) Recover the Atlas's record of *how* `D_nd = 0.3` was chosen; if it was chosen as a decimal convenience the two results reconcile, and if it was chosen physically then `7/6·ω_C` needs a meaning. (c) Settle §5.
+**Owed.** (a) Justify or replace `ω_sys = ω_C` from the substrate rather than from the dictionary's own length scale — that is the one remaining screw. (b) Recover the Atlas's record of *how* `D_nd = 0.3` was chosen; if it was chosen as a decimal convenience the two results reconcile, and if it was chosen physically then `7/6·ω_C` needs a meaning. ~~(c) Settle §5~~ — **done the same day; see §5.** In its place: locate any source for `Paper_097`'s exponent, or retire `P-0p6-Canonical`.
 
 ## 7. Falsification criteria
 
 - **F1.** If the Atlas documents a physical derivation of `D_nd = 0.3` that fixes `ω_sys = 7/6·ω_C`, §3's identification is wrong and this note fails.
 - **F2.** If `ω_sys` for the quantum regime is shown from substrate primitives to be anything other than `ω_C`, §3 fails and `D_nd` moves with it.
-- **F3.** If `Paper_097`'s `0.6` is a genuinely distinct object (§5), then this note bears only on the dictionary and not on `Paper_097`.
+- **F3 — FIRED AND CONFIRMED 2026-09-04.** `Paper_097`'s `0.6` **is** a distinct object, so this note bears only on the dictionary and not on `Paper_097`. Scope narrowed accordingly; the result itself is unaffected.
