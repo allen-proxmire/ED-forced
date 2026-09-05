@@ -277,6 +277,14 @@ The symmetric alternative — convert the chain's `a` to `T_a = a/2πc` and comp
 
 **So the debt has moved down one level rather than being paid.** §4b owed *"why compare at layer 1?"*. §4f owes *"given that we compare at layer 1, why does the seam contribute `1/2π` rather than `2π`?"* **The second question is narrower, it is about a single sign in an exponent, and it is the kind of thing a careful construction settles.** The first was a question about the philosophy of the framework.
 
+### 4g. The same seam turned up in the collapse arc, hours later — 2026-09-05
+
+**The debt above is not this arc's alone.** `state-reduction/Note_Theta12_LayerQuestion_2026-09-05.md` asks whether the relative phase in `Coh` is the coarse-grained interferometric phase or the raw substrate polarity that **`Paper_PhaseCoherence_P12Coh` measures decorrelating at `ξ ≈ 5ℓ_ED`.** **That is the same seam, reached from an arc that shares nothing else with this one.**
+
+**And it has the same shape.** §4f: *given that we compare at layer 1, what does the seam contribute?* There: *given that `Σ_C` is layer-1, does its phase term decorrelate at `ξ`?* **Both turn on what crosses the coarse-graining seam when a layer-1 functional is read from layer 2.**
+
+**The stakes are now joint.** Layer 2 in the collapse arc gives ED a phase-dependent collapse rate DP does not have and reproduces Penrose's mutual energy; layer 1 makes the collapse cross-term die over `10⁻³⁴ m` rather than the object's size — **a difference Diósi–Penrose experiments directly measure.** **Settling the seam would move this arc's most-disputed number and that arc's Penrose correspondence together, and nothing in the corpus currently treats the seam as a single object.**
+
 **Do not bank this either.** The tier is unchanged: the `1/(2π)` remains **Postulated / disputed**, `Paper_029`'s banner stands, and nothing in this section licenses removing it. What is claimed here is that the route now rests on two primitives and one unresolved direction, rather than on two primitives and one sentence of judgement.
 
 ## 5. Status and what to do next
