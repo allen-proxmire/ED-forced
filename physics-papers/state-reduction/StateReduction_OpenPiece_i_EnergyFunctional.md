@@ -4,7 +4,9 @@
 
 ## The energy functional (cited, not re-derived)
 
-From `Paper_QuadraticStrain_v1`: reading per-channel strain as `Str_K = |Σ_a P_K^(a)|²` with `P_K = √b_K e^{iπ_K}` splits gravity into
+> **⚠ Split corrected 2026-09-05.** `Str_K = |Σ_a P_K^(a)|²` is superseded: a three-way sign check against `Paper_030`'s established result fixed **`Str_K = Σ_a b_K^(a)` (the diagonal)** and **`Coh_K = 2Σ_{a<b}√(b_a b_b)cos Θ_ab` (the off-diagonal)**, the quadratic form splitting across two P12 terms rather than sitting in one. **No result below changes** — the same two pieces appear with the same values — but the Newton piece is now `−Str` and the MOND piece `+Coh`. `foundations/Note_SigmaC_SignCheck_2026-09-05.md`. **And see `Note_CollapseEnergyIsSigmaC_2026-09-05.md`: under that split the collapse energy is `E_Δ = Str − Coh = −Σ_C`, which answers this arc's standing “exact energy combination” flag.**
+
+From `Paper_QuadraticStrain_v1`: reading per-channel participation as amplitudes `P_K = √b_K e^{iπ_K}` splits gravity into
 
 - a **diagonal** (self) term = Newton: `a_N = GM/R²`, `Φ_N = −GM/R`;
 - an **off-diagonal** (cross-source) term = the **local–horizon interference** (MOND): `a_cross = √(a_N a_0) cosΘ_LH`, with `a_0 = cH_0/(2π) ≈ 1.2×10⁻¹⁰ m/s²` (`Paper_029`).
