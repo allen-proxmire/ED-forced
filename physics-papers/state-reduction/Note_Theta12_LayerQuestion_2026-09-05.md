@@ -60,7 +60,7 @@
 
 **Both are the same question about the same seam, reached from two arcs that share nothing else.** Settling *at which layer `Σ_C` is evaluated, and what crosses the seam when it is read from the other side* would move the gravity arc's most-disputed number and the collapse arc's Penrose correspondence together.
 
-**Nothing in the corpus currently treats the layer seam as a single object.** It should.
+~~**Nothing in the corpus currently treats the layer seam as a single object.**~~ **WRONG, corrected the same day.** `layers/` treats it as a single object and has a thesis about it — *the divide is the arrow* — plus a sharper result underneath: **layer 2's decorrelation add is ONE forced operator, the gradient-flux Laplacian `∇·(M∇φ)`** (`layers/layer_2/OneOperator_TheLaplacian.md`). **What is true and narrower: neither this arc nor the `2π` route cites any of it.** And the layers program **narrows this note's fork**: the layer-2 add is statistical and arrow-erasing, whereas `Paper_PhaseCoherence`'s `ξ` is a **layer-1 geometric** decorrelation from quenched substrate disorder. **Two different objects under one word.** So the question is not *“does crossing the seam randomize the phase?”* but ***“is `Coh` evaluated on raw polarity, which carries `ξ`, or on the coarse-grained holonomy, which does not?”*** `layers/Note_TheSeam_And_SigmaC_2026-09-05.md`.
 
 ---
 
