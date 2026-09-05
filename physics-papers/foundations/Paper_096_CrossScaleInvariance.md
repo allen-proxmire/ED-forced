@@ -38,7 +38,7 @@ Cross-scale invariance in ED is the canonical statement (ED-SC 3.x) that the sub
 ### 2.3 Paper-specific postulates
 
 - **P-S1-Invariant:** The substrate-level S1 kernel-content is invariant under scale transformations within the hydrodynamic window: V1 + V5 indexing under Paper_092's $(\ell_n, r_n, k_n)$ is preserved.
-- **P-Canonical-Operating-Point-ED-SC:** The canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu (canon-internal value from ED-SC 3.3.x arc closure) is the reference scale against which invariance is stated.
+- **P-Canonical-Operating-Point-ED-SC:** The canonical operating point $\xi_{\mathrm{canonical}} \approx 1.8 \pm 0.3$ lu *(quoted elsewhere as 1.7575; see the precision note in §7)* (measured value from the ED-SC 3.3.x arc closure) is the reference scale against which invariance is stated.
 - **P-S2-Ensemble-Only:** The S2 content (ensemble-level statistical signatures) is regime-specific, not cross-scale invariant.
 
 ---
@@ -53,7 +53,7 @@ Cross-scale invariance in ED is the canonical statement (ED-SC 3.x) that the sub
 | 4 | Canonical $\xi_{\mathrm{canonical}}$ reference | P-Canonical-Operating-Point-ED-SC | Postulate (canon-internal). |
 | 5 | S2 ensemble-only regime | P-S2-Ensemble-Only | Postulate. |
 | 6 | Cross-scale invariance verdict | D-via-I | Composition. |
-| 7 | Numerical $\xi_{\mathrm{canonical}} = 1.7575$ lu | I | Empirical / canon-internal. |
+| 7 | Numerical $\xi_{\mathrm{canonical}} = 1.76 \pm 0.30$ lu | **Measured** *(re-tiered 2026-09-04; was `I` / “Empirical / canon-internal”)* | Simulation result on the certified substrate — artefact `ed-lab/outputs/ed_sc_3_1/xi_canonical.json`, 10 seeds × 40 snapshots. Matches the Tier Key's **Measured** definition. Value is `σ`-limited and processing-dependent; see §7. |
 | 8 | Specific 5×3 verdict grid (per memory) | I | ED-SC 3.3.x closure. |
 
 ---
@@ -66,9 +66,15 @@ By P-S1-Invariant, the substrate-level kernel structure (V1 + V5 + higher-order 
 
 ### 3.2 Canonical operating point
 
-By P-Canonical-Operating-Point-ED-SC, $\xi_{\mathrm{canonical}} = 1.7575$ lu is the substrate-level reference scale. Invariance is stated relative to this canonical point.
+By P-Canonical-Operating-Point-ED-SC, $\xi_{\mathrm{canonical}} = 1.7575$ lu is the substrate-level reference scale. Invariance is stated relative to this canonical point. **[PRECISION FLAGGED 2026-09-04 — the measurement gives `ξ = 1.76 ± 0.30` lu.** The artefact `ed-lab/outputs/ed_sc_3_1/xi_canonical.json` reports `σ = 0.303` over 10 seeds, so *1.7575* quotes five significant figures to a number uncertain in its first decimal. The same artefact's **smoothed** autocorrelation gives `3.05 ± 0.53`, a factor 1.74 away, so the value is processing-dependent too. **ξ is genuinely Measured** (simulator of record, 10 seeds × 40 snapshots) — what is wrong is the precision, not the provenance. `Paper_096` §7; Foundations staleness #4; gravity Staleness #47.]**
 
-The numerical value $1.7575$ is **canon-internal** (inherited from ED-SC 3.3.x arc closure per `project_ed_sc_3_arc.md`); not derived from primitives independently.
+**Provenance, traced 2026-09-04.** ξ is **measured, not a floating benchmark**: `ed-lab/outputs/ed_sc_3_1/xi_canonical.json`, produced by the simulator of record `analysis/scripts/ed_arch_r2/r2_grf_falsifier_tests.py` + `ED_Update_Rule.ed_step_mobility`, method *GR-SC 1.7 half-decay of the 2D radial autocorrelation*, 10 seeds × 40 snapshots (400 total), 64² periodic, α=0.03 γ=0.5 σ=0.0556 mobility-exp 2.7, 500 steps.
+
+**⚠ The quoted precision is not supported by the measurement.** The artefact reports `xi_mean = 1.7575325729470939` **with `xi_std = 0.3034757800063313`** across the ten seeds (per-seed range 1.623–2.191). **The honest value is `ξ ≈ 1.8 ± 0.3`** — a 17% spread — and quoting *1.7575* gives five significant figures to a quantity uncertain in its first decimal place. **And it is processing-dependent:** the same artefact's smoothed autocorrelation gives `xi_mean_smoothed = 3.05 ± 0.53`, a factor of **1.74** from the unsmoothed value. The papers quote the unsmoothed number without noting that the choice moves it that far. *(Gravity ledger Staleness #47; Foundations staleness #4.)*
+
+*(Superseded sourcing, retained for the record: the value was cited to the memory file `project_ed_sc_3_arc.md`, which lives in **another project's** memory directory and is therefore outside both repos and, per `CLAUDE.md`, not ground truth. That memory file also states a per-seed span of [1.039, 2.19]; the artefact's own per-seed values run [1.623, 2.191], so the memory is wrong about the lower bound — a small but exact illustration of why the artefact is cited here instead.)*
+
+The numerical value is **measured, not derived from primitives independently.
 
 ### 3.3 S2 ensemble-only regime
 

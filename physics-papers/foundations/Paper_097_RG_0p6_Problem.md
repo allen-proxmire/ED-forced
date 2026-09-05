@@ -12,7 +12,7 @@
 2. It does **not** claim novel critical-exponent predictions overriding standard RG.
 3. It does **not** introduce new substrate primitives.
 4. "Three-regime RG / 0.6 problem" = the canon-internal closure (Paper_ed_rg_three_regime memo) identifying three substrate-level RG regimes (UV V1-dominated, IR V5-dominated, transition) with characteristic exponent $\approx 0.6$ at the canonical operating point.
-5. The 0.6 value appears in `project_ed_rg_three_regime.md` as a canon-internal benchmark.
+5. The 0.6 value is treated here as a canon-internal benchmark. *(Sourcing corrected 2026-09-04: this cited the memory file `project_ed_rg_three_regime.md`, which sits in **another project's** memory directory — outside both repos, and not ground truth per `CLAUDE.md`. **A paper exists**: `event-density/theory/The_0_6_Problem_Resolution.md`, which argues `0.6 = 2·D_nd(quantum)` with `D_nd = 0.3` the cross-regime nondimensional invariant, via a dimensional-dictionary construction, and reports a five-route audit. **Cite that, not the memory.** This paper's tier is left unchanged and the claim in item 1 stands: assessing whether that resolution promotes 0.6 from inherited to derived requires reading it, which has not been done here. Gravity ledger Staleness #47.)*
 
 ---
 

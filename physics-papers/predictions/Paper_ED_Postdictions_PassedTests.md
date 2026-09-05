@@ -162,7 +162,7 @@ with $M_P^2$ via Paper_027's dimensional rearrangement and $H_0$ via Route A4 (P
 
 - $a_0 \approx cH_0/(2\pi)$ — MOND transition acceleration (galactic regime; Paper_029)
 - $R_H = c/H_0$ — cosmic decoupling surface (cosmological regime; Paper_028)
-- $\xi_{\mathrm{canonical}} \approx 1.7575$ lu — substrate-scale fixed-point (ED-SC 3.x canonical; Paper_096)
+- $\xi_{\mathrm{canonical}} \approx 1.7575$ lu — substrate-scale fixed-point (ED-SC 3.x canonical; Paper_096) **[PRECISION FLAGGED 2026-09-04 — the measurement gives `ξ = 1.76 ± 0.30` lu.** The artefact `ed-lab/outputs/ed_sc_3_1/xi_canonical.json` reports `σ = 0.303` over 10 seeds, so *1.7575* quotes five significant figures to a number uncertain in its first decimal. The same artefact's **smoothed** autocorrelation gives `3.05 ± 0.53`, a factor 1.74 away, so the value is processing-dependent too. **ξ is genuinely Measured** (simulator of record, 10 seeds × 40 snapshots) — what is wrong is the precision, not the provenance. `Paper_096` §7; Foundations staleness #4; gravity Staleness #47.]**
 - $\mathcal{M}_{\mathrm{crit}}$ ~140–250 kDa — Q-Compute platform-coherence wall (Paper_060)
 - $Q \approx 3.5$ — NS-Q canonical hydrodynamic factor (Paper_080)
 - BH horizon $r_H = 2GM/c^2$ — black-hole scale parameterized by local mass
