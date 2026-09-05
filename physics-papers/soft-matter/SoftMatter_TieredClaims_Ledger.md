@@ -72,7 +72,7 @@
 | Compressible / non-Newtonian / non-isothermal corrections | 076 | OPEN |
 | Intermittency corrections to the cascade | 078 | OPEN |
 | Universality of `Q ≈ 3.5` across platforms | 080 | **NOT CLAIMED** |
-| Exact ratio `φ_max : ρ_max = Π_p/Π_q` | UnifiedP04 | OPEN — projection factors not derived |
+| ~~Exact ratio `φ_max : ρ_max = Π_p/Π_q`~~ → **invariant product `Λ = η_minρ_max e²/p_F² = Π_pΠ_q`** | UnifiedP04 §9 | **CLOSED IN FORM 2026-09-05, D-via-I.** `Π_p = 1/3`, `Π_q = 1`; `n`, `a_eff`, `b_adj^max` and the coupling all cancel. **Two corrections en route:** the pairing (§8, `φ_max`→`η_min`) and the **ratio→product** (§9.1 — `η_min ∝ a`, `ρ_max ∝ 1/a`, so the ratio scales as `a²`). **Value stays inherited:** `Λ ∈ [1/5, 1/3]`, the width a kinetic-averaging convention. |
 | Substrate origin of the seven PUA axioms | 075 | **I** — the axioms are inherited, so `D = 3+1` is conditional on them |
 
 ---
@@ -112,3 +112,25 @@
 ## Staleness 2026-09-05 — one false comparative claim, corrected
 
 **`Paper_UnifiedP04TransportBudget` §8 read** *“Standard physics has no reason to unify them; ED forces it”* of the MIR resistivity ceiling and the KSS/Planckian viscosity floor. **False, and self-contradicting**: the same paper says three lines earlier that the field *“actively debates whether they are the same physics.”* **Zaanen (2019), SciPost Phys. 6, 061 (arXiv:1807.10951), argues precisely this unification.** ED enters an open debate on one side; it does not supply a link nobody had reason to draw. **Corrected in place**, with the discriminator relocated to the underived `η_min : ρ_max` ratio — which makes `Π_p`, `Π_q` the arc's load-bearing open step rather than a refinement. **This is the arc's first substantive correction since its ledger was built (2026-09-04), and it came from outside the corpus, not from re-reading it.** Gravity ledger Staleness #61.
+
+---
+
+## Progress 2026-09-05 — the `Π_p`/`Π_q` step is run; the arc's R2-analog closes in form
+
+**Closed in form the same day the arc's one false comparative claim was corrected**, and by the route that correction opened: relocating the discriminator to `η_min : ρ_max` made the step tractable, because both walls are floored at one length and the algebra is textbook once that is granted.
+
+**Result.** `Π_p = 1/3` (kinetic shear viscosity at the floor), `Π_q = 1` (Drude at the floor), and
+
+$$\Lambda \;\equiv\; \frac{\eta_{\min}\rho_{\max}e^{2}}{p_F^{2}} \;=\; \Pi_p\Pi_q,$$
+
+with **`n`, `a_eff`, `b_adj^max` and the coupling all cancelling.** Equivalent form: `η_minρ_max = (ħk_F²/6π)·R_K`, the product of the two transport walls being the resistance quantum times a purely geometric carrier factor. **Verified numerically in three independent forms plus an `(n, a_eff)`-independence sweep** — `internal notes/_check_transport_invariant.py`, re-runnable.
+
+**Two corrections were required to get there, and the second was in this paper's own last update.** §8 (2026-07-30) had already fixed the *pairing* (`φ_max` → `η_min`). But it then asserted that *“their ratio `η_min : ρ_max` is an O(1) that cancels `a_eff`”*. **It does not.** `η_min ∝ a_eff` and `ρ_max ∝ 1/a_eff`, so the ratio scales as `a_eff²` and **the product is the invariant.** F-RATIO had been written against the ratio and was therefore untestable as stated. *Same-kind does not mean same-sign: one floor, entering two transport coefficients with opposite powers.*
+
+**What this does to the arc's load-bearing posit, and it is the most useful part.** The `a_eff` cancellation happens **only** because one length floors both transports. With two floors the algebra returns `Λ = Π_pΠ_q·(a_η/a_ρ)`. **So `Λ` is a direct measurement of `P-Adjacency-Transport-Shared` itself**, not a comparison against a computed number — which is a better falsifier than the one the paper was reaching for. **F-RATIO restated accordingly, and the sharper half is the drift test:** `Λ` must not track lattice spacing, carrier density or material, and that test is **independent of the unresolved `[1/5, 1/3]` coefficient band.**
+
+**F-CONVERGE, new and the cheapest test in the arc.** Standard treatments keep the momentum-conserving and momentum-relaxing lengths distinct — electron hydrodynamics is *defined* by `ℓ_ee ≪ ℓ_mr`, established by orders of magnitude in graphene, PdCoO₂ and WP₂. **ED does not contradict that**, since its claim is about the wall, where both floor at the cell. **But it does require the two lengths to converge on approach**, and a system driven to MIR saturation with them still orders apart falsifies the posit **with no viscosity measurement at all.**
+
+**Tier discipline, stated because the temptation here is real.** The result is **`D-via-I`, not substrate-native.** The ED content is one sentence — at the wall the two mean free paths are the same length because they are the same band — and inherited kinetic theory supplies everything else. **The `1/3` is a kinetic-averaging convention, not a forced number**: the degenerate-Fermi-gas transport result gives `1/5`, and at the wall, where quasiparticles are marginal, neither scheme is clearly right. **That ambiguity is inherited and is not closable from the substrate**, so the claim is the existence and parameter-independence of `Λ`, never its value. Gravity ledger Staleness #62.
+
+**Filed as ML 4.11 the same day.** **Propagation failure caught in passing, and it is a bad one.** The transport arc's predictions — co-onset included, which the paper calls its *“distinctive, falsifiable, ED-owned content”* — **had never been entered in `ED_Master_Predictions_List.md` at all.** A distinctive falsifiable bet sat outside the corpus's own prediction inventory from the paper's writing until today. **Now ML 4.11**, filed under Quantum Foundations and Soft Matter with all three legs (co-onset, the `Λ` drift test, F-CONVERGE) and the Lucas–Hartnoll contrast. **Item 21's third face again: the inventory is a propagation target, and nothing had flagged the omission because nothing cross-checks arc papers against the master list.**

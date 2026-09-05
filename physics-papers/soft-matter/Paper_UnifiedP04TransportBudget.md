@@ -10,7 +10,7 @@
 ## Preamble — What This Paper Does NOT Claim *(written first per QC discipline)*
 
 1. **The absolute ceilings are inherited.** `φ_max` and `ρ_max` (the MIR value) stay inherited, exactly as in `Paper_079` / the resistivity scoping paper. This paper claims a *relation between them*, not their values.
-2. **The exact ratio is NOT derived here.** The commensurability's *value* requires two projection factors (momentum-content vs charge-content weight per adjacency unit) that the corpus does not supply. That is scoped (§4) as the remaining step, not delivered.
+2. **The exact ratio is NOT derived here.** The commensurability's *value* requires two projection factors (momentum-content vs charge-content weight per adjacency unit) that the corpus does not supply. That is scoped (§4) as the remaining step, not delivered. **→ SUPERSEDED 2026-09-05 by §9, with two changes to what is claimed.** The projection factors are now computed, **but the invariant is the *product* `η_min·ρ_max`, not the ratio** (§9.1 corrects §8), and the result is **`D-via-I`, not substrate-native**: ED supplies one line — that both transports floor at the *same* length — and inherited kinetic theory supplies the rest. **The coefficient remains a band `Λ ∈ [1/5, 1/3]`**, its width a kinetic-averaging convention that the substrate cannot close (§9.6). What is claimed is the **existence and parameter-independence** of `Λ`, not its value.
 3. **The load-bearing identification is a posit, not a theorem.** That both momentum transport and charge transport spend the *same* Adjacency band (§2) is grounded in P04's four-band partition + P05 being the sole inter-locus transport, but it is a declared identification (`P-Adjacency-Transport-Shared`), scrutinizable, not closed.
 4. **The individual ceilings remain consilience** (`Paper_079` viscosity, MIR resistivity). What is new and *distinctive* here is the **co-onset** (§3): the claim that they are the *same substrate event*.
 5. **No new substrate primitives.**
@@ -77,14 +77,16 @@ with `Π_p`, `Π_q` the momentum- and charge-content projection factors (the tra
 | Finite per-cell `b_adj^max` | **form-forced** | P04 finiteness + additivity (DCGT §3.2) |
 | Both ceilings = one event `f → 1` (R1-analog) | **D (form), conditional on §2** | §3 |
 | **Co-onset prediction** (viscosity divergence & resistivity saturation together) | **D conditional → falsifiable** | §3 |
-| Exact ratio `φ_max : ρ_max` = `Π_p/Π_q` | **OPEN** | §4; projection factors not derived |
+| ~~Exact ratio `φ_max : ρ_max` = `Π_p/Π_q`~~ → **invariant product `Λ = η_minρ_max e²/p_F² = Π_pΠ_q`** *(pairing corrected §8; ratio→product corrected §9.1)* | **D-via-I** — CLOSED IN FORM 2026-09-05 | §9.3. `n`, `a_eff`, `b_adj^max` and the coupling all cancel. **Value inherited**: `Λ ∈ [1/5, 1/3]`, the width a kinetic-averaging convention (§9.6). |
+| `Λ` measures the ratio of the two mean-free-path floors, `a_η/a_ρ` | **D** | §9.4 — the cancellation exists *only* under one floor, so `Λ` is a direct measurement of `P-Adjacency-Transport-Shared` rather than a test against a computed number |
 | Absolute `φ_max`, `ρ_max`, `a_eff`, `b_adj^max` | **I** | inherited (as in Paper_079 / MIR / DCGT) |
 
 ## 6. Falsification Criteria
 
 - **F-COONSET (the distinctive one):** in a system where one cell governs both transports, the viscosity divergence and the resistivity saturation onset at *different* substrate occupancies (no correlation between the jamming point and the MIR point beyond coincidence) — falsifies `P-Adjacency-Transport-Shared` / the one-wall claim. This is the near-term, ED-owned bet.
 - **F-BAND:** demonstration that inter-locus transport uses a channel *other* than the P05/Adjacency band (a second, independent transport conduit) — falsifies the shared-budget identification (§2).
-- **F-RATIO (pending §4):** once `Π_p/Π_q` is derived, a measured `φ_max : ρ_max` inconsistent with it — the R2-analog falsifier, the transport twin of `Paper_V5UnifiedBudget` F-R2.
+- **F-RATIO — LIVE as of 2026-09-05 (§9.8), and restated.** Form `Λ = ηρe²/p_F²` at a system's MIR point. **ED predicts `Λ` is O(1) and, the sharper half, that it does not drift with `a_eff`, `n` or material.** A `Λ` tracking lattice spacing or carrier density falsifies the single-floor claim directly, since `Λ = Π_pΠ_q·(a_η/a_ρ)`. **The drift test is stronger than the value test** and is independent of the unresolved `[1/5, 1/3]` coefficient band.
+- **F-CONVERGE (new, 2026-09-05, §9.8) — the cheapest test in the arc.** The momentum-conserving and momentum-relaxing mean free paths must **converge** as the wall is approached. A system driven to MIR saturation with `ℓ_ee` and `ℓ_mr` still separated by orders of magnitude falsifies `P-Adjacency-Transport-Shared` **with no viscosity measurement at all.**
 
 ## 7. Position Statement
 
@@ -112,6 +114,103 @@ Both are the *same* event (`ℓ = a_eff`). So the genuine co-onset partner of MI
 **Sharpened distinctive prediction (upgrades F-COONSET).** In the strange-metal / quantum-critical regime — where MIR, Planckian resistivity, and the viscosity bound are all measured in one system — the resistivity ceiling and the viscosity floor are **one wall**: co-onset, commensurate at fixed `ℓ = a_eff`. **⚠ CORRECTED 2026-09-05. The sentence here previously read** *“Standard physics has no reason to unify them; ED forces it.”* **That was false, and it contradicted this paper's own paragraph three lines above**, which correctly says condensed-matter physics *“actively debates whether they are the same physics.”* **The unification is an existing, named position in the literature:** Zaanen (2019), *Planckian dissipation, minimal viscosity and the transport in cuprate strange metals*, SciPost Phys. **6**, 061 (arXiv:1807.10951), argues precisely that cuprate strange-metal resistivity is governed by the **minimal viscosity** of the quark-gluon-plasma bound, with *“the momentum relaxation rate governing the resistivity relat[ing] directly to the electronic entropy.”* **So ED is not supplying a link nobody had reason to draw; it is entering an open debate on one side.** **The corrected claim, which is narrower and testable:** the *hydrodynamic* route reaches the link through minimal viscosity and entropy, whereas ED reaches it through **one mean-free-path floor at `ℓ = a_eff` shared by charge and momentum**. **Those are different mechanisms making a co-onset prediction that is commensurate in ED and not obviously so in the hydrodynamic account**, and the discriminating quantity is the ratio `η_min : ρ_max` — which this paper leaves **underived** pending `Π_p`, `Π_q`. Until that ratio exists, ED's position on this question is a stance, not a prediction that separates it from Zaanen's. *(“ED forces it” also violates the corpus's standing no-forcing posture; the honest verb is that the unification follows given `P-Adjacency-Transport-Shared`.)* Gravity ledger Staleness #61. **F-COONSET is upgraded to: MIR-resistivity ↔ viscosity-floor co-onset** (a live strange-metal question), replacing the KD-jamming ↔ MIR version.
 
 **Honest tier:** the *unification* (one wall) and the *co-onset* are forced given `P-Adjacency-Transport-Shared`; the exact `η_min : ρ_max` coefficient stays inherited pending `Π_p`, `Π_q`. The identification of these floors with the standard names (MIR, KSS, Planckian) is consilience. The load-bearing risk is unchanged and now sharper: do charge and momentum truly share *one* adjacency band, or distinct channels within it (F-BAND)?
+
+---
+
+---
+
+## 9. The `Π_p` / `Π_q` step, run 2026-09-05: the invariant is the **product**, not the ratio, and it is `η_min · ρ_max = p_F²/(3e²)`
+
+*(Dated update. §4 declared these open and §8 scoped them; this section runs the step. It also corrects §8.)*
+
+### 9.1 First, the correction §8 needs
+
+§8 states that *“their ratio `η_min : ρ_max` is an O(1) that cancels `a_eff`.”* **That is wrong, and F-RATIO was written against it.** At the wall,
+
+$$\eta_{\min} \propto a_{\rm eff}^{+1}, \qquad \rho_{\max} \propto a_{\rm eff}^{-1},$$
+
+because a mean-free-path floor *raises* the viscosity floor and *lowers* the conductivity. **So the ratio scales as `a_eff²` and the product is the invariant.** Same-kind does not mean same-sign: both are floored at one length, but that length enters the two transport coefficients with opposite powers. The rest of this section is written on the product.
+
+### 9.2 The two projection factors, defined so they are computable
+
+Write each wall value in the schema §4 asks for — a substrate-set scale times a pure number:
+
+$$\eta_{\min} \;=\; \Pi_p \, n \, p_F \, a_{\rm eff}, \qquad
+\rho_{\max} \;=\; \Pi_q \, \frac{p_F}{n \, e^2 \, a_{\rm eff}}.$$
+
+`n` is the carrier number density, `p_F` the carrier momentum, `a_eff` the DCGT cell. `Π_p` is the momentum-flux capacity per unit Adjacency occupancy; `Π_q` is the charge-transport impedance per unit Adjacency occupancy. **Both are pure numbers.**
+
+Standard kinetic transport, evaluated at the floor `ℓ = a_eff`, supplies them:
+
+- **Momentum.** Kinetic shear viscosity `η = ⅓ n m v ℓ = ⅓ n p_F ℓ`. At the floor, **`Π_p = 1/3`**.
+- **Charge.** Drude `ρ = m/(n e² τ)` with `τ = ℓ/v_F` and `m v_F = p_F` gives `ρ = p_F/(n e² ℓ)`. At the floor, **`Π_q = 1`**.
+
+**Nothing in that paragraph is ED.** It is textbook kinetic theory, and saying so is the point of §9.5.
+
+### 9.3 The invariant
+
+$$\eta_{\min}\,\rho_{\max} \;=\; \Pi_p\Pi_q\,\frac{p_F^{\,2}}{e^{2}}
+\qquad\Longrightarrow\qquad
+\boxed{\;\Lambda \;\equiv\; \frac{\eta_{\min}\,\rho_{\max}\,e^{2}}{p_F^{\,2}} \;=\; \Pi_p\Pi_q \;=\; \tfrac{1}{3}\;}$$
+
+**`n` cancels. `a_eff` cancels. `b_adj^max` never appears. The coupling strength never appears.** What survives is the carrier's momentum and its charge, and those are inherited. **This is the R2-analog the paper has been owing since §4: a forced, non-inherited pure number.**
+
+An equivalent form ties it to a measured constant. With `p_F = ħk_F` and the von Klitzing constant `R_K = h/e²`,
+
+$$\eta_{\min}\,\rho_{\max} \;=\; \frac{\hbar k_F^{2}}{6\pi}\,R_K .$$
+
+**The product of the two transport walls is the resistance quantum times a purely geometric carrier factor.**
+
+### 9.4 Where the cancellation actually comes from, and what Λ therefore measures
+
+The `a_eff` cancellation is **not** bookkeeping. It happens only because **one** length floors both transports. Allow two floors, `a_η` for momentum and `a_ρ` for charge, and the algebra returns
+
+$$\Lambda \;=\; \Pi_p\Pi_q\,\frac{a_\eta}{a_\rho}.$$
+
+**So `Λ` is a direct measurement of the ratio of the two floors, and `P-Adjacency-Transport-Shared` is exactly the claim that that ratio is 1.** This is the cleanest statement of the arc's load-bearing posit, and it turns F-RATIO from a comparison against a computed number into a measurement of the posit itself.
+
+**This is also where the arc's content sits relative to conventional physics.** In standard treatments the momentum-relaxing length (which sets `ρ`) and the momentum-conserving length (which sets `η`) are *different objects* — electron hydrodynamics is defined by `ℓ_ee ≪ ℓ_mr`, established by orders of magnitude in graphene, PdCoO₂ and WP₂. **ED does not contradict that**, because its claim is about the wall, where both lengths floor at the cell. **But it makes a sharp statement about approach: the two lengths must converge as the wall is approached, because at the wall they are the same band.** That is a second falsifier, and it is independent of the value of `Λ`.
+
+### 9.5 Honest tiering — what is ED here and what is not
+
+| Ingredient | Source | Tier |
+|---|---|---|
+| Both transports floored at **one** length `a_eff` | `P-Adjacency-Transport-Shared` (§2) | **P** (declared) |
+| `η = ⅓ n p_F ℓ`; `ρ = p_F/(n e² ℓ)` | textbook kinetic transport | **I** |
+| The product is the `a_eff`-invariant, not the ratio | §9.1 | **D** |
+| `Λ = Π_pΠ_q`, independent of `n`, `a_eff`, `b_adj^max` | §9.3 | **D-via-I** |
+| `Λ = 1/3` exactly | kinetic-averaging convention | **I** — see §9.6 |
+
+**The ED-specific content is one sentence:** at the wall the momentum-relaxing and momentum-conserving mean free paths are the same length, because they are the same band. **Everything else on this page is inherited**, and the derivation is `D-via-I`, not substrate-native. Stating it otherwise would repeat the defect this paper was corrected for in §8.
+
+### 9.6 The coefficient is a band, not a number — do not quote `1/3` as forced
+
+`Π_p = 1/3` is simple isotropic kinetic averaging. The standard degenerate-Fermi-gas transport result is `η = ⅕ n p_F ℓ`, giving `Π_p = 1/5`. So
+
+$$\Lambda \in [\,1/5,\;1/3\,],$$
+
+a factor-1.7 band whose width is a **kinetic-averaging convention, not substrate physics**. **What ED claims is the existence and the parameter-independence of `Λ`, not its value.** Pinning the value requires choosing the transport-averaging scheme appropriate to the carrier statistics at the wall — where, by construction, quasiparticles are marginal and neither scheme is clearly right. **That is an inherited ambiguity and it is not closable from the substrate.**
+
+### 9.7 Numerical check
+
+Take `k_F = 1×10¹⁰ m⁻¹` and `a_eff = 3×10⁻¹⁰ m`. Then `n = k_F³/3π² = 3.4×10²⁸ m⁻³`, `p_F = ħk_F = 1.06×10⁻²⁴ kg m/s`, and
+
+- `η_min = ⅓ n p_F a_eff = 3.56×10⁻⁶ Pa·s`
+- `ρ_max = p_F/(n e² a_eff) = 4.06×10⁻⁶ Ω·m = 405 μΩ·cm`
+- product `= 1.4441×10⁻¹¹`, and `p_F²/3e² = 1.4441×10⁻¹¹`, agreeing to every digit carried, as does the `R_K` form of §9.3 ✓
+
+**The `ρ_max` lands inside the observed MIR saturation band (~100–500 μΩ·cm).** That is a **consistency check on the inputs, not a prediction** — `a_eff` was chosen at a lattice spacing, which is what MIR saturation means. Recorded to head off exactly the reading gravity Staleness #26 warns about.
+
+### 9.8 F-RATIO, now concrete — and a new F-CONVERGE
+
+- **F-RATIO (was pending, now live).** In one system at its MIR point, measure `η` and `ρ`, obtain `p_F` from the carrier density, and form `Λ = ηρe²/p_F²`. **ED predicts `Λ` is O(1), in `[1/5, 1/3]`, and — the sharper half — that it does not drift with `a_eff`, `n`, or material.** A `Λ` that tracks lattice spacing or carrier density falsifies the single-floor claim directly, since `Λ = Π_pΠ_q·(a_η/a_ρ)`. **The drift test is stronger than the value test** and does not depend on resolving §9.6.
+- **F-CONVERGE (new).** The momentum-conserving and momentum-relaxing mean free paths must **converge** as the wall is approached. A system driven to MIR saturation while `ℓ_ee` and `ℓ_mr` stay separated by orders of magnitude falsifies `P-Adjacency-Transport-Shared` without any viscosity measurement at all. **This is the cheaper of the two tests** and it is newly available because §9.4 identified what the posit actually asserts.
+
+### 9.9 Relation to the existing literature, checked before writing
+
+Per checklist item 22. **The `η`–`ρ` link is not virgin ground.** Lucas & Hartnoll, *Resistivity bound for hydrodynamic bad metals*, PNAS **114**, 11344 (2017), bound the resistivity of an electron fluid whose mean free path is short compared with the scale of spatial inhomogeneities; in the viscous-momentum-relaxation picture the resistivity contribution *rises* with viscosity. **That is the opposite sign of correlation to `Λ = const`, which has `ρ ∝ 1/η`.** The regimes differ — theirs is momentum relaxation off long-wavelength inhomogeneity, ED's is the mean-free-path floor — so this is **not** a contradiction. **But where both apply, the sign of the correlation between `η` and `ρ` discriminates**, and that is a sharper experimental handle than either framework's own bound.
+
+> **Citation to pin before submission.** The `ρ_DC ∼ η` proportionality is standard in the hydrodynamic-transport literature, but it is not stated in the PNAS abstract and **this section has not verified it against the body text.** Pin it, or drop the sign-contrast claim. *(Per checklist item 22(c): do not invent a section number to make it look pinned.)*
 
 ---
 
