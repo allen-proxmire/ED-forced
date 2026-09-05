@@ -71,6 +71,8 @@ with `Π_p`, `Π_q` the momentum- and charge-content projection factors (the tra
 | Step | Status | Justification |
 |---|---|---|
 | P04 four-band partition; Adjacency = P05-transport content | **P (primitive)** | `primitives/P04` §1.5 |
+
+> **⚠ TIER FLAGGED 2026-09-04 by the soft-matter claim-strength pass.** The row above tiers the **four-band partition** as **P (primitive)**, citing `primitives/P04` §1.5. **Canonical `Paper_087` has no four-band** — it defines P04 as bandwidth, a non-negative additive scalar — and the foundations ledger records four-band as archived M-series content. **So this row inherits a primitive-tier claim from a definition card that disagrees with the canonical primitives paper**, and this arc's *only* Prediction (the shared Adjacency-band wall) rests on it: without a band partition, *“the Adjacency band”* has no referent. **This is a tier problem, not necessarily a physics problem** — the shared-budget identification may well survive on P04 additivity plus P05-as-sole-transport without needing four *named* bands, which would be a re-grounding rather than a retraction. **Not attempted here.** Gravity ledger Staleness #56; soft-matter ledger staleness #7.
 | Inter-locus transport is P05-only; both momentum & charge use Adjacency | **P (`P-Adjacency-Transport-Shared`)** | §2; grounded in P04+P05, declared |
 | Finite per-cell `b_adj^max` | **form-forced** | P04 finiteness + additivity (DCGT §3.2) |
 | Both ceilings = one event `f → 1` (R1-analog) | **D (form), conditional on §2** | §3 |

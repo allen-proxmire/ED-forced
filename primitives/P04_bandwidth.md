@@ -1,5 +1,7 @@
 # P04 — Bandwidth (non-negative additive scalar, four-band partition)
 
+> **⚠ CONFLICT WITH CANONICAL `Paper_087`, flagged 2026-09-04.** This card's title and §1.5 assert a **four-band partition** as part of P04. **Canonical `Paper_087` does not**: it defines P04 as *“Bandwidth as non-negative additive scalar”*, and `Foundations_TieredClaims_Ledger.md` staleness #2 records four-band as **archived M-series** content — *“canonical 087 has no four-band”* — having repointed two `Paper_089` citations away from it on 2026-07-29. **The corpus's standing rule is that canonical 087 wins.** By that rule this card overstates P04. **But the four-band vocabulary is used in 10+ papers across four arcs**, including the GR quartet and `Paper_027`, so the disagreement is widespread rather than local and **is not resolved here**: settling it means deciding what P04 *is*, which is a primitive-definition question. **What is established is that the card and the canonical paper cannot both be right.** Gravity ledger Staleness #56.
+
 **Canonical primitive of the ED Generative System.**
 **Position paper reference:** `position-paper/paper_ED_Framework_13_Primitive_Generative_System.md` §1.3.
 

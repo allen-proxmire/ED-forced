@@ -95,7 +95,7 @@ This paper takes the following Event Density (ED) substrate primitives as **post
 **Upstream paper dependencies:**
 
 - **Paper #1 (participation measure):** the complex polar carrier $P_K = \sqrt{b_K}\,e^{i\pi_K}$ on which the cumulative-strain integration operates.
-- **Paper #3 (inner product + orthogonal bands):** four-band orthogonality (P04 §1.5) supplies the strain-band content within the participation-measure decomposition.
+- **Paper #3 (inner product + orthogonal bands):** four-band orthogonality (P04 §1.5) supplies the strain-band content within the participation-measure decomposition. **⚠ ARCHIVED-SOURCE CITATION, flagged 2026-09-04.** *“Paper #3 — four-band orthogonality”* is the **archived M-series** citation that `Foundations_TieredClaims_Ledger.md` staleness #2 identified on 2026-07-29 and **repointed in `Paper_089`** — *“canonical `Paper_087` has no four-band”*. **The identical citation survives here and was never fixed.** Canonical `Paper_087` defines P04 as *“bandwidth as non-negative additive scalar”* with no band partition. **Not resolved here:** whether P04 genuinely carries a four-band partition is a primitive-definition question, and `primitives/P04_bandwidth.md` asserts it in its own title while 087 does not. See gravity ledger Staleness #56.**
 
 **Paper-specific postulate (labelled per QC discipline; named 2026-09-04 after an external audit):**
 

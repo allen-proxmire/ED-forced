@@ -105,7 +105,7 @@ This paper takes the following ED substrate primitives as **postulated** (Paper_
 
 - **Paper_087:** position paper.
 - **Paper #1 (Participation Measure):** complex polar carrier $P_K = \sqrt{b_K}\,e^{i\pi_K}$. **Load-bearing: provides the identification $|P_K|^2 = b_K$ that connects substrate bandwidth $b_K$ to participation-amplitude magnitude $|c_K|$ (when participation measure is identified with quantum-state amplitudes).**
-- **Paper #3 (Inner Product + Tsirelson):** four-band orthogonality + sesquilinear inner product structure that supports the participation measure.
+- **Paper #3 (Inner Product + Tsirelson):** four-band orthogonality + sesquilinear inner product structure that supports the participation measure. **⚠ ARCHIVED-SOURCE CITATION, flagged 2026-09-04.** *“Paper #3 — four-band orthogonality”* is the **archived M-series** citation that `Foundations_TieredClaims_Ledger.md` staleness #2 identified on 2026-07-29 and **repointed in `Paper_089`** — *“canonical `Paper_087` has no four-band”*. **The identical citation survives here and was never fixed.** Canonical `Paper_087` defines P04 as *“bandwidth as non-negative additive scalar”* with no band partition. **Not resolved here:** whether P04 genuinely carries a four-band partition is a primitive-definition question, and `primitives/P04_bandwidth.md` asserts it in its own title while 087 does not. See gravity ledger Staleness #56.**
 - **Paper_089 (V1):** unitary evolution within the unresolved regime.
 
 **Empirical / value-layer inputs:** none required for the substrate-level frequency-limit derivation itself; specific empirical state-preparation methods (laboratory protocols) are inherited from experimental practice.
