@@ -32,9 +32,41 @@ Both are load-bearing, both were missed by every prior seeded run, and both have
 
 ### Stage 0 — Contamination screen (mandatory, separate session, no prior context)
 
-> *"What can you tell me about the Event Density framework in physics — its primitives, and any relation it proposes between the MOND acceleration scale and the Hubble constant? If you do not recognise it, say so plainly."*
+> **⚠ The first draft of this screen was defective and is recorded here rather than quietly replaced.** It read:
+> *“What can you tell me about the Event Density framework in physics — its primitives, and any relation it proposes between the MOND acceleration scale and the Hubble constant?”*
+> **That prompt leaks the central claim it is screening for.** It tells the model that a framework called Event Density has *primitives* and proposes *a relation between the MOND acceleration scale and the Hubble constant* — which is `a₀ ~ cH₀`, the thing arm A and arm B exist to see whether a model can reach. A model answering *“I don't recognise it”* would nonetheless **hold the idea**, and could reason to `a₀ ~ cH₀` from the screen alone. **A contamination screen that discloses the target contaminates every run downstream of it.** Caught 2026-09-05 before any run.
 
-**Discard the model family from both arms if it recognises ED, names `a₀ = cH₀/(2π)`, or describes a 13-primitive substrate ontology.** Record the verbatim answer either way. A family that half-recognises is discarded — partial contamination is worse than full, because it is invisible in the output.
+**The screen must be closed: it must not disclose what it is testing for.** Two properties are required — no content leakage, and a check on whether the model's *recognition claims* are reliable at all.
+
+**Ask this, verbatim, in a session that is never used for either arm:**
+
+```
+I'm checking which of these physics frameworks you have encountered.
+For each, reply either "not familiar" or give a two-sentence description
+of its core commitments. Do not guess: if a name is unfamiliar to you,
+say so plainly rather than inferring what it might mean.
+
+1. Causal Set Theory
+2. Event Density
+3. Relational Bandwidth Cosmology
+4. Shape Dynamics
+5. Participation Kinematics
+```
+
+**Why this list.** **1** and **4** are real, well-documented programmes — a competent model should describe both, and failure to do so means the screen is not measuring recall. **3** and **5** are **invented**, and exist to detect confabulation: a model that produces a confident description of either has demonstrated that its recognition claims carry no information, and its *negative* on item 2 is therefore worthless. **2** is the target, buried among four others so that nothing marks it as the one that matters.
+
+**Discard rules — applied before any arm is run:**
+
+| Result | Action |
+|---|---|
+| Describes **Event Density** with substrate / primitive / bandwidth / `a₀`–`H₀` content | **Contaminated.** Discard the family from both arms. |
+| Confabulates on **3** or **5** | **Recognition unreliable.** Discard — a negative from this family cannot be trusted. |
+| Fails to recognise **1** or **4** | **Screen not measuring recall.** Discard, or re-run with better-known controls. |
+| Not familiar with **2**, **3**, **5**; describes **1** and **4** | **Clean. Proceed to arm A.** |
+
+**Record the verbatim answer either way**, including the clean negatives — those are the result that licenses everything downstream.
+
+**Even a clean screen is run in a throwaway session.** The word *“Event Density”* has still appeared in that context, and the arms must not inherit it.
 
 ### Stage 1 — Arm A (13 primitives) — the control
 
