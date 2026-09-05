@@ -16,16 +16,42 @@ P01..P14, which this pattern does not match), and the denylist below. Counted
 once per distinct name regardless of how many papers use it. A name occurring
 ONLY in a ledger/note/README is excluded: it has been written about, not declared.
 
+SECOND JOB, added 2026-09-05 — the predictions cross-check.
+-----------------------------------------------------------
+On 2026-09-05 the soft-matter transport arc was found to have no entry at all in
+`ED_Master_Predictions_List.md`, despite its own paper calling co-onset its
+"distinctive, falsifiable, ED-owned content". A distinctive bet had sat outside
+the corpus's own prediction inventory since the paper was written, and nothing
+flagged it because nothing cross-checks arc papers against the master list. That
+is checklist item 21's third face (an inventory is a propagation target too) and
+it is the one instance of the day's defect pattern a script can actually catch.
+
+Three checks, chosen for precision rather than coverage:
+
+  P1  Named falsifiers (`F-NAME`) that the master list never mentions.
+  P2  Master-list paper citations that resolve to no file in the corpus.
+  P3  Papers whose own prose calls their falsifier content distinctive or
+      ED-owned, which the master list does not cite.
+
+WHY NAMED FALSIFIERS AND NOT `F1`/`F2`. A first attempt keyed on any paper with a
+falsification section: 210 papers, 180 of them absent from the master list, which
+is noise -- the list is a curated superset of the sharp bets, not an index of
+every paper. The `F1`/`F2` numbering is per-paper and not unique (600+ uses), so
+it cannot join anything. But a paper *names* a falsifier exactly when it is
+specific enough to be a bet. That makes `F-NAME` the natural join key between a
+paper and the inventory, and P1 enforces it as one.
+
 Usage:
-    python "internal notes/_census_postulates.py"              # summary + drift check
+    python "internal notes/_census_postulates.py"              # both drift checks
     python "internal notes/_census_postulates.py" --list       # + every name, with sources
     python "internal notes/_census_postulates.py" --triage     # the breadth ladder (research target #20)
+    python "internal notes/_census_postulates.py" --predictions  # the full cross-check detail
     python "internal notes/_census_postulates.py" --all        # widen scope past physics-papers/
     python "internal notes/_census_postulates.py" --update     # re-baseline after a real change
 
-Exit status is 1 when the count has moved from the baseline. That is the point:
-run it after any session that names a new postulate, and it will tell you the
-foundations arc needs a re-count.
+Exit status is 1 when either the postulate count or the orphaned-falsifier set has
+moved from its baseline. That is the point: run it after any session that names a
+new postulate or a new falsifier, and it will say which list has gone stale.
 """
 import io, os, re, sys
 from collections import defaultdict
@@ -44,6 +70,17 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = 171
 BASELINE_DATE = "2026-09-04"
 BASELINE_SCOPE = "physics-papers"
+
+# --- predictions cross-check baseline ----------------------------------------
+# The orphan SET, not just its size, so that fixing one and adding another is
+# still detected. 19 of 19 named falsifiers were orphaned when this was first
+# run: the join-key convention did not exist as a discipline, it existed only as
+# a habit. Clearing this backlog means adding the label to the relevant master-
+# list row, which is a one-line edit per falsifier and makes the list navigable
+# from the papers for the first time.
+MASTER_LIST = "physics-papers/predictions/ED_Master_Predictions_List.md"
+PRED_BASELINE = ('F-BC', 'F-CROSSTALK', 'F-D2', 'F-D3', 'F-Gauge', 'F-LIVE', 'F-P', 'F-QD-1', 'F-QD-2', 'F-QD-3', 'F-QD-4', 'F-R1', 'F-SAT')
+PRED_BASELINE_DATE = "2026-09-05"
 
 # --- scope --------------------------------------------------------------------
 # Default: physics-papers/ only. `readings/` is deliberately excluded even under
@@ -180,6 +217,134 @@ def triage(found, variants):
     print("  See internal notes/POSTULATE_BASIS.md and research target #20.")
 
 
+# =============================================================================
+# The predictions cross-check
+# =============================================================================
+
+# A named falsifier: `F-` then a capital, then letters/digits, hyphen-extensible.
+# The capital is what separates `F-RATIO` from prose like `F-test`.
+FALSIFIER = re.compile(r"\bF-[A-Z][A-Za-z0-9\u03c0]*(?:-[A-Za-z0-9]+)*")
+
+# Phrases a paper uses when it believes its own falsifier is a distinctive bet.
+DISTINCTIVE = re.compile(
+    r"ED-owned|ED-distinctive|the distinctive one|distinctive, falsifiable"
+    r"|distinctive and falsifiable|the distinctive bets", re.I)
+
+# `**F1`-style local labels. Not a join key -- used only to tell a paper that
+# declares falsifiers from one that merely mentions the word.
+LOCAL_FALSIFIER = re.compile(r"\*\*F[-0-9]")
+
+
+def paper_index(roots):
+    """{basename without .md: relpath} for every markdown file in scope."""
+    idx = {}
+    for path in markdown_files(roots):
+        rel = os.path.relpath(path, REPO).replace("\\", "/")
+        idx.setdefault(os.path.basename(rel)[:-3], rel)
+    return idx
+
+
+def predictions_crosscheck(roots):
+    """P1/P2/P3. Returns (orphans, dangling, distinctive_uncited).
+
+    `orphans` is {name: [papers that define it]} for named falsifiers absent from
+    the master list. `dangling` is master-list citations resolving to no file.
+    `distinctive_uncited` is papers claiming distinctive falsifier content that
+    the master list does not cite.
+    """
+    ml_path = os.path.join(REPO, MASTER_LIST)
+    if not os.path.isfile(ml_path):
+        return None, None, None
+    ml = io.open(ml_path, encoding="utf-8").read()
+    idx = paper_index(roots)
+
+    orphans, distinctive_uncited = defaultdict(list), []
+    for path in markdown_files(roots):
+        rel = os.path.relpath(path, REPO).replace("\\", "/")
+        if not is_paper(rel) or rel == MASTER_LIST:
+            continue
+        try:
+            text = io.open(path, encoding="utf-8").read()
+        except UnicodeDecodeError:
+            continue
+        body = strip_fences(text)
+        for name in sorted(set(FALSIFIER.findall(body))):
+            if name not in ml:
+                orphans[name].append(rel)
+        stem = os.path.basename(rel)[:-3]
+        if (DISTINCTIVE.search(body) and LOCAL_FALSIFIER.search(body)
+                and stem not in ml):
+            distinctive_uncited.append(rel)
+
+    # P2 -- a citation resolves if any paper's basename starts with it, because
+    # the list cites both `Paper_029` and `Paper_029_a0` for the same file.
+    dangling = []
+    for m in re.finditer(r"`([A-Za-z0-9_/.\-]+?)(?:\.md)?`", ml):
+        tok = m.group(1).split("/")[-1]
+        if not (tok.startswith("Paper_") or "Predictions" in tok or "Falsifiers" in tok):
+            continue
+        if not any(k == tok or k.startswith(tok) for k in idx):
+            dangling.append(tok)
+    return dict(orphans), sorted(set(dangling)), distinctive_uncited
+
+
+def report_predictions(orphans, dangling, distinctive_uncited, verbose):
+    """Print the cross-check. Returns True if anything has drifted."""
+    if orphans is None:
+        print(f"\n  ! master list not found at {MASTER_LIST}; cross-check skipped.")
+        return False
+
+    now = tuple(sorted(orphans))
+    new = [n for n in now if n not in PRED_BASELINE]
+    fixed = [n for n in PRED_BASELINE if n not in now]
+
+    print(f"\n{'-' * 78}\nPREDICTIONS CROSS-CHECK \u2014 papers against {MASTER_LIST}\n")
+    print(f"  Named falsifiers orphaned : {len(now):>3}  (baseline {len(PRED_BASELINE)}, {PRED_BASELINE_DATE})")
+    print(f"  Dangling citations        : {len(dangling):>3}  (master list \u2192 no such file)")
+    print(f"  Distinctive but uncited   : {len(distinctive_uncited):>3}  (paper claims a distinctive bet; list has no row)")
+
+    if verbose:
+        if orphans:
+            print("\n  P1 \u2014 named falsifiers the master list never mentions:\n")
+            for name in now:
+                mark = "NEW " if name in new else "    "
+                print(f"   {mark}{name:<14} {'; '.join(orphans[name])}")
+        if dangling:
+            print("\n  P2 \u2014 master-list citations with no matching file:\n")
+            for c in dangling:
+                print(f"       {c}")
+        if distinctive_uncited:
+            print("\n  P3 \u2014 papers claiming distinctive falsifier content, absent from the list:\n")
+            for p in distinctive_uncited:
+                print(f"       {p}")
+        print("\n  A P1 hit is cleared by adding the label to the relevant master-list row,")
+        print("  not by deleting it from the paper. The label is the join key: without it")
+        print("  the list cannot be navigated from the papers, which is how the transport")
+        print("  arc stayed invisible. See gravity ledger Staleness #63.")
+
+    drift = bool(new or fixed)
+    if new:
+        print(f"\n  DRIFT \u2014 {len(new)} newly orphaned falsifier(s): {', '.join(new)}")
+        print("  A paper named a falsifier and the prediction inventory does not know it.")
+    if fixed:
+        print(f"\n  Resolved since baseline: {', '.join(fixed)} \u2014 re-baseline with --update.")
+    if not drift:
+        print(f"\n  No drift against the {PRED_BASELINE_DATE} orphan set.")
+    return drift
+
+
+def update_pred_baseline(orphans):
+    """Rewrite PRED_BASELINE in this file after the orphan set legitimately moves."""
+    import datetime
+    today = datetime.date.today().isoformat()
+    src = io.open(__file__, encoding="utf-8").read()
+    lit = "(" + ", ".join(repr(n) for n in sorted(orphans)) + ")"
+    src = re.sub(r"^PRED_BASELINE = \(.*\)$", "PRED_BASELINE = " + lit, src, count=1, flags=re.M)
+    src = re.sub(r'^PRED_BASELINE_DATE = ".*"$', f'PRED_BASELINE_DATE = "{today}"', src, count=1, flags=re.M)
+    open(__file__, "wb").write(src.encode("utf-8"))
+    print(f"Predictions baseline updated: {len(orphans)} orphaned falsifier(s) ({today}).")
+
+
 def update_baseline(new_count, scope):
     """Rewrite the BASELINE constants in this file."""
     import datetime
@@ -245,29 +410,44 @@ def main():
             for v in sorted(variants):
                 print(f"    {v:<44} -> {variants[v]}")
 
+    # --- postulate drift ------------------------------------------------------
     print(f"\n{'-' * 78}")
+    postulate_drift = False
     if scope != BASELINE_SCOPE:
         print(f"No drift check: baseline was taken at scope '{BASELINE_SCOPE}', this run is '{scope}'.")
-        return 0
-
-    if total == BASELINE:
+    elif total == BASELINE:
         print(f"No drift. Count matches the {BASELINE_DATE} baseline of {BASELINE}.")
-        return 0
+    else:
+        postulate_drift = True
+        delta = total - BASELINE
+        print(f"DRIFT: {total} vs the {BASELINE_DATE} baseline of {BASELINE} ({delta:+d}).")
+        print("\nThe corpus's declared postulate load has changed and the foundations arc")
+        print("does not know it. Before re-baselining:")
+        print("  1. Confirm the change is real (a postulate was named or retired), not a")
+        print("     pattern artifact. Run with --list and diff against the last list.")
+        print("  2. Record it in physics-papers/foundations/Foundations_TieredClaims_Ledger.md,")
+        print("     staleness #3, and in the paper that introduced it.")
+        print("  3. If Paper_087/Paper_088's census notes are now wrong again, update them.")
+        print("  4. Then re-run with --update.")
+        if "--update" in args:
+            update_baseline(total, scope)
+            postulate_drift = False
 
-    delta = total - BASELINE
-    print(f"DRIFT: {total} vs the {BASELINE_DATE} baseline of {BASELINE} ({delta:+d}).")
-    print("\nThe corpus's declared postulate load has changed and the foundations arc")
-    print("does not know it. Before re-baselining:")
-    print("  1. Confirm the change is real (a postulate was named or retired), not a")
-    print("     pattern artifact. Run with --list and diff against the last list.")
-    print("  2. Record it in physics-papers/foundations/Foundations_TieredClaims_Ledger.md,")
-    print("     staleness #3, and in the paper that introduced it.")
-    print("  3. If Paper_087/Paper_088's census notes are now wrong again, update them.")
-    print("  4. Then re-run with --update.")
-    if "--update" in args:
-        update_baseline(total, scope)
-        return 0
-    return 1
+    # --- predictions cross-check ---------------------------------------------
+    # Always run. The failure it exists to catch (an arc's falsifiers absent from
+    # the prediction inventory) is silent by construction, so it must not be
+    # behind a flag -- the flag only controls how much detail is printed.
+    orphans, dangling, distinctive_uncited = predictions_crosscheck(roots)
+    pred_drift = report_predictions(orphans, dangling, distinctive_uncited,
+                                    verbose="--predictions" in args)
+    if pred_drift and "--update" in args and orphans is not None:
+        update_pred_baseline(orphans)
+        pred_drift = False
+
+    if orphans is not None and not ("--predictions" in args):
+        print("\n  Run with --predictions for the full list.")
+
+    return 1 if (postulate_drift or pred_drift) else 0
 
 
 if __name__ == "__main__":
