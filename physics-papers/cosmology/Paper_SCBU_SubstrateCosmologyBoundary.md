@@ -225,6 +225,10 @@ The Round 3 Phase A audit's six end-conditions are now fully met:
 
 The corpus is ready for ED-SC 4.x development per the roadmap in companion document.
 
+> **⚠ THAT DEVELOPMENT EXISTS — located 2026-09-04, and this paper was not citing it (Staleness #52).** The six papers `Paper_ED_SC_4_1` through `4_6` are written and sit in `event-density/papers/Generative Papers/` (a frozen fork — see its `SUPERSEDED.md`). **They are not superseded by this paper; they are its downstream development**, and `Paper_ED_SC_4_6` reports all **six SCBU projections** — `r_H` and `R_H` (4.1), `ξ_canonical` (4.2), `a_0` (4.3), `\mathcal{M}_{\mathrm{crit}}` (4.4), `Q \approx 3.5` (4.5) — occupying *“distinct, FORM-FORCED positions within a unified four-regime structure”*.
+>
+> **This bears directly on §F4 above.** F4 asks whether a third or fourth canon-internal anchor (BH horizon `r_H`, Q-Compute `\mathcal{M}_{\mathrm{crit}}`, NS-Q operating point) fails to anchor to `R_H = c/H_0`, and calls itself *“the bridge to ED-SC 4.x”*. **The SC-4.x arc is that bridge, and it reports the anchors landing rather than failing.** So F4's discharge exists while F4 stands open here. **Not asserted as discharged:** the SC-4.x claims are theirs at M3 and have not been audited against this corpus's claim-strength standard, and `Paper_ED_SC_4_2` explicitly **does not close** its own derivation. **What is established is that the work exists and was unreachable from this paper.** Migration conditions in Staleness #52.
+
 ---
 
 **End Paper SCBU.**
