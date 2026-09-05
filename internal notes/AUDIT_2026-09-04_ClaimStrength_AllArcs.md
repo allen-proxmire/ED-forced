@@ -121,6 +121,7 @@ The **horizon-competition threshold for `a₀`** (#14, research target #19). `Pa
 - **21** — re-tier propagation: *"a ledger entry is not propagation"*, and its mirror, *"a ledger's own prose summary is a propagation target too."*
 - **Failure mode 6** — a correction recorded and not distributed.
 - **Failure mode 7** — the sentence one notch past the table. Six instances tabulated.
+- **Failure mode 8 — the comparative claim about a neighbouring literature** *(added 2026-09-05)*. A sentence asserting that a rival framework **lacks** something, or that ED noticed something **first**. **The only claim class no internal audit can catch**, because checking it means leaving the corpus — so it survives every pass and propagates like a verified fact. **Base rate from a full 300-file sweep: four instances, three defective**, one of which had reached the public workbook. Checklist item **22**; sweep script `internal notes/_sweep_comparative_claims.py`; gravity ledger Staleness #60–#61.
 
 ---
 

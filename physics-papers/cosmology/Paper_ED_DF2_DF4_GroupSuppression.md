@@ -142,7 +142,11 @@ If such systems exist and show MOND-class enhancement, both MOND and ED accommod
 
 Two low-acceleration galaxies at the same nominal g_ext, but in environments with different cumulative line-of-sight masses — different group structures, different summed substrate-event counts along the relevant scale — should show suppression magnitudes proportional to cumulative commitment density rather than to the local g_ext alone.
 
-This is a subtle effect, likely below current observational precision, but it is a uniquely ED prediction. No MOND-EFE variant naturally produces it: MOND's suppression depends on the local g_ext via the field equation, not on the total commitment-density structure.
+This is a subtle effect, likely below current observational precision.
+
+> **⚠ NARROWED 2026-09-05.** This previously read *“it is a uniquely ED prediction. No MOND-EFE variant naturally produces it.”* **Neither half is supportable as written.** MOND's field equation is **nonlinear**, so the external field at a point is itself sourced by the full external mass distribution rather than being an independent local parameter, and **modified-inertia** MOND formulations are non-local by construction. The EFE also differs quantitatively between formulations (it is stronger in AQUAL than in QUMOND). **So MOND does carry environment-structure dependence**; the question is whether its dependence has the *same shape* as ED's.
+>
+> **The defensible claim:** ED predicts suppression tracking **cumulative line-of-sight commitment density**, which is a different functional dependence from the `g_ext`-at-the-barycentre dependence of standard AQUAL/QUMOND treatments. **Whether the two are actually distinguishable requires computing both for the same system, and neither has been computed** — ED's suppression function is listed as Open in this arc's ledger. **Until both exist this is a candidate discriminator, not a discriminator, and not a uniqueness claim.** Gravity ledger Staleness #61.
 
 ---
 
