@@ -134,3 +134,9 @@ Found by chasing the `1 vs 1/4` coefficient `Paper_025` §6 calls order-unity. F
 **(b)/(d) DISSOLVED 2026-09-04** — `Paper_HorizonTilingThreeCounts` §4 already supersedes `Paper_043`'s `S = N log g` placement of the coefficient. Tiling ≈ 1 bit/cell (three counts), `1/4` from the thermal route (`BH_Thermal2Pi`). The counts land near 1, not `1/4`, so the coefficient was never in the count and the `g ≥ 2` collision is an artifact of the superseded framing. **Remaining defect is a pointer one:** `Paper_043` had no supersession banner. Added.
 
 **Priority.** (a) and (b)/(d) are done. Route (iii) (correlated cells) is **not needed** and should not be pursued on these grounds. (d) is the one that matters: if `Paper_BH_Thermal2Pi`'s derivation of the `1/4` stands, the counting route is no longer free to inherit its coefficient, and the arc needs to say which route fixes `log g` and how the other one is consistent with it.
+
+---
+
+## Addendum 2026-09-04 — an SCBU projection into this arc, migrated from a frozen fork
+
+`cosmology/Paper_ED_SC_4_1_BH_CosmicDecoupling.md` projects the **BH horizon `r_H`** onto the substrate–cosmology boundary `R_H = c/H₀`, as one of six `ED-SC 4.x` projections unified by `Paper_ED_SC_4_6`. **M3, not audited against this corpus's claim-strength standard**, and it carries the disputed `2π` (flagged in place). **It predates and does not cite** `Paper_047_5`'s M3 result that BH, Rindler, cosmological and acoustic horizons are one V5-saturated object on four axes, nor `gravity/Note_TheSwitchIsDerived_TheShapeIsInherited.md`, which derives `Γ_cross` collapsing at `min(R_a, R_H)`. **Read it as the earlier, coarser statement of a relation this arc has since sharpened.** Kept in `cosmology/` with its series. Gravity ledger Staleness #54.

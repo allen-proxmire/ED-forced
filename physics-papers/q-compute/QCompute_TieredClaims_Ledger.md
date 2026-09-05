@@ -95,3 +95,9 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 **Withdrawn, and the honest near-term status stated in its place.** The matter-wave weapon currently has **no near-term test**: the *number* is pressured (140–250 kDa vs the ≥170 kDa Nature-2026 report, a 2-point extrapolation flagged *do not bank as firm*); the *second harmonic* is confounded; and *architecture-independence* — which ≦25 called the cleaner discriminator — needs two platforms at comparable mass that **do not exist**. The map (#16 proper) remains the gate. Leaving a hopeful clause in place made the arc look more testable than it is.
 
 *Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #41, which carries the day's trail. ML 4.2's CONFOUNDED verdict stands unchanged and was correct; what was wrong was `event-density/docs/ED_Research_Targets.md` #16, now corrected.*
+
+---
+
+## Addendum 2026-09-04 (third entry) — an SCBU projection into this arc
+
+`cosmology/Paper_ED_SC_4_4_QCompute_SCBU.md` projects `ℳ_crit` onto `R_H = c/H₀`, one of six `ED-SC 4.x` projections. **It anchors on `ℳ_crit = 140–250 kDa` three times.** This arc's own tier for that window is *“Selected/Inherited (number-pressured — do NOT bank as firm), a 2-POINT extrapolation”*, and the shape-retreat carries the disclosure gap recorded in this ledger's first 2026-09-04 addendum. **The paper is M3 and unaudited**; treat its projection's *structure* as the claim, not the window. Kept in `cosmology/` with its series. Gravity ledger Staleness #54.

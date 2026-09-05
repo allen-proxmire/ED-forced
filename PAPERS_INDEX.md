@@ -121,6 +121,8 @@ Substrate-level derivations of Newton's law, a₀, ECR, BTFR slope-4, plus weak-
 | 037 | $a_0$ Cosmological-Rate Invariance | mond | WRITTEN | `Paper_037_a0_Invariance.md` |
 | 038 | Cosmological Implications (Substrate-Cosmology Decoupling) | cosmology | WRITTEN | `Paper_038_CosmologicalImplications.md` |
 | 038.5 | Cosmological Constant $\Lambda$ as V1 Cosmological-Scale Integral | cosmology | WRITTEN | `physics-papers/gravity/Paper_038_5_Lambda_V1_Cosmological.md` |
+**ED-SC 4.x series (migrating 2026-09-04)** — `physics-papers/cosmology/Paper_ED_SC_4_{1,2,4,5}_*.md`. Six papers projecting each canon-internal scale anchor onto the substrate–cosmology boundary `R_H = c/H₀`: `r_H`/`R_H` (4.1), `ξ_canonical` (4.2, a **banked negative** — the derivation does not close), `a₀` (4.3, **not yet migrated**), `ℳ_crit` (4.4), `Q ≈ 3.5` (4.5), unified by 4.6 (**not yet migrated**). They are `Paper_SCBU`'s own downstream development, not superseded by it, and they answer its falsifier **F4**. Migrated from a fork frozen 2026-07-05; each carries a read-this-first banner with the disputed `2π`, the `ξ` precision correction, and its arc caveat. **None has had a claim-strength audit.** Gravity ledger Staleness #52–#54.
+
 **Prediction 1.16 (added 2026-09-04)** — `physics-papers/predictions/Paper_ED_Pred_H0_From_a0.md`: the Hubble constant measured from galaxy rotation curves, $H_0 = 2\pi a_0/c$. The inversion of $a_0 = cH_0/(2\pi)$; **no MOND analogue**. Conditional on the disputed $2\pi$, so a test of it and never support for it. Currently $77.0 \pm 6.3$ km/s/Mpc.
 
 | 038.6 | Weak-Lensing Activity Dependence | cosmology | WRITTEN (provisional prediction) | `physics-papers/gravity/Paper_038_6_Pred_WeakLensing_Activity.md` |

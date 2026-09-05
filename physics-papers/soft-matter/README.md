@@ -66,3 +66,17 @@
 
 - **[Resistivity Saturation as a Grain-Floored Mott–Ioffe–Regel Limit](Paper_P04TransportBudget_ResistivitySaturation.md)**
 - **[The Unified P04 Transport Budget](Paper_UnifiedP04TransportBudget.md)**
+
+---
+
+## ⚠ This arc has no tiered-claims ledger — flagged 2026-09-04
+
+Every other content arc in `physics-papers/` carries a `*_TieredClaims_Ledger.md`: the arc's claim inventory, tier assignments, open items and staleness log. **`soft-matter/` does not.** It has 18 papers and no ledger.
+
+**This is why the arc was invisible to the 2026-09-04 claim-strength audit.** That pass swept the fifteen arc ledgers and reported covering “all fifteen arcs”; the count was of *ledgers*, and an arc with no ledger was never in the set. **So soft-matter is a sixteenth content arc that has not been audited, and was not recorded as unaudited either.** See `internal notes/AUDIT_2026-09-04_ClaimStrength_AllArcs.md` and gravity ledger Staleness #54.
+
+The arc carries load-bearing content: `Paper_077_NS_Smoothness_R1` and `Paper_084_VortexStretching` are one of the two executed results behind research target #15's singularity family, and `Paper_086_SoftMatter_Synthesis` was flagged 2026-09-04 for quoting `ξ_canonical` to unsupported precision. **Creating the ledger is the natural next task for this arc.**
+
+## An SCBU projection into this arc
+
+`cosmology/Paper_ED_SC_4_5_SoftMatter_SCBU.md` projects the **NS-Q canonical operating point `Q ≈ 3.5`** (`Paper_080`) onto the substrate–cosmology boundary `R_H = c/H₀`, as one of six `ED-SC 4.x` projections unified by `Paper_ED_SC_4_6`. Migrated 2026-09-04 from a fork frozen 2026-07-05. `Q ≈ 3.5` is **canon-internal** by the paper's own statement, alongside platform-specific `τ_M` and per-material mobility coefficients, and the paper carries the disputed `2π` (flagged in place). **M3, unaudited** — treat the projection's structure as the claim and the numbers as inherited.

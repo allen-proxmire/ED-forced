@@ -25,6 +25,7 @@
 | state-reduction | #32 | One stale self-flag — fixed |
 | readings / OtherTheories | 2026-09-03 pointer sweep | Stale staleness note found and fixed; no F2 claim-strength pass |
 | foundations | #33 | Stated postulate count a fifth of the measured one (31 stated, 186 measured) |
+| **soft-matter** | **— none** | **NOT AUDITED.** Found 2026-09-04 (Staleness #54): the arc has 18 papers and **no tiered-claims ledger**, the only content arc without one. This pass swept *ledgers*, so an arc without one was never in the set — **the coverage claim above was measuring the instrument, not the corpus.** Flagged in the arc README; the ledger must exist before the arc can be audited. |
 
 ---
 
