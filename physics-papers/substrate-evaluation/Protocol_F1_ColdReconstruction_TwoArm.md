@@ -106,6 +106,8 @@ say so plainly rather than inferring what it might mean.
 
 ### Stage 1 — Arm A (13 primitives) — the control
 
+**Seed written 2026-09-05: `Seed_F1_ArmA_13Primitives.md`.** Paste its `THE PROMPT` block verbatim; everything outside that block is protocol notes and must not be sent. Six seed-design decisions are recorded there, each an experimental variable — notably that all internal citations and all “load-bearing in” annotations are stripped (the latter name target T2 outright), that P08's empirical `l_ED = l_P` is kept while its Newton-recovery route is not, and that P04's four-band partition **is** included. **The seed errs toward generosity throughout: under-seeding is the failure mode that would make a negative result worthless.** Leak-checked — the prompt block contains no target terminology and no paper references.
+
 Seed: the thirteen primitives with operational content, V1 and V5 as inherited kernels. No constants, no paper-specific postulates. **This replicates the known condition** and exists to confirm the wall is where prior runs put it, on an uncontaminated family.
 
 ### Stage 2 — Arm B (the 38 lines) — the new arm
