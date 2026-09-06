@@ -42,13 +42,38 @@ $$\boxed{\;S\ \text{is individuated}\iff \frac{b_{\rm int}(S)}{b_{\rm bdry}(S)}>
 - **P07 (channel structure).** Channels internal to `S` support its identity; cross-boundary channels threaten it.
 - **P11 (commitment).** Downstream: commitment events raise individuation.
 
-### 2.1 One unstated bridge, flagged rather than assumed
+### 2.1 The `w(e)` map — WRITTEN 2026-09-05, and the gap was a scheme-translation
 
-**`w(e)` is an edge weight. P04 gives `b_K(u)` — a channel-at-locus weight. The corpus does not state the map between them.**
+**First, the diagnosis, which is better than "unstated".** The two schemes attach bandwidth to *different objects*:
 
-The natural reading is that `w(e)` for `e = (u,v)` aggregates the bandwidth of channels participated at **both** endpoints — the shared channels. **That is a plausible reading and it is not written anywhere.** It is the same class of gap as the `Str(C)` chain-level bridge (`foundations/Note_StrC_Bridge_2026-09-05.md`): an unstated aggregation between a per-channel primitive and a derived quantity that sums over it.
+- **The earlier primitive set** (now `primitives/concepts/`) put it on **edges**: `primitives/concepts/participation_bandwidth.md` — *"**Primitive 04 supplies edge weights** — a positive real number on each edge measuring bandwidth … `w: E → ℝ≥₀`"*, with `primitives/concepts/event_density.md` writing the graph as `G = (V, E, w)` with *"edge weights `w = b` (bandwidth)"*.
+- **Canonical P04** puts it on **(channel, locus)**: `b_K(u,t) ∈ ℝ≥₀`.
 
-**Recorded as the paper's first open item, not repaired here.**
+**Individuation was written in the earlier scheme and never translated.** The map is missing because the schemes disagree about what bandwidth rides on — not because nobody thought about it.
+
+**The map.** An edge carries what its two endpoints *share*:
+
+$$\boxed{\;w(u,v)\;=\!\!\!\sum_{K\,\in\,\mathcal K(u)\cap\mathcal K(v)}\!\!\!\sqrt{b_K(u)\,b_K(v)}\;}$$
+
+summing only over channels participated at **both** endpoints (P02's four-tuple supplies the membership).
+
+**Five reasons, in decreasing strength.**
+
+1. **Non-negative**, as P04 requires and as individuation's ratio needs.
+2. **It is the amplitude product.** With `P_K = √b_K e^{iπ_K}`, `√(b_K(u)b_K(v)) = |P_K(u)|·|P_K(v)|`.
+3. **It is the corpus's existing convention for two-locus shared content**, not a new choice: `P-Quadratic-Strain`'s cross term and `Paper_030`'s bilocal `√(b_loc·b_horizon)` are both this geometric mean, and `Paper_QuadraticStrain_v1` §2 argues the form is *forced* by the amplitude structure.
+4. **It vanishes when a channel is not shared** — an edge carries nothing on channels only one endpoint participates in.
+5. **Symmetric in `u,v`**, as an undirected edge weight must be.
+
+**Verified against the source concept's own worked examples** (`internal notes/_check_edge_weight_map.py`, re-runnable): shielding raises the ratio and leakage lowers it; an entangled member is not individuated alone (`ratio = 0`) while the pair is jointly (`∞`); and **the same Cooper pair individuates in a normal metal (`∞`) and de-individuates in a superconductor (`1.00`) purely from gaining a shared condensate channel** — which is the concept's own illustration that individuation is relational. **The check discriminates**: a map summing all channels at both endpoints rather than only shared ones makes the metal and superconductor cases identical.
+
+**The unification worth noting.** The phase-sensitive sibling of this quantity is `Coh`. On an edge, the Dirichlet cross-term is `2Σ_K √(b_K(u)b_K(v))\cosΔπ_K`, so
+
+$$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at full phase alignment.}$$
+
+**`w(e)` is `Coh`'s envelope with the phase stripped** — the shared *capacity*, where `Coh` is the coherently shared part. Individuation asks how much is shared; `Coh` asks how much of it is in phase.
+
+**The honest alternative, stated because it is real.** `min(b_K(u), b_K(v))` also satisfies all five requirements — a "bottleneck" reading rather than an amplitude-product one. **The geometric mean is chosen because it is what the corpus already uses for shared two-locus content and because it is the amplitude product, not because it is forced.** A construction distinguishing them would be a genuine test.
 
 ## 2.5 Load-Bearing Step Audit
 
@@ -57,14 +82,14 @@ The natural reading is that `w(e)` for `e = (u,v)` aggregates the bandwidth of c
 | 1 | Chain-complexes `S` exist as sub-structures of the participation graph | **D** | P02 |
 | 2 | Edges and adjacency exist to partition | **D** | P03 |
 | 3 | A non-negative additive scalar rides on them | **D** | P04 |
-| 4 | `w(e)` from `b_K(u)` | **OPEN** | §2.1 — the map is unstated |
+| 4 | `w(e)` from `b_K(u)`: `w(u,v) = Σ_{K shared} √(b_K(u)b_K(v))` | **D-via-I** *(was OPEN; written 2026-09-05)* | §2.1. Form from P02 membership + P04; the **geometric mean rather than `min`** is the corpus's existing convention for two-locus shared content, not a forced choice. Verified against all three of the source concept's worked examples. |
 | 5 | Given `S`, every edge is internal or boundary, never both | **D** (set theory) | the partition is exhaustive and disjoint by construction |
 | 6 | The ratio `b_int/b_bdry` is the individuation measure | **D-via-I** | form from steps 1–3; the *choice* of ratio rather than difference is a reading |
 | 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept |
 | 8 | Individuation is relational, not intrinsic | **D** | follows from `S`-dependence of both sums |
 | 9 | Band disjointness follows | **D-via-I**, conditional on 4 and 7 | §4 |
 
-**No `A` rows.** Step 4 is the honest weak point and step 7 is the honest inheritance.
+**No `A` rows.** **Step 4 was the paper's open item and is now written (§2.1); step 7 (`θ_ind`) is the honest inheritance and remains the one undetermined quantity.**
 
 ## 3. Why the Partition Is Sharp Even Though Individuation Is Not
 
