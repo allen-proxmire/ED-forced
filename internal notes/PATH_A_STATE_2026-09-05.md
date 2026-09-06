@@ -34,7 +34,7 @@
 
 **2. The radial `1/R` channel density — an unnamed, un-tiered postulate.** `Paper_030` §4.3, one clause, justified by *"substrate-graph radial-projection geometry, anchored by P03."* **It is what turns an `R`-independent per-channel strain into a logarithm, and therefore what produces `√(a_N a₀)` rather than nothing.** Its sibling `P-Bilocal-Count` is named, tiered and has a falsifier; this has none. **A name is proposed in `Note_StrC_Bridge_2026-09-05.md` and deliberately not written into the paper — adopting it increments the census (171).**
 
-**3. `Grad` remains a proposal.** Six supports, one passed compatibility check, one failed Knots sub-case, not derived. And an open question about whether `Paper_PhaseCoherence`'s measured phase-alignment belongs to `Grad` rather than `Coh`.
+**3. `Grad` remains a proposal. — STILL A PROPOSAL, and its one surviving discriminator was WITHDRAWN 2026-09-06 (#103):** the `ξ`-versus-coupling trend was a **coordination-number artifact** (a phase-blind control reproduces it). **The structural reason is now stated: `Coh` sums over contribution-pairs at a locus, `Grad` over graph edges, and a one-phase-per-node probe collapses those onto each other — so no probe of that design can settle it. A discriminating probe needs multiple channels per locus.** Six supports, one passed compatibility check, one failed Knots sub-case, not derived. And an open question about whether `Paper_PhaseCoherence`'s measured phase-alignment belongs to `Grad` rather than `Coh`.
 
 ## What not to trust without re-checking
 
