@@ -11,13 +11,13 @@
 1. This paper does **not** claim that the substrate-level "unresolved regime" interpretation overrides any operational quantum-mechanics prediction; the interpretation reframes the substrate-level meaning of entanglement without modifying QM at the prediction level.
 2. It does **not** claim a substrate-level resolution of the measurement problem; that is addressed in Paper_005 + Paper_002 (Born-Gleason).
 3. It does **not** introduce new substrate primitives.
-4. "Unresolved regime of participation-rule individuation" = the substrate-level configuration where multiple rule-type assignments are simultaneously supported by V5 cross-chain correlations but **no commitment-irreversibility threshold** (P11) has yet selected a unique individuation. Entanglement is the substrate-level signature of this regime for bipartite (and multipartite) chain configurations.
+4. "Unresolved regime of participation-rule individuation" = the substrate-level configuration where multiple channel assignments are simultaneously supported by V5 cross-chain correlations but **no commitment-irreversibility threshold** (P11) has yet selected a unique individuation. Entanglement is the substrate-level signature of this regime for bipartite (and multipartite) chain configurations.
 
 ---
 
 ## Abstract
 
-Entanglement is structurally identified in ED as the **unresolved regime of participation-rule individuation**: a substrate-level configuration where multiple rule-type assignments coexist without P11 commitment-irreversibility forcing a unique individuation. The identification composes *(⚠ **but see the index note in §2**: **(i) and (iii) are not independent** — `Paper_054` §3.4's `Γ_individuation` **is the rate of P11**, in P11's own words (gravity ledger #132), so a composition of three is claimed where two are the same primitive. This does not make the identification wrong — it is an `A→position` either way — but the support is two-part, not three-part.)*: (i) UR-1 theorem (Paper_054) characterizing the unresolved regime at substrate level; (ii) V5 cross-chain correlation kernel (Paper_090) supplying the cross-chain participation correlation that defines bipartite entanglement; (iii) commitment-irreversibility (P11) marking the threshold above which the unresolved regime ends. Entanglement, in ED's framing, is **not** a non-local action-at-a-distance; it is the substrate-level signature of multi-rule-type coexistence before commitment selects individuation.
+Entanglement is structurally identified in ED as the **unresolved regime of participation-rule individuation**: a substrate-level configuration where multiple channel assignments coexist without P11 commitment-irreversibility forcing a unique individuation. The identification composes *(⚠ **but see the index note in §2**: **(i) and (iii) are not independent** — `Paper_054` §3.4's `Γ_individuation` **is the rate of P11**, in P11's own words (gravity ledger #132), so a composition of three is claimed where two are the same primitive. This does not make the identification wrong — it is an `A→position` either way — but the support is two-part, not three-part.)*: (i) UR-1 theorem (Paper_054) characterizing the unresolved regime at substrate level; (ii) V5 cross-chain correlation kernel (Paper_090) supplying the cross-chain participation correlation that defines bipartite entanglement; (iii) commitment-irreversibility (P11) marking the threshold above which the unresolved regime ends. Entanglement, in ED's framing, is **not** a non-local action-at-a-distance; it is the substrate-level signature of multi-channel coexistence before commitment selects individuation.
 
 ---
 
@@ -37,9 +37,9 @@ Entanglement is structurally identified in ED as the **unresolved regime of part
 
 ### 2.3 Paper-specific postulates
 
-> **⚠ INDEX NOTE — settled 2026-09-06 (gravity ledger #133). "Rule-type assignment" here means a participation CONFIGURATION over channels, not a rule-type LABEL.** Canonical `Paper_087` §P11 collapses to a single **channel**; `Paper_054`'s UR-1, cited above, says *"multi-channel → single-channel"*; and this arc's own machinery indexes `Ψ_KL^AB` on `𝒦_A × 𝒦_B`. **This paper uses "rule-type" five times and "channel" not once, and is the only paper in that chain to do so.** **The label reading would break this paper's thesis:** a two-qubit entangled state is matter rule-type throughout, so on that reading it would have a unique rule-type assignment and would not be in the unresolved regime — which is what this paper exists to say it is. **The configuration reading is therefore what is meant; no third index set is introduced and nothing structural changes.** A wording substitution to *"channel assignment"* is **proposed, not applied**. `primitives/INDIVIDUATION_DISAMBIGUATION.md` §5.1.
 
-- **P-Entanglement-Identification:** Bipartite entanglement is the substrate-level signature of cross-chain participation-rule individuation being **unresolved** — multiple rule-type assignments coexist without P11 commitment forcing unique selection.
+
+- **> **⚠ INDEX NOTE — settled 2026-09-06, wording APPLIED the same day (gravity ledger #133, #134). The index in this paper is the CHANNEL set.** The five occurrences of the old phrasing in the paper's own text have been substituted to *“channel assignment(s)”* and *“multi-channel coexistence”*. **The regime's own name, “participation-rule individuation”, is LEFT AS IS** — it names the regime, not the index, and renaming it would retitle the paper; **read it as the individuation of the participation CONFIGURATION over channels.** *(The paragraph below quotes the old phrasing on purpose and is not substituted.)* Canonical `Paper_087` §P11 collapses to a single **channel**; `Paper_054`'s UR-1, cited above, says *"multi-channel → single-channel"*; and this arc's own machinery indexes `Ψ_KL^AB` on `𝒦_A × 𝒦_B`. **This paper uses "rule-type" five times and "channel" not once, and is the only paper in that chain to do so.** **The label reading would break this paper's thesis:** a two-qubit entangled state is matter rule-type throughout, so on that reading it would have a unique rule-type assignment and would not be in the unresolved regime — which is what this paper exists to say it is. **The configuration reading is therefore what is meant; no third index set is introduced and nothing structural changes.** The wording substitution to “channel assignment” was **APPLIED 2026-09-06 on instruction** (gravity ledger #134); this paragraph quotes the pre-substitution phrasing deliberately. `primitives/INDIVIDUATION_DISAMBIGUATION.md` §5.1.P-Entanglement-Identification:** Bipartite entanglement is the substrate-level signature of cross-chain participation-rule individuation being **unresolved** — multiple channel assignments coexist without P11 commitment forcing unique selection.
 - **P-Resolution-on-Commitment:** When P11 commitment-irreversibility threshold is crossed (e.g., by measurement coupling), the unresolved regime ends; entanglement is destroyed; classical individuation results.
 
 ---
@@ -63,11 +63,11 @@ Entanglement is structurally identified in ED as the **unresolved regime of part
 
 ### 3.1 The unresolved regime
 
-By UR-1 (Paper_054), the substrate-level unresolved regime is the configuration $\mathcal{M}_{\mathrm{cap}}(s) < \mathcal{M}_{\mathrm{crit}}$ — multiple rule-type assignments coexist; P11 commitment-irreversibility has not yet selected a unique one.
+By UR-1 (Paper_054), the substrate-level unresolved regime is the configuration $\mathcal{M}_{\mathrm{cap}}(s) < \mathcal{M}_{\mathrm{crit}}$ — multiple channel assignments coexist; P11 commitment-irreversibility has not yet selected a unique one.
 
 ### 3.2 V5 cross-chain content
 
-V5 cross-chain correlation kernel (Paper_090) supports correlations **between** chain configurations even when no single chain has unique rule-type assignment. This is the substrate origin of bipartite entanglement: cross-chain correlations + per-chain unresolved-regime structure.
+V5 cross-chain correlation kernel (Paper_090) supports correlations **between** chain configurations even when no single chain has unique channel assignment. This is the substrate origin of bipartite entanglement: cross-chain correlations + per-chain unresolved-regime structure.
 
 ### 3.3 Entanglement as substrate signature
 
