@@ -60,6 +60,8 @@ Both formulas implemented as written, 40×40, 3 channels per locus, single seed:
 
 **What is not:** which term owns the July phase-alignment measurement. **That question is now genuinely open for the first time** — previously it was open *and* mis-specified.
 
+> **✅ ANSWERED 2026-09-06 (#111): it belongs to `Grad`.** Binding needs **two** conditions — **intensive scoring** *and* **no neighbour–neighbour term** — and only `Grad` can meet both. **`|acc|/n` is intensive `Grad`** (`Grad` maximised over `v`'s phase is `2|acc|`; the `2` absorbs into `k_phase`), so the arm that binds is not “neither term” but **`Grad` in a normalized scoring convention.** **Intensive canonical `Coh` has nearly flat connection and NO alignment gain** (residual `−1.17…−0.68` against the control's `−1.02`), because **the NN term does not contain `v`'s own phase** (#105) and so rewards already-coherent neighbourhoods rather than alignment. `foundations/Note_RepairTest_2026-09-06.md`.
+
 **What `Grad`'s tier does:** unchanged. Still a proposal, `form-forced-conditional at best`. Its known problem — condition (A) crystallizing — **now appears under *both* readings in this probe**, which neither confirms nor clears it, since the probe is unvalidated.
 
 **Next, and it is cheap:** re-run the *original* single-phase probe with its `Coh` arm corrected to `|acc|² − n` (canonical) rather than `|acc|/n`. That is a two-line change, it reproduces the validated baseline everywhere else, and it is the first run that would actually be asking the question.
