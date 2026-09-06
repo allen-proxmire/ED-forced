@@ -277,6 +277,53 @@ The symmetric alternative — convert the chain's `a` to `T_a = a/2πc` and comp
 
 **So the debt has moved down one level rather than being paid.** §4b owed *"why compare at layer 1?"*. §4f owes *"given that we compare at layer 1, why does the seam contribute `1/2π` rather than `2π`?"* **The second question is narrower, it is about a single sign in an exponent, and it is the kind of thing a careful construction settles.** The first was a question about the philosophy of the framework.
 
+### 4h. The owed sentence, PAID — 2026-09-06. The direction is fixed by P11's discreteness.
+
+§4f narrowed the debt to one question and said it was *“the kind of thing a careful construction settles”*: **given that we compare at layer 1, why does the seam contribute `1/2π` rather than `2π`?**
+
+**The answer was half-written in §4b and needed its other half.**
+
+**What the `2π` in `T = κ/2π` actually is.** It is not decoration and it is not a coincidence of conventions. It is the standard relation between an **angular** frequency and a **cyclic** one:
+
+$$\omega = 2\pi\,\nu$$
+
+In the Euclidean-period derivation the inverse temperature *is* the period, `β = 2π/κ`. **So `κ` is radians per unit time — an `ω` — while `T = 1/β` is cycles per unit time — a `ν`.** Dividing by `2π` is converting one to the other. **Nothing else is happening in that factor.**
+
+**So the question “divide or multiply” is really: is the chain's side an `ω` or a `ν`?**
+
+**§4b already answered it**, without noticing that it had:
+
+> *“A chain's acceleration is, in ED, a **P11 commitment-rate asymmetry** … That is a **bare count-rate** at the level of commitments.”*
+
+**A count-rate is a `ν`.** P11's operational content is *“discrete, environmentally-phase-randomizing, irreversible substrate events”* — **discrete events are counted, and a count per unit time is cycles per second, not radians per second.**
+
+**And the horizon's side is an `ω`.** It has **no layer-1 `κ`** at all (`Paper_028` §3.4 makes the cosmic surface statistical rather than geometric — the qualifier §4f added), and presents only coarse-grained, as a de Sitter-like horizon with `κ_H = H₀`.
+
+**So the comparison is `ν` against `ω`, and putting them on one footing divides the `ω` by `2π`. One conversion, one factor, and its direction is not free:**
+
+$$a_0 = c\,T_H = \frac{c H_0}{2\pi}$$
+
+> **The seam divides rather than multiplies because layer 1 counts and layer 2 winds — and that layer 1 counts is P11.**
+
+**Multiplying instead would require the chain's acceleration to be an angular rate**, i.e. a *continuous phase advance* rather than a count of discrete events. **That is exactly what P11 denies.**
+
+### Why this also explains a pattern the note observed before it had a cause
+
+§4b predicted, before any of this: *every ED quantity comparing a bare chain rate to a horizon thermal state should carry exactly **one** `2π`, and like-layer comparisons should carry **none**.* §4c then found precisely that — expressing `𝒲₀` against `(cH₀)²`, a like-layer comparison, **“the π vanishes entirely”**.
+
+**The `ω`/`ν` reading says why.** A cross-layer comparison is `ν`-against-`ω` and needs one conversion; a like-layer comparison is `ν`-against-`ν` or `ω`-against-`ω` and needs none. **The pattern was observed first and now has a cause, which is the right order.**
+
+### Tier, and what is still not closed
+
+**This is a *type* argument — about what kind of quantity sits on each side — not a computation.** It is **stronger than §4b's** *“the chain is what responds, so the response is executed in the chain's own machinery”*, because it cites **P11's discreteness** rather than an intuition about response. It is **weaker than a derivation of `a₀`**, which nobody has.
+
+- **Closed:** §4f's owed sentence, which asked for the **direction** and not the value.
+- **Not closed:** the **value**. `a₀ ~ cH₀` remains form-derived with the scale inherited from `H₀` — and per gravity ledger #60, **`a₀ ~ cH₀` is Milgrom's (1983) and the `2π`-normalized form is standard in the MOND review literature.** ED's claim is the coefficient's *origin*; this supplies that origin's **direction**, not a new number.
+
+**Deliberately not used as evidence:** that only the dividing reading lands near the measured `a₀` (`1.04×10⁻¹⁰` against `1.2×10⁻¹⁰`, versus `4.1×10⁻⁹` for the multiplying one). **Matching `a₀` is what this whole route is trying to explain, so using the match to pick the direction would be circular.** The arithmetic is in `internal notes/_check_twopi_direction.py` to show the stakes, not to make the case.
+
+**Falsifier.** If commitment were shown to be a **continuous phase advance** rather than a count of discrete events, the chain's side would be an `ω`, the comparison would be like-layer, and **the `2π` would vanish** — giving `a₀ = cH₀`, which is `5.5×` the measured value.
+
 ### 4g. The same seam turned up in the collapse arc, hours later — 2026-09-05
 
 **The debt above is not this arc's alone.** `state-reduction/Note_Theta12_LayerQuestion_2026-09-05.md` asks whether the relative phase in `Coh` is the coarse-grained interferometric phase or the raw substrate polarity that **`Paper_PhaseCoherence_P12Coh` measures decorrelating at `ξ ≈ 5ℓ_ED`.** **That is the same seam, reached from an arc that shares nothing else with this one.**

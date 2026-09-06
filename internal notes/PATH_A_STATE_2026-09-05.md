@@ -28,6 +28,8 @@
 
 ## The three open items, ranked
 
+**1. The layer seam. — THE 2π HALF IS PAID, 2026-09-06 (gravity ledger #101).** The seam divides rather than multiplies because **layer 1 counts and layer 2 winds**: the 2π in T = κ/2π is just ω = 2πν, a chain's acceleration is a **count-rate** (a ν, because P11's commitments are discrete events), and the horizon presents only coarse-grained as an ω. One conversion, direction fixed by P11. It also explains §4b's predicted pattern (one 2π per cross-layer comparison, none for like-layer). **Still open below: which layer Coh is evaluated at.**
+
 **1. The layer seam.** Four arcs now reduce to one question: **at which layer is `Σ_C` evaluated, and what crosses the seam when it is read from the other side?** It carries the `a₀` `2π`'s remaining debt (§4f: *why `1/2π` and not `2π`*), the collapse arc's `Θ₁₂`, the `ln R` licensing, and `Grad`'s phase half. **`layers/` already has a thesis and a forced operator; what it does not supply is any account of a numerical factor attaching to a crossing.** That gap is the whole `2π`.
 
 **2. The radial `1/R` channel density — an unnamed, un-tiered postulate.** `Paper_030` §4.3, one clause, justified by *"substrate-graph radial-projection geometry, anchored by P03."* **It is what turns an `R`-independent per-channel strain into a logarithm, and therefore what produces `√(a_N a₀)` rather than nothing.** Its sibling `P-Bilocal-Count` is named, tiered and has a falsifier; this has none. **A name is proposed in `Note_StrC_Bridge_2026-09-05.md` and deliberately not written into the paper — adopting it increments the census (171).**
