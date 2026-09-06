@@ -13,7 +13,7 @@ os.chdir(EDG)
 
 SUP = {'²': '2', '³': '3', '¹': '1', '⁶': '6', '⁻': '-', '⁰': '0', '⁵': '5',
        '⁴': '4', '⁷': '7', '⁸': '8', '⁹': '9'}
-SUB = {'₀': '0', '₁': '1', '₂': '2', '₃': '3', 'ₜ': 't'}
+SUB = {'₀': '0', '₁': '1', '₂': '2', '₃': '3', 'ₜ': 't', 'ᵢ': 'i'}
 CMD = {  # math-class char -> LaTeX (math mode, no $)
  'ρ': r'\rho', 'Σ': r'\Sigma', 'α': r'\alpha', 'μ': r'\mu', 'ν': r'\nu',
  'π': r'\pi', 'β': r'\beta', 'φ': r'\varphi', 'ε': r'\varepsilon',
@@ -33,8 +33,14 @@ CMD = {  # math-class char -> LaTeX (math mode, no $)
  'Θ': r'\Theta', '𝒲': r'\mathcal{W}', 'Ψ': r'\Psi', 'ω': r'\omega', 'ḧ': r'\ddot{h}',
  'ψ': r'\psi', '𝒜': r'\mathcal{A}', '⟨': r'\langle', '⟩': r'\rangle', '□': r'\Box', '′': r"'",
  '⋆': r'\star', 'Π': r'\Pi', '⊊': r'\subsetneq', '⊗': r'\otimes',
+ # added 2026-09-06 for ED_UnifiedFramework_Report: three from the currency
+ # pass, four scorecard marks no Paper_* had ever used.
+ 'ℰ': r'\mathcal{E}', '↦': r'\mapsto', '∀': r'\forall', '≅': r'\cong',
+ '✅': r'\checkmark', '⚠': r'\triangle', '📏': r'\square', '⭐': r'\bigstar',
 }
 CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
+ 'ℰ': 'E', '↦': '->', '∀': 'forall', '≅': '~=', '✅': '[ok]',
+ '⚠': '[!]', '📏': '[m]', '⭐': '[*]', 'ᵢ': 'i',
  'ρ': 'rho', 'Σ': 'Sigma', 'α': 'alpha', 'μ': 'mu', 'ν': 'nu', 'π': 'pi',
  'β': 'beta', 'φ': 'phi', 'ε': 'eps', 'Δ': 'Delta', 'Γ': 'Gamma',
  'κ': 'kappa', 'τ': 'tau', 'ξ': 'xi', 'γ': 'gamma', 'δ': 'delta',
@@ -49,7 +55,14 @@ CODE = {  # transliteration for code spans / fenced code (verbatim-safe ASCII)
  '—': '--', '–': '-', '§': 'sec.', '…': '...', 'ḃ': 'b-dot',
  'Θ': 'Theta', '𝒲': 'Wcal', 'Ψ': 'Psi', 'ω': 'omega', 'ḧ': 'h_tt',
 }
-TEXT_OK = set('—–§…öřČéüïàáèó')  # raw text chars Latin Modern handles
+TEXT_OK = set('—–§…öřČéüïàáèó“”')  # raw text chars Latin Modern handles
+# U+FE0F is a zero-width emoji variation selector and U+0304 a combining
+# macron; both are stripped/folded before anything else looks at the text.
+PRESTRIP = {'\ufe0f': ''}
+# A combining macron always trails its base. Both uses in the report are
+# SU(N) rep labels inside code spans (`2` vs `2-bar`, `N` vs `N-bar`), so the
+# conventional particle-physics ASCII is the base plus 'bar'.
+BAR = re.compile('([A-Za-z0-9])' + chr(0x0304))
 
 MATHCLASS = set(SUP) | set(SUB) | set(CMD)
 
@@ -145,7 +158,15 @@ def code_repl(s):
 
 TOKEN = re.compile(r'(```.*?```|\$\$.*?\$\$|`[^`\n]*`|\$[^$\n]+\$)', re.DOTALL)
 
+def prepass(text):
+    for k, v in PRESTRIP.items():
+        text = text.replace(k, v)
+    text = BAR.sub(lambda m: m.group(1) + 'bar', text)
+    return text
+
+
 def latexify(text):
+    text = prepass(text)
     out, last = [], 0
     for m in TOKEN.finditer(text):
         out.append(prose_repl(text[last:m.start()]))
@@ -158,7 +179,7 @@ def latexify(text):
 def coverage_check(targets):
     miss = set()
     for f in targets:
-        for ch in open(f, encoding='utf-8').read():
+        for ch in prepass(open(f, encoding='utf-8').read()):
             if ord(ch) > 127 and ch not in MATHCLASS and ch not in TEXT_OK:
                 miss.add(ch)
     if miss:
@@ -176,6 +197,25 @@ def yesc(s): return s.replace('\\', '').replace('"', '\\"')
 _META = ('series:', 'status:', 'repository:', 'companions:', 'allen proxmire')
 _DATE = re.compile(r'(january|february|march|april|may|june|july|august|september'
                    r'|october|november|december)\s+\d{4}$')
+
+def front_matter(lines):
+    """(meta, body_index) if the file opens with YAML front matter, else ({}, None).
+
+    Front matter is an explicit statement of what is metadata and what is body,
+    so when it is present it wins: nothing after it is dropped as preamble.
+    """
+    if not lines or lines[0].strip() != '---':
+        return {}, None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == '---':
+            meta = {}
+            for l in lines[1:i]:
+                if ':' in l:
+                    k, v = l.split(':', 1)
+                    meta[k.strip()] = v.strip().strip('"').strip("'")
+            return meta, i + 1
+    return {}, None
+
 
 def body_start(lines):
     """Index where the rendered body begins.
@@ -203,17 +243,24 @@ def build(md):
     name = os.path.basename(md)
     base = name[:-3]
     lines = open(md, encoding='utf-8').read().splitlines()
-    title = next(l[2:].strip() for l in lines if l.startswith('# '))
-    # subtitle = the first '## ' heading before '## Abstract' (the paper's part-line)
-    subtitle = next((l[3:].strip() for l in lines
-                     if l.startswith('## ') and l.strip() != '## Abstract'), '')
-    ai = body_start(lines)
+    meta, fm_end = front_matter(lines)
+    if meta:
+        title = meta.get('title', base)
+        subtitle = meta.get('subtitle', '')
+        ai = fm_end                      # front matter declared it; keep all of it
+    else:
+        title = next(l[2:].strip() for l in lines if l.startswith('# '))
+        # subtitle = the first '## ' heading before '## Abstract' (the part-line)
+        subtitle = next((l[3:].strip() for l in lines
+                         if l.startswith('## ') and l.strip() != '## Abstract'), '')
+        ai = body_start(lines)
     body = latexify('\n'.join(lines[ai:]))
     front = ('---\n'
              f'title: "{yesc(title)}"\n'
              + (f'subtitle: "{yesc(subtitle)}"\n' if subtitle else '')
-             + 'author: "Allen Proxmire"\n'
-             f'date: "June 2026"\ngeometry: margin=1.1in\nfontsize: 11pt\n---\n\n')
+             + f'author: "{yesc(meta.get("author", "Allen Proxmire"))}"\n'
+             + f'date: "{yesc(meta.get("date", "June 2026"))}"\n'
+             + 'geometry: margin=1.1in\nfontsize: 11pt\n---\n\n')
     header(workdir)
     open(os.path.join(workdir, '_tmp.md'), 'w', encoding='utf-8').write(front + body)
     r = subprocess.run(['pandoc', '_tmp.md', '-s', '--include-in-header=header.tex',
