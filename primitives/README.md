@@ -5,6 +5,8 @@
 
 **State.** These are the **postulated axioms** of the whole program — P01–P13 are *not derived*; every "Derived" or "Grounded" result anywhere in the corpus is conditional on them. This folder is the granular per-primitive breakdown *beneath* the canonical position paper (`../position-paper/paper_ED_Framework_13_Primitive_Generative_System.md`, = `../physics-papers/foundations/Paper_087_13Primitives.md`, same axioms). The load-bearing audit (which primitive does real work where) is `PRIMITIVE_LOAD_BEARING_AUDIT.md` (= foundations `Paper_088`).
 
+> **⚠ Vocabulary hazard — read `ADJACENCY_AND_BAND_DISAMBIGUATION.md` before building on any sentence containing “adjacency” or “band”.** **“Adjacency” names four different *kinds of object*** in the corpus — the participation graph's edge **structure** (P03); the Adjacency **class of channels** (P04 card); the position-locus **content sector**, which is boost-*invariant* (`Paper_012_7`); and P12's adjoint-gradient **operator** `∇_adj`. **“Band” names three different partitions**, two of them four-fold and neither containing the other. **Four collisions were found in one session and one had a live argument built on it for two months** (the dwell route). Gravity ledger #91, #92, #94, #95.
+
 > **Cross-reference hazard.** The `concepts/` files carry their **own independent 01–13 numbering that does NOT match the canonical P-numbers** (e.g. concept "Primitive 05" = Event Density, not P05 polarity-transport). Always resolve primitive citations by **P-number via the top-level `Pnn_*.md` cards**, never by a concept file's internal number. This is the same non-canonical-vintage confusion that produced real errors elsewhere (see the T14 downgrade); cite canonical, not archived/concept enumerations.
 
 ---

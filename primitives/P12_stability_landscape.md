@@ -14,6 +14,8 @@ The three components:
 - **Str** (strain): the cumulative-strain content underlying gravitational potential $\Phi$ (Paper 026).
 - **Grad** (gradient): the directional / geometric content; the slope of event density across participation-adjacency neighborhoods.
 
+> **Two adjacency-flavoured objects live in P12, and neither is a band — flagged 2026-09-05.** `Grad` above is a *slope over participation-adjacency neighbourhoods*, and `∇_adj` in `a_C = −∇_adj Σ_C` is an **adjoint gradient operator** on the same graph. **Neither has anything to do with the Adjacency *class of channels*** in `P04_bandwidth.md`, despite the shared word. **Reading `∇_adj` as evidence about what the Adjacency band *contains* is the exact error that cost the dwell route two months** (`foundations/Note_Dwell_SecondRepair_2026-09-05.md`; gravity ledger #94). See `ADJACENCY_AND_BAND_DISAMBIGUATION.md`.
+
 P12 supplies the substrate-level analog of energy-landscape phenomena and the substrate origin of the gravitational potential.
 
 ## Audit verdict

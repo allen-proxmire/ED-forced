@@ -7,6 +7,8 @@
 
 ## Canonical statement
 
+> **Vocabulary:** this card supplies **graph adjacency** — sense **A** of four in `ADJACENCY_AND_BAND_DISAMBIGUATION.md`. It is a *structure*, not a class of channels, not a content sector, and not an operator.
+
 The substrate supplies a discrete index set of channels $\mathcal{K}$ and a (discrete or continuous) index set of loci, with primitive translation-invariance: shifting all loci by a common displacement leaves the participation-graph adjacency structure intact.
 
 ## Honest minimality caveat
