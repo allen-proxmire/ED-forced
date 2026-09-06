@@ -6,6 +6,20 @@
 
 ---
 
+> **⚠ NAMING CORRECTION, 2026-09-06 — what was measured is `Grad`, not `Coh`. Gravity ledger #112.**
+>
+> **§1.3 states the right formula** — `Coh = |Σ_a P_a|² − Σ_a|P_a|² = 2Σ_{a<b}√(b_a b_b)cos Δπ_ab` — **but the build implements a different one.** The probe's phase bonus is `v3_active`, `|acc|/n`. Maximised over the candidate's free phase, **the §1.3 formula gives `2|acc| + (|acc|² − n)`** — it carries a **neighbour–neighbour** cross term, interfering every *pair* of contributions. **`|acc|/n` carries no such term: it is the `v`-to-neighbour part alone, divided by the coordination number** — which is exactly **`Grad`'s phase half, intensively scored** (`Grad` maximised over `v`'s phase is `2|acc|`; the `2` absorbs into `k_phase`). **So the measured object is `Grad`, not `Coh`.** `foundations/Note_MultiChannel_CohGrad_2026-09-06.md`, `Note_RepairTest_2026-09-06.md`.
+>
+> **What this costs the paper, tiered honestly.**
+>
+> **(1) The headline SURVIVES and is stronger than it was.** Knots-safety in the physical condition was re-run on **ten seeds and all three functionals — `Grad`, `|acc|/n` and canonical `Coh` — and every one gives 0/10 crystal**, `R ≈ 0.01–0.07` against `R > 0.8` for a crystal verdict (gravity ledger #107). **So the no-crystal conclusion holds for the formula §1.3 states, and not only for the one the build ran.**
+>
+> **(2) The attractive/constructive SIGN transfers.** Both `+Coh` and `−Grad` reward alignment — they come from the same amplitude structure and differ only by the neighbour–neighbour term. **So V5 clock-binding (`RelationalTick`) and the MOND interference term (`Interference-Gravity`) keep the sign this paper was written to supply.**
+>
+> **(3) The FINITE-REACH result does NOT transfer.** The measured `ξ`, and the binding it demonstrates, are properties of **`Grad` intensively scored**. Canonical `Coh` was tested directly on 2026-09-06 (`internal notes/`, `../event-density/theory/p12_repair_test_probe.py`) and **does not reproduce it under any normalisation tried** — its alignment gain is zero to within measurement, because **the neighbour–neighbour term does not contain the candidate's own phase** and so rewards already-coherent neighbourhoods rather than alignment.
+>
+> **The repair is a naming one and it does not weaken the arc:** this paper measures that **`Grad`'s phase content binds with finite reach and stays Knots-safe.** That is a real result about a real term in `Σ_C`. **What it is not is a measurement of `Coh`.**
+
 ## Preamble: what this paper does NOT claim
 
 Written first, per house discipline; the abstract is reconciled against it.
