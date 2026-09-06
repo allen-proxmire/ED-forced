@@ -4,7 +4,7 @@ author: "Allen Proxmire"
 date: "July 2026 (currency pass 2026-09-06)"
 ---
 
-> **Currency pass 2026-09-06.** The report body is July 2026. Three claim-strength corrections made since are folded in below and marked in place: **(a)** the `1/(2π)` coefficient in `a₀ = cH₀/(2π)` is **re-tiered Postulated/disputed** — the *scale* `a₀ ~ cH₀` is derived by three independent routes and the *evolution* `a₀(z)` is unaffected, but the coefficient is not established as forced (`Paper_029` §5.5 + audit rows 8/10/11; gravity ledger Staleness #10); **(b)** the entanglement arc's **monogamy** claim is narrowed from CKW-form to the finite-budget cap, and **no-signaling's “over-determined” verdict is the papers' own `A→position`** rather than a derivation (gravity ledger #124, #125); **(c)** four entanglement rows re-tiered `Derived → Grounded` — conditional on postulates that were always declared, not newly discovered. **(d)** §5's MOND passage now names the `Coh`/`Str` split that makes the sign work (foundations #10, settled 2026-09-05 by a three-way sign check), records that the arc **withdrew** its regime-assumption discharge — *“two postulates to one”* is **one and a half** — and carries the open question that withdrawal surfaced (**a linear horizon response versus MOND's threshold**, Staleness #13), the `KM-I`/`Paper_030` high-acceleration tension (#19), and the fact that the *Measured* constructive-sign result **measured `Grad`, not `Coh`** and stands at *candidate* (#112). **No result was withdrawn by this pass and no sector's standing changed; one withdrawal made by the arc itself is now reported rather than omitted.** Full trail: `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` #122–#141; the claim register is `ED_ItemizedTheory_TieredClaims_v2.xlsx`.
+> **Currency pass 2026-09-06.** The report body is July 2026. Three claim-strength corrections made since are folded in below and marked in place: **(a)** the `1/(2π)` coefficient in `a₀ = cH₀/(2π)` is **re-tiered Postulated/disputed** — the *scale* `a₀ ~ cH₀` is derived by three independent routes and the *evolution* `a₀(z)` is unaffected, but the coefficient is not established as forced (`Paper_029` §5.5 + audit rows 8/10/11; gravity ledger Staleness #10); **(b)** the entanglement arc's **monogamy** claim is narrowed from CKW-form to the finite-budget cap, and **no-signaling's “over-determined” verdict is the papers' own `A→position`** rather than a derivation (gravity ledger #124, #125); **(c)** four entanglement rows re-tiered `Derived → Grounded` — conditional on postulates that were always declared, not newly discovered. **(d)** §5's MOND passage now names the `Coh`/`Str` split that makes the sign work (foundations #10, settled 2026-09-05 by a three-way sign check), records that the arc **withdrew** its regime-assumption discharge — *“two postulates to one”* is **one and a half** — and carries the open question that withdrawal surfaced (**a linear horizon response versus MOND's threshold**, Staleness #13), the `KM-I`/`Paper_030` high-acceleration tension (#19), and the fact that the *Measured* constructive-sign result **measured `Grad`, not `Coh`** and stands at *candidate* (#112). **(e)** §14 gains a named item it did not carry: **universal free fall is an unproven prerequisite** — `a_C = −∇_adj Σ_C` has no inertial normalisation, so a literal reading makes acceleration bandwidth-dependent; ED has a **measured** inertia mechanism but no demonstration that it cancels (foundations #9, reached independently by two of three external runs). **No result was withdrawn by this pass and no sector's standing changed; one withdrawal made by the arc itself, and one previously unstated prerequisite, are now reported rather than omitted.** Full trail: `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` #122–#141; the claim register is `ED_ItemizedTheory_TieredClaims_v2.xlsx`.
 
 *Availability: the corpus, this report, and the certified-simulation scripts are public at [github.com/allen-proxmire/ED-generative](https://github.com/allen-proxmire/ED-generative) (archived, all-versions DOI [10.5281/zenodo.20149496](https://doi.org/10.5281/zenodo.20149496)); the substrate simulator and companion evaluation scripts live in the [event-density](https://github.com/allen-proxmire/event-density) working repo.*
 
@@ -746,18 +746,55 @@ Two further limits are neither proven walls nor open problems: they are resolved
 
 **Casting.** Which force is chiral is resolved-as-inherited: the pseudoreality of SU(2)'s fundamental versus the complex representations of SU(N≥3), a representation-theoretic fact ED carries (§10). It is not an open ED derivation and not a wall to break; it is the same rep-spectrum inheritance as #1, correctly located outside ED's dynamical output.
 
+## One unproven prerequisite: universal free fall
+
+**This is a different kind from #1 and #2, and it is placed separately for that reason.** Those are
+Standard-Model content ED has not built. This is something the gravity sections **lean on**: §5's
+claim that the classical tests come out at standard values presupposes that two bodies of different
+composition fall the same way.
+
+**The tension, stated as the corpus states it.** P12's acceleration rule is `a_C = −∇_adj Σ_C`, with
+**no inertial normalisation**, and the interference cross-term scales as `√b_K` in the chain's *own*
+bandwidth. Taken literally, two chains of different bandwidth in the same ambient field would
+accelerate **differently** — which is exactly what universal free fall forbids, and universal free
+fall is the one kinematic signature that distinguishes gravity from any other force.
+
+**Two things stop this being a contradiction.** First, **ED has an inertia mechanism and it is
+measured, not asserted**: on the certified substrate a bound composite under uniform force reaches
+`v_x = 0.72` against an unbound cluster's `0.97` — binding resists acceleration
+(`Paper_MassWithoutMass_BindingInertia`). Second, that paper's own preamble concedes the limit
+plainly: *"the equivalence-principle reading is a **consistent interpretation, not an independent
+proof**."*
+
+> **So the honest state is: ED has inertia, and does not have a demonstration that it cancels out of
+> gravitational acceleration.** Not a contradiction, not a proven wall — an unproven prerequisite.
+
+**Provenance, because it bears on how the report should be read.** This was reached **independently
+by two of three uncontaminated external runs** in September 2026, from ED's axioms alone, before the
+corpus had it written down (foundations ledger #9; gravity Staleness #69). One filed it as a
+structural problem and proposed `a_C = (1/b_C)·[−∇_adj Σ_C]`, noting that the fix *"directly
+contradicts P12 as literally stated … amending a primitive, not supplementing the axiom list."* The
+corpus's own check then **weakened it from contradiction to unproven** on the strength of the
+measured inertia those runs could not have known about.
+
+**Whether this counts as a third structural open is a judgement this report does not make.** It is
+narrower than #1 and #2 — ED has a mechanism, not a blank — but it is **upstream of claims §5 treats
+as passing**, which neither #1 nor #2 is. It is named here so a reader meets it in the walls section
+rather than deducing it.
+
 ## The map of "no"
 
 ED's limits sort cleanly:
 
 - **Proven wall (1):** primality — theorem-anchored, the finite-memory ceiling. ED knows at least one thing it provably cannot do.
 - **Structural opens (2):** the rep-spectrum (#1, a conjectured linking route to the channel-topology wall) and the anomaly constraint (#2, gated on a *sibling* residual of the same substrate-to-Dirac reduction, not the same wall as #1). Both bounded, both unsolved in the Standard Model, both residuals of one reduction that is itself form-complete (§11) — one root, two distinct residuals, not a single wall.
+- **Unproven prerequisite (1):** universal free fall — ED has a *measured* inertia mechanism and no demonstration that it cancels from gravitational acceleration. Narrower than the opens above, but **upstream of §5's classical tests**, which is what makes it worth its own line.
 - **Principled inheritances:** dimension (selected, conditional route home) and casting (rep-theoretic, resolved-as-inherited).
 - **Inherited-by-design (§12):** the constants — a fourth category, things ED's own logic says it cannot and need not derive.
 
 ## What this buys
 
-The walls set up the two sections that close the report. §15 asks the harder question — not what ED has not yet derived, but what could prove it *wrong* — and §16 states the bottom line. The map here is what lets those sections be read as confident rather than defensive: a framework that has located its one proven limit, bounded its two real opens, and named its inheritances has earned the right to state plainly what it does and does not claim.
+The walls set up the two sections that close the report. §15 asks the harder question — not what ED has not yet derived, but what could prove it *wrong* — and §16 states the bottom line. The map here is what lets those sections be read as confident rather than defensive: a framework that has located its one proven limit, bounded its two real opens, named an unproven prerequisite it could have left implicit, and stated its inheritances has earned the right to say plainly what it does and does not claim.
 
 
 **Related papers.** 
