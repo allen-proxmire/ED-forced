@@ -1,12 +1,12 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#96** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#97** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
 ## What Path C is
 
-**One question, asked at twelve scales: *what licenses combining bandwidth across things?***
+**One question, asked at thirteen scales: *what licenses combining bandwidth across things?***
 
 That is the spine, and it is the thing most likely to be lost if this session compacts — the individual ledger items would survive, the fact that they are one question would not.
 
@@ -24,8 +24,9 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 94 | the dwell arc's `∇_adj` borrow | across **primitives** — when a name is borrowed from the wrong one |
 | 95 | the adjacency/band disambiguation | across **the vocabulary** — the systemic fix for all of the above |
 | 96 | propagation re-sourced P04 → P05 | across **a primitive boundary** — amount is not rate |
+| 97 | the relational-bands sweep | across **a cut** — which bands actually carry one (two of four) |
 
-**It produced a general answer, not twelve local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
+**It produced a general answer, not thirteen local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
 ## How Path C started, and where Path B went
 
@@ -62,7 +63,7 @@ Ledger **#81** is Path B's only item and it already ran the test: with `P_i = �
 3. ~~**`Paper_003`**~~ — **CLOSED (#91): it does not need the partition, and the stronger finding is that it is *insensitive* to it.** Its only use of bandwidth is the normalized sum `Σ_{K'} b_{K'}`, and **any partition of the channel set leaves that sum unchanged** — so it cannot need the partition and is not evidence for it either. What it needs is P07 + P04 additivity over the channel set + **channel orthogonality** (which is what *“four-band orthogonality”* was reaching for) + `P-LinRate`. **`Paper_003` comes off the dependent list.** A naming collision was flagged on the way: `Paper_003_5` §§3.3–3.4's *“adjacency-bandwidth”* means bandwidth along graph adjacency, **not** the partition's “Adjacency band”.
 3b. ~~**`Paper_012_6_Heisenberg`**~~ — **CLOSED (#92): a DIFFERENT four-band partition.** Its `P-FourBand` is **position / momentum / time / energy** (conjugate pairs), a separate named censused postulate with its derivation open; the disputed one is **Internal / Adjacency / Environmental / Commitment-reserve** (participation-partner type). **The term is overloaded four ways** — add `Paper_004_5` §3.6's **Bell-test settings** and `Paper_003_5`'s **adjacency-bandwidth** — so a grep overstates the disputed partition's footprint by **~3×**. **Exactly one genuine paper-level dependent survives:** `Paper_UnifiedP04TransportBudget`, which already calls the dependency *“the load-bearing joint … the single most important thing to attack.”* **Two card problems flagged:** `primitives/P04_bandwidth` tiers the partition **more strongly than its own source concept** (which calls it *“motivated empirically”*, open twice), and **claims a dependent it does not have** (`Paper_003`). **Net: AP's branch decision is now a cheap one** — but cost is not truth, and the decision stands.
 4. **`θ_ind`** — individuation's *only* undetermined quantity now that `w(e)` is written. The source concept flags it twice: *"Structural constant? Regime-dependent? Tied to `ℏ` / bandwidth normalization?"*
-5. **The transport arc's `S` identification** — is the transport cell the individuated complex?
+5. **The transport arc's `S` identification** — **conditionally answered (#97): the arc is committed to `S` = the cell**, recovered by restoring the suppressed `N` in `b_adj(C, N)`. **What stays open is whether a single cell can be individuated at all** in individuation's sense — the sharper version of the question.
 6. ~~**The Higgs/dwell arc's second defect**~~ — **CLOSED (#94), as a diagnosis rather than a rescue.** The `∇_adj` borrow is a **naming collision** (P12's `∇_adj` is a *derivative operator*; the Adjacency band is a *class of channels*), and **its conclusion is contradicted** — `Paper_012_7` has adjacency as the **boost-invariant position sector**, not the movement one. The band the argument needed (**propagation/momentum**) lives in `Paper_012_6`'s `P-FourBand`, a **different partition**. And **canonical P11 is silent on locus**, so *commitment ⇒ advancement* is an identification, named as the candidate **`P-Commitment-Advancement`** and **deliberately not adopted** (census stays 173). **Net: the route is no longer blocked by a sourcing error but by an honestly-stated missing postulate** — a better place to be blocked. Mass sector unaffected.
 
 ## Where Path C meets Path A
@@ -100,4 +101,4 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#96.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#97.*

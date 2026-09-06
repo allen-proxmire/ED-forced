@@ -45,6 +45,21 @@ $$b_{\text{band}}(u)=\!\!\sum_{K\,\in\,\text{band}(u)}\!\! b_K(u)\qquad\text{giv
 
 **This is far weaker than granting P04 a partition it does not have, and it is nameable, tierable and attackable, which the old form was not.**
 
+### The band signatures — restored from the source concept 2026-09-06
+
+**The bands were always written with explicit arguments; downstream papers dropped them.** From `concepts/participation_bandwidth.md`, verbatim:
+
+| band | signature | meaning |
+|---|---|---|
+| Internal | **`b_int(C)`** | bandwidth along `C`'s own update-rule participation |
+| Adjacency | **`b_adj(C, N)`** | bandwidth with adjacency-neighbourhood `N` |
+| Environmental | **`b_env(C, E)`** | bandwidth with environment `E` |
+| Commitment-reserve | **`b_com(C)`** | the commitment budget |
+
+**Only the Adjacency/Environmental boundary carries a free parameter.** `b_int` and `b_com` are functions of the chain alone and are **cut-independent**. `N` and `E` are complementary halves of one system/environment cut, and `Note_BandOverlap_Check_2026-09-05.md` showed that **a P05-transporting channel counts as Adjacency or Environmental according to that cut and nothing else** — which is what individuation supplies.
+
+**So “the bands are relational” (ledger #93) is right about the *partition* and over-broad about the *bands*: two of the four are intrinsic to the chain.** **Write the arguments.** `foundations/Note_RelationalBands_Sweep_2026-09-06.md`; gravity ledger #97.
+
 ~~The four-band partition (P04 §1.5) supplies the sesquilinear inner-product structure on the participation manifold (Paper 003).~~
 
 > **⚠ This dependency claim is FALSE, checked 2026-09-05 (gravity ledger #91).** **`Paper_003` does not need the partition and is *insensitive* to it.** Its §2.5 audit table traces every load-bearing step and no row cites the partition; structurally, its only use of bandwidth is the normalized sum $\sum_{K'}b_{K'}$, and **any partition of the channel set leaves that sum unchanged.** What supplies the inner-product structure is **channel orthogonality** — distinct channels being orthogonal, so $\lVert\Psi\rVert^2=\sum_K b_K$ carries no cross term (`Paper_007` §3.2) — tracked as `P-Channel-Orthogonality` and **unrelated to how the channel set is partitioned into bands.** `foundations/Note_Paper003_FourBand_Check_2026-09-05.md`.

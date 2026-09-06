@@ -44,6 +44,8 @@ This is grounded (**the P05/P07/P10 channel classification, `P-Band-Partition`**
 
 ## 3. R1-analog — one saturation event, two proxy shadows (derived in form)
 
+> **The suppressed argument, restored 2026-09-06.** The source concept writes the Adjacency band as **`b_adj(C, N)`** — bandwidth with an adjacency-neighbourhood `N` — and this arc writes `b_adj^max` per cell with no `N`. **Restoring it: this arc is using `N` = the cell's graph neighbourhood, i.e. `S` = the single cell.** That is almost certainly the intended reading, and it is stated here rather than left implicit because **`N` and `E` are complementary halves of one system/environment cut** (`foundations/Note_BandOverlap_Check_2026-09-05.md`), so choosing `N` *is* choosing the cut. **This conditionally answers the arc's open `S` question: the arc is committed to `S` = the cell.** **What it does not answer is whether a single cell can be individuated at all** in individuation's sense — that remains open, and it is the sharper version of the question. `foundations/Note_RelationalBands_Sweep_2026-09-06.md`; gravity ledger #97.
+
 Let `f = b_adj^used / b_adj^max ∈ [0,1]` be the per-cell Adjacency occupancy. Both ceilings are the **same** condition `f → 1`:
 
 - **Viscosity** (`Paper_079`): as packing `φ → φ_max`, momentum content saturates the Adjacency band (`f → 1`); momentum can no longer flow between cells; `η` diverges. So `φ_max` is the *packing proxy* of `f = 1`.
