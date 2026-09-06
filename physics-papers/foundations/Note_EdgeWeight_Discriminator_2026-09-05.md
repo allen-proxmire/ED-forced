@@ -1,9 +1,10 @@
-# Note — The `w(e)` fork is decided: regridding consistency forces the geometric mean
+# Note — The `w(e)` fork: regridding consistency excludes `min`, and forces the geometric mean *in the coherent regime*
 
 **Date:** 2026-09-05 (late)
 **Status:** Working note. Feeds `foundations/Paper_Individuation_TheSystemEnvironmentCut.md` §2.1 and audit row 4.
-**Check:** `internal notes/_check_edge_weight_discriminator.py` (re-runnable, four tests).
-**Anchors:** `Paper_007_HilbertSpace` §2 (`P-Motif-Algebra`), `Paper_087` §P12 (the `Coh` operationalization), `Paper_087` P03 (locus index set).
+**⚠ Read §8b before citing §6.** §§1–7 were written first and state the uniqueness result **unconditionally**; §8b, written the same day after checking whether the corpus already needs requirement (R), **finds that it does and that the result is regime-conditional**. `min`'s exclusion survives that correction; "forced full stop" does not.
+**Checks:** `internal notes/_check_edge_weight_discriminator.py` (four tests) and `internal notes/_check_merge_rule_regimes.py` (the §8b follow-up), both re-runnable.
+**Anchors:** `Paper_007_HilbertSpace` §2 (`P-Motif-Algebra`), `Paper_087` §P12 (the `Coh` operationalization), `Paper_087` P03 (locus index set), `Paper_073` §3.2 (DCGT well-definedness = (R)).
 
 ---
 
@@ -72,13 +73,13 @@ Set `g(x) = f(x², b_v)`. Then `g(x₁+x₂) = g(x₁)+g(x₂)` for all `x ≥ 0
 
 $$\boxed{\,f(b_u,b_v)=\sqrt{b_u\,b_v}\,}$$
 
-**The geometric mean is the unique regridding-consistent edge weight, given that contributions combine by amplitude addition.**
+**The geometric mean is the unique regridding-consistent edge weight, given that contributions combine by amplitude addition.** — **and that proviso is load-bearing, not decorative; see §8b.**
 
 ## 7. The result worth keeping: the fork was the merge rule in disguise
 
 **The edge weight was never an independent choice.** Had bandwidth itself been additive under merging (`b_K(U) = b₁ + b₂`) rather than amplitude, the same Cauchy argument run in `b` gives `f` linear in each argument — the **product** `c·b_u b_v` — and **both** candidates fail. Whatever rule governs coarse-graining loci fixes the edge weight, and fixes it uniquely.
 
-ED's merge rule is amplitude addition. So ED's edge weight is the geometric mean, and there was never room for `min`.
+**And the corpus turns out to carry both merge rules, in different regimes** (§8b): `P-Motif-Algebra`'s amplitude addition, and `Paper_073` §3.2's bandwidth addition. So the edge weight is regime-dependent — geometric mean where coherence survives across the merge, product where it does not. **`min` is excluded under both**, which is what the fork was actually about.
 
 Note also what `min` fails *at*: it is regridding-consistent only in the corner where the minimum always falls on the same side, i.e. **exactly where it stops depending on both endpoints** and is no longer a shared-content measure at all.
 
@@ -88,8 +89,31 @@ Note also what `min` fails *at*: it is regridding-consistent only in the corner 
 2. **One soft joint.** `P-Motif-Algebra` is stated for *chain* amplitude tuples, componentwise over channels. Applying it to a merge of *loci* is the same operation on the same objects and is what `Paper_087`'s `Coh` already does when it sums `P_a` over contributions, but **it is an extension of the postulate's stated domain**, and it is the one place this argument leans on a reading rather than a statement. If a future audit narrows `P-Motif-Algebra` to chains only, this result needs a locus-level restatement of the same rule.
 3. **Verdict: `D-via-I` conditional on (R) + `P-Motif-Algebra`** — not unconditional, and not `D`.
 
+## 8b. CORRECTION, same day — (R) is already a corpus commitment, and that changes the verdict
+
+**The check asked for in §8 was run** (`internal notes/_check_merge_rule_regimes.py`). Three findings, one good, one a correction, one a defect found elsewhere.
+
+**1. (R) is not invented for this result.** `Paper_073` (DCGT) §3.2, *Well-definedness*: *"the average depends only on `(ū, t̄)` — the coarse-graining center — **not on the specific substrate channels enumerated within the cell**."* That is (R). And it is load-bearing: DCGT §1 states that *"every continuum-level empirical prediction in the corpus traces structurally through DCGT."* **So the individuation result rests on a demand the corpus already makes and cannot give up.**
+
+**2. But DCGT uses the OTHER merge rule, and the Cauchy argument is sensitive to which.** DCGT's next sentence is *"By P04 (bandwidth additivity), substrate bandwidth contributions sum additively within the cell"* — `b_K(U) = b₁ + b₂`, not `|P₁+P₂|²`. Run (R) against that rule and it forces `f` linear in each argument: **the product `c·b_u b_v`**, a third candidate. Verified numerically — under amplitude merging only the geometric mean satisfies (R); under bandwidth merging only the product does.
+
+**So the edge weight is REGIME-DEPENDENT, and §6's "uniquely" needs its regime attached.** The geometric mean is forced in the **coherent** regime, the product in the **decoherent** one. What excluded the product in §5 was the normalization `f(b,b) = b`, which it cannot meet with a constant `c` — **and that normalization was a choice of mine doing real work**, since the individuation *ratio* is a quotient of sums of `w` and `c` cancels. The product has to be excluded on regime grounds, not by normalization.
+
+**3. `min` is excluded under BOTH merge rules.** That half of the result stands untouched, and it was the live fork.
+
+**The two rules reconcile, and are one rule in two regimes.** `b_K(U) = Σ_a b_a + 2Σ_{a<b}√(b_a b_b)\cosΔπ_{ab}` — the cross term is exactly `Coh`. Phase-aligned it gives `n²` for `n` unit loci; phase-random it gives `n` in expectation (Monte-Carlo: `2.003, 4.012, 8.030, 16.078` for `n = 2,4,8,16`), which **is** DCGT's bandwidth additivity. **DCGT's rule is the `Coh → 0` limit of `P-Motif-Algebra`'s.**
+
+**Which regime individuation sits in, argued rather than assumed.** The worked examples do **not** decide it — every bandwidth in them is `0` or `1`, where the two weights coincide, and the product reproduces all six verdicts. So the argument has to come from what individuation *is*: the source concept's decisive example is a Cooper pair de-individuating on gaining a **condensate** channel, and its account of entanglement is that an entangled pair is **one un-individuated complex**. Both are coherence statements, and both are invisible at `Coh → 0`. **Individuation in the decoherent limit would not have the content the concept claims for it.** So the coherent regime, and the geometric mean — but on that argument, not on §6 alone.
+
+**Revised verdict: `D-via-I` conditional on (R) + `P-Motif-Algebra` + the coherent regime.** (R) got stronger; the conditionality got one term longer and more honest.
+
+## 8c. A defect found in `Paper_073` on the way past
+
+DCGT §3.2 attributes bandwidth-additive merging to **"P04 (bandwidth additivity)"** with no regime condition. **P04's stated additivity is over disjoint sub-channels at a locus; summing over *loci within a cell* is a different operation, and canonical `Paper_087` §P12 says the general rule for combining contributions carries a cross term.** DCGT is *entitled* to the decoherent rule — its own §3.3 explicitly averages out *"specific channel labels, specific commitment-event timings,"* which is the microstructure carrying the phase — **but the clause as written reads as a general consequence of P04, and it is not.** Harmless inside DCGT's hydrodynamic window; a live hazard for anything that inherits the clause outside it. Flagged in `Paper_073` §3.2 and recorded as gravity ledger #89.
+
 ## 9. Write-back
 
 - `Paper_Individuation_TheSystemEnvironmentCut.md` §2.1 — the "honest alternative" paragraph is replaced by this result; audit row 4's parenthetical drops "not a forced choice".
 - No new postulate named; the census is unchanged. `P-Motif-Algebra` already exists.
-- Gravity ledger #88.
+- Gravity ledger #88; the correction and the `Paper_073` defect are #89.
+- `Paper_073` §3.2 — dated regime-condition note added to the well-definedness clause.
