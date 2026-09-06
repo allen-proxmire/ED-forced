@@ -1,5 +1,7 @@
 # Path A — state at pause, 2026-09-05
 
+> **→ SUPERSEDED for current state by `internal notes/RESEARCH_PATHS_STATE_2026-09-06.md`, which covers Paths A–E together. Path A is CLOSED. This file stays as the record of where it stood on 2026-09-05.**
+
 *Written to be picked up cold, by me or by anyone. **Read this before resuming; do not reconstruct Path A from memory.** Everything below is checkable against the ledgers and the scripts named.*
 
 ---

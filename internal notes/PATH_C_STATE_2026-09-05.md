@@ -1,5 +1,7 @@
 # Path C — state, 2026-09-05 (late)
 
+> **→ SUPERSEDED for current state by `internal notes/RESEARCH_PATHS_STATE_2026-09-06.md`, which covers Paths A–E together. Path C is CLOSED. This file stays as the record of where it stood on 2026-09-05.**
+
 *Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#100** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
