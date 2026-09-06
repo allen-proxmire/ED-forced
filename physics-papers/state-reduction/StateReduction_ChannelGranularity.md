@@ -40,7 +40,7 @@ The load-bearing question resolves **against the exclusion risk**: ED's pointer/
 
 - Pillar 1 (substrate dynamics coherent, not measurement) — **standing** (QM-emergence arc / emergent unitarity).
 - Pillar 2 (pointer basis = environment-selected coarse einselection) — **structural, corpus-grounded** (`lindblad_extension` environmental-mode jump operators; QD paper einselection-primitive).
-- Pillar 3 (commitment gated on operational distinguishability → coarse floor) — **grounded in §4 + A1**.
+- Pillar 3 (commitment gated on operational distinguishability → coarse floor) — **grounded in §4**, with A1 supplying the *framing* (distinguishability is operational, not substrate-omniscient) but **NOT a measurement of it**. **⚠ 2026-09-06 (gravity ledger #136):** A1 is **region-to-region** and its measured value is **exactly zero everywhere** — if distinguishability simply *were* controlled channel capacity, commitment could never individuate anything. **This pillar's CONCLUSION stands and is carried by Pillars 1 and 2 regardless; only the A1 warrant is softened.**
 - Germanium: bound charge → energy pointer basis → stationary → no radiation — **grounded-in-kind** (standard einselection with dominant self-Hamiltonian; imported, not an ED theorem).
 - Net "pointer basis ≫ `ℓ_ED`, escape holds" — **grounded-in-kind synthesis**, not yet a written ED theorem.
 
