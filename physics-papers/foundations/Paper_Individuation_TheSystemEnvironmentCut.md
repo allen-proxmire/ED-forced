@@ -73,7 +73,15 @@ $$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at 
 
 **`w(e)` is `Coh`'s envelope with the phase stripped** — the shared *capacity*, where `Coh` is the coherently shared part. Individuation asks how much is shared; `Coh` asks how much of it is in phase.
 
-**The honest alternative, stated because it is real.** `min(b_K(u), b_K(v))` also satisfies all five requirements — a "bottleneck" reading rather than an amplitude-product one. **The geometric mean is chosen because it is what the corpus already uses for shared two-locus content and because it is the amplitude product, not because it is forced.** A construction distinguishing them would be a genuine test.
+**The alternative, and why it is now excluded.** `min(b_K(u), b_K(v))` satisfies all five requirements above — a *bottleneck* reading rather than an amplitude-product one, and not a strawman, since the individuation ratio is a **cut** quantity and minimum-capacity is the canonical thing to put on a cut. It was recorded here as a live fork, with the geometric mean chosen by the corpus's convention rather than forced. **That fork is now closed, by a construction that does not reuse the evidence above** (`foundations/Note_EdgeWeight_Discriminator_2026-09-05.md`; check `internal notes/_check_edge_weight_discriminator.py`).
+
+**Requirement (R), regridding consistency.** P03 supplies *the locus index set* — a bookkeeping choice. `b_bdry(S)` is supposed to be a property of **the cut**. So merging two loci on the **same side** of the cut must not move the boundary: `w(U,v) = w(u₁,v) + w(u₂,v)`. Loci merge by **amplitude addition** — `P_K(U) = P_K(u₁) + P_K(u₂)`, hence `b_K(U) = |ΣP|²` — which is `P-Motif-Algebra` (`Paper_007` §2, already in the census) and is the rule canonical `Paper_087` §P12 already computes `Coh` on.
+
+**Then the weight is unique.** With `w = f(b_u,b_v)` non-decreasing in each argument, (R) at phase alignment reads `f((x₁+x₂)², b_v) = f(x₁², b_v) + f(x₂², b_v)` for amplitudes `x_i`. Setting `g(x) = f(x², b_v)` gives **Cauchy's functional equation** `g(x₁+x₂) = g(x₁)+g(x₂)` with `g` monotone, so `g(x) = c(b_v)x`; symmetry forces `c(b_v) = c√b_v`; `f(b,b) = b` fixes `c = 1`. **`f = √(b_u b_v)`, uniquely.**
+
+**And it discriminates numerically.** Merging `N` phase-aligned loci, the geometric mean is exact for every `N` while `min` is wrong by a factor of `N` — it saturates at the outside locus and stops seeing the system side. Regridding **only the environment**, so `b_int` is untouched, **`min` flips the verdict** (ratio `1.50 → 6.00` across `θ_ind = 2`) while the geometric mean does not move (`0.75 → 0.75`). Scanning the power-mean family `M_p` from `min` (`p → −∞`) to the geometric mean (`p = 0`), all correctly normalized, the regridding violation has a **unique zero at `p = 0`**.
+
+**The result worth keeping is that the fork was never independent: it was the merge rule in disguise.** Had bandwidth itself been additive under merging, the same argument would give the **product** `c·b_u b_v` and **both** candidates would fail. Whatever rule governs coarse-graining loci fixes the edge weight. **What is assumed:** (R) itself, and the reading of `P-Motif-Algebra` at loci rather than chains — both stated in §8 of the note. Verdict **D-via-I conditional on (R) + `P-Motif-Algebra`**, not unconditional.
 
 ## 2.5 Load-Bearing Step Audit
 
@@ -82,14 +90,14 @@ $$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at 
 | 1 | Chain-complexes `S` exist as sub-structures of the participation graph | **D** | P02 |
 | 2 | Edges and adjacency exist to partition | **D** | P03 |
 | 3 | A non-negative additive scalar rides on them | **D** | P04 |
-| 4 | `w(e)` from `b_K(u)`: `w(u,v) = Σ_{K shared} √(b_K(u)b_K(v))` | **D-via-I** *(was OPEN; written 2026-09-05)* | §2.1. Form from P02 membership + P04; the **geometric mean rather than `min`** is the corpus's existing convention for two-locus shared content, not a forced choice. Verified against all three of the source concept's worked examples. |
+| 4 | `w(e)` from `b_K(u)`: `w(u,v) = Σ_{K shared} √(b_K(u)b_K(v))` | **D-via-I** *(was OPEN; written and then closed 2026-09-05)* | §2.1. Form from P02 membership + P04. The **geometric mean rather than `min`** is no longer a convention: it is the **unique** edge weight under which `b_bdry` survives regridding, given that loci merge by amplitude addition (`P-Motif-Algebra`). Conditional on requirement (R). Verified against all three of the source concept's worked examples, and against four discriminating tests. |
 | 5 | Given `S`, every edge is internal or boundary, never both | **D** (set theory) | the partition is exhaustive and disjoint by construction |
 | 6 | The ratio `b_int/b_bdry` is the individuation measure | **D-via-I** | form from steps 1–3; the *choice* of ratio rather than difference is a reading |
 | 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept |
 | 8 | Individuation is relational, not intrinsic | **D** | follows from `S`-dependence of both sums |
 | 9 | Band disjointness follows | **D-via-I**, conditional on 4 and 7 | §4 |
 
-**No `A` rows.** **Step 4 was the paper's open item and is now written (§2.1); step 7 (`θ_ind`) is the honest inheritance and remains the one undetermined quantity.**
+**No `A` rows.** **Step 4 was the paper's open item, is now written, and its one remaining choice — geometric mean versus `min` — is now closed rather than preferred (§2.1). Step 7 (`θ_ind`) is the honest inheritance and remains the one undetermined quantity in the paper.**
 
 ## 3. Why the Partition Is Sharp Even Though Individuation Is Not
 
