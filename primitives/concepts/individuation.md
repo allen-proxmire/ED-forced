@@ -114,6 +114,8 @@ Two entangled qubits are a single un-individuated chain-complex expressed at two
 
 A Cooper pair is two electron-chains whose shared participation makes them un-individuated relative to each other while remaining jointly individuated from the metal. A Bose-Einstein condensate pushes this further: the whole condensate is one macroscopic non-individuated chain-complex.
 
+> **⚠ TWO SENSES OF “INDIVIDUATION” LIVE IN §5.3–§5.5 — flagged 2026-09-06 (gravity ledger #131).** **§5.3 and §5.4 describe the SAME substrate change — boundary bandwidth to an external system going UP — and call it opposite directions.** By the criterion this card was promoted with (`R = b_int/b_bdry > θ_ind`, `foundations/Paper_Individuation_TheSystemEnvironmentCut.md`), **`b_bdry` up means `R` DOWN, so both are individuation DOWN.** **§5.4 agrees with the criterion; §5.3 does not — because §5.3 is using the OTHER sense.** Its own words are *“chain spans multiple channels”* → *“chain is in one channel”*: that is **CHANNEL-resolution**, which is `q-compute/Paper_054` §3.4's `Γ_individuation` (*“resolving multi-channel participation into single-channel participation”*, timescale `~ ℓ_ED/c`), **not** the locus-set partition the paper promoted. **The two senses split exactly the way `P-Commitment-Advancement` had to: P11 selects a CHANNEL and is silent on the LOCUS.** **Neither is wrong; the WORD is overloaded, and the promoted paper covers only the locus sense — so the measurement/collapse reading in §5.3 is NOT covered by `θ_ind`.** `foundations/Note_Individuation_TwoSenses_2026-09-06.md`.
+
 ### 5.3 Measurement completing individuation
 
 A measurement device with high participation bandwidth forces a sudden individuation of the measured chain. Pre-measurement: chain spans multiple channels, boundary-bandwidth with device is low. Post-measurement: chain is in one channel, boundary-bandwidth is high, individuation is sharp. The "collapse" is individuation completion.
@@ -124,7 +126,7 @@ A qubit coupled to an environment slowly loses internal-to-boundary bandwidth ra
 
 ### 5.5 System / environment cut in QM
 
-The choice of "what counts as the system" is the choice of individuation boundary. ED makes this explicit — different cuts give different descriptions of the same underlying participation structure, and the best cut is the one with the largest b_int / b_bdry ratio.
+The choice of "what counts as the system" is the choice of individuation boundary. ED makes this explicit — different cuts give different descriptions of the same underlying participation structure, and the best cut is the one with the largest b_int / b_bdry ratio. **⚠ CORRECTED 2026-09-06: that prescription is VACUOUS.** `R` is **closed under union** (`foundations/Note_ThetaInd_IsALength_2026-09-06.md`, result B — 0 violations in 400 pairs), and `b_bdry(V) = 0` for the whole graph so `R(V) = ∞`. **Maximising `R` therefore selects the entire universe, every time.** Since the admissible family is upward-closed, **a cut must be chosen by something other than maximising `R`** — minimality, or a stated system of interest, or the physics of the question. **The criterion CHECKS a cut; it does not FIND one.**
 
 ### 5.6 Classical object persistence
 
