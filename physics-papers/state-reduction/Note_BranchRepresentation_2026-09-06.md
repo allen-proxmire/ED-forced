@@ -65,6 +65,10 @@ $$\Psi^C(u,t) = \sum_K P_K^C(u,t)\,|K\rangle, \qquad P_K = \sqrt{b_K}\,e^{i\pi_K
 
 > **Tier: this section is a SKETCH of where a bridge would have to live, not a bridge. It is not banked and nothing downstream should cite it as one.**
 
+## 4.5 Confirmed independently by the orthogonality route — 2026-09-06 (#139)
+
+**The Gleason reconstruction §4 reduces `P-Channel-Orthogonality` to the fact that ED's channels are *perfectly* distinguishable, `p(K|L) = 0`, from P07.** **So if the collapse derivation's branches were channels, they would be distinguishable from the outset, `τ` would be ZERO, and collapse would be instantaneous — contradicting `τ ∝ ℏ/E_G`.** **The derivation therefore requires that its branches are not channels, which is this note's conclusion reached from the opposite end.** And it sharpens the gap: **sense 1 is BINARY (P07, perfect, standing), sense 2 is GRADED (`R` continuous) — the derivation needs graded driving binary, and that is what the missing coefficient would convert between.** `Note_Orthogonality_BinaryVsGraded_2026-09-06.md`.
+
 ## 5. What this changes
 
 **Nothing in any tier.** The escape stands, the `τ ∝ ℏ/E_G` scaling stands as *grounded-in-kind*, locality stands.
