@@ -64,6 +64,8 @@ Verdict: **M3** — form FORCED via Cauchy-Schwarz on canonical commutation; num
 
 ### 3.1 Four-band partition
 
+> **Not the same four bands as `primitives/P04_bandwidth.md` §1.5 — clarified 2026-09-05.** This paper's `P-FourBand` partitions by **conjugate pair**: position / momentum / time / energy. The partition disputed in gravity ledger #82–#85 partitions `b_K` by **participation-partner type**: **Internal / Adjacency / Environmental / Commitment-reserve**. **Different partitions of the same primitive, sharing only a name.** This paper is therefore **not** a dependent of that one — it declares its own, as a named postulate, with its substrate derivation openly OPEN (§2.3). **The overlap is a naming collision and it inflates the disputed partition's apparent footprint**, this paper being its single heaviest apparent user at twelve mentions. `foundations/Note_FourBand_Senses_2026-09-05.md`.
+
 At substrate level, measurement-bandwidth content separates into four bands:
 1. **Position-band (P03 adjacency):** content distinguishing substrate cells by spatial-locus indexing.
 2. **Momentum-band (P04 propagation):** content distinguishing substrate cells by translation-rate (P05 polarity-transport rate).

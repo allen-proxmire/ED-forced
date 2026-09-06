@@ -16,7 +16,11 @@ Each channel $K$ at each locus $u$ carries a real-valued non-negative quantity $
 - **Environmental** band: carries content coupled to the substrate environment (decohering channels).
 - **Commitment-reserve** band: carries the budget consumed by P11 commitment events.
 
-The four-band partition (P04 §1.5) supplies the sesquilinear inner-product structure on the participation manifold (Paper 003).
+~~The four-band partition (P04 §1.5) supplies the sesquilinear inner-product structure on the participation manifold (Paper 003).~~
+
+> **⚠ This dependency claim is FALSE, checked 2026-09-05 (gravity ledger #91).** **`Paper_003` does not need the partition and is *insensitive* to it.** Its §2.5 audit table traces every load-bearing step and no row cites the partition; structurally, its only use of bandwidth is the normalized sum $\sum_{K'}b_{K'}$, and **any partition of the channel set leaves that sum unchanged.** What supplies the inner-product structure is **channel orthogonality** — distinct channels being orthogonal, so $\lVert\Psi\rVert^2=\sum_K b_K$ carries no cross term (`Paper_007` §3.2) — tracked as `P-Channel-Orthogonality` and **unrelated to how the channel set is partitioned into bands.** `foundations/Note_Paper003_FourBand_Check_2026-09-05.md`.
+>
+> **Two further cautions on this card, same date** (`foundations/Note_FourBand_Senses_2026-09-05.md`; `internal notes/_check_fourband_senses.py`). **(a) The term “four-band” is overloaded across the corpus** — at least four distinct things carry it: this partition; `Paper_012_6_Heisenberg`'s **`P-FourBand`** (position/momentum/time/energy, a *separate named censused postulate* with its substrate derivation open); `Paper_004_5_Tsirelson_Discrete` §3.6's **Bell-test settings** `{a,a',b,b'}`, which are not a bandwidth partition at all; and `Paper_003_5`'s **“adjacency-bandwidth”**, meaning bandwidth along graph adjacency. **A grep for “four-band” therefore overstates this partition's footprint by roughly a factor of three.** **(b) This card tiers the partition more strongly than its own source concept does** — `concepts/participation_bandwidth.md` says *“The four-band structure is **motivated empirically**”* and lists *“whether it is mathematically forced”* as an open question, twice. **Exactly one genuine paper-level dependent survives the audit:** `soft-matter/Paper_UnifiedP04TransportBudget`, which already declares the dependency a posit and calls it *“the load-bearing joint … the single most important thing to attack.”*
 
 ## Audit verdict
 

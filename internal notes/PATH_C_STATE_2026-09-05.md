@@ -1,12 +1,12 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#91** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#92** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
 ## What Path C is
 
-**One question, asked at seven scales: *what licenses combining bandwidth across things?***
+**One question, asked at eight scales: *what licenses combining bandwidth across things?***
 
 That is the spine, and it is the thing most likely to be lost if this session compacts — the individual ledger items would survive, the fact that they are one question would not.
 
@@ -19,8 +19,9 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 89 | (R) is DCGT's; two merge rules | across **a cell** — which regime |
 | 90 | the P04 additivity license | across **a region** — what licenses it at all |
 | 91 | `Paper_003` is insensitive to the bands | across **a partition** — when the question does not arise |
+| 92 | “four-band” names four different things | across **a name** — when the footprint is an artifact |
 
-**It produced a general answer, not seven local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
+**It produced a general answer, not eight local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
 ## How Path C started, and where Path B went
 
@@ -55,7 +56,7 @@ Ledger **#81** is Path B's only item and it already ran the test: with `P_i = �
 **Work:**
 
 3. ~~**`Paper_003`**~~ — **CLOSED (#91): it does not need the partition, and the stronger finding is that it is *insensitive* to it.** Its only use of bandwidth is the normalized sum `Σ_{K'} b_{K'}`, and **any partition of the channel set leaves that sum unchanged** — so it cannot need the partition and is not evidence for it either. What it needs is P07 + P04 additivity over the channel set + **channel orthogonality** (which is what *“four-band orthogonality”* was reaching for) + `P-LinRate`. **`Paper_003` comes off the dependent list.** A naming collision was flagged on the way: `Paper_003_5` §§3.3–3.4's *“adjacency-bandwidth”* means bandwidth along graph adjacency, **not** the partition's “Adjacency band”.
-3b. **`Paper_012_6_Heisenberg`** — the successor, and the real one. **Twelve four-band mentions, the heaviest use in any paper**, and unlike the Born rule an uncertainty relation plausibly *does* care how bandwidth is partitioned. Next after it, by weight: `Paper_004_5_Tsirelson_Discrete` (6), `Paper_UnifiedP04TransportBudget` (6).
+3b. ~~**`Paper_012_6_Heisenberg`**~~ — **CLOSED (#92): a DIFFERENT four-band partition.** Its `P-FourBand` is **position / momentum / time / energy** (conjugate pairs), a separate named censused postulate with its derivation open; the disputed one is **Internal / Adjacency / Environmental / Commitment-reserve** (participation-partner type). **The term is overloaded four ways** — add `Paper_004_5` §3.6's **Bell-test settings** and `Paper_003_5`'s **adjacency-bandwidth** — so a grep overstates the disputed partition's footprint by **~3×**. **Exactly one genuine paper-level dependent survives:** `Paper_UnifiedP04TransportBudget`, which already calls the dependency *“the load-bearing joint … the single most important thing to attack.”* **Two card problems flagged:** `primitives/P04_bandwidth` tiers the partition **more strongly than its own source concept** (which calls it *“motivated empirically”*, open twice), and **claims a dependent it does not have** (`Paper_003`). **Net: AP's branch decision is now a cheap one** — but cost is not truth, and the decision stands.
 4. **`θ_ind`** — individuation's *only* undetermined quantity now that `w(e)` is written. The source concept flags it twice: *"Structural constant? Regime-dependent? Tied to `ℏ` / bandwidth normalization?"*
 5. **The transport arc's `S` identification** — is the transport cell the individuated complex?
 6. **The Higgs/dwell arc's second defect** — borrowing P12's `∇_adj` to interpret a P04 band. Still owed, and it is a layer-borrowing case of the same question.
@@ -89,8 +90,8 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 1. **Read this file, then ledger items #82–#90 in reverse order.** They are the whole thread.
 2. **Run `_census_postulates.py`.**
-3. **The next move is item 3b (`Paper_012_6_Heisenberg`)** — item 3 closed as #91; 3b is the heaviest remaining four-band dependent and the one most likely to actually need the partition.
+3. **Items 3 and 3b are closed (#91, #92). The branch decision (open item 1) is now priced and waiting on AP.** Next work item is **4 (`θ_ind`)**, individuation's only undetermined quantity.
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#91.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#92.*

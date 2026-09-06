@@ -106,6 +106,8 @@ This matches Paper_069's three-polytope analysis: Bell ⊊ Tsirelson ⊊ NS, wit
 
 ### 3.6 Connection to four-band partition
 
+> **Naming collision, flagged 2026-09-05.** The *“four-band partition”* in this section is **the four Bell-test settings** `{a, a', b, b'}` generating four **correlation** bands — as the next sentence says. **It is not a partition of bandwidth**, and in particular it is not `primitives/P04_bandwidth.md` §1.5's Internal / Adjacency / Environmental / Commitment-reserve partition, nor `Paper_012_6`'s `P-FourBand`. Three unrelated things share the name; this section is the third. `foundations/Note_FourBand_Senses_2026-09-05.md`.
+
 The four-band partition (Bell-test settings $a, a', b, b'$) generates the substrate-level adjacency content underlying the CHSH operator. Each setting corresponds to a different substrate-edge content; the inner-product between substrate configurations under different settings produces the correlation $E(\cdot, \cdot)$.
 
 The four-band structure is the substrate manifestation of the bipartite-experiment design; the sesquilinear inner-product is the substrate-level correlation tool; their combination yields the Tsirelson bound.
