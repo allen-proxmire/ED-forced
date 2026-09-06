@@ -4,7 +4,7 @@
 
 **Role in the framework:** The threshold condition under which a sub-structure of the participation graph counts as a *distinct* identity — a "this system" distinguishable from "that system." Individuation is the ED account of where one thing ends and another begins. It is the primitive that resolves entanglement (pre-individuated participation shared across endpoints), that defines system/environment cuts in decoherence analyses, and that establishes when classical "two separate objects" language applies.
 
-**Status:** First-pass canonical draft. 2026-04-24.
+**Status:** First-pass canonical draft, 2026-04-24. **PROMOTED 2026-09-05** to `physics-papers/foundations/Paper_Individuation_TheSystemEnvironmentCut.md` (verdict **M3**, form-derived from P02+P03+P04 with `θ_ind` inherited). **This file is retained as provenance**; the paper is the citable source. Promoted because three arcs — the `Str(C)` chain-level aggregation, the four-band classification, and the layer-1/layer-2 seam — were found to depend on it without citing it.
 
 ---
 
