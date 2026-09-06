@@ -52,7 +52,7 @@
 | Claim | Paper | Status |
 |---|---|---|
 | No graviton, no metric perturbation, no Hilbert-mode, no gauge freedom, no pseudotensor (four substrate-ontology replacement claims) | GW-00 / GW-01 / Dyn-04 | **A→position** |
-| Each paper's M3/M2 verdict (five-anchor sync) | all | **A→position** (Paper_095 grammar) |
+| Each paper's M3/M2 verdict tier, arc-wide (five-anchor sync) | 095 | **A→position** (Paper_095 grammar) *(Paper key was `all` until 2026-09-06 — an arc-wide row, but `all` is not a resolvable key, so the register-coverage check could not match it. Repointed to the paper that supplies the grammar; the arc-wide scope now reads in the claim. Gravity ledger #146.)* |
 
 ### Prediction (falsifiable, GW-facing) — **all survival-bets; none distinctive**
 | Claim | Paper | Test | Status |

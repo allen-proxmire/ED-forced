@@ -68,6 +68,25 @@ def norm(text):
     return {w for w in WORD.findall(t) if w not in STOP and len(w) > 2}
 
 
+DECLINED_FILE = os.path.join("internal notes", "_c5_declined.md")
+
+
+def declined():
+    """Claim texts read and refused, so a correct flag can be retired once.
+
+    Kept as data rather than as a threshold tweak: lowering the bar until a
+    correct flag disappears would hide the signal the check exists for."""
+    out = set()
+    if not os.path.exists(DECLINED_FILE):
+        return out
+    for line in io.open(DECLINED_FILE, encoding="utf-8", errors="replace"):
+        if line.startswith("|") and not re.match(r"^\|[\s\-:|]+\|?$", line):
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cells) >= 2 and cells[0] and cells[0] != "ledger claim":
+                out.add(frozenset(norm(cells[0])))
+    return out
+
+
 def ledgers():
     out = []
     for dp, _dn, fn in os.walk("physics-papers"):
@@ -146,7 +165,8 @@ def main():
         allreg.append(toks)
 
     claims = ledger_claims()
-    missing, covered = [], 0
+    DECL = declined()
+    missing, covered, declined_n = [], 0, 0
     for arc, paper, claim in claims:
         ct = norm(claim)
         if len(ct) < 3:
@@ -157,6 +177,8 @@ def main():
         best = max((len(ct & r) / len(ct) for r in cands), default=0.0)
         if best >= THRESH:
             covered += 1
+        elif any(len(ct & d) / len(ct) >= 0.6 for d in DECL):
+            declined_n += 1
         else:
             missing.append((best, arc, paper, claim))
 
@@ -166,6 +188,8 @@ def main():
     print("  register: %s      arc ledgers: %d" % (XLSX, len(ledgers())))
     print("  ledger claim rows read : %d" % n)
     print("  matched in the register: %d  (%.0f%%)" % (covered, 100.0 * covered / n if n else 0))
+    print("  read and DECLINED      : %d  (internal notes/_c5_declined.md)"
+          % declined_n)
     print("  NO MATCH               : %d  <- the shortlist to read\n" % len(missing))
     missing.sort()
     show = missing if FULL else missing[:20]
