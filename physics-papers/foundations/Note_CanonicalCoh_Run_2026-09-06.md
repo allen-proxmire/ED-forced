@@ -30,6 +30,8 @@ $$\mathrm{Coh}-\mathrm{Grad}=|acc|^2-n=2\!\!\sum_{w<w'}\!\!\cos\Delta\pi_{ww'}=\
 
 ## 3. What it says
 
+> **⚠ REVISED 2026-09-06 by a ten-seed run — `foundations/Note_CondA_MultiSeed_2026-09-06.md`, ledger #106.** **This section's “no difference in behaviour” was the single seed talking.** On ten seeds in condition (A): at **`k_phase = 8`** the two canonical terms are indeed identical (**10/10 crystal each**), **but at `k_phase = 1` canonical `Coh` crystallizes 9/10 against `Grad`'s 4/10** (one-tailed Fisher `p ≈ 0.029`). **They differ in ordering THRESHOLD**, and the direction was predicted beforehand: **`Coh = −Grad + 2·NN`, so the neighbour–neighbour term is an extra alignment reward and should order at weaker coupling.** **The NN term is therefore not inert** — §3's *“large but inert”* is withdrawn. A `k_phase = 0` control gives **0/10 crystal**, so the effect is the phase term and not the lattice.
+
 **Canonical `Coh` tracks `Grad`, in both conditions.** It crystallizes in (A) where `Grad` crystallizes, and its `ξ` falls `1.6 → 0.7` where `Grad`'s falls `2.2 → 0.8`. **There is no discriminator, because there is no difference in behaviour to discriminate.**
 
 **And the neighbour–neighbour term is large but inert.** The multi-channel run measured it at **29–41% of the phase score** — so `Coh` and `Grad` are genuinely different numbers — **yet it changes no verdict anywhere.** Different objects, same behaviour.
