@@ -497,7 +497,7 @@ Note: this third entry is a distinct document from `Paper_087_13Primitives.md` (
 | State reduction | `physics-papers/state-reduction/StateReduction_TieredClaims_Ledger.md` |
 | Substrate evaluation | `physics-papers/substrate-evaluation/SubstrateEvaluation_TieredClaims_Ledger.md` |
 
-**Corpus-level companion:** `ED_ItemizedTheory_TieredClaims.xlsx` (repo root; renamed 2026-08-31 from `ED_TheoryList_TieredClaims.xlsx`, matching the earlier PDF rename) — the master spreadsheet. Sheets: *Core Theory* (the 38 lines: 13 primitives + 10 constants + the postulate rows), *Core Predictions* (the falsifiable bets with kill-conditions), *Ledger w Claims* (404-row master), *Core Claims*, *Tier Key*, *Tier Counts*, *Postulate Flags*, *Ratio*. PDF export: `ED_ItemizedTheory_TieredClaims.pdf`.
+**Corpus-level companion:** `ED_ItemizedTheory_TieredClaims_v2.xlsx` (repo root) — the master spreadsheet. Sheets: *Core Theory* (the 38 lines: 13 primitives + 10 constants + the postulate rows), *Core Predictions* (the falsifiable bets with kill-conditions), *Ledger w Claims* (**435**-row master), *Core Claims*, *Tier Key*, *Tier Counts*, *Postulate Flags*, *Ratio*. PDF export: `ED_ItemizedTheory_TieredClaims_v2.pdf`. **v2 (2026-09-06)** adds a **`Rests On`** column filled for every `Derived` row, plus `Sign-Critical` and `Last Verified`; re-tiers the rows the C4 audit confirmed misfiled (`Derived` 55 → 24); and adds 29 previously unlisted cross-cutting postulates. **v1 (`ED_ItemizedTheory_TieredClaims.xlsx`) and its PDF were removed by the author on 2026-09-06 after the v2 export; arc-ledger entries that cite v1 are dated audit trail and are left as records.** Gravity ledger #123–#127, #138.
 
 ---
 

@@ -10,7 +10,7 @@
 
 - **[Event Density: A Unified Framework for Physics](ED_UnifiedFramework_Report.md)** — the whole corpus in one document, box by box at honest tiers. *(Typeset [40-page PDF](ED_UnifiedFramework_Report.pdf).)*
   
-- **[`ED_ItemizedTheory_TieredClaims.xlsx`](ED_ItemizedTheory_TieredClaims.xlsx)** — every load-bearing claim, its paper, its exact tier (one of 19), its falsifier, and its status. Sortable. The ground-truth register. *(Also as a [read-only PDF](ED_ItemizedTheory_TieredClaims.pdf).)*
+- **[`ED_ItemizedTheory_TieredClaims_v2.xlsx`](ED_ItemizedTheory_TieredClaims_v2.xlsx)** — every load-bearing claim, its paper, its exact tier (one of 19), its falsifier, its status, and — new in v2 — what it **rests on**. Sortable. The ground-truth register. *(Also as a [read-only PDF](ED_ItemizedTheory_TieredClaims_v2.pdf).)*
 
 ---
 
@@ -107,7 +107,7 @@ ED is **not** a derivation from nothing, that's impossible. And ED is **not yet*
 - **[`PAPERS_INDEX.md`](PAPERS_INDEX.md)** — the canonical paper list with status and verdict tiers.
 - **New to ED, plain English:** the book *[The Universe Becoming](https://www.amazon.com/dp/B0H34MSH87)* (19 chapters, no math).
 - **New to ED, technical:** `position-paper/` (whitepaper + two position papers), then `primitives/` (the 13 primitive cards).
-- **Live program map:** [`ED_ItemizedTheory_TieredClaims.xlsx`](ED_ItemizedTheory_TieredClaims.xlsx)
+- **Live program map:** [`ED_ItemizedTheory_TieredClaims_v2.xlsx`](ED_ItemizedTheory_TieredClaims_v2.xlsx)
 
 Every `physics-papers/` subfolder has a **README guide** (what-this-is, reading-order spine, per-paper results, an epistemic tier for each):
 
