@@ -77,6 +77,22 @@ $$a_{\mathrm{Grad}} \;=\; -\tfrac34\,\frac{\ell_{\mathrm{ED}}^2\,GM}{R^4}$$
 
 **Tier: proposal, form-forced-conditional at best.** Nothing here derives `Grad` from the primitives. What is established is that this form (i) is the natural quadratic edge-difference of the amplitude, (ii) reduces to the simulator's rule under the known reduction, (iii) does not break anything, and (iv) would supply an operator ED needs. **That is four reasons to adopt it provisionally and no reason to call it derived.**
 
+> **TIER REVISITED 2026-09-06 — the derivation status is UNCHANGED, the evidential standing is not. Gravity ledger #113.**
+>
+> **Still not derived, and that does not move.** Nothing forces the Dirichlet form from P01–P13. **The tier line above stands as written.**
+>
+> **What changed is the kind of support.** The four reasons above are **consistency** reasons — naturalness, a limit check, compatibility, and utility. **Two dynamical ones now exist, and they are a different kind of evidence:**
+>
+> **(7) `Grad`'s phase half is the term that BINDS, and it is the only one that does** (#111). Maximised over a candidate's free phase, `−Grad` gives exactly `2|acc|` — **and `2|acc|/n` is the one functional tested that raises phase reach above the no-phase control** (`+81%` at matched connection, #110). Canonical `Coh` **cannot** do it under any normalization tried, because its extra neighbour–neighbour term carries no information about the candidate's own phase. **This is a successful prediction of the functional's SHAPE, checked against dynamics rather than against another formula.**
+>
+> **(8) `Grad` owns the corpus's one measured phase result** (#112). `Paper_PhaseCoherence_P12Coh` states canonical `Coh` in §1.3 and implements `|acc|/n`, which is `Grad`'s phase half intensively scored. **The finite-reach measurement is a `Grad` result.**
+>
+> **And the recorded problem turned out not to be `Grad`'s.** Condition (A)'s crystallization was logged here as *“a known problem it did not have when written”*. **#105 showed the asymmetry that made it look `Grad`-specific was the `/n`**, and **#106 found canonical `Coh` crystallizes MORE readily** — `9/10` seeds against `Grad`'s `4/10` at weak coupling, one-tailed `p ≈ 0.029`. **So on Knots-safety `Grad` is the better of the two, not the worse.**
+>
+> **The caveat that keeps this honest, and it is not small.** **`Grad` as it appears in `Σ_C = Coh − Str − Grad` is EXTENSIVE, and extensive `Grad` does not bind** — its alignment gain is zero to within measurement (#110). **The binding requires intensive scoring**, which is a convention about how the term enters candidate selection, not a property of the functional. **So supports (7) and (8) are evidence for `Grad`'s PHASE STRUCTURE — the `v`-to-neighbour edge difference, with no neighbour–neighbour term — and NOT for its extensive appearance in `Σ_C`.** Reading them as support for the latter would be an over-reach, and is exactly the kind this line has produced four times.
+>
+> **Net:** *proposal* remains the right word for the derivation. **What is no longer accurate is “four reasons and a known problem”** — it is now six reasons, one of them dynamical, with the problem reattributed and a new structural caveat attached. `foundations/Note_RepairTest_2026-09-06.md`, `Note_CondA_MultiSeed_2026-09-06.md`, `Note_Effect2_Quantified_2026-09-06.md`.
+
 **And it raises an item that should not be buried.** The phase half of the Dirichlet form is `−2√(b_v b_u)\cos Δπ`, which enters `Σ_C` as `+2√(b_v b_u)\cos Δπ` — **so `Σ_C` is raised when phase is aligned *across an edge*.**
 
 **That is what `Paper_PhaseCoherence_P12Coh`'s simulator actually measures.** It deposits phase from **committed neighbours across edges** via the P05 connection, and finds alignment rewarded with finite reach. **So the measured phase-alignment result may belong to `Grad` rather than to `Coh`.**
