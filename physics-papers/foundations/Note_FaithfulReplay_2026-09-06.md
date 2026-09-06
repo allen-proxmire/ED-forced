@@ -49,7 +49,7 @@ Condition (C), 64×64, 5 seeds:
 So there are **two** effects, and only one is now identified:
 
 1. **The connection effect** — canonical terms triple `|A|` and lose reach. Identified.
-2. **A genuine alignment effect** — old-"Coh" raises reach at *unchanged* connection. **Not explained here.** That is presumably the phase reward doing what the paper says it does, applied without the coordination-number bias that the extensive forms carry.
+2. **A genuine alignment effect** — old-"Coh" raises reach at *unchanged* connection. ~~**Not explained here.**~~ **QUANTIFIED 2026-09-06 (#110): `+1.69` lattice units, an `81%` increase, at connection matched to within 2%** (control `|A| = 0.359, ξ = 2.08` against old-"Coh" `k=8` `|A| = 0.366, ξ = 3.77`). **And `Grad`'s alignment gain is zero to within measurement** — its whole reach loss is predicted by the connection alone (`0.27` observed against `0.29`). **So the phase term does bind, and claim 2 is fixable rather than fatal.** `foundations/Note_Effect2_Quantified_2026-09-06.md`. That is presumably the phase reward doing what the paper says it does, applied without the coordination-number bias that the extensive forms carry.
 
 **Correlation across the four arms, `std(A)` vs `ξ`: `r = −0.714`** — the right sign, and loose precisely because old-"Coh" is the outlier that effect 2 accounts for.
 
