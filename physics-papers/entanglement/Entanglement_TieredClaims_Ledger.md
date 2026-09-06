@@ -108,3 +108,19 @@
 **Recommended, not applied.** §1 and §2 should say *two levels of one causality commitment, joined by an inherited coarse-graining bridge* rather than *three independent locks*; §3.4's independence argument should be replaced by the honest structure (L3 is necessary for L1 and L2 to compose); and the genuine robustness claim that survives is worth keeping in its correct form — **the commitment is checkable at two levels, so a failure at either would be visible**, which is real and is not over-determination. *No tier changed: row 10 is already A→position.*
 
 *Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` Staleness #23.*
+
+---
+
+## Addendum 2026-09-06 — the master spreadsheet is now synced, and the section heading is a transcription trap
+
+The four rows this ledger files under **`### Derived (forced — but each conditional on a postulate in the Postulated table)`** had all been transcribed into `ED_ItemizedTheory_TieredClaims.xlsx` as bare tier **`Derived`** — which that workbook's `Tier Key` defines as *"with **NO** paper-specific postulate."*
+
+**The same word, meaning opposite things in the two documents.** The qualifier that makes this ledger's heading honest lives in the parenthetical, and **the parenthetical does not travel** when a row is copied into a tier column. Nothing was overclaimed here; the heading is accurate in context.
+
+**Checked corpus-wide: seven of eleven arc ledgers qualify their `Derived` heading**, four of them with the postulate caveat spelled out (this one, gravity, qft, q-compute). So the trap is not local.
+
+**Fixed in `ED_ItemizedTheory_TieredClaims_v2.xlsx` (2026-09-06):** all four rows re-tiered to `Grounded`; the monogamy row **split to match the 2026-09-04 narrowing above**, which the spreadsheet had never picked up (it still read *"Monogamy (CKW-form inequality) — form D"* with `Status: current`); `P-Bipartite-Mapping` added to the Schmidt row, which had named only `P-V5-Schmidt-Generic`; a `Rests On` column added naming each dependency; and a **warning added to the workbook's `Tier Key`** telling anyone transcribing from these ledgers to read the *"Inherited / open"* cell rather than the section heading.
+
+**One discrepancy left open rather than resolved silently:** `Paper_065`'s §2.5 audit row 8 labels the CKW step **`A→consistency`**; the claim row above calls it **`Grounded — consistent with, not forced by`**. Both are defensible (a derivation *step* that is not forced, versus a claim *position* that is grounded), but they should be made to agree.
+
+*Cross-filed as `gravity/Gravity_TieredClaims_Ledger.md` #124; `foundations/Note_Entanglement_C4_RootCause_2026-09-06.md`.*
