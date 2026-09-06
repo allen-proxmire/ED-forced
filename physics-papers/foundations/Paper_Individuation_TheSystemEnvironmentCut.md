@@ -243,6 +243,8 @@ declares the regime rather than deriving it — but worth having measured.
 
 ### 4.7 What this criterion does NOT cover — the other sense of the word. 2026-09-06
 
+> **→ `primitives/INDIVIDUATION_DISAMBIGUATION.md` carries the full two-sense table, the writing rules, and the measured footprint (616 occurrences, 55% sense 1 / 14% sense 2 / 32% ambiguous).**
+
 **“Individuation” names two different quantities in ED, and this paper is only one of them.** `q-compute/Paper_054` §3.4 defines `Γ_individuation` as *“the substrate's primitive timescale for resolving **multi-channel participation into single-channel participation**”*, with `τ_individuation ~ τ_V1 = ℓ_ED/c`. **That is indexed by CHANNELS, is a RATE, and is scaled by the V1 kernel width. This paper's criterion is indexed by LOCI, is a dimensionless RATIO, and by §4.5(C) encodes a linear extent.** **Different index set, different type, different scale — and the split is exactly the one `P-Commitment-Advancement` had to bridge, since P11 selects a channel and is silent on the locus.**
 
 **Neither arc cites the other.** This paper contains no reference to `Paper_054`/`Paper_056` or to multiplicity; no q-compute paper references `θ_ind` or `b_int`/`b_bdry`. **So `θ_ind` neither constrains nor is constrained by `Paper_056`'s Class-A wall**, whose location is fixed by `Γ_commit(M_cap) = Γ_individuation⁻¹` and in which `θ_ind` does not appear. **The identification is tempting — both are called individuation and both live in `ℓ_ED` — and it is closed off here: `θ_ind = 1` is a 3‑`ℓ_ED` region while `τ_indiv ~ ℓ_ED/c` is one `ℓ_ED`, a factor of three that would have to be explained.**

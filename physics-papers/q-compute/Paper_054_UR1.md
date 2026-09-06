@@ -191,6 +191,8 @@ The **decoupling threshold** $\Gamma_{\mathrm{decoupling}}$ is the substrate-lev
 
 ### 3.4 Substrate individuation rate $\Gamma_{\mathrm{individuation}}^{-1}$
 
+> **⚠ NAMING, flagged 2026-09-06 (gravity ledger #131–#132).** The quantity defined here — *“resolving multi-channel participation into single-channel participation”* — is **the rate of P11**, whose canonical statement in `Paper_087` §P11 reads *“a chain's multi-channel participation collapses to single-channel participation”*. **Same sentence.** Since 2026-09-05 the corpus also has a **different** quantity called individuation: `foundations/Paper_Individuation_TheSystemEnvironmentCut.md`'s system/environment cut, `b_int/b_bdry > θ_ind`, which ranges over **loci** rather than channels and **moves in the opposite direction** under increased boundary coupling. **This section is sense 1 throughout — 46 of 46 occurrences in this paper are unambiguously sense 1 — and nothing here changes.** **`θ_ind` neither constrains nor is constrained by the Class-A wall.** See `primitives/INDIVIDUATION_DISAMBIGUATION.md`.
+
 The **substrate-level individuation timescale** $\tau_{\mathrm{individuation}} = \Gamma_{\mathrm{individuation}}$ is the substrate's primitive timescale for resolving multi-channel participation into single-channel participation when the gradient of $\Sigma_C$ (P12 stability landscape) is held fixed and multiplicity is held below the cap.
 
 By V1 (Paper_089), the substrate's primitive timescale is bounded by the V1 finite-width characteristic scale:

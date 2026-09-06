@@ -114,6 +114,8 @@ Two entangled qubits are a single un-individuated chain-complex expressed at two
 
 A Cooper pair is two electron-chains whose shared participation makes them un-individuated relative to each other while remaining jointly individuated from the metal. A Bose-Einstein condensate pushes this further: the whole condensate is one macroscopic non-individuated chain-complex.
 
+> **→ Full disambiguation: `primitives/INDIVIDUATION_DISAMBIGUATION.md` (2026-09-06).**
+
 > **⚠ TWO SENSES OF “INDIVIDUATION” LIVE IN §5.3–§5.5 — flagged 2026-09-06 (gravity ledger #131).** **§5.3 and §5.4 describe the SAME substrate change — boundary bandwidth to an external system going UP — and call it opposite directions.** By the criterion this card was promoted with (`R = b_int/b_bdry > θ_ind`, `foundations/Paper_Individuation_TheSystemEnvironmentCut.md`), **`b_bdry` up means `R` DOWN, so both are individuation DOWN.** **§5.4 agrees with the criterion; §5.3 does not — because §5.3 is using the OTHER sense.** Its own words are *“chain spans multiple channels”* → *“chain is in one channel”*: that is **CHANNEL-resolution**, which is `q-compute/Paper_054` §3.4's `Γ_individuation` (*“resolving multi-channel participation into single-channel participation”*, timescale `~ ℓ_ED/c`), **not** the locus-set partition the paper promoted. **The two senses split exactly the way `P-Commitment-Advancement` had to: P11 selects a CHANNEL and is silent on the LOCUS.** **Neither is wrong; the WORD is overloaded, and the promoted paper covers only the locus sense — so the measurement/collapse reading in §5.3 is NOT covered by `θ_ind`.** `foundations/Note_Individuation_TwoSenses_2026-09-06.md`.
 
 ### 5.3 Measurement completing individuation
