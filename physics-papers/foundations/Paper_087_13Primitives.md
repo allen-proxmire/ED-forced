@@ -264,6 +264,20 @@ At certain substrate-level events ("commitment events"), a chain's multi-channel
 
 *Operational content:* discrete, environmentally-phase-randomizing, irreversible substrate events.
 
+> **`P-Commitment-Advancement` — the channel→locus bridge, ADOPTED 2026-09-06 on AP's decision. Gravity ledger #117.**
+>
+> **P11 selects a CHANNEL and is silent on locus.** A chain's participation four-tuple is `(C, K, u, t)`; commitment collapses to a single `K`. **Nothing in the canonical thirteen says that selecting one `K` rather than another changes `u`.** But the substrate evaluation selects over **loci** (`simulator/sigma.py`: `compute_candidates(u)` → `graph.admissible_neighbors(u)`, with `u` excluded from its own candidate set), and the Higgs/dwell arc needs the converse — that a commitment may *fail* to advance. **Both arcs are blocked on the same missing sentence, from opposite ends.** It is now written:
+>
+> > **`P-Commitment-Advancement`:** *a commitment event that selects a **propagation-carrying** channel advances the chain's locus; one that selects a **non-propagating** channel does not.*
+>
+> **Propagation-carrying is not a new class.** Branch 3 (gravity ledger #93) classifies the channels at a locus, and the **Adjacency** class is exactly the P05-transporting ones — those carrying content *between* loci. **So this postulate says: commit into Adjacency and you move; commit into Internal and you stay.**
+>
+> **Tier: P, declared, `(prov)`.** It is **not** derivable from the canonical thirteen — that is precisely why it is named — and it is provisional because a future derivation from P05 + P11 + the Branch 3 classification is not excluded. **It is a bridge between two primitives, not a new primitive.**
+>
+> **What it costs and what it buys.** **Costs:** one census increment (173 → 174) and a postulate that must be defended. **Buys:** the certified update rule stops being an unstated assumption — *“advance the front (active u → v)”* becomes the **special case in which every commitment selects an Adjacency-class channel** — and the dwell route is unblocked at the sourcing level, since a commitment into the Internal class is now a licensed non-advancing commit.
+>
+> **What it does NOT do.** It does not derive `σ_τ`, the lepton masses, or anything else in the mass sector; it removes a blocker, not a gap. **And it does not by itself change any certified result** — the certified rule remains a special case of it, so everything measured on that rule stands. **Whether a dwell-capable rule would change those results is untested and is a much larger move.** `foundations/Note_ChannelVsLocus_Selection_2026-09-06.md`, `Note_Dwell_SecondRepair_2026-09-05.md` §5.
+
 *Load-bearing in:* 089/093 (kernel-arrow T18), 054 (UR-1.3 commitment-injection), 039 (BH information not crossing horizon), all kinematic-arrow content.
 
 ### P12 — Stability landscape
@@ -314,6 +328,7 @@ The Wave-2 corpus introduces **paper-specific postulates** beyond the canonical 
 | Postulate | Paper introduced | Role | Status |
 |---|---|---|---|
 | **P14 (Bilocal Strain Coupling)** | Paper_030 §2 | S — bilocal substrate-channel strain coupling in joint weak-gradient regime | (prov) — placeholder; derivability from canonical 13 open |
+| **P-Commitment-Advancement (Channel→locus bridge)** | Paper_087 §P11 | S — a commitment selecting a propagation-carrying (Adjacency-class) channel advances the chain's locus; one selecting a non-propagating channel does not | (prov) — adopted 2026-09-06; bridges P11's channel-selection to the locus-advancement every substrate-evaluation probe assumes. Derivation from P05 + P11 + the Branch 3 classification not excluded |
 | **P-Codim-1 (Channel codimension-1 structure)** | Paper_025 §2 | S — channels as codimension-1 substrate-graph objects | (perm) — structural commitment about what channels are |
 | **P-Sat (Substrate-saturation regime)** | Paper_025 §2 | R — substrate-saturated regime for bound-equality applications | (perm) — regime assumption for downstream applications |
 | **P-NoBackwardChain (Backward-chain non-constructibility)** | Paper_089 §2 | S — backward chain content not constructible from canonical 13 primitives | (perm) — explicit non-constructibility postulate |

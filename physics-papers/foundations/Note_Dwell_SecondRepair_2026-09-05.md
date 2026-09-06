@@ -54,6 +54,8 @@ So the dwell claim needs an identification that no primitive supplies:
 
 > **`P-Commitment-Advancement` (candidate — NOT adopted, NOT censused):** *a commitment event that selects a propagation-carrying channel advances the chain's locus; one that selects a non-propagating channel does not.*
 
+> **✅ ADOPTED 2026-09-06 on AP's decision (gravity ledger #117).** Declared at `Paper_087` §P11 and entered in the postulate registry; **census 173 → 174.** **The dwell route is therefore unblocked at the sourcing level:** a commitment into the **Internal** class (Branch 3) is now a licensed non-advancing commit. **What remains is a gap, not a blocker** — nothing here derives `σ_τ`, the lepton masses, or anything else in the mass sector. **And the certified rule is unaffected:** *“always advances”* is the special case in which every commitment selects an Adjacency-class channel, so every result measured on that rule stands. *(The original candidate framing follows, kept as the audit trail.)*
+
 **Stated so it can be attacked, and deliberately left in this note rather than written into a paper** — naming it in a paper would increment the census and would smuggle a candidate into the corpus as a commitment. The July retraction asked for exactly this discipline: *"If pursued, it must be proposed honestly as a **new candidate primitive refinement** … not asserted as something the existing 13 primitives already admit."*
 
 ## 6. Verdict

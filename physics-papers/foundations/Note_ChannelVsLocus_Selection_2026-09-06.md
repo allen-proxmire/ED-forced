@@ -57,6 +57,6 @@ P11 collapses to **one channel**. Under Branch 3 (#93) the channels at a locus f
 
 1. **The bridge is unstated**, and the certified rule's version of it is stronger than the named candidate.
 2. **Ballistic-or-extinct is implementation-conditional**, not primitive-forced — and after Branch 3, the primitives admit a dwell.
-3. **Two arcs are blocked on one statement.** Adopting `P-Commitment-Advancement` would unblock the dwell route *and* ground the evaluation rule — **but it is AP's call, it increments the census, and the certified rule would then be a special case of it rather than an instance.**
+3. ~~**Two arcs are blocked on one statement.**~~ **ADOPTED 2026-09-06 on AP's decision (#117).** `P-Commitment-Advancement` is declared at `Paper_087` §P11 and entered in the postulate registry; **census 173 → 174**. **Both arcs are unblocked:** the certified rule's *“advance the front”* stops being an unstated assumption and becomes **the special case in which every commitment selects an Adjacency-class channel**, and the dwell route gains a licensed non-advancing commit. **Tier P, `(prov)`** — not derivable from the canonical thirteen, which is why it is named, and provisional because derivation from P05 + P11 + the Branch 3 classification is not excluded.
 
 **The honest limit:** whether a dwell-capable rule changes any certified result is **untested**, and testing it means changing the reference substrate — which is a much larger move than anything in this session.

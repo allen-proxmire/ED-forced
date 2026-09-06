@@ -154,7 +154,7 @@ So the honest claim is **a native binding-mass mechanism, V5-conditional, for th
 
 ### Glossary
 
-- **Ballistic-or-extinct.** The certified rule: a front advances one hop at the maximal speed or dies; no dwell, hence no individual rest mass.
+- **Ballistic-or-extinct.** The certified rule: a front advances one hop at the maximal speed or dies; no dwell, hence no individual rest mass. **— Status clarified 2026-09-06 (gravity ledger #116, #117): this is a property of the REFERENCE RULE, not of ED.** P11 selects a *channel* and is silent on locus; the certified rule selects a *locus* (`compute_candidates` → `admissible_neighbors`, `u` excluded), and **that substitution is what forbids dwell.** With **`P-Commitment-Advancement`** now adopted (`Paper_087` §P11), **the primitives admit a dwell** — a commitment into the Branch 3 **Internal** class — and *“always advances”* is the **special case** in which every commitment selects an Adjacency-class channel. **Nothing measured on the certified rule changes**, and whether a dwell-capable rule would change any of it is **untested**. **But “no individual rest mass” should be read as a statement about the reference substrate, not about ED.**
 - **Mass without mass.** Rest mass of a bound system whose constituents move at `c`; the composite has rest energy in its frame though its parts do not sit still. The dominant form of real mass (hadron binding).
 - **V5.** ED's cross-chain kernel; here used in its known form (retarded, finite-reach, attractive). A structural addition to the bare certified substrate.
 - **Confinement.** The bound cluster's spatial extent stays bounded while each constituent moves at `c`; the signature of a bound state.
