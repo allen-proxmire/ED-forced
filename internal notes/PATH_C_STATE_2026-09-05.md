@@ -1,6 +1,6 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#98** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#99** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
@@ -26,6 +26,7 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 96 | propagation re-sourced P04 → P05 | across **a primitive boundary** — amount is not rate |
 | 97 | the relational-bands sweep | across **a cut** — which bands actually carry one (two of four) |
 | 98 | **Path B, reframed** — the generation wobble orders by a DOF count | across **alternatives** — what a commitment selects among |
+| 99 | `w(N)` attempted, **not computed** (banked negative) | across **the value/ordering line** — where the DOF line stops |
 
 **It produced a general answer, not thirteen local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
@@ -104,4 +105,4 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#97. Path B reopened: #98.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#97. Path B reopened: #98–#99.*
