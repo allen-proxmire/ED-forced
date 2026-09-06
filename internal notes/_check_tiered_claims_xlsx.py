@@ -46,7 +46,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-XLSX = "ED_ItemizedTheory_TieredClaims.xlsx"
+XLSX = next((a for a in sys.argv[1:] if a.endswith(".xlsx")),
+            "ED_ItemizedTheory_TieredClaims.xlsx")
 LEDGERS = ["physics-papers/gravity/Gravity_TieredClaims_Ledger.md"]
 FULL = "--full" in sys.argv
 PNAME = re.compile(r"P-[A-Za-z0-9][A-Za-z0-9\-]{2,}")
@@ -74,6 +75,7 @@ def load_sheet():
             continue
         rows.append({"n": n,
                      "paper": str(r[idx["Paper"]] or ""),
+                     "folder": str(r[idx["Folder"]] or ""),
                      "claim": str(r[idx["Claim"]] or ""),
                      "tier": str(r[idx["Tier"]] or ""),
                      "status": str(r[idx["Status"]] or ""),
@@ -121,13 +123,24 @@ def paper_files():
     return out
 
 
-def resolve(name, files):
-    if name in files:
-        return files[name]
-    for k, v in files.items():
-        if name and (name in k or k in name) and len(name) > 2:
-            return v
-    return None
+# The resolver lives in _build_tiered_claims_v2.py and is imported, not copied,
+# so the alias map and the folder guard cannot drift between the two tools.
+# Before 2026-09-06 this file had its own substring matcher; it put five C4
+# flags on the wrong paper ("Cos-06" -> Paper_006, "012.7" -> Paper_001).
+def _builder():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "_ed_v2builder", os.path.join(ROOT, "internal notes", "_build_tiered_claims_v2.py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+_B = _builder()
+
+
+def resolve(name, folder, files):
+    return _B.resolve(name, folder, files)
 
 
 def main():
@@ -195,16 +208,19 @@ def main():
         print("       ... and %d more (--full)" % (len(promo) - 8))
 
     # ---- C4 ------------------------------------------------------------
-    flagged = []
+    flagged, unresolved = [], []
     for r in rows:
         if not r["tier"].lower().startswith("derived"):
             continue
-        f = resolve(r["paper"], files)
-        if not f:
+        paths, how = resolve(r["paper"], r["folder"], files)
+        if not paths:
+            unresolved.append(r)
             continue
-        text = io.open(f, encoding="utf-8", errors="replace").read()
-        decl = set(PNAME.findall(text)) - FALSE_POSITIVES
-        decl &= cen
+        decl = set()
+        for p in paths:
+            if os.path.exists(p):
+                decl |= set(PNAME.findall(io.open(p, encoding="utf-8", errors="replace").read()))
+        decl = (decl - FALSE_POSITIVES) & cen
         if decl:
             flagged.append((r, sorted(decl)))
     derived_total = sum(1 for r in rows if r["tier"].lower().startswith("derived"))
@@ -217,6 +233,11 @@ def main():
               % (r["n"], r["paper"][:26], ", ".join(d[:3]) + (" ..." if len(d) > 3 else "")))
     if not FULL and len(flagged) > 8:
         print("       ... and %d more (--full)" % (len(flagged) - 8))
+
+    if unresolved:
+        print("    NOT CHECKED - Paper name maps to no file : %d" % len(unresolved))
+        for r in unresolved[:6]:
+            print("       row %-4d %s" % (r["n"], r["paper"][:40]))
 
     print("""
 WHAT TO DO WITH THIS
