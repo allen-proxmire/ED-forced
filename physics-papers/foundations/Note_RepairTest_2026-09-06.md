@@ -64,6 +64,8 @@ That revises #104's framing. #104 correctly said `|acc|/n` is not canonical `Coh
 
 ## 6. Limits, and they are real
 
+> **⚠ CALIBRATION, added 2026-09-06 (#119): every `ξ` here is measured at `ρ* = 0.5`, an undocumented parameter that dominates the observable.** Sweeping it gives `ξ` `5.23 / 2.13 / 1.19 / 0.76 / 0.63` at `ρ* = 0.0 / 0.5 / 1.0 / 1.5 / 2.0` — **a factor of eight, and the `0.5 → 0.0` step alone is larger than the `+81%` binding effect this line characterizes.** **The comparisons here remain internally valid** (all arms at one `ρ*`), **but whether the ORDERING of arms survives a change in `ρ*` is untested** — so §4's conclusion is a result *at `ρ* = 0.5`*, not established as general. `foundations/Note_RhoStar_2026-09-06.md`.
+
 **Three seeds, one grid (48), one condition, one deposit rule.** The 2×2 is clean but each cell is a small sample.
 
 **Intensive `Coh`'s connection is flatter than canonical's but still 2.2× the reference's** (`0.145` against `0.066`), so criterion (a) is *improved*, not *met* — some chasing survives the intensive form and is unexplained.
