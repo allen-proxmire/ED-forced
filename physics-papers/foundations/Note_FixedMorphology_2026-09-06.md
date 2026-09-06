@@ -52,6 +52,8 @@ Depositing phases along different growth orders with the same rule, condition (C
 
 **That relocation is the useful output.** It moves the live problem off the `Coh`-versus-`Grad` question entirely and onto the coupling between the phase term and candidate selection.
 
+> **✅ DONE 2026-09-06 (#109), and §2's claim is now TESTED.** The faithful replay records every `(neighbour, A)` pair per deposit with `ρ` intact, and **reproduces the live `ξ` EXACTLY in all four arms** (`2.13/2.13`, `0.83/0.83`, `0.73/0.73`, `3.83/3.83`). **The mechanism is *where* the front goes, not *what shape* it is:** front coordination is identical across arms (`1.94–1.97`), **but `mean|A|` is `0.362` control, `0.364` old-“Coh”, `0.844` `Grad`, `1.076` canonical `Coh`** — the canonical terms grow into territory with 2–3× the transport connection, and that is what shortens the reach. **A residue remains: control and old-“Coh” have identical connections but `ξ = 2.13` vs `3.83`, so a second, genuine alignment effect exists and is unquantified.** `foundations/Note_FaithfulReplay_2026-09-06.md`.
+
 ## 6. What is owed
 
 **A faithful replay** — one that preserves the live `ρ` trajectory rather than flattening it — would give the real size and direction of the shape effect in condition (C). **Until that is run, §3 establishes that shape matters and not how much.**
