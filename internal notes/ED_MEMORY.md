@@ -55,7 +55,7 @@ This file is the **durable program-state anchor** for the ED-Generative reposito
 
 21. **Outreach-strategy state (2026-05-17):** `internal notes/ED_Outreach_Contacts.md` exists as the canonical outreach-contacts inventory. **8 MOND-community contacts + 8 substrate-ontology contacts + journal-editor map + arXiv-endorsement-request template** in §4. **Recommended endorsement-request order: McGaugh first** (direct fit to BTFR + SPARC database maintenance + documented receptivity via Triton Station blog), Lelli second, Banik third. *Earlier ordering had Banik first based on a "younger researcher more receptive to outsider emails" heuristic; McGaugh-first is better grounded in specific evidence (his blog engages non-mainstream gravity work substantively).* Endorsement request format: one specific paper attached (BTFR slope-4), 2-3 paragraph email, no whole-corpus dump, explicit "endorsement is not peer review" disclaimer + "no is fine" closer.
 
-22. **Internal-notes/ subdirectory convention (2026-05-17):** repository-internal program-state files now live in `internal notes/` at top level. Contents: `ED_MEMORY.md` (this file), `ED_ORIENTATION.md`, `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `PAPER_WRITING_CHECKLIST.md`. Public-facing files remain at top level (`ED_WHITEPAPER.md`, `ED_Public_Onboarding_LessTechnical.md`, `ED_Public_Onboarding_MoreTechnical.md`). This split separates working-state notes from publication-ready content.
+22. **Internal-notes/ subdirectory convention (2026-05-17):** repository-internal program-state files now live in `internal notes/` at top level. Contents: `ED_MEMORY.md` (this file), `ED_ORIENTATION.md`, `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `PAPER_WRITING_CHECKLIST.md`. Public-facing files remain at top level. This split separates working-state notes from publication-ready content. **⚠ The file list in this item is a record of 2026-05-17 and has since changed:** both `ED_Public_Onboarding_*.md` were **deleted 2026-06-12** (`2257cac`) and `ED_WHITEPAPER.md` is likewise gone. **The current public entry point is `README.md` → `PAPERS_INDEX.md`.** *(Annotated 2026-09-06, gravity ledger #140.)*
 
 ---
 
@@ -160,7 +160,7 @@ The Q1Q2 + Chain-Class Identification Project supplied substrate-graph construct
 
 ### Corpus paper propagation (this project)
 
-- **Paper_ED_Cos_01** (Inflation): **re-upgraded M2 → M3** via Q1A + Q2A + C3 + IC-INHERITED chain; **first non-standard-physics-analog-inheritance verdict upgrade** in the audit cascade. See `physics-papers/cosmology/Update_Paper_ED_Cos_01_M3.md`.
+- **Paper_ED_Cos_01** (Inflation): **re-upgraded M2 → M3** via Q1A + Q2A + C3 + IC-INHERITED chain; **first non-standard-physics-analog-inheritance verdict upgrade** in the audit cascade. See `Update_Paper_ED_Cos_01_M3.md` — **in `event-density`, at `papers/Q1Q2_ChainClass_RouteA_2026_05/Paper_Updates/`; it never existed at the `physics-papers/cosmology/` path stated here** *(corrected 2026-09-06, #140)*.
 - **Paper_ED_Cos_05** (Dark Energy): **drafted M3 conditional on Route A** via the same chain applied to late-LDE saturation case; IC-INHERITED supply via late-universe dilution-driven asymptote (distinct from but parallel to Cos_01's post-BBB ignition supply). See `physics-papers/cosmology/Paper_ED_Cos_05_DarkEnergy.md`.
 - **Paper_ED_Dyn_02 + Paper_ED_Dyn_03**: remain M2 pending Route C1 + C4 substrate-graph parameter constructions for non-saturation regime / source-class identification.
 
@@ -192,7 +192,7 @@ Systematic Wave-3 attack on the five load-bearing OPEN substrate-research deriva
 
 - **Paper_ED_Cos_01** (Inflation): M2 → M3 retroactive upgrade; new §3.8 M3-chain summary; row 13 OPEN → D-via-I. **NOTE (post-pass-2 / Q1Q2 project):** the prior "approximately-vacuum-energy level" framing has since been replaced by the cleaner Q1A + Q2A + C3 + IC-INHERITED chain (see post-pass-2 follow-on session block above + Update_Paper_ED_Cos_01_M3.md).
 - **Paper_ED_GW_00** (GW): row 12 retroactively closed; new §3.9 quadrupole closure subsection. 7 D-via-I rows; no remaining load-bearing OPEN items. See `physics-papers/dynamics/Update_Paper_ED_GW_00_Row12.md` (now in event-density `Paper_Updates/`).
-- **Paper_038_5** (Lambda_V1_Cosmological): reframed; new §3.7 Reframing subsection; conditional M3 upgrade pending Route A; §3.4 naïve V1-cutoff preserved as record of failed approach. See `Paper_Updates/Update_Paper_038_5_Lambda_Reframing.md`.
+- **Paper_038_5** (Lambda_V1_Cosmological): reframed; new §3.7 Reframing subsection; conditional M3 upgrade pending Route A; §3.4 naïve V1-cutoff preserved as record of failed approach. See `Update_Paper_038_5_Lambda_Reframing.md` — **in `event-density`, at `papers/Load_Bearing_Program_2026_05/Paper_Updates/`** *(path corrected 2026-09-06, #140; the sibling GW row already carried this annotation and this one did not)*.
 
 ### Pending corpus propagation (DRAFTABLE at M3)
 
@@ -261,7 +261,7 @@ The full Zenodo upload inventory (28 entries as of 2026-05-17) lives in `interna
 - **Paper numbering:** Wave-1 papers preserve their original global numbers (#1–#19) for historical continuity. New papers use within-arc filename numbering (Paper_NNN_*.md). T-stubs use T-numbered naming (T19.md, T20.md, T21.md).
 - **Cross-references between papers:** use Paper_NNN convention; I-rows in §2.2 of each paper list upstream paper dependencies with load-bearing flags.
 - **Primitive references:** use canonical P-codes (P01–P13) as enumerated in the position paper and Paper_087. The two parallel position-paper sources currently agree post-sync; long-term canonical source = TBD per Round 4 Cleanup 1.
-- **Status transitions:** CANDIDATE → PLANNED → DRAFTING → WRITTEN, tracked in `PAPERS_INDEX_redo.md`.
+- **Status transitions:** CANDIDATE → PLANNED → DRAFTING → WRITTEN, tracked in **`PAPERS_INDEX.md`** *(was `PAPERS_INDEX_redo.md`, **retired 2026-05-15**; `ED_ORIENTATION.md` already recorded the retirement and this line did not — corrected 2026-09-06, #140)*.
 - **Verdict labels:** every load-bearing claim gets an M1/M2/M3 or A→regime/A→position label per Paper_095 methodology.
 
 ---
@@ -271,7 +271,7 @@ The full Zenodo upload inventory (28 entries as of 2026-05-17) lives in `interna
 - **Repository (canonical home):** `C:\Users\allen\GitHub\ED Generative\`.
 - **Internal-notes (working-state files; relocated 2026-05-17):** `internal notes/` — contains `ED_MEMORY.md` (this file), `ED_ORIENTATION.md`, `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `PAPER_WRITING_CHECKLIST.md`.
 - **Whitepaper (public-facing front door):** `ED_WHITEPAPER.md` at top level.
-- **Public onboarding (less-technical + more-technical):** `ED_Public_Onboarding_LessTechnical.md` + `ED_Public_Onboarding_MoreTechnical.md` at top level.
+- ~~**Public onboarding (less-technical + more-technical):** `ED_Public_Onboarding_LessTechnical.md` + `ED_Public_Onboarding_MoreTechnical.md` at top level.~~ **Both DELETED 2026-06-12 (`2257cac`) and never replaced; entry point is `README.md` → `PAPERS_INDEX.md`.** *(2026-09-06, #140.)*
 - **Position paper (canonical foundational statement):** `position-paper/paper_ED_Framework_13_Primitive_Generative_System.md` AND `physics-papers/foundations/Paper_087_13Primitives.md` (currently both canonical, post-sync; pick one per Round 4 Cleanup 1).
 - **Methodology:** `physics-papers/foundations/Paper_095_FormForced_ValueInherited.md`.
 - **Falsification register:** `falsifiers/Paper_101_FalsificationRegister.md`.

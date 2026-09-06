@@ -61,7 +61,7 @@ ED uses a **form-FORCED / value-INHERITED methodology** with a three-tier verdic
 | Directory / file | Role |
 |---|---|
 | `position-paper/ED_WHITEPAPER.md` | Public-facing front door. Non-technical orientation for new readers. Read first if external. |
-| `ED_Public_Onboarding_LessTechnical.md` + `ED_Public_Onboarding_MoreTechnical.md` | Public-facing onboarding docs at two technical levels. |
+| ~~`ED_Public_Onboarding_LessTechnical.md` + `ED_Public_Onboarding_MoreTechnical.md`~~ | **DELETED 2026-06-12** (commit `2257cac`, the seven-papers reorg) and never replaced. **A cold reader should start at `README.md` → `PAPERS_INDEX.md`.** *(Corrected 2026-09-06, gravity ledger #140.)* |
 | `internal notes/` | **Working-state files (2026-05-17 relocation):** `ED_MEMORY.md`, `ED_ORIENTATION.md` (this file), `ED_Zenodo_Uploads.md`, `ED_Outreach_Contacts.md`, `PAPER_WRITING_CHECKLIST.md`. Not for external readers. |
 | `position-paper/` | Canonical foundational statement of the 13-Primitive Generative System. |
 | `physics-papers/` | All Wave-2 papers organized by arc (qm-kinematics, qft, gravity, black-hole, q-compute, entanglement, soft-matter, wedges). **Includes new `physics-papers/predictions/` subdirectory** (Wave-3 prediction papers: Bundle + Postdictions + FRAP Template). |
@@ -151,7 +151,7 @@ The corpus is **structurally complete with declared open derivations** — not a
 ## Where to find more
 
 - **Memory anchor:** `internal notes/ED_MEMORY.md` — durable program-state facts (22 anchors), verdict-tier inventory, Round 4 cleanup queue, full session-accomplishments history.
-- **Zenodo inventory:** `internal notes/ED_Zenodo_Uploads.md` — canonical list of 28 Zenodo entries with status, version, corpus source path, update protocol.
+- **Zenodo inventory:** `internal notes/ED_Zenodo_Uploads.md` — **present on disk but GITIGNORED** (commit `f57162c`, deliberate), so it is **not in a clone** — canonical list of 28 Zenodo entries with status, version, corpus source path, update protocol.
 - **Outreach-contacts inventory:** `internal notes/ED_Outreach_Contacts.md` — 8 MOND-community + 8 substrate-ontology contacts; arXiv-endorsement-request template; recommended endorsement order (McGaugh first).
 - **Paper-writing checklist:** `internal notes/PAPER_WRITING_CHECKLIST.md` — Wave-3 paper-writing discipline + corpus-style conventions.
 - **Empirical Predictions outreach trio (2026-05-17 Zenodo batch B):** `physics-papers/predictions/Paper_ED_Predictions_Bundle.md` (BTFR-led, 13 predictions) + `Paper_ED_Postdictions_PassedTests.md` (UDM data-match credibility anchor — self-published Zenodo preprint, not peer-reviewed) + `Paper_ED_FRAP_Template.md` (pre-registered protocol). Primary outreach material. **Note:** the UDM result is a postdiction (self-authored Zenodo preprint), NOT a peer-reviewed publication — never describe it as peer-reviewed.
