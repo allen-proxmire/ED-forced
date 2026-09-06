@@ -75,9 +75,17 @@ Increase a system's boundary bandwidth to an external device:
 
 ## 5. Inconsistencies found — three recorded
 
-### 5.1 `Paper_072` says *rule-type* where canonical P11 says *channel*
+### 5.1 `Paper_072` says *rule-type* where canonical P11 says *channel* — **SETTLED 2026-09-06: wording, not a third index**
 
-`Paper_072` defines the unresolved regime as *"multiple **rule-type** assignments … simultaneously supported by V5"* with P11 not yet having *"selected a unique individuation"*. **But canonical `Paper_087` §P11 collapses to a single `K` — a channel (P03/P07) — not a rule-type (P10).** Whether "rule-type assignment" is meant as a synonym for the channel selected, or as a genuinely different index, **is not stated**. Same shape as the four-band finding: *location, not existence.* **Recorded, not resolved — it needs the author.**
+`Paper_072` defines the unresolved regime as *"multiple **rule-type** assignments … simultaneously supported by V5"* with P11 not yet having *"selected a unique individuation"*, while canonical `Paper_087` §P11 collapses to a single `K` — a **channel** (P03/P07), not a rule-type (P10).
+
+**Settled by two facts.** **(i)** Channels **carry** rule-type labels (Branch 3: classifying `𝒦(u)` by rule-type *"reads a label the substrate already carries"*), so **rule-type is a COARSER partition of the same index set** — selecting a channel fixes a rule-type, not conversely. P11 selects the finer thing. **(ii)** **`Paper_072` uses "rule-type" 5 times and the word "channel" ZERO times**, while citing `Paper_087` §P11 and `Paper_054` (both channel-indexed) and sitting on `Papers_063–068`, whose machinery is `Ψ_KL^AB` on `𝒦_A × 𝒦_B`. **It is the only paper in its own chain that uses the word.**
+
+**Two readings, and only one survives.** **(a) The LABEL reading** — *assignment* = the rule-type the selected channel carries, so "multiple assignments coexist" means two or more **rule-types** are live. **This breaks the paper's own thesis:** a bipartite entangled state is a superposition over channel *pairs*, and **nothing requires those channels to differ in rule-type** — a two-qubit entangled state is matter rule-type throughout — so under (a) a standard entangled state would have a unique rule-type assignment and **would not be in the unresolved regime at all**, which is exactly what the paper exists to say it is. **(b) The CONFIGURATION reading** — *assignment* = the whole map of participation across channels, so "multiple assignments coexist" means several participation **configurations** are simultaneously supported. **Equivalent to the channel statement, and consistent with P11, `Paper_054` and the arc's own machinery.**
+
+> **Reading (b) is the only one consistent with the paper's claim, so it is what is meant. THERE IS NO THIRD INDEX SET AND NO THIRD SENSE — this document stays a two-sense document.**
+
+**What is owed is a wording fix and it is small:** five instances of *"rule-type assignment"* → *"channel assignment"*, plus one use of the word "channel" so the index is stated once. **Proposed, not applied** — it narrows a published paper in a nominally closed arc, which is the author's call. `foundations/Note_Paper072_RuleTypeOrChannel_2026-09-06.md`; gravity ledger #133.
 
 ### 5.2 There are two thresholds, and they are not the same one
 
