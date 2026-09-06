@@ -16,7 +16,10 @@
 
 ---
 
-### Derived (forced — but each conditional on a postulate in the Postulated table)
+### Derived (forced — but each conditional on a postulate in the Postulated table) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **4 of 5** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | No-signaling `p(a\|x,y)=p(a\|x)`, over-determined by 3 locks | 066 | Lock L1 (marginal independence) = **D-via-I** from tensor-product + POVM completeness | L2 rests on P-Substrate-Causality; L3 = Paper_073; "3-locks ⟹ over-determination" is an A→position | **current** — the cleanest paper in the arc; but Bell-Tsirelson is explicitly *open* here (row 11) |

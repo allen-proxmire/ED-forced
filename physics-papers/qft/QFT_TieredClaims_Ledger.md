@@ -13,7 +13,10 @@
 
 ---
 
-### Derived (from primitives, conditional on the named postulate)
+### Derived (from primitives, conditional on the named postulate) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **5 of 7** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | Gauge group `U(N)=SU(N)×U(1)` from channel multiplicity | MS-II §2 (absorbs MS-I §3) | non-abelian `SU(N)` forced by N indistinguishable channels + bandwidth conservation (P04) + invertibility unitarity | SM correspondence `{1,2,3}` and couplings inherited | **Derived — the one firm upgrade over T17's analogy** |

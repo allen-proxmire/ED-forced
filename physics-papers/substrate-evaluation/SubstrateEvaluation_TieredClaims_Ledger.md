@@ -13,7 +13,10 @@
 
 ---
 
-### Derived (theorem / proof / forced-from-inputs)
+### Derived (theorem / proof / forced-from-inputs) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **0 of 4** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | Controlled channel capacity between distinct regions is **exactly zero** (within a stratum and across the boundary); boundary = common-cause, not a channel | A1 (CommonCauseNotChannel) | `L2=0.000000` (5/5, exact byte-identity) ⟹ MI=0 ⟹ capacity=0; ED locality confirmed as exact channel-zero | locality confirmed *empirically*, not derived from primitives; one certified substrate/geometry | **Derived** (capacity=0 is D; the L2=0 headline is an exact *measured* zero) |

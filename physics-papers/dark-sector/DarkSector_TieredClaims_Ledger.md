@@ -20,7 +20,10 @@
 | Baryonic Tully-Fisher slope-4 + near-zero scatter | 031 | exact consequence of the combination rule | **MOND-SHARED** — discriminates ED+MOND from ΛCDM, NOT ED from MOND; the ED-distinctive part is only the a₀ normalization | current — honest distinction stated in §3.2 |
 | Cluster missing-mass shortfall filled by the relic | DarkSector §4.1 | real collisionless matter clustering at cluster scale | the warm-keV window keeps it diffuse in galaxies, clumped at clusters — narrow, the live risk | current — structural |
 
-### Derived
+### Derived — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **0 of 5** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | `a₀ = cH₀/(2π)`, parameter-free ~10% match | 029 | the `2π` from azimuthal-Fourier normalization of the dipole projection | ~10% **postdiction**; a₀ value inherited via H₀ | current | **[DISPUTED 2026-09-04 — the `1/(2π)` is not established as forced.** The azimuthal-Fourier normalization does **not** survive: `Paper_028` §6.3 and `Paper_029` §5.1 both evaluate the azimuthal integral to **1**, so the factor cancels in their own displayed algebra and is reinstated at an assembly step by a normalization fixed nowhere. Re-tiered **Postulated / disputed**; see `Gravity_TieredClaims_Ledger.md` Staleness #10. **Unaffected:** `a₀ ~ cH₀`, reached three independent ways, and `a₀(z) = cH(z)/(2π)` with its forced exponent of 1.]**

@@ -13,7 +13,10 @@
 
 ---
 
-### Derived (from primitives, conditional on the 13 postulated primitives)
+### Derived (from primitives, conditional on the 13 postulated primitives) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **1 of 4** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | UR-1.1 `M_eff < M_cap`; UR-1.2 `Γ_cross > Γ_decoupling`; UR-1.3 `Γ_commit < Γ_indiv⁻¹` (the three unresolvedness statements) | 054 §5 | algebraic from Γ_commit + Γ_indiv (given the A→regime power-law); UR-1.2 from V5 (Paper_090) | rests on the A→regime power-law form; Γ_decoupling/coefficients inherited | **Derived (conditional)** |

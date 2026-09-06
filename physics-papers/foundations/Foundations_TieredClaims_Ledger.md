@@ -36,7 +36,10 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 | **V1 = the single-chain finite-width retarded vacuum kernel** `K_V1 = θ(t−t')·G(σ/ℓ_ED²)` | 089 | the first kernel rule-type; admissible-class definition | specific envelope shape (exp/Gaussian/power-law) value-layer inherited | **Reference definition (P)** + theorems below |
 | **V5 = the cross-chain correlation kernel** (finite-memory `τ_V5`, retarded, U(1)-compatible) | 090 | the second kernel rule-type; mediates inter-chain correlation | **P10-LICENSED** (existence a *posit* under P10, NOT primitive-forced); **forward derivation of existence OPEN**; `τ_V5` values inherited | **Reference definition (P, P10-licensed)** |
 
-### Derived (genuine structural consequences on the postulates)
+### Derived (genuine structural consequences on the postulates) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **3 of 4** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | **Theorem N1 — V1 finite-width** (G bounded, decaying, scale ℓ_ED; δ-function and ∞-width limits excluded) | 089 | from P02+P04+P07+P08 + UV-finiteness | leans on an explicit P-SubstrateLocality postulate | **Derived (conditional)** |

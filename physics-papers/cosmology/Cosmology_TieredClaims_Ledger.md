@@ -30,7 +30,10 @@
 | Linear structure = growth of primordial perturbations `P(k,a)=D²T²P_init` (Meszaros, BAO, LDE suppression) | Cos-04 | `D(a), T(k), k_eq`, BAO `r_s` D-via-I | `σ_8, P(k), Ω_m h²` **I**; §3.5 explicit: "ED supplies no late-LDE growth-suppression mechanism *beyond* ΛCDM" | current — Consilience (M3) |
 | Inflationary fluctuation spectrum = sub-leading `O(ε)` perturbations on Cos-01 saturation | Cos-06 | scalar `P_ζ`, tensor `P_T`, `n_s−1=−6ε+2η`, `r=16ε` D-via-I via standard slow-roll | `A_s≈2.1e-9, n_s≈0.965, r<0.06` **I** from Planck+BICEP | current — Consilience (M3); F1 falsifier is Route-A4-specific, not a test of slow-roll |
 
-### Derived / D-via-I (distinctive content, outside the consilience papers)
+### Derived / D-via-I (distinctive content, outside the consilience papers) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **1 of 2** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | Primordial tensor modes = substrate **saddle-Hessian-signature** fluctuations, the *same* mechanism as post-recombination GW propagation (Paper_ED_GW_00) | Cos-06 §3.4 | the cross-arc identification (D-via-I); "cleanest cross-arc unification in the arc" | consistency relation `n_T=−r/8` inherited | current — genuine ED-distinctive content |

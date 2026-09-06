@@ -13,7 +13,10 @@
 
 ---
 
-### Derived (M1 — from primitives, or D-via-I within the paper's own audit)
+### Derived (M1 — from primitives, or D-via-I within the paper's own audit) — workbook tier: PER ROW (see rule below)
+
+> **Transcription rule — `ED_ItemizedTheory_TieredClaims*.xlsx`.** That workbook's `Derived` tier is **narrower than this heading**: *“forced/proven from the 13 primitives (+ standard math) with **NO** paper-specific postulate.”* **This section is mixed, so take the tier from the ROW, never from this heading.** If a row's *“Inherited / open”* cell names a `P-` postulate, or says *conditional on* / *rests on*, its workbook tier is **`Grounded`** — or **`Postulated`** where the postulate carries the claim — **not `Derived`**. *(Here: **2 of 5** rows currently name a postulate.)* **Losing this qualifier in transcription over-promoted ten rows before 2026-09-06**, because the caveat lived in a parenthetical and parentheticals do not travel. See `gravity/Gravity_TieredClaims_Ledger.md` #122 and #124.
+
 | Claim | Paper | What's derived | Inherited / open | Status |
 |---|---|---|---|---|
 | Complex polar carrier `P_K = √b_K·e^{iπ_K}` | 001 | carrier form from P01–P04 + P09 (audit = D); `\|P_K\|²=b_K` algebraic | √-convention = P(convention); `arg=π_K` = P(definition); inner product = I | **Derived (carrier form)**; convention-tagged |
