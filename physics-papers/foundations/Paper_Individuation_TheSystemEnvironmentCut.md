@@ -99,7 +99,7 @@ $$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at 
 | 4 | `w(e)` from `b_K(u)`: `w(u,v) = Σ_{K shared} √(b_K(u)b_K(v))` | **D-via-I** *(was OPEN; written and then closed 2026-09-05)* | §2.1. Form from P02 membership + P04. The **geometric mean rather than `min`** is no longer a convention: it is the **unique** edge weight under which `b_bdry` survives regridding, given that loci merge by amplitude addition (`P-Motif-Algebra`). Conditional on requirement (R) — which `Paper_073` §3.2 already demands — and on the **coherent** regime; under DCGT's decoherent merge rule the forced weight is the product instead, though `min` is excluded under both. Verified against all three of the source concept's worked examples, and against four discriminating tests. |
 | 5 | Given `S`, every edge is internal or boundary, never both | **D** (set theory) | the partition is exhaustive and disjoint by construction |
 | 6 | The ratio `b_int/b_bdry` is the individuation measure | **D-via-I** | form from steps 1–3; the *choice* of ratio rather than difference is a reading |
-| 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept. **CHARACTERIZED 2026-09-06 (§4.5): still undetermined, but it is a LENGTH, not a dimensionless constant — `R = (a−1)/2` for a side-`a` hypercube in every dimension. The `ℏ`/bandwidth-normalization route is closed: `R` is invariant under `b → λb`.** |
+| 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept. **CHARACTERIZED 2026-09-06 (§4.5): still undetermined, but it is a LENGTH, not a dimensionless constant — `R = (a−1)/2` for a side-`a` hypercube in every dimension. The `ℏ`/bandwidth-normalization route is closed: `R` is invariant under `b → λb`.** **VALUE PROPOSED 2026-09-06 (§4.6): `θ_ind = 1`, `D-via-I` conditional on `P-Factorized-IC`'s domain and on `ξ < 2`; two independent routes, falsifiable by tightening `ξ`.** |
 | 8 | Individuation is relational, not intrinsic | **D** | follows from `S`-dependence of both sums |
 | 9 | Band disjointness follows | **D-via-I**, conditional on 4 and 7 | §4 |
 
@@ -172,14 +172,68 @@ a fixed length, so two regimes with different characteristic lengths would need 
 to concrete and testable, no further.
 
 **What would now determine it.** Not a bandwidth calibration and not a measurement of `ℏ`, but **the
-length at which system/environment cuts become sharp, in units of `ℓ_ED`.** Two routes: **(1)** the scale
-at which `qft/Paper_024_LindbladLimit`'s postulated factorization (`P-Factorized-IC`) becomes accurate —
-the same gap approached from the other side, as §6 already says; **(2)** the measured substrate correlation
-length `ξ_canonical ≈ 1.8 ± 0.3 lu` (`Paper_096`), which by (C) would give **`θ_ind = (ξ−1)/2 ≈ 0.4 ± 0.15`**,
-just below the pair value `1/2`. **(2) is an arithmetic consequence of (C) plus an identification NOBODY
-HAS ARGUED FOR, and is recorded as a candidate to be argued or refuted, not as a result.**
+length at which system/environment cuts become sharp, in units of `ℓ_ED`.** Two routes were named:
+**(1)** the scale at which `qft/Paper_024_LindbladLimit`'s postulated factorization (`P-Factorized-IC`)
+becomes accurate — the same gap approached from the other side, as §6 already says; **(2)** an arithmetic
+reading off the measured `ξ_canonical ≈ 1.8 ± 0.3 lu` giving `θ_ind = (ξ−1)/2 ≈ 0.4`, flagged at the time
+as *“an identification nobody has argued for”*.
+
+> **⚠ ROUTE (1) WAS WORKED THE SAME DAY (§4.6) AND IT REFUTES (2).** The `≈ 0.4` reading identified `θ_ind`'s
+> length with `ξ` directly; **the boundary shell must be crossed on BOTH sides before an interior exists**,
+> so the required linear extent is `2ξ`, not `ξ`. It also landed *below* the minimal-pair value `1/2`,
+> which would individuate every connected pair and make the criterion vacuous — that should have been
+> the tell. **The flag was right; the number was wrong.**
 
 `foundations/Note_ThetaInd_IsALength_2026-09-06.md`; gravity ledger #128.
+
+### 4.6 The decoherence route worked — `θ_ind = 1`, conditional on `ξ < 2`. 2026-09-06
+
+**The two accounts are the same QUANTITY, not just the same gap.** §6 says this paper and
+`qft/Paper_024_LindbladLimit`'s `P-Factorized-IC` *“should be read as two accounts of the same gap”*.
+They are stronger than that. `P-Factorized-IC` asserts `ρ_tot(0) = ρ_S(0) ⊗ ρ_E(0)` — **no
+system–environment correlation** — and in ED that correlation is carried by cross-boundary shared
+channels: V5 **is** the cross-chain correlation kernel (`Paper_090`), and `b_bdry(S)` is exactly the
+shared-channel content across the cut. So **exact factorization ⇺ `b_bdry(S) = 0` ⇺ `R(S) = ∞`:
+`P-Factorized-IC` IS individuation at `θ_ind = ∞`.** **Which shows at once that it cannot fix a finite
+threshold by itself — as an exact postulate it names only the limit.** What fixes a finite value is its
+**domain of validity**.
+
+**And depth is QUANTIZED, which is what makes the answer sharp.** Correlations decay with the substrate
+correlation length `ξ`, so a locus at depth `d` from `S`'s boundary is still correlated with the outside
+when `d < ξ`. If every locus of `S` is within `ξ` of the boundary then **`S` is all boundary layer, has no
+interior, and factorization has NOWHERE TO BE ACCURATE** — not “is inaccurate”. Depth is counted in loci,
+hence an integer, so the condition is `⌈a/2⌉ > ξ`, and with `R = (a−1)/2` from §4.5(C) the threshold is a
+**step function of `ξ`**:
+
+| `ξ` range | smallest `a` with an interior | `θ_ind` |
+|---|---|---|
+| `0 < ξ ≤ 1` | 2 | 0.5 |
+| **`1 < ξ ≤ 2`** | **3** | **1.0** ← measured `ξ ≈ 1.83` |
+| `2 < ξ ≤ 3` | 5 | 2.0 |
+
+> **`θ_ind = 1`, and it does NOT inherit `ξ`'s uncertainty — only the question of which integer bracket
+> `ξ` falls in.**
+
+**A second route reaches the same value using no `ξ` at all:** the smallest square containing a locus not
+on its own boundary is `a = 3`, giving `R = 1`. **Two independent routes, one value.**
+
+**The sensitivity, stated plainly.** This needs `ξ < 2`. The corpus value `ξ = 1.8 ± 0.3` (`Paper_096`,
+GR-SC 1.7 half-decay, 10 seeds) puts that boundary about **0.6σ away — roughly a one-in-four chance the
+bracket is wrong**, and `ξ > 2` would give `θ_ind = 2`. **So this is sharp and falsifiable: tighten `ξ`
+and the answer is decided.** *(The probe's own 5-seed estimate is `1.831 ± 0.043`, but by a DIFFERENT
+estimator — 1/e crossing of the phase autocorrelation — so it is not a tightening of the corpus value
+and is not quoted as one.)*
+
+**Tier.** The identification is **argued**; the value is **`D-via-I` conditional on `P-Factorized-IC`'s
+domain and on `ξ < 2`**. **It is NOT derived from the 13 primitives, and `F-IND-2` is still not fired.**
+
+**One measured observation against `Paper_024`.** The cross-boundary correlation fraction does not become
+small at any accessible region size — at `R = 9.5` (a 20×20 region) about **11%** of near-range
+correlation mass still crosses the boundary. **The Born–Markov regime `Paper_024` postulates is a genuine
+idealisation on this substrate, not an asymptotically-approached one.** Consistent with that paper, which
+declares the regime rather than deriving it — but worth having measured.
+
+`foundations/Note_ThetaInd_DecoherenceRoute_2026-09-06.md`; gravity ledger #129.
 
 ## 5. Falsification Criteria
 
