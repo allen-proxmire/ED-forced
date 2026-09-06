@@ -56,7 +56,7 @@ Verdict: **M3** — form FORCED via Cauchy-Schwarz on canonical commutation; num
 
 ### 2.3 Declared paper-specific postulates
 
-- **P-FourBand:** Substrate-level four-band partition of bandwidth $b_K$ — orthogonal independent partitions into position-band (P03 adjacency), momentum-band (P04 propagation), time-band (P13), and energy-band (P-RB-1). Substrate-level derivation of the four-band orthogonality from the 13 primitives alone is **OPEN**.
+- **P-FourBand:** Substrate-level four-band partition of bandwidth $b_K$ — orthogonal independent partitions into position-band (**P03** adjacency), momentum-band (**P05** polarity-transport rate; P04 supplies the scalar magnitude), time-band (**P13**), and energy-band (**P-RB-1**). Substrate-level derivation of the four-band orthogonality from the 13 primitives alone is **OPEN**. *(Momentum-band re-sourced from “P04 propagation” to P05 on 2026-09-06 — canonical P04 is a non-negative additive scalar carrying amount, not rate. This paper's §3.1 already had it right parenthetically. Gravity ledger #96.)*
 
 ---
 
@@ -68,11 +68,11 @@ Verdict: **M3** — form FORCED via Cauchy-Schwarz on canonical commutation; num
 
 At substrate level, measurement-bandwidth content separates into four bands:
 1. **Position-band (P03 adjacency):** content distinguishing substrate cells by spatial-locus indexing.
-2. **Momentum-band (P04 propagation):** content distinguishing substrate cells by translation-rate (P05 polarity-transport rate).
+2. **Momentum-band (P05 polarity-transport rate):** content distinguishing substrate cells by translation-rate. *(Promoted from a parenthetical on 2026-09-06: this line already carried the correct sourcing, and `Paper_012_7` was corrected to match it rather than the reverse. §2.3.)*
 3. **Time-band (P13):** content distinguishing substrate cells by temporal indexing.
 4. **Energy-band:** content distinguishing substrate cells by rate-of-becoming (P-RB-1, Paper_012).
 
-The position-band and momentum-band are **orthogonal partitions** of the substrate measurement content: a substrate cell has independent adjacency content (position) and propagation content (momentum). The four-band partition makes this orthogonality explicit at substrate level.
+The position-band and momentum-band are **orthogonal partitions** of the substrate measurement content: a substrate cell has independent adjacency content (position, **P03 structure**) and propagation content (momentum, **P05 rate**). **They are different kinds of object, which is the substrate-level reason the two are independent rather than two readings of one quantity.** The four-band partition makes this orthogonality explicit at substrate level.
 
 ### 3.2 Variance and standard deviation in substrate Hilbert space
 
@@ -103,7 +103,7 @@ This is the **Heisenberg uncertainty principle**.
 
 ### 3.5 Substrate origin of the uncertainty
 
-The substrate-level account: the four-band partition (§3.1) establishes that position-bandwidth (P03 adjacency) and momentum-bandwidth (P04 propagation) are **orthogonal independent partitions** of substrate measurement content. Their canonical commutation $[\hat x, \hat p] = i\hbar$ is the substrate-level statement that **simultaneous determination** of position-bandwidth AND momentum-bandwidth is bounded by the substrate participation quantum $\hbar$.
+The substrate-level account: the four-band partition (§3.1) establishes that position-bandwidth (**P03** adjacency structure) and momentum-bandwidth (**P05** propagation rate) are **orthogonal independent partitions** of substrate measurement content. Their canonical commutation $[\hat x, \hat p] = i\hbar$ is the substrate-level statement that **simultaneous determination** of position-bandwidth AND momentum-bandwidth is bounded by the substrate participation quantum $\hbar$.
 
 The substrate participation budget per chain-step ($\hbar$, Paper_RQM_hbar) sets the minimal **joint indeterminacy** between position and momentum content. This is the substrate-level structural origin of Heisenberg uncertainty.
 

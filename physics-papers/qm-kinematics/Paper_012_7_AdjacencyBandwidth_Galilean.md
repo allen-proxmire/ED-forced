@@ -18,7 +18,7 @@
 
 ## Abstract
 
-This paper records the substrate-level adjacency-bandwidth partition: under Galilean boost, P03 spatial-homogeneity forces adjacency content (position-locus) to be boost-invariant while P04 propagation content (translation-rate) transforms. The resulting Jacobian asymmetry underlies the factor-of-2 in the non-relativistic kinetic form $\hat T = \hat p^2/(2m)$ (consistent with Paper_U4's Taylor-expansion derivation). The structural decomposition is FORM-FORCED by P03 + P04; the full Galilean / Bargmann cohomology computation is OPEN. Verdict: **M3 as-is** (retitled scope; Bargmann OPEN) per Paper_095's three-tier verdict grammar. Key falsifier **F1**: empirical non-relativistic kinetic energy with factor different from $1/(2m)$.
+This paper records the substrate-level adjacency-bandwidth partition: under Galilean boost, P03 spatial-homogeneity forces adjacency content (position-locus) to be boost-invariant while P05 propagation content (translation-rate) transforms. The resulting Jacobian asymmetry underlies the factor-of-2 in the non-relativistic kinetic form $\hat T = \hat p^2/(2m)$ (consistent with Paper_U4's Taylor-expansion derivation). The structural decomposition is FORM-FORCED by P03 + P04; the full Galilean / Bargmann cohomology computation is OPEN. Verdict: **M3 as-is** (retitled scope; Bargmann OPEN) per Paper_095's three-tier verdict grammar. Key falsifier **F1**: empirical non-relativistic kinetic energy with factor different from $1/(2m)$.
 
 ---
 
@@ -26,7 +26,7 @@ This paper records the substrate-level adjacency-bandwidth partition: under Gali
 
 **Scope clarification.** Earlier drafts framed this paper around the Galilean / Bargmann central extension. The current content does NOT deliver the Bargmann cohomology computation; the paper is restricted to the adjacency-bandwidth boost-asymmetry observation from P03 spatial homogeneity. A full Galilean / Bargmann substrate-cohomology derivation is **OPEN** (deferred to a future paper). The paper records the observed bandwidth-asymmetry component only.
 
-**Claim.** The substrate-level adjacency-bandwidth partition — separating P03 adjacency content (position-locus structure) from P04 propagation content (translation-rate structure) — produces, under DCGT coarse-graining to the non-relativistic regime, the standard quadratic kinetic-energy form:
+**Claim.** The substrate-level adjacency-bandwidth partition — separating P03 adjacency content (position-locus structure) from P05 propagation content (translation-rate structure) — produces, under DCGT coarse-graining to the non-relativistic regime, the standard quadratic kinetic-energy form:
 $$\hat T = \frac{\hat p^2}{2m} .$$
 
 The factor-of-2 arises from the **Galilean Jacobian** of the partition: under a Galilean boost $v \to v + u$, the adjacency content is invariant (P03 spatial homogeneity), while the propagation content transforms with Jacobian $\partial(p^2)/\partial p = 2p$, producing the factor $1/(2m)$.
@@ -42,7 +42,9 @@ Verdict: **M3**.
 ### 2.1 Primitives invoked
 
 - **P03 (Channel + locus indexing; spatial homogeneity)** — supplies the adjacency (position-locus) sector of the partition.
-- **P04 (Bandwidth)** — supplies the propagation (translation-rate) sector.
+- **P05 (Polarity-transport)** — supplies the propagation (translation-rate) sector. **P04 (Bandwidth)** supplies only the non-negative scalar *magnitude* of the propagating channels' content.
+
+> **Re-sourced 2026-09-06 (was “P04 supplies the propagation sector”).** **Canonical P04 is a non-negative additive scalar** — it carries *amount*, not *rate*. **Translation-rate is P05's**: polarity-transport along edges. This paper's own §3.3 already describes the right primitive while citing the wrong one — *“the rate at which substrate cells **exchange polarity content** under translation”* **is P05** — and `Paper_012_6` §3.1 already carries the correct sourcing parenthetically: *“Momentum-band (P04 propagation): content distinguishing substrate cells by translation-rate **(P05 polarity-transport rate)**.”* **The result is unaffected and the argument gets sharper**, because a Galilean boost **cannot transform a non-negative additive scalar** — P04 content has no frame-dependence to lose. **The thing that can carry a velocity is a transport rate.** So the §3.2 asymmetry is properly **P03 structure (invariant) against P05 rate (transforming)**, which is a contrast between two different kinds of object rather than between a structure and a magnitude. Same category error Branch 3 fixed for the Adjacency band: **attributing structure to P04 that P04 does not carry.** `primitives/ADJACENCY_AND_BAND_DISAMBIGUATION.md` §5; gravity ledger #96.
 - **P10 (Rule-type primitive)** — supplies rule-type carriers.
 
 ### 2.2 Upstream Dependencies
@@ -64,7 +66,7 @@ At substrate level, the measurement content of substrate cells separates into:
 
 **Adjacency content (P03):** The content distinguishing substrate cells by their **locus indexing** — which channel + locus a cell belongs to. This is the "where" content; it provides position-information.
 
-**Propagation content (P04):** The content distinguishing substrate cells by their **translation-rate** — how quickly polarity propagates across the cell. This is the "how-fast" content; it provides momentum-information.
+**Propagation content (P05):** The content distinguishing substrate cells by their **translation-rate** — how quickly polarity propagates across the cell. This is the "how-fast" content; it provides momentum-information.
 
 The two sectors are **orthogonal** in the substrate Hilbert space: an operator measuring adjacency content (position $\hat x$) and an operator measuring propagation content (momentum $\hat p$) act on different aspects of substrate cells.
 
@@ -79,19 +81,19 @@ Under a Galilean boost $v \to v + u$ (substrate-level low-velocity transformatio
 
 - **Adjacency content is invariant.** P03 spatial homogeneity (substrate is translation-invariant; positions and translations of positions are equivalent) implies that the **identity** of each substrate cell is unchanged by the boost. Substrate cells are at different spatial positions in the boosted frame, but their **intrinsic adjacency** content is preserved.
 
-- **Propagation content transforms.** P04 propagation content shifts: a cell that was propagating at rate $v$ in the original frame propagates at rate $v + u$ in the boosted frame. The propagation-rate is **frame-dependent**.
+- **Propagation content transforms.** **P05** propagation content shifts: a cell that was transporting polarity at rate $v$ in the original frame transports at rate $v + u$ in the boosted frame. The propagation-rate is **frame-dependent**. *(Re-sourced from P04 on 2026-09-06 — P04 is a non-negative additive scalar and carries no rate to boost; §2.1.)*
 
-This asymmetry between adjacency (invariant) and propagation (transforming) is the substrate-level Galilean-Jacobian content.
+This asymmetry between **P03 adjacency structure** (invariant) and **P05 propagation rate** (transforming) is the substrate-level Galilean-Jacobian content. **The two sides are different kinds of object — a structure and a rate — which is why one boosts and the other cannot.**
 
 ### 3.3 The kinetic-energy partition
 
-The substrate-level kinetic energy is the energy content carried by **propagation** (P04) — the rate at which substrate cells exchange polarity content under translation.
+The substrate-level kinetic energy is the energy content carried by **propagation** (**P05**; magnitude scaled by P04) — the rate at which substrate cells exchange polarity content under translation. *(“Exchange polarity content” is P05 by definition; the P04 attribution was corrected 2026-09-06, §2.1.)*
 
 For non-relativistic dispersion (Paper_RQM_T5 NR limit, Paper_U4):
 $$E_{\mathrm{kin}} = \frac{p^2}{2m} .$$
 
 The substrate-level interpretation:
-- $p$ is the propagation-rate eigenvalue (momentum, from P04 propagation content).
+- $p$ is the propagation-rate eigenvalue (momentum, from **P05** propagation content).
 - $m$ is the substrate-bandwidth content per cell at rest (Paper_RQM_ArcM_H1 mass structural form).
 - $p^2$ is the squared propagation rate.
 - $/(2m)$ is the **Galilean Jacobian factor**.
@@ -105,7 +107,7 @@ This is the **rate of energy change per unit squared-momentum change** at fixed 
 
 At substrate level, this Jacobian content is **structurally determined** by:
 1. P03 adjacency invariance under boost (the position-content does not shift kinetically).
-2. P04 propagation transforming under boost (momentum content shifts linearly with $u$).
+2. **P05** propagation transforming under boost (momentum content shifts linearly with $u$).
 3. The substrate-level dispersion relation $E^2 = p^2c^2 + m^2c^4$ (Paper_RQM_T5) expanded to leading order in $p/(mc)$.
 
 The factor of 2 is therefore the substrate-level structural content of "kinetic energy is quadratic in momentum at low velocity" — it is not an arbitrary normalization.
@@ -141,10 +143,10 @@ All three are FORM-FORCED at substrate level. The combination produces exactly $
 | # | Step | Label | Notes |
 |---|---|---|---|
 | 1 | P03 spatial homogeneity (adjacency) | P | Primitive. |
-| 2 | P04 bandwidth (propagation) | P | Primitive. |
+| 2 | **P05 polarity-transport (propagation rate)**; P04 supplies the scalar magnitude | P | Primitives. *(Was “P04 bandwidth (propagation)”; re-sourced 2026-09-06 — P04 carries amount, not rate. §2.1.)* |
 | 3 | P10 rule-type | P | Primitive. |
 | 4 | Adjacency content invariant under Galilean boost | D-via-I | From P03. |
-| 5 | Propagation content transforms under Galilean boost | D-via-I | From P04 + Galilean group. |
+| 5 | Propagation content transforms under Galilean boost | D-via-I | From **P05** + Galilean group. *(Was “from P04” — a non-negative additive scalar has no frame-dependence to lose; only a transport rate can boost. Re-sourced 2026-09-06.)* |
 | 6 | Galilean Jacobian asymmetry | D | Composition of steps 4–5. |
 | 7 | $E^2 = p^2c^2 + m^2c^4$ relativistic dispersion | I | Paper_RQM_T5. |
 | 8 | Taylor expansion at low velocity → $E_{\mathrm{kin}} = p^2/(2m)$ | I | Paper_U4. |

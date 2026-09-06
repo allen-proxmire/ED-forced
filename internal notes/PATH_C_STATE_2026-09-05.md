@@ -1,12 +1,12 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#95** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#96** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
 ## What Path C is
 
-**One question, asked at eleven scales: *what licenses combining bandwidth across things?***
+**One question, asked at twelve scales: *what licenses combining bandwidth across things?***
 
 That is the spine, and it is the thing most likely to be lost if this session compacts — the individual ledger items would survive, the fact that they are one question would not.
 
@@ -23,8 +23,9 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 93 | **Branch 3 applied** — bands classify $\mathcal{K}$, P04 sums | across **channel classes** — answered, and the residue named |
 | 94 | the dwell arc's `∇_adj` borrow | across **primitives** — when a name is borrowed from the wrong one |
 | 95 | the adjacency/band disambiguation | across **the vocabulary** — the systemic fix for all of the above |
+| 96 | propagation re-sourced P04 → P05 | across **a primitive boundary** — amount is not rate |
 
-**It produced a general answer, not eleven local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
+**It produced a general answer, not twelve local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
 ## How Path C started, and where Path B went
 
@@ -99,4 +100,4 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#95.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#96.*

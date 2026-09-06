@@ -1,6 +1,6 @@
 # Disambiguation — "adjacency" and "band" in the ED corpus
 
-**Date:** 2026-09-05
+**Date:** 2026-09-05, updated 2026-09-06 (§5.1 resolved)
 **Status:** Canonical vocabulary note. Sits beside the primitive cards; the thing to read before building on any sentence containing "adjacency" or "band".
 **Why it exists:** four distinct collisions on these two words were found in a single session (gravity ledger #91, #92, #94), and **one of them had a real argument built on it for two months** (the dwell route). Each was flagged where it was found; this is the systemic fix.
 **Precedent:** `../event-density/theory/d_variable_disambiguation.md` did the same job for the two `D` variables.
@@ -15,7 +15,7 @@
 |---|---|---|---|
 | **A** | **graph adjacency** — the participation graph's edge structure; which loci are neighbours | a **structure** | P03 (`Paper_087`) |
 | **B** | **the Adjacency band** — the class of P05-transporting channels at a locus | a **set of channels** | `primitives/P04_bandwidth.md`, as amended by Branch 3 |
-| **C** | **adjacency content** — the position-locus sector, opposed to *propagation* (translation-rate) | a **content sector** | `qm-kinematics/Paper_012_7_AdjacencyBandwidth_Galilean` |
+| **C** | **adjacency content** — the position-locus sector, opposed to **propagation** (translation-rate, which is **P05**'s — see §5.1) | a **content sector** | `qm-kinematics/Paper_012_7_AdjacencyBandwidth_Galilean` |
 | **D** | **`∇_adj`** — the adjoint gradient in `a_C = −∇_adj Σ_C` | an **operator** | P12 (`Paper_087` §P12) |
 
 **They are related without being interchangeable.** **A** is the graph. **B** is a class of channels defined by transporting *along* A. **C** is A's content, considered under boost. **D** is a derivative operator *on* A. **Sliding between them is the error mode**, and §3 is the case where it cost two months.
@@ -38,7 +38,7 @@ The dwell route (`../event-density/theory/Higgs_Emergence/Dwell_Question_Answer.
 
 **Every step after the first is the collision doing the work.** An operator that differentiates *along* the graph says nothing about which *channels* sit in a class defined over it.
 
-**And the conclusion is the reverse of C.** `Paper_012_7`: P03 spatial homogeneity forces *"adjacency content (position-locus) to be **boost-invariant** while P04 propagation content (translation-rate) transforms"* — flatly, *"the position-content does not shift kinetically."* **In sense C, adjacency is the static sector.** The band the dwell argument actually needed is **propagation/momentum**, which lives in **partition 2**, not partition 1.
+**And the conclusion is the reverse of C.** `Paper_012_7`: P03 spatial homogeneity forces *"adjacency content (position-locus) to be **boost-invariant** while … propagation content (translation-rate) transforms"* — flatly, *"the position-content does not shift kinetically."* *(That sentence read "P04 propagation content" until 2026-09-06; the sector is **P05**'s — §5.1. The point here is unaffected: whichever primitive sources it, **propagation is the sector that moves and adjacency is the one that does not**.)* **In sense C, adjacency is the static sector.** The band the dwell argument actually needed is **propagation/momentum**, which lives in **partition 2**, not partition 1.
 
 **So: a band from partition 1, read through an operator from P12, to reach a conclusion contradicted by sense C, when the object required lived in partition 2.** Three collisions compounding. It survived review for two months because every ingredient is real ED content.
 
@@ -52,9 +52,9 @@ The dwell route (`../event-density/theory/Higgs_Emergence/Dwell_Question_Answer.
 - **Partition 3** → *"the four Bell-test settings"*. Do not call them bands.
 - **`b_K` itself** is **bandwidth**, and bandwidth is **not a band**. Canonical P04 is a non-negative additive scalar; it carries no partition (see the P04 card).
 
-## 5. Two live inconsistencies, recorded not resolved
+## 5. Two inconsistencies found — one resolved, one recorded
 
-1. **The propagation sector has two homes.** `Paper_012_7` attributes it to *"P04 propagation content"*; `Paper_012_6` houses the momentum band inside `P-FourBand`. Same sector, two sourcings.
+1. ~~**The propagation sector has two homes.**~~ **RESOLVED 2026-09-06 — and neither home was right; the sector is P05's.** Both papers wrote *"P04 propagation"*, but **canonical P04 is a non-negative additive scalar: it carries *amount*, not *rate*.** Translation-rate is **P05** — polarity-transport along edges. **`Paper_012_6` §3.1 already had it right parenthetically** (*"translation-rate **(P05 polarity-transport rate)**"*) and **`Paper_012_7`'s own §3.3 described P05 while citing P04** (*"the rate at which substrate cells **exchange polarity content** under translation"*). **The correction sharpens the result rather than costing it:** a Galilean boost **cannot transform a non-negative additive scalar** — P04 content has no frame-dependence to lose — so the Galilean-Jacobian asymmetry is properly **P03 structure (invariant) against P05 rate (transforming)**, a contrast between two *kinds of object*. Re-sourced across **eight sites in the two papers**. Gravity ledger #96.
 2. **`Grad` sits on the same graph.** The P12 card defines `Grad` as *"the slope of event density across participation-adjacency neighborhoods"* — sense **A**, and the same domain as **D**. That is consistent, but it means P12 carries **two** adjacency-flavoured objects, and a reader meeting either should check which is meant.
 
 ## 6. Where the collisions were flagged in place
