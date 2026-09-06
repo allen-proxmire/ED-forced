@@ -1,5 +1,7 @@
 # Phase-in-`Grad`: finite-reach survives in the physical case, crystallizes in the partial one. And a third support for the split, from the density matrix.
 
+> **⚠ THIS PROBE'S `Coh` ARM IS NOT `Coh` — found 2026-09-06 (gravity ledger #104).** The docstring is accurate that *“the substantive difference is precisely the `/n` normalisation”*, and **`|acc|` is correct for `Grad`** (maximising the Dirichlet form over `v`'s free phase gives exactly `2|acc|`). **But `|acc|/n` is not canonical `Coh`** — it is the simulator's `v3_active` per-locus-average convention. **Canonical `Coh` maximised over `v`'s phase gives `2|acc|` PLUS a neighbour–neighbour cross term**, and `|acc|/n` has no such term: it is `Grad` divided by the coordination number. **So the comparison being run was `Grad` against `Grad/n` — the `Coh`-versus-`Grad` question was never actually being asked.** That explains the draw on Knots-safety (both arms are the same functional), and it explains why #103's `ξ` trend was a coordination-number artifact: **`/n` *is* the coordination number, and it was the only difference between the arms.** `foundations/Note_MultiChannel_CohGrad_2026-09-06.md`.
+
 *Foundations working note, 2026-09-05. Answers the open item raised by `Note_Grad_Proposal_2026-09-05.md` §5. Probe: `../event-density/theory/p12_phase_in_grad_probe.py`, re-runnable.*
 
 ---
