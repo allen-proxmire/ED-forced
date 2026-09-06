@@ -53,6 +53,8 @@ And A1 states its own limit plainly:
 
 **The experiment that would settle it is an A1-style interventional run on two BRANCHES, not two regions** — encode into branch-distinguishing structure, evolve, and ask at what separation commitment resolves them. **That has never been run.**
 
+> **⚠ STRENGTHENED 2026-09-06 (gravity ledger #137): this is not merely a design difficulty.** `Paper_Continuum_KineticLatticeGas` §3 **measures** that *“the certified front does not branch — one seed → exactly one active front … a 1-D chain (a worldline)”*. **There is no branch structure in the simulator to intervene on**, so the experiment below is blocked for a measured reason, not a practical one. See `Note_BranchRepresentation_2026-09-06.md`.
+
 **Honest caveat on feasibility:** the certified substrate is *determinate* — it commits, it does not carry superposed branches — so an A1-style branch experiment is not a re-run of `capacity.py` with different arguments. **It needs a construction that represents two branches on a determinate substrate**, which is a design question, not a parameter change. **Naming it is not the same as having it.**
 
 **Meanwhile the floor's operative value stays environment-set**, which is where `ChannelGranularity` residual 2 already put it, and where `#135` independently pushed it from the locus side.
