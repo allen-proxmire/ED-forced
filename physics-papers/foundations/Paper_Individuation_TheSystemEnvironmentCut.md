@@ -217,10 +217,16 @@ hence an integer, so the condition is `⌈a/2⌉ > ξ`, and with `R = (a−1)/2`
 **A second route reaches the same value using no `ξ` at all:** the smallest square containing a locus not
 on its own boundary is `a = 3`, giving `R = 1`. **Two independent routes, one value.**
 
-**The sensitivity, stated plainly.** This needs `ξ < 2`. The corpus value `ξ = 1.8 ± 0.3` (`Paper_096`,
-GR-SC 1.7 half-decay, 10 seeds) puts that boundary about **0.6σ away — roughly a one-in-four chance the
-bracket is wrong**, and `ξ > 2` would give `θ_ind = 2`. **So this is sharp and falsifiable: tighten `ξ`
-and the answer is decided.** *(The probe's own 5-seed estimate is `1.831 ± 0.043`, but by a DIFFERENT
+**The sensitivity — RESOLVED 2026-09-06 the same day.** This needs `ξ < 2`. Written first against the
+then-quoted `ξ = 1.8 ± 0.3`, that was **0.6σ, about a one-in-four risk**. **But `± 0.3` was the per-SNAPSHOT
+spread, not the uncertainty on the mean.** Re-run with the same estimator on 40 seeds / 1600 snapshots:
+**ξ = 1.740 ± 0.028 lu** (40 seeds, 1600 snapshots, 2026-09-06; `ed-lab/outputs/ed_sc_3_1/xi_canonical_tightened.json`) — per-snapshot spread `0.334`, per-seed spread `0.179`, **standard error `0.028`**.
+
+> **The `ξ = 2` bracket boundary is 9.2σ away, not 0.6σ. `θ_ind = 1` stands on a firm bracket.**
+
+**The honest caveat: 4 of 40 individual seeds exceed 2.0** (90% below). `θ_ind` is a property of the RULE,
+not of one realization, so the mean is the right statistic — but a substrate realization drawn from the
+upper tail would individuate at `θ_ind = 2`, and that is worth knowing. Gravity ledger #130. *(The probe's own 5-seed estimate is `1.831 ± 0.043`, but by a DIFFERENT
 estimator — 1/e crossing of the phase autocorrelation — so it is not a tightening of the corpus value
 and is not quoted as one.)*
 

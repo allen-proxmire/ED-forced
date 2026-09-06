@@ -36,7 +36,9 @@ Correlations decay with the substrate correlation length `ξ`, so a locus at dep
 
 **A second, independent route reaches the same value using no `ξ` at all:** the smallest square containing a locus that is not on its own boundary is `a = 3`, giving `R = 1`. **Two routes, one value.**
 
-## 3. The sensitivity, stated plainly
+## 3. The sensitivity, stated plainly — **RESOLVED the same day, see the banner**
+
+> **⚠ SUPERSEDED 2026-09-06 (later).** The `± 0.3` used below is the **per-snapshot spread**, not the uncertainty on the mean. Re-run on 40 seeds: **ξ = 1.740 ± 0.028 lu** (40 seeds, 1600 snapshots, 2026-09-06; `ed-lab/outputs/ed_sc_3_1/xi_canonical_tightened.json`), standard error **0.028**. **The `ξ = 2` boundary is 9.2σ away, not 0.6σ — the one-in-four risk described below does not exist.** 4 of 40 individual seeds do exceed 2.0. `Note_Xi_Tightened_2026-09-06.md`; gravity ledger #130.
 
 **This needs `ξ < 2`.** The corpus value is `ξ = 1.8 ± 0.3` (`Paper_096`, GR-SC 1.7 half-decay, 10 seeds), which puts the `ξ = 2` boundary about **0.6σ away — roughly a one-in-four chance the bracket is wrong.** If `ξ > 2` then `θ_ind = 2`, not 1.
 
