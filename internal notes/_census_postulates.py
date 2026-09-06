@@ -67,8 +67,8 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Update ONLY via --update, and only when the change is real (a postulate was
 # genuinely added or removed). A moved count with no corresponding paper change
 # means the pattern or the scope changed, which is a bug in this script.
-BASELINE = 171
-BASELINE_DATE = "2026-09-04"
+BASELINE = 173
+BASELINE_DATE = "2026-09-05"
 BASELINE_SCOPE = "physics-papers"
 
 # --- predictions cross-check baseline ----------------------------------------

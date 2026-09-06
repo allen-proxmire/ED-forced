@@ -1,12 +1,12 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#92** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#93** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
 ## What Path C is
 
-**One question, asked at eight scales: *what licenses combining bandwidth across things?***
+**One question, asked at nine scales: *what licenses combining bandwidth across things?***
 
 That is the spine, and it is the thing most likely to be lost if this session compacts — the individual ledger items would survive, the fact that they are one question would not.
 
@@ -20,8 +20,9 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 90 | the P04 additivity license | across **a region** — what licenses it at all |
 | 91 | `Paper_003` is insensitive to the bands | across **a partition** — when the question does not arise |
 | 92 | “four-band” names four different things | across **a name** — when the footprint is an artifact |
+| 93 | **Branch 3 applied** — bands classify $\mathcal{K}$, P04 sums | across **channel classes** — answered, and the residue named |
 
-**It produced a general answer, not eight local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
+**It produced a general answer, not nine local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
 ## How Path C started, and where Path B went
 
@@ -50,7 +51,7 @@ Ledger **#81** is Path B's only item and it already ran the test: with `P_i = �
 
 **AP's calls, both still pending:**
 
-1. **The four-band branch** (#82/#83/#84) — Branch 1 (revert #57), Branch 2 (amend `Paper_087`), or **Branch 3** (recommended: bands are channel *classes*, disjointness licensed by individuation).
+1. ~~**The four-band branch**~~ — **DECIDED by AP 2026-09-05: BRANCH 3, applied as #93.** The bands are a classification of $\mathcal{K}(u)$ licensed by P07/P10 (with P05/P11 picking out particular classes), *summed by* P04 — not a decomposition of `b_K`. **`Paper_087` needed no change**, which was the branch's strongest argument. Card amended; transport arc re-grounded (`F-COONSET` keeps its referent); Higgs/dwell unblocked at the sourcing level but **still owes its second repair**. **Residue named: `P-Band-Partition`** (disjoint + exhaustive over $\mathcal{K}(u)$ — discharged only *relative to a system `S`*, via individuation, so **the bands are relational**) and **`P-Locus-Bandwidth-Bound`** (P04 gives non-negativity, not an upper bound — the transport arc had been assuming one). **Census 171 → 173.**
 2. **Naming `P-Radial-Channel-Density`** in `Paper_030` §4.3 — adopting it increments the census from **171**. Also Path A's open item #2.
 
 **Work:**
@@ -90,8 +91,8 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 1. **Read this file, then ledger items #82–#90 in reverse order.** They are the whole thread.
 2. **Run `_census_postulates.py`.**
-3. **Items 3 and 3b are closed (#91, #92). The branch decision (open item 1) is now priced and waiting on AP.** Next work item is **4 (`θ_ind`)**, individuation's only undetermined quantity.
+3. **Items 1, 3 and 3b are closed (#93, #91, #92).** The remaining AP call is **item 2** (naming `P-Radial-Channel-Density`). Next work item is **4 (`θ_ind`)**, individuation's only undetermined quantity.
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#92.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#93.*
