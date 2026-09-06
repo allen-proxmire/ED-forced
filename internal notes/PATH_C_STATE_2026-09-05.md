@@ -34,7 +34,9 @@ That is the spine, and it is the thing most likely to be lost if this session co
 
 Ledger **#81** is Path B's only item and it already ran the test: with `P_i = √m_i`, Koide's denominator is `Str + Coh` with every `cos Θ_ij = 1`, so `Q = Str/(Str+Coh)` and `Q = 2/3 ⟺ Coh = ½Str ⟺ Σ_C = −½Str`. **Checked on PDG values: `Coh/Str = 0.500014`, `Q = 0.66666051`.** Exact. **And not a derivation** — nothing in ED predicts `Coh = ½Str` for the charged leptons. The corpus had already ruled on the class: `arcs/arc-M/mass_ratio_constraints.md` §6.3 — *"Koide-relation-style formulae … not derivable from ED primitives at this stage"*, because *"ED's primitive structure produces classifications and dichotomies cleanly, but does not produce continuous numerical relationships."* **That verdict stands.**
 
-**So "go back and test Koide" is not an open move.** The test was run; the answer is *exact re-expression, no derivation*. Path C is what Koide's diagonal/off-diagonal question opened on the way, and it is where the live work is.
+**PATH B REOPENED 2026-09-06 on a DOF reframe (ledger #98).** AP: *"do not look for masses directly. Look for the degrees of freedom that define the commitment."* **That aims at exactly the half arc-M says works** — its stated reason for the negative is that ED produces classifications cleanly but not continuous numerical relationships, **and a DOF count is a classification.** Result: the generation wobble  is **monotone in a count of gauge sectors** (ν=1 < ℓ=2 < q=3), and **the neutrino datum that falsified the corpus's charge-linear map is the datum that supports the count.** Does not split d/u, produces no value, does not explain the Z₃. .
+
+**So "go back and test Koide" — as a MASS question — is still not an open move.** The test was run; the answer is *exact re-expression, no derivation*. Path C is what Koide's diagonal/off-diagonal question opened on the way, and it is where the live work is.
 
 ## What Path C changed, honestly
 
