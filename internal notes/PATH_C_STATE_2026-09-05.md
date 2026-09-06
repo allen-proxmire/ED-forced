@@ -1,6 +1,6 @@
 # Path C — state, 2026-09-05 (late)
 
-*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#97** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#98** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
 
 ---
 
@@ -25,16 +25,17 @@ That is the spine, and it is the thing most likely to be lost if this session co
 | 95 | the adjacency/band disambiguation | across **the vocabulary** — the systemic fix for all of the above |
 | 96 | propagation re-sourced P04 → P05 | across **a primitive boundary** — amount is not rate |
 | 97 | the relational-bands sweep | across **a cut** — which bands actually carry one (two of four) |
+| 98 | **Path B, reframed** — the generation wobble orders by a DOF count | across **alternatives** — what a commitment selects among |
 
 **It produced a general answer, not thirteen local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
 
 ## How Path C started, and where Path B went
 
-**Path B was Koide, and it is CLOSED, not paused** — correcting something I said mid-session.
+**Path B was Koide. It was CLOSED as a mass question and REOPENED 2026-09-06 as a DOF question** — and those are different questions, which is the whole point of the reframe.
 
 Ledger **#81** is Path B's only item and it already ran the test: with `P_i = √m_i`, Koide's denominator is `Str + Coh` with every `cos Θ_ij = 1`, so `Q = Str/(Str+Coh)` and `Q = 2/3 ⟺ Coh = ½Str ⟺ Σ_C = −½Str`. **Checked on PDG values: `Coh/Str = 0.500014`, `Q = 0.66666051`.** Exact. **And not a derivation** — nothing in ED predicts `Coh = ½Str` for the charged leptons. The corpus had already ruled on the class: `arcs/arc-M/mass_ratio_constraints.md` §6.3 — *"Koide-relation-style formulae … not derivable from ED primitives at this stage"*, because *"ED's primitive structure produces classifications and dichotomies cleanly, but does not produce continuous numerical relationships."* **That verdict stands.**
 
-**PATH B REOPENED 2026-09-06 on a DOF reframe (ledger #98).** AP: *"do not look for masses directly. Look for the degrees of freedom that define the commitment."* **That aims at exactly the half arc-M says works** — its stated reason for the negative is that ED produces classifications cleanly but not continuous numerical relationships, **and a DOF count is a classification.** Result: the generation wobble  is **monotone in a count of gauge sectors** (ν=1 < ℓ=2 < q=3), and **the neutrino datum that falsified the corpus's charge-linear map is the datum that supports the count.** Does not split d/u, produces no value, does not explain the Z₃. .
+**PATH B REOPENED 2026-09-06 on a DOF reframe (ledger #98).** AP: *"do not look for masses directly. Look for the degrees of freedom that define the commitment."* **That aims at exactly the half arc-M says works** — its stated reason for the negative is that ED produces classifications cleanly but not continuous numerical relationships, **and a DOF count is a classification.** Result: the generation wobble `w` is **monotone in a count of gauge sectors** (ν=1 < ℓ=2 < q=3), and **the neutrino datum that falsified the corpus's charge-linear map is the datum that supports the count.** Does not split `d` from `u` (both 3-sector, `w` differs by 14%), produces no value, and does not explain the `Z₃`. **Weak evidence, stated as weak: four families, three distinct DOF values, two `w`s scheme-dependent.** `../event-density/theory/Note_CommitmentDOF_GenerationPattern_2026-09-06.md`; check `internal notes/_check_commitment_dof_ordering.py`.
 
 **So "go back and test Koide" — as a MASS question — is still not an open move.** The test was run; the answer is *exact re-expression, no derivation*. Path C is what Koide's diagonal/off-diagonal question opened on the way, and it is where the live work is.
 
@@ -103,4 +104,4 @@ Plus Path A's, all still current — `_census_postulates.py` is the one to run f
 
 ---
 
-*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#97.*
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#97. Path B reopened: #98.*
