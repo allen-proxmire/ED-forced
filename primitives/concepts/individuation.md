@@ -56,7 +56,7 @@ A commitment event (Primitive 11) typically increases individuation: the chain's
 
 ### What is *not yet* settled
 
-- **Threshold θ_ind.** Structural constant? Regime-dependent? Tied to ℏ / bandwidth normalization?
+- **Threshold θ_ind.** Structural constant? Regime-dependent? Tied to ℏ / bandwidth normalization? **→ CHARACTERIZED 2026-09-06: the ℏ / bandwidth-normalization route is CLOSED (`R` is invariant under `b → λb`), and `θ_ind` is a LENGTH — `R = (a−1)/2` for a side-`a` hypercube in every dimension. Still undetermined. See the paper's §4.5.**
 - **Graded vs. sharp.** Individuation is a continuum, but phenomenology treats it as binary (system vs. environment). When is the sharp approximation valid?
 - **Multi-scale individuation.** A solid body is individuated at the body scale while being composed of atoms individuated at their scale. Hierarchical individuation needs formal treatment.
 

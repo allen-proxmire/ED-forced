@@ -11,7 +11,7 @@
 ## Preamble — What This Paper Does NOT Claim
 
 1. **Individuation is not a fourteenth primitive.** The corpus is committed to thirteen. This paper shows the individuation functional is *constructible from* P02 + P03 + P04 and treats it as a derived structure. **Its historical header read "Primitive 10" because the concepts folder was an earlier primitive set, superseded when the canonical thirteen were fixed; that is provenance, not a competing claim.**
-2. **The threshold `θ_ind` is not derived.** It is inherited, and the source concept flags it as open twice. Every quantity computed with it inherits an undetermined parameter.
+2. **The threshold `θ_ind` is not derived.** It is inherited, and the source concept flags it as open twice. Every quantity computed with it inherits an undetermined parameter. **§4.5 (2026-09-06) characterizes what KIND of quantity it is — a length, not a dimensionless constant — and closes the `ℏ`/bandwidth-normalization route. It still supplies no value, and the candidate `θ_ind = (ξ−1)/2 ≈ 0.4` named there rests on an identification nobody has argued for.**
 3. **This paper does not solve the factorization problem.** It supplies a substrate-level *criterion* with a free scale, not a derivation of where the cut must fall. Whether ED improves on the standard situation is §6, and the honest answer is "differently, not obviously better."
 4. **It does not claim individuation is sharp.** The source concept is explicit that the ratio is continuous and that "most real systems sit somewhere on the continuum." The sharp system/environment cut of textbook QM is a limit, not a fact.
 5. **No new postulate is named.** Nothing here increments the corpus postulate census.
@@ -99,7 +99,7 @@ $$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at 
 | 4 | `w(e)` from `b_K(u)`: `w(u,v) = Σ_{K shared} √(b_K(u)b_K(v))` | **D-via-I** *(was OPEN; written and then closed 2026-09-05)* | §2.1. Form from P02 membership + P04. The **geometric mean rather than `min`** is no longer a convention: it is the **unique** edge weight under which `b_bdry` survives regridding, given that loci merge by amplitude addition (`P-Motif-Algebra`). Conditional on requirement (R) — which `Paper_073` §3.2 already demands — and on the **coherent** regime; under DCGT's decoherent merge rule the forced weight is the product instead, though `min` is excluded under both. Verified against all three of the source concept's worked examples, and against four discriminating tests. |
 | 5 | Given `S`, every edge is internal or boundary, never both | **D** (set theory) | the partition is exhaustive and disjoint by construction |
 | 6 | The ratio `b_int/b_bdry` is the individuation measure | **D-via-I** | form from steps 1–3; the *choice* of ratio rather than difference is a reading |
-| 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept |
+| 7 | `θ_ind` | **I (inherited)** | undetermined; flagged open twice in the source concept. **CHARACTERIZED 2026-09-06 (§4.5): still undetermined, but it is a LENGTH, not a dimensionless constant — `R = (a−1)/2` for a side-`a` hypercube in every dimension. The `ℏ`/bandwidth-normalization route is closed: `R` is invariant under `b → λb`.** |
 | 8 | Individuation is relational, not intrinsic | **D** | follows from `S`-dependence of both sums |
 | 9 | Band disjointness follows | **D-via-I**, conditional on 4 and 7 | §4 |
 
@@ -121,6 +121,65 @@ $$\big|\mathrm{Coh}_{(u,v)}\big| \;\le\; 2\,w(u,v),\qquad\text{with equality at 
 **Costs, and it is a real one.** **Band membership becomes relative to `S`.** `primitives/P04_bandwidth.md` states *"four mutually orthogonal substrate-level bands"* as absolute, and `soft-matter/Paper_UnifiedP04TransportBudget` §2 reads P04 as partitioning *"each locus's finite bandwidth `b(u)`"* — **with no `S` in it.** Under this paper there is no "the Adjacency band at a locus," only "with respect to `S`."
 
 **Not fatal.** If the transport arc's `S` is its own cell, the reading is consistent. **But that identification is unstated and should be written.**
+
+## 4.5 What kind of quantity `θ_ind` is — CHARACTERIZED 2026-09-06
+
+`θ_ind` is still **undetermined**, and nothing below supplies a value. What changed is that it is no
+longer an unknown *dimensionless constant*. Four results, each analytic and each confirmed numerically
+(`../event-density/theory/individuation_theta_probe.py`):
+
+**(A) The `ℏ` / bandwidth-normalization route is CLOSED.** `b_int` and `b_bdry` are both homogeneous of
+degree 1 in the edge weights, so `R` is invariant under `b → λb`. Measured: `λ = 1000` moves `b_int` from
+`60.0` to `60000.0` and leaves `R = 2.500000`. **So no bandwidth normalization and no value of `ℏ` can
+supply `θ_ind` — there is nothing for a scale to attach to.** One of the source concept's three named
+routes, closed.
+
+**(B) Individuation is closed under union, for EVERY `θ`.** `I_S > θB_S` and `I_T > θB_T` give
+`I_S + I_T > θ(B_S + B_T)`, and any edges *between* `S` and `T` move from boundary to internal, which only
+raises the ratio. Measured: 0 violations in 400 random pairs, disjoint, adjacent and overlapping.
+**So no choice of `θ_ind` makes this an object-COUNT criterion — two separate individuated systems always
+union to an individuated one. It is a cohesion filter, not a “this is one thing” test**, and the family of
+admissible `S` is upward-closed. Something other than the criterion must choose `S`; the criterion only
+checks it. **§4's licence to the four-band classification is unaffected — that licence is the sharpness of
+the edge partition (§3), not object-counting — but the bands' relativity to `S` is now sharper: `S` is
+selected, not found.**
+
+**(C) `R` is a LINEAR EXTENT, dimension-independently.** For a hypercube of side `a` on a hypercubic
+lattice with unit weights, in any dimension `d`:
+
+$$b_{\rm int} = d\,a^{d-1}(a-1),\qquad b_{\rm bdry} = 2d\,a^{d-1},\qquad \boxed{R = \tfrac{a-1}{2}}$$
+
+The `d` and the `a^{d-1}` cancel. Confirmed exactly for `d = 1, 2, 3`; it survives 60% bandwidth disorder
+(deviations −7.6% to +6.9% over five seeds) and real committed morphology on the certified rule
+(`R/(√|S|/2)` stays in `0.56–0.67` from `|S| = 4` to `200`). **So `R > θ_ind` reads `linear extent >
+2θ_ind + 1` loci: `θ_ind` is a LENGTH wearing a dimensionless costume.** Two boundary values follow: a
+**single locus has `R = 0`** (one thing alone is not individuated at all), and the **minimal composite —
+two loci sharing an edge — gives `R = 1/2` exactly, in every dimension.**
+
+**(D) — but only where the substrate HAS geometry.** On a geometric graph the cut scales like a surface and
+the interior like a volume. On an **expander** the Cheeger constant is bounded below, the cut grows *with*
+the volume, and `R` stays `O(1)` however large `S` gets. Measured on a degree-4 lattice against a degree-4
+random regular graph, `|S| = 4 → 256`: lattice `R` runs `0.50 → 7.50`, expander `R` runs `0.30 → 0.56`.
+**ED's metric locality is EMERGENT, not primitive, so `θ_ind`'s CHARACTER changes across that transition:
+a length threshold in the geometric regime, a genuinely dimensionless cohesion threshold before it.**
+
+**What this does to `F-IND-2`, stated carefully.** (A) shows bandwidth normalization can absorb nothing at
+all, so the escape route in `F-IND-2`'s own wording is unavailable; (C)/(D) show `θ_ind` is a length in the
+geometric regime and not one before it. **This is NOT `F-IND-2` fired and must not be banked as one.** The
+falsifier asks whether physics *needs* more than one threshold; this shows only that a fixed `θ_ind` **is**
+a fixed length, so two regimes with different characteristic lengths would need different `θ_ind`.
+**Whether ED has two such regimes in a load-bearing way is not shown.** `F-IND-2` moves from hypothetical
+to concrete and testable, no further.
+
+**What would now determine it.** Not a bandwidth calibration and not a measurement of `ℏ`, but **the
+length at which system/environment cuts become sharp, in units of `ℓ_ED`.** Two routes: **(1)** the scale
+at which `qft/Paper_024_LindbladLimit`'s postulated factorization (`P-Factorized-IC`) becomes accurate —
+the same gap approached from the other side, as §6 already says; **(2)** the measured substrate correlation
+length `ξ_canonical ≈ 1.8 ± 0.3 lu` (`Paper_096`), which by (C) would give **`θ_ind = (ξ−1)/2 ≈ 0.4 ± 0.15`**,
+just below the pair value `1/2`. **(2) is an arithmetic consequence of (C) plus an identification NOBODY
+HAS ARGUED FOR, and is recorded as a candidate to be argued or refuted, not as a result.**
+
+`foundations/Note_ThetaInd_IsALength_2026-09-06.md`; gravity ledger #128.
 
 ## 5. Falsification Criteria
 
