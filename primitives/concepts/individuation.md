@@ -1,4 +1,6 @@
-# Primitive 10 — Individuation
+# Individuation
+
+> **⚠ HEADER CORRECTED IN PLACE 2026-09-05: this file was titled “Primitive 10 — Individuation.”** **Canonical `Paper_087` §P10 is the *rule-type* primitive, and `primitives/P10_rule_type.md` carries it in this same tree.** The “Primitive 10” header is stale, from an older numbering. **Individuation is a *concept*, not one of the canonical 13** — which matters, because three arcs turn out to depend on it (`foundations/Note_Individuation_Is_TheCut_2026-09-05.md`) and they should know they are depending on a first-pass concept draft with an undetermined threshold rather than on a primitive. Nothing else in this file is changed. Gravity ledger Staleness #85.
 
 **Role in the framework:** The threshold condition under which a sub-structure of the participation graph counts as a *distinct* identity — a "this system" distinguishable from "that system." Individuation is the ED account of where one thing ends and another begins. It is the primitive that resolves entanglement (pre-individuated participation shared across endpoints), that defines system/environment cuts in decoherence analyses, and that establishes when classical "two separate objects" language applies.
 
