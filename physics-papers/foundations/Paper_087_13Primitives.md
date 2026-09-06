@@ -185,6 +185,14 @@ Each channel-locus participation carries a **bandwidth** $b_K(u) \geq 0$. Bandwi
 
 *Operational content:* $b_K(u, t) \in \mathbb{R}_{\geq 0}$.
 
+> **When additivity extends past disjoint sub-channels — the licensing clause, added 2026-09-05.** The additivity above is stated **over disjoint sub-channels at a locus**, and that is its scope. **At least eight papers sum bandwidth over a *region* or a *cell* instead — a different operation — and cite “P04 additivity” for it.** The general rule for combining contributions is §P12's $b(U)=\sum_a b_a + 2\sum_{a<b}\sqrt{b_a b_b}\cos\Delta\pi_{ab}$, whose cross term is $\mathrm{Coh}$; plain addition is its zero-phase case. **An audit of every such site found no live error** (`internal notes/_check_dcgt_regime_users.py`) — each is licensed, and all by the same thing: **the summed contributions carry no relative phase.** In ED that happens exactly three ways, and this is the statable rule the corpus was using without writing down:
+>
+> **(a) Disjoint channels** — P04's additivity precisely as written (`Paper_065_Monogamy` sums over *partner chains*, which are disjoint channel sets).
+> **(b) Committed content** — **P11 commits in the channel basis only.** *“ED commits only in the channel basis: the channel basis is the unique pointer basis, selected by the arrow … phase … is never a commitment basis”* (`substrate-evaluation/Paper_QuantumLogicKeystone_GleasonReconstruction` §7). **Committed content has no phase left to interfere, so bandwidth *is* additive over a region for it** — which is what licenses `Paper_042_NoSingularity`'s $C_{\mathrm{cum}}$ bound.
+> **(c) A decoherent regime** — $\mathrm{Coh}\to 0$: `Paper_073` §3.2's hydrodynamic window, and `Paper_067/068`'s explicitly *independent* subsystems.
+>
+> **Outside (a)–(c) the extension is not licensed, and the error does not run in the safe direction:** phase-aligned contributions carry *more* total bandwidth than the additive sum (`n²` against `n` for `n` unit contributions), so a bound derived from additivity would be **violated**, not conservative. `foundations/Note_P04_AdditivityLicense_2026-09-05.md`.
+
 *Load-bearing in:* 089 (V1 kernel envelope), 090 (V5 cross-chain), 054 (UR-1), 056 (Class-A wall), all gravity papers.
 
 ### P05 — Polarity-transport along edges
