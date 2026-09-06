@@ -96,6 +96,8 @@ Key implications:
 
 ### 3.4 Adjacency-bandwidth structure encoded in $\pi_K$
 
+> **Naming collision, flagged 2026-09-05.** *“Adjacency-bandwidth”* here and in §3.3 means **bandwidth along graph adjacency** — P03 locus indexing plus P04, i.e. which edges a motif traverses and hence its accumulated phase. **It is not the four-band partition's “Adjacency band.”** The words collide; the objects do not. A reader tracing the four-band question through this arc can easily mis-read this section as a band usage, which inflates the apparent four-band footprint. `foundations/Note_Paper003_FourBand_Check_2026-09-05.md`.
+
 The adjacency content of substrate motif $K$ — which channels are connected to which neighboring channels via P03 locus indexing — directly determines $\pi_K$. Different adjacency patterns produce different phase accumulations because:
 - Each substrate edge contributes a polarity-rotation increment.
 - The total rotation depends on which edges are included in motif $K$.

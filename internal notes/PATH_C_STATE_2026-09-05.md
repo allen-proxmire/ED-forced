@@ -1,0 +1,96 @@
+# Path C — state, 2026-09-05 (late)
+
+*Written to be picked up cold. **Read this before resuming; do not reconstruct Path C from memory.** Everything below is checkable against `physics-papers/gravity/Gravity_TieredClaims_Ledger.md` items **#82–#91** and the scripts named. Companion to `PATH_A_STATE_2026-09-05.md`.*
+
+---
+
+## What Path C is
+
+**One question, asked at seven scales: *what licenses combining bandwidth across things?***
+
+That is the spine, and it is the thing most likely to be lost if this session compacts — the individual ledger items would survive, the fact that they are one question would not.
+
+| # | item | the combining question |
+|---|---|---|
+| 82–85 | four-band conflict reopened, branch 3, band-overlap check, the cut exists | across **channel classes** — what makes bands disjoint |
+| 86 | individuation promoted to a construction | across **a cut** — where a system ends |
+| 87 | the `w(e)` map | across **an edge** — what two loci share |
+| 88 | geometric mean vs `min` | across **a merge** — regridding |
+| 89 | (R) is DCGT's; two merge rules | across **a cell** — which regime |
+| 90 | the P04 additivity license | across **a region** — what licenses it at all |
+| 91 | `Paper_003` is insensitive to the bands | across **a partition** — when the question does not arise |
+
+**It produced a general answer, not seven local ones.** Canonical `Paper_087` P04 now carries the licensing clause: bandwidth adds over a region exactly when the summed contributions carry **no relative phase**, which happens three ways — **(a) disjoint channels** (P04 as written), **(b) committed content** (P11 commits in the channel basis only, so committed content has no phase to interfere), **(c) a decoherent regime** (`Coh → 0`).
+
+## How Path C started, and where Path B went
+
+**Path B was Koide, and it is CLOSED, not paused** — correcting something I said mid-session.
+
+Ledger **#81** is Path B's only item and it already ran the test: with `P_i = √m_i`, Koide's denominator is `Str + Coh` with every `cos Θ_ij = 1`, so `Q = Str/(Str+Coh)` and `Q = 2/3 ⟺ Coh = ½Str ⟺ Σ_C = −½Str`. **Checked on PDG values: `Coh/Str = 0.500014`, `Q = 0.66666051`.** Exact. **And not a derivation** — nothing in ED predicts `Coh = ½Str` for the charged leptons. The corpus had already ruled on the class: `arcs/arc-M/mass_ratio_constraints.md` §6.3 — *"Koide-relation-style formulae … not derivable from ED primitives at this stage"*, because *"ED's primitive structure produces classifications and dichotomies cleanly, but does not produce continuous numerical relationships."* **That verdict stands.**
+
+**So "go back and test Koide" is not an open move.** The test was run; the answer is *exact re-expression, no derivation*. Path C is what Koide's diagonal/off-diagonal question opened on the way, and it is where the live work is.
+
+## What Path C changed, honestly
+
+**Gained:**
+
+1. **Individuation is a construction, not a concept** — verdict M3, form-derived from P02+P03+P04, and **three arcs independently depended on it** (the `Str(C)` aggregation, the four-band classification, the layer-1/layer-2 seam).
+2. **The `w(e)` map exists**, and the gap was a **scheme translation** — the earlier primitive set (now `primitives/concepts/`) put bandwidth on **edges**, canonical P04 puts it on **(channel, locus)**, and individuation was never translated. Third artefact of that scheme change found in one session.
+3. **`w(e)` and `Coh` are one object read two ways** — `|Coh_(u,v)| ≤ 2w(u,v)`, equality at full phase alignment. `w(e)` is `Coh`'s envelope with the phase stripped.
+4. **The P04 additivity license**, above. Written **once, canonically**, rather than eight times.
+5. **`Paper_073` §3.2's unstated regime condition**, found and flagged — then found to be corpus-wide rather than local, and `Paper_073` on the safe side of it.
+
+**Corrected mid-flight, twice, both worth remembering:**
+
+- **#88 overclaimed.** It said the geometric mean was forced *full stop*. **#89 found (R) is already DCGT's own well-definedness clause — good — but that DCGT merges by *bandwidth*, not amplitude, under which (R) forces the *product*.** So the weight is **regime-dependent**, and a third candidate had been invisible because a normalization *I* chose excluded it. `min` stays excluded under both rules, which was the live fork. **The note now carries a read-§8b-before-citing-§6 banner.**
+- **#82 reopened my own #57.** The four-band withdrawal used the *archived* `paper_M2` to override canonical `Paper_087`, against the corpus's standing rule. Reopened and deliberately **not** re-flipped — AP's call.
+
+## The open items
+
+**AP's calls, both still pending:**
+
+1. **The four-band branch** (#82/#83/#84) — Branch 1 (revert #57), Branch 2 (amend `Paper_087`), or **Branch 3** (recommended: bands are channel *classes*, disjointness licensed by individuation).
+2. **Naming `P-Radial-Channel-Density`** in `Paper_030` §4.3 — adopting it increments the census from **171**. Also Path A's open item #2.
+
+**Work:**
+
+3. ~~**`Paper_003`**~~ — **CLOSED (#91): it does not need the partition, and the stronger finding is that it is *insensitive* to it.** Its only use of bandwidth is the normalized sum `Σ_{K'} b_{K'}`, and **any partition of the channel set leaves that sum unchanged** — so it cannot need the partition and is not evidence for it either. What it needs is P07 + P04 additivity over the channel set + **channel orthogonality** (which is what *“four-band orthogonality”* was reaching for) + `P-LinRate`. **`Paper_003` comes off the dependent list.** A naming collision was flagged on the way: `Paper_003_5` §§3.3–3.4's *“adjacency-bandwidth”* means bandwidth along graph adjacency, **not** the partition's “Adjacency band”.
+3b. **`Paper_012_6_Heisenberg`** — the successor, and the real one. **Twelve four-band mentions, the heaviest use in any paper**, and unlike the Born rule an uncertainty relation plausibly *does* care how bandwidth is partitioned. Next after it, by weight: `Paper_004_5_Tsirelson_Discrete` (6), `Paper_UnifiedP04TransportBudget` (6).
+4. **`θ_ind`** — individuation's *only* undetermined quantity now that `w(e)` is written. The source concept flags it twice: *"Structural constant? Regime-dependent? Tied to `ℏ` / bandwidth normalization?"*
+5. **The transport arc's `S` identification** — is the transport cell the individuated complex?
+6. **The Higgs/dwell arc's second defect** — borrowing P12's `∇_adj` to interpret a P04 band. Still owed, and it is a layer-borrowing case of the same question.
+
+## Where Path C meets Path A
+
+**Path C is not a detour from Path A; it built the instrument Path A's hardest item needs.**
+
+- **Path A #1, the layer seam / the `2π`** — *"the first real question"*. `Note_Individuation_Is_TheCut_2026-09-05.md` already records that what crosses the seam **is boundary bandwidth**, which is now a defined quantity.
+- **Path A #2, the radial `1/R` channel density** — *what `𝒦` contains as a function of distance from a mass* is an aggregation-licensing question, i.e. a Path C question. It is item 2 above.
+- **Path A #3, `Grad` still a proposal** — untouched by Path C.
+
+## What not to trust without re-checking
+
+- **My "what's missing" claims.** Path A recorded four wrong ones; Path C added a fifth (nearly claimed the system/environment cut was absent — individuation exists). **All five were caught by opening a file. Discount accordingly.**
+- **#88 read alone.** §§1–7 state the uniqueness unconditionally; §8b is the correction. The banner is there for this reason.
+- **The astral character `𝒦` (U+1D4A6)** broke scripted writes repeatedly. **Use `$\mathcal{K}$` in edit payloads**, and `_safe_edit_template.py` for any scripted edit.
+
+## Instruments built on Path C (all re-runnable)
+
+| Script | What it does |
+|---|---|
+| `internal notes/_check_edge_weight_map.py` | the `w(e)` map against individuation's three worked examples |
+| `internal notes/_check_edge_weight_discriminator.py` | geometric mean vs `min`, four discriminating tests |
+| `internal notes/_check_merge_rule_regimes.py` | the two merge rules, and what (R) forces under each |
+| `internal notes/_check_dcgt_regime_users.py` | screens DCGT-citing papers; adjudicates the P04-additivity sites |
+
+Plus Path A's, all still current — `_census_postulates.py` is the one to run first: it exits 0 if the corpus is where Path C left it (**171 postulates, 0 orphaned falsifiers**).
+
+## How to resume
+
+1. **Read this file, then ledger items #82–#90 in reverse order.** They are the whole thread.
+2. **Run `_census_postulates.py`.**
+3. **The next move is item 3b (`Paper_012_6_Heisenberg`)** — item 3 closed as #91; 3b is the heaviest remaining four-band dependent and the one most likely to actually need the partition.
+
+---
+
+*Path A: ledger #58–#80 (`PATH_A_STATE_2026-09-05.md`). Path B: #81, closed. Path C: #82–#91.*
