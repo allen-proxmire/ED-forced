@@ -6,6 +6,10 @@
 
 ## Verdict
 
+> **⚠ SETTLED AND CORRECTED 2026-09-06 — `layers/Note_CohLayer_Settled_2026-09-06.md`; gravity ledger #102.** **The layer is settled: `Coh` is evaluated at LAYER 1**, because `a_C = −∇_adj Σ_C` makes accelerations definitionally layer-1 objects and `Coh` is a term inside `Σ_C`. **And my `ξ ≈ 5ℓ_ED` below is WRONG.** `Paper_PhaseCoherence_P12Coh`'s `ξ ≈ 8–12` are **lattice units of a 60×60 probe grid**, demonstrating §5.4's *usable window*; the paper's actual statement (preamble 4) is that **`ξ` is identified with V5's memory length `ℓ_V5` and the MOND transition reach, and is value-inherited** — *“form-forced-finite, value-inherited”*. **So `ξ` is macroscopic (`≳ 10¹⁵ m`), not five substrate lengths.**
+>
+> **The fork therefore collapses, and both horns agree.** Layer 1 wins, but with `ξ` corrected it gives the layer-2 answer at any laboratory scale: **`Θ₁₂` is coherent across any realizable branch separation, i.e. controllable.** **The FORM of the layer-1 reading below was right** (*“≈ 1 when the branches coincide, decorrelating as they separate”*); **only the scale was wrong, by about fifteen orders of magnitude** — which flips the practical answer from *“decorrelates in any real experiment”* to *“decorrelates in none.”* **That is a materially different prediction for the collapse arc.** *The original fork is kept below as the audit trail.*
+
 **Neither fixed nor random. Controllable at one layer, decorrelating at the other — and the corpus has not settled which layer `Coh` is evaluated at.**
 
 **That unsettled layer is the same one carrying the whole `a₀` `2π` argument** (`gravity/Note_a0_TwoPi_RepairRoutes.md` §4f). **Two open items in two arcs reduce to one question:** *at which layer is `Σ_C` evaluated?*
