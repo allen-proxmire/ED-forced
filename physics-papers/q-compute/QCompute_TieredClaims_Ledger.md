@@ -77,6 +77,26 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (6) — The estimate CANNOT BE RUN: two of `M_cap`'s three constituents were never defined
+
+**AP asked for the cheap move: work out which of the three budgets is smallest for a 175 kDa molecule, and let that decide whether the three-paper rewrite is needed. It cannot be done, and finding out why answers more than the estimate would have.**
+
+**(F) None of the three constituents has ever been quantified.** Searched every paper in the arc. **There is no formula for `N_bw`, `N_V5` or `N_commit` anywhere.** `Paper_053` §3.1 introduces all three in one sentence of prose and that is the whole of it. Downstream use is **structural, never numerical** — `Paper_059` is typical: EC *“increases the `N_V5` budget”*, reservoir engineering pushes *“`N_commit` upward”*. **Directions, not values.** **Only `N_commit` has a number attached anywhere**, through `Paper_054` §5.1.
+
+> **So the comparison cannot be set up. You cannot ask which of three budgets is smallest when two have never been given a value, or even a form.**
+
+**(G) And this explains the collision better than the collision explains itself.** **`Paper_056` did not choose the commitment budget over the other two — it used the only one that had ever been quantified.** The 175–250 kDa figure does not rest on a judgement that commitment binds for matter-wave platforms; **it rests on commitment being the only constituent with a formula**, and nobody noticing those are different things. *The collision was never a disagreement between papers. It was two papers filling a gap in opposite directions, neither seeing the gap.* **And no check could have caught it: a check compares numbers, and two of these three have none.**
+
+**(H) ⚠ A CORRECTION TO ENTRY (5).** That entry said `Paper_056` §6's B/C mapping *“matches the class names both papers share”*, reading redundancy as commitment-suppression. **`Paper_059`, which I had not read, gives a coherent account on the other side:** *“EC … increases the `N_V5` budget by spreading correlations across more physical chains — Class C (`N_V5`-bound) is favored.”* **Redundancy spreading correlations IS a cross-chain story, i.e. `N_V5`, i.e. `Paper_053`'s Class C.** At least as natural as my reading. **The split is 3 papers to 1** (`053`, `055`, `059` vs `056` §6 alone). **My claim that the names track `Paper_056`'s physics is WITHDRAWN.** *Resolution (4) is not withdrawn — its core is the two-trichotomies diagnosis, which stands independently — but its supporting argument is.*
+
+**(I) What this means for the wall.** The **175–250 kDa number rests on one budget of three, chosen because it was the only one with a formula, with no check that it binds and no way to check.** **The three-paper rewrite is premature** — resolution (4) would have `Paper_056` use `min{·}`, and `min{·}` is not computable. **The sign question and the `Γ_commit` form question are both downstream of the same gap and stay parked.** **Untouched, and now plainly the arc's best asset: architecture-independence** — a claim that ONE cap governs several platforms, which **does not require knowing which constituent binds or its value.** Of everything here it is the only part that survives intact.
+
+**(J) The one thing that unblocks all of it: define `N_bw`.** It is the constituent `053`/`055` assign to Class A, the one a matter-wave wall actually needs, and **P04 is the most concrete of the three primitives involved** (bandwidth non-negative and additive is a strong starting constraint). **With `N_bw` defined the estimate becomes possible, `min{·}` becomes computable, and the resolution stops being a judgement call and becomes arithmetic.**
+
+**Flag placed in `Paper_053` at the `min` definition; note extended §§F–J.**
+
+> **Five q-compute entries today, and the arc ends the day saying much less and knowing much more.** The wall's number lost half its range to a real experiment, its sharpness gained a mechanism and then lost its target, its class taxonomy turned out to be two taxonomies, and now **two of the three quantities the whole structure rests on turn out never to have been defined.** *AP's instruction each time was to read before deciding, and each time reading found something deciding would have papered over.* **Nothing here touches gravity, QM or state reduction. It is one arc, and it is now honestly mapped.**
+
 ## 2026-09-07 (5) — `Paper_055` read: the collision is a CATEGORY ERROR, not a disagreement, and row 4's provenance is empty
 
 **AP: settle it, and start by reading `Paper_055` rather than deciding. That was the right instruction and it changed the answer** — two of the three resolutions in entry (4) are superseded by a fourth, and the root cause turns out to be structural rather than a dispute between papers.

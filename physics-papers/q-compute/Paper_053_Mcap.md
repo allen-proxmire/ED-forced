@@ -66,6 +66,8 @@ where $N_{\mathrm{bw}}$ is the bandwidth-limited count (P04), $N_{\mathrm{V5}}$ 
 
 The **min** structure is forced by the load-bearing constraint: a substrate must satisfy **all three** simultaneously.
 
+> **⚠ FLAG 2026-09-07 — the three constituents are named here and NEVER DEFINED, anywhere in the arc.** A search of every q-compute paper finds no formula for `N_bw`, `N_V5` or `N_commit`. Downstream papers use them **structurally** (which technique raises which budget, which class a platform falls in) and **never numerically**. **Only `N_commit` has a value attached anywhere**, via `Paper_054` §5.1's `M_cap = (Γ_indiv⁻¹/Γ₀)^{1/γ}`. **Consequence: `min{·}` is not computable, so `Paper_056` did not choose the commitment constituent over the other two — it used the only one that had ever been quantified.** *That is the root of the class-assignment collision, and no check could have caught it: a check compares two numbers, and two of these three have no numbers to compare.* See `Note_Mcap_TwoDefinitions_2026-09-07.md` §§F–J. **Defining `N_bw` unblocks the whole arc.**
+
 ### 3.2 Three architectural projections
 
 - **Class A:** $N_{\mathrm{bw}}$ saturates first — engineered-low-multiplicity platforms (Paper_056).

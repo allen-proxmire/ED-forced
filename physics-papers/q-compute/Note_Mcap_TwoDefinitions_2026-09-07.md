@@ -136,3 +136,52 @@ This is the finding, and it dissolves the disagreement rather than settling it.
 ## E. Status
 
 **Resolutions (1) and (2) above are superseded** — both assumed the two accounts were making the same kind of claim. **(3) was closest and is now stated precisely as (4).** Still the author's call, but the evidence now points one way, and **two concrete defects are identified independently of the choice: `Paper_055` row 4's empty provenance, and `Paper_053` §3.2's crossed B/C constituents.**
+
+---
+
+# ADDENDUM 2 — the estimate was attempted and CANNOT be run, which answers more than it would have
+
+**The plan was the cheap one: work out which of the three budgets is smallest for a 175 kDa molecule, and let that decide whether any of the surgery above is needed.** It cannot be done, and the reason is the most useful thing in this note.
+
+## F. None of the three constituents has ever been quantified
+
+Searched every paper in the arc for a definition of `N_bw`, `N_V5` or `N_commit`. **There is no formula for any of them anywhere.** `Paper_053` §3.1 introduces all three in a single sentence of prose:
+
+> *“`N_bw` is the bandwidth-limited count (P04), `N_V5` the V5-cross-chain-correlation-limited count (Paper_090), and `N_commit` the commitment-threshold-limited count (P11).”*
+
+and that is the whole of it. Downstream papers use the symbols **structurally** — which technique raises which budget, which class a platform falls into — and **never numerically**. `Paper_059` is typical: error correction *“increases the `N_V5` budget”*, reservoir engineering pushes *“`N_commit` upward”*. Directions, not values.
+
+> **Only one of the three has a number attached anywhere: `N_commit`, through `Paper_054` §5.1's `M_cap = (Γ_indiv⁻¹/Γ₀)^{1/γ}`.**
+
+**So the comparison the estimate needs cannot be set up. You cannot ask which of three budgets is smallest when two of them have never been given a value, or even a form.**
+
+## G. And that explains the collision better than the collision explains itself
+
+**`Paper_056` did not choose the commitment budget over the other two. It used the only one that had ever been quantified.**
+
+That reframes §§A–D above. The wall's 175–250 kDa figure does not rest on a judgement that commitment binds for matter-wave platforms. **It rests on commitment being the only constituent with a formula**, and nobody noticing that this is a different thing from it being the binding one. *The collision was not a disagreement between papers. It was two papers filling a gap in opposite directions and neither of them seeing the gap.*
+
+**This is also why nothing downstream caught it.** A check can compare two numbers. It cannot notice that two of three quantities were never defined, because there is nothing to compare them against.
+
+## H. ⚠ A correction to Addendum 1 §B, which was too confident
+
+Addendum 1 said `Paper_056` §6's B/C mapping *“is the one that matches the class names both papers share”*, reading redundancy as commitment-suppression and rigidity as cross-bandwidth. **`Paper_059` gives a coherent account on the other side, and I had not read it when I wrote that:**
+
+> *“EC encodes logical qubits across multiple physical qubits with redundancy. At substrate level, this increases the `N_V5` budget by spreading correlations across more physical chains — Class C (`N_V5`-bound) is favored.”*
+
+**Redundancy spreading correlations across chains is a cross-chain-correlation story, which is `N_V5`, which is `Paper_053`'s Class C.** That reading is at least as natural as mine and possibly more so. **The split is 3 papers to 1** — `053`, `055` and `059` on one mapping, `056` §6 alone on the other. **My claim that the names track `Paper_056`'s physics is withdrawn**; the names are compatible with both readings, and the weight of the arc is against the one I favoured.
+
+*Resolution (4) is not withdrawn — its core is the two-trichotomies diagnosis (§C), which stands independently. What is withdrawn is the supporting argument that `056`'s lever mapping is the physically correct one.*
+
+## I. What this means for the wall, plainly
+
+- **The 175–250 kDa number rests on one budget out of three, chosen because it was the only one with a formula, with no check that it is the binding one — and no way to check until the other two are defined.**
+- **The three-paper rewrite is premature.** There is nothing to rewrite *toward* while two constituents are undefined. Resolution (4) would have `Paper_056` use `min{·}`, and `min{·}` is not currently computable.
+- **The sign question and the `Γ_commit` form question are both downstream of the same gap** and stay parked.
+- **Untouched, and now clearly the arc's best asset: architecture-independence.** It is a claim that *one* cap governs several platform types. **It does not require knowing which constituent binds, or its value.** Of everything in this arc it is the only part that survives §F intact.
+
+## J. The one thing that would unblock all of it
+
+**Give `N_bw` a definition.** It is the constituent `Paper_053`/`055` assign to Class A, it is the one a matter-wave wall would actually need, and P04 is the most concrete of the three primitives involved (bandwidth is non-negative and additive, which is a strong starting constraint). **With `N_bw` defined, the estimate becomes possible, `min{·}` becomes computable, and the choice between resolutions stops being a judgement call and becomes arithmetic.**
+
+*Until then this arc's number is not defensible and its structure is not decidable, while its architecture-independence claim remains clean. That is the honest state.*
