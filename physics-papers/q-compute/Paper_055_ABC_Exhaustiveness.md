@@ -54,6 +54,8 @@ The Q-COMPUTE architectural three-class classification (A engineered-low-multipl
 | 6 | Class C ↔ $N_{\mathrm{V5}}$ saturates | I | Paper_058. |
 | 7 | Three classes = three constituent saturation patterns | D | Composition. |
 | 8 | Exhaustiveness: any architecture lies in $\{A, B, C\}$ | D | Application of P-Always-Binding. |
+
+> **⚠ FLAG 2026-09-07 — this row's provenance is empty.** Row 4 tiers *“Class A ↔ `N_bw` saturates”* as **`I`, inherited from `Paper_056`** — and **`Paper_056` does not contain that claim.** Its only bandwidth mention is P04's primitive statement; **`N_bw` is never defined or used there**, and the cap it computes is the commitment-rate one. **Root cause: this paper and `Paper_056` sort the classes by two DIFFERENT trichotomies** — `M_cap`'s three *constituents* (all limits on a count) versus UR-1's three *conditions* (one count condition and two rate conditions) — and since `M_cap = min{N_bw, N_V5, N_commit}`, **UR-1.1 already contains all three constituents**, so the two partitions cannot be put in correspondence. **Rows 5 and 6 are additionally CROSSED against `Paper_056` §6's own lever mapping** (which makes Class B cross-bandwidth/V5 and Class C commitment/redundancy — matching the class names both papers share). See `q-compute/Note_Mcap_TwoDefinitions_2026-09-07.md` §§A–D. **Not resolved here.**
 | 9 | Meta-architectures = compositions, not new classes | I | Paper_059. |
 
 ---

@@ -77,6 +77,28 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (5) — `Paper_055` read: the collision is a CATEGORY ERROR, not a disagreement, and row 4's provenance is empty
+
+**AP: settle it, and start by reading `Paper_055` rather than deciding. That was the right instruction and it changed the answer** — two of the three resolutions in entry (4) are superseded by a fourth, and the root cause turns out to be structural rather than a dispute between papers.
+
+**(A) `Paper_055` confirms the `Paper_053` reading — and breaks its own provenance doing it.** Its claims table row 4 reads **“Class A ↔ `N_bw` saturates | `I` | `Paper_056`”**. **`Paper_056` does not contain that claim.** Its only bandwidth mention is P04's primitive statement (`b_K ≥ 0`, additive); **`N_bw` is never defined or used there**, and the cap it computes is the commitment-rate one. **So an `I` tier cites a source with nothing at the end of it** — which is exactly why reading either paper alone could never surface this.
+
+**(B) A SECOND collision, independent of the first: B and C carry opposite constituents.** `Paper_056` §6 maps the classes to engineering levers — **B = cross-bandwidth protection via geometric/topological rigidity (UR-1.2, V5); C = commitment-injection control via redundancy/error-correction (UR-1.3, P11).** `Paper_053`/`055` map **B → `N_commit`, C → `N_V5`.** **Crossed.** *And `Paper_056`'s version is the one that matches the class NAMES both papers share*: Class B is “global-geometric-rigidity” in both, and rigidity maintaining cross-chain correlation is a **V5** story; Class C is “high-multiplicity-redundancy” in both, and redundancy suppressing commitment injection is a **P11** story. **The names track `Paper_056`'s physics; `053` §3.2's constituent labels are crossed against them.**
+
+**(C) THE ROOT CAUSE, and it dissolves the disagreement rather than settling it. The arc carries TWO DIFFERENT TRICHOTOMIES under one name.** `Paper_053` sorts classes by **which of `M_cap`'s three constituents binds** — `N_bw`, `N_V5`, `N_commit`, **all three limits on a COUNT**. `Paper_056` sorts classes by **which of UR-1's three conditions fails** — UR-1.1 (`M_eff < M_cap`), UR-1.2 (`Γ_cross`), UR-1.3 (`Γ_commit`) — **one count condition and two RATE conditions.**
+
+> **Since `M_cap = min{N_bw, N_V5, N_commit}`, UR-1.1 ALREADY CONTAINS all three constituents.** The two partitions cannot be put in correspondence, and **that is why row 4's provenance is empty**: `Paper_055` needed a *constituent* for Class A and reached for `Paper_056`, which sorts by *conditions* and has no constituent to give.
+
+**(D) Resolution (4), proposed and better supported than the three in entry (4).** Keep `053`'s `min` (the simultaneity argument is sound); keep `056`'s A/B/C ↔ UR-1.1/1.2/1.3 lever mapping (it matches the names and the physics); **withdraw `053` §3.2's “which constituent saturates” class definition and `055` row 4's citation**; and **repair `Paper_056` §3 — Class A fails UR-1.1, so its wall is set by `M_cap` ITSELF, the `min`, not by the commitment-rate constituent alone.**
+
+> **✅ And this rehabilitates the last two sessions rather than voiding them.** Entry (4) worried the `Γ_commit` work was aimed at the wrong class. **It was not** — Class A fails UR-1.1, and `Γ_commit` enters `M_cap` through `N_commit`. **But it is one constituent of three, and `Paper_056` assumed it is the binding one without checking.** *The standing question is therefore no longer “which class was that work for” but **“is `N_commit` actually the smallest of the three for a 175 kDa molecule?”** — well-posed, answerable, and never asked.*
+
+**(E) And the sign question inherits the same fate.** It matters only if `N_commit` binds. **Which constituent binds first is now the gate on both.**
+
+**Flags placed in `053`, `054`, `055` and `056`; the note carries the full argument** (`Note_Mcap_TwoDefinitions_2026-09-07.md` §§A–E). **No construction changed — two concrete defects are identified independently of the author's choice: `055` row 4's empty provenance and `053` §3.2's crossed B/C constituents.**
+
+**Four q-compute entries today. The arc lost a headline number, gained and then narrowed a sharpness mechanism, and has now had its class taxonomy shown to be two taxonomies.** *Every one of those is a reduction in claim and an improvement in the accounting, and the last one was found only because AP said read before deciding.*
+
 ## 2026-09-07 (4) — `M_cap` carries TWO definitions, and the Class-A wall is built from the wrong constituent
 
 **AP: do the sign question.** It is not what this turned out to be. **Chasing the sign led to a collision between three papers that the arc had never flagged, and it lands on this session's own two previous entries.** `q-compute/Note_Mcap_TwoDefinitions_2026-09-07.md`.
