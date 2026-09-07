@@ -86,6 +86,19 @@ STALE = [
     (PAPER, r"α = 1\.18 ± 0\.04 \(stat\)\*\*\. MOND",
      "abstract quoting the old conversion as the result", "#155"),
     (REPORT, r"currency pass 2026-09-06", "currency date behind the content", "#155"),
+
+    # --- added 2026-09-07 after the checker missed the Report's Bottom Line ----
+    # Second time this blind spot fired: a per-file pattern list inherits the
+    # blind spot of whoever wrote it. The paper got number-matching after the
+    # abstract miss; the Report did not, and a reviewer found the same defect in
+    # §16. Match the NUMBERS here too.
+    (REPORT, r"1\u20132\u03c3 under systematics",
+     "Bottom Line quoting the superseded softening", "#161"),
+    (REPORT, r"nominal ~4\u03c3", "superseded nominal tension figure", "#161"),
+    (REPORT, r"killing the MOND picture",
+     "claims more than excluding constant-a0 MOND", "#161"),
+    (REPORT, r"the \*\*evolution\*\* is the claim here and it is derived",
+     "tier out of sync with the workbook's Derived -> Grounded", "#161"),
 ]
 
 # --------------------------------------------------------------------------- B
@@ -106,6 +119,12 @@ APPLIED = [
     (PAPER, "a0z_baryonic_systematics_check.py", "the coherence check is cited", "#155"),
     (PAPER, "UNTESTED", "the honest status is stated", "#155"),
     (REPORT, "Rusishvili", "the Report carries the systematics challenge", "#155"),
+    (REPORT, "form-forced conditional on the live-horizon reading",
+     "a0(z) tier synchronised with the workbook", "#161"),
+    (REPORT, "2.3\u03c3 on a computed conversion budget",
+     "Bottom Line carries the computed figure", "#161"),
+    (REPORT, "the comparison with the Standard Model's own parameter inheritance is made once",
+     "SM comparison argued once, referenced elsewhere", "#161"),
 ]
 
 # --------------------------------------------------------------------------- C
@@ -138,19 +157,25 @@ def rule(c="-", n=76):
 # superseded. Those are audit trail, not staleness. A match is exempt when one of
 # these markers appears shortly before it.
 CORRECTION_MARKERS = (
-    r"earlier draft", r"an earlier", r"previously", r"was wrong", r"asserted",
+    r"earlier", r"supersed", r"in place of", r"previously", r"was wrong", r"asserted",
     r"superseded", r"corrected", r"replaced", r"no longer", r"used to", r"stale",
-    r"special pleading", r"not the survey", r"was the paper's soft joint",
+    r"special pleading", r"now quantified", r"which was asserted", r"not the survey", r"was the paper's soft joint",
 )
 CONTEXT = 220
 
 
 def _live_hits(pat, text):
-    """Matches that are NOT inside a sentence announcing a correction."""
+    """Matches that are NOT inside a sentence announcing a correction.
+
+    The window looks BOTH WAYS. A correction is written either before the figure
+    ("an earlier draft said X") or after it ("X -- and now quantified: Y"), and an
+    exemption that only looks backwards misses the second form. That cost a false
+    positive on the Report's own corrected flagship paragraph.
+    """
     live = []
     for m in re.finditer(pat, text):
-        before = text[max(0, m.start() - CONTEXT):m.start()].lower()
-        if any(re.search(k, before) for k in CORRECTION_MARKERS):
+        window = text[max(0, m.start() - CONTEXT):m.end() + CONTEXT].lower()
+        if any(re.search(k, window) for k in CORRECTION_MARKERS):
             continue
         live.append(m)
     return live
