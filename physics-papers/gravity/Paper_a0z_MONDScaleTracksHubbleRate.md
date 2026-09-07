@@ -28,7 +28,7 @@ Event Density, a substrate framework, makes this reading structural and register
 
 The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2). *(The predicted local normalisation also lands within ~8%, but it rests on a coefficient nothing upstream fixes and is **not** offered as evidence; see §3.2 and §5.2.)* **The survey publishes a *linear* fit, not a power law** (§5.1). Converting it and propagating the terms the published bar omits — the intercept, the cosmology, and the reduction choice — gives **`α = 1.15 ± 0.07`, putting the prediction's `α = 1` at 2.3σ** (§5.3). The survey team's own analysis independently describes the evolution as *faster than* `H(z)`, so the direction of the tension is theirs even though the number is ours.
 
-> **A caveat that is larger than the tension and is stated here rather than in a footnote.** A 2026 re-analysis of the survey's own public catalogue (§5.3a) reports three baryonic-mass-budget systematics, each claimed sufficient to produce the trend. **Their effect sizes are quantitatively coherent with published numbers** (checked in `event-density/theory/a0z_baryonic_systematics_check.py`), and they bear on the **~30σ detection itself, not merely the rate.** If they hold, the honest status of this prediction is neither confirmed nor refuted but **untested**, and the 2.3σ above falls with the detection it is measured against.
+> **A caveat that is larger than the tension, stated here rather than in a footnote — and one that needs nobody's cooperation to settle (§5.3c).** A 2026 re-analysis of the survey's own public catalogue (§5.3a) reports three baryonic-mass-budget systematics, each claimed sufficient to produce the trend. **Their effect sizes are quantitatively coherent with published numbers** (checked in `event-density/theory/a0z_baryonic_systematics_check.py`), and they bear on the **~30σ detection itself, not merely the rate.** **The survey's own text confirms the first of the three:** its baryonic model carries stellar disk, atomic gas and bulge, **no molecular gas**, and the authors put **~0.2 dex** on that omission against a **0.334 dex** trend (§5.3c). **If it holds, the honest status of this prediction is neither confirmed nor refuted but UNTESTED**, and the 2.3σ above falls with the detection it is measured against. **The catalogue is public, so this is decidable rather than merely arguable.**
 
 **The honest verdict is split: the qualitative call is confirmed and MOND's constant scale is excluded; the specific rate is mildly disfavoured.** We state the decisive test — a direct raw-data fit of `α` across surveys with a full error budget — and the condition under which the prediction should be abandoned.
 
@@ -275,7 +275,19 @@ Its conclusion: **`a₁` should not presently be used to constrain modified-grav
 - **The 2.3σ falls with it.** A tension computed against an unreliable detection is itself unreliable. **The confirmation and the tension go together; neither can be banked separately.**
 - **The resulting state is not “refuted” and not “vindicated.” It is UNTESTED** — the one survey that appeared to test this prediction may not have. That returns it to open, awaiting Rubin/Euclid.
 
-**And the remedy is the one already named.** Settling this needs Ciocan et al.'s per-bin catalogue — **the same data the exponent test needs.** One request answers both.
+### 5.3c Claim 1 is confirmed at the source, and the catalogue is public
+
+**The first systematic does not need to be inferred from coherence. The survey states it.** Their baryonic acceleration is built as
+
+$$a_\mathrm{bar}(r) = \frac{v_\mathrm{disk}(r)^2}{r} + \frac{v_\mathrm{HI}(r)^2}{r} \left(+\, \frac{v_\mathrm{bulge}(r)^2}{r}\right)$$
+
+— **stellar disk, atomic gas, bulge. There is no molecular term.** And the authors name the consequence themselves: *“given typical molecular gas fractions of ∼30–50% at `z∼1`, this would introduce a systematic uncertainty of ∼0.2 dex in the total disk mass.”*
+
+> **0.2 dex is their own figure, and the trend across their fitted range is 0.334 dex.** The survey therefore acknowledges a systematic **60% the size of its own signal**, in the one component whose fraction is known to grow with redshift. **What the re-analysis adds is not the existence of the systematic — that is conceded — but the claim that it is *differential* in `z` and therefore mimics the trend rather than merely offsetting it.**
+
+**And the data is public.** *“All catalogues and data products from our disk–halo decomposition, including the RCs, can be found on the DARK website”* (`dark.univ-lyon1.fr/data-releases/`; the MUSE UDF sample of 126 galaxies covers this paper). **So the decisive test named in §6 is executable rather than requestable.** Nothing here waits on anyone's cooperation: the rotation curves, the disk–halo decompositions and the baryonic components are downloadable, and both open questions — the direct `a₀ ∝ H(z)^α` fit and the molecular-gas correction — can be settled from them.
+
+> **This paper does not claim to have run that test.** It states that the test is available, that the prediction's status is **untested** until someone runs it, and that **running it is the only thing that would change the verdict in either direction.**
 
 ### 5.4 The verdict, stated plainly
 

@@ -1,3 +1,17 @@
+> # ⛔ WITHDRAWN 2026-09-07 — DO NOT SEND. The data is already public.
+>
+> **AP asked whether this email was worth sending at all** (*“very few people will reply, none reply twice. i doubt any will send data”*). Checking before answering settled it, and he was right to push back — though not for the reason he gave.
+>
+> **The catalogue is public.** MUSE-DARK III: *“All catalogues and data products from our disk–halo decomposition, including the RCs, can be found on the DARK website”* — **`https://dark.univ-lyon1.fr/data-releases/`**, MUSE UDF sample, 126 star-forming galaxies. **There was never anything to ask for.**
+>
+> **And the one question this draft would have added — whether molecular gas is in the baryonic budget — is answered in the paper's own text.** Their model is `a_bar = v_disk²/r + v_HI²/r (+ v_bulge²/r)`: **stellar disk, atomic gas, bulge, no H₂.** The authors state the consequence themselves: *“given typical molecular gas fractions of ∼30–50% at `z∼1`, this would introduce a systematic uncertainty of ∼0.2 dex in the total disk mass.”*
+>
+> **The lesson is cheaper than the email would have been: check whether the data is public before drafting a request for it.** Rusishvili's paper said it re-analysed *“Ciocan et al.'s own public catalogue”* — the word **public** was in the description I had, and I drafted a request anyway.
+>
+> **Kept, not deleted**, because the framing reasoning in it is sound and reusable, and because a withdrawn draft is part of the record.
+
+---
+
 # Draft email — MUSE-DARK III per-bin data request
 
 **Status:** DRAFT, not sent. **2026-09-07.**
