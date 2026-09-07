@@ -40,9 +40,15 @@ Event Density pries the two apart, because in ED they have two different answers
 
 ## §2 — The two culprits, and the one mechanism
 
-ED reads gravity, at the level of its substrate, as **quadratic in a participation amplitude** $P = \sqrt{b}\,e^{i\pi}$, where $b$ is the local event density and $\pi$ a phase. The gravitational strain $\mathrm{Str} = |\sum_a P^{(a)}|^2$ then splits into a diagonal term (each source's self-potential, which is Newton) and an off-diagonal interference term between distinct sources (`Paper_QuadraticStrain_v1`, sharpening `Paper_030`). Both culprits are that same off-diagonal cross-term; they differ only in *who is interfering with whom*.
+ED reads gravity, at the level of its substrate, as **quadratic in a participation amplitude** $P = \sqrt{b}\,e^{i\pi}$, where $b$ is the local event density and $\pi$ a phase. The quadratic participation form $\big|\sum_a P^{(a)}\big|^2$ then splits into a **diagonal** term (each source's self-potential, which is Newton) and an **off-diagonal** interference term between distinct sources (`Paper_QuadraticStrain_v1`, sharpening `Paper_030`). Both culprits are that same off-diagonal cross-term; they differ only in *who is interfering with whom*.
 
-> **⚠ FLAG 2026-09-07 — this is the PRE-SETTLEMENT form of `Str`, and the settlement did not reach this paper.** The 2026-09-05 three-way sign check (foundations #10) assigned **`Str` the DIAGONAL only, `Str_K = Σ_a b_K^{(a)}`**, and `Coh` the off-diagonal, `Coh_K = 2Σ_{a<b}√(b_K^{(a)}b_K^{(b)})cos Θ_ab`. **Reading `Str` as the full squared modulus `|Σ_a P^{(a)}|²` is the option that check RULED OUT** — it deletes the interference cross-term the gravity arc runs on. **Found 2026-09-07 by `internal notes/_check_cross_document_collisions.py` on its first real run.** *Not rewritten here: whether this paper's argument survives the corrected assignment unchanged is a question about its content, not a find-and-replace.*
+> **Notation aligned 2026-09-07 with the settled `Coh`/`Str` assignment.** The two terms named above are, in the canonical notation fixed by the three-way sign check (foundations #10, 2026-09-05):
+>
+> $$\mathrm{Str}_K = \sum_a b_K^{(a)} \ \ \text{(diagonal, Newton)}, \qquad \mathrm{Coh}_K = 2\!\!\sum_{a<b}\!\sqrt{b_K^{(a)} b_K^{(b)}}\,\cos\Theta_{ab} \ \ \text{(off-diagonal, MOND)},$$
+>
+> so that $\big|\sum_a P^{(a)}\big|^2 = \mathrm{Str}_K + \mathrm{Coh}_K$. **This paper previously called the whole quadratic form `Str`, which collided with that assignment.** *(Found by `internal notes/_check_cross_document_collisions.py` on its first real run.)*
+>
+> **The correction is to the NAME, not to the physics, and an earlier version of this flag said otherwise.** It claimed the old wording *“deletes the interference cross-term the gravity arc runs on”*. **It does not** — the sentence above splits the form and runs the entire argument on the off-diagonal term, which is exactly what the settlement assigns to `Coh`. **Deleting the cross-term is what the ruled-out reading would have done; this was never that reading.** The flag was written from the formula without reading the sentence around it, and is corrected here.
 
 **The horizon (galaxies, no particle).** When a local mass interferes with the cosmic decoupling surface at $R_H = c/H_0$, the cross-term's modulus is the geometric mean $\sqrt{a_N\,a_0}$, with the scale
 $$a_0 = \frac{c H_0}{2\pi}$$
