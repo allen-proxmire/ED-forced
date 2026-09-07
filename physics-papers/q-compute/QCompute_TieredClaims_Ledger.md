@@ -77,6 +77,26 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (14) — `N_bw` HAS NO CONSUMER, and the P14 question relocates rather than dissolves
+
+**The consumer check that closes the evening's P14 thread.** Run in a read-only session, **re-run and verified here**. `Note_Nbw_HasNoConsumer_2026-09-07.md`.
+
+**The check.** Every mention of `N_bw` in `physics-papers/` is now **either one of today's own flags or a passing quotation of the `min` structure.** **`Paper_056` — the paper whose wall Class A is supposed to bind — never uses it.** `Paper_055` uses it only for the taxonomy row **whose provenance was already found empty** (entry 2026-09-07 (5): it cites `Paper_056` for a claim `Paper_056` does not make).
+
+> **`N_bw` has no numerical consumer and no derivational consumer anywhere. Its entire live role is one label in a taxonomy already known to be broken.** *The definitional gap under it is real, and nothing depends on it — a one-line note, not a constitutional decision.*
+
+**✅ And the sharpening that INVERTS the conclusion.** An earlier framing had the singularity family needing an **upper** bound while `N_bw` needs a **lower** one, so P14 would bundle two commitments. **True, but they are not disjoint: `N_bw = B_max/b_min` needs BOTH, and the singularity family's per-cell capacity IS `N_bw`'s upper half.** So: **the upper bound is already named `P-Locus-Bandwidth-Bound`; only the floor is named nowhere.** *Cheaper than two commitments — but that is not the interesting part.*
+
+**Apply the profile test to each.** *Does it earn its keep across arcs the way the thirteen do?* **The floor: one arc, one object, ZERO consumers.** **The capacity: declared across four folders** — `foundations`, `gravity`, `q-compute`, `soft-matter` (measured here; a parallel count including `substrate-evaluation` and `black-hole` gives five) — **and reaching in-process experimental protocols under `predictions/`. By Target #20's own ladder that is the `≥4`-paper cross-cutting class, the tier the doc calls the framework's standing commitments.**
+
+> **The bandwidth bound with a primitive's profile is the CAPACITY, not the floor. The whole evening's P14 conversation was aimed at the wrong bound.**
+
+**And in its honest form it is not a constitutional question at all.** The capacity's open piece is **`Target #15`'s already-open residual** — derive `Γ₀(ρ) → 0 as ρ → ρ_max` **from P01–P13** — **a derivation target the corpus already carries, has already banked one negative against, and already calls *“a real open problem, not a quick win.”*** *So the P14 question does not merely dissolve; it RELOCATES, and it has been open since July under a different name.*
+
+**✅ This also resolves the tension between AP's two instincts.** *Something foundational is missing* versus *P11 is nearly the only primitive, everything reduces downward.* **If the missing thing is the capacity, there is no conflict: a DERIVED per-cell capacity is P11 and P04 doing more work, not a new primitive doing some** — which is the direction the substrate has always been read.
+
+**Nothing here argues ED cannot need a fourteenth primitive.** *It argues the case on the table was built on the wrong bound, and that the bound that matters has an open **derivation** rather than an open **commitment**.*
+
 ## 2026-09-07 (13) — `P-Multiplicity-Extensive` SPLIT, hours after naming: the “so” was hiding a second claim
 
 **Caught mid-edit by the read-only session, and it is right.** Entry (12)'s wording — *“aggregates extensively across them, **so** `M_eff ∝ m` at fixed internal arrangement”* — **bundled two claims under one name, which is the exact failure this week has been about.**
