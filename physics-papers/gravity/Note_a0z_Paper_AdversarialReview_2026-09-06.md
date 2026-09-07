@@ -13,6 +13,8 @@
 
 ## 1. FATAL-IF-UNADDRESSED — "MOND excluded at 29σ" is not a claim about MOND
 
+> **✅ ADDRESSED 2026-09-07.** §1.2 is now a **four-way** table with *MOND-with-an-evolving-`a₀`* as its own row, and states plainly that **against that rival the discriminating content is the specific value `α = 1`** — the part under tension. It also concedes in the paper's own voice that position 3 **fits better right now and will keep fitting whatever is measured**, and that the only distinction is that **position 4 made a commitment that could fail.** The abstract and §5.2 were pulled into line: neither now claims MOND-as-such is excluded. **The paper is weaker and no longer contradicts itself.**
+
 **The paper's central rhetorical move is that `α = 0` dying kills MOND and leaves ED standing. It does not.**
 
 The draft's own §1.1 concedes that the `a₀ ≈ cH₀` connection is **standard MOND material**, citing Milgrom 2020 — *which is a review of it*. The corpus itself corrected a "no MOND analogue" claim as **false** on 2026-09-05 for exactly this reason. So:

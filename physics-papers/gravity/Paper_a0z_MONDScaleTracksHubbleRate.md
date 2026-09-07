@@ -26,7 +26,7 @@ The MOND acceleration scale `a₀ ≈ 1.2×10⁻¹⁰ m s⁻²` is, in MOND, a c
 
 Event Density, a substrate framework, makes this reading structural and registers `a₀(z) = cH(z)/(2π)` with the exponent fixed at **exactly one**. The exponent is the testable content: it cannot be tuned within the framework without abandoning the mechanism that produces it.
 
-The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a constant `a₀` — and therefore excluding MOND's own reading of its own scale — while matching the local value to ~8%. Fitting a power `a₀ ∝ H(z)^α` gives **α = 1.18 ± 0.04 (stat)**. MOND's `α = 0` is dead at 29σ. The prediction's `α = 1` sits at **+4.4σ formally**, softened to roughly **1–2σ** once one-survey and high-redshift systematics are folded in — and the survey team's own analysis independently describes the evolution as *faster than* `H(z)`.
+The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2) — while matching the local value to ~8%. Fitting a power `a₀ ∝ H(z)^α` gives **α = 1.18 ± 0.04 (stat)**. MOND's `α = 0` is dead at 29σ. The prediction's `α = 1` sits at **+4.4σ formally**, softened to roughly **1–2σ** once one-survey and high-redshift systematics are folded in — and the survey team's own analysis independently describes the evolution as *faster than* `H(z)`.
 
 **The honest verdict is split: the qualitative call is confirmed and MOND's constant scale is excluded; the specific rate is mildly disfavoured.** We state the decisive test — a direct raw-data fit of `α` across surveys with a full error budget — and the condition under which the prediction should be abandoned.
 
@@ -40,15 +40,24 @@ MOND fits galaxy rotation curves with a single acceleration scale `a₀`. Empiri
 
 What the coincidence has never had is a *consequence*. Read as an accident, it predicts nothing. Read as structural — `a₀` is set by the cosmic horizon — it predicts something sharp and immediate: **`a₀` is not a constant of nature, and it should have been evolving all along.**
 
-### 1.2 Why this is the cleanest place to separate three accounts
+### 1.2 Four accounts, not two — and the fourth is the real rival
 
-| account | what it says about `a₀` |
-|---|---|
-| **ΛCDM** | there is no `a₀`; the appearance of one is a coincidence of galaxy assembly |
-| **MOND** | `a₀` is a **constant of nature**, on a par with `c` or `G` |
-| **this prediction** | `a₀` is **not fundamental**; it tracks `H(z)` |
+It is tempting to set this up as a two-horse race against MOND. **That would be wrong, and §1.1 has already said why:** the `a₀`–cosmology connection is standard MOND material, so a MOND theorist who expects `a₀` to track the cosmic scale is **not refuted by evolution being found — they are vindicated by it.** The field contains at least four positions:
 
-These are not close together. A measurement of `a₀` at `z ≈ 1` separates them at high significance in a single stroke: constant, absent, or larger by ×1.8.
+| # | account | what it says about `a₀` | status after §5 |
+|---|---|---|---|
+| **1** | **ΛCDM** | there is no `a₀`; the appearance of one is a coincidence of galaxy assembly | untouched here — this paper does not test it |
+| **2** | **MOND, `a₀` constant** | `a₀` is a **constant of nature**, on a par with `c` or `G` | **excluded at 29σ** |
+| **3** | **MOND with an evolving `a₀`** | `a₀` tracks the cosmic scale; the **exponent is not predicted and is fitted to data** | **fits, by construction** |
+| **4** | **this prediction** | `a₀` tracks the live horizon with the exponent fixed at **exactly 1**, and no freedom to move it | **`α = 1` is 4.4σ from the fit; ~1–2σ on a realistic error budget** |
+
+**Position 2 is the one that dies at high significance, and it is not the only MOND.** Against **position 3** — the account that actually competes — this paper's discriminating content is **not that `a₀` evolves. It is the specific value `α = 1`.** And that is precisely the number currently under tension (§5.3).
+
+**So the honest statement of what is at stake.** Position 3 can absorb any exponent the data return, including the measured `1.18`; it therefore fits better than position 4 does right now, and will continue to fit whatever is measured next. **Position 4 cannot move.** The distinction between them is not which fits today — it is that **only one of them made a commitment that could fail.**
+
+> **That distinction is worth something only if the commitment survives.** An untunable exponent is a virtue when it is right and a refutation when it is wrong; it is never a defence. **This paper is therefore a test of position 4, not an argument for it**, and §6 states the condition under which it should be abandoned.
+
+**What a measurement at `z ≈ 1` settles:** it separates 2 from {3, 4} decisively — that has now happened — and it separates 3 from 4 only to the precision of `α`, which is where the remaining work is.
 
 ### 1.3 What this paper does
 
@@ -127,7 +136,7 @@ A prediction registered after the data is worth little. Three things are stated 
 
 ### 5.2 The half that confirms
 
-**`a₀` evolves.** The qualitative content of the prediction — that the MOND scale is not a constant of nature — is confirmed at high significance, and **MOND's own reading of its own scale is excluded at 29σ.** This is not a small result: it is a structural claim about a 40-year-old framework, made in advance, and the data agree with it.
+**`a₀` evolves.** The qualitative content of the prediction — that the MOND scale is not a constant of nature — is confirmed at high significance, and **the constant-`a₀` reading is excluded at 29σ.** That is a structural claim about a 40-year-old framework, made in advance, and the data agree with it. **But it does not separate this prediction from position 3 of §1.2**, which expects evolution too; the separation from that rival rests entirely on §5.3.
 
 The local normalisation also lands within ~8%, though §3.2 requires us to say that the `2π` producing that number is disputed, so the agreement is weaker evidence than it looks.
 
