@@ -1,5 +1,7 @@
 # ED-09.5 driven from the real canonical PDE — the envelope frequency is `f_v ≈ (Q/π)·γ_dec ≈ 1.1·γ_dec`, not `8·γ_dec`
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 **2026-07-10.** Crank-rail ON; this is a NEGATIVE about ED's own flagship prediction, held to the same bar as a positive (simulation + analytic cross-check + regime check). Script: [`scripts/ed_pde_envelope_drive.py`](scripts/ed_pde_envelope_drive.py).
 
 ## What was done

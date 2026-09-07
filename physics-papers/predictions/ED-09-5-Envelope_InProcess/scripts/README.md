@@ -23,7 +23,7 @@ peak in the [80,800] Hz band → test it against the pre-registered prediction
 - **F5** triad coupling ∈ [0.01,0.05] (crude bicoherence; data-hungry, honest-flagged).
 
 ## Validation result (2026-07-10) — the INSTRUMENT is sensitive and specific
-`python synthetic_envelope_validation.py` → all three checks PASS:
+`python synthetic_envelope_validation.py` → all three checks PASS: *(a shell command, not a path; the script is a working-repo artifact and is no longer in this repo)*
 - **Injection** (a faithful finite-Q resonator mode at 240 Hz, driven by noise, not a rigged tone): recovered `f_v=243.8 Hz` (pred 240), FAP≈6×10⁻²⁷, `Q_v=6.59`, `N_osc=8.43` → **F0/F2/F3 pass**, verdict LINEAR_PASS.
 - **Null** (recovery + noise, no mode): not significant (FAP=1.0) → **no false positive**.
 - **Off-frequency** (real mode at 600 Hz, prediction 240): peak found but **F0 correctly rejects it** (specificity).

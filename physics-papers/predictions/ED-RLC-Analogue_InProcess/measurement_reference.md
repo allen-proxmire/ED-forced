@@ -87,7 +87,7 @@ If what you see on the scope doesn't match the described fingerprint, check: (1)
 
 ## Deliverables after benchtop run
 
-Write `bench_result.md` in this folder with:
+Write `bench_result.md` in this folder with: *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 1. Actual L, C, DCR values measured with DE-5000 before each run.
 2. Scope screenshots of each run's ringdown (4 PNG files, `scope_run_{A,B,C,D}.png`).

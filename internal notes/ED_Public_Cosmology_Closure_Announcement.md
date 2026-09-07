@@ -5,7 +5,7 @@
 **Date:** 2026-05-17
 **Audience:** External readers, prospective collaborators, journalists, curious onlookers.
 **Reading time:** 8–10 minutes.
-**Companion documents:** `ED_WHITEPAPER.md` (full technical front-door); `ED_Public_Onboarding_LessTechnical.md` (longer non-technical introduction); `ED_Public_Onboarding_MoreTechnical.md` (mid-level technical introduction).
+**Companion documents:** `ED_WHITEPAPER.md` (full technical front-door); `ED_Public_Onboarding_LessTechnical.md` (longer non-technical introduction); `ED_Public_Onboarding_MoreTechnical.md` (mid-level technical introduction). *(deleted 2026-06-12, never replaced)*
 
 ---
 

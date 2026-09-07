@@ -11,7 +11,7 @@
 1. This paper does **not** claim a first-principles derivation of the numerical value $Q \approx 3.5$; the value is INHERITED via empirical / canonical-system matching.
 2. It does **not** claim that $Q \approx 3.5$ is universal across all soft-matter platforms; it is the **canon-internal** value for the substrate-defined NS-Q system.
 3. It does **not** introduce new substrate primitives.
-4. "$Q$-factor" = the substrate-level quality factor characterizing oscillatory dissipation in V1+V5-modulated NS dynamics; $Q \approx 3.5$ is the canon-internal value reported in `project_ns_program_arcs.md`.
+4. "$Q$-factor" = the substrate-level quality factor characterizing oscillatory dissipation in V1+V5-modulated NS dynamics; $Q \approx 3.5$ is the canon-internal value reported in `project_ns_program_arcs.md`. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 5. "Canonical" means: at the standard substrate operating point fixed by P04, P07, V5 saturation patterns.
 
 ---

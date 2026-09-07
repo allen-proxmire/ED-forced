@@ -163,7 +163,7 @@ Five-outcome decision tree (per protocol §10):
 
 ### §5.1 Front-radius extraction
 
-[Implementation: `analysis/scripts/udm_frap/frap_udm_pipeline.py` per protocol §9.4]
+[Implementation: `analysis/scripts/udm_frap/frap_udm_pipeline.py` per protocol §9.4] *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 1. **Frame registration.** Cross-correlation alignment against pre-bleach frame to correct stage drift.
 2. **Background subtraction.** Per-frame uniform background from off-bleach ROI.
@@ -276,7 +276,7 @@ Five-outcome decision tree (per protocol §10):
 
 The full operational protocol is reproduced from `predictions/FRAP-High-BSA_InProcess/protocol.md` (the exact text submitted to Creative Proteomics CIBR on 2026-04-17). Sections §4-§8 of the protocol = experimental protocol used in this paper §3. Sections §9-§12 of the protocol = analysis pipeline used in this paper §5. Section §13 of the protocol = identified V2 protocol refinements (to be addressed in any follow-on experimental round).
 
-Code repository for analysis pipeline: [TO BE FILLED: Zenodo DOI for analysis code release; or GitHub link for `analysis/scripts/udm_frap/frap_udm_pipeline.py`]
+Code repository for analysis pipeline: [TO BE FILLED: Zenodo DOI for analysis code release; or GitHub link for `analysis/scripts/udm_frap/frap_udm_pipeline.py`] *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 Raw data deposition: [TO BE FILLED: Zenodo DOI for TIFF-stack data deposition]
 

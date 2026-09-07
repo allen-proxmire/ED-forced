@@ -12,7 +12,7 @@
 2. It does **not** claim closed-proof reconstruction in the Hardy 2001 / CDP 2011 / Coecke-Kissinger operational-reconstruction sense. ED sits in the substrate-ontology lineage ('t Hooft cellular-automaton, Wolfram Ruliad, causal-set program), not the operational-reconstruction lineage.
 3. It does **not** override Paper_095's three-tier verdict grammar. Verdict for this paper is stated in §1.
 4. It does **NOT** claim a refutation-grade empirical prediction in the BTFR-slope-4 sense. The paper predicts existence-of-delay only; the substrate-anchored floor on $\tau_{V5}$ is OPEN.
-5. Pred_ classification is **PROVISIONAL** until a substrate-anchored $\tau_{V5}$ floor is supplied. Per memory `project_next_predictions.md`: "Merger-lag prediction (sketched; substrate-gravity-route may need reframe)" — this paper supplies a **kernel-cascade-route reframe**, not a closed quantitative prediction.
+5. Pred_ classification is **PROVISIONAL** until a substrate-anchored $\tau_{V5}$ floor is supplied. Per memory `project_next_predictions.md`: "Merger-lag prediction (sketched; substrate-gravity-route may need reframe)" — this paper supplies a **kernel-cascade-route reframe**, not a closed quantitative prediction. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 ---
 

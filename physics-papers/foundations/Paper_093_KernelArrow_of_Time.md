@@ -433,11 +433,11 @@ What this paper does *not* claim:
 
 ## 12. Rewrite Note
 
-This paper is the canonical Paper_093 (Theorem T18: Kernel-Level Arrow of Time). It exists at this path after a Round-3 filename-collision resolution: the substantive canonical content was originally saved under the wrong filename `Paper_008_KernelArrow.md`, which created a name collision with the canonical Paper_008 (Phase Structure from P09 + P10). A compact theorem-stub version (`Paper_093_T18_ArrowOfTime.md`) was written during the Round-1 wedges-batch review when the canonical T18 content was thought to be missing from the corpus.
+This paper is the canonical Paper_093 (Theorem T18: Kernel-Level Arrow of Time). It exists at this path after a Round-3 filename-collision resolution: the substantive canonical content was originally saved under the wrong filename `Paper_008_KernelArrow.md`, which created a name collision with the canonical Paper_008 (Phase Structure from P09 + P10). A compact theorem-stub version (`Paper_093_T18_ArrowOfTime.md`) was written during the Round-1 wedges-batch review when the canonical T18 content was thought to be missing from the corpus. *(both names refer to files removed at the Round-3 collision resolution; neither exists as a separate artifact)*
 
 **The Round-3 resolution (2026-05-14):**
 
-1. The 412-line substantive content (originally `Paper_008_KernelArrow.md`) has moved to its correct canonical filename `Paper_093_KernelArrow.md` — this file.
+1. The 412-line substantive content (originally `Paper_008_KernelArrow.md`) has moved to its correct canonical filename `Paper_093_KernelArrow.md` — this file. *(both names refer to files removed at the Round-3 collision resolution; neither exists as a separate artifact)*
 2. The compact theorem-stub version (`Paper_093_T18_ArrowOfTime.md`) is superseded by this fuller version and removed from the corpus.
 3. The substantive content's audit-table and postulate-declaration discipline (P-T18-Kernel-Retardation, P-T18-Arrow-Inheritance) was preserved from the compact version and grafted into §2.3 + §2.5 of this paper. The substantive argument structure (§3–§11) is unchanged from the 412-line version, including the §5.3 substrate-operational compositional-closure clarification and the §10.3 Wheeler–Feynman direct engagement.
 
@@ -445,7 +445,7 @@ This paper is the canonical Paper_093 (Theorem T18: Kernel-Level Arrow of Time).
 
 **Audit-discipline outcome.** All Round-2 Phase-B5 citation-audit verdicts on Paper_093 remain valid: the four load-bearing I-rows (I-018/089, I-073, I-090, I-039 + I-029 cross-domain) are preserved verbatim in §2.2. The §2.5 audit table corresponds row-by-row to the substantive sections of the longer paper. No registry rebuild is required; the Round-3-final registry state from 2026-05-13 already reflects this paper's existence under the correct slot (the registry was generated from the postulate registry's `Paper_093` entries, which point to the correct content regardless of filesystem location).
 
-This file supersedes both `Paper_008_KernelArrow.md` and `Paper_093_T18_ArrowOfTime.md`. The former existed under a wrong filename; the latter was a recovery placeholder for content thought missing. With the canonical content now at the correct path with the correct audit format, the corpus filesystem and the registry are aligned.
+This file supersedes both `Paper_008_KernelArrow.md` and `Paper_093_T18_ArrowOfTime.md`. The former existed under a wrong filename; the latter was a recovery placeholder for content thought missing. With the canonical content now at the correct path with the correct audit format, the corpus filesystem and the registry are aligned. *(both names refer to files removed at the Round-3 collision resolution; neither exists as a separate artifact)*
 
 ---
 

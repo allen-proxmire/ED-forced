@@ -119,7 +119,7 @@ The exhaustiveness mirrors the three-constituent structure of $\mathcal{M}_{\mat
 
 ### 3.6 The 5×3 verdict grid (canon-internal)
 
-Per `project_ed_sc_3_arc.md`, the ED-SC 3.3.x arc closure included a **5×3 verdict grid** classifying substrate-level saddle realizations into the S1 / S2 / S3 classes across five regime contexts. The grid's content:
+Per `project_ed_sc_3_arc.md`, the ED-SC 3.3.x arc closure included a **5×3 verdict grid** classifying substrate-level saddle realizations into the S1 / S2 / S3 classes across five regime contexts. The grid's content: *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 - 0 cells "Refuted" — all 15 cells are at minimum "Conditional-positive" or stronger.
 - Specific cell-by-cell verdicts are canon-internal-inherited.
 

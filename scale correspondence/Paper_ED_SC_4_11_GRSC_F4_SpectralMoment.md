@@ -27,7 +27,7 @@ This paper formalizes the GR-SC F4 sub-arc closure: substrate-level spectral-mom
 
 **Claim.** The substrate-level **spectral-moment classification** in the GR-SC framework identifies three classes for the spectral parameter $\kappa$:
 
-- **κ central:** Canonical-operating-point value $\kappa \approx 0.001766$ (per `project_ed_gr_sc_arc.md` F4 sub-arc closure).
+- **κ central:** Canonical-operating-point value $\kappa \approx 0.001766$ (per `project_ed_gr_sc_arc.md` F4 sub-arc closure). *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 - **Model band:** Band $\pm 10.78\%$ around κ central (model-uncertainty class).
 - **Per-real band:** Specific-realization band, narrower than model band (per memory: "model > per-real > ensemble > calibration" hierarchy).
 
@@ -38,7 +38,7 @@ This paper formalizes the GR-SC F4 sub-arc closure: substrate-level spectral-mom
 
 Specific numerical κ central + band widths are INHERITED via canon-internal F4 sub-arc closure.
 
-**Definition:** $\kappa$ is a substrate-level spectral-moment combination at the canonical operating point; the explicit functional form linking $\kappa$ to a specific integral of the substrate power-spectrum $P(k)$ is OPEN in the current draft (cited from `project_ed_gr_sc_arc.md` F4 sub-arc closure but not restated here as a self-contained integral).
+**Definition:** $\kappa$ is a substrate-level spectral-moment combination at the canonical operating point; the explicit functional form linking $\kappa$ to a specific integral of the substrate power-spectrum $P(k)$ is OPEN in the current draft (cited from `project_ed_gr_sc_arc.md` F4 sub-arc closure but not restated here as a self-contained integral). *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 Verdict: **M3**.
 
@@ -69,7 +69,7 @@ Verdict: **M3**.
 
 ### 3.1 What κ is
 
-In the GR-SC F4 sub-arc (per `project_ed_gr_sc_arc.md`), κ is a substrate-level spectral-moment parameter — specifically, a moment of the substrate participation power-spectrum at the canonical operating point. The F4 sub-arc closure (seventeenth pass, 2026-04-23) identified:
+In the GR-SC F4 sub-arc (per `project_ed_gr_sc_arc.md`), κ is a substrate-level spectral-moment parameter — specifically, a moment of the substrate participation power-spectrum at the canonical operating point. The F4 sub-arc closure (seventeenth pass, 2026-04-23) identified: *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 - κ central $\approx 0.001766$.
 - Model band $\pm 10.78\%$.
 - Hierarchy: model > per-real > ensemble > calibration.
@@ -150,7 +150,7 @@ Under SCBU + cross-scale invariance, κ central is anchored to the substrate-cos
 | 8 | Per-real band narrower than model band | I | Canon-internal hierarchy. |
 | 9 | "Model > per-real > ensemble > calibration" hierarchy | I | Canon-internal. |
 | 10 | Three-class spectral-moment / error-budget hierarchy | I | Statistical bookkeeping (standard model/per-real/ensemble/calibration decomposition); ED supplies $\xi_{canonical}$ + GRF inputs into this standard hierarchy. |
-| 10b | Functional definition of $\kappa$ self-contained statement | OPEN | Cited from `project_ed_gr_sc_arc.md` F4 sub-arc closure; explicit integral form not restated in current draft. |
+| 10b | Functional definition of $\kappa$ self-contained statement | OPEN | Cited from `project_ed_gr_sc_arc.md` F4 sub-arc closure; explicit integral form not restated in current draft. | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 | 11 | Connection to ED-SC 1.5 / 1.6 spectral arc | I | Memory hierarchy. |
 | 12 | SCBU framework placement | I | Paper_ED_SC_4.6. |
 | 13 | Verdict M3 | A→position | Per Paper_095. |

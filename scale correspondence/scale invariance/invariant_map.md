@@ -84,7 +84,7 @@ Each invariant script produces three standard figures:
 All invariant scripts require:
 - Completed regime volume runs in `output/runs/regime_D*_A*_Nm*/`
 - Each run must have `time_series.npz` with `modal_amplitudes` field
-- Each run must have `metadata.json` with `D`, `A`, `Nm` fields
+- Each run must have `metadata.json` with `D`, `A`, `Nm` fields *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 Families 6, 7, 9 additionally require `D_grad`, `D_pen`, `D_part`, `D_total`, `E_total` fields.
 

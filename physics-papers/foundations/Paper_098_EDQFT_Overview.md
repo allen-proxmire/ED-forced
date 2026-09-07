@@ -186,18 +186,18 @@ Original ED-QFT Unified Overview at `papers/ED_QFT_Overview/` is a Phase-1+2 sna
 
 | Arc | Verdict | Source memory |
 |---|---|---|
-| Phase-1 QM emergence | M2 (Intermediate Path C with declared paper-specific postulates: P-Motif-Algebra, P-Channel-Orthogonality, P-Gleason-Compatibility, P-Norm-Preservation, P-Commit-Projector-Match, P-QMkin-Composition, P-Bipartite-Mapping) | `project_qm_emergence_arc.md` |
-| Substrate gravity | Closed (T19/T20/ECR/T21/GR1) | `project_substrate_gravity_arc.md` |
-| Arc D (DCGT) | Closed | `project_arc_d_dcgt.md` |
-| Yang–Mills | Clay-relevance / structural-positive | `project_ym_arc.md` |
-| Arc SG extension | Closed | `project_arc_sg_extension.md` |
-| Arc ED-10 curvature emergence | Conditional-positive | `project_arc_ed10_curvature_emergence.md` |
-| NS program | Closed (NS-1 through NS-MHD) | `project_ns_program_arcs.md` |
-| Arc E entanglement | Closed (E-1...E-7) | `project_arc_e_entanglement.md` |
-| Arc BH | Closed | `project_arc_bh.md` |
-| Arc Hawking | Closed (regulated completion) | `project_arc_hawking.md` |
-| Arc Q-COMPUTE | Closed (UR-1) | `project_arc_qc.md` |
-| Wedges / Kernel arc (Papers 091–097) | Closed (kernel hierarchy + RG + cross-scale invariance) | `project_ed_sc_3_arc.md`, `project_ed_rg_three_regime.md` |
+| Phase-1 QM emergence | M2 (Intermediate Path C with declared paper-specific postulates: P-Motif-Algebra, P-Channel-Orthogonality, P-Gleason-Compatibility, P-Norm-Preservation, P-Commit-Projector-Match, P-QMkin-Composition, P-Bipartite-Mapping) | `project_qm_emergence_arc.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Substrate gravity | Closed (T19/T20/ECR/T21/GR1) | `project_substrate_gravity_arc.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc D (DCGT) | Closed | `project_arc_d_dcgt.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Yang–Mills | Clay-relevance / structural-positive | `project_ym_arc.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc SG extension | Closed | `project_arc_sg_extension.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc ED-10 curvature emergence | Conditional-positive | `project_arc_ed10_curvature_emergence.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| NS program | Closed (NS-1 through NS-MHD) | `project_ns_program_arcs.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc E entanglement | Closed (E-1...E-7) | `project_arc_e_entanglement.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc BH | Closed | `project_arc_bh.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc Hawking | Closed (regulated completion) | `project_arc_hawking.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Arc Q-COMPUTE | Closed (UR-1) | `project_arc_qc.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
+| Wedges / Kernel arc (Papers 091–097) | Closed (kernel hierarchy + RG + cross-scale invariance) | `project_ed_sc_3_arc.md`, `project_ed_rg_three_regime.md` | *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 22+ FORCED theorems plus the foundational substrate rule. **One substrate, multiple sectors, consistent methodology.**
 

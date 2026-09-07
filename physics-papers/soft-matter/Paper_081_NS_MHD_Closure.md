@@ -11,7 +11,7 @@
 1. This paper does **not** claim novel constructive results for MHD existence/smoothness; the result is at the Intermediate Path C verdict level.
 2. It does **not** claim that all standard MHD content is substrate-derived; the 6:2:3 classification (Paper_082) places several items as non-ED.
 3. It does **not** introduce new substrate primitives.
-4. "H1/H2/H3" refers to the three substrate-level closure hypotheses identified in the NS-MHD arc memos. Per `project_ns_program_arcs.md`, all three hold under substrate-consistency analysis.
+4. "H1/H2/H3" refers to the three substrate-level closure hypotheses identified in the NS-MHD arc memos. Per `project_ns_program_arcs.md`, all three hold under substrate-consistency analysis. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 ---
 

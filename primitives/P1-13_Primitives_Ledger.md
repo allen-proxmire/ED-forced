@@ -2,7 +2,7 @@
 
 **What this is.** The per-primitive listing of ED's **13 postulated axioms** (P01–P13), for the tiered-claims sweep. Unlike every other ledger, these are **not claims tiered against something deeper** — they *are* the bedrock: every "Derived" or "Grounded" result anywhere in the corpus is **conditional on P01–P13**, which are postulated, not derived. Tier for all thirteen: **`Primitive`** (the axiom set). Canonical enumeration = `foundations/Paper_087_13Primitives.md` = `position-paper/paper_ED_Framework_13_Primitive_Generative_System.md` §1; the per-primitive cards live in this folder (`P01_*.md` … `P13_*.md`); the load-bearing audit is `PRIMITIVE_LOAD_BEARING_AUDIT.md` (= `foundations/Paper_088`).
 
-*(Listed per AP's request 2026-07-29, alongside the constants. Also in the sortable master `ED_TieredClaims_Master.xlsx` under Folder = "Primitives", tier = "Primitive".)*
+*(Listed per AP's request 2026-07-29, alongside the constants. Also in the sortable master `ED_ItemizedTheory_TieredClaims_v2.xlsx` under Folder = "Primitives", tier = "Primitive".)*
 
 ---
 

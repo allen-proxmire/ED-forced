@@ -1,5 +1,7 @@
 # Triad-Coupling-C7 — Nonlinear Triad Coupling Experiment (In Process)
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 **Target axiom.** Canon P7 / C7 — `M′(ρ)|∇ρ|²` generates k=3 from k=1 with invariant triad ratio.
 
 **Origin.** Stage 4 of the Test-to-Axiom Mapping Project — identified C7 as the most load-bearing under-tested axiom in the current four-test ED empirical program.

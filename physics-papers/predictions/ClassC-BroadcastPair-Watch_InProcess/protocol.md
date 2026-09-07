@@ -70,7 +70,7 @@ Null-vs-ED test (Leg 1 only): did the floor survive mitigation? is it cross-plat
 Record verdict row + date; update decision table §5
 ```
 
-No new script is needed for the intake: the QD-paper certification-bound arithmetic (§3.2 worked example) is the Leg-2 converter, and the Leg-1 converter is a per-locus residual-error content estimate. A small helper (`classc_watch_convert.py`) can be written when the first post-mitigation floor lands; until then the conversions are done by hand per the worked example.
+No new script is needed for the intake: the QD-paper certification-bound arithmetic (§3.2 worked example) is the Leg-2 converter, and the Leg-1 converter is a per-locus residual-error content estimate. A small helper (`classc_watch_convert.py`) can be written when the first post-mitigation floor lands; until then the conversions are done by hand per the worked example. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ## 5. Decision table (pre-registered)
 
@@ -93,7 +93,7 @@ No new script is needed for the intake: the QD-paper certification-bound arithme
 ## 7. Cadence and logging
 
 - **Cadence:** event-driven, not scheduled. Trigger a §4 run whenever a relevant paper appears (major QEC / large-GHZ releases from Google Quantum AI, IBM, Quantinuum, and the surface/repetition-code literature). A light quarterly scan of the QEC arXiv listings is sufficient between major releases.
-- **Log:** append each data point + conversion + verdict row to `watch_log.md` in this folder (create on first entry), dated, with the source DOI/arXiv id and the converted content shown.
+- **Log:** append each data point + conversion + verdict row to `watch_log.md` in this folder (create on first entry), dated, with the source DOI/arXiv id and the converted content shown. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 - **Escalation:** an ED-positive or Null-wins row is a report-v2 event → write an addendum entry (event-density `REPORT_ADDENDA.md`) and, if positive, a results paper.
 
 ## 8. Why this runs with no cost or permission

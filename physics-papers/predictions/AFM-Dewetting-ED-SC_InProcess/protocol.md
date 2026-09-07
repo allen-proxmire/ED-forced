@@ -260,14 +260,14 @@ Per-sample subfolder under `data/ED-Data-ED-SC-AFM/<sample_label>/`:
 │   ├── frame_01.txt    # ASCII backup
 │   ├── frame_02.h5
 │   ├── ...
-│   └── metadata.json   # §6.2 schema
+│   └── metadata.json   # §6.2 schema *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 └── analysis/
     ├── per_frame.csv    # one row per frame: medians, IQRs, counts, L_coh, gate outcomes
-    ├── ensemble.json    # §5.5 ensemble statistics
+    ├── ensemble.json    # §5.5 ensemble statistics *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
     └── verdict.md       # §5.6 outcome + decision tree output
 ```
 
-### 6.2 Per-sample metadata schema (`metadata.json`)
+### 6.2 Per-sample metadata schema (`metadata.json`) *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ```json
 {
@@ -300,7 +300,7 @@ Per-sample subfolder under `data/ED-Data-ED-SC-AFM/<sample_label>/`:
 }
 ```
 
-### 6.3 Ensemble result deliverable (`ensemble.json`)
+### 6.3 Ensemble result deliverable (`ensemble.json`) *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ```json
 {

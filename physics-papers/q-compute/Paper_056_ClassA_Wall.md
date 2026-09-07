@@ -4,7 +4,7 @@
 **Author:** Allen Proxmire
 **Status:** Publication draft (revision: mass-range reframing, platform-scaling honesty, UR-1 mapping defense)
 **Date:** 2026-05-13
-**Repository target:** `domain-arcs/q-compute/multiplicity/Paper_056_ClassA_MultiplicityWall.md` (ED-Generative)
+**Repository target:** `domain-arcs/q-compute/multiplicity/Paper_056_ClassA_MultiplicityWall.md` (ED-Generative) *(intended repository path, recorded at drafting; the paper lives in this folder)* *(intended repository path recorded at drafting; the paper was moved here instead)*
 **Working save location:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\Paper_056_ClassA_Wall_FIXED.md`
 **Genre:** Conditional structural derivation within the 13-Primitive Generative System. Standalone. Cold-reader accessible.
 

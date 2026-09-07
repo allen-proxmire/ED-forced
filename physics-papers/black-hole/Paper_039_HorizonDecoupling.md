@@ -4,7 +4,7 @@
 **Author:** Allen Proxmire
 **Status:** Publication draft (revision: §3.2 circularity honesty; §6.3 clean derivation; §7.2 non-thermal corrections elevated)
 **Date:** 2026-05-13
-**Repository target:** `domain-arcs/black-hole/Paper_039_Horizon_Decoupling.md` (ED-Generative)
+**Repository target:** `domain-arcs/black-hole/Paper_039_Horizon_Decoupling.md` (ED-Generative) *(intended repository path, recorded at drafting; the paper lives in this folder)* *(intended repository path recorded at drafting; the paper was moved here instead)*
 **Working save location:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\Paper_039_HorizonDecoupling_FIXED.md`
 **Genre:** Conditional structural derivation within the 13-Primitive Generative System. Standalone. Cold-reader accessible.
 

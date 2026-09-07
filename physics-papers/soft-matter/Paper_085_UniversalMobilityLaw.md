@@ -11,7 +11,7 @@
 1. This paper does **not** claim derivation of numerical mobility-law coefficients from first principles; the empirical anchor provides matching, not derivation.
 2. It does **not** claim that the Universal Mobility Law is operationally universal across all material classes; it is **structurally** universal under the substrate-derived dissipation pattern.
 3. It does **not** introduce new substrate primitives.
-4. "Universal Mobility Law" = the empirical-matching anchor identified in the soft-matter arc (per `project_ed_framework.md`) connecting particle / molecular mobility to substrate-derived friction structure.
+4. "Universal Mobility Law" = the empirical-matching anchor identified in the soft-matter arc (per `project_ed_framework.md`) connecting particle / molecular mobility to substrate-derived friction structure. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 5. "Empirical anchor" = a published / measurable relation that serves as the substrate-level matching point for the soft-matter arc.
 
 ---

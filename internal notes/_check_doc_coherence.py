@@ -69,13 +69,21 @@ def main():
             sib |= set(index(s)[0].keys())
 
     md = [r for r in sorted(rels) if r.endswith(".md")]
-    dead, in_sibling, referenced = defaultdict(set), 0, set()
+    dead, in_sibling, referenced, declared = defaultdict(set), 0, set(), 0
+
+    # A file may declare ONCE, in its opening block, that the paths in its
+    # body are working-repo paths. Run-books are manifests; annotating every
+    # line inside one is worse than useless. Same concession the per-line
+    # PROVENANCE rule makes, at file scope. Added 2026-09-07.
+    FILE_DECLARED = re.compile(r'no longer in this repo', re.I)
 
     for path in md:
         try:
             text = io.open(path, encoding="utf-8", errors="replace").read()
         except OSError:
             continue
+        file_declared = bool(FILE_DECLARED.search(
+            '\n'.join(text.split('\n')[:18])))
         for ref in set(REF.findall(text)):          # D2 uses every mention
             referenced.add(os.path.basename(ref.strip()))
         for line in text.split("\n"):
@@ -91,7 +99,10 @@ def main():
                 if b in sib:
                     in_sibling += 1
                 else:
-                    dead[path].add(r)
+                    if file_declared:
+                        declared += 1
+                    else:
+                        dead[path].add(r)
 
     todays = [r for r in md if TODAY in os.path.basename(r)]
     orphans = [r for r in todays if os.path.basename(r) not in referenced]
@@ -106,6 +117,7 @@ def main():
           % sum(len(v) for v in nav_dead.values()))
     print("      everywhere else              : %d" % (n - sum(len(v) for v in nav_dead.values())))
     print("      resolved in a sibling repo   : %d  (not defects)" % in_sibling)
+    print("      in files declaring external  : %d  (not defects)" % declared)
     if nav_dead:
         for p, v in sorted(nav_dead.items()):
             for r in sorted(v):

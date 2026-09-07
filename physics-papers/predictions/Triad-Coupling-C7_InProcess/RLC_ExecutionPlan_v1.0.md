@@ -1,5 +1,7 @@
 # Alternative 1 Execution Plan — Nonlinear RLC Third-Harmonic Generation
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 ## 1. Parts List
 
 ### 1A. Reused from AstroAI Kit (ordered 2026-04-22)

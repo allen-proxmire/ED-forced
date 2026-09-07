@@ -1,5 +1,7 @@
 # ED-09.5 Participation-Envelope Test
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 **Status:** InProcess. **Two parallel tracks** — one blocked on external collaboration, one executable within ~1 week at $0.
 
 **Test of:** ED-09.5 sharp quantum-classical transition — the canonical ED PDE's damping-discriminant bifurcation at `D_crit = 0.5` (Canon P6) predicts that systems in the oscillatory regime (`D < 0.1`) carry a **slow envelope modulation** of their dynamics at frequency `f_v ≈ 1.1·γ_dec` (`= Q/π`; **corrected 2026-07-10** from an earlier erroneous `8·γ_dec` — see [`ED_PDE_Drive_Finding_2026-07-10.md`](ED_PDE_Drive_Finding_2026-07-10.md); corrected band ~11–110 Hz, needs ≥~250 Hz framerate). Quantum-side signatures include `Q_v ∈ [4, 9]`, third-harmonic content 3–6%, triad coupling `C ∈ [0.01, 0.05]`. ED-09.5 is **the single most distinctive falsifiable prediction in the ED corpus.**

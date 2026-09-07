@@ -11,14 +11,14 @@
 1. This paper does **not** claim exact scale-invariance at all scales; the invariance is at the **structural** level for the kernel + dynamics content, with specific scale-dependent corrections.
 2. It does **not** claim novel empirical predictions; ED-SC 3.x cross-scale invariance is the **canonical** version in the corpus.
 3. It does **not** introduce new substrate primitives.
-4. "ED-SC 3.x canonical" = the corpus-internal canonical cross-scale-invariance argument identified in `project_ed_sc_3_arc.md` + `project_orientation_current.md`.
+4. "ED-SC 3.x canonical" = the corpus-internal canonical cross-scale-invariance argument identified in `project_ed_sc_3_arc.md` + `project_orientation_current.md`. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 5. "Cross-scale invariance" = the substrate-level statement that V1 + V5 + DCGT structure produces invariant kernel-and-dynamics content under appropriate scale transformations.
 
 ---
 
 ## Abstract
 
-Cross-scale invariance in ED is the canonical statement (ED-SC 3.x) that the substrate kernel hierarchy (V1 + V5 + higher-order $V_n$ per Paper_092) + DCGT coarse-graining (Paper_073) supports an invariance under scale transformations $\xi \to \xi'$ within the hydrodynamic window. The S1 invariant (substrate-level kernel-content) is preserved across the canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu (from memory file `project_ed_sc_3_arc.md`); the S2 ensemble-only content is regime-specific. The form is FORCED via composition of kernel-hierarchy invariance + DCGT closure; specific scale-transformation parameters INHERITED from canonical operating-point matching.
+Cross-scale invariance in ED is the canonical statement (ED-SC 3.x) that the substrate kernel hierarchy (V1 + V5 + higher-order $V_n$ per Paper_092) + DCGT coarse-graining (Paper_073) supports an invariance under scale transformations $\xi \to \xi'$ within the hydrodynamic window. The S1 invariant (substrate-level kernel-content) is preserved across the canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu (from memory file `project_ed_sc_3_arc.md`); the S2 ensemble-only content is regime-specific. The form is FORCED via composition of kernel-hierarchy invariance + DCGT closure; specific scale-transformation parameters INHERITED from canonical operating-point matching. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 ---
 

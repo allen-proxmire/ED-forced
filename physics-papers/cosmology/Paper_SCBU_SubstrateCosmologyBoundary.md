@@ -33,7 +33,7 @@ The MOND acceleration scale $a_0 = cH_0/(2\pi)$ (Paper_029) and the ED-SC canoni
 The ED corpus contains two independent canon-internal scale anchors of substrate-cosmological origin:
 
 - **Paper_029** derives $a_0 = cH_0/(2\pi)$ as the substrate-level MOND transition acceleration. The factor $1/(2\pi)$ arises from azimuthal-Fourier-mode normalization on the residual SO(2) symmetry of an accelerating chain projecting the cosmic decoupling surface (Paper_028).
-- **Paper_096** establishes the ED-SC cross-scale invariance with canon-internal canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu. This value is inherited from `project_ed_sc_3_arc.md` memo matching to ED-SC 3.3.x arc closure.
+- **Paper_096** establishes the ED-SC cross-scale invariance with canon-internal canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu. This value is inherited from `project_ed_sc_3_arc.md` memo matching to ED-SC 3.3.x arc closure. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 Round 3 Phase A audit identified that no current paper unifies these two scales as projections of a common substrate-cosmology boundary structure. Both are anchored at $R_H = c/H_0$ in upstream content (Paper_028), but the substrate-mechanism linking them across the MOND-arc and Wedges-arc has not been formalized. This paper supplies that formalization at verdict tier M3 per Paper_095 methodology.
 
@@ -136,7 +136,7 @@ By Paper_096, the substrate kernel hierarchy (Paper_092 three-index classificati
 
 $$\xi_{\mathrm{canonical}} = 1.7575\,\mathrm{lu} .$$ **[PRECISION FLAGGED 2026-09-04 — the measurement gives `ξ = 1.76 ± 0.30` lu.** The artefact `ed-lab/outputs/ed_sc_3_1/xi_canonical.json` reports `σ = 0.303` over 10 seeds, so *1.7575* quotes five significant figures to a number uncertain in its first decimal. The same artefact's **smoothed** autocorrelation gives `3.05 ± 0.53`, a factor 1.74 away, so the value is processing-dependent too. **ξ is genuinely Measured** (simulator of record, 10 seeds × 40 snapshots) — what is wrong is the precision, not the provenance. `Paper_096` §7; Foundations staleness #4; gravity Staleness #47.]**
 
-The numerical value is canon-internal — inherited from ED-SC 3.3.x arc closure (`project_ed_sc_3_arc.md` memo). At substrate level, $\xi_{\mathrm{canonical}}$ is anchored to the substrate-cosmology boundary $R_H = c/H_0$ via the IR-regime endpoint of the three-regime RG flow (Paper_097): beyond $R_H$, cross-scale invariance ceases to apply at substrate level, and $\xi_{\mathrm{canonical}}$ is the canonical operating point at which the invariance is maximally saturated within the IR regime.
+The numerical value is canon-internal — inherited from ED-SC 3.3.x arc closure (`project_ed_sc_3_arc.md` memo). At substrate level, $\xi_{\mathrm{canonical}}$ is anchored to the substrate-cosmology boundary $R_H = c/H_0$ via the IR-regime endpoint of the three-regime RG flow (Paper_097): beyond $R_H$, cross-scale invariance ceases to apply at substrate level, and $\xi_{\mathrm{canonical}}$ is the canonical operating point at which the invariance is maximally saturated within the IR regime. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 ### 3.4 Joint inheritance from $R_H$
 

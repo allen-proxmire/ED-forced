@@ -111,7 +111,7 @@ This paper supplies the **S1 substrate-statistical content**: the motif-conditio
 
 ### 3.6 Examples of motif-conditioned distributions
 
-Specific cases (per `project_ed_sc_3_arc.md`):
+Specific cases (per `project_ed_sc_3_arc.md`): *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 - **Local participation density given canonical operating point:** $p(\rho | M_{\mathrm{canonical}})$ has GRF-Gaussian class with specific mean / variance set by canonical operating point $\xi_{\mathrm{canonical}}$.
 - **V1 kernel response given substrate motif:** $p(K_{V1} | M)$ has GRF class with kernel-data-set parameters.
 - **r* filtered-GRF statistic:** $p(r^* | M_{\mathrm{canonical}})$ — see Paper_EDSC_rstar.

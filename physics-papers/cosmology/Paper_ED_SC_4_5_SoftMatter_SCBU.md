@@ -109,7 +109,7 @@ The numerator inherits from P04 bandwidth-budget; the denominator inherits from 
 
 Under P-Canonical-Operating-Point-NS-Q (Paper_080), $Q$ takes the canonical value $\approx 3.5$ at the substrate operating point $\xi_{\mathrm{canonical}}$. By Paper_096 + Paper_ED_SC_4.2, this operating point inherits cosmological-boundary anchoring at $R_H$.
 
-**SCBU-projection identification:** $Q \approx 3.5$ is the **hydrodynamic-Q-parameter projection** of the SCBU boundary onto the soft-matter operating-point parameter axis. Numerical 3.5 is canon-internal (per `project_ns_program_arcs.md`); not derived from primitives at first-principles level.
+**SCBU-projection identification:** $Q \approx 3.5$ is the **hydrodynamic-Q-parameter projection** of the SCBU boundary onto the soft-matter operating-point parameter axis. Numerical 3.5 is canon-internal (per `project_ns_program_arcs.md`); not derived from primitives at first-principles level. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 The mapping:
 
@@ -133,7 +133,7 @@ Under SCBU, V5's substrate kernel structure is **part of the substrate-cosmology
 - Entanglement-bandwidth modulation (Paper_050 Page curve).
 - $\Gamma_{\mathrm{cross}}$ collapse at BH-horizon (Paper_039).
 
-**Single substrate object, many manifestations.** Per `project_arc_hawking.md`: "V5 kernel does three jobs across closed sectors: soft-matter Maxwell viscoelasticity (Arc D), Hawking spectrum cutoff (H-4), entanglement-bandwidth modulation (H-5) — same substrate primitive across ~40 orders of magnitude." The SCBU framework supplies the **boundary-projection origin** of this multi-domain V5 unification.
+**Single substrate object, many manifestations.** Per `project_arc_hawking.md`: "V5 kernel does three jobs across closed sectors: soft-matter Maxwell viscoelasticity (Arc D), Hawking spectrum cutoff (H-4), entanglement-bandwidth modulation (H-5) — same substrate primitive across ~40 orders of magnitude." The SCBU framework supplies the **boundary-projection origin** of this multi-domain V5 unification. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 ### 3.4 Universal Mobility Law as IR-regime scaling law
 

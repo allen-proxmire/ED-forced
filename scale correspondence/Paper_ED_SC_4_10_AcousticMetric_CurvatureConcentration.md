@@ -82,7 +82,7 @@ The substrate-level statement: substrate mobility gradients are the **source** o
 
 ### 3.4 Connection to ED-SC 1.x
 
-The ED-SC 1.x program (per memory `project_ed_sc_3_arc.md` predecessor) developed canonical scale-correspondence content. This paper supplies the **structural mechanism** by which substrate-level mobility gradients produce coarse-grained spacetime curvature.
+The ED-SC 1.x program (per memory `project_ed_sc_3_arc.md` predecessor) developed canonical scale-correspondence content. This paper supplies the **structural mechanism** by which substrate-level mobility gradients produce coarse-grained spacetime curvature. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 Specifically: the canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu (Paper_096) corresponds to a specific mobility-gradient configuration; the substrate kernel-content at this operating point produces a characteristic acoustic-metric curvature pattern.
 

@@ -1,5 +1,7 @@
 # UDM Mobility Law Test — FRAP in Concentrated BSA
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 **Version.** V2 — 2026-04-21. Incorporates methods-paper refinements identified in the literature review of 2026-04-21 (Goehring 2010, Bläßle et al. 2018 / PyFRAP, Sakib & Fradin 2026, Sarkar & Chattopadhyay 2020) into the analysis pipeline (§9) and review-level notes (§13). **Expands §13 from 7 to 15 subsections.** Adds Appendix A with a draft CP amendment request for a high-framerate add-on acquisition.
 
 **Status.** Operational protocol for the Universal Degenerate-Mobility (UDM) test of the ED mobility channel at condensed-matter scale. The protocol body (§4–§8) is the text submitted to **Creative Proteomics Core Integrated Biosciences Research (CIBR)** on 2026-04-17; CP forwarded internally to their technician team on the same day and expected response window is 2026-04-24 to 2026-05-01 (see [`ED-Orientation.md`](../../docs/ED-Orientation.md) top-of-doc 2026-04-17 entry and §7 empirical-status table).
@@ -225,7 +227,7 @@ Convert each acquisition's `α_R` into a mobility exponent via `β = 1/α_R − 
 
 ### 9.4 Required analysis code — **V2 revised**
 
-Write `analysis/scripts/udm_frap/frap_udm_pipeline.py` as a **wrapper around PyFRAP** (Bläßle et al. 2018; see §13.16) rather than a from-scratch implementation. PyFRAP provides image import (all major microscope formats), ROI definition, pre-bleach normalisation, Goehring-style smooth-box fitting for the Fickian null hypothesis (model ii of §9.2), and AIC-based model selection for free; the wrapper adds:
+Write `analysis/scripts/udm_frap/frap_udm_pipeline.py` as a **wrapper around PyFRAP** (Bläßle et al. 2018; see §13.16) rather than a from-scratch implementation. PyFRAP provides image import (all major microscope formats), ROI definition, pre-bleach normalisation, Goehring-style smooth-box fitting for the Fickian null hypothesis (model ii of §9.2), and AIC-based model selection for free; the wrapper adds: *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 - The Barenblatt parabolic-cap profile fit (model i of §9.2) — not standard in PyFRAP.
 - The front-radius extraction and power-law fit pipeline (§9.1 steps after radial profile).
@@ -238,10 +240,10 @@ Inputs: folder of TIFF stacks + metadata JSON. Outputs:
 
 - `per_acquisition.csv` — one row per acquisition: concentration, replicate, measured `ω` (HWHM), corona width `1/μ`, α_R, 95% CI, β inferred, AIC_PME, AIC_Goehring, AIC_sharpFickian, front-sharpness metric, discard-criterion flags, bleach-depth, control-spot drift, SNR.
 - `per_concentration.csv` — one row per concentration: mean α_R, std α_R, mean β, `n_pass` (replicates in band), `n_discarded` with reasons, verdict.
-- `ensemble_summary.json` — overall PASS/NEAR-PASS/FAIL/UNDECIDABLE verdict per §10 below.
+- `ensemble_summary.json` — overall PASS/NEAR-PASS/FAIL/UNDECIDABLE verdict per §10 below. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 - Figures: per-acquisition R(t) log-log fit, front-profile overlays (all three models of §9.2), α_R vs concentration scatter, control-spot drift time-series.
 
-**Validation before first use.** Run the pipeline on synthetic data with known `α_R` and known bleach corona injected (5 test cases: Fickian-sharp, Fickian-broadened, PME β=2 sharp, PME β=2 with noise, multi-component mixture). Confirm recovery of the injected exponent within 10% and correct model selection via AIC. Logged as `tests/test_udm_pipeline.py` alongside the main script.
+**Validation before first use.** Run the pipeline on synthetic data with known `α_R` and known bleach corona injected (5 test cases: Fickian-sharp, Fickian-broadened, PME β=2 sharp, PME β=2 with noise, multi-component mixture). Confirm recovery of the injected exponent within 10% and correct model selection via AIC. Logged as `tests/test_udm_pipeline.py` alongside the main script. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ---
 
@@ -268,7 +270,7 @@ ED-Data-UDM-FRAP-BSA/
 ├── 200mgmL/
 │   ├── rep1/
 │   │   ├── stack.tiff          # full time series
-│   │   ├── metadata.json       # frame rate, pixel size, bleach ROI, etc.
+│   │   ├── metadata.json       # frame rate, pixel size, bleach ROI, etc. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 │   │   └── recovery_curve.csv  # software's own intensity trace (nice-to-have, not used in main analysis)
 │   ├── rep2/
 │   ├── rep3/
@@ -277,11 +279,11 @@ ED-Data-UDM-FRAP-BSA/
 ├── 250mgmL/ (same structure)
 ├── 300mgmL/ (same structure)
 ├── 350mgmL/ (same structure)
-├── session_metadata.json       # date, instrument, operator, lot numbers
+├── session_metadata.json       # date, instrument, operator, lot numbers *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 └── README.md                   # provenance + link to this protocol
 ```
 
-### 11.2 Per-acquisition metadata schema (`metadata.json`)
+### 11.2 Per-acquisition metadata schema (`metadata.json`) *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ```json
 {
@@ -318,8 +320,8 @@ ED-Data-UDM-FRAP-BSA/
 
 ### 11.3 Analysis deliverable
 
-- `analysis/scripts/udm_frap/frap_udm_pipeline.py` — the full pipeline per §9.4.
-- `analysis/scripts/udm_frap/per_acquisition.csv`, `per_concentration.csv`, `ensemble_summary.json`.
+- `analysis/scripts/udm_frap/frap_udm_pipeline.py` — the full pipeline per §9.4. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
+- `analysis/scripts/udm_frap/per_acquisition.csv`, `per_concentration.csv`, `ensemble_summary.json`. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 - `analysis/scripts/udm_frap/figures/` — per-acquisition R(t) fits, front-profile overlays, ensemble α_R vs c plot.
 
 ### 11.4 Repo-level deliverable
@@ -343,7 +345,7 @@ On FAIL outcome:
 | **Sample prep** (done at CP as part of the quote) | 0.5 day CP technician | Part of quote |
 | **AFM / LSM session** | ~2 hours scope + 1 hour setup | Part of quote (expected ~$500–$1500 total) |
 | **Data transfer + format verification** | 1 hour | Your time |
-| **Pipeline implementation** (`frap_udm_pipeline.py`) | 2–3 days | Your time — most of the work |
+| **Pipeline implementation** (`frap_udm_pipeline.py`) | 2–3 days | Your time — most of the work | *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 | **Run pipeline on 20 acquisitions** | ~1 hour compute | Negligible |
 | **Decision tree + paper write-up** | 3–5 days | Your time |
 
@@ -469,7 +471,7 @@ where `d_x` is the nominal bleach width and `1/μ` is the characteristic length 
 
 **Cost:** zero extra scope time — the control ROI is in the same frame. Implemented entirely in analysis (pipeline §9.4).
 
-**Added to acquisition metadata schema:** `control_roi_center_px` and `control_roi_radius_um` in `metadata.json`. Easy to specify with the CP technician during session setup.
+**Added to acquisition metadata schema:** `control_roi_center_px` and `control_roi_radius_um` in `metadata.json`. Easy to specify with the CP technician during session setup. *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 ### 13.13 Four pre-registered discard criteria (**V2 addition, 2026-04-21**)
 
@@ -527,7 +529,7 @@ where `d_x` is the nominal bleach width and `1/μ` is the characteristic length 
 
 **Why use PyFRAP instead of writing from scratch.** Bläßle et al. benchmarked PyFRAP against easyFRAP, FrapCalc, virtualFRAP, and simFRAP on 18 simulated FRAP experiments spanning three orders of magnitude in diffusivity; PyFRAP outperformed all alternatives with the smallest error (mean 2%) and handles 2D/3D geometry explicitly via a FEM simulation with fitted initial condition. It imports raw data from all major microscope formats (.tif, .lsm, .czi, .nd2), has a GUI for manual verification, and saves projects as a structured object database for reproducibility.
 
-**V2 action:** build our `frap_udm_pipeline.py` as a Python wrapper that:
+**V2 action:** build our `frap_udm_pipeline.py` as a Python wrapper that: *(working-repo artifact: lives under `event-density`/`ed-lab`, not in this repo)* *(working-repo artifact — no longer in this repo; lives under `event-density`/`ed-lab`)*
 
 1. Calls PyFRAP to import the TIFF stack, define ROIs, compute pre-bleach normalisation, and fit the Goehring smooth-box model (as the Fickian null).
 2. Extracts the raw radial profiles and fit residuals from the PyFRAP project database.

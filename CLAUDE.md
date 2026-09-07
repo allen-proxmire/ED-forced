@@ -13,7 +13,7 @@ Paths below beginning `../event-density/` and `../ED Primitives/` are **sibling 
 Before you derive, compute, falsify, or make any claim on a topic:
 
 1. **Search first.** Grep `physics-papers/` (and `../event-density/foundations/`, `../event-density/theory/`) and consult **`PAPERS_INDEX.md`** for existing papers on that exact topic. Assume a paper already exists until you have confirmed it does not.
-2. **Read the actual papers, not the memory summaries.** Memory (`MEMORY.md` + topic files) is an **index and pointer set** — it is *not* ground truth. The papers are ground truth. A memory note that says "X is established" is a pointer to a paper you must open, not a substitute for reading it.
+2. **Read the actual papers, not the memory summaries.** Memory (`MEMORY.md` + topic files) is an **index and pointer set** — it is *not* ground truth. The papers are ground truth. A memory note that says "X is established" is a pointer to a paper you must open, not a substitute for reading it. *(the .claude memory index — no longer in this repo; outside the tree)*
 3. **Build on what exists. Never reinvent.** Re-deriving a result the corpus already has is not "independent confirmation" — it produces a cruder duplicate that then looks like it conflicts with the corpus. If you find yourself deriving something from scratch, stop and find the paper that already did it.
 
 ## HARD RULE — close the loop: write findings back to the authoritative lists (non-negotiable)

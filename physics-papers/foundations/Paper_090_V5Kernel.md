@@ -4,7 +4,7 @@
 **Author:** Allen Proxmire
 **Status:** Publication draft (revision: wedge claim reframed from "40 orders of magnitude unification" to structural formalism unification; $\tau_{V5}$ regime-specificity clarified as inherited not predicted; "necessary for non-Markovian" replaced with "unified substrate mechanism"; Hawking and Maxwell sections reframed as identification rather than prediction)
 **Date:** 2026-05-13
-**Repository target:** `domain-arcs/wedges/Paper_090_V5_cross_chain_kernel.md` (ED-Generative)
+**Repository target:** `domain-arcs/wedges/Paper_090_V5_cross_chain_kernel.md` (ED-Generative) *(intended repository path, recorded at drafting; the paper lives in this folder)* *(intended repository path recorded at drafting; the paper was moved here instead)*
 **Working save location:** `C:\Users\allen\GitHub\event-density\papers\Forcing Papers\Paper_090_V5Kernel_FIXED.md`
 **Genre:** Conditional structural derivation within the 13-Primitive Generative System. Standalone. Cold-reader accessible.
 

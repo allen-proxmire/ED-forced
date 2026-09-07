@@ -63,7 +63,7 @@ Verdict: **M3**.
 
 ### 3.1 What $r^*$ is
 
-In the ED-SC 3.x program, $r^*$ is a specific substrate-level observable defined via the substrate participation field at the canonical operating point. Per `project_ed_r_star_analytic_arc.md`, $r^*$ was developed across nine memos and closed at:
+In the ED-SC 3.x program, $r^*$ is a specific substrate-level observable defined via the substrate participation field at the canonical operating point. Per `project_ed_r_star_analytic_arc.md`, $r^*$ was developed across nine memos and closed at: *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 - Pooled $R^2$ median $\approx -1.88 \pm 0.4$.
 - S1 projection at canonical operating point $\xi_{\mathrm{canonical}} = 1.7575$ lu.
 
@@ -96,7 +96,7 @@ The composition: $r^*$ as a filtered-GRF statistic is **forced** by P-S1-Invaria
 
 ### 3.5 The pooled $R^2$ median value
 
-Per `project_ed_r_star_analytic_arc.md`, the pooled $R^2$ median is canon-internal $\approx -1.88 \pm 0.4$. This is the empirical / canon-internal moment-matching outcome for $r^*$ at the canonical operating point.
+Per `project_ed_r_star_analytic_arc.md`, the pooled $R^2$ median is canon-internal $\approx -1.88 \pm 0.4$. This is the empirical / canon-internal moment-matching outcome for $r^*$ at the canonical operating point. *(retired: the `project_*` memory scheme was cleared 2026-08-26; no such file)*
 
 **Operational definition:** Pooled $R^2$ computed over the realized GRF ensemble using a constant-mean null model; negative $R^2$ indicates the substrate-conditioned $r_*$ predictor explains LESS variance than the null. Stated as evidence the canon-internal matching is statistically weak, not as a positive prediction.
 

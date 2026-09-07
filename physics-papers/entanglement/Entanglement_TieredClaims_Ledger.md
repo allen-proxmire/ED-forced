@@ -116,7 +116,7 @@
 
 ## Addendum 2026-09-06 — the master spreadsheet is now synced, and the section heading is a transcription trap
 
-The four rows this ledger files under **`### Derived (forced — but each conditional on a postulate in the Postulated table)`** had all been transcribed into `ED_ItemizedTheory_TieredClaims.xlsx` as bare tier **`Derived`** — which that workbook's `Tier Key` defines as *"with **NO** paper-specific postulate."*
+The four rows this ledger files under **`### Derived (forced — but each conditional on a postulate in the Postulated table)`** had all been transcribed into `ED_ItemizedTheory_TieredClaims.xlsx` as bare tier **`Derived`** — which that workbook's `Tier Key` defines as *"with **NO** paper-specific postulate."* *(the v1 workbook, since deleted; the live file is `ED_ItemizedTheory_TieredClaims_v2.xlsx`)*
 
 **The same word, meaning opposite things in the two documents.** The qualifier that makes this ledger's heading honest lives in the parenthetical, and **the parenthetical does not travel** when a row is copied into a tier column. Nothing was overclaimed here; the heading is accurate in context.
 

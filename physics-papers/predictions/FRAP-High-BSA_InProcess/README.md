@@ -1,5 +1,7 @@
 # FRAP in Concentrated BSA — UDM Mobility-Channel Test
 
+> **Artifact paths below are working-repo paths and are no longer in this repo.** This folder is the *record* of an in-process experiment; its data files, scripts and result JSONs live under `event-density` / `ed-lab`, and the paths are kept verbatim so a run can be reproduced there. *(Annotated 2026-09-07 during the dead-pointer sweep; they were being counted as broken links.)*
+
 **Status:** InProcess. **Protocol submitted to Creative Proteomics CIBR on 2026-04-17; CP forwarded internally to their technician team same-day.** Decision window: 2026-04-24 to 2026-05-01.
 
 **Test of:** Universal Degenerate-Mobility (UDM) law — the ED mobility channel `M(ρ) = M_0(ρ_max − ρ)^β` with canonical `β ≈ 2` predicts the 2D porous-medium equation with `m = β + 1 = 3`, giving front-radius exponent `α_R = 1/(d(m-1)+2) = 1/6 ≈ 0.167`.
