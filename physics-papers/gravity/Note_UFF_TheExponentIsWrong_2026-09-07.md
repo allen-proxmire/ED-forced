@@ -89,3 +89,42 @@ $$a_C = \frac{1}{\sqrt{b_C}}\Big[-\nabla_{\mathrm{adj}}\Sigma_C\Big] \ \ \Longri
 | Whether the substrate actually normalises that way | **OPEN** — and now a single, testable exponent |
 
 **What is owed:** the amplitude-normalised drive test of §5, and then either a derivation of the `√b` normalisation from the primitives or an honest statement that it is a fourteenth commitment.
+
+
+---
+
+# 7. The owed test was run, and it did not resolve — for a reason worth more than the result
+
+**Run on the certified substrate, unmodified.** `event-density/theory/Higgs_Emergence/uff_amplitude_drive_probe.py` and `..._seeded.py` call `mass_from_binding_probe.run()` as-is; the drive enters `step()` as a scalar, so an amplitude-carrying drive is just `force × √n`, with `b_C ∝ n` by P04 additivity. **No substrate code was touched.**
+
+## Two design failures, each of which would have produced a confident wrong answer
+
+**(1) The first run operated AT the saturation knee.** Calibration showed `v_x` rising steeply to `F ≈ 0.2` and then flat: `0.624 / 0.634 / 0.653` across a 4× force increase. The test ran at `F = 0.2`, so all three drive laws sat in the saturated band, all returned ≈ 0.65, and the probe read that flatness as *"consistent with UFF."* **A saturated response is flat for every exponent, including the wrong ones.** The probe's own guard was too weak: it asked whether the response moves over the *full* force range (it does) rather than *at the operating point* (it does not).
+
+**(2) Below the knee, the seed scatter is comparable to the signal.** The uniform drive gave `0.31 / 0.34 / 0.13 / 0.24 / 0.28` across `n` — non-monotonic with a clear outlier — so the resulting "1.62× amplitude spread" was noise.
+
+## The result at 24 seeds
+
+| `n` | uniform `F` | amplitude `F√n` | drive |
+|---|---|---|---|
+| 8 | 0.3296 ± 0.0295 | 0.5577 ± 0.0172 | 0.057 |
+| 16 | 0.3083 ± 0.0706 | 0.4881 ± 0.0533 | 0.080 |
+| 32 | 0.3692 ± 0.0230 | 0.5140 ± 0.0186 | 0.113 |
+
+**Amplitude drive, `n = 8 → 32`: `−0.0438`, `|z| = 1.7`. Not resolved, and the sign is OPPOSITE to the prediction** (§1–3 predict the response should *rise* with `n` under an unnormalised P12).
+
+> **Not banked in either direction.** An underpowered null and a real null are the same number, and 1.7σ against the prediction is not a refutation of the algebra any more than it is a confirmation. *The corpus's own rule — hold a negative to the same bar as a positive — applies to this negative too.*
+
+## Why this simulator probably cannot answer the question at all
+
+**The certified rule is ballistic-or-extinct with `argmax` move selection.** A front *must* advance one cell per step and scores its four neighbours; the drive is an additive bias on that score. So the measured `v_x` is **a selection probability, bounded in `[−1, 1]` by construction** — not an acceleration.
+
+> **The algebra in §1–3 assumes `a ∝ drive`. This substrate has no continuous acceleration to be proportional to anything.** The map from drive magnitude to `v_x` is a bounded, saturating, discrete-choice response, which is why the knee exists at all and why the effect the exponent predicts is compressed toward the ceiling before it can be measured.
+
+**That is the real finding of §7, and it is about testability rather than about UFF.** The owed test as specified — vary `b_C` under an amplitude-carrying drive — is the right *experiment*, and this simulator is the wrong *instrument* for it, because its observable is a probability and the quantity in question is a ratio of accelerations.
+
+## What is owed now
+
+1. **An observable that is an acceleration**, not a per-step selection probability — e.g. momentum accumulated against a restoring term, where the response is unbounded and linear over some range.
+2. **Or a substrate implementation with a continuous update** rather than ballistic-or-extinct `argmax`.
+3. **Until then §1–§6 stand on algebra alone.** The exponent claim (`1/√b_C` is the unique power giving UFF) and the banked negative (`1/b_C` inverts rather than removes the violation) are both algebraic consequences of the settled `Coh` form and do not depend on this test. **What has not been shown, and is now known to be un-showable on this instrument, is whether the substrate actually behaves that way.**
