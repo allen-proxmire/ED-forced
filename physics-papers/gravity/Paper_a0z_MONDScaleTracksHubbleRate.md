@@ -46,7 +46,7 @@ It is tempting to set this up as a two-horse race against MOND. **That would be 
 
 | # | account | what it says about `a₀` | status after §5 |
 |---|---|---|---|
-| **1** | **ΛCDM** | there is no `a₀`; the appearance of one is a coincidence of galaxy assembly | untouched here — this paper does not test it |
+| **1** | **ΛCDM** | there is no fundamental `a₀`; the appearance of one is a coincidence of galaxy assembly — **and that coincidence is itself expected to drift with redshift** | **not excluded, and not even strained** (see below) |
 | **2** | **MOND, `a₀` constant** | `a₀` is a **constant of nature**, on a par with `c` or `G` | **excluded at 29σ** |
 | **3** | **MOND with an evolving `a₀`** | `a₀` tracks the cosmic scale; the **exponent is not predicted and is fitted to data** | **fits, by construction** |
 | **4** | **this prediction** | `a₀` tracks the live horizon with the exponent fixed at **exactly 1**, and no freedom to move it | **`α = 1` is 4.4σ from the fit; ~1–2σ on a realistic error budget** |
@@ -57,7 +57,11 @@ It is tempting to set this up as a two-horse race against MOND. **That would be 
 
 > **That distinction is worth something only if the commitment survives.** An untunable exponent is a virtue when it is right and a refutation when it is wrong; it is never a defence. **This paper is therefore a test of position 4, not an argument for it**, and §6 states the condition under which it should be abandoned.
 
-**What a measurement at `z ≈ 1` settles:** it separates 2 from {3, 4} decisively — that has now happened — and it separates 3 from 4 only to the precision of `α`, which is where the remaining work is.
+**And position 1 is not as untouched as the table suggests.** Hydrodynamical simulations of plain ΛCDM with baryons — **Magneticum** (*MNRAS*, `10.1093/mnras/stac3017`) — already produce an **apparent** rise in the RAR acceleration scale with redshift, from ordinary galaxy-assembly and baryon-modelling effects, of a size comparable to what is observed. **No modified gravity, no horizon mechanism.** So:
+
+> **The detection of evolution, by itself, does not discriminate this prediction from ΛCDM either.** It excludes only position 2. **Positions 1, 3 and 4 all accommodate an evolving `a₀`**, and they separate only on its *rate and shape* — which is precisely the part under tension (§5.3).
+
+**What a measurement at `z ≈ 1` settles:** it separates **2** from {1, 3, 4} decisively — that has now happened — and it separates 1, 3 and 4 from each other **only through the exact rate**, which is where all the remaining work is.
 
 ### 1.3 What this paper does
 
@@ -166,15 +170,22 @@ A prediction registered after the data is worth little. Three things are stated 
 
 ### 5.1 What was measured
 
-**MUSE-DARK III (A&A 2026)** measured the acceleration scale in galaxy samples extending to `z ~ 1`.
+**Ciocan et al., MUSE-DARK III** (arXiv:2604.22613; A&A 2026) measure the radial-acceleration-relation scale in **79 star-forming galaxies at `0.33 < z < 1.44`** in the MUSE Hubble Ultra Deep Field.
 
-| quantity | result |
-|---|---|
-| evolution of `a₀` detected | **~30σ** |
-| constant `a₀` (MOND, `α = 0`) | **excluded at 29σ** |
-| local intercept | `1.0×10⁻¹⁰ m s⁻²` — matches the predicted `1.08` to **~8%** |
-| fitted power `a₀ ∝ H(z)^α` | **α = 1.18 ± 0.04 (stat)** |
-| `a₀` at `z ~ 1` | `2.38 (+0.12 / −0.10)` ×10⁻¹⁰ m s⁻² |
+**What the survey publishes** — and it matters that this is stated separately from what we infer from it:
+
+| quantity | result | whose |
+|---|---|---|
+| evolution of `a₀` detected | **~30σ** | **theirs** |
+| per-bin scale | rises `≈1.99 → 2.71` ×10⁻¹⁰ m s⁻² across the range | **theirs** |
+| `a₀` at `z ~ 1` | `2.38 ± 0.1` ×10⁻¹⁰ m s⁻² | **theirs** |
+| parametrisation | **LINEAR**: `a₀(z) = a₀(0) + a₁ z`, with `a₁ = 1.59 ± 0.1` ×10⁻¹⁰ | **theirs** |
+| power-law index `α` in `a₀ ∝ H(z)^α` | **not published by the survey** | — |
+| **implied `α = 1.18 ± 0.04` (stat)** | **converted by us from their linear fit** | **OURS** |
+
+> **The survey fits a straight line in `z`. It does not fit a power of `H(z)`.** The `α = 1.18` on which this paper's central tension rests is **our conversion of their published linear parametrisation**, not a number they report. **An earlier draft of this paper mislabelled it as the survey's measurement; that was an error and it is corrected here.**
+
+**What independently corroborates the direction** is that the MUSE-DARK team themselves compare `a₀(z)` against `H(z)` and describe the evolution as **faster than `H(z)`.** So the sign of the tension is theirs even though the number is ours.
 
 ### 5.2 The half that confirms
 
@@ -188,8 +199,15 @@ A prediction registered after the data is worth little. Three things are stated 
 
 **We do not take it at face value, and we say why — while noting that the reasons cut less far than we would like.**
 
-- The `±0.04` is a **statistical** error from a single first-generation survey. The covariance is unpublished; per-bin values are not tabulated (Figure 3 only); high-redshift rotation-curve systematics — inclination, pressure support, beam smearing, stellar mass-to-light — are not folded in. Realistically the uncertainty is larger, bringing the tension to roughly **1–2σ**.
+- **The `±0.04` is not the survey's error bar on `α`, because the survey did not fit `α`.** It is propagated from their linear-fit uncertainty through our conversion, and a conversion between two functional forms over a finite redshift range carries a form-choice error that no propagated statistical bar contains. **A referee is entitled to ask for the refit shown explicitly, and this paper does not yet show it.**
+- The underlying error is **statistical** and from a single first-generation survey. The covariance is unpublished; per-bin values are not tabulated (Figure 3 only); high-redshift rotation-curve systematics — inclination, pressure support, beam smearing, stellar mass-to-light — are not folded in. Realistically the uncertainty is larger, bringing the tension to roughly **1–2σ**.
 - **But the direction is corroborated by the survey team's own analysis**, which independently compares `a₀(z)` to `H(z)` and describes the evolution as **faster than `H(z)`**. An earlier suggestion that the tension was an artifact of using a linear fit as a proxy is therefore **withdrawn**: the anti-prediction direction is the authors' own reading, not an artifact of ours.
+
+### 5.3a One outstanding check, flagged rather than assumed
+
+An external reader reports the existence of a 2026 analysis — *“Three baryonic systematics, each sufficient: on the reported redshift evolution of the MOND acceleration scale”* — arguing from Ciocan et al.'s **own public catalogue** that baryonic-mass-budget systematics can account for the reported trend. **We have not been able to independently confirm that this paper exists**: three searches returned no locatable record, and the one detailed description we obtained came back only after the title was supplied in the query, so it may be an artifact of the search rather than a source.
+
+> **It is recorded here as an open check, not as a citation.** **If such an analysis exists it is directly on point and could weaken the confrontation further — or undercut the ~30σ detection itself, not merely the exponent.** Confirming or excluding it is a prerequisite to treating §5 as settled, and is stated as such rather than left for a referee to raise.
 
 ### 5.4 The verdict, stated plainly
 
@@ -232,7 +250,8 @@ This prediction comes from Event Density, a substrate framework in which the arr
 | 5 | `H(z)`, `H₀`, the interpolating function, all values | **I** | inherited |
 | 6 | BTFR normalisation inherits the evolution | **D-via-I** | composition of step 1 with the standard BTFR |
 | 7 | evolution detected at ~30σ; `α = 0` excluded | **I — measurement** | MUSE-DARK III |
-| 8 | `α = 1.18 ± 0.04`, `α = 1` at +4.4σ stat | **I — measurement** | same source |
+| 8 | the survey's **linear** fit `a₁ = 1.59 ± 0.1` ×10⁻¹⁰ | **I — measurement** | Ciocan et al. |
+| 8b | **`α = 1.18 ± 0.04` converted from row 8 by us**; `α = 1` then at +4.4σ | **D-via-I — OUR REANALYSIS, not the survey's result** | **corrected 2026-09-07**; an earlier draft tagged this `I — same source`, which was wrong. The refit is not shown in this paper and should be |
 | 9 | tension softens to ~1–2σ under a realistic error budget | **A → position** | our judgement about unpublished systematics; **the weakest step in the paper** |
 | 10 | verdict: qualitative confirmed, rate disfavoured | **A → position** | composite |
 

@@ -97,6 +97,52 @@ The paper says it "stands or falls on §5 and §6 alone" and then names four cor
 
 ---
 
+# Round 2 — external review, 2026-09-07
+
+**Three models outside this session read the Report, the itemized-theory workbook and this paper.** That is the outside reader the limitation section below said this review was not a substitute for. **It found three things round 1 did not, and one of them is an error round 1 introduced.**
+
+## E1. CONFIRMED, and it is mine — `α = 1.18` is our re-fit, not the survey's measurement
+
+**The reviewer's charge:** the Load-Bearing Step Audit tags `α = 1.18 ± 0.04` as *"I — measurement, same source,"* which reads as though it came from the survey.
+
+**Checked against the literature, and the reviewer is right.** Ciocan et al. (MUSE-DARK III, arXiv:2604.22613, A&A 2026) publish a **linear** parametrisation:
+
+$$a_0(z) = a_0(0) + a_1 z, \qquad a_1 = 1.59 \pm 0.1 \times 10^{-10}\ \mathrm{m\,s^{-2}}$$
+
+with per-bin values rising `1.99 → 2.71 ×10⁻¹⁰` across 79 galaxies at `0.33 < z < 1.44`. **They publish no power law and no `α`.** The exponent this paper's entire tension is stated against is **ED's own conversion** of their linear fit (addendum A10, 2026-07-14).
+
+**Fixed:** audit row 8 split into 8 (theirs) and 8b (ours); §5.1 rebuilt as a three-column table with a *whose* column; §5.3 now says the `±0.04` is not the survey's error bar on `α` because the survey never fit `α`, and that a conversion between functional forms carries a form-choice error no propagated statistical bar contains. **The refit is still not shown explicitly, and the paper now says so.**
+
+**The upstream finding is worse than the paper's.** The **Report has carried the correct attribution since 2026-07-21**. Four downstream documents never received it, including **`ED_Master_Predictions_List` 1.15 — the canonical source of truth**, which is where this paper's numbers came from. **A stale canonical row fed the error into new work**, which is the exact failure `CLAUDE.md`'s close-the-loop rule exists to prevent. All four corrected 2026-09-07.
+
+## E2. CONFIRMED, and round 1 missed the rival entirely — ΛCDM predicts apparent evolution too
+
+**Round 1's objection 1 fixed the MOND framing and left position 1 alone**, marking ΛCDM "untouched here." **That was too generous to the paper.**
+
+**Magneticum** (*MNRAS* `10.1093/mnras/stac3017`, *"ΛCDM with baryons versus MOND: the time evolution of the universal acceleration scale in the Magneticum simulations"*) shows plain ΛCDM **with baryons** producing an **apparent** rise in the RAR acceleration scale with redshift, from ordinary galaxy assembly and baryon modelling, **with no modified gravity.**
+
+> **So the ~30σ detection of evolution excludes constant-`a₀` MOND and nothing else.** Three of the four positions accommodate evolution. **The paper's headline result discriminates against exactly one rival, and it is not the main one.**
+
+**Fixed** in §1.2 (table row 1 and a following paragraph), ML 1.15, and the Report's flagship. **This is the second comparative claim about another literature in three days to be wrong in the ED-favourable direction** — the "no MOND analogue" correction was 2026-09-05. **No internal check catches this class; it needs a search box.**
+
+## E3. NOT VERIFIED — a possible systematics rebuttal, recorded as a check
+
+A reviewer reports a 2026 analysis, *"Three baryonic systematics, each sufficient,"* re-analysing Ciocan et al.'s own public catalogue and claiming baryonic mass-budget effects account for the trend: 82% of the binned trend, 77% of the fractional evolution, and a 0.39 dex dynamical-vs-photometric stellar-mass drift at 3.6σ.
+
+**Three searches returned no locatable record of this paper**, and the one detailed description came back only after its title had been supplied in the query — so it may be an artifact of the search rather than a source. **It is written into the paper as §5.3a: an open check, explicitly not a citation.**
+
+> **If it exists it matters more than the exponent tension**, because it attacks the ~30σ detection itself rather than the rate. **Confirming or excluding it is a prerequisite to treating §5 as settled.**
+
+## What round 2 changes about the paper's standing
+
+**Every supporting claim has now been removed by review, across two rounds.** The local 8% is out of the evidence (round 1, objection 2). The 29σ exclusion applies to one rival and not to ΛCDM (E2). The exponent the tension is measured against is our own conversion (E1). And the detection underpinning all of it has an unverified challenge on record (E3).
+
+**What survives is what survived round 1, unchanged:** a **registered, forward-dated, untunable `α = 1` with a kill condition stated in advance.** That is the whole asset, and it is a real one. **A paper that arrives at exactly its bet, having had every ornament stripped off it by three rounds of review, is in the right shape** — it just cannot be sold as a result.
+
+---
+
 ## Limitation of this review
 
 **I drafted the paper and then reviewed it, in the same session.** That is precisely the arrangement the corpus's own review rule exists to prevent — an internal-consistency check validating its own output. Objections 1, 2 and 3 are ones I did not see while writing and do change the paper materially, which is some evidence the review was not a rubber stamp. **It is not a substitute for an outside reader, and the corpus has a documented instance of a self-review validating redundant work.** Treat this as a first pass that lowers the cost of a real one.
+
+> **UPDATE 2026-09-07: the real one happened, and it is recorded above as Round 2.** It found an error this review introduced (E1), a rival this review left standing (E2), and a possible challenge to the underlying detection (E3). **The self-review was worth running and was not sufficient**, which is the outcome the corpus's review rule predicts rather than a surprise.
