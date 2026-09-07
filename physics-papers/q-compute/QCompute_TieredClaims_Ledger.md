@@ -77,7 +77,33 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (12) — `P-Multiplicity-Extensive` NAMED, and entry (11)'s “collision” framing is WITHDRAWN
+
+**AP's call: name it.** And the read-only session that found the scope problem checked its own claim before anyone acted on it — *which is the rule `CLAUDE.md` names first, applied to its own finding rather than to the corpus.*
+
+**⚠ Entry (11) was wrong about the KIND of defect, and I wrote it that way.** It called this a **collision between two papers**, reading `Paper_054` §3's heading — *“Rate Quantities at the Chain's Locus”* — as a per-locus scoping of `M_eff` set against `Paper_056`'s `M_eff ∝ m`. **The heading cannot carry that.** It says ***“Rate Quantities”*** and **`M_eff` is not a rate** — §§3.2–3.4 are the three `Γ`s and `M_eff` is the input they take, so the heading was written for them. **§3.1's index set is unqualified** (*“substrate channel set `K`”*, not `K(C,u,t)`). **And §3.3, inside that same section, sums over locus PAIRS `u_A, u_B`.** *So there was never a textual commitment to per-locus — which means the branch I put in front of AP, “follow the text and retire the 175–250 kDa window”, had no text behind it.*
+
+> **The honest state is neither a collision nor clean: `M_eff`'s index set is UNSTATED, and the aggregation rule that would fix it does not exist.** `Paper_087` §P12's bridge carries the sums only to **`K(C,u,t)`** — the corpus's one canonical chain-channel set, per-locus-per-time — **and nothing aggregates it across loci.** **`Paper_056`'s `M_eff(m) ≈ αβ(m/m_u)` IS that rule, assumed rather than named.**
+
+**Named, following the corpus's own precedent three times over this week** — `P-Locus-Bandwidth-Bound`, `P-V5-Budget`, `P-Band-Partition`, each a silent assumption made explicit with the result **kept and tiered rather than retired**:
+
+> **`P-Multiplicity-Extensive`** — *for an object occupying `L` loci, `M_eff` aggregates **extensively** across them, so `M_eff ∝ m` **at fixed internal arrangement**, with arrangement-dependence carried in the coefficient `α`.*
+>
+> **Falsifier:** any demonstration that `M_eff` for a composite is **sub-extensive** in the loci occupied at fixed arrangement (`M_eff ~ m^p`, `p < 1`) refutes it, **and with it the wall's mass scaling.**
+
+**✅ The “at fixed arrangement” qualifier was added here and is load-bearing.** Read strictly as `M_eff ∝ m`, **folded and unfolded configurations of identical mass would have identical `M_eff`** — and this morning's #16 result (*folding correlates modes → lowers `M_eff` → unfolded goes classical first*) **would be impossible by construction.** §3.2's `α` is where the direction note records that all structural content was collapsed, **so arrangement lives in `α` and extensivity is in `m`.** *Stated this way the postulate and the directional prediction are compatible; without the qualifier they contradict, and the contradiction would have been introduced by the act of naming.*
+
+**⚠ It carries TWO loads, unlike the three precedents.** It is under **(i)** the wall's mass scaling, and **(ii)** the extensivity argument ruling out `N_bw` as the walling constituent — *a wall needs an intensive threshold crossed by an extensive `M_eff`, and only `N_commit` is intensive.* **Both rest on `M_eff ∝ m`.** Stated where a reviewer will look, in both papers.
+
+**Applied:** `Paper_054` §3.1 (named at the definition, with the unstated-index-set gap it closes and entry (11)'s framing corrected in place); `Paper_056` §3.2 (**the mass law re-tiered `Grounded` — form-forced GIVEN the postulate — not `Derived`**). **Census 174 → 175** — *and  flagged the drift on the first run after naming it, which is the instrument doing its job rather than me remembering to.*
+
+**What is unchanged.** The **extensivity result stands in full** — it only ever needed `M_eff ∝ m`, which `Paper_056` states outright. `N_commit` is intensive and walls; **`N_bw` still cannot**; the three dead routes stay dead. **And there is a reinforcement:** *if `M_eff` were per-locus and intensive, `Paper_056`'s extrapolation would have no basis at all — the wall REQUIRES extensive aggregation, which is one more reason to name it rather than leave it implicit.*
+
+> **Nothing was retired.** The 175–250 kDa window stands, now with the assumption carrying it **explicit, tiered, and falsifiable** instead of silent. *That is the fourth time this week the corpus's answer to “we assumed something” was to name it rather than withdraw the result — and the first time the naming had to be qualified to avoid breaking a second result in the same arc.*
+
 ## 2026-09-07 (11) — `M_eff`'s SCOPE: the fourth collision, and it sits upstream of the other three
+
+> **⚠ SUPERSEDED IN ITS FRAMING by entry (12), same day.** The §3 heading cannot scope `M_eff` per-locus — it says *“Rate Quantities”* and `M_eff` is not a rate; §3.1's index set is unqualified; §3.3 sums over locus pairs. **This is NOT a collision between papers.** The finding that survives is that **`M_eff`'s index set is unstated and the aggregation rule is missing** — now named `P-Multiplicity-Extensive`. **The extensivity result below is unaffected and stands in full.**
 
 **Found by a read-only session; verified here, and the textual evidence is sharper than reported.**
 
