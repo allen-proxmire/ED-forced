@@ -49,7 +49,7 @@ It is tempting to set this up as a two-horse race against MOND. **That would be 
 | **1** | **ΛCDM** | there is no fundamental `a₀`; the appearance of one is a coincidence of galaxy assembly — **and that coincidence is itself expected to drift with redshift** | **not excluded, and not even strained** (see below) |
 | **2** | **MOND, `a₀` constant** | `a₀` is a **constant of nature**, on a par with `c` or `G` | **excluded at 29σ** |
 | **3** | **MOND with an evolving `a₀`** | `a₀` tracks the cosmic scale; the **exponent is not predicted and is fitted to data** | **fits, by construction** |
-| **4** | **this prediction** | `a₀` tracks the live horizon with the exponent fixed at **exactly 1**, and no freedom to move it | **`α = 1` is 4.4σ from the fit; ~1–2σ on a realistic error budget** |
+| **4** | **this prediction** | `a₀` tracks the live horizon with the exponent fixed at **exactly 1**, and no freedom to move it | **`α = 1` at 2.3σ** on a computed conversion budget (§5.3), before the survey's own systematics |
 
 **Position 2 is the one that dies at high significance, and it is not the only MOND.** Against **position 3** — the account that actually competes — this paper's discriminating content is **not that `a₀` evolves. It is the specific value `α = 1`.** And that is precisely the number currently under tension (§5.3).
 
@@ -193,15 +193,48 @@ A prediction registered after the data is worth little. Three things are stated 
 
 **The local normalisation is NOT offered here as evidence, and the reason is stated rather than buried.** `K c H₀` lands within ~8% of the measured `a₀`. But by §3.2 the coefficient `K` is not fixed by anything upstream — the source derivation's own audit records the assembly constant as *“set to the value that returns the result”*. **A coefficient chosen to produce a number cannot then be evidenced by that number.** To be precise about what the record does and does not support: the quantity targeted was the `1/(2π)` **form**, not the observed `a₀`, so this is not reverse-engineering from the data. **But that distinction rescues the intent, not the inference.** The most the ~8% establishes is that the chosen coefficient is **not absurd** — a weak consistency statement, and one that would read the same way for a range of nearby choices. **It is excluded from the evidence for this paper's claim.**
 
-### 5.3 The half that does not
+### 5.3 The half that does not — with the refit shown
 
-**`α = 1.18 ± 0.04` places `α = 1` at +4.4σ.** Taken at face value, the prediction is excluded.
+**Taken at face value, `α = 1.18 ± 0.04` places `α = 1` at +4.5σ and the prediction is excluded.** An earlier draft answered this by asserting the error bar was too small and the real tension "~1–2σ," without producing a budget. **That was special pleading, and a referee would have been right to reject it. The budget is now computed** (`event-density/theory/a0z_powerlaw_refit.py`), and it does not say what the earlier draft guessed.
 
-**We do not take it at face value, and we say why — while noting that the reasons cut less far than we would like.**
+**First, what the `±0.04` is.** Propagating only the survey's `a₁ = 1.59 ± 0.10` through the endpoint conversion reproduces `α = 1.178 ± 0.034`. **That is the published bar, and it identifies the reduction our own addendum used.** It contains their statistical error through one conversion choice and nothing else.
 
-- **The `±0.04` is not the survey's error bar on `α`, because the survey did not fit `α`.** It is propagated from their linear-fit uncertainty through our conversion, and a conversion between two functional forms over a finite redshift range carries a form-choice error that no propagated statistical bar contains. **A referee is entitled to ask for the refit shown explicitly, and this paper does not yet show it.**
-- The underlying error is **statistical** and from a single first-generation survey. The covariance is unpublished; per-bin values are not tabulated (Figure 3 only); high-redshift rotation-curve systematics — inclination, pressure support, beam smearing, stellar mass-to-light — are not folded in. Realistically the uncertainty is larger, bringing the tension to roughly **1–2σ**.
-- **But the direction is corroborated by the survey team's own analysis**, which independently compares `a₀(z)` to `H(z)` and describes the evolution as **faster than `H(z)`**. An earlier suggestion that the tension was an artifact of using a linear fit as a proxy is therefore **withdrawn**: the anti-prediction direction is the authors' own reading, not an artifact of ours.
+**Second, the terms it omits, switched on one at a time.**
+
+| term added | `α` | `σ` | `α = 1` at |
+|---|---|---|---|
+| their `a₁` only (`±0.10`) | 1.177 | 0.034 | **5.2σ** |
+| + the intercept (`±0.10`, assumed) | 1.180 | 0.064 | 2.8σ |
+| + cosmology (`Ωₘ ± 0.007`) | 1.180 | 0.065 | 2.8σ |
+| + **reduction choice** | **1.152** | **0.065** | **2.3σ** |
+
+> **`α = 1.15 ± 0.07`, putting `α = 1` at 2.3σ — and 73% of that variance is missing from the published `±0.04`.**
+
+**Third, and this is the term nobody's error bar contains: a straight line in `z` is not a power law in `H(z)`, so their fit has no single `α` to disagree with.** The local slope *d ln a₀ / d ln H* of their own fitted line runs
+
+| `z` | 0.33 | 0.50 | 0.75 | 1.00 | 1.25 | 1.44 |
+|---|---|---|---|---|---|---|
+| local `α` | 1.78 | 1.46 | 1.19 | 1.04 | 0.95 | 0.90 |
+
+**a factor of two across the range, crossing `α = 1` at `z ≈ 1.1` — inside the data.** Any single quoted `α` is therefore the output of a reduction choice. Four defensible choices give 1.118, 1.147, 1.162 and **1.178** — and the last, the one that maximises `α`, is the one the corpus quoted.
+
+**The honest statement, and it is narrower than either the earlier draft's or the face-value reading:** the tension is **2.3σ on conversion error alone**, before any of the survey's astrophysical systematics, which are theirs to quantify and would push it lower. **The intercept assumption is the largest single lever and the input we are least entitled to** — it is published to two significant figures with no error bar. At `±0.05` the tension is 3.2σ; at `±0.15`, 1.8σ. **A referee could reasonably pick any of those rows, and the paper does not get to choose for them.**
+
+**What does not change.** The direction is still corroborated by the survey team's own analysis, which compares `a₀(z)` to `H(z)` and describes the evolution as **faster than `H(z)`**. **The tension is real and it is against the prediction.** It is smaller and much softer than 4.5σ, and it is not a refutation. It is also not a result.
+
+### 5.3b The shape comparison, which avoids the conversion entirely
+
+**Comparing one derived `α` to another inherits the reduction choice, so it is worth asking the question without forming an exponent at all.** With the amplitude free — which it must be, the coefficient being disputed (§3.2) — how far apart are the two curves across the measured range?
+
+| `z` | 0.33 | 0.50 | 0.75 | 1.00 | 1.25 | 1.44 |
+|---|---|---|---|---|---|---|
+| their fit | 1.53 | 1.80 | 2.19 | 2.59 | 2.99 | 3.29 |
+| ED, `α = 1` | 1.62 | 1.80 | 2.10 | 2.44 | 2.81 | 3.12 |
+| deviation | **+6.5%** | +0.2% | −4.5% | −6.0% | −5.9% | −5.2% |
+
+**They agree to 4–7% everywhere in the measured range. They are close, and they are not the same.** Two things must be said against the prediction here. **The worst deviation, 6.5%, is larger than the survey's ~4.2% precision on a single point**, and with 79 galaxies the *trend* is pinned far better than any single point, so the relevant comparison is tighter still. **And the residual is structured rather than random** — ED runs above their line at the bottom of the range and below it across the top, crossing near `z ≈ 0.5`. **That is a curvature difference, which no amplitude change can absorb.** So the disputed coefficient does not rescue the shape, and more data of the same kind will sharpen this rather than wash it out.
+
+> **What this does establish is what the ~30σ is and is not.** It is a detection that `a₀` evolves. **It is not a measurement of the exponent**, and the two must not be reported as though the first settled the second.
 
 ### 5.3a One outstanding check, flagged rather than assumed
 
@@ -212,7 +245,7 @@ An external reader reports the existence of a 2026 analysis — *“Three baryon
 ### 5.4 The verdict, stated plainly
 
 > **Qualitative call: confirmed, and MOND's constant `a₀` excluded at 29σ.**
-> **Quantitative rate: mildly disfavoured, ~1–2σ, from one survey.**
+> **Quantitative rate: mildly disfavoured at 2.3σ on a computed conversion budget (§5.3), from one survey — and the survey's own astrophysical systematics are on top of that and unquantified.**
 > **This is an open tension, not a refutation — and it is not a confirmation either.**
 
 **The prediction is closer to the data than MOND is by a wide margin and is not sitting comfortably.**
@@ -251,11 +284,11 @@ This prediction comes from Event Density, a substrate framework in which the arr
 | 6 | BTFR normalisation inherits the evolution | **D-via-I** | composition of step 1 with the standard BTFR |
 | 7 | evolution detected at ~30σ; `α = 0` excluded | **I — measurement** | MUSE-DARK III |
 | 8 | the survey's **linear** fit `a₁ = 1.59 ± 0.1` ×10⁻¹⁰ | **I — measurement** | Ciocan et al. |
-| 8b | **`α = 1.18 ± 0.04` converted from row 8 by us**; `α = 1` then at +4.4σ | **D-via-I — OUR REANALYSIS, not the survey's result** | **corrected 2026-09-07**; an earlier draft tagged this `I — same source`, which was wrong. The refit is not shown in this paper and should be |
-| 9 | tension softens to ~1–2σ under a realistic error budget | **A → position** | our judgement about unpublished systematics; **the weakest step in the paper** |
+| 8b | **`α = 1.15 ± 0.07` converted from row 8 by us**; `α = 1` then at **2.3σ** | **D-via-I — OUR REANALYSIS, not the survey's result** | **corrected 2026-09-07**; an earlier draft tagged this `I — same source`, which was wrong. **Refit and full budget now shown (§5.3) and reproducible: `event-density/theory/a0z_powerlaw_refit.py`** |
+| 9 | the published `±0.04` omits the intercept, the cosmology and the reduction choice; a full conversion budget gives `α = 1.15 ± 0.07`, i.e. `α = 1` at **2.3σ** | **D-via-I** *(was `A — position`)* | **computed 2026-09-07, not asserted**: `event-density/theory/a0z_powerlaw_refit.py`. **The residual judgement is the intercept's uncertainty**, published to 2 s.f. with no error bar — at `±0.05` the tension is 3.2σ, at `±0.15` it is 1.8σ, and the paper does not get to pick |
 | 10 | verdict: qualitative confirmed, rate disfavoured | **A → position** | composite |
 
-**Steps 9 and 10 are positions, not results, and are labelled as such.** Step 9 in particular is the paper's soft joint: if the published `±0.04` is taken as complete, the prediction is excluded at 4.4σ and §5.4 should read differently.
+**Step 9 was the paper's soft joint and is no longer one.** An earlier draft asserted the tension softened to "~1–2σ" without producing a budget, which the adversarial review correctly called special pleading. **The budget is now computed and it did not return the convenient answer**: 2.3σ, not 1–2σ. **Step 10 remains a position.** And the underlying exposure is unchanged: if the published `±0.04` is taken as complete, the prediction is excluded at 4.5σ and §5.4 should read differently.
 
 ---
 
