@@ -147,6 +147,8 @@ For a uniform superposition over $N$ channels: $M_{\mathrm{eff}} = N$. For a sin
 
 $M_{\mathrm{eff}}$ is a **substrate-level observable** — defined directly from the substrate primitives without requiring continuum-limit machinery.
 
+> **⚠ SCOPE COLLISION FLAGGED 2026-09-07 — `M_eff` is two different quantities across this arc, and neither paper says which it means.** **`Paper_054` §3 is headed *“Rate Quantities at the Chain's Locus”* and its §3.1 derives `M_eff` from *“**the chain's** participation content”* — per-chain, at a locus, **intensive**. **`Paper_056` §3.2 sets `M_eff(m) ≈ αβ(m/m_u)`** — per whole molecule, **extensive**. *A 175 kDa molecule is not one chain at one locus, and the corpus has no rule aggregating chain-at-a-locus into a multi-locus object — `Paper_087` §P12's bridge stops at `K(C,u,t)`.* **One consequence is settled either way: a wall needs an INTENSIVE threshold crossed by an EXTENSIVE `M_eff`, and a bandwidth budget `N_bw` is extensive at constant density — so `N_bw` cannot wall, and only `N_commit` can.** See the ledger, 2026-09-07 (11). **The canonical reading is the author's call and is NOT decided here.**
+
 ### 3.2 Substrate commitment-injection rate $\Gamma_{\mathrm{commit}}$
 
 By P11, the substrate's primitive operations include commitment events: discrete substrate-level events at which multi-channel participation collapses to a single channel. The **substrate-level commitment-injection rate** $\Gamma_{\mathrm{commit}}$ is the rate (per unit substrate time) at which commitment events occur for a given chain.

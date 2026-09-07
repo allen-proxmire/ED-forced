@@ -140,6 +140,8 @@ $M_{\mathrm{eff}} < M_{\mathrm{cap}}$ → coherent superposition maintained; $M_
 >
 > **This paper is the one the flag bites hardest.** The cap used here is the commitment-rate constituent, and `Paper_053` §3.2 says **Class A is bandwidth-bound** (`N_bw`), which appears nowhere in this paper. *Under that reading the sharpness argument in this very paragraph is about the wrong constraint — and would be replaced by a simpler one, since a bandwidth budget is a hard counting bound rather than a rate crossing.* **Not resolved here.**
 
+> **⚠ SCOPE COLLISION FLAGGED 2026-09-07 — `M_eff` is two different quantities across this arc, and neither paper says which it means.** **`Paper_054` §3 is headed *“Rate Quantities at the Chain's Locus”* and its §3.1 derives `M_eff` from *“**the chain's** participation content”* — per-chain, at a locus, **intensive**. **`Paper_056` §3.2 sets `M_eff(m) ≈ αβ(m/m_u)`** — per whole molecule, **extensive**. *A 175 kDa molecule is not one chain at one locus, and the corpus has no rule aggregating chain-at-a-locus into a multi-locus object — `Paper_087` §P12's bridge stops at `K(C,u,t)`.* **One consequence is settled either way: a wall needs an INTENSIVE threshold crossed by an EXTENSIVE `M_eff`, and a bandwidth budget `N_bw` is extensive at constant density — so `N_bw` cannot wall, and only `N_commit` can.** See the ledger, 2026-09-07 (11). **The canonical reading is the author's call and is NOT decided here.**
+
 ### 3.4 Empirical anchoring of $M_{\mathrm{cap}}$
 
 The substrate-level coefficients $\Gamma_0$, $\gamma$, $\alpha$, $\beta$ are *characterized* by the substrate primitives but their *specific numerical values* are anchored from existing experiments:

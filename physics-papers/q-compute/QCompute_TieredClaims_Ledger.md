@@ -77,6 +77,26 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (11) — `M_eff`'s SCOPE: the fourth collision, and it sits upstream of the other three
+
+**Found by a read-only session; verified here, and the textual evidence is sharper than reported.**
+
+**`Paper_054` §3 is headed “Substrate-Level Rate Quantities *at the Chain's Locus*”, and §3.1 — titled “Substrate effective multiplicity `M_eff`” — sits inside it.** Its derivation reads: *“By P02, **the chain's** participation content is distributed across channels; `M_eff` counts the effective number of channels carrying coherent participation.”* **So `M_eff` is per-chain, at a locus. Intensive.**
+
+**`Paper_056` §3.2 makes `M_eff(m) ≈ αβ(m/m_u)` — proportional to the mass of a whole molecule. Extensive.** *A 175 kDa molecule is not one chain at one locus.* `Paper_056` uses the word “locus” **three times, none of them near its `M_eff`**.
+
+> **Two different quantities under one symbol, stated in neither paper. And the corpus has no aggregation rule connecting them:** `Paper_087` §P12's chain-level bridge (2026-09-05) carries the sums only as far as **`K(C,u,t)` — a chain's channels at one locus at one time.** **Nothing anywhere aggregates chain-at-a-locus into a whole multi-locus object.** *That missing rule is the actual gap, and `Paper_056`'s mass scaling is an unstated assumption rather than a derivation.*
+
+**This is the fourth of the family** — `Coh`/`Str` (one symbol, two index sets), `M_cap` (one symbol, two definitions), the P13 reserve floor (one bound, two index sets), **and now `M_eff` (one symbol, two scopes)**. *It is upstream of the other three: of `N_bw`, of the class assignments, and of the wall's mass extrapolation.* **And it is the cheapest, because it is a reading question rather than a derivation.** *(A partial version of it was recorded in entry 2026-09-07 (4) §E as “whether these are the same M is established nowhere”; this pins it textually.)*
+
+> **✅ AND ONE CONSEQUENCE IS SETTLED REGARDLESS OF WHICH READING WINS: the wall cannot come from `N_bw`.** **A wall needs an INTENSIVE threshold crossed by an EXTENSIVE `M_eff`.** Grant everything — a per-locus bound `B_max` and a floor `b_min`, from wherever — then an object of mass `m` occupying `L(m)` loci has `N_bw = L(m)·B_max/b_min`, and at constant density `L ∝ m`, so **`N_bw ∝ m` too.** *Verified: with both sides extensive the ratio is CONSTANT at every mass and across six orders of magnitude in the granted constants — **no crossing, ever.*** **Whereas `Γ₀ ~ c/ℓ_ED` and `Γ_indiv` carry no object-size dependence, so `N_commit` is INTENSIVE and does wall** (verified: a fixed `M_cap` is crossed between 175 kDa and 1 MDa). **And if instead `M_eff` is per-locus, `Paper_056`'s mass extrapolation has no basis at all. Either way `N_bw` does not wall.**
+
+**Honesty qualifier the finding session insisted on, kept:** that argument assumes `L ∝ m`. **For `L ~ m^p` with `p < 1` a crossing does exist** — but its location is then set by a density law plus the inherited cap, **which `Paper_056` never states or tests**, and at plausible constants those crossings land at `~10⁻²` Da and below. *So the claim is not “a bandwidth budget can never wall”; it is that **at constant density it cannot**, and otherwise **the wall is a density prediction the arc has never made.***
+
+**This is the FOURTH independent arrival at `N_commit`, and the first with a REASON rather than an observation.** Earlier arrivals noted it was the only constituent with a formula, then that its *kind* sidesteps counting. **The reason is extensivity: a wall requires an intensive threshold, and of the three constituents only `N_commit` is intensive.** *That is not an accident of who did the work — it is forced.*
+
+**Not settled here, deliberately: which reading of `M_eff` is canonical.** **If per-object, `Paper_054` §3's framing needs rewriting. If per-locus, `Paper_056`'s 175–250 kDa window loses its basis.** *Neither is cheap downstream, which is presumably part of why the collision stayed invisible — and it is the author's call, on the same principle as the `M_cap` collision.* **What this entry does establish is that the choice must be made before any fourteenth-primitive question is asked, because that question is currently being posed about a quantity whose scope the corpus does not agree on.**
+
 ## 2026-09-07 (10) — The P13 route is a clean NEGATIVE, and the P07 route (checked here) fails the same way
 
 **A read-only session tested the P13 commitment-reserve floor proposed in entry (9). It fails, twice over, and one failure runs OPPOSITE to the hypothesis.** Its own summary, verified here where checkable.
