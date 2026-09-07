@@ -77,6 +77,24 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (10) — The P13 route is a clean NEGATIVE, and the P07 route (checked here) fails the same way
+
+**A read-only session tested the P13 commitment-reserve floor proposed in entry (9). It fails, twice over, and one failure runs OPPOSITE to the hypothesis.** Its own summary, verified here where checkable.
+
+**(1) The per-event reserve draw is textually open.** `primitives/P04_bandwidth.md` defines the commitment-reserve band `b_com(C)` as *“the budget consumed by commitment events”* and sources it to **P11** — but **specifies no minimum draw.** There is nothing to invoke; it would have to be posited, **which is the thing the route existed to avoid.**
+
+**(2) The inference fails even granting it — and it is the arc's recurring defect in a third costume.** Granting both a finite reserve *and* a minimum draw, the bound still does not reach `M_eff`: **the reserve bounds commitment events over a chain's HISTORY; `M_eff` counts SIMULTANEOUS uncommitted channels.** Different index sets, one temporal and one channel-indexed. *(Measured: at fixed reserve with zero events used, `M_eff` runs 10 → 100,000 with the reserve untouched.)* **`Coh`/`Str` was one symbol over two index sets; `M_cap` was one symbol over two trichotomies; this was one BOUND proposed across two index sets** — and the session noted it was its own proposal, carrying the same shape as the defects it was meant to repair.
+
+**(3) The coupling is inverted.** Modelling P11 faithfully as bandwidth-conserving concentration to a single channel, drawing on the reserve **monotonically REDUCES** `M_eff`: `39.1 → 25.2 → 13.6 → 7.4 → 3.9 → 2.0 → 1.0`. The hypothesis needed reserve-draw and channel-count positively coupled; **they are anti-correlated.**
+
+**(4) Steelmanned, it lands back on `N_commit` — the third independent arrival at that table.** `Γ_commit ~ b_int/reserve` diverges as the reserve drains (measured `1.0 → 1000.0`). **The reserve is not an unused resource the arc overlooked; it is already spent, in the one constituent that has a formula.**
+
+> **✅ AND THE P07 ROUTE, checked here as the session recommended — the only remaining candidate that does not run through a length — IS ALSO NEGATIVE, in the same direction.** Canonical P07: *“Channels are structurally distinguishable carriers with **intrinsic identities** … Two distinct channels at the same locus are substrate-level distinct objects, **even if their bandwidth and polarity content happen to coincide**”*; operationally `K₁ ≠ K₂` even when `b_{K₁}(u) = b_{K₂}(u)` and `π_{K₁}(u) = π_{K₂}(u)`. **P07 asserts DISTINCTNESS, not finiteness — and it is an ANTI-MERGING principle. It forbids identifying content-identical channels with one another, which is exactly the one move that could have bounded the count per locus without a length.** *And P07 is load-bearing in **025 (channel-counting)** and **054 (UR-1 multi-channel structure)** — the very papers that need `N_bw`. **The primitive the arc cites for its channel structure is the primitive that prevents the bound.***
+
+**Why individuation's move does not transfer, and this is the general statement.** That arc rode an integer because `R` turned out to be **a linear extent — “a length wearing a dimensionless costume.”** **`M_eff` is not an extent.** It sums over channels at a locus, and P03 gives a *discrete* channel index set, which is **countability, not finiteness**. **Every geometric discreteness ED has — events, loci, `ℓ_ED`, manifold non-refinability — is an EXTENT, and `M_eff` is not one.** *That is why two routes failed at the same joint, and it predicts the `ℓ_ED`/P08 route will fail there too.*
+
+**What is NOT claimed, and the session was careful about this.** **No P01–P13 route to a floor is shown impossible.** Two are dead; P08/`ℓ_ED` and P06/`D = 3+1` are untried. **And this does NOT argue ED needs a fourteenth primitive** — *it removes a defence against that reading, which is a different thing.* **Treating a failed route as evidence for the alternative is the over-banking the corpus's own rules name.** *AP's instinct is still open, and is now one candidate defence lighter rather than confirmed.*
+
 ## 2026-09-07 (9) — “Quantum” was the wrong word, and it mispriced the decision I put in front of AP
 
 **A read-only session corrected its own note, and the correction lands on me: I propagated the wrong word into `Paper_053` and the ledger, then framed AP's next decision as “does bandwidth quantize? — a fourteenth commitment.” That is priced against the more expensive of two different objects.**
