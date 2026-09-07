@@ -77,6 +77,28 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (2) — `Γ_commit`'s functional form: exponential and log EXCLUDED, `γ` two-valued, tier `A→regime` → `Grounded`
+
+**AP's call after the wall's number lost half its range** (#previous entry): go at the load-bearing open piece rather than the number. **`Paper_054` §3.2 had the power-law form at `A→regime` with *“exponential, logarithmic, etc.”* named as substrate-consistent alternatives** — and the arc ledger lists it as open under **both** the wall's shape and its number.
+
+**The finding is that §3.2 was leaving its own answer on the table.** It invokes P12's `Σ_C = Coh − Str − Grad` as what drives commitment, and then **posits** the multiplicity dependence instead of **reading it off `Σ_C`**. The 2026-09-05 three-way sign check (foundations #10) had already settled the two terms' form, and once you have the forms the *counting* is not a choice:
+
+> `Str_K = Σ_a b_K^(a)` is a **single** sum — `M` terms. `Coh_K = 2Σ_{a<b}√(b_K^(a) b_K^(b)) cos Θ_ab` is a **double** sum — `M(M−1)/2` pairs. **A single sum and a double sum cannot scale alike.**
+
+**Three consequences, checked numerically rather than argued** (`../event-density/theory/gamma_commit_form_probe.py`):
+
+1. **The named alternatives are EXCLUDED, not merely disfavoured.** A finite double sum over pairs is **polynomially bounded**, so no exponential can arise from it; and a logarithm grows slower than `Str`, which P04 additivity makes **exactly linear** (measured slope `0.999`). Both alternatives needed a characteristic multiplicity `M₀`, and **the only candidate the theory has is `M_cap` — which is *defined* as where `Γ_commit` meets `Γ_indiv⁻¹`, so using it inside `Γ_commit` is circular.** `Γ₀ ~ c/ℓ_ED` is a *time* scale and `M_eff` is dimensionless, so it supplies no multiplicity scale either.
+2. **The exact form is a two-term polynomial `∝ M² − M`, not a pure power law.** Local slope `3.00 → 2.33 → 2.14 → … → 2.00` across `M = 2 → 1024`, **never leaving `[2,3]`**. *The single-exponent statement is the large-`M` limit: good to a few percent by `M ~ 100`, poor at `M ~ 2–10` — which is the regime a few-qubit Class-A platform actually sits in.*
+3. **`γ` is two-valued and set by phase coherence, not fitted.** Coherent → the pair sum survives, `Coh ~ M²`, **`γ → 2`** (measured `2.12`). Decohered → with `z = Σ√b e^{iφ}`, `Coh = |z|² − Σb` and `E[|z|²] = Σb` **exactly**, so **`E[Coh] = 0`**: the pair term **switches off** rather than degrading, leaving `Str` and **`γ = 1`**.
+
+> **✅ And this improves the sharpness argument rather than merely propping it up.** Sharpness had been a property *assumed of* a single power law. It is instead a consequence of **the exponent changing across the transition** — `γ ≈ 2` while the superposition is coherent, `γ = 1` once it is not. **The two sides of the wall obey different laws and the crossing is one-way.** That is a mechanism, and `Paper_056`'s own “the shape is the claim” retreat now stands on something.
+
+**A correction I made to myself mid-probe, recorded because it changed the result.** The first draft asserted the decohered pair sum *“adds in quadrature → M”*. **The numbers said otherwise and the numbers were right:** its mean is **exactly zero**, so a log-fit of it returned a meaningless negative slope. *The corrected version is the stronger claim — “switches off” beats “degrades to linear” — which is the second time this week that checking a convenient-sounding step produced a better result than the step.*
+
+**THE REMAINING GAP, AND IT IS REAL.** All of this pins the multiplicity dependence of **`Σ_C`**. §3.2 needs the dependence of **`Γ_commit`**, and asserts only that *“gradients in `Σ_C` drive commitment”*. **The `Σ_C → rate` map is not supplied by the corpus and is not supplied here.** Monotone and scale-free → the exponents carry through; saturating → they do not. **So the honest tier is `Grounded`, not `Derived`** — the form is forced *given one named map* rather than assumed outright. **The open piece went from “the entire functional form is assumed, with exponentials live” to “one map from a landscape to a rate is unstated”, which is a much better-posed target and the natural next move.**
+
+**Propagated:** `Paper_054` §3.2 + its claims table (re-tiered), `Paper_056`'s 2026-09-04 sharpness caveat.
+
 ## 2026-09-07 — The Class-A wall's lower half is EXCLUDED, and the paper's reach claim was backwards
 
 **Picked up at AP's direction** (*“ok lets pick up the higgs stuff”*) after the a₀(z) line was closed as untested. **First finding: the “Higgs stuff” is three results in three folders, not one arc** — the Higgs *negative* (the condensate route comes up empty on the certified field; fundamental Higgs/electroweak mass is inherited, Report §11), the **2020 spontaneous-radiation bound** that ED survives for a computed reason (`state-reduction/`), and **this wall** (`q-compute/Paper_056`). *Only the second and third are pitchable to an experimentalist; the first is the honesty ballast.*
