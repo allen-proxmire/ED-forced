@@ -77,6 +77,24 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 — The Class-A wall's lower half is EXCLUDED, and the paper's reach claim was backwards
+
+**Picked up at AP's direction** (*“ok lets pick up the higgs stuff”*) after the a₀(z) line was closed as untested. **First finding: the “Higgs stuff” is three results in three folders, not one arc** — the Higgs *negative* (the condensate route comes up empty on the certified field; fundamental Higgs/electroweak mass is inherited, Report §11), the **2020 spontaneous-radiation bound** that ED survives for a computed reason (`state-reduction/`), and **this wall** (`q-compute/Paper_056`). *Only the second and third are pitchable to an experimentalist; the first is the honesty ballast.*
+
+**The finding, and it goes against ED.** `Paper_056`'s 2026-07-29 note reads the Nature result as *“squeezing the extrapolated number from below.”* **That understates a definite outcome.** Verified against two independent sources: **Nature 2026, `10.1038/s41586-025-09917-9`**, *“Probing quantum mechanics with nanoparticle matter-wave interferometry”* — **sodium clusters of >7000 atoms at >175 kDa**, macroscopicity **μ = 15.4–15.5**, **MUSCLE Talbot–Lau interferometer** with UV photodepletion gratings, billed as the most stringent bounds to date on generic macrorealistic modifications of QM.
+
+> **A wall is where superposition FAILS. Interference was OBSERVED at 175 kDa. So there is no wall at or below 175 kDa, and the 140–250 kDa window is truncated to ≈175–250 — about 30% of its original range.** “Under pressure from below” is a softer statement than the evidence supports.
+
+**The obvious escape is closed by the paper's own text, which is why it was worth checking before writing.** One could argue sodium clusters map to `M_eff` differently from organic molecules. **§6.1 forecloses it:** it commits matter-wave interferometry to **mass-scaling, `M_eff ∝ m`**, and reserves platform-specific factors for differences **between platform types** (matter-wave vs SC qubits vs trapped ions), **not between particles within matter-wave.** And the Nature apparatus is **Talbot–Lau — the same interferometer family as §1.1's own Eibenberger 2013 and Fein 2019 anchors.** Same architecture, same committed scaling law, higher mass. **Invoking a particle-specific correction would buy the number at the cost of architecture-independence, which §6.4 names as the retroactive-fit-immune half. Both cannot be kept.**
+
+**✅ And the reach claim was not merely stale but backwards, at three sites.** The paper says the wall is *“5–10× beyond current experimental reach”* and *“testable in 5–10 years”*. **Current reach IS 175 kDa.** The surviving window tops out at 250 kDa — **1.0–1.43× current reach.** **The prediction is testable now and is close to settled either way.** *That is the useful half of the news and it makes the wall MORE interesting to an experimentalist, not less: a decade-out prediction is a talking point, a next-experiment prediction is a collaboration.*
+
+**What is untouched, and it is the half that always mattered:** §6.4's retroactive-fit-immune content — the **sharpness** and the **architecture-independence within Class-A**. Those are tested by comparing platforms against each other, not by one platform reaching higher mass. **The number was always the weaker half; it is now the mostly-spent half.**
+
+**Propagated the same session:** `Paper_056` (a dated update block plus all three reach claims struck), `predictions/22_Ways #16`, `predictions/ED_Master_Predictions_List` 4.1.
+
+**Standing caution this reinforces.** The corpus's own 2026-07-29 note had the fact and drew the weaker conclusion from it. **Two days running, the error has been an under-drawn inference from a correctly-recorded external result rather than a missing fact.** *Recording a number is not the same as working out what it excludes.*
+
 ## Addendum 2026-09-04 — external audit: arc clean, one disclosure gap
 
 **The arc has already had this audit, and passed it — the first one today of which that is true.** The q-compute ledger records a spot-check of four papers with **“no catch”**; tiers the 140–250 kDa mass as *“Selected/Inherited (number-pressured — do NOT bank as firm), a 2-POINT extrapolation”*; records `Paper_056` as having been **stale on the number and fixed 2026-07-29** when the ≥170 kDa Nature-2026 result landed inside the window; records **README tier optimism as fixed** (it had called the arc “CLOSED” and exhaustiveness “proven” where the papers rest it on two postulates); and summarises the arc as *“coherent, well-audited … whose spine is **Grounded, not Derived**”*. `Paper_054` labels the power-law form **A→regime** in its own audit table and says in prose that P04 + P11 + V1 give the *existence* of a commit-rate and **do not force its functional form**. Nothing here overclaims.

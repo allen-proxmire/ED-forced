@@ -18,9 +18,20 @@ The Event Density (ED) substrate is a 13-primitive generative system. This paper
 
 **The specific 140–250 kDa value is an extrapolation** — not a substrate-level structural prediction — anchored to the existing matter-wave-interferometry data: Eibenberger et al. 2013 (~10 kDa) + Fein et al. 2019 (~25 kDa). The extrapolation uses a substrate-level multiplicity-scaling form with empirically-anchored coefficients. If the wall were measured at, e.g., 50 kDa or 500 kDa, the substrate framework would re-anchor with adjusted coefficients within the *same* structural form. **The 140–250 kDa range is the best-current-anchor extrapolation, not a derivation from the primitives.**
 
-This is **5–10× beyond current experimental reach** and testable in 5–10 years. Standard environmental-decoherence-only models cannot predict a sharp architecture-independent wall; ED's substrate-level prediction is sharp and architecture-independent (the *form* of the wall, not the specific extrapolated mass). The paper makes no claim that exact molecular masses are derived, no claim that 140–250 kDa is exact at the single-kDa level, no claim that decoherence is irrelevant, no claim that all platforms are Class-A, and no claim that quantum computing is impossible.
+~~This is **5–10× beyond current experimental reach** and testable in 5–10 years.~~ **Superseded 2026-09-07: current reach is 175 kDa, and the surviving 175–250 kDa window is at most 1.43× that — the wall is testable NOW.** Standard environmental-decoherence-only models cannot predict a sharp architecture-independent wall; ED's substrate-level prediction is sharp and architecture-independent (the *form* of the wall, not the specific extrapolated mass). The paper makes no claim that exact molecular masses are derived, no claim that 140–250 kDa is exact at the single-kDa level, no claim that decoherence is irrelevant, no claim that all platforms are Class-A, and no claim that quantum computing is impossible.
 
 > **Update 2026-07-29 — the *number* is under pressure; the *shape* is the claim.** Matter-wave interference has since been reported at **≥170 kDa (Nature 2026, `s41586-025-09917-9`)** — *inside* the 140–250 kDa window and still fully QM-consistent, squeezing the extrapolated number from below (it does not touch the load-bearing structural claim: a sharp, architecture-independent wall exists; where it sits re-anchors within the same form). Read the **shape** (sharp + architecture-independent) as the prediction, not the 2-point-extrapolated number. **Added 2026-09-04:** the shape is *also* conditional — its **sharpness** rides on the power-law form of $\Gamma_{\mathrm{commit}}(M_{\mathrm{eff}})$, which `Paper_054` §3.2 labels **A→regime** (P04 + P11 + V1 give the commit-rate's *existence*, not its functional form), and which this arc's ledger lists as **OPEN and load-bearing under both the wall's shape and its number**, with exponential/log alternatives substrate-consistent. So this retreat is to different ground, not firmer ground: a **gradual** falloff would not distinguish “ED is wrong” from “the $\Gamma_{\mathrm{commit}}$ form is wrong”. *The **architecture-independence** half is unaffected by this and remains the cleaner discriminator.* **Also retired:** the once-proposed 3–6% *second-harmonic-fringe* secondary signature is **CONFOUNDED (2026-07-24)** — KDTL grating optics produce higher harmonics regardless, so a bare second harmonic does not confirm ED; a real test needs *excess* over the full Nimmrichter–Hornberger optics prediction from raw fringe data. Fuller status: `predictions/ED_Master_Predictions_List` §4.1–4.2.
+
+> **⚠ UPDATE 2026-09-07 — the lower half of the window is now EXCLUDED, and the reach claim below is stale.** The 2026-07-29 note above reads the Nature result as *“squeezing the extrapolated number from below.”* **That understates a definite outcome.** Verified against two independent sources: *“Probing quantum mechanics with nanoparticle matter-wave interferometry”*, **Nature 2026, `10.1038/s41586-025-09917-9`** — sodium clusters of **>7000 atoms at >175 kDa**, macroscopicity **μ = 15.4–15.5**, in the **MUSCLE Talbot–Lau interferometer**, billed as the most stringent bounds to date on generic macrorealistic modifications of QM.
+>
+> **The wall is where superposition fails. Interference was OBSERVED at 175 kDa. So there is no wall at or below 175 kDa, and the predicted 140–250 kDa window is truncated to ≈175–250 kDa — about 30% of its original range.**
+>
+> **The obvious escape is closed by this paper's own §6.1.** One could argue that sodium clusters are not organic molecules and so map to `M_eff` differently. **§6.1 commits matter-wave interferometry to mass-scaling, `M_eff ∝ m`**, and reserves platform-specific factors for differences *between platform types* (matter-wave vs SC qubits vs trapped ions), **not between particles within matter-wave interferometry.** The Nature apparatus is **Talbot–Lau — the same interferometer family as this paper's own Eibenberger 2013 and Fein 2019 anchors.** Same architecture, same committed scaling law, higher mass. *Invoking a particle-specific correction here would buy the number at the cost of the architecture-independence claim, which §6.4 identifies as the retroactive-fit-immune half. The two cannot both be kept.*
+>
+> **✅ And this makes the prediction imminent rather than remote, which is the useful half of the news.** The claims below that the wall is *“5–10× beyond current experimental reach”* and *“testable in 5–10 years”* were true when written and are **now false**: current reach **is** 175 kDa, and the surviving window tops out at **1.43×** that. **The prediction is testable now and is close to being settled either way.** Corrected at all three sites below.
+>
+> **What is untouched:** §6.4's retroactive-fit-immune content — the **sharpness** and the **architecture-independence within Class-A**. Those are tested by comparing platforms against one another, not by one platform reaching higher mass, and nothing here bears on them. **The number was always the weaker half; it is now the mostly-spent half.**
+
 
 ---
 
@@ -242,7 +253,7 @@ Current state:
 - Fein 2019: ~25 kDa.
 - Extrapolated Class-A wall: 140–250 kDa.
 
-Ratio: 5–10× beyond current matter-wave reach. Next-generation experiments accessible in 5–10 years.
+~~Ratio: 5–10× beyond current matter-wave reach. Next-generation experiments accessible in 5–10 years.~~ **Superseded 2026-09-07 (Nature `10.1038/s41586-025-09917-9`, 175 kDa): the ratio is now 1.0–1.43×. The window is 175–250 kDa and is within reach of the apparatus that just closed its lower half.**
 
 Experimental tests:
 
@@ -448,7 +459,7 @@ What this paper claims:
 
 - The Class-A wall **structural existence** is a substrate-level prediction (sharp, architecture-independent within Class-A, set by $M_{\mathrm{cap}}$).
 - The 140–250 kDa range is the **extrapolation** from current anchors.
-- The wall is **5–10× beyond current matter-wave reach**, testable in 5–10 years.
+- ~~The wall is **5–10× beyond current matter-wave reach**, testable in 5–10 years.~~ **Superseded 2026-09-07:** the surviving window is **175–250 kDa**, i.e. **1.0–1.43×** current reach — **testable now, and close to settled either way.**
 - Standard decoherence-only models **cannot predict** a sharp architecture-independent wall.
 - The cross-platform unification (one $M_{\mathrm{cap}}$, three platforms) is a substrate-level structural claim with current retroactive-fit-risk acknowledged pending substrate-derived platform-scaling commitments.
 - The three-class architectural structure is structurally justified by UR-1's three-component failure-mode structure.
