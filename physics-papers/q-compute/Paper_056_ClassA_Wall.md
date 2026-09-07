@@ -136,6 +136,10 @@ $$
 
 $M_{\mathrm{eff}} < M_{\mathrm{cap}}$ → coherent superposition maintained; $M_{\mathrm{eff}} > M_{\mathrm{cap}}$ → commitment triggered, superposition resolves. **Transition is sharp** at substrate level (power-law $M_{\mathrm{eff}}^\gamma$ exceeds threshold rapidly relative to coherent-evolution timescale).
 
+> **⚠ FLAG 2026-09-07 — `M_cap` carries two definitions across this arc, and they disagree about which constituent sets the Class-A wall.** `Paper_053` §3.1 defines `M_cap = min{N_bw, N_V5, N_commit}` and §3.2 assigns **Class A to `N_bw`** (bandwidth, P04); `Paper_054` §5.1 and `Paper_056` §3 define and use `M_cap = (Γ_indiv⁻¹/Γ₀)^{1/γ}`, which is the **`N_commit`** constituent — `Paper_053`'s **Class B**. **Neither paper states which constituent it means, which is why this was invisible** (the same failure mode as foundations #10's `Coh`/`Str` collision). **Three candidate resolutions are set out in `q-compute/Note_Mcap_TwoDefinitions_2026-09-07.md`, and none is adopted — the choice changes the arc's structure and is the author's.**
+>
+> **This paper is the one the flag bites hardest.** The cap used here is the commitment-rate constituent, and `Paper_053` §3.2 says **Class A is bandwidth-bound** (`N_bw`), which appears nowhere in this paper. *Under that reading the sharpness argument in this very paragraph is about the wrong constraint — and would be replaced by a simpler one, since a bandwidth budget is a hard counting bound rather than a rate crossing.* **Not resolved here.**
+
 ### 3.4 Empirical anchoring of $M_{\mathrm{cap}}$
 
 The substrate-level coefficients $\Gamma_0$, $\gamma$, $\alpha$, $\beta$ are *characterized* by the substrate primitives but their *specific numerical values* are anchored from existing experiments:

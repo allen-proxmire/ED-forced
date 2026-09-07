@@ -293,6 +293,8 @@ $$
 
 **Operational content:** the chain's effective multiplicity must remain below the substrate-level cap function throughout coherent evolution.
 
+> **⚠ FLAG 2026-09-07 — `M_cap` carries two definitions across this arc, and they disagree about which constituent sets the Class-A wall.** `Paper_053` §3.1 defines `M_cap = min{N_bw, N_V5, N_commit}` and §3.2 assigns **Class A to `N_bw`** (bandwidth, P04); `Paper_054` §5.1 and `Paper_056` §3 define and use `M_cap = (Γ_indiv⁻¹/Γ₀)^{1/γ}`, which is the **`N_commit`** constituent — `Paper_053`'s **Class B**. **Neither paper states which constituent it means, which is why this was invisible** (the same failure mode as foundations #10's `Coh`/`Str` collision). **Three candidate resolutions are set out in `q-compute/Note_Mcap_TwoDefinitions_2026-09-07.md`, and none is adopted — the choice changes the arc's structure and is the author's.**
+
 **Failure consequence:** when $M_{\mathrm{eff}} > M_{\mathrm{cap}}$, substrate-level commitment-injection rate exceeds individuation rate; commitment occurs rapidly relative to coherent evolution; the chain's multi-channel state collapses.
 
 ### 5.2 UR-1.2 — Cross-bandwidth sustained

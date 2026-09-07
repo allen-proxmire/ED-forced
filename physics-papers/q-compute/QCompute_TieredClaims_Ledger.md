@@ -77,6 +77,30 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (4) — `M_cap` carries TWO definitions, and the Class-A wall is built from the wrong constituent
+
+**AP: do the sign question.** It is not what this turned out to be. **Chasing the sign led to a collision between three papers that the arc had never flagged, and it lands on this session's own two previous entries.** `q-compute/Note_Mcap_TwoDefinitions_2026-09-07.md`.
+
+**The collision, exactly.** `Paper_053` §3.1: **`M_cap = min{N_bw, N_V5, N_commit}`**, and §3.2 assigns the classes by which constituent binds — **Class A → `N_bw`** (bandwidth, P04), Class B → `N_commit`, Class C → `N_V5`. But `Paper_054` §5.1 defines **`M_cap = (Γ_indiv⁻¹/Γ₀)^{1/γ}`** — a pure commitment-rate quantity — and **`Paper_056` §3 (line 134) uses that formula verbatim for the Class-A wall.** **`N_bw` appears nowhere in `Paper_056`.**
+
+> **So the Class-A wall's mass formula is built entirely from the commitment-rate constituent, which `Paper_053`'s own taxonomy assigns to Class B.**
+
+**Why it was invisible, and it is a familiar shape.** Both papers write `M_cap`; **neither states which constituent it means.** Read singly each is coherent; the collision appears only when `053` §3.2's class assignment is read against `056` §3's formula. **That is precisely foundations #10's `Coh`/`Str` failure mode** — *neither paper states its index set, which is exactly why the collision is invisible.*
+
+**What it costs, and it lands on my own last two entries.** **Entries (2) and (3) worked `Γ_commit`'s multiplicity dependence in order to firm up the CLASS-A wall's sharpness. If `Paper_053` §3.2 is right, that work firms up Class B's wall, not Class A's.** The `Σ_C` counting result stands on its own — it is a statement about P12 — but **what it was for is now in question.**
+
+**And it weakens an argument entry (2) made.** That entry excluded exponential and log forms partly because *“the only candidate multiplicity scale is `M_cap`, and `M_cap` is defined by `Γ_commit`, so using it inside `Γ_commit` is circular.”* **That circularity holds only under `Paper_054`'s definition.** Under `Paper_053`'s, `M_cap` also contains `N_bw` and `N_V5`, **neither defined via `Γ_commit`** — so a multiplicity scale IS available in principle and the exclusion loses that leg. *(The polynomial-boundedness argument for `Σ_C` is untouched.)*
+
+**Three candidate resolutions, none adopted**, stated the way foundations #10 stated its three because the choice changes the arc's structure: **(1)** `053` is right and `056` computes the wrong constituent — cheapest to state, most disruptive to `056`, **and attractive: a bandwidth budget is a hard counting bound, so “you run out of bandwidth” is a SIMPLER and SHARPER wall mechanism than a rate crossing, and the last two entries' residuals would go moot for Class A**; **(2)** `054`/`056` are right and `053` §3.2's labels are wrong — cheapest to `056`, but puts `Paper_055`'s A/B/C exhaustiveness and `Paper_057`'s Class-B construction in question; **(3)** two objects at two layers, cleanest if true, largest rewrite, and it needs each paper to say which it means.
+
+**Untouched:** the `Σ_C` counting result; `053`'s `min`-structure-forced-by-simultaneity; the wall's **architecture-independence** (a claim about one `M_cap` governing several platforms, indifferent to which constituent binds); and the empirical status — **the 175–250 kDa window and its testability now are unaffected.**
+
+**The sign question itself is now downstream and is deferred deliberately.** *“Is `Γ_commit` rising or falling in `M`, given `Coh` is the stabilising term?”* **Under resolution (1) it does not arise for Class A at all** — a budget cap has no rate direction — **and is live only for Class B. Under (2) it is live for Class A and becomes the more urgent of the two.** So the definition question goes first, and answering the sign question before it would risk answering it for the wrong constraint.
+
+**Flags placed in `053`, `054` and `056`, pointing at the note. No construction changed** — adopting a resolution silently is what made the original collision invisible.
+
+**Three sessions on this arc today, and the pattern is worth naming.** The wall's *number* lost half its range to a real experiment; its *sharpness* gained a mechanism, then had that mechanism's reach narrowed, and now has its target questioned. **Each step was a genuine improvement in accounting and a genuine reduction in claim.** *The arc is in better shape and says less, which has been the whole week's shape.*
+
 ## 2026-09-07 (3) — The `Σ_C → rate` map: WORKED AND NOT CLOSED, and it narrows the previous entry
 
 **AP: do the map.** The previous entry closed by naming this as the one remaining piece and predicting P11's Lindblad face would supply it. **It does not, and working the question turned up three things that cut against that entry rather than completing it.** *Recorded at length because the previous entry's optimism is the thing being corrected.*
