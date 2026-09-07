@@ -37,6 +37,8 @@ The draft's own §1.1 concedes that the `a₀ ≈ cH₀` connection is **standar
 
 ## 2. SERIOUS — the 8% local match may be circular
 
+> **✅ ADDRESSED 2026-09-07.** Checked first: `Paper_029` audit row 10 says the assembly constant was *“set to the value that returns the result”*, and **the result targeted was the `1/(2π)` FORM, not the observed `a₀`** — so the charge of reverse-engineering from data is **not** supported, and the review overstated it. **But that rescues the intent, not the inference:** a coefficient nothing upstream fixes cannot be evidenced by the value it was set to produce. **The ~8% is now excluded from the evidence** — demoted in the abstract, removed from §5.2's confirming half, and §3.2 states the general consequence, that any paper making this prediction must decline its own best-sounding sentence.
+
 §5.2 offers the local intercept matching to ~8% as supporting evidence. §3.2 says the `1/(2π)` is **postulated**, reinstated "at an assembly step fixed by a normalisation choice that nothing upstream determines."
 
 **A referee will ask the obvious question: was that normalisation chosen to land on the observed `a₀`?** The corpus's own audit says the step is *"set to the value that returns the result."* If so, the 8% agreement is **not evidence at all** — it is the calibration, reported as a result.

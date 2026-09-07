@@ -26,7 +26,7 @@ The MOND acceleration scale `a₀ ≈ 1.2×10⁻¹⁰ m s⁻²` is, in MOND, a c
 
 Event Density, a substrate framework, makes this reading structural and registers `a₀(z) = cH(z)/(2π)` with the exponent fixed at **exactly one**. The exponent is the testable content: it cannot be tuned within the framework without abandoning the mechanism that produces it.
 
-The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2) — while matching the local value to ~8%. Fitting a power `a₀ ∝ H(z)^α` gives **α = 1.18 ± 0.04 (stat)**. MOND's `α = 0` is dead at 29σ. The prediction's `α = 1` sits at **+4.4σ formally**, softened to roughly **1–2σ** once one-survey and high-redshift systematics are folded in — and the survey team's own analysis independently describes the evolution as *faster than* `H(z)`.
+The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2). *(The predicted local normalisation also lands within ~8%, but it rests on a coefficient nothing upstream fixes and is **not** offered as evidence; see §3.2 and §5.2.)* Fitting a power `a₀ ∝ H(z)^α` gives **α = 1.18 ± 0.04 (stat)**. MOND's `α = 0` is dead at 29σ. The prediction's `α = 1` sits at **+4.4σ formally**, softened to roughly **1–2σ** once one-survey and high-redshift systematics are folded in — and the survey team's own analysis independently describes the evolution as *faster than* `H(z)`.
 
 **The honest verdict is split: the qualitative call is confirmed and MOND's constant scale is excluded; the specific rate is mildly disfavoured.** We state the decisive test — a direct raw-data fit of `α` across surveys with a full error budget — and the condition under which the prediction should be abandoned.
 
@@ -88,6 +88,8 @@ That `a₀` is of order `cH₀` — that the MOND scale is set by the cosmic hor
 ### 3.2 Disputed: the coefficient
 
 **None of the three routes delivers the coefficient.** The `1/(2π)` is, in the corpus's own current tiering, **postulated and disputed**: the factor cancels in the displayed algebra of the source derivation and is reinstated at an assembly step fixed by a normalisation choice that nothing upstream determines. **We flag this rather than defend it.** The corpus re-tiered it from *derived* to *postulated/disputed* in September 2026, and the claim that `a₀` is "parameter-free" was withdrawn with it.
+
+> **A consequence worth stating early, because it removes the paper's most quotable number.** Since `K` is fixed by a choice rather than by the derivation, **the agreement between `K c H₀` and the measured `a₀` cannot be used as evidence for `K`.** Any paper making this prediction has to decline its own best-sounding sentence, and this one does (§5.2).
 
 ### 3.3 The exponent is independent of the coefficient, and that is the point
 
@@ -178,7 +180,7 @@ A prediction registered after the data is worth little. Three things are stated 
 
 **`a₀` evolves.** The qualitative content of the prediction — that the MOND scale is not a constant of nature — is confirmed at high significance, and **the constant-`a₀` reading is excluded at 29σ.** That is a structural claim about a 40-year-old framework, made in advance, and the data agree with it. **But it does not separate this prediction from position 3 of §1.2**, which expects evolution too; the separation from that rival rests entirely on §5.3.
 
-The local normalisation also lands within ~8%, though §3.2 requires us to say that the `2π` producing that number is disputed, so the agreement is weaker evidence than it looks.
+**The local normalisation is NOT offered here as evidence, and the reason is stated rather than buried.** `K c H₀` lands within ~8% of the measured `a₀`. But by §3.2 the coefficient `K` is not fixed by anything upstream — the source derivation's own audit records the assembly constant as *“set to the value that returns the result”*. **A coefficient chosen to produce a number cannot then be evidenced by that number.** To be precise about what the record does and does not support: the quantity targeted was the `1/(2π)` **form**, not the observed `a₀`, so this is not reverse-engineering from the data. **But that distinction rescues the intent, not the inference.** The most the ~8% establishes is that the chosen coefficient is **not absurd** — a weak consistency statement, and one that would read the same way for a range of nearby choices. **It is excluded from the evidence for this paper's claim.**
 
 ### 5.3 The half that does not
 
