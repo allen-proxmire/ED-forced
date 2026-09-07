@@ -77,6 +77,24 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (7) — Target #16: the folded/unfolded tie is breakable WITHOUT building the map
+
+**AP's call, and the target warns against exactly what a session could do wrong here:** *“a genuine research frontier, not a session win; forcing it risks over-banking.”* **This note does not build the map.** It removes the map's blocking role from **one** of the four threads #16 gates — the one carrying the matter-wave weapon's only falsifiable directional content. `Note_16_BasisDominance_BreaksTheFoldedTie_2026-09-07.md`.
+
+**The reframe: the direction was never blocked on the whole map.** `theory/MatterWave_Direction_and_StructureToChannel_Map` lists four objections, and its first is load-bearing: *“In the plain site basis, folding leaves the marginal `{b_K}` unchanged → `M_eff` unchanged. **Any effect requires moving to the collective-mode basis.**”* **So it is blocked on one binary — site-local or collective — not on a research programme.**
+
+**And the corpus already holds the selector, in a different arc.** `state-reduction/StateReduction_ChannelGranularity` (2026-07-21), germanium case: ***“when the self-Hamiltonian (the binding, ~eV) dominates the collapse/gravitational coupling (tiny), einselection makes the ENERGY EIGENBASIS the pointer basis — the standard Paz–Zurek result.”*** **Paz–Zurek is a competition, and its outcome is fixed by which term dominates.**
+
+> **A matter-wave interferometer is in the self-Hamiltonian-dominant regime BY CONSTRUCTION.** The entire apparatus is environmental-coupling suppression — high vacuum, cryogenic, isolated — against an untouched ~eV covalent Hamiltonian. *An experiment not in that regime would show no interference at all, so any run producing data is in it.* **The einselected basis is therefore COLLECTIVE, and objection 1 is answered by ED's own stated criterion rather than a new assumption.**
+
+**Objection 2 falls with it** (Paz–Zurek pins the assignment, not just the type, once the dominance ratio is known — and the apparatus fixes the ratio). **Objection 3 resolves toward `Paper_056`:** in the collective basis, folding's non-covalent contacts correlate the modes and lower the effective independent count in `M_eff = (Σ_K b_K)²/(Σ_K b_K²)`, so the folded molecule sits further from `M_cap` and survives longer — **unfolded goes classical first at equal mass.** **Objection 4 was a withdrawn category error and does not bear.**
+
+> **⚠ TIER `A → position`. NOT a prediction, and it must not be quoted as one.** The Paz–Zurek criterion is solid and in-corpus; the regime inference from the apparatus is short but is an inference; **and that folding LOWERS `M_eff` is asserted, not computed — it is the physically standard direction and the one `Paper_056`'s IPR framing already leaned, which is not the same as a derivation.** *Deliberately NOT propagated to `Paper_056` or the Report: an unquantified direction in a paper is precisely the over-banking the target warns about.*
+
+**What is now owed is far smaller than #16:** given the collective basis, **compute `M_eff` for a folded and an unfolded configuration of the same molecule and report the RATIO.** *The ratio cancels the inherited `α, β` into which `Paper_056` §3.2 collapses all structural content — which is exactly why this thread came loose and the singularity-cap thread (`ρ_max`, needing absolute per-cell capacity) did not.* **Order-unity and the weapon has an only-ED directional prediction no mass-based rival can make; a fraction of a percent and the direction is real and untestable, and that should be said.**
+
+**And the regime boundary is nameable now, which it was not before:** an environment-dominated experiment would einselect the site basis and **the direction would VANISH rather than reverse.** *A stated regime boundary on an ED claim is the shape a falsifiable prediction is supposed to have.*
+
 ## 2026-09-07 (6) — The estimate CANNOT BE RUN: two of `M_cap`'s three constituents were never defined
 
 **AP asked for the cheap move: work out which of the three budgets is smallest for a 175 kDa molecule, and let that decide whether the three-paper rewrite is needed. It cannot be done, and finding out why answers more than the estimate would have.**
