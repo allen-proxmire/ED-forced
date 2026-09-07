@@ -41,7 +41,9 @@ ITEMS = [
     ("A", "gpt", "4. qualify classical tests by the UFF prerequisite",
      lambda: "conditional on the still-unproven universal-free-fall normalisation" in REPORT),
     ("A", "gpt", "5. MOND residual list = threshold / high-acc / UFF, not 'sign'",
-     lambda: "The MOND residuals, stated as the three they actually are" in REPORT),
+     # superseded by the physics audit, which found that list wrong in 2 of 3;
+     # the item is resolved by the CORRECTED list, not the original one.
+     lambda: "The MOND residuals — CORRECTED 2026-09-07 after a physics audit" in REPORT),
     ("A", "gpt", "6. shared Coh/Grad vocabulary, workbook == report",
      lambda: "measured corroboration CANDIDATE" in cell(191, 12)
              and "MEASURED CORROBORATION" in cell(191, 8)),
@@ -78,6 +80,32 @@ ITEMS = [
 
     ("B", "gemini", "no action items (ledger alignment verification)",
      lambda: True),
+
+    # ---------------- ROUND C (2026-09-07, after the hygiene + detector work) --
+    ("C", "gpt", "1. a0 tier: Report must match the workbook's Derived -> Grounded",
+     lambda: "form-forced conditional on the live-horizon reading" in REPORT
+             and "the **evolution** is the claim here and it is derived" not in REPORT),
+    ("C", "gpt", "2. Rusishvili status discrepancy -- FALSE ALARM, stale copy reviewed\n"
+                 "                     (the current paper does not contain the sentence quoted)",
+     lambda: "have not been able to independently confirm" not in PAPER
+             and "academia.edu/170831186" in PAPER),
+    ("C", "gpt", "3. 'MOND killed' too broad",
+     lambda: "killing the MOND picture" not in REPORT
+             and "exclude constant-`a\u2080` MOND" in REPORT),
+    ("C", "gpt", "4. workbook row 20 leads with STALE",
+     lambda: not str(ws.cell(20, 8).value or "").startswith("STALE AS OF")),
+    ("C", "claude", "5. §16 Bottom Line still quoted the superseded 4-sigma / 1-2 sigma",
+     lambda: "2.3\u03c3 on a computed conversion budget" in REPORT),
+    ("C", "claude", "6. Standard-Model comparison restated in four sections",
+     lambda: REPORT.count("no worse than the Standard Model") <= 1
+             and "is made once, in \u00a712" in REPORT),
+    ("C", "gemini", "no action items (structural summary)", lambda: True),
+
+    # ---------------- self-found, same round -----------------------------------
+    ("C", "self", "physics audit: Report's MOND residual list was stale in 2 of 3",
+     lambda: "CORRECTED 2026-09-07 after a physics audit" in REPORT),
+    ("C", "self", "UFF narrowed to one exponent; 1/b_C repair refuted",
+     lambda: "b_C^{\u22121/2}" in REPORT or "the same violation inverted" in REPORT),
 ]
 
 print()
