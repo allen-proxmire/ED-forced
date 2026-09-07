@@ -287,7 +287,7 @@ $$a_\mathrm{bar}(r) = \frac{v_\mathrm{disk}(r)^2}{r} + \frac{v_\mathrm{HI}(r)^2}
 
 **And the data is public.** *“All catalogues and data products from our disk–halo decomposition, including the RCs, can be found on the DARK website”* (`dark.univ-lyon1.fr/data-releases/`; the MUSE UDF sample of 126 galaxies covers this paper). **So the decisive test named in §6 is executable rather than requestable.** Nothing here waits on anyone's cooperation: the rotation curves, the disk–halo decompositions and the baryonic components are downloadable, and both open questions — the direct `a₀ ∝ H(z)^α` fit and the molecular-gas correction — can be settled from them.
 
-> **This paper does not claim to have run that test.** It states that the test is available, that the prediction's status is **untested** until someone runs it, and that **running it is the only thing that would change the verdict in either direction.**
+> **This paper does not claim to have run that test, and does not intend to.** It states that the test is available, that the prediction's status is **untested** until someone runs it, and that **running it is the only thing that would change the verdict in either direction.** **That is a deliberate stopping point rather than an unfinished one:** the analysis is a substantial project, its most likely outcome is that the trend shrinks, and a framework is better served by publishing an honest *untested* than by an author grading his own prediction. **The data is public and the method is specified above. Anyone may settle it, including against us.**
 
 ### 5.4 The verdict, stated plainly
 
