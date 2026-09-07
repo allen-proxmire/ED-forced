@@ -73,6 +73,19 @@ STALE = [
      "alpha provenance", "#151"),
     ("essays/Paper_SelectedFormalisms_I_Gravity.md", r"A direct fit gives",
      "alpha provenance", "#151"),
+
+    # --- added 2026-09-07 after this checker MISSED the stale abstract ---------
+    # The original list keyed on section 5.3's exact wording, so the abstract's
+    # different phrasing of the SAME stale claim sailed through and an external
+    # reviewer found it. A pattern list only catches the phrasings you thought of.
+    # These match the NUMBERS instead, which are phrasing-independent: any
+    # superseded figure anywhere in the paper is now a finding regardless of how
+    # the sentence around it is worded.
+    (PAPER, r"4\.4σ", "superseded tension figure (now 2.3σ) anywhere in the paper", "#155"),
+    (PAPER, r"1–2σ", "superseded softening claim anywhere in the paper", "#155"),
+    (PAPER, r"α = 1\.18 ± 0\.04 \(stat\)\*\*\. MOND",
+     "abstract quoting the old conversion as the result", "#155"),
+    (REPORT, r"currency pass 2026-09-06", "currency date behind the content", "#155"),
 ]
 
 # --------------------------------------------------------------------------- B
@@ -89,6 +102,10 @@ APPLIED = [
     (PAPER, "5.3b", "the shape comparison exists", "#152"),
     (PAPER, "converted by us from their linear fit", "alpha provenance stated", "#151"),
     (REVIEW, "Round 2", "the external review round is recorded", "#151"),
+    (PAPER, "academia.edu/170831186", "the systematics paper is cited, not left unverified", "#155"),
+    (PAPER, "a0z_baryonic_systematics_check.py", "the coherence check is cited", "#155"),
+    (PAPER, "UNTESTED", "the honest status is stated", "#155"),
+    (REPORT, "Rusishvili", "the Report carries the systematics challenge", "#155"),
 ]
 
 # --------------------------------------------------------------------------- C
@@ -117,6 +134,28 @@ def rule(c="-", n=76):
     print(c * n)
 
 
+# A document that narrates its own corrections must QUOTE the figures it
+# superseded. Those are audit trail, not staleness. A match is exempt when one of
+# these markers appears shortly before it.
+CORRECTION_MARKERS = (
+    r"earlier draft", r"an earlier", r"previously", r"was wrong", r"asserted",
+    r"superseded", r"corrected", r"replaced", r"no longer", r"used to", r"stale",
+    r"special pleading", r"not the survey", r"was the paper's soft joint",
+)
+CONTEXT = 220
+
+
+def _live_hits(pat, text):
+    """Matches that are NOT inside a sentence announcing a correction."""
+    live = []
+    for m in re.finditer(pat, text):
+        before = text[max(0, m.start() - CONTEXT):m.start()].lower()
+        if any(re.search(k, before) for k in CORRECTION_MARKERS):
+            continue
+        live.append(m)
+    return live
+
+
 def check(texts):
     """Returns list of (class, file, message)."""
     out = []
@@ -126,8 +165,10 @@ def check(texts):
         if t is None:
             out.append(("A", path, "FILE MISSING"))
             continue
-        if re.search(pat, t):
-            out.append(("A", path, "STALE: %s  [%s]" % (why, owner)))
+        hits = _live_hits(pat, t)
+        if hits:
+            ln = t.count("\n", 0, hits[0].start()) + 1
+            out.append(("A", path, "STALE (line %d): %s  [%s]" % (ln, why, owner)))
 
     for path, needle, why, owner in APPLIED:
         t = texts.get(path)
@@ -232,6 +273,16 @@ def main():
         print("  %s - the checker detects a removed fix." % ("PASS" if got2 else "FAIL"))
         if not got2:
             findings.append(("SELFTEST", "-", "applied-check is not sensitive"))
+
+        # The exemption must not swallow a genuine unqualified occurrence. Plant
+        # one with no correction marker anywhere near it.
+        planted3 = dict(texts)
+        planted3[PAPER] = (planted3[PAPER] or "") + "\n\nThe tension is roughly 1\u20132\u03c3.\n"
+        got3 = [f for f in check(planted3) if f[0] == "A" and "softening" in f[2]]
+        print("  %s - the exemption does not swallow an unqualified stale claim."
+              % ("PASS" if got3 else "FAIL"))
+        if not got3:
+            findings.append(("SELFTEST", "-", "exemption is too permissive"))
         print()
 
     rule()

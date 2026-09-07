@@ -26,7 +26,9 @@ The MOND acceleration scale `a₀ ≈ 1.2×10⁻¹⁰ m s⁻²` is, in MOND, a c
 
 Event Density, a substrate framework, makes this reading structural and registers `a₀(z) = cH(z)/(2π)` with the exponent fixed at **exactly one**. The exponent is the testable content: it cannot be tuned within the framework without abandoning the mechanism that produces it.
 
-The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2). *(The predicted local normalisation also lands within ~8%, but it rests on a coefficient nothing upstream fixes and is **not** offered as evidence; see §3.2 and §5.2.)* Fitting a power `a₀ ∝ H(z)^α` gives **α = 1.18 ± 0.04 (stat)**. MOND's `α = 0` is dead at 29σ. The prediction's `α = 1` sits at **+4.4σ formally**, softened to roughly **1–2σ** once one-survey and high-redshift systematics are folded in — and the survey team's own analysis independently describes the evolution as *faster than* `H(z)`.
+The first survey able to test it has reported. MUSE-DARK III (A&A 2026) detects evolution of `a₀` at **~30σ**, excluding a **constant** `a₀` — MOND's classical reading of its own scale, though not the only MOND (§1.2). *(The predicted local normalisation also lands within ~8%, but it rests on a coefficient nothing upstream fixes and is **not** offered as evidence; see §3.2 and §5.2.)* **The survey publishes a *linear* fit, not a power law** (§5.1). Converting it and propagating the terms the published bar omits — the intercept, the cosmology, and the reduction choice — gives **`α = 1.15 ± 0.07`, putting the prediction's `α = 1` at 2.3σ** (§5.3). The survey team's own analysis independently describes the evolution as *faster than* `H(z)`, so the direction of the tension is theirs even though the number is ours.
+
+> **A caveat that is larger than the tension and is stated here rather than in a footnote.** A 2026 re-analysis of the survey's own public catalogue (§5.3a) reports three baryonic-mass-budget systematics, each claimed sufficient to produce the trend. **Their effect sizes are quantitatively coherent with published numbers** (checked in `event-density/theory/a0z_baryonic_systematics_check.py`), and they bear on the **~30σ detection itself, not merely the rate.** If they hold, the honest status of this prediction is neither confirmed nor refuted but **untested**, and the 2.3σ above falls with the detection it is measured against.
 
 **The honest verdict is split: the qualitative call is confirmed and MOND's constant scale is excluded; the specific rate is mildly disfavoured.** We state the decisive test — a direct raw-data fit of `α` across surveys with a full error budget — and the condition under which the prediction should be abandoned.
 
@@ -236,16 +238,51 @@ A prediction registered after the data is worth little. Three things are stated 
 
 > **What this does establish is what the ~30σ is and is not.** It is a detection that `a₀` evolves. **It is not a measurement of the exponent**, and the two must not be reported as though the first settled the second.
 
-### 5.3a One outstanding check, flagged rather than assumed
+### 5.3a The systematics challenge — located, read, and checked
 
-An external reader reports the existence of a 2026 analysis — *“Three baryonic systematics, each sufficient: on the reported redshift evolution of the MOND acceleration scale”* — arguing from Ciocan et al.'s **own public catalogue** that baryonic-mass-budget systematics can account for the reported trend. **We have not been able to independently confirm that this paper exists**: three searches returned no locatable record, and the one detailed description we obtained came back only after the title was supplied in the query, so it may be an artifact of the search rather than a source.
+**An earlier draft of this section recorded this paper as possibly non-existent.** Three searches had returned no locatable record and the one detailed description came back only after its title was supplied in a query, so it was written up as an artifact risk rather than a source. **That was wrong, and the correction matters more than the error.**
 
-> **It is recorded here as an open check, not as a citation.** **If such an analysis exists it is directly on point and could weaken the confrontation further — or undercut the ~30σ detection itself, not merely the exponent.** Confirming or excluding it is a prerequisite to treating §5 as settled, and is stated as such rather than left for a referee to raise.
+**It exists.** Mikheil Rusishvili (2026), *“Three baryonic systematics, each sufficient: on the reported redshift evolution of the MOND acceleration scale,”* self-posted at `academia.edu/170831186`. **It is not in arXiv or A&A**, which is why the searches failed, and **it is not peer-reviewed** — an independent researcher on a platform with no quality filter. That is a real caveat and it is not a reason to ignore it: the content is specific, quantitative, and drawn from **Ciocan et al.'s own public catalogue.**
+
+**Its three claims.** Each is asserted to be independently sufficient to account for the trend.
+
+| # | systematic | claimed effect |
+|---|---|---|
+| 1 | **unmodelled molecular gas** — the survey models stellar disk + atomic gas only; adding Tacconi et al. (2018) fractions per galaxy (median `M_H₂/M*` rising `0.51 → 0.97` across the four redshift quartiles) | removes **82%** of the binned trend, **77%** of the fractional evolution |
+| 2 | **dynamical-vs-photometric stellar-mass drift** — dynamical `M*` falls relative to photometric by **0.39 dex (3.6σ)** between extreme bins, **opposite in sign** to expected stellar-to-halo-mass evolution | matches the `+0.2` to `+0.45` dex **Ciocan et al. themselves state** would remove the trend entirely |
+| 3 | **disk–halo degeneracy** — median **1.04 dex** across their six released halo models *for the same galaxy* | — |
+
+Its conclusion: **`a₁` should not presently be used to constrain modified-gravity models.**
+
+**What we can check, and what we cannot.** We do not have the catalogue, so **this paper cannot verify the analysis and does not claim to.** What is checkable from published numbers alone is whether the claimed effect sizes are **mutually coherent** — the same test the `α` conversion got. A critique whose arithmetic does not close can be set aside; one whose arithmetic does close cannot.
+
+**The mechanism is simple enough to state in one line, which is part of why it is serious.** In the deep-MOND regime `g_obs = √(g_bar a₀)`, so the *inferred* scale is `a₀ = g_obs²/g_bar`. **If the baryonic budget is underestimated by a factor `f`, the inferred `a₀` is inflated by exactly `f`.** And if the missing fraction **grows with redshift** — which molecular gas demonstrably does — then **`a₀` appears to evolve even when it is exactly constant.**
+
+**The arithmetic closes.** Writing `f = 1 + (M_H₂/M*)/(1 + M_HI/M*)` and scanning the unmeasurable atomic fraction:
+
+| `M_HI/M*` | 0.0 | 0.1 | 0.2 | 0.3 | 0.5 | 1.0 |
+|---|---|---|---|---|---|---|
+| binned trend removed | 86% | **81%** | 77% | 73% | 67% | 55% |
+
+> **The claimed 82% is reproduced at `M_HI/M* ≈ 0.1`** — and massive star-forming galaxies at `z ~ 1` are molecular-dominated, so that is **the expected regime rather than a tuned one.** The number falls out of two published quantities, their binned trend and Tacconi's fractions, **with no free parameter.**
+
+**Claim 2 is close to self-certifying**, because the size required was stated by the survey team: the claimed 0.39 dex sits inside their own `0.2`–`0.45` dex window and exceeds the 0.334 dex of the fitted trend. **Claim 3 is the most damaging if true** — a per-galaxy modelling spread of 1.04 dex is **3.1× the 0.334 dex signal**, which would not bias the trend so much as deny that it is measured.
+
+**Verdict, stated against interest.** **All three effect sizes are quantitatively coherent, and this is worse for the prediction than the exponent tension was.**
+
+- **It attacks the detection, not the rate.** The `~30σ` was the one thing here being banked as a win.
+- **ED loses that win, and the exclusion it was scored against.** If the evolution is a baryon-budget artifact, then constant-`a₀` MOND is not excluded either, and §1.2's position 2 comes back.
+- **The 2.3σ falls with it.** A tension computed against an unreliable detection is itself unreliable. **The confirmation and the tension go together; neither can be banked separately.**
+- **The resulting state is not “refuted” and not “vindicated.” It is UNTESTED** — the one survey that appeared to test this prediction may not have. That returns it to open, awaiting Rubin/Euclid.
+
+**And the remedy is the one already named.** Settling this needs Ciocan et al.'s per-bin catalogue — **the same data the exponent test needs.** One request answers both.
 
 ### 5.4 The verdict, stated plainly
 
 > **Qualitative call: confirmed, and MOND's constant `a₀` excluded at 29σ.**
-> **Quantitative rate: mildly disfavoured at 2.3σ on a computed conversion budget (§5.3), from one survey — and the survey's own astrophysical systematics are on top of that and unquantified.**
+> **Quantitative rate: mildly disfavoured at 2.3σ on a computed conversion budget (§5.3), from one survey.**
+>
+> **And a caveat that outranks it (§5.3a): a re-analysis of that survey's own catalogue reports three baryonic systematics whose effect sizes check out arithmetically and which bear on the ~30σ DETECTION. If they hold, both the qualitative win and the quantitative tension go away together, and the correct verdict on this prediction is UNTESTED rather than either.**
 > **This is an open tension, not a refutation — and it is not a confirmation either.**
 
 **The prediction is closer to the data than MOND is by a wide margin and is not sitting comfortably.**
