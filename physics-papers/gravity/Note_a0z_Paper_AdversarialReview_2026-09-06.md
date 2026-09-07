@@ -45,6 +45,8 @@ The draft's own §1.1 concedes that the `a₀ ≈ cH₀` connection is **standar
 
 ## 3. SERIOUS — the coefficient failure undermines confidence in the exponent
 
+> **✅ ADDRESSED 2026-09-07, §3.6.** Checked against `Paper_029`'s audit table rather than argued: the derivation has a **radial** step (`R_H = c/H`, a rate crossover) and an **angular** step (the `|m|=1` dipole projection), and **every disputed, postulated and analogical row is in the angular step** — the radial step carries none. **The exponent is entirely radial** (`a₀ ~ c²/R_H`, one power of `H` because there is one horizon). **Independent check:** the scale is reached by three routes, **two of which never use the dipole projection**, so the `H`-dependence survives deleting the machinery that failed. **The honest residual is now named in the paper:** the exponent also rests on the horizon being read **live rather than frozen**, which is the mechanism's core assertion and not a theorem — a frozen horizon gives `α = 0` and is indistinguishable from MOND. **That is the right place to be attackable.**
+
 The paper's structural pride (§3.3) is that the disputed `K` and the tested `α` are independent, so scepticism about the `2π` need not touch the exponent. **Formally true. Evidentially weak.**
 
 **Both come from the same mechanism.** That mechanism demonstrably failed to deliver `K` — the factor cancels in the source's own algebra and has to be reinstated by hand. A referee is entitled to ask: **if the horizon-projection argument cannot be trusted to produce the coefficient, why should it be trusted to produce the exponent?**

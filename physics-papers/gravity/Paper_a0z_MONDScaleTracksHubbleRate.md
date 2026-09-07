@@ -104,6 +104,46 @@ Write the prediction as `a₀(z) = K · c · H(z)^α`. **The disputed quantity i
 
 **By the mechanism plus the absence of a free scalar.** `α = 1` follows from `a₀` riding the *live* horizon `R_H = c/H`, one power of `H` per horizon. Bending the exponent requires a dimensionless number to bend it with, and the framework's own structural result is that it produces no intrinsic dimensionless scalar. **So `α = 1` is unfudgeable from the inside: there is no knob.** That is what makes it a real bet — a fitted exponent would be worthless as a test.
 
+### 3.6 Why the coefficient's failure does not reach the exponent
+
+**The obvious objection to §3.3 is that formal independence is not evidential independence.** Both `K` and `α` come from one mechanism; that mechanism demonstrably failed to deliver `K`; so why trust it for `α`? The answer is not "they are different symbols." It is that **they are produced by different steps, and every failure is on one side of the line.**
+
+The derivation has a **radial** step and an **angular** step.
+
+**The radial step** places the cosmic decoupling surface. Substrate influence propagates at `c`; the Hubble flow recedes at `H R`; the crossover fixes the boundary at
+
+$$R_H = c/H.$$
+
+That is a competition between two rates. **It contains no angular integral, no mode decomposition, and no normalisation choice.** In the source audit it is a `D-via-I` step with `H` inherited.
+
+**The angular step** projects that surface's leading anisotropic mode onto the accelerating chain's residual `SO(2)` symmetry — the `|m| = 1` azimuthal-Fourier projection of a dipole — and this is where `1/(2π)` was supposed to come from.
+
+**Now locate the failures.** In the source paper's own audit table:
+
+| step | audit tier | which part |
+|---|---|---|
+| decoupling surface at `R_H = c/H` | **D-via-I** | radial |
+| the dipole is the leading anisotropic mode | **D** | angular, and sound |
+| cosmic content seen as anisotropic at first order | **A — analogy** | angular |
+| `ρ₀ = cH₀` "after dimensional bookkeeping" | **P — normalisation choice** | angular |
+| the surviving azimuthal factor `1/(2π)` | **DISPUTED** *(was D)* | angular |
+| `N_substrate·G_φ⁻¹` set "to the value that returns the result" | **P — nothing upstream fixes it** | angular |
+
+> **Every disputed, postulated and analogical row is in the angular step. The radial step carries none of them.**
+
+**And the exponent is entirely radial.** `a₀` is an acceleration set by the horizon radius, `a₀ ~ c²/R_H`; with `R_H = c/H` that is `a₀ ∝ H¹`. **One power of `H`, because there is one horizon.** The evolution `a₀(z) = K c H(z)` follows from the same surface being read *at the epoch in question* rather than frozen at some earlier one. **Neither statement passes through the angular machinery.**
+
+**A second, independent check.** The scale `a₀ ~ cH₀` is reached by **three routes** — the dipole projection, a horizon-competition threshold argument, and a symmetric thermal-matching argument. **Two of the three do not use the dipole projection at all.** If the `H`-dependence were an artifact of the angular step, those two routes could not arrive at the same scale. **They do.** So the dependence on `H` survives deleting the entire machinery that failed.
+
+**The honest residual, stated because it is what the argument actually rests on.** Two things carry the exponent, and only the first is multiply-derived:
+
+1. **`R_H = c/H`** — the radial crossover, reached three ways.
+2. **The horizon is read LIVE, not frozen** — `a₀` tracks the contemporaneous `R_H` rather than a relic value.
+
+**Point 2 is the mechanism's core physical assertion, not a theorem.** It is what makes the prediction a prediction: a frozen horizon would give `α = 0` and would be indistinguishable from MOND. **It is not derived from the two alternative routes, which establish the scale rather than its time-dependence.** A reader who rejects the live-horizon reading rejects the prediction — and that is the correct place for the argument to be attackable, because it is the place where the physics is.
+
+> **So the answer to the objection is: the coefficient failed in the angular step, the exponent lives in the radial step, and the radial step has three independent supports. The scepticism the `2π` deserves does not transfer — but the live-horizon assumption is a separate exposure, and it is named here rather than buried.**
+
 ### 3.5 Inherited
 
 `H(z)` itself; `H₀`; the MOND interpolating function; all numerical values.
