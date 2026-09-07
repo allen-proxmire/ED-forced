@@ -54,6 +54,12 @@
 
 *(Explicitly NOT a prediction, per §7's "No F5": ED's non-emission of spontaneous collapse radiation — standard QM and every discrete-reduction reading predict the same null. Falsifiers of the position: F1 a computed ED rate that misses `ℏ/E_G` and all observed decoherence; F2 einselection-arrow shown ≠ khronon-arrow; F3 parameter-free DP confirmed with an energy-conservation signature ED's forward-arrow mechanism cannot accommodate; F4 local forward-causal stochastic collapse shown impossible.)*
 
+### Cross-arc dependency recorded 2026-09-07
+
+| Item | Where | Note |
+|---|---|---|
+| The EFE that closes the MOND collapse weapon inherits **`Paper_029`'s ANGULAR step** (the horizon dipole) | OpenPiece-i §“What this means” item 3 | `Paper_a0z` §3.6 (2026-09-07) shows **every disputed/postulated/analogical row of `Paper_029` sits in the angular step**; the radial step carries none. This note post-dates the EFE work. **Conclusion unaffected — it uses the dipole's structure and `a₀`'s inherited value, not the disputed `1/(2π)` or the `ρ₀` normalisation, and its conclusion is a SUPPRESSION: a weaker dipole makes the Newtonisation less certain, it cannot revive a weapon that needed the enhancement to survive.** Tier unchanged (order-of-magnitude structural inference). |
+
 ### Open (constructive work named)
 | Item | Paper | Status |
 |---|---|---|
