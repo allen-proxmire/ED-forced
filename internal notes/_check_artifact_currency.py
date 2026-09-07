@@ -105,7 +105,10 @@ STALE = [
 APPLIED = [
     (REPORT, "Magneticum", "the LCDM rival is named", "#151"),
     (REPORT, "closed in the GR regime that has been tested", "closed-sector fix", "GPT 3"),
-    (REPORT, "The MOND residuals, stated as the three they actually are", "residual list", "GPT 5"),
+    (REPORT, "The MOND residuals — CORRECTED 2026-09-07 after a physics audit",
+     "residual list, corrected after the physics audit", "GPT 5 / #162"),
+    (REPORT, "is NOT an open derivation",
+     "switch-vs-smooth correctly recorded as inherited, not open", "#162"),
     (REPORT, "conditional on the still-unproven universal-free-fall normalisation",
      "abstract conditioned on UFF", "GPT 4"),
     (REPORT, "2.3σ on a computed conversion budget", "computed tension", "#152"),
