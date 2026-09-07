@@ -77,6 +77,26 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (8) — `N_bw` CANNOT be defined from P04, and the flag that said otherwise was mine
+
+**Found in a read-only session on this repo and verified here before applying.** Entry (6) closed by naming the unblock: *“define `N_bw`.”* **It cannot be done, and why not is worth more than the definition would have been.**
+
+**P04 cannot carry a limit.** Canonical P04 (`Paper_087`) is **non-negativity plus additivity**, with **no upper bound and no quantization** — verified verbatim. So `Paper_053` §3.1's *“the bandwidth-limited count (P04)”* **attributes to P04 something P04 does not say.** **And the corpus has already made and withdrawn this exact mistake:** `soft-matter/Paper_UnifiedP04TransportBudget` §5 records that its old *“P04 finiteness”* justification *“claimed something P04 does not say”* — **and points at `entanglement/Paper_065_Monogamy` as the paper that does it correctly.** *`Paper_053`'s attribution is the same claim soft-matter withdrew, in a different arc, two days ago.*
+
+**Importing a bound would not rescue it, for two measured reasons** (`../event-density/theory/nbw_definability_probe.py`; both re-verified here at 200,000 draws): **(1) `M_eff` is scale-invariant** — homogeneous of degree 0, so a budget on the TOTAL constrains it not at all (`M_eff(3b)/M_eff(b) = 1.0` exactly; with the total pinned at 1, `M_eff` still runs `10 → 10,000` as channels grow). **Even `P-Locus-Bandwidth-Bound`, the obvious import, is insufficient.** **(2) The quantum-free reading makes CLASS A EMPTY.** With `N_bw` = channel-support count — the only definition needing nothing beyond P04 — **`M_eff ≤ N_bw` holds identically by Cauchy–Schwarz** (0 violations in 200,000 draws, equality only at exact uniformity). **That leg of UR-1.1 can never bind, and §3.2 defines Class A as the branch where `N_bw` binds first.**
+
+> **What `N_bw` needs is a bandwidth QUANTUM, and the corpus records its absence twice:** `primitives/participation_bandwidth.md` open question 6 (*“nothing forces it yet”*), and arc FSC (closed 2026-05-25), whose Q1 is exactly this and which states *“P04 makes bandwidth a non-negative additive scalar, not a quantized scalar.”* **Tier: ABSENT AND UNFORCED, not excluded** — FSC's proven blockage is about P09 polarity holonomy, a different scalar, and *the read-only session declined to bank it as an impossibility, correctly.*
+
+**⚠ The flag it corrects is mine, written this morning.** Entry (6) put *“Defining `N_bw` unblocks the whole arc”* into `Paper_053`. **That names the wrong KIND of task and sends the next reader after a definition that cannot be written.** The blocker is a **primitive-level decision — does bandwidth quantize? — not a definition anyone can supply.** Struck and replaced in place.
+
+**Two things this changes in the arc's own account.**
+
+**(a) The gap is ONE thing, not three, and this sharpens entry (6).** `N_bw` and `N_V5` are both **counts**, and a count needs a unit; **`N_commit` is a rate crossing, which needs no quantum.** *Entry (6) said `Paper_056` used the only constituent that had ever been quantified. The sharper statement is that it used the one whose KIND sidesteps counting entirely — which is not an accident of who did the work, it is structural.*
+
+**(b) `N_V5` is much closer than entry (6) thought.** §3.1 cites `Paper_090` for it and stops. **`entanglement/Paper_065_Monogamy` followed that same pointer and BUILT the budget:** `Σᵢ ℰ ≤ W_max`, form-forced from `P-V5-Budget` + `I-V5` + P04 additivity. **A grep of the entire `q-compute/` folder for `Paper_065`, `W_max` and `P-V5-Budget` returns ZERO files.** *The arcs are disconnected, and the disconnected one is the paper the P04 primitive card holds up as the correct treatment.* **This is the cross-document collision class again, in a form the detector cannot see — it looks for contradictory definitions, and this is a missing citation between two arcs that agree.**
+
+**Applied:** `Paper_053` §3.1 flag struck and replaced, with the `Paper_065` pointer added. **Not applied:** nothing propagated to `Paper_056` or the Report — the finding is about what `N_bw` *is not*, and the wall's standing is unchanged by it.
+
 ## 2026-09-07 (7) — Target #16: the folded/unfolded tie is breakable WITHOUT building the map
 
 **AP's call, and the target warns against exactly what a session could do wrong here:** *“a genuine research frontier, not a session win; forcing it risks over-banking.”* **This note does not build the map.** It removes the map's blocking role from **one** of the four threads #16 gates — the one carrying the matter-wave weapon's only falsifiable directional content. `Note_16_BasisDominance_BreaksTheFoldedTie_2026-09-07.md`.
