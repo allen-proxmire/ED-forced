@@ -77,6 +77,20 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (13) — `P-Multiplicity-Extensive` SPLIT, hours after naming: the “so” was hiding a second claim
+
+**Caught mid-edit by the read-only session, and it is right.** Entry (12)'s wording — *“aggregates extensively across them, **so** `M_eff ∝ m` at fixed internal arrangement”* — **bundled two claims under one name, which is the exact failure this week has been about.**
+
+**Two steps, not one.** **(1) `M_eff ∝ L`** — extensive aggregation over the loci a chain-complex occupies. **A SUBSTRATE claim**, and the rule `Paper_087` §P12 leaves open. **(2) `L ∝ m`** — loci occupied scale with mass. **CONSTANT DENSITY: a claim about how matter is built, not about the substrate.** *`M_eff ∝ m` follows only from (1)+(2), and the bundled version made **`p = 1` true by definition** when it is an empirical fact about molecules — `p` being precisely the free exponent the extensivity sweep had to scan.*
+
+> **Split as: the postulate is the aggregation rule ALONE (`M_eff ∝ L` at fixed per-locus channel content), and `L ∝ m` is INHERITED/empirical, labelled where it belongs.** *Census unchanged at 175 — this is a correctly-scoped commitment, not a new one.*
+
+**✅ And the split DERIVES this morning's #16 direction instead of protecting it — which is the better half of the correction.** My `α` qualifier put arrangement-dependence into an inherited coefficient, leaving the folded/unfolded direction **asserted**. **But folding changes `L` at fixed `m`:** an extended molecule occupies more loci than a compact one, **so folded-vs-unfolded is a violation of `L ∝ m`, not an `α` effect.** By arithmetic on the aggregation rule alone: **`L_unfolded > L_folded` at equal `m` → `M_eff` larger → closer to `M_cap` → unfolded goes classical first.** *`Note_16_BasisDominance` reached the same direction through mode correlation in the collective basis — **two independent routes, same direction.** Real support, and a caution kept in the papers: **anyone computing a SIZE later must not count both.***
+
+**It also answers entry (12)'s own “two loads” worry properly.** The aggregation rule carries the **`N_commit`-is-the-only-waller** argument (that is the part about extensivity per se); the density relation carries the **mass scaling** (that is the part about `m`). **Two loads, two statements, two falsifiers — and they are different experiments: sub-extensive aggregation is a substrate result; `L` not tracking `m` is measurable in a chemistry lab.**
+
+**Applied to all three sites** (`Paper_054` §3.1, `Paper_056` §3.2, and entry (12) above), with the `α`-qualifier paragraph in `Paper_056` marked **superseded**. *Cost: one extra sentence, taken hours after the bundled version was committed rather than as a correction tomorrow.*
+
 ## 2026-09-07 (12) — `P-Multiplicity-Extensive` NAMED, and entry (11)'s “collision” framing is WITHDRAWN
 
 **AP's call: name it.** And the read-only session that found the scope problem checked its own claim before anyone acted on it — *which is the rule `CLAUDE.md` names first, applied to its own finding rather than to the corpus.*
@@ -87,7 +101,13 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 **Named, following the corpus's own precedent three times over this week** — `P-Locus-Bandwidth-Bound`, `P-V5-Budget`, `P-Band-Partition`, each a silent assumption made explicit with the result **kept and tiered rather than retired**:
 
-> **`P-Multiplicity-Extensive`** — *for an object occupying `L` loci, `M_eff` aggregates **extensively** across them, so `M_eff ∝ m` **at fixed internal arrangement**, with arrangement-dependence carried in the coefficient `α`.*
+> **`P-Multiplicity-Extensive`** — *for a chain-complex occupying `L` loci, `M_eff` aggregates **extensively** across them: **`M_eff ∝ L`** at fixed per-locus channel content.* **Falsifier:** `M_eff ~ L^q` with `q < 1` for a composite — sub-extensive aggregation refutes it, **and with it the argument that `N_commit` is the only constituent that can wall.**
+>
+> **Inherited, separately, and NOT part of the postulate:** **`L ∝ m`** at constant density, from which `M_eff ∝ m` follows. **Falsifier:** `L ~ m^p` with `p ≠ 1` — **which is also where arrangement-dependence lives**, folded-vs-unfolded at equal mass being the clean case.
+>
+> **⚠ SPLIT 2026-09-07, hours after naming, and the split matters.** The first wording read *“aggregates extensively across them, **so** `M_eff ∝ m`”* — **and that “so” hid a second claim.** `M_eff ∝ L` is a **substrate** claim (the rule `Paper_087` §P12 leaves open); `L ∝ m` is **constant density**, a claim about how matter is built. **Bundled, the postulate made `p = 1` true by definition when it is an empirical fact about molecules** — and `p` is precisely the free exponent the extensivity sweep had to scan. *Two loads, two statements, two falsifiers — and they are different experiments: sub-extensive aggregation is a substrate result, `L` not tracking `m` is measurable in a chemistry lab.*
+>
+> **✅ And the split DERIVES this morning's #16 direction instead of protecting it.** The first wording put arrangement-dependence in the coefficient `α`, which left the folded/unfolded direction **asserted**. **But folding changes `L` at fixed `m`** — an extended molecule occupies more loci than a compact one — so folded-vs-unfolded is a **violation of `L ∝ m`, not an `α` effect.** Then by arithmetic on the aggregation rule alone: **`L_unfolded > L_folded` at equal `m` → `M_eff` larger → closer to `M_cap` → unfolded goes classical first.** *`Note_16_BasisDominance` reached the same direction by a different mechanism (mode correlation in the collective basis). **Two independent routes, same direction** — real support, but anyone computing a SIZE later must not count both.*
 >
 > **Falsifier:** any demonstration that `M_eff` for a composite is **sub-extensive** in the loci occupied at fixed arrangement (`M_eff ~ m^p`, `p < 1`) refutes it, **and with it the wall's mass scaling.**
 
