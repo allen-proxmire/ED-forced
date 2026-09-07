@@ -77,6 +77,24 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (3) — The `Σ_C → rate` map: WORKED AND NOT CLOSED, and it narrows the previous entry
+
+**AP: do the map.** The previous entry closed by naming this as the one remaining piece and predicting P11's Lindblad face would supply it. **It does not, and working the question turned up three things that cut against that entry rather than completing it.** *Recorded at length because the previous entry's optimism is the thing being corrected.*
+
+**(a) The gap is CATEGORIAL, not merely unstated.** `Paper_087` §P12's operational content is **`a_C = −∇_adj Σ_C` — an ACCELERATION.** `Paper_054` §3.2 needs a **RATE**. **P12 contains no rate at all.** So the map is *absent from the primitives*, not stated loosely. Getting a rate from a force needs a noise law or a distance in adjacency space, and the corpus supplies neither.
+
+**(b) The lead I named was wrong.** I proposed the Lindblad rates `γ_α` as a landscape-to-rate map already in the framework. `arcs/arc-Q/lindblad_extension.md` says otherwise: `γ_α` is *“proportional to the bandwidth transfer rate from `b_K^env` to the specific environmental mode `α`”*, with numerical values *“inherited at the apparatus-physics level, not at the primitive-structural level.”* **Those are environmental decoherence rates; `Γ_commit` is meant to be intrinsic (`Γ₀ ~ c/ℓ_ED`). Different quantity.**
+
+**(c) ⚠ THE PREVIOUS ENTRY'S EXCLUSION OF EXPONENTIALS WAS OVERSTATED.** It showed `Σ_C` is polynomially bounded in `M` and concluded exponential forms for `Γ_commit` are excluded. **That does not follow.** A Kramers/Arrhenius map `Γ ~ exp(−ΔΣ/b̄)` composed with `Σ ~ M²` gives **`exp(−M²)`** — **an exponential in `M` out of a polynomial landscape.** The residual as written named only *saturating* maps and missed the whole family. **Corrected in place: the exclusion holds for `Σ_C`, and for `Γ_commit` only given the missing map.** *(Arrhenius may not even be available — it wants a noise/temperature scale and ED has no thermal primitive — but “doubtful” is not “excluded”, and yesterday's version claimed “excluded”.)*
+
+**(d) A SIGN QUESTION THAT MAY OUTRANK THE FORM QUESTION.** `Coh` is the term growing as `M²`, **and `Coh` is the *stabilising* term** — it enters `Σ_C` with a plus, settled by the 2026-09-05 sign check. **If commitment is escape from a stability landscape, more coherence means a LOWER commit rate, so `Γ_commit` would FALL with `M`** — opposite to §3.2's assumed rising form. **Raised, not resolved:** it turns on level-vs-gradient and on the adjacency metric, neither fixed by the corpus. **But if it holds, the problem is not the exponent's value, it is the sign of the whole dependence, and `M_cap` would not exist as constructed.**
+
+**(e) AND AN INDEX-SET QUESTION of the class `INDIVIDUATION_DISAMBIGUATION` exists for.** `Σ_C`'s `Coh`/`Str` sums run over the **channels at ONE locus** (`Paper_087` §P12's chain-level bridge). `M_eff` for a matter-wave platform is a **whole-molecule** quantity spanning **many loci**. **Whether they are the same `M` is established nowhere, and `Paper_056`'s mass-scaling assumes they are.**
+
+> **NET: the tier stays `Grounded`, but for a narrower reason.** The `Σ_C` counting result stands untouched — `Str` single sum, `Coh` double sum, `∝ M²−M`, `γ` two-valued. **What does not stand is the transfer to `Γ_commit`.** *The open piece did not shrink; it split into three sharper ones — the missing rate law (a), its possible sign reversal (d), and the index-set match (e).* **Still better posed than “the functional form is assumed”, and not the closure the previous pass predicted.**
+
+**What this session's two q-compute entries look like together, stated plainly.** The wall's *number* lost half its range to a real experiment; its *sharpness* gained a mechanism and then had that mechanism's reach narrowed by a day's further work. **Both moves were downward for the claim and upward for the accounting**, which is the pattern the whole week has had. **The right posture for the Class-A wall now: architecture-independence is the discriminator, the 175–250 kDa window is testable now, and the sharpness argument is Grounded with three named residuals rather than Derived.**
+
 ## 2026-09-07 (2) — `Γ_commit`'s functional form: exponential and log EXCLUDED, `γ` two-valued, tier `A→regime` → `Grounded`
 
 **AP's call after the wall's number lost half its range** (#previous entry): go at the load-bearing open piece rather than the number. **`Paper_054` §3.2 had the power-law form at `A→regime` with *“exponential, logarithmic, etc.”* named as substrate-consistent alternatives** — and the arc ledger lists it as open under **both** the wall's shape and its number.
