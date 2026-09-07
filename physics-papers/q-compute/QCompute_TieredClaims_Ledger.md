@@ -77,6 +77,24 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 ---
 
+## 2026-09-07 (9) — “Quantum” was the wrong word, and it mispriced the decision I put in front of AP
+
+**A read-only session corrected its own note, and the correction lands on me: I propagated the wrong word into `Paper_053` and the ledger, then framed AP's next decision as “does bandwidth quantize? — a fourteenth commitment.” That is priced against the more expensive of two different objects.**
+
+**The distinction, verified here before applying.** A **FLOOR** (`b ≥ b_min` for any channel that exists) restricts which **configurations** exist. **QUANTIZATION** (`b ∈ {0, β, 2β, …}`) restricts P04's **codomain** — it changes what P04 *is*. **Only the second is primitive-level.** **A floor is the same kind of object as `P-V5-Budget`, which `Paper_065`'s own audit table tiers “Postulate, declared”**, and as `P-Locus-Bandwidth-Bound`. **Neither was ever called a fourteenth primitive, and neither needed to be.**
+
+> **✅ AND THE CHEAP OBJECT SUFFICES FOR THE COUNT.** With a floor and the total budget the corpus already carries, the channel count is bounded by `B/b_min`. **That bound is NOT scale-invariant** — `b_min` is fixed while `B` scales (verified: 10× budget → bound moves 200 → 2000; scaling both → bound fixed at 200) — **so it evades the degree-0 homogeneity result that killed the budget-alone route.** *A floor plus an existing budget yields `N_bw`. Quantization is not required for it.*
+
+**Precedent, three in three days, every one landing at postulate level rather than primitive level:** the four-band partition → `P-Band-Partition`; soft-matter's budget → `P-Locus-Bandwidth-Bound`; individuation → constructible from P02+P03+P04, whose paper opens ***“Individuation is not a fourteenth primitive. The corpus is committed to thirteen.”*** **That arc met this exact shape** — its ratio `R = b_int/b_bdry` is *also* degree-0 homogeneous, closing the bandwidth-normalisation route — **and fixed `θ_ind = 1` anyway, through an integer the substrate already had: locus depth, `⌈a/2⌉ > ξ`, on a firm bracket at `ξ = 1.740 ± 0.028`.**
+
+> **So the reframe is right and the question changes: not “does bandwidth quantize?” but “WHAT INTEGER DOES THE SUBSTRATE ALREADY HAVE that a channel count can ride on?”** *Individuation rode integer depth. This arc has never looked for its integer.*
+
+**A candidate is under test elsewhere:** P13 carries primitive **event-discreteness**, and if a sustained channel must hold at least one event's worth of commitment reserve (`b_com`, intrinsic to the chain and cut-independent), **that is a floor sourced from P13 with nothing added.** **Untested here, and the nearest neighbour already has a banked negative** — individuation is union-closed for every `θ` (0 violations in 400 pairs), so it is a **cohesion filter, not an object-count criterion.** *The route has a known wall partway down.*
+
+**On the instinct that “the whole thing needs one more assumption”: Target #20 measured it.** ED carries **171 declared postulates** beyond the thirteen (re-baselined to 173), **103 of them appearing in exactly one paper**, and #20's resolution was that *“there is no single natural number, and that is the answer rather than a dodge.”* **Few primitives and many postulates produces both feelings at once** — the sense that something foundational is missing, and AP's long-running intuition that P11 is nearly the only primitive. **The base rate says the fourteenth-primitive reading should be the LAST hypothesis tested, not the first.**
+
+**Applied:** the wording in `Paper_053` §3.1 and in entry (8) corrected from *quantum* to *floor*, with the distinction and the precedent stated in place. **My framing of the decision is withdrawn: it was not a fourteenth commitment, and I should not have priced it as one.**
+
 ## 2026-09-07 (8) — `N_bw` CANNOT be defined from P04, and the flag that said otherwise was mine
 
 **Found in a read-only session on this repo and verified here before applying.** Entry (6) closed by naming the unblock: *“define `N_bw`.”* **It cannot be done, and why not is worth more than the definition would have been.**
@@ -85,7 +103,7 @@ The Q-Compute arc is a **coherent, well-audited structure whose spine is Grounde
 
 **Importing a bound would not rescue it, for two measured reasons** (`../event-density/theory/nbw_definability_probe.py`; both re-verified here at 200,000 draws): **(1) `M_eff` is scale-invariant** — homogeneous of degree 0, so a budget on the TOTAL constrains it not at all (`M_eff(3b)/M_eff(b) = 1.0` exactly; with the total pinned at 1, `M_eff` still runs `10 → 10,000` as channels grow). **Even `P-Locus-Bandwidth-Bound`, the obvious import, is insufficient.** **(2) The quantum-free reading makes CLASS A EMPTY.** With `N_bw` = channel-support count — the only definition needing nothing beyond P04 — **`M_eff ≤ N_bw` holds identically by Cauchy–Schwarz** (0 violations in 200,000 draws, equality only at exact uniformity). **That leg of UR-1.1 can never bind, and §3.2 defines Class A as the branch where `N_bw` binds first.**
 
-> **What `N_bw` needs is a bandwidth QUANTUM, and the corpus records its absence twice:** `primitives/participation_bandwidth.md` open question 6 (*“nothing forces it yet”*), and arc FSC (closed 2026-05-25), whose Q1 is exactly this and which states *“P04 makes bandwidth a non-negative additive scalar, not a quantized scalar.”* **Tier: ABSENT AND UNFORCED, not excluded** — FSC's proven blockage is about P09 polarity holonomy, a different scalar, and *the read-only session declined to bank it as an impossibility, correctly.*
+> **What `N_bw` needs is a bandwidth FLOOR — *not* a quantum; see entry (9) for the correction — and the corpus records its absence twice:** `primitives/participation_bandwidth.md` open question 6 (*“nothing forces it yet”*), and arc FSC (closed 2026-05-25), whose Q1 is exactly this and which states *“P04 makes bandwidth a non-negative additive scalar, not a quantized scalar.”* **Tier: ABSENT AND UNFORCED, not excluded** — FSC's proven blockage is about P09 polarity holonomy, a different scalar, and *the read-only session declined to bank it as an impossibility, correctly.*
 
 **⚠ The flag it corrects is mine, written this morning.** Entry (6) put *“Defining `N_bw` unblocks the whole arc”* into `Paper_053`. **That names the wrong KIND of task and sends the next reader after a definition that cannot be written.** The blocker is a **primitive-level decision — does bandwidth quantize? — not a definition anyone can supply.** Struck and replaced in place.
 
