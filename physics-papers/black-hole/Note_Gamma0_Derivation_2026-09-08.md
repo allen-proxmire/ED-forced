@@ -76,11 +76,68 @@ Let `f(ρ) = Γ₀(ρ)ρ`. Then `f(0) = 0`, `f(ρ_max) = 0` (the P4 claim), and 
 
 **Not settled, and held to the same bar as the positives:**
 
-- **The exclusion model is a stand-in.** The Rolle result is model-free, but *"collective `M` is constant"* is measured in a nearest-neighbour exclusion lattice, **not on ED's certified substrate.** It shows the source-local reading fails and the destination reading works; **it does not prove ED licenses the destination reading.** Tier: **measured-in-model**, `A → position` for ED.
+- **The exclusion model is a stand-in.** The Rolle result is model-free, but *"collective `M` is constant"* is measured in a nearest-neighbour exclusion lattice, **not on ED's certified substrate.** It shows the source-local reading fails and the destination reading works; **it does not prove ED licenses the destination reading.** Tier: **measured-in-model**, `A → position` for ED. **✅ DISCHARGED the same day — see §4b.** *The certified rule reads `strain = rho_v`, the **destination** (behaviourally `3.5×` the source dependence), and adding only the bound to it caps `ρ` at `3.1000` against the bare rule's `24.1` with no extinction.* **Both the destination-gating question and the cap are now measured on the certified substrate; only the continuum `M` statement remains model-side.**
 - **`β` is not settled.** Single-channel allocation gives `β = 1`; the empirical UDM wants `β ≈ 2`. **That value-layer gap is untouched.**
 - **Arc_BH_3's gradient-saturation argument needs re-examination.** It reasons *"`M` vanishes, so gradients cannot steepen."* **`M` does not vanish.** The no-`ρ→∞` conclusion survives by a different route (state-space exclusion), but **the stated mechanism does not** — and the acoustic-metric degeneration argument in the same paper leans on the same vanishing `M`.
 
 > **⚠ One process note, recorded because it nearly cost the result.** The first simulation script printed its conclusions as **pre-written strings** rather than computing them, and the data contradicted them — the run "confirming" the cap had in fact blown up to `ρ = 111`. *A probe's verdict must be computed from the run, or the probe validates the expectation instead of testing it.* **Both later scripts compute their verdicts.**
+
+---
+
+## 4b. ✅ RUN ON THE CERTIFIED SUBSTRATE — the stand-in caveat is discharged
+
+**This is the test the 2026-07-24 attempt said was owed:** *"a run in which `ρ` itself is evolved and shown to self-cap would move it from account to measured."* **Done, on the simulator of record** (`evaluation/Bits/simulator`), certified Σ rule, `COEFFS` unchanged, **no certified file modified**. *Probes: `gamma0_certified_substrate_test.py`, `gamma0_certified_bound_attained.py`.*
+
+### The question §4 left open is answered by the certified rule itself
+
+`simulator/sigma.py`, `compute_sigma(u, v, …)`:
+
+```python
+strain = rho_v      # destabilizing: penalize dense targets (-)
+grad   = abs(rho_v - rho_u)
+```
+
+**`v` is the DESTINATION.** *The strain term reads the destination only; the source enters solely through `grad`.* **Measured behaviourally:** `+1.5` of density at the destination moves `Σ` by **`−5.250`**; the same at the source moves it by **`−1.500`** — **destination dependence is 3.5× the source dependence.**
+
+> ### **The certified substrate is DESTINATION-GATED. Arc_D_2's source-local flux `Γ₀(ρ₋)ρ₋` does not transcribe it.**
+>
+> *That is no longer a preference between two modelling options. The corpus's own simulator of record settles it, and it settles it on the side that is well-posed.*
+
+### The bound alone produces the cap, on the certified rule
+
+**The only addition in the bounded arm is `P-Locus-Bandwidth-Bound` as an admissibility filter — the postulate verbatim, applied at the destination:** a candidate `v` with `ρ_v ≥ ρ_max` is not admissible. **Nothing else changed.**
+
+| arm | `increment` | max `ρ` | predicted ceiling | outcome |
+|---|---|---|---|---|
+| **bare certified** | 1.0 | **24.1** | — | **never extinguishes, still rising** |
+| **+ bound** | 1.0 | **3.1000** | `3.1000` | **extinct at `t = 268`** |
+| **+ bound** | 0.5 | **3.1000** | `3.1000` | extinct at `t = 1560` |
+| **+ bound** | 0.25 | **3.1000** | `3.1000` | extinct at `t = 2950` |
+
+**`ρ_max = 3.0`. The bounded ceiling is attained exactly at every increment, and the ratio bare/bounded is `7.77×`.**
+
+**The residual `+0.1` is arithmetic, not slippage:** the bound is tested **pre-commit** and `commit()` then adds `increment`, so the reachable maximum is `ρ₀ + ⌈(ρ_max−ρ₀)/increment⌉·increment ≤ ρ_max + increment`. *No pre-commit admissibility test can do better with a finite commitment quantum.* **`ρ` is bounded; without the bound it is not.**
+
+**And `Γ₀ → 0` appears natively, not as a fitted rate: the front EXTINGUISHES when every neighbour is full.** *In ED's own vocabulary the vanishing rate is extinction — "no positive-Σ continuation" — which is already `Paper_087`/Phase-D content rather than something added for this.*
+
+### Tracer acceptance, measured on the certified graph
+
+| occupied fraction | admissible fraction | `1 − f` |
+|---|---|---|
+| 0.10 | 0.8851 | 0.90 |
+| 0.30 | 0.6857 | 0.70 |
+| 0.50 | 0.4580 | 0.50 |
+| 0.70 | 0.2729 | 0.30 |
+| 0.90 | 0.0911 | 0.10 |
+| 0.95 | 0.0413 | 0.05 |
+
+**Linear in `(1 − ρ/ρ_max)` on the certified graph**, with a small systematic undershoot from boundary and correlation effects.
+
+> ## Tier upgrade
+>
+> **§4's caveat — *"measured in a nearest-neighbour exclusion lattice, a stand-in; `A → position` for ED"* — is DISCHARGED for the destination-gating question and the cap.** Both are now **measured on the certified substrate**. *What remains model-side is only the continuum statement that collective `M` stays constant, since the certified rule is a discrete deposit rule with no `M` to read off directly.*
+
+> **⚠ Second process failure this session, same class as the first.** My initial overshoot test compared runs at different `increment` **without checking whether each had saturated** — the small-increment runs extinguished early, so the ratio was computed on unfilled runs and printed a meaningless verdict. *A comparison across a parameter must verify the runs are in the same regime before the comparison means anything.* **The corrected script checks saturation and predicts the ceiling analytically before measuring it.**
 
 ---
 
