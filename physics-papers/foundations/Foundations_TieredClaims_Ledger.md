@@ -216,6 +216,73 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 >
 > **The columns split the work as predicted, and the split is now sharp:** F1 and **F4** came from **dimension** — `σ`'s three objects are dimensionally unrelated, so the index column would have missed them. **F2, F3 and F5 came from INDEX SET** — and **F5 is the mirror case: `b_K(u)`, `bw(u,v)` and `ρ(u)` are dimensionally compatible, so the dimension column passes them without complaint and only “what does it live on?” separates them.** *Neither column alone finds more than two of five. That is the argument for two columns, and it is now measured rather than predicted.* **And the cheap column produced the strongest find**, supporting the sequencing above: dimension first, everywhere, then index only where dimension did not resolve.
 
+### Declarations pass — the top 15 symbols by spread (2026-09-08)
+
+> ### ⚠ SCORING CHANGED BEFORE THE PASS, and the change is the point
+>
+> **My pre-committed criterion was wrong and would have produced a false negative.** *It read: "if it yields nothing new on fifteen high-spread symbols, that's the signal the seam has been mined out."*
+>
+> **A parallel session caught the flaw: F1–F5 all surfaced while symbols were being USED in an argument** — the `U(N)` index because a group was run against it, `ρ_max ↔ B_max` because a derivation leaned on it. **Collisions surface under use, not under tabulation.** *So cold annotation would predictably yield less, and the old criterion would have read that as "mined out" when the real signal is "cold annotation has low yield."*
+>
+> > **New criterion, fixed before the pass: score on DECLARATIONS THAT CANNOT BE WRITTEN, not on collisions found.** *If a symbol's dimension or index set cannot be stated without a judgement call, **that is** the finding — it means the corpus does not determine it.* **The annotation's value is SUPPLY, not discovery: it creates the input the checker is blocked on. Finds come later, when someone next uses these symbols in an argument and has a declaration to check against.**
+>
+> **And one caveat on the list itself:** `M_cap` was a **real collision at LOW spread** — two definitions inside a single arc. **Spread is a decent prioritiser and not a complete filter; this list is not exhaustive.**
+
+| symbol | dimension | index set | status |
+|---|---|---|---|
+| `ℓ_P` | **L** | global constant | ✅ declarable |
+| `H_0` | **1/T** | global constant | ✅ declarable |
+| `R_H` | **L** | global constant | ✅ declarable |
+| `π_K(u)` | **dimensionless** (angle, `S¹`) | `(channel K, locus u)` | ✅ declarable |
+| `M_eff` | **dimensionless** (IPR) | `𝒦(C,u,t)` — channels, one chain, one locus | ✅ declarable |
+| `b_K(u)` | **⛔ UNDETERMINED** | `(channel K, locus u)` | **undeclarable — U1** |
+| `P_K(u)` | `[b]^½` — **inherits U1** | `(channel K, locus u)` | **undeclarable (derived)** |
+| `Coh`, `Str` | `[b]` — **inherits U1** | sources at one locus, one channel | **undeclarable (derived)** |
+| `Σ_C` | `[b]` — **inherits U1**, but `a_C` needs `L²/T²` | chain `C` | **undeclarable — U2** |
+| `ρ` | **⛔ UNDETERMINED** — "density" per what? | **locus OR cg-cell** | **undeclarable — U3** |
+| `Ψ` | context-dependent | rule-type / spinor module | **undeclarable — U4** |
+| `σ` | **FOUR objects** | — | **collision — C1** |
+| `Γ` | **TWO objects** | — | **collision — C2** |
+| `τ` | **TWO objects** | — | **collision — C3** |
+| `μ` | **THREE+ objects** | — | **collision — C4** |
+
+---
+
+#### The real output: symbols the corpus does not determine
+
+> **U1 — `b`'s dimension.** Canonical `Paper_087` §P04 gives `b ∈ ℝ_{≥0}` and stops. **Almost every use is a ratio, so nothing constrains it** — and `P_K`, `Coh`, `Str`, `Σ_C` are all defined *relative* to `[b]`, so **four further symbols inherit the undetermination.** *One missing declaration propagates to five.*
+>
+> **U2 — `Σ_C` vs `a_C`.** `Σ_C` carries `[b]`; `a_C = −∇_adj Σ_C` is called an acceleration, which requires `[b] = L²/T²`. **Undeclarable until U1 is settled, and settling U1 this way would conflict with `b`'s use as a countable capacity.**
+>
+> **U3 — `ρ`.** *Commitment density* — but per locus, per cell, per volume? **`Arc_D_2` uses a cell-average; the certified rule uses a per-node stock.** Neither states the measure. *(This is F3, now confirmed as undeclarable rather than merely ambiguous.)*
+>
+> **U4 — `Ψ`.** Dimension depends on whether it is the `ℂ^N` channel amplitude (`Paper_MS-I` §3.2) or a spacetime spinor field. **Not statable without picking one.**
+
+#### And four collisions surfaced anyway — cold annotation was NOT low-yield
+
+> **C1 — `σ` is FOUR objects, not three, and two of them are IN THE SAME FILE.**
+>
+> | # | object | where | dimension |
+> |---|---|---|---|
+> | ① | saturation parameter `abs(grad rho)·ℓ_P²/ρ_local` | `Arc_BH_3` §5 | dimensionless |
+> | ② | transport mobility | `Arc_D_2` repair | `[flux]/[field]` |
+> | ③ | mass signature `σ_τ`, `m_τ = σ_τ/c²` | `arc-foundations` M.1.1 | **energy** |
+> | ④ | **`σ^{μν}`, the Dirac tensor bilinear generator** | **`arc-foundations` M.1.1 §5.2 — the SAME FILE as ③** | dimensionless matrix |
+>
+> *F4 recorded three. **The fourth shares a file with the third.***
+>
+> **C2 — `Γ` is two objects.** `Γ₀(ρ)`, the chain-step **rate** (`1/T`), and **`Γ_τ ∈ Cl(3,1)`, a Fierz-class element** (`arc-foundations` L3) — a dimensionless Clifford-algebra matrix. **Both subscripted, both in the foundations vocabulary.**
+>
+> **C3 — `τ` is two objects.** **Proper time** (`T`) and the **rule-type label** (a dimensionless discrete index, as in `σ_τ`, `w_τ^X`, `Γ_τ`). *`σ_τ` therefore contains a `τ` that is not a time, in a formula whose whole point is a `[time]^{-2}` Lorentz square.*
+>
+> **C4 — `μ` is three or more.** The **spacetime index** (`∂_μ`, `γ^μ`), the **mobility** in `M(ρ)`/`μ(ρ)`, and the **chemical potential** briefly imported into `Arc_D_2` and dropped. *The last was caught the same day; the first two coexist unflagged.*
+
+> ## Pass verdict, against the criterion fixed before it: **5 of 15 declarable, 4 undeclarable (propagating to 4 more), 4 collisions.**
+>
+> **The supply result is the headline: `b`'s single missing dimension blocks five symbols.** *That is the checker's input gap, quantified — and it is one declaration, not five.*
+>
+> **The prediction that cold annotation would be low-yield did not hold**, but the reasoning behind it was sound and the criterion change stands: *had the pass found nothing, the new criterion records the undeclarables as the result, and the old one would have called a supply exercise a mined-out seam.*
+
 ### Staleness & refinements
 1. **THE verdict-grammar drift — FIXED 2026-07-29.** **095 §3.1 used "Phase-1 QM emergence (four QM postulates forced, no additional postulates)" as its M1 example** while **098 had reclassified Phase-1 QM to M2 (Intermediate Path C)** ("Round-4 correction of prior FORCED-unconditional overclaim"; it rests on the Gleason + P-LinRate postulate stack), and **Paper_100 §3.1 carried the same stale M1.** Since 095 is the grammar every ledger cites, its M1 exemplar being actually-M2 mislabeled the anchor tier. **Applied:** 095 §3.1's M1 example replaced with the **anyon prohibition (Paper_104)** (+ Cl(3,1) uniqueness, Paper_103 — genuine M1 pure-structural, no inherited numerics, no paper-specific postulate), with a note that Phase-1 QM was reclassified to M2; **Paper_100 §3.1 (both the "4 QM postulates FORCED-unconditional" line and the "methodology level" line) corrected to M2**.
 2. **089 four-band citation — ⚠ THIS ENTRY IS WRONG, and its 2026-07-29 “fix” should be reviewed (settled 2026-09-04, gravity Staleness #57).** This entry called *“Paper #3 — four-band orthogonality”* an **archived M-series** citation and repointed two `Paper_089` dependency lines away from it. **“Paper #3” is not an M-paper.** `ARCHIVED_M_SERIES_NOTICE.md` archives `paper_M0`–`M4`, the omnibus and `NPP_M1`, and explicitly retains ***“The Forcing Papers (#1–#19)”*** as the program's current vehicle. Further, `paper_M2`'s own abstract states ED is *“**committed at the primitive level** to a four-band partition (P04 §1.5)”* — the partition **pre-existed M2 and was its subject**; what the archive removed is M2's claim that the partition is **FORCED from a deeper layer**. **So the four-band partition is canonical, `Paper_089`'s original citations were sound, and the parenthetical “canonical 087 has no four-band” conflated ‘087's summary entry does not enumerate the bands’ with ‘the bands are not canonical’.** **Owed:** review whether `Paper_089`'s repoint should be reverted, and add a §1.5 cross-reference to `Paper_087` §P04 so this does not recur. *Original entry:*  `Paper_027_Newtons_G` and `Paper_003_BornRule` carry the **identical** *“Paper #3 … four-band orthogonality (P04 §1.5)”* citation, unfixed. And `primitives/P04_bandwidth.md` asserts the four-band partition **in its title**, contradicting this entry's own parenthetical that canonical 087 has none. **10+ files across four arcs use the vocabulary.** The 2026-07-29 fix was correct and reached one paper of at least three. Not resolved — it is a primitive-definition question; all four sites are flagged.** *Original entry:*  089's two dependency lines cited "Paper #3 — four-band orthogonality" (archived M-series; canonical 087 has no four-band). Not load-bearing (N1/T18 rest on P02/P04/P07/P08/P11). **Both lines repointed** to the canonical inner-product source (the Gleason reconstruction + Paper_004 / Paper_069), with a note that the four-band framing was archived.
