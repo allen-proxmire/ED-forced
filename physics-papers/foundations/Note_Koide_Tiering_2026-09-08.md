@@ -75,6 +75,43 @@ The corpus now holds **two** ED readings of Koide's `Q`, written three days apar
 
 ---
 
+## 2c. “Channels are counted, not arranged” — right about P03, wrong about ED
+
+**A parallel session reached a third diagnosis and proposed a foundations move on it. The diagnosis is half right; the move should not be made.**
+
+**What is right:** canonical `Paper_087` §P03 gives `𝒦` as *“a channel index set over which channels are enumerated”*, and its translation-invariance is over the **locus** index only (*“invariant under translations of the locus index”*). **Verified at source 2026-09-08. At the primitive layer there is no adjacency, metric or angle on `𝒦`.** And `Paper_087` §“no claim of minimality” does flag that **P03 bundles three commitments** and *“could in principle be split”*.
+
+**What is wrong: the corpus does put structure on `𝒦`, and it is one of ED's better derivations.** `Paper_MS-I_GaugeFromChannels` §3.2: a rule-type family of multiplicity `N` (P08) carries `ψ ∈ ℂ^N`, P04 bandwidth conservation preserves `Σ|ψ_i|²`, and the mixings that do so are exactly
+
+$$U(N) = \big(SU(N)\times U(1)\big)\big/\mathbb{Z}_N.$$
+
+**That is a complex vector space with a group acting on the channel index. It is not a bare set.** *“Counted, not arranged” holds for P03 and fails for the derived layer.*
+
+### The sharper statement, and it reverses the recommendation
+
+**ED's channel structure is not absent. It is maximally symmetric and unbroken.** MS-I's step 1 is the load-bearing one: *“within a family there is **no substrate fact distinguishing channel `i` from channel `j`**.”* **Koide needs the opposite** — three *distinguished* directions, `120°` apart, with a democratic axis to take an angle against. **That is a BROKEN `U(3)`, and it is exactly what Rousselle supplies: `U(3) → U(1) × ℤ₃`, a vacuum condensation.**
+
+> ### So adding geometry to `𝒦` is not an addition. It is a subtraction wearing an addition's clothes.
+>
+> **The indistinguishability IS what generates the gauge group.** Give channels angles and they become distinguishable, and `SU(N)` stops being forced — `Paper_015` §6.1 goes back to holding it *“by analogy”*, which is the state MS-I was written to repair. **The proposal trades ED's non-abelian gauge derivation for a flavour geometry.** *It was priced as expensive-but-buys-a-lot. It is expensive and buys a lot at the cost of something already banked.*
+
+**And it would not work even at that price.** `U(N)` acts **within** a rule-type family. Generations are **different** rule-types (arc Q §3.1), hence different families. **So a broken `U(N)` would still be indexed by the wrong thing** — the fibre is per-family, flavour is across families. *This is §2b's chain-identity blocker arriving a third time, by a third route.*
+
+**One near-miss worth naming, since it is the only basis-selection ED has:** einselection picks a pointer basis, which genuinely breaks a unitary symmetry. **But it is environment-induced and dynamical** (`Note_16_BasisDominance`, Paz–Zurek), and it is *“pinned only in type”* (Target #16). **A mass relation needs a fixed intrinsic geometry, not a basis the environment chooses.** Wrong kind of breaking.
+
+### Where the question actually lives — and it is not a new one
+
+**No fourteenth primitive, and no P03 split.** What is missing is a **breaking** of a symmetry ED already derives, and that has two homes already on the map:
+
+| already open | why it is the same content |
+|---|---|
+| **Target #2b, first wall** — *ED derives `U(N)` but does not select `N`* | selecting `N` and breaking `U(N)` are one missing ingredient, not two |
+| **arc Q `G4`** — vacuum-anchored differentiation, **deferred not refuted**, gated on Q.7/Q.8 | a vacuum sector *is* a symmetry-breaking selection; **Rousselle's construction is literally `G4`** |
+
+> **Net: the third diagnosis relocates to the same two doors as the first two. Three routes, three different arguments, one destination — which is a reason to trust the destination, and a reason not to open a foundations question to reach it.**
+
+---
+
 ## 3. What is real, and it is an `Open` item
 
 **The tierable content is the gap the exercise exposed:**
