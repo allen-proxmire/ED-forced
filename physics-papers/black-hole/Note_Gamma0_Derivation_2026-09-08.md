@@ -63,6 +63,28 @@ Let `f(ρ) = Γ₀(ρ)ρ`. Then `f(0) = 0`, `f(ρ_max) = 0` (the P4 claim), and 
 >
 > **The gating belongs on the DESTINATION locus, not the source.** Arc_D_2 writes the flux source-locally (`Γ₀(ρ₋)ρ₋`), and that is what generates both the negative-mobility band and the failure to cap. **Under destination gating the cap is real, well-posed, and enforced by the state space rather than by a vanishing `M`.**
 
+
+> ## ⚠ CORRECTED 2026-09-08, same day — §2 and §3 above are TOO STRONG, and Arc_BH_3 is vindicated
+>
+> **A parallel session flagged the `D`-vs-`σ` distinction *before* the certified run, and it was right.** Under destination gating there are **two** transport coefficients, not one:
+>
+> | | | at `ρ → ρ_max` | measured |
+> |---|---|---|---|
+> | **`D`** | Fick, free relaxation `J = −D∇ρ` | **constant** | `0.99996`, flat over `ρ = 0.10…0.95` |
+> | **`σ`** | **Onsager, response to a driving field** `J = σE` | **→ 0** | **`σ = 0.502·ρ(1−ρ)`**, ratio constant to **5.7%** over `ρ = 0.10…0.98` |
+>
+> Linked by the **Einstein relation** `σ = 2Dχ`, `χ = ρ(1−ρ)`. *The vanishing lives entirely in `χ`.*
+>
+> ### What this reverses
+>
+> **✅ `Arc_BH_3` Constraint 3 is CORRECT and needs no rewrite.** Its content is that gradients cannot be **sustained** and steepening cannot **propagate** — **driven** transport, whose coefficient is `σ`, and `σ` vanishes. **The acoustic-degeneration argument in its §4 stands for the same reason.** *I reported the mechanism as refuted after measuring `D` — the wrong coefficient. Withdrawn.* **The “owed rewrite” is cancelled; what Arc_BH_3 gets instead is a wording tightening (say `σ`, not the bare word “mobility”) and an upgrade from declared to `Grounded`.**
+>
+> ### What survives, scoped correctly
+>
+> **`Arc_D_2` still needs a repair, but a smaller and more precise one:** its `M(ρ_max) = 0` is **right for `σ`**, while Step 2 defines `M ≡ [kernel moment]·∂(Γ₀ρ)/∂ρ` and writes `∇·(M∇ρ)`, where `M` occupies the **Fick** slot. **One symbol, two coefficients — a property of `σ` asserted about an object defined as `D`.** *The Rolle result stands, scoped: it shows the **source-local** reading gives negative `D` and is ill-posed. Under the certified destination gating there is no negative-`D` pathology at all.* **So Rolle diagnoses the mis-transcription, not the physics.** **Repair written into `Arc_D_2` 2026-09-08:** state the driven equation as `∇·(σ∇μ)` with `σ = 2Dχ`, and destination-gate the Step-1 flux. **The operator form stays FORCED, values stay INHERITED, and downstream consumers (Arc_D_3/D_6 NS-2 closure, Arc_BH_2, Arc_ED10_2, soft-matter transport) are unaffected — they use the operator form and `ρ_max`'s existence, not the `D`-vs-`σ` identification.**
+>
+> **⚠ Third process failure this session, and the same shape as the first two.** The `σ` script's verdict line compared `σ(0.98)/σ(0.10)` against an **arbitrary `0.25` threshold** and printed *“does not vanish”* — meaningless, since `ρ(1−ρ)` is itself `0.218` of its `ρ=0.1` value there. *The right test is whether `σ/[ρ(1−ρ)]` is **constant**, after which `σ(1) = 0` follows.* **That script's Monte-Carlo `D` estimator was also too noisy to use (it returned negatives) and is superseded by the deterministic measurement.**
+
 ---
 
 ## 4. What this does and does not settle
