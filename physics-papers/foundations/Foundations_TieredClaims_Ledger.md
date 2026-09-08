@@ -163,6 +163,55 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 >
 > **Consequence for the rollout:** the two-column run must enter **`b` three separate times** — locus-channel scalar, edge weight, and whatever `Arc_D_2` means by it — **because that is exactly where this one hid.** *A single `b` row is what let three objects share a name for weeks.*
 
+
+> ### 📏 MEASURED 2026-09-08 — the checker's cost, and the answer changes the plan
+>
+> *A parallel session asked the right question before committing to code: **is the checker's input ~30 symbols or ~300?** — and said to decide **after** seeing the row count. Measured with `internal notes/_harvest_symbols.py` and `_symbol_spread.py`, both re-runnable.*
+>
+> **Two-folder pilot (`foundations` + `arc-foundations`):**
+>
+> | | count |
+> |---|---|
+> | all defined symbol-shaped tokens | **144** |
+> | corpus-shaped symbols (drops single-letter indices, code noise) | **77** |
+> | spanning both folders | **8** — `P_K`, `b_K`, `M_eff`, `b_int`, `m_e`, `b_env`, `D_phys`, `b_adj` |
+>
+> *The spanning set independently re-surfaces `b_K` and `M_eff`, two already-documented collisions — a validity check on the method.*
+>
+> > ### ⚠ But the folder-PAIR is the wrong unit, and the pilot's own strongest find proves it.
+> >
+> > **`σ`'s three objects span `arc-foundations` / `Arc_D` / `Black_Holes` — and no folder-pair contains them.** The two-folder scope **would have missed F4**, the find that most justified the method.
+>
+> **So the scan was widened to the whole corpus — 71 folders.** *And the result is a negative on the checker as designed:*
+>
+> | symbol | folders it is defined in |
+> |---|---|
+> | `rho` | **39** |
+> | `mu` | **34** |
+> | `b_K` | **31** |
+> | `sigma` | **25** |
+> | `Coh` / `Str` | **14** each |
+>
+> **157 symbols are defined in 4 or more folders.**
+>
+> > ## The negative: SPREAD IS NOT A DISCRIMINATOR.
+> >
+> > **`σ` appearing in 25 folders does not distinguish "three unrelated objects" from "one object used widely."** *High spread is the normal state of a shared vocabulary, not a signal of collision.* **A checker keyed on spread would flag 157 symbols and be useless.**
+>
+> ### What that means for the citation-relative rule — it is right, and it is BLOCKED on a prerequisite
+>
+> **The rule (*flag `X` in `B` where `B` cites `A` for `X` and their declared dimension or index set differ*) is correct precisely BECAUSE spread is insufficient** — it compares *declarations*, not occurrences. **But its input does not exist.** The harvest's own headline row is `b_K(u)` → **dimension NOT DECLARED**, and that is the rule rather than the exception: **the corpus overwhelmingly does not state dimension or index set at definition sites.**
+>
+> > **So the bottleneck is NOT the citation graph, and NOT the row count. It is that the declarations the checker would compare have not been written.** *Building a prose-citation extractor against absent declarations produces nothing to compare.*
+>
+> ### Revised plan, and it is simpler than the one it replaces
+>
+> **1. Write the declarations first — dimension and index set at definition sites.** *This is the work with demonstrated yield: F1–F5 all came out of doing it by hand on ~20 symbols, before any checker existed.*
+> **2. Do NOT write the checker yet.** *It is blocked on step 1, and the measurement above is what establishes that rather than assuming it.*
+> **3. Prioritise by spread, not by folder.** *The 157 symbols in 4+ folders are the surface; the top of that list — `rho`, `mu`, `b_K`, `sigma`, `Coh`, `Str` — is where every collision found this week already lived.*
+>
+> *Cost of the measurement: two scripts. Cost avoided: writing a citation extractor against prose for an input that turns out not to exist.*
+
 > ## Pilot verdict, against the rule fixed before populating: **FOUR new (F2, F3, F4, F5) plus one sharpening (F1) and one extension (F2b). Threshold met three times over; rollout justified.**
 >
 > **The columns split the work as predicted, and the split is now sharp:** F1 and **F4** came from **dimension** — `σ`'s three objects are dimensionally unrelated, so the index column would have missed them. **F2, F3 and F5 came from INDEX SET** — and **F5 is the mirror case: `b_K(u)`, `bw(u,v)` and `ρ(u)` are dimensionally compatible, so the dimension column passes them without complaint and only “what does it live on?” separates them.** *Neither column alone finds more than two of five. That is the argument for two columns, and it is now measured rather than predicted.* **And the cheap column produced the strongest find**, supporting the sequencing above: dimension first, everywhere, then index only where dimension did not resolve.
