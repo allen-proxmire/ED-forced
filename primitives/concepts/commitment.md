@@ -43,6 +43,8 @@ A commitment event `ε` at vertex `u ∈ V` for chain C has:
 
 For a chain with internal rule-bandwidth `b_int` and environmental pressure, the commitment rate is roughly `Γ_commit ~ b_int / (commitment-reserve budget)` in isolation, modified upward by environmental bandwidth. This is why measurement "forces" commitment: large environmental bandwidth pushes the rate up, so the chain commits sooner.
 
+> **⚠ DIMENSIONAL FLAG, 2026-09-08.** **The left side is a RATE (`1/T`); the right side is a ratio of two bandwidths, and `[b] = 1` (declared at `P04`), so the right side is DIMENSIONLESS.** *The `~` must therefore hide a constant carrying `1/T`.* **And it is the same missing constant as `P-Commitment-Linear`'s `Γ ∝ b` in `Paper_GR-I` §2 — one unnamed rate constant, load-bearing in two separate statements about the commitment rate, named in neither.** *(Foundations ledger, declarations pass.)*
+
 ### Born rule as bandwidth squared
 
 The standard QM selection probability `|ψ_K|²` is, in ED, the bandwidth ratio `b_K² / Σ b²`. The squared-amplitude structure emerges because bandwidth composes sublinearly under channel merging (Primitive 04 §7 item 2) in a way that, after normalization, gives `|ψ|²` weighting. The Born rule is therefore a thick-regime emergent statement about discrete commitment selection.

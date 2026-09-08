@@ -235,10 +235,10 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 | `R_H` | **L** | global constant | ✅ declarable |
 | `π_K(u)` | **dimensionless** (angle, `S¹`) | `(channel K, locus u)` | ✅ declarable |
 | `M_eff` | **dimensionless** (IPR) | `𝒦(C,u,t)` — channels, one chain, one locus | ✅ declarable |
-| `b_K(u)` | **⛔ UNDETERMINED** | `(channel K, locus u)` | **undeclarable — U1** |
-| `P_K(u)` | `[b]^½` — **inherits U1** | `(channel K, locus u)` | **undeclarable (derived)** |
-| `Coh`, `Str` | `[b]` — **inherits U1** | sources at one locus, one channel | **undeclarable (derived)** |
-| `Σ_C` | `[b]` — **inherits U1**, but `a_C` needs `L²/T²` | chain `C` | **undeclarable — U2** |
+| `b_K(u)` | **1 (dimensionless)** — **U1 CLOSED**, from `GR-I`'s lapse `N² ∼ b` | `(channel K, locus u)` | ✅ declarable |
+| `P_K(u)` | `[b]^½` = **1** | `(channel K, locus u)` | ✅ unblocked by U1 |
+| `Coh`, `Str` | `[b]` = **1** | sources at one locus, one channel | ✅ unblocked by U1 |
+| `Σ_C` | `[b]` = **1** | chain `C` | ✅ unblocked; `a_C` now blocked on **U5** (`∇_adj` undefined) |
 | `ρ` | **⛔ UNDETERMINED** — "density" per what? | **locus OR cg-cell** | **undeclarable — U3** |
 | `Ψ` | context-dependent | rule-type / spinor module | **undeclarable — U4** |
 | `σ` | **FOUR objects** | — | **collision — C1** |
@@ -276,6 +276,43 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 > **C3 — `τ` is two objects.** **Proper time** (`T`) and the **rule-type label** (a dimensionless discrete index, as in `σ_τ`, `w_τ^X`, `Γ_τ`). *`σ_τ` therefore contains a `τ` that is not a time, in a formula whose whole point is a `[time]^{-2}` Lorentz square.*
 >
 > **C4 — `μ` is three or more.** The **spacetime index** (`∂_μ`, `γ^μ`), the **mobility** in `M(ρ)`/`μ(ρ)`, and the **chemical potential** briefly imported into `Arc_D_2` and dropped. *The last was caught the same day; the first two coexist unflagged.*
+
+
+> ### ✅ U1 SETTLED 2026-09-08 — `[b]` is DIMENSIONLESS, and five symbols unblock. Plus one new undeclarable that is worse.
+>
+> *Redirect supplied by a parallel session, and it was right on both counts.*
+>
+> **First, the tension I asserted does not exist.** I wrote that `[b] = L²/T²` fights `b`'s use as a countable capacity. **It does not: `N_bw = B_max/b_min`, `θ_ind = b_int/b_bdry`, `M_eff = (Σb)²/(Σb²)` and the Born rule `b_K/Σb_K'` are all HOMOGENEOUS OF DEGREE 0 in `b`.** *They are dimensionless whatever `[b]` is, so they impose no constraint at all.* **A count built from a ratio of `b`s is a count for any `[b]`.** *(Third appearance of degree-0 homogeneity this week — it also killed the bandwidth route to `θ_ind` and makes Koide's `Q` scale-invariant. Worth watching as a pattern.)*
+>
+> **Second, my proposed read was aimed at the wrong papers.** **`Paper_025_HolographicBound` contains ZERO occurrences of `b_K` and zero of "bandwidth"**; `Paper_027` has two. *That read would have come back empty and the emptiness would have looked like evidence.*
+>
+> ### The two constraints that are real
+>
+> **① `GR-I`: the lapse `N² ∼ b`.** **The lapse is dimensionless** (ADM: `g₀₀ = −N²`), and this is **the only place in the corpus where `b` is set equal to something whose dimension is fixed independently.**
+>
+> $$\Rightarrow\quad [b] = 1 .$$
+>
+> **② `GR-I` §2, `P-Commitment-Linear`: *"the commitment rate is linear in the metric-relevant bandwidth (`Γ ∝ b`)"*.** With `[b] = 1` and `[Γ] = 1/T`, **the proportionality constant carries `1/T`.** *Consistent — "∝" never implied a dimensionless constant.*
+>
+> > ## **DECLARATION: `[b] = 1`, dimensionless.** Sourced to `GR-I`'s lapse identification, which is the sharpest constraint the corpus contains.
+> >
+> > **This unblocks U1 and its four dependents at once:** `P_K` (`[b]^½` = 1), `Coh`, `Str` and `Σ_C` (all `[b]` = 1). **One declaration, five symbols.**
+>
+> ### U2 resolves — conditionally — and the condition turns out to be a new gap
+>
+> With `[Σ_C] = 1`, `a_C = −∇_adj Σ_C` has `[a_C] = 1/[length]` **if `∇_adj` divides by a length**. *At `c = 1` that IS an acceleration* (`1/L = 1/T = L/T²`), **so the apparent `[b] = L²/T²` fork was a natural-units artifact**, exactly as predicted.
+>
+> > ### ⛔ NEW UNDECLARABLE — U5: **`∇_adj` is nowhere defined in the corpus.**
+> >
+> > A search of `physics-papers/foundations/` and `primitives/` returns **no definition** — only this ledger's own rows. **So whether `∇_adj` is per-length or per-edge cannot be answered from the corpus, and the `a_C` branch rests on an undefined operator rather than on a resolvable fork.**
+> >
+> > **This is worse than U1 was.** *`∇_adj` is the operator in P12's own `a_C = −∇_adj Σ_C` — the thing that turns the stability landscape into an acceleration, i.e. the entire bridge from the substrate functional to observable dynamics — and it has no definition.* **If it is per-edge, `[a_C] = 1` and `a_C` is not an acceleration at all.**
+>
+> ### And one consistency item, from the same pass
+>
+> **`primitives/concepts/commitment.md`:** *"the commitment rate is roughly `Γ_commit ~ b_int / (commitment-reserve budget)`"*. **A rate on the left; a ratio of two bandwidths — dimensionless — on the right.** *So the `~` must hide a rate constant.* **That is the SAME missing constant as `Γ ∝ b` in `P-Commitment-Linear`, appearing a second time and named in neither place.** *One unnamed constant carrying `1/T`, load-bearing in two separate statements about the commitment rate.*
+>
+> **Net for the pass:** **U1 CLOSED** (five symbols unblocked, one line), **U2 conditionally closed** and reduced to **U5**, **U5 OPENED** and it is more load-bearing than U1 was, plus one unnamed rate constant appearing twice.
 
 > ## Pass verdict, against the criterion fixed before it: **5 of 15 declarable, 4 undeclarable (propagating to 4 more), 4 collisions.**
 >
