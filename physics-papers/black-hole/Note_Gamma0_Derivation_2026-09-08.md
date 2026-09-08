@@ -165,6 +165,47 @@ grad   = abs(rho_v - rho_u)
 
 > **⚠ Second process failure this session, same class as the first.** My initial overshoot test compared runs at different `increment` **without checking whether each had saturated** — the small-increment runs extinguished early, so the ratio was computed on unfilled runs and printed a meaningless verdict. *A comparison across a parameter must verify the runs are in the same regime before the comparison means anything.* **The corrected script checks saturation and predicts the ceiling analytically before measuring it.**
 
+
+> ## ⚠ CORRECTED AND STRENGTHENED 2026-09-08 (late) — `β` retires as an artifact, and my admissibility filter was wrong
+>
+> **A parallel session added a third branch to the pre-committed tiering rule and found an implementation error on the way. Both confirmed.**
+>
+> ### 1. My filter enforced the bound one quantum too late — and the `+0.1` was NOT harmless arithmetic
+>
+> I filtered on **`rho_v < rho_max`**, i.e. **before** the deposit. *“A locus's total bandwidth is bounded above” must hold **after** it*, so the filter is **`rho_v + increment ≤ rho_max`**. **My version permitted a one-quantum violation of the very postulate under test**, which is exactly the `+0.1` I reported as arithmetic and harmless. *It was the bound enforced one step too late.*
+>
+> **✅ With the correct filter the cap is EXACT, and the result improves:**
+>
+> | `increment` | old filter | **correct filter** | exceeds `ρ_max`? |
+> |---|---|---|---|
+> | 1.00 | `3.1000` | **`2.1000`** | **no** |
+> | 0.50 | `3.1000` | **`2.6000`** | **no** |
+> | 0.25 | `3.1000` | **`2.8500`** | **no** |
+>
+> **`ρ_max = 3.0`; bare rule reaches `32.1`.** *The bounded runs approach `ρ_max` from below and never cross — which is Arc_BH_3's own description, now literally true rather than true to within a quantum.* **Every statement of the form “`ρ ≤ ρ_max + increment`” in this note, Target #15 and both ledgers is superseded by `ρ ≤ ρ_max`, exactly.**
+>
+> ### 2. The refit: `β = 1.0009`, CI `[0.928, 1.109]` — the apparent `β ≈ 1.05` was noise
+>
+> The parallel session read a systematic sub-linear trend off my acceptance ratios (`0.983 → 0.980 → 0.916 → 0.910 → 0.910 → 0.820`) and flagged, honestly, that its density points were assumed. **They were right about the x-values and right to want a refit.** **Refit with 40 seeds: `β = 1.0009`, 95% CI `[0.9280, 1.1089]` — consistent with `1`.** *The single-draw ratios were sampling noise; at `f = 0.95` only 5% of neighbours are free, so one draw is worthless there.*
+>
+> ### 3. ⭐ THE THIRD BRANCH IS THE ANSWER: `β` moves with the INCREMENT, at fixed kernel
+>
+> With the correct filter, acceptance is `P(b ≤ B_max − Δ)` — **explicitly `Δ`-dependent.** Measured on the certified graph with graded occupancy, **kernel never varied:**
+>
+> | `Δ/ρ_max` | 0.500 | 0.333 | 0.167 | 0.083 | 0.033 |
+> |---|---|---|---|---|---|
+> | **fitted `β`** | 0.775 | 0.685 | 0.443 | 0.255 | **0.067** |
+>
+> **Spread `0.707` across a 15× range of increment.**
+>
+> > ## Verdict, against the criterion fixed BEFORE the run: **`β` is an ARTIFACT of the discretisation. No claim. `β ≈ 1` retires.**
+> >
+> > **And `β = 1` was never physics** — it is the **single-occupancy** case, where “room” is binary and its mean is exactly `1 − ρ`. *True by construction, which is why §1's `Γ₀ = Γ_max(1 − ρ/ρ_max)` should be read as the binary-occupancy limit, not as a measured exponent.*
+>
+> **The increment also pushes `β` the WRONG way** — smaller quanta drive it **down**, away from UDM's `≈ 2`. **So the increment is a confound to control, not a route to the target, and the finite-width kernel test is NOT interpretable until `β` is shown stable under it.** *Going at the kernel first would have attributed to the kernel a number a numerical parameter was already moving — the same shape as every other failure logged today.*
+>
+> **What is untouched:** `Γ₀(ρ) → 0` still derives at **`Grounded`** (the *vanishing*, not its exponent), the cap is still real and now **exact**, the certified rule is still destination-gated, and Arc_BH_3's Constraint 3 still stands. **What retires is only the exponent.**
+
 ---
 
 ## 5. Net for Target #15
