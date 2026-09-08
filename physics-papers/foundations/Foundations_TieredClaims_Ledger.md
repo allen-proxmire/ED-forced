@@ -91,7 +91,8 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 
 | symbol | definition | **dimension** | **index set** | status |
 |---|---|---|---|---|
-| `b_K(u)` | P04 bandwidth | **NOT DECLARED** — F1 | `(channel K, locus u)` | test |
+| `b_K(u)` | P04 bandwidth — **object ① of three** | **NOT DECLARED** — F1 | `(channel K, locus u)` | test |
+| `bw(u,v)` | edge weight, `graph.py` B2 — **object ②** | `[b]`? undeclared | **edge `(u,v)`** — static, tie-break key only | **test → FOUND (F5)** |
 | `P_K(u)` | `√b_K · e^{iπ_K}` | `[b]^½` | `(channel K, locus u)` | — |
 | `π_K(u)` | P09 polarity phase | dimensionless (angle) | `(channel K, locus u)` | — |
 | `Str_K` | `Σ_a b_K^(a)` | `[b]` | **sources `a`**, one channel, one locus | *registry (known)* |
@@ -123,7 +124,7 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 >
 > `ρ` is **commitment density** — `simulator/state.py`: *"commitment density (B4); **monotone non-decreasing** (B7)"*, an accumulated stock of past commitments. `b` is **P04 bandwidth**, a participation **capacity**, with no monotonicity. **`P-Locus-Bandwidth-Bound` bounds `b(u)` and never mentions `ρ`** (zero occurrences at its declaration site); **`ρ_max` is declared separately** in `Arc_BH_3`/`Arc_D_2` as a packing limit *"set by participation-channel availability"* — a gesture at the bandwidth structure, not a derivation from it.
 >
-> **So `Γ₀(ρ) = Γ_max(1 − ρ/ρ_max)` with "`ρ_max ↔ B_max`" inserted an UNLICENSED identification**, asserted in exactly two places, both of them this session's own entries. *Same shape as `b = m` in the Koide case.* **Consequence: nothing was reduced** — linking two separate declarations took a **third** statement. **The `Grounded` tier for the vanishing survives, and so does the measured cap; the "two declared items become one" claim is WITHDRAWN.**
+> **So `Γ₀(ρ) = Γ_max(1 − ρ/ρ_max)` with "`ρ_max ↔ B_max`" inserted an UNLICENSED identification**, asserted in exactly two places, both of them this session's own entries. *Same shape as `b = m` in the Koide case.* **Consequence: nothing was reduced** — linking two separate declarations took a **third** statement. **The `Grounded` tier for the vanishing survives, and so does the measured cap; the "two declared items become one" claim is WITHDRAWN.** **→ The blocking quantity now has a target: `δ`, the per-commitment bandwidth draw, opened as Target #28 on 2026-09-08.** *It is `L4` in the P13 reserve-floor chain (**textually open**) and it is what `ρ_max ≡ B_max/δ` needs here — **one quantity blocking two arcs a day apart**, filed until now as a bullet under “What's missing” in `primitives/concepts/participation_bandwidth.md`, which neither arc reads.* **⚠ And there are THREE bandwidth-ish objects, not two:** `b_K(u)` (channel-locus scalar, what the postulate bounds), `bw(u,v)` (**edge weight** — `graph.py`'s B2 graph, used by `apply_tiebreak` as *“the primary key”*, **static and consumed by nothing**), and `ρ(u)` (node, monotone stock). **The chain needs two links, and the corpus licenses neither.** *`δ` is also **not measurable in the certified simulator** — nothing there consumes bandwidth, so it is a construction target rather than a probe target.*
 
 > ### F3 — `Γ₀` and `ρ` are each used at TWO levels: per-locus and per-coarse-graining-cell. *(NEW — scored)*
 >
@@ -139,9 +140,32 @@ Then normal tiers for the genuine-claim papers (093/094 arrow/causality, 096/097
 >
 > **③ was not on the seven.** *It sits in the bandwidth-signature construction — the same file that closed the flavour line the day before — and it is dimensionally unrelated to both others.* **Found by filling in one column on one symbol, and found by DIMENSION alone.** *The ①/② collision was already caught by hand this session; ③ makes it a three-way, and only the column found it.*
 
-> ## Pilot verdict, against the rule fixed before populating: **three new (F2, F3, F4) plus one sharpening (F1). Threshold met; rollout justified.**
+
+> ### F2b — ⚠ F2 was UNDER-SCOPED: there are THREE bandwidth-ish objects, and the chain needs TWO links. *(extends F2)*
 >
-> **The columns split the work as predicted:** F1 and **F4** came from **dimension**; F2 and F3 from **index set**. *Neither column alone finds more than two of the four — which is why it is two columns.* **And the cheap column produced the strongest find**, supporting the sequencing above: dimension first, everywhere, then index only where dimension did not resolve.
+> **The certified simulator does carry bandwidth — but not where the postulate needs it.**
+>
+> | object | lives on | status |
+> |---|---|---|
+> | `b_K(u)` | **(channel, locus)** scalar | what **`P-Locus-Bandwidth-Bound`** bounds |
+> | `bw(u,v)` | **edge** — `graph.py`, *"B2 bandwidth-weighted participation graph"*, `add_edge(u, v, bandwidth)` | **static selection key only.** `apply_tiebreak`: *"Bandwidth (B2) is the **primary key**"*. **Nothing consumes it; there is no bandwidth dynamics in the certified rule at all.** |
+> | `ρ(u)` | **node** — commitment density, **monotone non-decreasing** (B4/B7) | what the added admissibility filter actually bounded |
+>
+> **So the chain is edge bandwidth → locus bandwidth → commitment density.** The first link is constructible as a sum over incident edges but **is not built**, and `bw` is **static**, so it cannot be drawn down. The second needs **`δ`**, the per-commitment draw. **The corpus licenses neither.**
+>
+> **⚠ And `δ` is not measurable in the certified simulator:** `commit()` writes `ρ` and only `ρ`; `bw` is read and never written. **Nothing consumes bandwidth, so the quantity has no dynamics to observe.** *A construction target, not a probe target — worth knowing before someone tries.*
+>
+> **`δ` has now blocked two arcs a day apart** — the P13 commitment-reserve floor for `N_bw` (link **L4**, *"each event draws at least `δ > 0`"*, **TEXTUALLY OPEN**) and `ρ_max ↔ B_max` today — and it is filed as a bullet under *"What's missing"* in `primitives/concepts/participation_bandwidth.md`, **which neither arc reads. Now opened as Target #28.**
+
+> ### F5 — ⭐ NINTH FIND: `b` is three objects, and only the index column sees it. *(NEW — scored)*
+>
+> `b_K(u)` **(channel, locus)**, `bw(u,v)` **(edge)**, and `ρ(u)` **(node)** are three different graph elements. **All three are dimensionally compatible** — a dimension column passes them without complaint — **and they are distinguished only by asking what each lives on.** *This is the index column's strongest result, and it is the mirror of F4, which the dimension column found and the index column would have missed.*
+>
+> **Consequence for the rollout:** the two-column run must enter **`b` three separate times** — locus-channel scalar, edge weight, and whatever `Arc_D_2` means by it — **because that is exactly where this one hid.** *A single `b` row is what let three objects share a name for weeks.*
+
+> ## Pilot verdict, against the rule fixed before populating: **FOUR new (F2, F3, F4, F5) plus one sharpening (F1) and one extension (F2b). Threshold met three times over; rollout justified.**
+>
+> **The columns split the work as predicted, and the split is now sharp:** F1 and **F4** came from **dimension** — `σ`'s three objects are dimensionally unrelated, so the index column would have missed them. **F2, F3 and F5 came from INDEX SET** — and **F5 is the mirror case: `b_K(u)`, `bw(u,v)` and `ρ(u)` are dimensionally compatible, so the dimension column passes them without complaint and only “what does it live on?” separates them.** *Neither column alone finds more than two of five. That is the argument for two columns, and it is now measured rather than predicted.* **And the cheap column produced the strongest find**, supporting the sequencing above: dimension first, everywhere, then index only where dimension did not resolve.
 
 ### Staleness & refinements
 1. **THE verdict-grammar drift — FIXED 2026-07-29.** **095 §3.1 used "Phase-1 QM emergence (four QM postulates forced, no additional postulates)" as its M1 example** while **098 had reclassified Phase-1 QM to M2 (Intermediate Path C)** ("Round-4 correction of prior FORCED-unconditional overclaim"; it rests on the Gleason + P-LinRate postulate stack), and **Paper_100 §3.1 carried the same stale M1.** Since 095 is the grammar every ledger cites, its M1 exemplar being actually-M2 mislabeled the anchor tier. **Applied:** 095 §3.1's M1 example replaced with the **anyon prohibition (Paper_104)** (+ Cl(3,1) uniqueness, Paper_103 — genuine M1 pure-structural, no inherited numerics, no paper-specific postulate), with a note that Phase-1 QM was reclassified to M2; **Paper_100 §3.1 (both the "4 QM postulates FORCED-unconditional" line and the "methodology level" line) corrected to M2**.
