@@ -38,17 +38,41 @@
 
 ---
 
-## 3. ⚠ NEW PRIOR ART — a second obligation, and it changes the right test
+## 3. ✅ PRIOR ART, READ — and it is peer-reviewed, which changes how it must be cited
 
-**The note's attribution is correct:** the inverse-Koide-for-quarks idea is **Rivero** and **Kartavtsev**, not an ED finding, and the note says so plainly. *(Web-checked 2026-09-08 under the standing prior-art rule.)*
+**The note's attribution is correct:** the inverse-Koide-for-quarks idea is **Rivero** and **Kartavtsev**, not an ED finding, and the note says so plainly. *(Web-checked and the paper read 2026-09-08.)*
 
-**But the literature has moved, and further than the note knew.** **`arXiv:2606.10060`, "New sum rules of the Koide type" (June 2026)** reports the down-sector inverse relation in a sharper form: an inverse tuple `m_i^(d) = M^(d)/(w₀+w_i)²` with `Σw_i = 0` and `⅓Σw_i² = w₀²`, **stated to be exact near `Q ≈ 280 TeV` under SM running and within `1σ` of central values throughout** — the mirror of the lepton relation, exact in the ultraviolet rather than the infrared.
-
-> ### This reframes §2's fragility rather than cancelling it.
+> ### Citation, in the form it must be used
 >
-> **If the relation is a high-scale one, the right test is not *does it hit `2/3` at `M_Z`* but *does the RG trajectory pass through `2/3`* — a far more constrained question with much less tuning freedom than my error box suggests.** *My sweep is a fair test of the claim as the note stated it, and not a fair test of the claim as the literature states it.*
+> **A. Rivero, *New sum rules of the Koide type*, Phys. Lett. B 877 (2026) 140510** (arXiv:2606.10060).
+>
+> **This is PEER-REVIEWED, in a top-tier journal.** *It must NOT be described as a preprint, and it must NOT be conflated with Rousselle `2608.19277`, which is arXiv-only.* **Two obligations stand on this line and they carry different weight.** *(The corpus's discipline about peer-review status runs both directions — the same care that keeps UDM from being called peer-reviewed applies to not demoting something that is.)*
 
-**Tier: reported by search, NOT yet read.** **Owed: read `2606.10060` before this is relied on either way.** *Two prior-art obligations now stand on this line — Rousselle `2608.19277` (§4.4.1) and this one — and both postdate nothing in the corpus; both predate the corpus's Koide notes.*
+**The paper reports the down-sector inverse relation as exact near `Q ≈ 280 TeV` under SM running, within `1σ` of central values throughout.** **So the d/u relation is unambiguously his published result and nothing in `theory/Koide_Hierarchy/` can be presented as ours.**
+
+### ⚠ And my reframe in the first version of this note was BACKWARDS
+
+I wrote that if the relation is a high-scale one then *“the right test is whether the RG **trajectory** passes through `2/3` — far more constrained, much less tuning freedom than my error box implies.”* **The first half is right and the second half is wrong.** *Withdrawn.*
+
+**The paper's result holds “for central mass values” and carries no error propagation** — PDG values are referenced, their uncertainties are not carried into the crossing-scale calculation. **And the crossing scale absorbs ALL of that uncertainty**, which makes the trajectory test **weaker** than the fixed-scale one, not stronger.
+
+**Demonstrable from this note's own table, with no extra model** (`theory/Koide_Hierarchy/spread_claims_verify.py`):
+
+| | |
+|---|---|
+| `Q_inv` at `2 GeV` | `0.66521` — **below** `2/3` |
+| `Q_inv` at `M_Z` | `0.66748` — **above** `2/3` |
+| **so it crosses between them:** log-linear | **`μ ≈ 23.1 GeV`** |
+| **Rivero's crossing** | **`280 TeV`** |
+| **gap** | **4.1 orders of magnitude** |
+
+**The quantity runs `0.34%` over a factor of 46 in scale and sits `0.12%` from its target.** *A slowly-running quantity that starts that close crosses **somewhere** for almost any inputs; **where** is a ratio of two very small numbers, so it soaks up every bit of the mass uncertainty.* **A parallel session sweeping `m_d` and `m_s` puts the crossing scale across `~27.5` orders of magnitude.**
+
+> **So the fragility verdict stands with one word changed: it is not the RELATION that is fragile — that is in PLB with precision comparable to the lepton rule — it is the SCALE.**
+
+**Two honest limits on this, in both directions.** *(i) My §2 error-box sweep tested whether it lands on `2/3` at `M_Z`, which **Rivero does not claim** — so that sweep was not a fair test of his paper, and I should not have framed it as one. (ii) The crossing figures above are two-point log-linear, not integrated RGEs; **individual scales are indicative and the `23.1 GeV` flags the input masses rather than his calculation.*** **What is robust is the sensitivity itself, which follows from slow running plus proximity to the target under any model.**
+
+**Net: neither test is sharp. The relation is real, published and precise at its own best-fit point; the scale at which it is exact is unconstrained by the data going in.**
 
 ---
 
@@ -74,10 +98,10 @@
 | `Q` rises with a family's own hierarchy, so "explain the spread" **is** the flavour hierarchy problem | **CONFIRMED** — no shortcut here, and the note says so |
 | `Q_ν = 2/3` | **EXCLUDED by data**, independently reconfirmed |
 | the inverse relation splits d from u without a continuous label | **holds**, and it is the only thing found that does |
-| its precision at `M_Z` | **weaker than the note said** (§2) — but §3 says `M_Z` may be the wrong place to test it |
-| whose result it is | **Rivero / Kartavtsev**, correctly attributed, **plus `2606.10060` unread** |
+| its precision at `M_Z` | **weaker than the note said** (§2) — **but §3 says `M_Z` is the wrong place to test it, and that the trajectory test is weaker still.** *The fragility is in the SCALE, not the relation.* |
+| whose result it is | **Rivero / Kartavtsev**, correctly attributed. **`Phys. Lett. B 877 (2026) 140510` — PEER-REVIEWED, read.** Nothing in the folder can be presented as ours. |
 | what ED would add | a **reason** for the rate/extent flip. **Not built.** |
 
 > **The note's own closing verdict — *"d vs u is not close, and I am reporting that rather than a fit"* — survives the check.** *This is the folder's most useful output precisely because it declines to bank anything, and the one honest gain is that the target is now sharp: a mechanism must explain the **flip**, and must be about **binding** rather than about **charge**.*
 
-**Status: live target, not a result.** Unblocked by §4.4.1's three closures, because it never enters the substrate. **Next real move is reading `2606.10060`, not more probing.**
+**Status: live target, not a result.** Unblocked by §4.4.1's three closures, because it never enters the substrate. ~~*Next real move is reading `2606.10060`.*~~ **DONE 2026-09-08 — read, and it closed the last open question on this line.** *What the two days produced that is genuinely new is a specific unaddressed weakness in a published result (the crossing scale carries no error propagation), which is a criticism of someone else's paper rather than ED physics.* **A positive from this line starts at `G4` and Q.7/Q.8 — upstream ED work that deserves its own beginning, not the tail of this one.**
