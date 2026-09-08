@@ -26,6 +26,23 @@ A  MULTI-DEFINITION   one symbol given materially different right-hand sides in
 B  EMPTY PROVENANCE   a claim tiered `I` (inherited) whose cited source does not
                       contain the claim's distinctive words.
 
+KNOWN BLIND SPOT (recorded 2026-09-08, from a real miss)
+--------------------------------------------------------
+Detector A keys on DEFINITION lines -- `X = <rhs>`. It does not see a collision
+carried by a SUBSTITUTION made inside a derivation.
+
+The miss: `foundations/Note_Koide_In_StrCoh_2026-09-05` sets `P_i = sqrt(m_i)`,
+i.e. `b = m`; `theory/Koide_Hierarchy/koide_is_Meff_check.py` sets `b = sqrt(m)`.
+Incompatible unless m = 1, and each was chosen so that one ED quantity lands
+Koide's Q. Neither file defines `b` -- both ASSUME an assignment in passing --
+so A had nothing to compare, and the collision was found only when the two were
+tiered side by side (foundations ledger #13).
+
+Widening A to catch this is not obviously worth it: single-letter symbols and
+in-line substitutions would swamp the shortlist, and precision is this tool's
+whole contract. Recorded so the tool's scope is not mistaken for coverage --
+TIERING caught this one, and tiering is the backstop A cannot replace.
+
 Both are CANDIDATE generators, not verdicts. The output is a shortlist a human
 reads, the same contract as _triage_open_surface.py. Precision matters more than
 recall here: a noisy list gets ignored, and an ignored checker is worse than none.
