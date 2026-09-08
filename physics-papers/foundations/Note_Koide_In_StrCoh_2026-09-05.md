@@ -4,6 +4,20 @@
 
 ---
 
+> ## ⚠ POINTER ADDED 2026-09-07 (late) — further work exists, and it is UNTIERED
+
+> **A separate session took this line further. Its material is now in the working repo at `event-density/theory/Koide_Hierarchy/` (ten notes, ten probes, README).** **NOTHING in it has been tiered, promoted, or propagated. AP tiers it.** *It is recorded here only so this note is not read as the current state.*
+>
+> **What it adds, flatly:** with `b = √m`, **`M_eff = 1/Q`** to `2.2e-16` — so `Q = 2/3` ⇺ `M_eff/N = 1/2`, the leptons at **exactly half-saturation of `M_eff ≤ N`**, the Cauchy–Schwarz bound proved independently the same evening. *That converges with §1 of this note from the other direction — `Str + Coh = (Σ√m)²`, so `Q = Str/(Str+Coh) = 1/M_eff` is the same algebra reached twice.* **And it matters more than it did on 2026-09-05, because `M_eff` gained a governing postulate that evening (`P-Multiplicity-Extensive`, `q-compute/Paper_054` §3.1).**
+>
+> **Its own deflation, which travels with it:** `Q ∈ [1/3, 1]`, so `2/3` is also just the midpoint. **Half-saturation and midpoint-of-range are one fact in two costumes.** *The reframe that session reached: `2/3` is deflatable, **the spread is not**, and explaining the spread is the flavour hierarchy problem at full size.*
+>
+> **⚠ PRIOR-ART OBLIGATION, live now.** **Rousselle, arXiv:2608.19277 (18 Aug 2026)** derives `Q = 2/3` from a `U(3) → U(1) × ℤ₃` topological condensation — **three weeks before this note was written.** *If the `Str`/`Coh` or `M_eff` reading is ever written up, it must be cited.* **Unresolved:** whether his `θ_F = −2/9` is independently forced or chosen to land `2/3` — the same test the `1/(2π)` failed.
+>
+> **And §4's verdict is unchanged.** Arc Q's *“ED forces exactly 3 generations — REFUTED”* stands, and neither ED nor Rousselle derives three (**he assumes `ℤ₃`**). *What is worth re-examining is arc M's stated REASON — “ED produces dichotomies, not continuous numerical relationships” — since `Q = 1/M_eff` at half-saturation of an integer bound is a continuous number out of a counting structure. **The reason, not the verdict.***
+
+---
+
 ## 1. The observation
 
 Write the lepton masses as participation amplitudes in the decomposition settled today (`foundations/Note_SigmaC_SignCheck_2026-09-05.md`): `P_i = √m_i`, so `m_i = |P_i|²`.
