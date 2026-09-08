@@ -204,6 +204,23 @@ grad   = abs(rho_v - rho_u)
 >
 > **The increment also pushes `β` the WRONG way** — smaller quanta drive it **down**, away from UDM's `≈ 2`. **So the increment is a confound to control, not a route to the target, and the finite-width kernel test is NOT interpretable until `β` is shown stable under it.** *Going at the kernel first would have attributed to the kernel a number a numerical parameter was already moving — the same shape as every other failure logged today.*
 >
+
+>
+> ### ⚠ The UDM `β ≈ 2` comparison is WITHDRAWN AS ILL-POSED — not deferred
+>
+> **Earlier wording here called it *“not reachable from a discrete deposit rule — needs a continuum formulation ED doesn't have yet.”* That keeps it a target**, and a future session reads *“needs a continuum formulation”* as a to-do and builds one to chase a number. **The two `β`s were never the same quantity.**
+>
+> **What was measured here is a hop-acceptance fraction — microscopic admissibility. UDM's is a macroscopic transport exponent from FRAP-measured diffusion. TWO named objects sit between them:**
+>
+> 1. **The correlation factor** of lattice-gas theory — *the ratio between the tracer diffusion coefficient and that of an uncorrelated random walk*, which **decreases rapidly at high concentration**. *Acceptance is not even the tracer diffusion coefficient.*
+> 2. **Tracer `D` → collective/continuum mobility** — a second, independent step, and the one where the `D`-vs-driven-response distinction already bit today.
+>
+> **So this is the sixth across-levels comparison caught today, and the only one aimed outside the corpus.** *Building a continuum ED mobility would not make this comparison valid; it would need its own, separately constructed.* **Withdrawn as ill-posed. Not an open gap, not a deferred target.**
+>
+> ### ⚠ And quote the cap as `ρ ≤ ρ_max`, never as “the cap is 2.1”
+>
+> The corrected ceilings `2.10 / 2.60 / 2.85` are exactly `ρ_max − Δ`, **so the ceiling's value is itself increment-dependent.** *That is expected rather than artifactual — unlike `β` — but the same discipline applies to quoting it.* **The claim is `ρ ≤ ρ_max`, approached from below. `2.1` is a run parameter, and `ρ_max` is the inherited postulate value.**
+>
 > **What is untouched:** `Γ₀(ρ) → 0` still derives at **`Grounded`** (the *vanishing*, not its exponent), the cap is still real and now **exact**, the certified rule is still destination-gated, and Arc_BH_3's Constraint 3 still stands. **What retires is only the exponent.**
 
 ---
@@ -213,3 +230,14 @@ grad   = abs(rho_v - rho_u)
 **The singularity family's density cap moves from *declared/inherited* to *`Grounded` on an already-named postulate*, and the route runs through destination-gated exclusion rather than through the vanishing collective mobility the corpus currently cites.**
 
 *One genuine derivation, one postulate-count reduction, and one specific defect with a specific repair in Arc_D_2.*
+
+> ## ✅ TARGET #15's RESIDUAL IS CLOSED — with a stated CEILING, not a completion
+>
+> **What was asked:** derive `Γ₀(ρ) → 0 as ρ → ρ_max` **from P01–P13**.
+> **What was delivered:** `Γ₀(ρ) = Γ_max(1 − ρ/ρ_max)` at **`Grounded`** — form-forced *given* `P-Locus-Bandwidth-Bound`, which is a **declared postulate, not a primitive.**
+>
+> **`Derived`-from-13 was not delivered and cannot be, for a reason the corpus states:** canonical P04 supplies non-negativity, **not an upper bound**, *“so any arc needing a finite per-locus budget must name one.”* **The residual as #15 phrases it is unmeetable; `Grounded` is the ceiling.**
+>
+> **What closing it buys:** a **postulate reduction** (two declared items to one — `Γ₀→0` was cited as its own “P4-class mobility-capacity bound” and follows from a bound already named); an **exact cap measured on the certified substrate**, with the bound as the only addition; `Γ₀ → 0` realised natively as **extinction**; and one number (`β`) **correctly retired against a rule fixed before the run.**
+>
+> *Six across-levels errors were caught in the course of it — five inside the corpus, one aimed outside it. That is the rate at which they were being made, not the rate at which they were being caught, and it is the reason for stopping here rather than continuing to the kernel.*
