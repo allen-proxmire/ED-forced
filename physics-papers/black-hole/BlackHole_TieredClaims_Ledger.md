@@ -140,3 +140,21 @@ Found by chasing the `1 vs 1/4` coefficient `Paper_025` §6 calls order-unity. F
 ## Addendum 2026-09-04 — an SCBU projection into this arc, migrated from a frozen fork
 
 `cosmology/Paper_ED_SC_4_1_BH_CosmicDecoupling.md` projects the **BH horizon `r_H`** onto the substrate–cosmology boundary `R_H = c/H₀`, as one of six `ED-SC 4.x` projections unified by `Paper_ED_SC_4_6`. **M3, not audited against this corpus's claim-strength standard**, and it carries the disputed `2π` (flagged in place). **It predates and does not cite** `Paper_047_5`'s M3 result that BH, Rindler, cosmological and acoustic horizons are one V5-saturated object on four axes, nor `gravity/Note_TheSwitchIsDerived_TheShapeIsInherited.md`, which derives `Γ_cross` collapsing at `min(R_a, R_H)`. **Read it as the earlier, coarser statement of a relation this arc has since sharpened.** Kept in `cosmology/` with its series. Gravity ledger Staleness #54.
+
+---
+
+## Addendum 2026-09-08 — `Γ₀(ρ)→0` is now `Grounded`, and Arc_BH_3's *mechanism* for gradient saturation does not survive
+
+**Full working: `Note_Gamma0_Derivation_2026-09-08.md` (this folder). Target #15; foundations ledger #18.**
+
+**The good half.** Arc_BH_3's Constraint 3 — *"every chain-step transition has a finite rate `Γ₀(ρ) ≤ Γ_max`, with the rate going to zero as `ρ → ρ_max`"* — **is no longer a declaration.** It derives at **`Grounded`** from **`P-Locus-Bandwidth-Bound`** + P04 + `P-Adjacency-Transport-Shared`: a chain-step transfers bandwidth and completes only if the receiving locus has room `B_max − b`, so the admissible fraction is `1 − ρ/ρ_max`. **Measured exact.** *This is a postulate reduction — the "P4-class mobility-capacity bound" was being cited as its own commitment and is a consequence of one already named.* **And `ρ` asymptoting to `ρ_max` from below, never reaching it in finite time — Arc_BH_3's own phrasing — is reproduced** (`0.529 → 0.635 → 0.757 → 0.890`, resolution-independent).
+
+> ### ⚠ The half that does not survive: the argument from a vanishing **collective** mobility.
+>
+> **§"Gradient saturation" and the acoustic-metric degeneration argument both reason from *"the mobility coefficient vanishes as `ρ → ρ_max`"*.** Two different rates are being called that, and they behave oppositely: the **tracer** rate (one chain) **does** vanish, but the **collective** `M` in `∂ρ/∂t = ∇·(M∇ρ)` **does not** — **measured `M = 0.99996` at `ρ₀ = 0.10 … 0.95`**, constant to five figures, because the blocking factors cancel (`ρ₋(1−ρ₊) − ρ₊(1−ρ₋) = ρ₋ − ρ₊`).
+>
+> **Arc_D_2's `M(ρ_max) = 0` is also inconsistent with its own `M ∝ ∂(Γ₀ρ)/∂ρ`, by Rolle** — `f = Γ₀ρ` leaves zero, stays positive and returns to zero, so `f′ < 0` on a band below `ρ_max` for **any** vanishing `Γ₀`. *Pure calculus; no simulation needed.* **A negative `M` is backward diffusion, and Arc_D_2's source-local flux accordingly fails to cap `ρ` and worsens with resolution** (`97.9 / 202.3 / 411.2` at `N = 200/400/800`). **Destination-gated it is well-posed and caps.**
+
+**What this changes here.** **The no-`ρ→∞` conclusion STANDS** — the cap is real, and `Paper_042_NoSingularity`'s `C_cum` bound is untouched (it rests on committed-content additivity, not on `M`). **What needs re-writing is the stated mechanism:** the ceiling comes from **destination-gated exclusion — the state space — not from a vanishing collective mobility.** *The acoustic-degeneration argument needs re-examination on the same grounds, since a constant `M` does not degenerate the metric.*
+
+**Tier of the negative:** the Rolle half is **model-free**. The *"collective `M` is constant"* half is **measured in a nearest-neighbour exclusion lattice, a stand-in for the substrate** — it shows the source-local reading fails and the destination reading works, and does **not** prove ED licenses the destination reading. **`A → position` for ED; do not cite it as a substrate measurement.**
